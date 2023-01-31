@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="knowledge-capability"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+            
+      <p>This code system 
+              
+        <code>http://hl7.org/fhir/CodeSystem/knowledge-capability</code> defines the following codes:
+            
+      </p>
+            
+      <table class="codes">
+              
+        <tr>
+                
+          <td style="white-space:nowrap">
+                  
+            <b>Code</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Display</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Definition</b>
+                
+          </td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">shareable
+                  
+            <a name="knowledge-capability-shareable"> </a>
+                
+          </td>
+                
+          <td>Shareable</td>
+                
+          <td>The artifact provides essential information necessary to ensure the artifact can be reliably shared in a public repository as a FHIR resource.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">computable
+                  
+            <a name="knowledge-capability-computable"> </a>
+                
+          </td>
+                
+          <td>Computable</td>
+                
+          <td>The artifact provides at least machine-readable capability (i.e. it does not _only_ have narrative or unstructured elements). This capability can also be characterized as the artifact provides design-time capability, for example, an artifact is computable if it contains semantically verified CQL logic.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">publishable
+                  
+            <a name="knowledge-capability-publishable"> </a>
+                
+          </td>
+                
+          <td>Publishable</td>
+                
+          <td>The artifact provides information necessary to provide content management capability, including dependency management, artifact lifecycle, and publishing and repository metadata.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">executable
+                  
+            <a name="knowledge-capability-executable"> </a>
+                
+          </td>
+                
+          <td>Executable</td>
+                
+          <td>The artifact is guaranteed to have the elements required to support execution of at least one run-time operation appropriate for the type of artifact. This capability can also be characterized as the artifact provides run-time capability, for example, an artifact is executable if it contains compiled ELM logic.</td>
+              
+        </tr>
+            
+      </table>
+          
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="http://hl7.org/fhir/CodeSystem/knowledge-capability"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.4.1859"/>
+  </identifier>
+  <version value="5.0.0-snapshot3"/>
+  <name value="KnowledgeCapability"/>
+  <title value="Knowledge Capability"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-05-08"/>
+  <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="A capability afforded by a knowledge artifact."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/knowledge-capability"/>
+  <content value="complete"/>
+  <concept>
+    <code value="shareable"/>
+    <display value="Shareable"/>
+    <definition value="The artifact provides essential information necessary to ensure the artifact can be reliably shared in a public repository as a FHIR resource."/>
+  </concept>
+  <concept>
+    <code value="computable"/>
+    <display value="Computable"/>
+    <definition value="The artifact provides at least machine-readable capability (i.e. it does not _only_ have narrative or unstructured elements). This capability can also be characterized as the artifact provides design-time capability, for example, an artifact is computable if it contains semantically verified CQL logic."/>
+  </concept>
+  <concept>
+    <code value="publishable"/>
+    <display value="Publishable"/>
+    <definition value="The artifact provides information necessary to provide content management capability, including dependency management, artifact lifecycle, and publishing and repository metadata."/>
+  </concept>
+  <concept>
+    <code value="executable"/>
+    <display value="Executable"/>
+    <definition value="The artifact is guaranteed to have the elements required to support execution of at least one run-time operation appropriate for the type of artifact. This capability can also be characterized as the artifact provides run-time capability, for example, an artifact is executable if it contains compiled ELM logic."/>
+  </concept>
+</CodeSystem>

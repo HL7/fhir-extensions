@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="artifact-comment-type"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+            
+      <p>This code system 
+              
+        <code>http://hl7.org/fhir/CodeSystem/artifact-comment-type</code> defines the following codes:
+            
+      </p>
+            
+      <table class="codes">
+              
+        <tr>
+                
+          <td style="white-space:nowrap">
+                  
+            <b>Code</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Display</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Definition</b>
+                
+          </td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">documentation
+                  
+            <a name="artifact-comment-type-documentation"> </a>
+                
+          </td>
+                
+          <td>Documentation</td>
+                
+          <td>The comment is providing additional documentation from an authoring perspective</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">review
+                  
+            <a name="artifact-comment-type-review"> </a>
+                
+          </td>
+                
+          <td>Review</td>
+                
+          <td>The comment is providing feedback from a reviewer and requires resolution</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">guidance
+                  
+            <a name="artifact-comment-type-guidance"> </a>
+                
+          </td>
+                
+          <td>Guidance</td>
+                
+          <td>The comment is providing usage guidance to an artifact consumer</td>
+              
+        </tr>
+            
+      </table>
+          
+    </div>
+  </text>
+  <url value="http://hl7.org/fhir/CodeSystem/artifact-comment-type"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.4.1463"/>
+  </identifier>
+  <version value="5.0.0-snapshot3"/>
+  <name value="ArtifactCommentType"/>
+  <title value="Artifact comment type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-03-14T23:21:03-06:00"/>
+  <publisher value="Clinical Quality Information Workgroup"/>
+  <description value="The type of artifact comment (documentation, review, guidance)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/artifact-comment-type"/>
+  <content value="complete"/>
+  <concept>
+    <code value="documentation"/>
+    <display value="Documentation"/>
+    <definition value="The comment is providing additional documentation from an authoring perspective"/>
+  </concept>
+  <concept>
+    <code value="review"/>
+    <display value="Review"/>
+    <definition value="The comment is providing feedback from a reviewer and requires resolution"/>
+  </concept>
+  <concept>
+    <code value="guidance"/>
+    <display value="Guidance"/>
+    <definition value="The comment is providing usage guidance to an artifact consumer"/>
+  </concept>
+</CodeSystem>

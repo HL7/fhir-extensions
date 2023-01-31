@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-display-category"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+            
+      <p>This code system 
+              
+        <code>http://hl7.org/fhir/questionnaire-display-category</code> defines the following codes:
+            
+      </p>
+            
+      <table class="codes">
+              
+        <tr>
+                
+          <td style="white-space:nowrap">
+                  
+            <b>Code</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Display</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Definition</b>
+                
+          </td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">instructions
+                  
+            <a name="questionnaire-display-category-instructions"> </a>
+                
+          </td>
+                
+          <td>Instructions</td>
+                
+          <td>The display text provides guidance on how to populate or use a portion of the questionnaire (or the questionnaire as a whole).</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">security
+                  
+            <a name="questionnaire-display-category-security"> </a>
+                
+          </td>
+                
+          <td>Security</td>
+                
+          <td>The display text provides guidance on how the information should be or will be handled from a security/confidentiality/access control perspective when completed</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">legal
+                  
+            <a name="questionnaire-display-category-legal"> </a>
+                
+          </td>
+                
+          <td>legal</td>
+                
+          <td>The display text indicates copyright, trademark, patent, regulations regarding completion, retention or use, or other legal text related to the item</td>
+              
+        </tr>
+            
+      </table>
+          
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <url value="http://hl7.org/fhir/questionnaire-display-category"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.4.936"/>
+  </identifier>
+  <identifier>
+    <use value="old"/>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.1.853"/>
+  </identifier>
+  <version value="5.0.0-snapshot3"/>
+  <name value="QuestionnaireDisplayCategories"/>
+  <title value="Questionnaire Display Categories"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Codes defining the purpose of a Questionnaire item of type 'display'."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/questionnaire-display-category"/>
+  <content value="complete"/>
+  <concept>
+    <code value="instructions"/>
+    <display value="Instructions"/>
+    <definition value="The display text provides guidance on how to populate or use a portion of the questionnaire (or the questionnaire as a whole)."/>
+  </concept>
+  <concept>
+    <code value="security"/>
+    <display value="Security"/>
+    <definition value="The display text provides guidance on how the information should be or will be handled from a security/confidentiality/access control perspective when completed"/>
+  </concept>
+  <concept>
+    <code value="legal"/>
+    <display value="legal"/>
+    <definition value="The display text indicates copyright, trademark, patent, regulations regarding completion, retention or use, or other legal text related to the item"/>
+  </concept>
+</CodeSystem>

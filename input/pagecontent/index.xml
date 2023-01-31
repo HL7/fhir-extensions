@@ -1,0 +1,17 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
+  <a name="intro"> </a>
+  <h3>Introduction</h3>
+	<p>
+    This IG defines the extensions used internally by the FHIR tools.
+    These extensions should never appear in implementations unless they
+    are concerned with code generation from the FHIR packages.
+  </p>
+	<a name="topics"> </a>
+	<h3>Additional Documentation</h3>
+	<ul>
+    <li><a href="binary.html">Providing Binary files in native formats</a></li>
+    <li><a href="format-extensions.html">Extensions that control formats</a></li>
+    <li><a href="other.html">Supporting Documentation</a></li>
+  </ul>
+</div>

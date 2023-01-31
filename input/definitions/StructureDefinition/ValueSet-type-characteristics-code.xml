@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="type-characteristics-code"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+            
+      <ul>
+              
+        <li>Include all codes defined in 
+                
+          <a href="codesystem-type-characteristics-code.html">
+                  
+            <code>http://hl7.org/fhir/type-characteristics-code</code>
+                
+          </a>
+              
+        </li>
+            
+      </ul>
+          
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/type-characteristics-code"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.3.2986"/>
+  </identifier>
+  <version value="5.0.0-snapshot3"/>
+  <name value="TypeCharacteristicCodes"/>
+  <title value="Type Characteristic Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Description Needed Here"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/type-characteristics-code"/>
+    </include>
+  </compose>
+</ValueSet>

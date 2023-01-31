@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-usage-mode"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+            
+      <p>This code system 
+              
+        <code>http://hl7.org/fhir/questionnaire-usage-mode</code> defines the following codes:
+            
+      </p>
+            
+      <table class="codes">
+              
+        <tr>
+                
+          <td style="white-space:nowrap">
+                  
+            <b>Code</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Display</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Definition</b>
+                
+          </td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">capture-display
+                  
+            <a name="questionnaire-usage-mode-capture-display"> </a>
+                
+          </td>
+                
+          <td>Capture &amp; Display</td>
+                
+          <td>Render the item regardless of usage mode.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">capture
+                  
+            <a name="questionnaire-usage-mode-capture"> </a>
+                
+          </td>
+                
+          <td>Capture Only</td>
+                
+          <td>Render the item only when capturing data.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">display
+                  
+            <a name="questionnaire-usage-mode-display"> </a>
+                
+          </td>
+                
+          <td>Display Only</td>
+                
+          <td>Render the item only when displaying a completed form.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">display-non-empty
+                  
+            <a name="questionnaire-usage-mode-display-non-empty"> </a>
+                
+          </td>
+                
+          <td>Display when Answered</td>
+                
+          <td>Render the item only when displaying a completed form and the item has been answered (or has child items that have been answered).</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">capture-display-non-empty
+                  
+            <a name="questionnaire-usage-mode-capture-display-non-empty"> </a>
+                
+          </td>
+                
+          <td>Capture or, if answered, Display</td>
+                
+          <td>Render the item when capturing data or when displaying a completed form and the item has been answered (or has child items that have been answered).</td>
+              
+        </tr>
+            
+      </table>
+          
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <url value="http://hl7.org/fhir/questionnaire-usage-mode"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.1.1274"/>
+  </identifier>
+  <identifier>
+    <use value="old"/>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.1.855"/>
+  </identifier>
+  <version value="5.0.0-snapshot3"/>
+  <name value="QuestionnaireItemUsageMode"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <description value="QuestionnaireItemUsageMode"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="capture-display"/>
+    <display value="Capture &amp; Display"/>
+    <definition value="Render the item regardless of usage mode."/>
+  </concept>
+  <concept>
+    <code value="capture"/>
+    <display value="Capture Only"/>
+    <definition value="Render the item only when capturing data."/>
+  </concept>
+  <concept>
+    <code value="display"/>
+    <display value="Display Only"/>
+    <definition value="Render the item only when displaying a completed form."/>
+  </concept>
+  <concept>
+    <code value="display-non-empty"/>
+    <display value="Display when Answered"/>
+    <definition value="Render the item only when displaying a completed form and the item has been answered (or has child items that have been answered)."/>
+  </concept>
+  <concept>
+    <code value="capture-display-non-empty"/>
+    <display value="Capture or, if answered, Display"/>
+    <definition value="Render the item when capturing data or when displaying a completed form and the item has been answered (or has child items that have been answered)."/>
+  </concept>
+</CodeSystem>

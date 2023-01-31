@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="implantStatus"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+            
+      <p>This code system 
+              
+        <code>http://hl7.org/fhir/implantStatus</code> defines the following codes:
+            
+      </p>
+            
+      <table class="codes">
+              
+        <tr>
+                
+          <td style="white-space:nowrap">
+                  
+            <b>Code</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Display</b>
+                
+          </td>
+                
+          <td>
+                  
+            <b>Definition</b>
+                
+          </td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">functional
+                  
+            <a name="implantStatus-functional"> </a>
+                
+          </td>
+                
+          <td>Functional</td>
+                
+          <td>The implanted device is working normally.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">non-functional
+                  
+            <a name="implantStatus-non-functional"> </a>
+                
+          </td>
+                
+          <td>Non-Functional</td>
+                
+          <td>The implanted device is not working.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">disabled
+                  
+            <a name="implantStatus-disabled"> </a>
+                
+          </td>
+                
+          <td>Disabled</td>
+                
+          <td>The implanted device has been turned off.</td>
+              
+        </tr>
+              
+        <tr>
+                
+          <td style="white-space:nowrap">unknown
+                  
+            <a name="implantStatus-unknown"> </a>
+                
+          </td>
+                
+          <td>Unknown</td>
+                
+          <td>the functional status of the implant has not been determined.</td>
+              
+        </tr>
+            
+      </table>
+          
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <url value="http://hl7.org/fhir/implantStatus"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.4.2053"/>
+  </identifier>
+  <version value="5.0.0-snapshot3"/>
+  <name value="ImplantStatus"/>
+  <title value="Implant Status"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <description value="Implant Status"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="functional"/>
+    <display value="Functional"/>
+    <definition value="The implanted device is working normally."/>
+  </concept>
+  <concept>
+    <code value="non-functional"/>
+    <display value="Non-Functional"/>
+    <definition value="The implanted device is not working."/>
+  </concept>
+  <concept>
+    <code value="disabled"/>
+    <display value="Disabled"/>
+    <definition value="The implanted device has been turned off."/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <definition value="the functional status of the implant has not been determined."/>
+  </concept>
+</CodeSystem>
