@@ -6,34 +6,10 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <ul>
-              
-        <li>Include all codes defined in 
-                
-          <a href="codesystem-template-status-code.html">
-                  
-            <code>http://hl7.org/fhir/template-status-code</code>
-                
-          </a>
-              
-        </li>
-            
-      </ul>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
   <url value="http://hl7.org/fhir/ValueSet/template-status-code"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="2.16.840.1.113883.3.1937.98.11.8"/>
-  </identifier>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.3.1937.98.11.8"/>
@@ -50,6 +26,7 @@
   </identifier>
   <version value="5.0.0-snapshot3"/>
   <name value="TemplateStatusCode"/>
+  <title value="template status code"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Description Needed Here"/>

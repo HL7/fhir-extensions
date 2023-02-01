@@ -6,86 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <p>This code system 
-              
-        <code>http://hl7.org/fhir/expansion-parameter-source</code> defines the following codes:
-            
-      </p>
-            
-      <table class="codes">
-              
-        <tr>
-                
-          <td style="white-space:nowrap">
-                  
-            <b>Code</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Display</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Definition</b>
-                
-          </td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">input
-                  
-            <a name="expansion-parameter-source-input"> </a>
-                
-          </td>
-                
-          <td>Client Input</td>
-                
-          <td>The parameter was supplied by the client in the $expand request.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">server
-                  
-            <a name="expansion-parameter-source-server"> </a>
-                
-          </td>
-                
-          <td>Server Engine</td>
-                
-          <td>The parameter was added by the expansion engine on the server.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">codesystem
-                  
-            <a name="expansion-parameter-source-codesystem"> </a>
-                
-          </td>
-                
-          <td>Code System</td>
-                
-          <td>The parameter was added from one the code systems used in the $expand operation.</td>
-              
-        </tr>
-            
-      </table>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="vocab"/>
   </extension>
@@ -96,6 +16,7 @@
   </identifier>
   <version value="5.0.0-snapshot3"/>
   <name value="ExpansionParameterSource"/>
+  <title value="expansion parameter source"/>
   <status value="draft"/>
   <experimental value="true"/>
   <description value="ExpansionParameterSource"/>

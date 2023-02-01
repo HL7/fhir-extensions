@@ -34,11 +34,348 @@
       <title value="Home Page"/>
       <generation value="html"/>
       <page>
-        <sourceUrl value="other.html"/>
-        <name value="other.html"/>
-        <title value="Other Information"/>
+        <sourceUrl value="extension-registry.html"/>
+        <name value="extension-registry.html"/>
+        <title value="Extension Registry"/>
         <generation value="markdown"/>
       </page>
+      <page>
+        <sourceUrl value="extensions-datatypes.html"/>
+        <name value="extensions-datatypes.html"/>
+        <title value="Datatype Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-AllergyIntolerance.html"/>
+        <name value="extensions-AllergyIntolerance.html"/>
+        <title value="AllergyIntolerance Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-AuditEvent.html"/>
+        <name value="extensions-AuditEvent.html"/>
+        <title value="AuditEvent Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Base.html"/>
+        <name value="extensions-Base.html"/>
+        <title value="Base Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Basic.html"/>
+        <name value="extensions-Basic.html"/>
+        <title value="Basic Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-BiologicallyDerivedProduct.html"/>
+        <name value="extensions-BiologicallyDerivedProduct.html"/>
+        <title value="BiologicallyDerivedProduct Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Bundle.html"/>
+        <name value="extensions-Bundle.html"/>
+        <title value="Bundle Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-CanonicalResource.html"/>
+        <name value="extensions-CanonicalResource.html"/>
+        <title value="CanonicalResource Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-CapabilityStatement.html"/>
+        <name value="extensions-CapabilityStatement.html"/>
+        <title value="CapabilityStatement Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-CarePlan.html"/>
+        <name value="extensions-CarePlan.html"/>
+        <title value="CarePlan Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-CareTeam.html"/>
+        <name value="extensions-CareTeam.html"/>
+        <title value="CareTeam Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-CodeSystem.html"/>
+        <name value="extensions-CodeSystem.html"/>
+        <title value="CodeSystem Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Communication.html"/>
+        <name value="extensions-Communication.html"/>
+        <title value="Communication Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-CommunicationRequest.html"/>
+        <name value="extensions-CommunicationRequest.html"/>
+        <title value="CommunicationRequest Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Composition.html"/>
+        <name value="extensions-Composition.html"/>
+        <title value="Composition Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-ConceptMap.html"/>
+        <name value="extensions-ConceptMap.html"/>
+        <title value="ConceptMap Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Condition.html"/>
+        <name value="extensions-Condition.html"/>
+        <title value="Condition Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Consent.html"/>
+        <name value="extensions-Consent.html"/>
+        <title value="Consent Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Device.html"/>
+        <name value="extensions-Device.html"/>
+        <title value="Device Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-DeviceRequest.html"/>
+        <name value="extensions-DeviceRequest.html"/>
+        <title value="DeviceRequest Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-DiagnosticReport.html"/>
+        <name value="extensions-DiagnosticReport.html"/>
+        <title value="DiagnosticReport Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-DocumentReference.html"/>
+        <name value="extensions-DocumentReference.html"/>
+        <title value="DocumentReference Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Encounter.html"/>
+        <name value="extensions-Encounter.html"/>
+        <title value="Encounter Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-FamilyMemberHistory.html"/>
+        <name value="extensions-FamilyMemberHistory.html"/>
+        <title value="FamilyMemberHistory Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Flag.html"/>
+        <name value="extensions-Flag.html"/>
+        <title value="Flag Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Goal.html"/>
+        <name value="extensions-Goal.html"/>
+        <title value="Goal Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Group.html"/>
+        <name value="extensions-Group.html"/>
+        <title value="Group Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Immunization.html"/>
+        <name value="extensions-Immunization.html"/>
+        <title value="Immunization Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-ImplementationGuide.html"/>
+        <name value="extensions-ImplementationGuide.html"/>
+        <title value="ImplementationGuide Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-List.html"/>
+        <name value="extensions-List.html"/>
+        <title value="List Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Location.html"/>
+        <name value="extensions-Location.html"/>
+        <title value="Location Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-MedicationDispense.html"/>
+        <name value="extensions-MedicationDispense.html"/>
+        <title value="MedicationDispense Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-MessageHeader.html"/>
+        <name value="extensions-MessageHeader.html"/>
+        <title value="MessageHeader Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-NamingSystem.html"/>
+        <name value="extensions-NamingSystem.html"/>
+        <title value="NamingSystem Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-NutritionOrder.html"/>
+        <name value="extensions-NutritionOrder.html"/>
+        <title value="NutritionOrder Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Observation.html"/>
+        <name value="extensions-Observation.html"/>
+        <title value="Observation Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-OperationDefinition.html"/>
+        <name value="extensions-OperationDefinition.html"/>
+        <title value="OperationDefinition Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-OperationOutcome.html"/>
+        <name value="extensions-OperationOutcome.html"/>
+        <title value="OperationOutcome Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Organization.html"/>
+        <name value="extensions-Organization.html"/>
+        <title value="Organization Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-OrganizationAffiliation.html"/>
+        <name value="extensions-OrganizationAffiliation.html"/>
+        <title value="OrganizationAffiliation Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Parameters.html"/>
+        <name value="extensions-Parameters.html"/>
+        <title value="Parameters Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Path.html"/>
+        <name value="extensions-Path.html"/>
+        <title value="Path Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Patient.html"/>
+        <name value="extensions-Patient.html"/>
+        <title value="Patient Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-PlanDefinition.html"/>
+        <name value="extensions-PlanDefinition.html"/>
+        <title value="PlanDefinition Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-PractitionerRole.html"/>
+        <name value="extensions-PractitionerRole.html"/>
+        <title value="PractitionerRole Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Procedure.html"/>
+        <name value="extensions-Procedure.html"/>
+        <title value="Procedure Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Questionnaire.html"/>
+        <name value="extensions-Questionnaire.html"/>
+        <title value="Questionnaire Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-QuestionnaireResponse.html"/>
+        <name value="extensions-QuestionnaireResponse.html"/>
+        <title value="QuestionnaireResponse Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-ResearchStudy.html"/>
+        <name value="extensions-ResearchStudy.html"/>
+        <title value="ResearchStudy Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Resource.html"/>
+        <name value="extensions-Resource.html"/>
+        <title value="Resource Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-ServiceRequest.html"/>
+        <name value="extensions-ServiceRequest.html"/>
+        <title value="ServiceRequest Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Specimen.html"/>
+        <name value="extensions-Specimen.html"/>
+        <title value="Specimen Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-StructureDefinition.html"/>
+        <name value="extensions-StructureDefinition.html"/>
+        <title value="StructureDefinition Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-Task.html"/>
+        <name value="extensions-Task.html"/>
+        <title value="Task Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-ValueSet.html"/>
+        <name value="extensions-ValueSet.html"/>
+        <title value="ValueSet Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="extensions-multiple.html"/>
+        <name value="extensions-multiple.html"/>
+        <title value="Extensions that have multiple contexts"/>
+        <generation value="markdown"/>
+      </page>
+
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
@@ -56,6 +393,36 @@
       </code>
       <value value="Working Copy"/>
     </parameter>
+
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="special-url-base"/>
+      </code>
+      <value value="http://hl7.org/fhir"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="special-url"/>
+      </code>
+      <value value="http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="special-url"/>
+      </code>
+      <value value="http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="special-url"/>
+      </code>
+      <value value="http://hl7.org/fhir/StructureDefinition/_datatype"/>
+    </parameter>
+    
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/guide-parameter-code"/>
@@ -63,20 +430,15 @@
       </code>
       <value value="input/definitions/*"/>
     </parameter>
+
     <parameter>
       <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="showsource"/>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="no-usage-check"/>
       </code>
       <value value="true"/>
     </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="generate-version"/>
-      </code>
-      <value value="r2"/>
-    </parameter>
+    
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>

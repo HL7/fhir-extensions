@@ -6,38 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <p>This value set includes codes based on the following rules:</p>
-            
-      <ul>
-              
-        <li>Include all codes defined in 
-                
-          <a href="http://terminology.hl7.org/4.0.0/CodeSystem-dicom-audit-lifecycle.html">
-                  
-            <code>http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle</code>
-                
-          </a>
-              
-        </li>
-              
-        <li>Include all codes defined in 
-                
-          <a href="http://terminology.hl7.org/4.0.0/CodeSystem-iso-21089-lifecycle.html">
-                  
-            <code>http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle</code>
-                
-          </a>
-              
-        </li>
-            
-      </ul>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
     <valueBoolean value="true"/>
   </extension>

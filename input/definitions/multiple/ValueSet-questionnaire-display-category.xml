@@ -6,26 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <ul>
-              
-        <li>Include all codes defined in 
-                
-          <a href="codesystem-questionnaire-display-category.html">
-                  
-            <code>http://hl7.org/fhir/questionnaire-display-category</code>
-                
-          </a>
-              
-        </li>
-            
-      </ul>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>

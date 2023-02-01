@@ -6,100 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <p>This code system 
-              
-        <code>http://hl7.org/fhir/match-grade</code> defines the following codes:
-            
-      </p>
-            
-      <table class="codes">
-              
-        <tr>
-                
-          <td style="white-space:nowrap">
-                  
-            <b>Code</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Display</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Definition</b>
-                
-          </td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">certain
-                  
-            <a name="match-grade-certain"> </a>
-                
-          </td>
-                
-          <td>Certain Match</td>
-                
-          <td>This record meets the matching criteria to be automatically considered as a full match.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">probable
-                  
-            <a name="match-grade-probable"> </a>
-                
-          </td>
-                
-          <td>Probable Match</td>
-                
-          <td>This record is a close match, but not a certain match. Additional review (e.g. by a human) may be required before using this as a match.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">possible
-                  
-            <a name="match-grade-possible"> </a>
-                
-          </td>
-                
-          <td>Possible Match</td>
-                
-          <td>This record may be a matching one. Additional review (e.g. by a human) SHOULD be performed before using this as a match.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">certainly-not
-                  
-            <a name="match-grade-certainly-not"> </a>
-                
-          </td>
-                
-          <td>Certainly Not a Match</td>
-                
-          <td>This record is known not to be a match. Note that usually non-matching records are not returned, but in some cases records previously or likely considered as a match may specifically be negated by the matching engine.</td>
-              
-        </tr>
-            
-      </table>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -115,6 +21,7 @@
   </identifier>
   <version value="5.0.0-snapshot3"/>
   <name value="MatchGrade"/>
+  <title value="match grade"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="MatchGrade"/>

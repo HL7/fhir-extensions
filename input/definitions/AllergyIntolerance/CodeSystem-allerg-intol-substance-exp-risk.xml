@@ -6,72 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <p>This code system 
-              
-        <code>http://hl7.org/fhir/allerg-intol-substance-exp-risk</code> defines the following codes:
-            
-      </p>
-            
-      <table class="codes">
-              
-        <tr>
-                
-          <td style="white-space:nowrap">
-                  
-            <b>Code</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Display</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Definition</b>
-                
-          </td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">known-reaction-risk
-                  
-            <a name="allerg-intol-substance-exp-risk-known-reaction-risk"> </a>
-                
-          </td>
-                
-          <td>Known Reaction Risk</td>
-                
-          <td>Known risk of allergy or intolerance reaction upon exposure to the specified substance.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">no-known-reaction-risk
-                  
-            <a name="allerg-intol-substance-exp-risk-no-known-reaction-risk"> </a>
-                
-          </td>
-                
-          <td>No Known Reaction Risk</td>
-                
-          <td>No known risk of allergy or intolerance reaction upon exposure to the specified substance.</td>
-              
-        </tr>
-            
-      </table>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc"/>
   </extension>
@@ -87,6 +21,7 @@
   </identifier>
   <version value="5.0.0-snapshot3"/>
   <name value="AllergyIntoleranceSubstanceExposureRisk"/>
+  <title value="AllergyIntolerance substance exposure risk"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="AllergyIntoleranceSubstanceExposureRisk"/>

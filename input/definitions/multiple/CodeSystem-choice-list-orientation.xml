@@ -6,72 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <p>This code system 
-              
-        <code>http://hl7.org/fhir/choice-list-orientation</code> defines the following codes:
-            
-      </p>
-            
-      <table class="codes">
-              
-        <tr>
-                
-          <td style="white-space:nowrap">
-                  
-            <b>Code</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Display</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Definition</b>
-                
-          </td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">horizontal
-                  
-            <a name="choice-list-orientation-horizontal"> </a>
-                
-          </td>
-                
-          <td>Horizontal</td>
-                
-          <td>List choices along the horizontal axis.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">vertical
-                  
-            <a name="choice-list-orientation-vertical"> </a>
-                
-          </td>
-                
-          <td>Vertical</td>
-                
-          <td>List choices down the vertical axis.</td>
-              
-        </tr>
-            
-      </table>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -92,6 +26,7 @@
   </identifier>
   <version value="5.0.0-snapshot3"/>
   <name value="ChoiceListOrientation"/>
+  <title value="choice list orientation"/>
   <status value="active"/>
   <experimental value="true"/>
   <description value="ChoiceListOrientation"/>

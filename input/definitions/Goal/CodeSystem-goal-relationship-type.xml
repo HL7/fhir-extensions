@@ -6,114 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <p>This code system 
-              
-        <code>http://hl7.org/fhir/goal-relationship-type</code> defines the following codes:
-            
-      </p>
-            
-      <table class="codes">
-              
-        <tr>
-                
-          <td style="white-space:nowrap">
-                  
-            <b>Code</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Display</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Definition</b>
-                
-          </td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">predecessor
-                  
-            <a name="goal-relationship-type-predecessor"> </a>
-                
-          </td>
-                
-          <td>Predecessor</td>
-                
-          <td>Indicates that the target goal is one which must be met before striving for the current goal.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">successor
-                  
-            <a name="goal-relationship-type-successor"> </a>
-                
-          </td>
-                
-          <td>Successor</td>
-                
-          <td>Indicates that the target goal is a desired objective once the current goal is met.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">replacement
-                  
-            <a name="goal-relationship-type-replacement"> </a>
-                
-          </td>
-                
-          <td>Replacement</td>
-                
-          <td>Indicates that this goal has been replaced by the target goal.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">part-of
-                  
-            <a name="goal-relationship-type-part-of"> </a>
-                
-          </td>
-                
-          <td>Part Of</td>
-                
-          <td>The relationship.target is a larger goal of which this particular goal is a component or step for.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">other
-                  
-            <a name="goal-relationship-type-other"> </a>
-                
-          </td>
-                
-          <td>Other</td>
-                
-          <td>Indicates that the relationship is not covered by one of the pre-defined codes.  (An extension may convey more information about the meaning of the relationship.).</td>
-              
-        </tr>
-            
-      </table>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc"/>
   </extension>
@@ -134,6 +26,7 @@
   </identifier>
   <version value="5.0.0-snapshot3"/>
   <name value="GoalRelationshipType"/>
+  <title value="goal relationship type"/>
   <status value="draft"/>
   <experimental value="true"/>
   <description value="GoalRelationshipType"/>

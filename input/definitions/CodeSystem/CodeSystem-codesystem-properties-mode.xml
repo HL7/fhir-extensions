@@ -6,86 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <p>This code system 
-              
-        <code>http://hl7.org/fhir/codesystem-properties-mode</code> defines the following codes:
-            
-      </p>
-            
-      <table class="codes">
-              
-        <tr>
-                
-          <td style="white-space:nowrap">
-                  
-            <b>Code</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Display</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Definition</b>
-                
-          </td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">not-present
-                  
-            <a name="codesystem-properties-mode-not-present"> </a>
-                
-          </td>
-                
-          <td>Not Present</td>
-                
-          <td>None of the properties and filters defined by the code system are included in the code system resource.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">partial
-                  
-            <a name="codesystem-properties-mode-partial"> </a>
-                
-          </td>
-                
-          <td>Partial</td>
-                
-          <td>A subset of the code system properties and filter definitions are included in the code system resource.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">complete
-                  
-            <a name="codesystem-properties-mode-complete"> </a>
-                
-          </td>
-                
-          <td>Complete</td>
-                
-          <td>All the property and filters definitions for the code system are included in the code system resource.</td>
-              
-        </tr>
-            
-      </table>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="vocab"/>
   </extension>
@@ -96,6 +16,7 @@
   </identifier>
   <version value="5.0.0-snapshot3"/>
   <name value="CodeSystemPropertiesMode"/>
+  <title value="code system properties mode"/>
   <status value="draft"/>
   <experimental value="true"/>
   <description value="CodeSystemPropertiesMode"/>

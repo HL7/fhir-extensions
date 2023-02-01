@@ -6,28 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <ul>
-              
-        <li>Include codes from 
-                
-          <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-RoleCode.html">
-                  
-            <code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code>
-                
-          </a> where concept  is-a  
-                
-          <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SIB">SIB</a>
-              
-        </li>
-            
-      </ul>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc"/>
   </extension>

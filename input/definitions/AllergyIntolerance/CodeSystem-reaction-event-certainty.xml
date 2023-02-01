@@ -6,100 +6,6 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-            
-      <p>This code system 
-              
-        <code>http://hl7.org/fhir/reaction-event-certainty</code> defines the following codes:
-            
-      </p>
-            
-      <table class="codes">
-              
-        <tr>
-                
-          <td style="white-space:nowrap">
-                  
-            <b>Code</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Display</b>
-                
-          </td>
-                
-          <td>
-                  
-            <b>Definition</b>
-                
-          </td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">unlikely
-                  
-            <a name="reaction-event-certainty-unlikely"> </a>
-                
-          </td>
-                
-          <td>Unlikely</td>
-                
-          <td>There is a low level of clinical certainty that the reaction was caused by the identified substance.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">likely
-                  
-            <a name="reaction-event-certainty-likely"> </a>
-                
-          </td>
-                
-          <td>Likely</td>
-                
-          <td>There is a high level of clinical certainty that the reaction was caused by the identified substance.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">confirmed
-                  
-            <a name="reaction-event-certainty-confirmed"> </a>
-                
-          </td>
-                
-          <td>Confirmed</td>
-                
-          <td>There is a very high level of clinical certainty that the reaction was due to the identified substance, which may include clinical evidence by testing or rechallenge.</td>
-              
-        </tr>
-              
-        <tr>
-                
-          <td style="white-space:nowrap">unknown
-                  
-            <a name="reaction-event-certainty-unknown"> </a>
-                
-          </td>
-                
-          <td>Unknown</td>
-                
-          <td>The clinical certainty that the reaction was caused by the identified substance is unknown.  It is an explicit assertion that certainty is not known.</td>
-              
-        </tr>
-            
-      </table>
-          
-    </div>
-  </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc"/>
   </extension>
@@ -120,6 +26,7 @@
   </identifier>
   <version value="5.0.0-snapshot3"/>
   <name value="AllergyIntoleranceCertainty"/>
+  <title value="AllergyIntolerance certainty"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="AllergyIntoleranceCertainty"/>
