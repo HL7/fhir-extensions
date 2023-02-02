@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1208"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="WorkflowStatusDescription"/>
   <title value="Workflow Status Description"/>
   <status value="draft"/>
@@ -24,7 +24,7 @@
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7"/>
   <description value="Workflow Status is used to represent details of the value set development process while in a single Activity Status."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor"/>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="protectiveFactor"/>
   <title value="protective factor"/>
   <status value="draft"/>
@@ -26,7 +26,7 @@
     </telecom>
   </contact>
   <description value="Characteristics or strengths of individuals, families, community situations or societies that mitigate risks and promote positivewell-being and healthy development; attributes that help to successfully navigate difficult situations; factors that may contribute to or explain positive outcomes.  A trait or habit that &quot;protects&quot; people and makes them less likely to get a chronic disease that include, but are not limited to exercise, healthy eating, managing weight, managing blood pressure and cholesterol, managing mental health,  feeling happy, strong emotional support and social connections."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

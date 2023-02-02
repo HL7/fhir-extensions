@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"/>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="ADXPAdditionalLocator"/>
   <title value="ADXP Additional Locator"/>
   <status value="draft"/>
@@ -26,7 +26,7 @@
     </telecom>
   </contact>
   <description value="This can be a unit designator, such as apartment number, suite number, or floor. There may be several unit designators in an address (e.g., &quot;3rd floor, Appt. 342&quot;). This can also be a designator pointing away from the location, rather than specifying a smaller location within some larger one (e.g., Dutch &quot;t.o.&quot; means &quot;opposite to&quot; for house boats located across the street facing houses)."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

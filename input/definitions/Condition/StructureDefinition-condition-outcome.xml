@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1311"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="ConditionOutcome"/>
   <title value="Condition Outcome"/>
   <status value="draft"/>
@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="A result of the condition. The &quot;Cause of death&quot; for a patient is typically captured as an Observation.  The &quot;outcome&quot; doesn't imply causality.  Some outcomes might not be assessable until the condition.clinicalStatus is no longer active."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

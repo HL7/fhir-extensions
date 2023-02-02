@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"/>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="ArtifactRelatedArtifact"/>
   <title value="Artifact related artifact"/>
   <status value="draft"/>
@@ -26,7 +26,7 @@
     </telecom>
   </contact>
   <description value="Related artifacts such as additional documentation, justification, dependencies, bibliographic references, and predecessor and successor artifacts."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

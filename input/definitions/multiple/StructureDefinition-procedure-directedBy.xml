@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1278"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="PRDirectedBy"/>
   <title value="Procedure Directed By"/>
   <status value="draft"/>
@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="The target of the extension is a distinct actor from the requester and has decision-making authority over the service and takes direct responsibility to manage the service."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

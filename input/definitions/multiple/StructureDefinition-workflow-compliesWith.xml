@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-compliesWith"/>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="compliesWith"/>
   <title value="complies with"/>
   <status value="draft"/>
@@ -26,7 +26,7 @@
     </telecom>
   </contact>
   <description value="The action requested by this resource is intended to satisfy the expectations established by the referenced Definition resource."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
     <uri value="http://hl7.org/v2"/>

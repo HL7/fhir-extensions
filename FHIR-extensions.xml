@@ -256,6 +256,7 @@
 <artifact id="StructureDefinition/flag-priority" key="StructureDefinition-flag-priority" name="Flag Priority"/>
 <artifact id="ValueSet/flag-priority" key="ValueSet-flag-priority" name="Flag Priority Codes"/>
 <artifact id="CodeSystem/flag-priority-code" key="CodeSystem-flag-priority-code" name="Flag Priority Codes"/>
+<artifact id="CodeSystem/flag-priority" key="CodeSystem-flag-priority" name="Flag Priority Codes"/>
 <artifact id="StructureDefinition/flag-detail" key="StructureDefinition-flag-detail" name="Flag details"/>
 <artifact id="ValueSet/focal-subject" key="ValueSet-focal-subject" name="Focal Subject Codes"/>
 <artifact deprecated="true" id="Bundle/single-gaps-closed-indv-report01" key="Bundle-single-gaps-closed-indv-report01" name="Gaps Bundle Closed Individual MeasureReport01"/>
@@ -375,8 +376,12 @@
 <artifact deprecated="true" id="Observation/observation03" key="Observation-observation03" name="Observation03"/>
 <artifact id="StructureDefinition/operationdefinition-profile" key="StructureDefinition-operationdefinition-profile" name="OperationDefinition Profile"/>
 <artifact id="StructureDefinition/operationoutcome-authority" key="StructureDefinition-operationoutcome-authority" name="OperationOutcome Authority for Rule"/>
+<artifact id="StructureDefinition/operationoutcome-issue-col" key="StructureDefinition-operationoutcome-issue-col" name="OperationOutcome Column of Issue"/>
 <artifact id="StructureDefinition/operationoutcome-detectedIssue" key="StructureDefinition-operationoutcome-detectedIssue" name="OperationOutcome Detected Clinical Issue"/>
+<artifact id="StructureDefinition/operationoutcome-issue-line" key="StructureDefinition-operationoutcome-issue-line" name="OperationOutcome Line of Issue"/>
+<artifact id="StructureDefinition/operationoutcome-file" key="StructureDefinition-operationoutcome-file" name="OperationOutcome Source File"/>
 <artifact id="StructureDefinition/operationoutcome-issue-source" key="StructureDefinition-operationoutcome-issue-source" name="OperationOutcome Source of Issue"/>
+<artifact id="StructureDefinition/operationoutcome-message-id" key="StructureDefinition-operationoutcome-message-id" name="OperationOutcome Source of Issue"/>
 <artifact deprecated="true" key="Organization" name="Organization"/>
 <artifact id="StructureDefinition/organization-period" key="StructureDefinition-organization-period" name="Organization Period"/>
 <artifact id="StructureDefinition/organization-preferredContact" key="StructureDefinition-organization-preferredContact" name="Organization Preferred Contact"/>
@@ -417,7 +422,6 @@
 <artifact deprecated="true" id="Patient/patient02" key="Patient-patient02" name="Patient02"/>
 <artifact deprecated="true" id="Patient/patient03" key="Patient-patient03" name="Patient03"/>
 <artifact id="StructureDefinition/elementdefinition-pattern" key="StructureDefinition-elementdefinition-pattern" name="Pattern"/>
-<artifact id="ValueSet/performer-function" key="ValueSet-performer-function" name="Performer Function Codes"/>
 <artifact id="StructureDefinition/11179-permitted-value-conceptmap" key="StructureDefinition-11179-permitted-value-conceptmap" name="Permitted Value Conceptmap"/>
 <artifact id="StructureDefinition/11179-permitted-value-valueset" key="StructureDefinition-11179-permitted-value-valueset" name="Permitted Value Valueset"/>
 <artifact id="StructureDefinition/individual-recordedSexOrGender" key="StructureDefinition-individual-recordedSexOrGender" name="Person Recorded Sex Or Gender"/>
@@ -439,6 +443,7 @@
 <artifact id="StructureDefinition/procedure-incisionDateTime" key="StructureDefinition-procedure-incisionDateTime" name="Procedure Incision DateTime"/>
 <artifact id="StructureDefinition/procedure-method" key="StructureDefinition-procedure-method" name="Procedure Method"/>
 <artifact id="StructureDefinition/procedure-progressStatus" key="StructureDefinition-procedure-progressStatus" name="Procedure Progress Status"/>
+<artifact id="CodeSystem/procedure-progress-status-codes" key="CodeSystem-procedure-progress-status-codes" name="Procedure Progress Status Codes"/>
 <artifact id="CodeSystem/procedure-progress-status-code" key="CodeSystem-procedure-progress-status-code" name="Procedure Progress Status Codes"/>
 <artifact id="ValueSet/procedure-progress-status-codes" key="ValueSet-procedure-progress-status-codes" name="Procedure Progress Status Codes"/>
 <artifact id="StructureDefinition/procedure-targetBodyStructure" key="StructureDefinition-procedure-targetBodyStructure" name="Procedure Target Body Structure"/>
@@ -703,6 +708,7 @@
 <artifact id="StructureDefinition/cqf-systemUserType" key="StructureDefinition-cqf-systemUserType" name="system user type"/>
 <artifact id="StructureDefinition/cqf-targetInvariant" key="StructureDefinition-cqf-targetInvariant" name="target invariant"/>
 <artifact id="ValueSet/template-status-code" key="ValueSet-template-status-code" name="template status code"/>
+<artifact id="CodeSystem/template-status-code" key="CodeSystem-template-status-code" name="template status code"/>
 <artifact id="StructureDefinition/workflow-triggeredBy" key="StructureDefinition-workflow-triggeredBy" name="triggered by"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>

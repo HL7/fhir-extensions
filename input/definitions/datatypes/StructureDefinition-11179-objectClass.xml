@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/11179-objectClass"/>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="objectClass"/>
   <title value="object class"/>
   <status value="draft"/>
@@ -26,7 +26,7 @@
     </telecom>
   </contact>
   <description value="A concept that represents a set of ideas, abstractions, or things in the real world that can be identified with explicit boundaries and meaning and whose properties and behavior follow the same rules. It may be either a single concept or a group of associated concepts, abstractions, or things."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
     <uri value="http://hl7.org/v2"/>

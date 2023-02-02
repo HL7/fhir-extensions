@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1469"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="ObsTimeOffset"/>
   <title value="Observation Time Offset"/>
   <status value="draft"/>
@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="A specific offset time in milliseconds from the stated time in the Observation.appliesDateTime to allow for representation of sequential recording  of sampled data from the same lead or data stream.  For example, an ECG recorder may record sequentially 3 leads four time to receive 12-lead ECG, see [ISO 22077](https://www.iso.org/obp/ui/#iso:std:61871:en)."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

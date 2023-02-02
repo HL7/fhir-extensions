@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1085"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="PRAnimalSpecies"/>
   <title value="Practitioner Animal Species"/>
   <status value="draft"/>
@@ -24,7 +24,7 @@
   <date value="2021-01-02T08:58:31+11:00"/>
   <publisher value="HL7"/>
   <description value="This extension should be used to specifiy that a practitioner or RelatedPerson resource is a service animal."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

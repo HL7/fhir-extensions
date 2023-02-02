@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1360"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="OOIssue-source"/>
   <title value="OperationOutcome Source of Issue"/>
   <status value="draft"/>
@@ -31,7 +31,7 @@
   </contact>
   <description value="Identifies the logical module/software section responsible for identifying the issue"/>
   <purpose value="When debugging issues, it's helpful to know where within the logic stack an issue was identified"/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1381"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="DevCommercialBrand"/>
   <title value="Device Commercial Brand"/>
   <status value="draft"/>
@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="The overall name of a collection of branded devices that an organization brings to market.  It is typically not the same as, although can be derived from, the organization name that owns the name."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

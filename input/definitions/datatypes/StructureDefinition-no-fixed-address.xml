@@ -10,7 +10,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1349"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="PatNoFixedAddress"/>
   <title value="Patient No Fixed Address"/>
   <status value="draft"/>
@@ -18,7 +18,7 @@
   <date value="2021-07-05"/>
   <publisher value="HL7"/>
   <description value="This extension applies to the Address data type and is used to indicate that a location address is not a fixed address for an individual."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1047"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="CSDeclaredProfile"/>
   <title value="CapabilityStatement Declared Profile"/>
   <status value="draft"/>
@@ -24,7 +24,7 @@
   <date value="2022-08-19"/>
   <publisher value="HL7"/>
   <description value="This extension identifies a profile the system will recognize if it is declared in [`meta.profile`](resource.html#profile-tags). If the system supports the [`_profile`](search.html#profile) search parameter, it will be capable of searching on the profile. The system may support validation against the profile."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
     <uri value="http://hl7.org/v2"/>

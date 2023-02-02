@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://fhir-registry.smarthealthit.org/StructureDefinition/capabilities"/>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="Capabilities"/>
   <title value="Capabilities"/>
   <status value="active"/>
@@ -26,7 +26,7 @@
     </telecom>
   </contact>
   <description value="A set of codes that defines what the server is capable of."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/usagecontext-group"/>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="Group"/>
   <title value="Group"/>
   <status value="draft"/>
@@ -20,7 +20,7 @@
   <date value="2023-01-31T07:07:38+11:00"/>
   <publisher value="HL7"/>
   <description value="Defines the group in which this usage context is a member. Multiple groups are &quot;OR'ed&quot;, contexts within a group are &quot;AND'ed&quot;."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

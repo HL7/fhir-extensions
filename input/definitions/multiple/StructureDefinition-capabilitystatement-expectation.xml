@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1049"/>
   </identifier>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="CSExpectation"/>
   <title value="CapabilityStatement Expectation"/>
   <status value="draft"/>
@@ -24,7 +24,7 @@
   <date value="2022-08-14"/>
   <publisher value="HL7"/>
   <description value="Defines the level of expectation associated with a given system capability."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
     <uri value="http://hl7.org/v2"/>

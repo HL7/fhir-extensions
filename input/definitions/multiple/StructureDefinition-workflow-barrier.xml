@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-barrier"/>
-  <version value="5.0.0-snapshot3"/>
+  <version value="5.0.0"/>
   <name value="WorkflowBarrier"/>
   <title value="Workflow Barrier"/>
   <status value="draft"/>
@@ -26,7 +26,7 @@
     </telecom>
   </contact>
   <description value="Any obstacle that limits or prevents obtaining care.  Barriers in health and social care include, but are not limited to, physical barriers, psychological barriers, physiological barriers, financial barriers, geographical barriers, cultural/language barriers and resource barriers."/>
-  <fhirVersion value="5.0.0-snapshot3"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
