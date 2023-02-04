@@ -1,0 +1,10 @@
+{
+  "item-factory" : "types",
+  "source-file" : "input/extension-type-template.md",
+  "source-var" : "%type%",
+  "generated-file-name": "extensions-%item%.md",
+  "stated-file-name": "extensions-%item%.html",
+  "parent-page" : "extension-registry.html",
+  "generation" : "markdown",
+  "page-title" : "%item% Extensions"
+}
