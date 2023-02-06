@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="_datatype"/>
+  <id value="diagnosticReport-focus"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fhir"/>
+    <valueCode value="oo"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="0"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/_datatype"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-focus"/>
   <version value="5.0.0"/>
-  <name value="_datatype"/>
-  <title value="_datatype"/>
+  <name value="DRFocus"/>
+  <title value="DiagnosticReport Delta"/>
   <status value="draft"/>
-  <experimental value="false"/>
-  <date value="2014-04-27"/>
-  <publisher value="Health Level Seven International (FHIR Infrastructure)"/>
+  <date value="2023-02-02"/>
+  <publisher value="Health Level Seven, Inc. - OO WG"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+      <value value="http://hl7.org/special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Used when the actual type is not allowed by the definition of the element. In general, this should only arise when wrangling between versions using cross-version extensions - see [Cross Version Extensions](versions.html#extensions)."/>
+  <description value="Focus of DiagnosticReport"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -36,7 +35,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Base"/>
+    <expression value="DiagnosticReport"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -44,10 +43,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Alternative datatype name (for cross version extensions)"/>
-      <definition value="Used when the actual type is not allowed by the definition of the element. In general, this should only arise when wrangling between versions using cross-version extensions - see [Cross Version Extensions](versions.html#extensions)."/>
+      <short value="Focus of DiagnosticReport"/>
+      <definition value="This is not the subject of the report, but the various focal components that make up the report (e.g., Procedure or process evaluated during a Quality inspection of a manufacturing facility)."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -55,13 +54,14 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/_datatype"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="string"/>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
     </element>
   </differential>

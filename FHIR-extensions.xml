@@ -220,6 +220,7 @@
 <artifact id="StructureDefinition/device-implantStatus" key="StructureDefinition-device-implantStatus" name="Device Implantable Status"/>
 <artifact id="StructureDefinition/devicerequest-patientInstruction" key="StructureDefinition-devicerequest-patientInstruction" name="DeviceRequest Patient Directions"/>
 <artifact id="StructureDefinition/diagnosticReport-addendumOf" key="StructureDefinition-diagnosticReport-addendumOf" name="DiagnosticReport Addendum Of"/>
+<artifact id="StructureDefinition/diagnosticReport-focus" key="StructureDefinition-diagnosticReport-focus" name="DiagnosticReport Delta"/>
 <artifact id="StructureDefinition/diagnosticReport-extends" key="StructureDefinition-diagnosticReport-extends" name="DiagnosticReport Extends"/>
 <artifact id="StructureDefinition/diagnosticReport-locationPerformed" key="StructureDefinition-diagnosticReport-locationPerformed" name="DiagnosticReport Location Performed"/>
 <artifact id="StructureDefinition/diagnosticReport-replaces" key="StructureDefinition-diagnosticReport-replaces" name="DiagnosticReport Replaces"/>
@@ -256,7 +257,6 @@
 <artifact id="StructureDefinition/flag-priority" key="StructureDefinition-flag-priority" name="Flag Priority"/>
 <artifact id="ValueSet/flag-priority" key="ValueSet-flag-priority" name="Flag Priority Codes"/>
 <artifact id="CodeSystem/flag-priority-code" key="CodeSystem-flag-priority-code" name="Flag Priority Codes"/>
-<artifact id="CodeSystem/flag-priority" key="CodeSystem-flag-priority" name="Flag Priority Codes"/>
 <artifact id="StructureDefinition/flag-detail" key="StructureDefinition-flag-detail" name="Flag details"/>
 <artifact id="ValueSet/focal-subject" key="ValueSet-focal-subject" name="Focal Subject Codes"/>
 <artifact deprecated="true" id="Bundle/single-gaps-closed-indv-report01" key="Bundle-single-gaps-closed-indv-report01" name="Gaps Bundle Closed Individual MeasureReport01"/>
@@ -443,7 +443,6 @@
 <artifact id="StructureDefinition/procedure-incisionDateTime" key="StructureDefinition-procedure-incisionDateTime" name="Procedure Incision DateTime"/>
 <artifact id="StructureDefinition/procedure-method" key="StructureDefinition-procedure-method" name="Procedure Method"/>
 <artifact id="StructureDefinition/procedure-progressStatus" key="StructureDefinition-procedure-progressStatus" name="Procedure Progress Status"/>
-<artifact id="CodeSystem/procedure-progress-status-codes" key="CodeSystem-procedure-progress-status-codes" name="Procedure Progress Status Codes"/>
 <artifact id="CodeSystem/procedure-progress-status-code" key="CodeSystem-procedure-progress-status-code" name="Procedure Progress Status Codes"/>
 <artifact id="ValueSet/procedure-progress-status-codes" key="ValueSet-procedure-progress-status-codes" name="Procedure Progress Status Codes"/>
 <artifact id="StructureDefinition/procedure-targetBodyStructure" key="StructureDefinition-procedure-targetBodyStructure" name="Procedure Target Body Structure"/>
@@ -612,7 +611,6 @@
 <artifact id="StructureDefinition/workflow-reason" key="StructureDefinition-workflow-reason" name="Workflow Reason"/>
 <artifact id="StructureDefinition/valueset-workflowStatusDescription" key="StructureDefinition-valueset-workflowStatusDescription" name="Workflow Status Description"/>
 <artifact id="StructureDefinition/rendering-xhtml" key="StructureDefinition-rendering-xhtml" name="XHTML Representation"/>
-<artifact id="StructureDefinition/_datatype" key="StructureDefinition-_datatype" name="_datatype"/>
 <artifact id="StructureDefinition/additionalIdentifier" key="StructureDefinition-additionalIdentifier" name="additional identifier"/>
 <artifact id="StructureDefinition/workflow-adheresTo" key="StructureDefinition-workflow-adheresTo" name="adheres to"/>
 <artifact id="ValueSet/codesystem-altcode-kind" key="ValueSet-codesystem-altcode-kind" name="alternative code kind"/>

@@ -14,7 +14,7 @@
   <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1360"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1489"/>
   </identifier>
   <version value="5.0.0"/>
   <name value="OOIssueSource"/>
@@ -29,8 +29,7 @@
     </telecom>
   </contact>
   <description value="Identifies the id of the source message used to construct the actual error message"/>
-  <comment value="This is the java message id of the string used as the source for the java String.format command"/>
-  <requirements value="This is typically used for sorting and filtering messages"/>
+  <purpose value="This is typically used for sorting and filtering messages"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

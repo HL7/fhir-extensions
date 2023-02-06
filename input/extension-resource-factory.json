@@ -1,9 +1,12 @@
 {
-  "item-factory" : "datatypes",
-  "source-file" : "input/extension-type-template.md",
+  "item-factory" : "resources",
+  "source-file" : "input/extension-resource-template.md",
   "variables" : [{
     "name" : "%type%",
     "transform" : "n/a"
+  }, {
+    "name" : "%ltype%",
+    "transform" : "lowercase"
   }],
   "generated-file-name": "extensions-%item%.md",
   "stated-file-name": "extensions-%item%.html",
