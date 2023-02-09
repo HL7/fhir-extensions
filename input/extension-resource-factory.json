@@ -1,6 +1,6 @@
 {
   "item-factory" : "resources",
-  "source-file" : "input/extension-resource-template.md",
+  "source-file" : "input/extension-resource-template.xml",
   "variables" : [{
     "name" : "%type%",
     "transform" : "n/a"
@@ -8,9 +8,9 @@
     "name" : "%ltype%",
     "transform" : "lowercase"
   }],
-  "generated-file-name": "extensions-%item%.md",
+  "generated-file-name": "extensions-%item%.xml",
   "stated-file-name": "extensions-%item%.html",
   "parent-page" : "extension-registry.html",
-  "generation" : "markdown",
+  "generation" : "html",
   "page-title" : "%item% Extensions"
 }
