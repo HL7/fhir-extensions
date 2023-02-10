@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="A particular element of interest in the target resource (by limited FHIRPath)"/>
       <definition value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by a FHIRPath statement. The FHIRPath expression is limited to a the [simple subset](fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed."/>
-      <comment value="This extension can be used when the target element has no explicit id associated with it. When there is an id on the telement of interest, the extension http://hl7.org/fhir/StructureDefinition/targetPath can be used since it is much simpler to implement."/>
+      <comment value="This extension can be used when the target element has no explicit id associated with it. When there is an id on the telement of interest, the extension [http://hl7.org/fhir/StructureDefinition/targetElement](StructureDefinition-targetElement.html) can be used since it is much simpler to implement."/>
       <min value="0"/>
       <max value="*"/>
     </element>

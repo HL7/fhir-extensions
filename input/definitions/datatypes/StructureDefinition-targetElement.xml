@@ -55,7 +55,7 @@
       <path value="Extension"/>
       <short value="A particular element of interest in the target resource (by id)"/>
       <definition value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by it's element id."/>
-      <comment value="This behaves similar to a '#' element on a URL, but is more wide-open than how '#' is used in Reference.reference where it is limited to pointing only to contained resources (and where the contained resource must be of the appropriate resource type for the reference).  This extension allows referring to any Element (not necessarily a resource) within the target resource provided that it has a populated 'id' element. When there is no id on the telement of interest, the extension http://hl7.org/fhir/StructureDefinition/targetPath can be used."/>
+      <comment value="This behaves similar to a '#' element on a URL, but is more wide-open than how '#' is used in Reference.reference where it is limited to pointing only to contained resources (and where the contained resource must be of the appropriate resource type for the reference).  This extension allows referring to any Element (not necessarily a resource) within the target resource provided that it has a populated 'id' element. When there is no id on the element of interest, the extension [http://hl7.org/fhir/StructureDefinition/targetPath](StructureDefinition-targetPath.html) can be used."/>
       <min value="0"/>
       <max value="*"/>
       <mapping>
