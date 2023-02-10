@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](narrative.html#security) apply. Note that using [markdown](extension-rendering-markdown.html) allows for greater flexibility of display. Like the [Resource Narrative](narrative.html), this extension may reference binary resources for image content (see note about [referencing images](narrative.html#id))"/>
+  <description value="This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](narrative.html#security) apply. Note that using [markdown](StructureDefinition-rendering-markdown.html) allows for greater flexibility of display. Like the [Resource Narrative](narrative.html), this extension may reference binary resources for image content (see note about [referencing images](narrative.html#id))"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -45,7 +45,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="String equivalent with html markup"/>
-      <definition value="This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](narrative.html#security) apply. Note that using [markdown](extension-rendering-markdown.html) allows for greater flexibility of display."/>
+      <definition value="This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](narrative.html#security) apply. Note that using [markdown](StructureDefinition-rendering-markdown.html) allows for greater flexibility of display."/>
       <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/rendering.html#rendering-xhtml)."/>
       <min value="0"/>
       <max value="1"/>

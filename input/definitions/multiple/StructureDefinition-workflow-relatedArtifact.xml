@@ -54,7 +54,7 @@
       <path value="Extension"/>
       <short value="Documentation relevant to the 'parent' resource"/>
       <definition value="Documents the 'knowledge artifacts' relevant to the base resource such as citations, supporting evidence, documentation of processes, caveats around testing methodology."/>
-      <comment value="Note that in contrast this extension, the [supportingInfo extension](extension-workflow-supportinginfo.html) references other resources *from the patient record* that were used in creating the resource."/>
+      <comment value="Note that in contrast this extension, the [supportingInfo extension](StructureDefinition-workflow-supportingInfo.html) references other resources *from the patient record* that were used in creating the resource."/>
       <min value="0"/>
       <max value="*"/>
     </element>

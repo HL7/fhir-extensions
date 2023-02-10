@@ -46,7 +46,7 @@
       <path value="Extension"/>
       <short value="Narrative Link"/>
       <definition value="A human language representation of the concept (resource/element), as a url that is a reference to a portion of the narrative of a resource ([DomainResource.text](narrative.html) or or [Composition.section.text](composition-definitions.html#Composition.section.text))."/>
-      <comment value="It's also possible to link to the resource narrative using the [originalText extension](extension-originaltext.html) which claims that the data is derived from the text provided or linked to."/>
+      <comment value="It's also possible to link to the resource narrative using the [originalText extension](StructureDefinition-originalText.html) which claims that the data is derived from the text provided or linked to."/>
       <min value="0"/>
       <max value="1"/>
     </element>

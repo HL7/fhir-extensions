@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="deprecated">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This extension is deprecated, use the [relative-date](extension-relative-date.html) extension instead"/>
+        <valueMarkdown value="This extension is deprecated, use the [relative-date](StructureDefinition-relative-date	.html) extension instead"/>
       </extension>
     </valueCode>
   </extension>
