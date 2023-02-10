@@ -1,21 +1,5 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-  <li><a href="{{ site.data.fhir.path }}/index.html">Home</a></li>
-  <li><a href="{{ site.data.fhir.path }}/modules.html">Getting Started</a></li>
-  <li><a href="{{ site.data.fhir.path }}/documentation.html">Documentation</a></li>
-  <li><a href="{{ site.data.fhir.path }}/datatypes.html">Data Types</a></li>
-  <li><a href="{{ site.data.fhir.path }}/resourcelist.html">Resource Types</a></li>
-  <li><a href="{{ site.data.fhir.path }}/terminologies-systems.html">Terminologies</a></li>
-  <li>
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts</a>
-    <ul class="dropdown-menu">
-     <li><a href="extension-registry.html">Extensions</a></li>
-     <li><a href="{{ site.data.fhir.path }}/operationslist.html">Operations</a></li>
-     <li><a href="{{ site.data.fhir.path }}/patterns.html">Patterns</a></li>
-     <li><a href="{{ site.data.fhir.path }}/profilelist.html">Profiles</a></li>
-     <li><a href="{{ site.data.fhir.path }}/searchparameter-registry.html">Search Parameters</a></li>
-     <li><hr/></li>
-     <li><a href="http://registry.fhir.org/">Artifact Registrys</a></li>
-    </ul>      
-  </li>
-  <li><a href="http://fhir.org/guides/registry">Implementation Guides</a></li>
+  <li><a href="toc.html">Contents</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="artifacts.html">Artifact List</a></li>
 </ul>      
