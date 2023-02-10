@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="coding-conformance"/>
+  <id value="coding-purpose"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/coding-conformance"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/coding-purpose"/>
   <version value="5.0.0"/>
-  <name value="CodingConformance"/>
-  <title value="Coding Conformance"/>
+  <name value="CodingPurpose"/>
+  <title value="Coding Purpose"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
@@ -25,7 +25,7 @@
       <value value="http://hl7.org/special/committees/FHIR"/>
     </telecom>
   </contact>
-  <description value="Declares a profile that required the specific coding to be included in a list of Codings because of the binding. This allows reading applications to identify particular codings without processing the systems."/>
+  <description value="A reason that this coding is present."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
@@ -49,8 +49,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="A profile that required the specific coding to be included in a list of Codings"/>
-      <definition value="Declares a profile that required the specific coding to be included in a list of Codings because of the binding. This allows reading applications to identify particular codings without processing the systems."/>
+      <short value="A reason that this coding is present"/>
+      <definition value="Provides a reason that the coding is present in a list of codings. This may help a consuming application choose which coding to use."/>
+      <comment value="See also the [coding-purpose extension](StructureDefinition-coding-purpose.html)"/>
       <min value="0"/>
       <max value="*"/>
       <mapping>
@@ -68,15 +69,18 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/coding-conformance"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/coding-purpose"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+        <code value="Coding"/>
       </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/coding-purpose"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

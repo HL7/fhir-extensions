@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="coding-purpose"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <url value="http://hl7.org/fhir/coding-purpose"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.4.2112"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="CodingPurposeCS"/>
+  <title value="Coding Purpose Code System"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-01-31T07:07:38+11:00"/>
+  <description value="The reason a coding is present."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/coding-purpose"/>
+  <content value="complete"/>
+  <concept>
+    <code value="original"/>
+    <display value="Original Code"/>
+    <definition value="Originally produced/selected code."/>
+  </concept>
+  <concept>
+    <code value="post-coded"/>
+    <display value="Post Coded"/>
+    <definition value="Post-coded from free text source (either by Human or AI)."/>
+  </concept>
+  <concept>
+    <code value="translated"/>
+    <display value="Translated"/>
+    <definition value="Translated from the source code (e.g. by table or terminology service)."/>
+  </concept>
+  <concept>
+    <code value="conformance"/>
+    <display value="Conformance"/>
+    <definition value="Required to be present by one or more interface/messaging specifications."/>
+    <concept>
+      <code value="conformance-fhir"/>
+      <display value="Conformance (FHIR)"/>
+      <definition value="Required to be present by the base FHIR specifications."/>
+    </concept>
+    <concept>
+      <code value="conformance-national"/>
+      <display value="Conformance (National Spec)"/>
+      <definition value="Required to be present by a national specification (usually the base/core FHIR profile for the jurisdiction)."/>
+    </concept>
+    <concept>
+      <code value="conformance-business"/>
+      <display value="Conformance (Business Spec)"/>
+      <definition value="Required to be present by an applicable business specifications (e.g. DaVinci, mCode, WHO IGs)."/>
+    </concept>
+  </concept>
+</CodeSystem>
