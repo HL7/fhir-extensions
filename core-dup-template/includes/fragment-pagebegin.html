@@ -27,7 +27,7 @@
 
   <link rel="stylesheet" href="fhir.css"/>
   <link rel="stylesheet" href="fhir-pub.css"/>
-  <link rel="Prev" href="{{resourceName | lowerCase}}.html"/>
+  <link rel="Prev" href="{{resourceName | downcase}}.html"/>
 
     <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="dist/css/bootstrap.css"/>
@@ -114,7 +114,7 @@
 	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
 		<div class="container">  <!-- container -->	
 			<ul class="breadcrumb">
-        <li><a no-external="true" href="{{site.data.fhir.path}}{{modulePath}}"><img src="{{site.data.fhir.path}}{{moduleImage}}" alt="link"/> {{moduleName}}</a></li><li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | lowerCase}}.html">{{resourceName}}</a></li><li><b>Extensions</b></li>
+        <li><a no-external="true" href="{{site.data.fhir.path}}{{modulePath}}"><img src="{{site.data.fhir.path}}{{moduleImage}}" alt="link"/> {{moduleName}}</a></li><li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li><li><b>Extensions</b></li>
 
 			</ul>	
 		</div>  <!-- /container -->
