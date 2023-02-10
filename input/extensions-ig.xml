@@ -34,30 +34,35 @@
       <title value="Home Page"/>
       <generation value="html"/>
       <page>
+        <sourceUrl value="obligations.html"/>
+        <name value="obligations.html"/>
+        <title value="Obligations Documentation"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <sourceUrl value="extension-registry.html"/>
         <name value="extension-registry.html"/>
         <title value="Extension Registry"/>
         <generation value="markdown"/>
+        <page>
+          <sourceUrl value="extensions-datatypes.html"/>
+          <name value="extensions-datatypes.html"/>
+          <title value="Datatype Extensions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="extensions-Path.html"/>
+          <name value="extensions-Path.html"/>
+          <title value="Path Extensions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="extensions-multiple.html"/>
+          <name value="extensions-multiple.html"/>
+          <title value="Extensions that have multiple contexts"/>
+          <generation value="markdown"/>
+        </page>
       </page>
-      <page>
-        <sourceUrl value="extensions-datatypes.html"/>
-        <name value="extensions-datatypes.html"/>
-        <title value="Datatype Extensions"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <sourceUrl value="extensions-Path.html"/>
-        <name value="extensions-Path.html"/>
-        <title value="Path Extensions"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <sourceUrl value="extensions-multiple.html"/>
-        <name value="extensions-multiple.html"/>
-        <title value="Extensions that have multiple contexts"/>
-        <generation value="markdown"/>
-      </page>
-
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>

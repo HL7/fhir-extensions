@@ -55,6 +55,7 @@
 <artifact id="ValueSet/allerg-intol-substance-exp-risk" key="ValueSet-allerg-intol-substance-exp-risk" name="AllergyIntolerance substance exposure risk"/>
 <artifact id="StructureDefinition/elementdefinition-allowedUnits" key="StructureDefinition-elementdefinition-allowedUnits" name="Allowed Units"/>
 <artifact id="StructureDefinition/alternate-canonical" key="StructureDefinition-alternate-canonical" name="Alternate Canonical"/>
+<artifact id="StructureDefinition/alternate-codes" key="StructureDefinition-alternate-codes" name="Alternate Codes"/>
 <artifact id="StructureDefinition/alternate-reference" key="StructureDefinition-alternate-reference" name="Alternate Reference"/>
 <artifact id="StructureDefinition/cqf-alternativeExpression" key="StructureDefinition-cqf-alternativeExpression" name="Alternative expression"/>
 <artifact id="StructureDefinition/artifact-author" key="StructureDefinition-artifact-author" name="Artifact Author"/>
@@ -362,6 +363,9 @@
 <artifact id="StructureDefinition/nutritionorder-adaptiveFeedingDevice" key="StructureDefinition-nutritionorder-adaptiveFeedingDevice" name="NutritionOrder Adaptive Feeding Device"/>
 <artifact id="StructureDefinition/oauth-uris" key="StructureDefinition-oauth-uris" name="OAuth URIs"/>
 <artifact id="ValueSet/object-lifecycle-events" key="ValueSet-object-lifecycle-events" name="ObjectLifecycleEvents"/>
+<artifact id="StructureDefinition/obligation" key="StructureDefinition-obligation" name="Obligation"/>
+<artifact id="CodeSystem/obligation" key="CodeSystem-obligation" name="Obligation Codes"/>
+<artifact id="ValueSet/obligation" key="ValueSet-obligation" name="Obligation Codes ValueSet"/>
 <artifact id="StructureDefinition/observation-bodyPosition" key="StructureDefinition-observation-bodyPosition" name="Observation Body Position"/>
 <artifact id="StructureDefinition/observation-delta" key="StructureDefinition-observation-delta" name="Observation Delta"/>
 <artifact id="StructureDefinition/observation-deviceCode" key="StructureDefinition-observation-deviceCode" name="Observation Device Code"/>
@@ -864,6 +868,7 @@
 <page key="extensions-NutritionIntake" name="NutritionIntake Extensions"/>
 <page key="extensions-NutritionOrder" name="NutritionOrder Extensions"/>
 <page key="extensions-NutritionProduct" name="NutritionProduct Extensions"/>
+<page key="obligations" name="Obligations Documentation"/>
 <page key="extensions-Observation" name="Observation Extensions"/>
 <page key="extensions-ObservationDefinition" name="ObservationDefinition Extensions"/>
 <page key="extensions-OperationDefinition" name="OperationDefinition Extensions"/>

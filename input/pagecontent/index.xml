@@ -10,7 +10,7 @@
 	<a name="topics"> </a>
 	<h3>Additional Documentation</h3>
 	<ul>
-    <li><a href="binary.html">Providing Binary files in native formats</a></li>
+    <li><a href="obligations.html">Application Obligations</a></li>
     <li><a href="format-extensions.html">Extensions that control formats</a></li>
     <li><a href="other.html">Supporting Documentation</a></li>
   </ul>
