@@ -67,12 +67,12 @@
 		<concept>
 			<code value="table"/>
 			<display value="Vertical Answer Table"/>
-			<definition value="Questions within the group are rows in the table with possible answers as columns.  Used for 'choice' questions."/>
+			<definition value="Questions within the group are rows in the table with possible answers as columns.  Used for 'choice' questions.  The questions within a group marked with this controlType SHALL provide an enumerated list of options and SHOULD refer to the same set of options, same value set or same expression.  In the case of a 'sparse' table where some options aren't available for some questions, the order of the answers in the table is not defined and some rendering tools may refuse to display the group as a table."/>
 		</concept>
 		<concept>
 			<code value="htable"/>
 			<display value="Horizontal Answer Table"/>
-			<definition value="Questions within the group are columns in the table with possible answers as rows.  Used for 'choice' questions."/>
+			<definition value="Questions within the group are columns in the table with possible answers as rows.  Used for 'choice' questions.  The questions within a group marked with this controlType SHALL provide an enumerated list of options and SHOULD refer to the same set of options, same value set or same expression.  In the case of a 'sparse' table where some options aren't available for some questions, the order of the answers in the table is not defined and some rendering tools may refuse to display the group as a table."/>
 		</concept>
 		<concept>
 			<code value="gtable"/>
