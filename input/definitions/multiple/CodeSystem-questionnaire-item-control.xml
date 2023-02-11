@@ -40,6 +40,18 @@
 		<description value="True if an element is considered 'abstract' - that is the code is not for use as a real concept"/>
 		<type value="boolean"/>
 	</property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="A property that indicates the status of the concept. One of active, experimental, deprecated, or retired."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="deprecationDate"/>
+    <uri value="http://hl7.org/fhir/concept-properties#deprecationDate"/>
+    <description value="The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged."/>
+    <type value="dateTime"/>
+  </property>
 	<concept>
 		<code value="group"/>
 		<definition value="UI controls relevant to organizing groups of questions"/>
@@ -108,7 +120,15 @@
 		<concept>
 			<code value="unit"/>
 			<display value="Unit"/>
-			<definition value="Display item is rendered adjacent (horizontally or vertically) to the answer space for the parent question, typically to indicate a unit of measure"/>
+			<definition value="Display item is rendered adjacent (horizontally or vertically) to the answer space for the parent question, typically to indicate a unit of measure.  **Deprecation Note** - The display element of the [questionnaire-unit](https://build.fhir.org/ig/HL7/fhir-extensions/extensions-Questionnaire.html) should be used instead."/>
+			<property>
+        <code value="status"/>
+        <valueCode value="deprecated"/>
+      </property>
+			<property>
+        <code value="deprecationDate"/>
+        <valueDateTime value="2022-09-08"/>
+      </property>
 		</concept>
 		<concept>
 			<code value="lower"/>
