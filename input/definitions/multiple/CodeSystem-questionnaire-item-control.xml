@@ -118,6 +118,19 @@
 			<definition value="Display item is rendered as a paragraph in a sequential position between sibling items (default behavior)"/>
 		</concept>
 		<concept>
+      <code value="prompt"/>
+      <display value="Prompt"/>
+      <definition value="Text is displayed immediately below or within the answer-entry area of the containing question item (typically as a guide for what to enter).  **Deprecation Note** - Use the [entryFormat](https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-entryFormat.html) extension instead."/>
+			<property>
+        <code value="status"/>
+        <valueCode value="deprecated"/>
+      </property>
+			<property>
+        <code value="deprecationDate"/>
+        <valueDateTime value="2019-10-03"/>
+      </property>
+    </concept>
+		<concept>
 			<code value="unit"/>
 			<display value="Unit"/>
 			<definition value="Display item is rendered adjacent (horizontally or vertically) to the answer space for the parent question, typically to indicate a unit of measure.  **Deprecation Note** - The display element of the [questionnaire-unit](https://build.fhir.org/ig/HL7/fhir-extensions/extensions-Questionnaire.html) should be used instead."/>
