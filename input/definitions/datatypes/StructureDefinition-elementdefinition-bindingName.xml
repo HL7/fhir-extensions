@@ -38,6 +38,10 @@
     <type value="element"/>
     <expression value="ElementDefinition.binding"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter.binding"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
