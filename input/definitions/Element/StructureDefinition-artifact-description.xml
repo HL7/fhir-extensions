@@ -26,6 +26,7 @@
     </telecom>
   </contact>
   <description value="A free text natural language description of the {{title}} from a consumer's perspective."/>
+  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
