@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="cqf-cqlOptions"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cds"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/cqf-cqlOptions"/>
+  <version value="5.0.0"/>
+  <name value="CQFCQLOptions"/>
+  <title value="CQF CQL Options"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2020-12-28T16:55:11+11:00"/>
+  <publisher value="HL7"/>
+  <description value="Specifies a parameters (contained) resource that identifies the options for the CQL-to-ELM translator associated with the CQL content."/>
+  <purpose value="Because CQL-to-ELM translator options may impact the translation of CQL source libraries, authoring, distribution, and evaluation environments need to know what options the CQL was built with."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Library"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="What options"/>
+      <definition value="Specifies a parameters (contained) resource that identifies the options for the CQL-to-ELM translator associated with the CQL content."/>
+      <comment value="When this extension is used with a specific CQL library, it indicates the options that are to be used to translate the CQL to ELM. ELM Libraries carry the options they were translated with, so this does not need to be specified. If the options are not specified, the translation options identified [here](https://build.fhir.org/ig/HL7/crmi-ig/using-cql.html#translation-to-elm) are used."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/cqf-cqlOptions"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
