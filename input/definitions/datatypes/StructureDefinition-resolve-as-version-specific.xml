@@ -38,6 +38,14 @@
     <type value="element"/>
     <expression value="Reference"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="uri"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="url"/>
+  </context>  
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
