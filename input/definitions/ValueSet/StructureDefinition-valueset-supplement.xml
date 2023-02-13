@@ -43,7 +43,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Declares dependency on a particular supplment"/>
-      <definition value="This extension declares that a value set depends on a particular supplement and should not be used in its absence."/>
+      <definition value="This extension declares that a value set depends on a particular [CodeSystem supplement](codesystem.html#supplements) and should not be used in its absence."/>
       <min value="0"/>
       <max value="*"/>
       <isModifier value="false"/>
