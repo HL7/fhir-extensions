@@ -34,12 +34,6 @@
       <title value="Home Page"/>
       <generation value="html"/>
       <page>
-        <sourceUrl value="obligations.html"/>
-        <name value="obligations.html"/>
-        <title value="Obligations Documentation"/>
-        <generation value="html"/>
-      </page>
-      <page>
         <sourceUrl value="extension-registry.html"/>
         <name value="extension-registry.html"/>
         <title value="Extension Registry"/>
@@ -63,6 +57,13 @@
           <generation value="markdown"/>
         </page>
       </page>
+      <page>
+        <sourceUrl value="search-params.xml"/>
+        <name value="search-params.html"/>
+        <title value="Extension Search Registry"/>
+        <generation value="html"/>
+      </page>
+
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>

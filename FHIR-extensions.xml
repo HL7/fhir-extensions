@@ -115,6 +115,9 @@
 <artifact id="StructureDefinition/capabilitystatement-declared-profile" key="StructureDefinition-capabilitystatement-declared-profile" name="CapabilityStatement Declared Profile"/>
 <artifact id="StructureDefinition/capabilitystatement-expectation" key="StructureDefinition-capabilitystatement-expectation" name="CapabilityStatement Expectation"/>
 <artifact id="StructureDefinition/capabilitystatement-prohibited" key="StructureDefinition-capabilitystatement-prohibited" name="CapabilityStatement Prohibition"/>
+<artifact id="StructureDefinition/capabilitystatement-search-mode" key="StructureDefinition-capabilitystatement-search-mode" name="CapabilityStatement Search Mode"/>
+<artifact id="CodeSystem/capabilitystatement-search-mode" key="CodeSystem-capabilitystatement-search-mode" name="CapabilityStatement Search Mode CodeSystem"/>
+<artifact id="ValueSet/capabilitystatement-search-mode" key="ValueSet-capabilitystatement-search-mode" name="CapabilityStatement Search Mode ValueSet"/>
 <artifact id="StructureDefinition/capabilitystatement-search-parameter-combination" key="StructureDefinition-capabilitystatement-search-parameter-combination" name="CapabilityStatement Search Parameter Combination"/>
 <artifact id="StructureDefinition/capabilitystatement-search-parameter-use" key="StructureDefinition-capabilitystatement-search-parameter-use" name="CapabilityStatement Search Parameter Use"/>
 <artifact id="StructureDefinition/capabilitystatement-supported-system" key="StructureDefinition-capabilitystatement-supported-system" name="CapabilityStatement Supported CodeSystem"/>
@@ -504,6 +507,7 @@
 <artifact deprecated="true" id="CapabilityStatement/reporter-client" key="CapabilityStatement-reporter-client" name="Reporter Client CapabilityStatement"/>
 <artifact id="StructureDefinition/request-insurance" key="StructureDefinition-request-insurance" name="Request Insurance"/>
 <artifact id="StructureDefinition/request-replaces" key="StructureDefinition-request-replaces" name="Request Replaces"/>
+<artifact id="SearchParameter/workflow-researchStudy" key="SearchParameter-workflow-researchStudy" name="Research Study SearchParameter"/>
 <artifact id="StructureDefinition/researchStudy-siteRecruitment" key="StructureDefinition-researchStudy-siteRecruitment" name="ResearchStudy Site Recruitment"/>
 <artifact id="StructureDefinition/researchStudy-studyRegistration" key="StructureDefinition-researchStudy-studyRegistration" name="ResearchStudy Study Registration"/>
 <artifact id="ValueSet/research-study-registration-activity" key="ValueSet-research-study-registration-activity" name="ResearchStudyRegistrationActivity"/>
@@ -830,6 +834,7 @@
 <page key="extensions-ExtendedContactDetail" name="ExtendedContactDetail Extensions"/>
 <page key="extensions-Extension" name="Extension Extensions"/>
 <page key="extension-registry" name="Extension Registry"/>
+<page key="" name="Extension Search Registry"/>
 <page key="extensions-multiple" name="Extensions that have multiple contexts"/>
 <page key="extensions-FamilyMemberHistory" name="FamilyMemberHistory Extensions"/>
 <page key="extensions-Flag" name="Flag Extensions"/>
@@ -886,7 +891,6 @@
 <page key="extensions-NutritionIntake" name="NutritionIntake Extensions"/>
 <page key="extensions-NutritionOrder" name="NutritionOrder Extensions"/>
 <page key="extensions-NutritionProduct" name="NutritionProduct Extensions"/>
-<page key="obligations" name="Obligations Documentation"/>
 <page key="extensions-Observation" name="Observation Extensions"/>
 <page key="extensions-ObservationDefinition" name="ObservationDefinition Extensions"/>
 <page key="extensions-OperationDefinition" name="OperationDefinition Extensions"/>
