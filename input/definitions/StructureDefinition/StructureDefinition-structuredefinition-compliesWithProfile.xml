@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="structuredefinition-dependencies"/>
+  <id value="structuredefinition-compliesWithProfile"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -11,14 +11,14 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/structuredefinition-dependencies"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1038"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="SDDependencies"/>
-  <title value="StructureDefinition Dependent Profiles"/>
+  <name value="SDcompliesWithProfile"/>
+  <title value="StructureDefinition Compiles With Profile"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
@@ -29,7 +29,7 @@
       <value value="http://hl7.org/special/committees/FHIR"/>
     </telecom>
   </contact>
-  <description value="Instances can only be valid against this StructureDefinition, if they also sucessfully validate against the dependent profile identified in this extension."/>
+  <description value="Asserts that instances that are valid against this profile are also automatically valid against the StructureDefinition referenced by this extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,8 +49,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Dependent Profiles - must be valid against these too"/>
-      <definition value="Instances can only be valid against this StructureDefinition, if they also sucessfully validate against the dependent profile identified in this extension."/>
-      <comment value="Ideally, a profile will restate the constraints of it's base profile and all it's dependent profiles, but this can get pretty complicated once slicing enters the picture. Tools SHOULD not assume that this profile includes all the constraints from the dependent profile."/>
+      <definition value="Asserts that instances that are valid against this profile are also automatically valid against the StructureDefinition referenced by this extension."/>
+      <comment value="This is a claim that instances that comply with the profile containing this extension also comply with the profile it refers to. Note that this claim may not be true if it is tested."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -60,7 +60,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/structuredefinition-dependencies"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
