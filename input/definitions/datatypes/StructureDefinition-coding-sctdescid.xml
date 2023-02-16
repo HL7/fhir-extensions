@@ -43,6 +43,14 @@
     <type value="element"/>
     <expression value="Coding"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="CodeSystem.concept.designation"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.expansion.contains.designation"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
