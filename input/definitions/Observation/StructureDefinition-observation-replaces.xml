@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="Replaces referenced Observation"/>
       <definition value="This observation replaces a previous observation (i.e. a revised value)."/>
-      <comment value="This is an alternative to updating the Observation with a new version with status = 'amended'or 'corrected'.  The target observation is now obsolete."/>
+      <comment value="This is an alternative to updating the Observation with a new version with status = 'amended'or 'corrected'. The implementer must consider the appropriate status to indicate that the replaced Observation is obsolete and also add that the notion of replacement and status are independent as to when one and/or the other can occur and driven by the use case context."/>
       <min value="0"/>
       <max value="*"/>
     </element>
