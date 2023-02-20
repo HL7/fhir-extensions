@@ -48,6 +48,10 @@
     <type value="element"/>
     <expression value="Practitioner"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="PractitionerRole"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
