@@ -94,42 +94,6 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
       </binding>
     </element>
-    <element id="Extension.extension:internationalEquivalent">
-      <path value="Extension.extension"/>
-      <sliceName value="internationalEquivalent"/>
-      <short value="An international representation of the value found on the document"/>
-      <definition value="An international representation of the value found on the document for interoperability and international legal purposes."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    <element id="Extension.extension:internationalEquivalent.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:internationalEquivalent.url">
-      <path value="Extension.extension.url"/>
-      <type>
-        <code value="uri"/>
-      </type>
-      <fixedUri value="internationalEquivalent"/>
-    </element>
-    <element id="Extension.extension:internationalEquivalent.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="recordedSexOrGenderInternationalEquivilent"/>
-        </extension>
-        <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/international-civil-aviation-organization-sex-or-gender"/>
-      </binding>
-    </element>
     <element id="Extension.extension:type">
       <path value="Extension.extension"/>
       <sliceName value="type"/>
