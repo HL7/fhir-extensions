@@ -38,8 +38,8 @@
         <display value="Sex assigned at birth"/>
       </concept>
       <concept>
-        <code value="76691-5"/>
-        <display value="Gender identity"/>
+        <code value="74698-2"/>
+        <display value="Sex [AHRQ]"/>
       </concept>
     </include>
   </compose>
