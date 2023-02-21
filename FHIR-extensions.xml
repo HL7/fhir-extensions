@@ -70,8 +70,8 @@
 <artifact id="StructureDefinition/artifact-topic" key="StructureDefinition-artifact-topic" name="Artifact Topic"/>
 <artifact id="StructureDefinition/artifact-url" key="StructureDefinition-artifact-url" name="Artifact URL"/>
 <artifact id="StructureDefinition/artifact-versionAlgorithm" key="StructureDefinition-artifact-versionAlgorithm" name="Artifact Version Algorithm"/>
-<artifact id="ValueSet/artifact-comment-type" key="ValueSet-artifact-comment-type" name="Artifact comment type"/>
 <artifact id="CodeSystem/artifact-comment-type" key="CodeSystem-artifact-comment-type" name="Artifact comment type"/>
+<artifact id="ValueSet/artifact-comment-type" key="ValueSet-artifact-comment-type" name="Artifact comment type"/>
 <artifact id="StructureDefinition/artifact-relatedArtifact" key="StructureDefinition-artifact-relatedArtifact" name="Artifact related artifact"/>
 <artifact id="StructureDefinition/artifact-useContext" key="StructureDefinition-artifact-useContext" name="Artifact use context"/>
 <artifact id="StructureDefinition/artifact-name" key="StructureDefinition-artifact-name" name="ArtifactName"/>
@@ -87,6 +87,7 @@
 <artifact id="StructureDefinition/auditevent-NumberOfInstances" key="StructureDefinition-auditevent-NumberOfInstances" name="AuditEvent Number Of Instances"/>
 <artifact id="StructureDefinition/auditevent-ParticipantObjectContainsStudy" key="StructureDefinition-auditevent-ParticipantObjectContainsStudy" name="AuditEvent Participant Object Contains Study"/>
 <artifact id="StructureDefinition/auditevent-SOPClass" key="StructureDefinition-auditevent-SOPClass" name="AuditEvent SOPClass"/>
+<artifact id="StructureDefinition/auditevent-OnBehalfOf" key="StructureDefinition-auditevent-OnBehalfOf" name="AuditEvent agent OnBehalfOf"/>
 <artifact id="ValueSet/barrier" key="ValueSet-barrier" name="Barrier"/>
 <artifact id="StructureDefinition/elementdefinition-bestpractice" key="StructureDefinition-elementdefinition-bestpractice" name="Best Practice"/>
 <artifact id="StructureDefinition/elementdefinition-bestpractice-explanation" key="StructureDefinition-elementdefinition-bestpractice-explanation" name="Best Practice Explanation"/>
@@ -176,8 +177,8 @@
 <artifact id="StructureDefinition/contactpoint-local" key="StructureDefinition-contactpoint-local" name="ContactPoint Local"/>
 <artifact id="StructureDefinition/cqf-contributionTime" key="StructureDefinition-cqf-contributionTime" name="Contribution time"/>
 <artifact id="StructureDefinition/data-absent-reason" key="StructureDefinition-data-absent-reason" name="Data Absent Reason"/>
-<artifact id="ValueSet/dataelement-sdcobjectclassproperty" key="ValueSet-dataelement-sdcobjectclassproperty" name="DataElement SDC Object Class"/>
 <artifact id="ValueSet/dataelement-sdcobjectclass" key="ValueSet-dataelement-sdcobjectclass" name="DataElement SDC Object Class"/>
+<artifact id="ValueSet/dataelement-sdcobjectclassproperty" key="ValueSet-dataelement-sdcobjectclassproperty" name="DataElement SDC Object Class"/>
 <artifact id="StructureDefinition/datatype" key="StructureDefinition-datatype" name="Datatype"/>
 <artifact id="StructureDefinition/elementdefinition-defaulttype" key="StructureDefinition-elementdefinition-defaulttype" name="Default Type"/>
 <artifact id="StructureDefinition/designNote" key="StructureDefinition-designNote" name="Design Note"/>
@@ -213,12 +214,12 @@
 <artifact id="StructureDefinition/family-member-history-genetics-sibling" key="StructureDefinition-family-member-history-genetics-sibling" name="FamilyMemberHistory Sibling"/>
 <artifact id="StructureDefinition/familymemberhistory-type" key="StructureDefinition-familymemberhistory-type" name="FamilyMemberHistory Type"/>
 <artifact id="StructureDefinition/humanname-fathers-family" key="StructureDefinition-humanname-fathers-family" name="Fathers Family"/>
-<artifact id="ValueSet/feeding-device" key="ValueSet-feeding-device" name="Feeding Device Codes"/>
 <artifact id="CodeSystem/feeding-device" key="CodeSystem-feeding-device" name="Feeding Device Codes"/>
+<artifact id="ValueSet/feeding-device" key="ValueSet-feeding-device" name="Feeding Device Codes"/>
 <artifact id="StructureDefinition/firstCreated" key="StructureDefinition-firstCreated" name="First created"/>
 <artifact id="StructureDefinition/flag-priority" key="StructureDefinition-flag-priority" name="Flag Priority"/>
-<artifact id="ValueSet/flag-priority" key="ValueSet-flag-priority" name="Flag Priority Codes"/>
 <artifact id="CodeSystem/flag-priority-code" key="CodeSystem-flag-priority-code" name="Flag Priority Codes"/>
+<artifact id="ValueSet/flag-priority" key="ValueSet-flag-priority" name="Flag Priority Codes"/>
 <artifact id="StructureDefinition/flag-detail" key="StructureDefinition-flag-detail" name="Flag details"/>
 <artifact id="ValueSet/focal-subject" key="ValueSet-focal-subject" name="Focal Subject Codes"/>
 <artifact id="CodeSystem/secondary-finding" key="CodeSystem-secondary-finding" name="Genetic Observation Secondary Findings"/>
@@ -239,8 +240,8 @@
 <artifact id="StructureDefinition/implementationguide-sourceFile" key="StructureDefinition-implementationguide-sourceFile" name="ImplementationGuide Source File"/>
 <artifact id="StructureDefinition/individual-genderIdentity" key="StructureDefinition-individual-genderIdentity" name="Individual Gender Identity"/>
 <artifact id="StructureDefinition/individual-pronouns" key="StructureDefinition-individual-pronouns" name="Individual Pronouns"/>
-<artifact id="ValueSet/inheritance-control-code" key="ValueSet-inheritance-control-code" name="Inheritance Control Codes"/>
 <artifact id="CodeSystem/inheritance-control-code" key="CodeSystem-inheritance-control-code" name="Inheritance Control Codes"/>
+<artifact id="ValueSet/inheritance-control-code" key="ValueSet-inheritance-control-code" name="Inheritance Control Codes"/>
 <artifact id="StructureDefinition/elementdefinition-inheritedExtensibleValueSet" key="StructureDefinition-elementdefinition-inheritedExtensibleValueSet" name="Inherited extensible value set"/>
 <artifact id="StructureDefinition/elementdefinition-isCommonBinding" key="StructureDefinition-elementdefinition-isCommonBinding" name="Is common binding"/>
 <artifact id="StructureDefinition/cqf-isPrefetchToken" key="StructureDefinition-cqf-isPrefetchToken" name="Is prefetch token"/>
@@ -308,6 +309,7 @@
 <artifact id="StructureDefinition/patient-animal" key="StructureDefinition-patient-animal" name="Patient Animal"/>
 <artifact id="StructureDefinition/patient-birthPlace" key="StructureDefinition-patient-birthPlace" name="Patient Birth Place"/>
 <artifact id="StructureDefinition/patient-birthTime" key="StructureDefinition-patient-birthTime" name="Patient Birth Time"/>
+<artifact id="StructureDefinition/patient-bornStatus" key="StructureDefinition-patient-bornStatus" name="Patient Born Status"/>
 <artifact id="StructureDefinition/patient-citizenship" key="StructureDefinition-patient-citizenship" name="Patient Citizenship"/>
 <artifact id="StructureDefinition/patient-congregation" key="StructureDefinition-patient-congregation" name="Patient Congregation"/>
 <artifact id="StructureDefinition/patient-disability" key="StructureDefinition-patient-disability" name="Patient Disability"/>
@@ -357,8 +359,8 @@
 <artifact id="StructureDefinition/questionnaire-fhirType" key="StructureDefinition-questionnaire-fhirType" name="Questionnaire FHIR Type"/>
 <artifact id="StructureDefinition/questionnaire-hidden" key="StructureDefinition-questionnaire-hidden" name="Questionnaire Hidden"/>
 <artifact id="StructureDefinition/questionnaire-itemControl" key="StructureDefinition-questionnaire-itemControl" name="Questionnaire Item Control"/>
-<artifact id="ValueSet/questionnaire-item-control" key="ValueSet-questionnaire-item-control" name="Questionnaire Item UI Control Codes"/>
 <artifact id="CodeSystem/questionnaire-item-control" key="CodeSystem-questionnaire-item-control" name="Questionnaire Item UI Control Codes"/>
+<artifact id="ValueSet/questionnaire-item-control" key="ValueSet-questionnaire-item-control" name="Questionnaire Item UI Control Codes"/>
 <artifact id="StructureDefinition/questionnaire-maxOccurs" key="StructureDefinition-questionnaire-maxOccurs" name="Questionnaire Max Occurs"/>
 <artifact id="StructureDefinition/questionnaire-minOccurs" key="StructureDefinition-questionnaire-minOccurs" name="Questionnaire Min Occurs"/>
 <artifact id="StructureDefinition/questionnaire-optionExclusive" key="StructureDefinition-questionnaire-optionExclusive" name="Questionnaire Option Exclusive"/>
@@ -450,8 +452,8 @@
 <artifact id="StructureDefinition/timing-dayOfMonth" key="StructureDefinition-timing-dayOfMonth" name="Timing day of month"/>
 <artifact id="StructureDefinition/elementdefinition-translatable" key="StructureDefinition-elementdefinition-translatable" name="Translatable"/>
 <artifact id="StructureDefinition/translation" key="StructureDefinition-translation" name="Translation"/>
-<artifact id="ValueSet/type-characteristics-code" key="ValueSet-type-characteristics-code" name="Type Characteristic Codes"/>
 <artifact id="CodeSystem/type-characteristics-code" key="CodeSystem-type-characteristics-code" name="Type Characteristic Codes"/>
+<artifact id="ValueSet/type-characteristics-code" key="ValueSet-type-characteristics-code" name="Type Characteristic Codes"/>
 <artifact id="StructureDefinition/elementdefinition-type-must-support" key="StructureDefinition-elementdefinition-type-must-support" name="Type must support"/>
 <artifact id="StructureDefinition/timing-uncertainDate" key="StructureDefinition-timing-uncertainDate" name="Uncertain date"/>
 <artifact id="StructureDefinition/uncertainPeriod" key="StructureDefinition-uncertainPeriod" name="Uncertain period"/>
@@ -498,8 +500,8 @@
 <artifact id="StructureDefinition/additionalIdentifier" key="StructureDefinition-additionalIdentifier" name="additional identifier"/>
 <artifact id="StructureDefinition/workflow-adheresTo" key="StructureDefinition-workflow-adheresTo" name="adheres to"/>
 <artifact id="SearchParameter/patient-extensions-Patient-age" key="SearchParameter-patient-extensions-Patient-age" name="age"/>
-<artifact id="ValueSet/codesystem-altcode-kind" key="ValueSet-codesystem-altcode-kind" name="alternative code kind"/>
 <artifact id="CodeSystem/codesystem-altcode-kind" key="CodeSystem-codesystem-altcode-kind" name="alternative code kind"/>
+<artifact id="ValueSet/codesystem-altcode-kind" key="ValueSet-codesystem-altcode-kind" name="alternative code kind"/>
 <artifact id="ValueSet/animal-breeds" key="ValueSet-animal-breeds" name="animal breeds"/>
 <artifact id="ValueSet/animal-species" key="ValueSet-animal-species" name="animal species"/>
 <artifact id="StructureDefinition/cqf-artifactComment" key="StructureDefinition-cqf-artifactComment" name="artifact comment"/>
@@ -507,6 +509,8 @@
 <artifact id="SearchParameter/valueset-extensions-ValueSet-author" key="SearchParameter-valueset-extensions-ValueSet-author" name="author"/>
 <artifact id="StructureDefinition/event-basedOn" key="StructureDefinition-event-basedOn" name="based on"/>
 <artifact id="SearchParameter/patient-extensions-Patient-birthOrderBoolean" key="SearchParameter-patient-extensions-Patient-birthOrderBoolean" name="birth Order Boolean"/>
+<artifact id="CodeSystem/patient-bornstatus" key="CodeSystem-patient-bornstatus" name="born status"/>
+<artifact id="ValueSet/patient-bornstatus" key="ValueSet-patient-bornstatus" name="born status"/>
 <artifact id="StructureDefinition/cqf-calculatedValue" key="StructureDefinition-cqf-calculatedValue" name="calculated value"/>
 <artifact id="StructureDefinition/cqf-cdsHooksEndpoint" key="StructureDefinition-cqf-cdsHooksEndpoint" name="cds hooks endpoint"/>
 <artifact id="CodeSystem/choice-list-orientation" key="CodeSystem-choice-list-orientation" name="choice list orientation"/>
@@ -531,8 +535,8 @@
 <artifact id="CodeSystem/expansion-parameter-source" key="CodeSystem-expansion-parameter-source" name="expansion parameter source"/>
 <artifact id="ValueSet/expansion-parameter-source" key="ValueSet-expansion-parameter-source" name="expansion parameter source"/>
 <artifact id="StructureDefinition/workflow-followOnOf" key="StructureDefinition-workflow-followOnOf" name="follow on of"/>
-<artifact id="ValueSet/animal-genderstatus" key="ValueSet-animal-genderstatus" name="gender status"/>
 <artifact id="CodeSystem/animal-genderstatus" key="CodeSystem-animal-genderstatus" name="gender status"/>
+<artifact id="ValueSet/animal-genderstatus" key="ValueSet-animal-genderstatus" name="gender status"/>
 <artifact id="StructureDefinition/workflow-generatedFrom" key="StructureDefinition-workflow-generatedFrom" name="generated from"/>
 <artifact id="CodeSystem/goal-acceptance-status" key="CodeSystem-goal-acceptance-status" name="goal acceptance status"/>
 <artifact id="ValueSet/goal-acceptance-status" key="ValueSet-goal-acceptance-status" name="goal acceptance status"/>
@@ -546,10 +550,10 @@
 <artifact id="StructureDefinition/cqf-inputParameters" key="StructureDefinition-cqf-inputParameters" name="input parameters"/>
 <artifact id="SearchParameter/codesystem-extensions-CodeSystem-keyword" key="SearchParameter-codesystem-extensions-CodeSystem-keyword" name="keyword"/>
 <artifact id="SearchParameter/valueset-extensions-ValueSet-keyword" key="SearchParameter-valueset-extensions-ValueSet-keyword" name="keyword"/>
-<artifact id="StructureDefinition/cqf-knowledgeCapability" key="StructureDefinition-cqf-knowledgeCapability" name="knowledge capability"/>
 <artifact id="StructureDefinition/artifact-knowledgeCapability" key="StructureDefinition-artifact-knowledgeCapability" name="knowledge capability"/>
-<artifact id="StructureDefinition/cqf-knowledgeRepresentationLevel" key="StructureDefinition-cqf-knowledgeRepresentationLevel" name="knowledge representation level"/>
+<artifact id="StructureDefinition/cqf-knowledgeCapability" key="StructureDefinition-cqf-knowledgeCapability" name="knowledge capability"/>
 <artifact id="StructureDefinition/artifact-knowledgeRepresentationLevel" key="StructureDefinition-artifact-knowledgeRepresentationLevel" name="knowledge representation level"/>
+<artifact id="StructureDefinition/cqf-knowledgeRepresentationLevel" key="StructureDefinition-cqf-knowledgeRepresentationLevel" name="knowledge representation level"/>
 <artifact id="CodeSystem/language-preference-type" key="CodeSystem-language-preference-type" name="language preference type"/>
 <artifact id="ValueSet/language-preference-type" key="ValueSet-language-preference-type" name="language preference type"/>
 <artifact id="StructureDefinition/cqf-logicDefinition" key="StructureDefinition-cqf-logicDefinition" name="logic definition"/>
@@ -573,8 +577,8 @@
 <artifact id="ValueSet/practitioner-job-title" key="ValueSet-practitioner-job-title" name="practitioner job title"/>
 <artifact id="StructureDefinition/workflow-protectiveFactor" key="StructureDefinition-workflow-protectiveFactor" name="protective factor"/>
 <artifact id="StructureDefinition/cqf-qualityOfEvidence" key="StructureDefinition-cqf-qualityOfEvidence" name="quality of evidence"/>
-<artifact id="ValueSet/questionnaire-usage-mode" key="ValueSet-questionnaire-usage-mode" name="questionnaire item usage mode"/>
 <artifact id="CodeSystem/questionnaire-usage-mode" key="CodeSystem-questionnaire-usage-mode" name="questionnaire item usage mode"/>
+<artifact id="ValueSet/questionnaire-usage-mode" key="ValueSet-questionnaire-usage-mode" name="questionnaire item usage mode"/>
 <artifact id="StructureDefinition/cqf-receivingOrganization" key="StructureDefinition-cqf-receivingOrganization" name="receiving organization"/>
 <artifact id="StructureDefinition/cqf-receivingPerson" key="StructureDefinition-cqf-receivingPerson" name="receiving person"/>
 <artifact id="StructureDefinition/cqf-recipientLanguage" key="StructureDefinition-cqf-recipientLanguage" name="recipient language"/>
@@ -585,8 +589,8 @@
 <artifact id="StructureDefinition/workflow-releaseDate" key="StructureDefinition-workflow-releaseDate" name="release date"/>
 <artifact id="StructureDefinition/request-relevantHistory" key="StructureDefinition-request-relevantHistory" name="relevant history"/>
 <artifact id="StructureDefinition/workflow-researchStudy" key="StructureDefinition-workflow-researchStudy" name="research study"/>
-<artifact id="ValueSet/resource-security-category" key="ValueSet-resource-security-category" name="resource security category"/>
 <artifact id="CodeSystem/resource-security-category" key="CodeSystem-resource-security-category" name="resource security category"/>
+<artifact id="ValueSet/resource-security-category" key="ValueSet-resource-security-category" name="resource security category"/>
 <artifact id="StructureDefinition/workflow-shallComplyWith" key="StructureDefinition-workflow-shallComplyWith" name="shall comply with"/>
 <artifact id="ValueSet/specimen-collection-priority" key="ValueSet-specimen-collection-priority" name="specimen collection priority"/>
 <artifact id="CodeSystem/standards-status" key="CodeSystem-standards-status" name="standards status"/>
@@ -601,8 +605,8 @@
 <artifact id="StructureDefinition/cqf-systemUserTaskContext" key="StructureDefinition-cqf-systemUserTaskContext" name="system user task context"/>
 <artifact id="StructureDefinition/cqf-systemUserType" key="StructureDefinition-cqf-systemUserType" name="system user type"/>
 <artifact id="StructureDefinition/cqf-targetInvariant" key="StructureDefinition-cqf-targetInvariant" name="target invariant"/>
-<artifact id="ValueSet/template-status-code" key="ValueSet-template-status-code" name="template status code"/>
 <artifact id="CodeSystem/template-status-code" key="CodeSystem-template-status-code" name="template status code"/>
+<artifact id="ValueSet/template-status-code" key="ValueSet-template-status-code" name="template status code"/>
 <artifact id="StructureDefinition/workflow-triggeredBy" key="StructureDefinition-workflow-triggeredBy" name="triggered by"/>
 <artifact id="SearchParameter/codesystem-extensions-CodeSystem-workflow" key="SearchParameter-codesystem-extensions-CodeSystem-workflow" name="workflow"/>
 <artifact id="SearchParameter/valueset-extensions-ValueSet-workflow" key="SearchParameter-valueset-extensions-ValueSet-workflow" name="workflow"/>
