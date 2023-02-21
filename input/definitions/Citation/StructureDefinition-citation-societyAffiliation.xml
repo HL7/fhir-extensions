@@ -12,24 +12,15 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/citation-societyAffiliation"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1329"/>
-  </identifier>
   <version value="5.0.0"/>
-  <name value="CitationPublishedInSocietyAffiliation"/>
-  <title value="REPLACE Citation Publication Form Published In Society Affiliation"/>
+  <name value="CitationSocietyAffiliation"/>
+  <title value="Citation Society Affiliation"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2023-02-06T12:00:00+11:00"/>
   <publisher value="HL7"/>
-  <description value="Citation publication form published in society affiliation."/>
+  <description value="A society affiliation for the venue (publication form) that the cited artifact is cited in."/>
   <fhirVersion value="5.0.0"/>
-  <mapping>
-    <identity value="v2"/>
-    <uri value="http://hl7.org/v2"/>
-    <name value="HL7 v2 Mapping"/>
-  </mapping>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
@@ -47,18 +38,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="REPLACE Citation Publication Form Published In Society Affiliation"/>
-      <definition value="REPLACE Citation Publication Form Published In Society Affiliation."/>
+      <short value="A society affiliation for the venue (publication form) that the cited artifact is cited in"/>
+      <definition value="A society affiliation for the venue (publication form) that the cited artifact is cited in."/>
       <min value="0"/>
       <max value="1"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="PID-6"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="REPLACE Citation Publication Form Published In Society Affiliation (?)"/>
-      </mapping>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
