@@ -43,13 +43,4 @@
       <valueString value="Individuals or systems providing care should either use default behavior that is safe for both male and female populations, individually review treatment options with the patient, or carefully inspect comments and relevant observations before proceeding with treatment. Systems that are unable to review additional information that may be associated with an SFCU value may manage a SPECIFIED and an UNKNOWN value in the same way."/> 
     </property>
   </concept>
-  <concept>
-    <code value="unknown"/>
-    <display value="Unknown"/>
-    <definition value="No information can be provided."/>
-	<property>   
-      <code value="usage-note"/> 
-      <valueString value="Systems that are unable to review additional information that may be associated with an SFCU value may manage a SPECIFIED and an UNKNOWN value in the same way."/> 
-    </property>
-  </concept>  
 </CodeSystem>

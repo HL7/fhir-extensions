@@ -30,9 +30,9 @@
       <system value="http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"/>
     </include>
 	<include>
-      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+      <system value="https://terminology.hl7.org/CodeSystem-data-absent-reason"/>
       <concept>
-        <code value="UNK"/>
+        <code value="unknown"/>
         <display value="Unknown"/>
       </concept>
     </include>
