@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="sex-for-clinical-use"/>
+  <id value="sex-parameter-for-clinical-use"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
@@ -11,16 +11,16 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.4.2038"/>
   </identifier>
-  <name value="sexForClinicalUseCS"/>
-  <title value="Sex For Clinical Use"/>
+  <name value="SexParameterForClinicalUseCS"/>
+  <title value="Sex Parameter For Clinical Use"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <description value="Codes that represent a sex characterization that can be associated with a specific clinical context"/>
+  <description value="A summary parameter that provides guidance on how a receiver should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <property> 
     <code value="usage-note"/>
-	<uri value="http://terminology.hl7.org/CodeSystem/sex-for-clinical-use/property/usage-note"/>
+	<uri value="http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use/property/usage-note"/>
     <description value="Usage notes for the concept."/> 
     <type value="string"/> 
   </property> 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="sex-for-clinical-use"/>
+  <id value="sex-parameter-for-clinical-use"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
@@ -13,8 +13,8 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.3.3181"/>
   </identifier>
-  <name value="sexParameterForClinicalUse"/>
-  <title value="Sex Parameter for Clincal Use"/>
+  <name value="SexParameterForClinicalUse"/>
+  <title value="Sex Parameter for Clinical Use"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="FHIR Project team"/>
@@ -24,7 +24,7 @@
       <value value="http://hl7.org/fhir"/>
     </telecom>
   </contact>
-  <description value="Codes that represent the sex characterization appropriate for the associated clinical context."/>
+  <description value="A summary parameter that provides guidance on how a receiver should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.."/>
   <compose>
     <include>
 	  <system value="http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"/>
