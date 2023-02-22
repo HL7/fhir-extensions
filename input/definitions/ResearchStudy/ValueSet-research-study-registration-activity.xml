@@ -37,7 +37,7 @@
       <value value="fhir@lists.hl7.org"/>
     </telecom>
   </contact>
-  <description value="Codes for study registration activities."/>
+  <description value="Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
