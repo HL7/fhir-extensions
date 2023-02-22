@@ -25,13 +25,13 @@
     <type value="string"/> 
   </property> 
   <concept>
-    <code value="female"/>
-    <display value="Female sex for clinical use"/>
+    <code value="female-typical"/>
+    <display value="Apply female-typical setting or reference range"/>
     <definition value="Available data indicates that diagnostics, analytics, and treatments should consider best practices associated with female reference populations."/>
   </concept>
   <concept>
-    <code value="male"/>
-    <display value="Male sex for clinical use"/>
+    <code value="male-typical"/>
+    <display value="Apply male-typical setting or reference range"/>
     <definition value="Available data indicates that diagnostics, analytics, and treatments should consider best practices associated with male reference populations."/>
   </concept>
   <concept>

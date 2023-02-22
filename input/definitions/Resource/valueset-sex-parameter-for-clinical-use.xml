@@ -27,7 +27,7 @@
   <description value="Codes that represent the sex characterization appropriate for the associated clinical context."/>
   <compose>
     <include>
-      <system value="http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"/>
+	  <system value="http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"/>
     </include>
 	<include>
       <system value="https://terminology.hl7.org/CodeSystem-data-absent-reason"/>
