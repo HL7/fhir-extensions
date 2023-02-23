@@ -32,15 +32,15 @@
       <system value="http://loinc.org"/>
       <concept>
         <code value="LA29518-0"/>
-        <display value="He, Him, His, Himself"/>
+        <display value="he/him/his/his/himself"/>
       </concept>
       <concept>
         <code value="LA29519-8"/>
-        <display value="She, Her, Hers, Herself"/>
+        <display value="she/her/her/hers/herself"/>
       </concept>
       <concept>
         <code value="LA29520-6"/>
-        <display value="They, Them, Their, Theirs, Themself"/>
+        <display value="they/them/their/theirs/themselves"/>
       </concept>
     </include>
   </compose>
