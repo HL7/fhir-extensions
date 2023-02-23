@@ -23,7 +23,7 @@
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7"/>
-  <description value="An individual's personal sense of being a man, woman, boy, girl, nonbinary, or something else. This represents an individual’s identity, ascertained by asking them what that identity is."/>
+  <description value="An individual's personal sense of being a man, woman, boy, girl, nonbinary, or something else. This represents an individual’s identity, ascertained by asking them what that identity is. &#xA; In the case where the gender identity is communicated by a third party, for example, if a spouse indicating the gender identity of their partner on an intake form, a Provenance resource can be used with a Provenance.target referring to the patient, with a targetElement extension identifying the gender identity extension as the target element within the Patient resource."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -47,6 +47,10 @@
   <context>
     <type value="element"/>
     <expression value="Practitioner"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PractitionerRole"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
