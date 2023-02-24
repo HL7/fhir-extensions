@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="capabilitystatement-search-mode"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="vocab"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/capabilitystatement-search-mode"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.3.3129"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="CSSearchModeVS"/>
+  <title value="CapabilityStatement Search Mode ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <description value="Which search modes a server supports: GET, POST, or both"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/capabilitystatement-search-mode"/>
+    </include>
+  </compose>
+</ValueSet>

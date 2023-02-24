@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="workflow-researchStudy"/>
+  <url value="http://hl7.org/fhir/SearchParameter/workflow-researchStudy"/>
+  <version value="5.0.0"/>
+  <name value="ResearchStudySearchParameter"/>
+  <title value="Research Study SearchParameter"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <description value="SearchParameter for Research Study Extension"/>
+  <code value="researchStudy"/>
+
+  <base value="Composition"/>
+  <base value="Consent"/>
+  <base value="DeviceUsage"/>
+  <base value="DiagnosticReport"/>
+  <base value="Encounter"/>
+  <base value="FamilyMemberHistory"/>
+  <base value="Immunization"/>
+  <base value="DocumentReference"/>
+  <base value="MedicationAdministration"/>
+  <base value="MedicationDispense"/>
+  <base value="MedicationStatement"/>
+  <base value="Observation"/>
+  <base value="Procedure"/>
+  <base value="QuestionnaireResponse"/>
+  <base value="RiskAssessment"/>
+  <base value="ServiceRequest"/>
+  <base value="SupplyDelivery"/>
+  <base value="Task"/>
+
+  <type value="reference"/>
+  <expression value="CodeSystem.extension('http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value"/>
+  <processingMode value="normal"/>
+</SearchParameter>

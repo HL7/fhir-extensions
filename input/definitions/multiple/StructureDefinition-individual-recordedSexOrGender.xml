@@ -23,7 +23,7 @@
   <experimental value="false"/>
   <date value="2022-01-28"/>
   <publisher value="HL7"/>
-  <description value="The recorded sex and gender is to be used to differentiate existing sex or gender data. This element is used for existing 'sex' or 'gender' elements in a document or record when the intent and meaning is unclear. For example, the individual's birth certificate information, passport information, and national identity document information may all be present. This is necessary because an individual's documents may be updated at different rates or for different reasons. Sex assigned at birth (SAAB), while very common and considered essential in some jurisdictions, is considered a recorded sex and gender entry."/>
+  <description value="Recorded sex or gender (RSG) information includes the various sex and gender concepts that are often used in existing systems but are known NOT to represent a gender identity, sex parameter for clinical use, or attributes related to sexuality, such as sexual orientation, sexual activity, or sexual attraction. Examples of recorded sex or gender concepts include administrative gender, administrative sex, and sex assigned at birth."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -94,48 +94,12 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
       </binding>
     </element>
-    <element id="Extension.extension:internationalEquivalent">
-      <path value="Extension.extension"/>
-      <sliceName value="internationalEquivalent"/>
-      <short value="An international representation of the value found on the document"/>
-      <definition value="An international representation of the value found on the document for interoperability and international legal purposes."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    <element id="Extension.extension:internationalEquivalent.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:internationalEquivalent.url">
-      <path value="Extension.extension.url"/>
-      <type>
-        <code value="uri"/>
-      </type>
-      <fixedUri value="internationalEquivalent"/>
-    </element>
-    <element id="Extension.extension:internationalEquivalent.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="recordedSexOrGenderInternationalEquivilent"/>
-        </extension>
-        <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/international-civil-aviation-organization-sex-or-gender"/>
-      </binding>
-    </element>
     <element id="Extension.extension:type">
       <path value="Extension.extension"/>
       <sliceName value="type"/>
       <short value="Type of recorded sex or gender."/>
       <definition value="The type or category of sex or gender that is recorded."/>
-      <comment value="Because the recorded sex and gender concept exists primarily as means to exchange sex and gender data concepts that are either use-case specific or that are historically not well defined, the type may either imply the indended use of the sex or gender value, or identify the sex or gender value as based on historical semanitcs."/>
+      <comment value="Because the recorded sex or gender concept exists primarily as means to exchange sex and gender data concepts that are known NOT to represent a gender identity, sex parameter for clinical use, or attributes related to sexuality, the type is used to identify what type of concept the recorded sex or gender concept is."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -163,7 +127,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="recordedSexOrGenderType"/>
         </extension>
-        <strength value="preferred"/>
+        <strength value="example"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/recorded-sex-or-gender-type"/>
       </binding>
     </element>
