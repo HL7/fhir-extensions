@@ -36,7 +36,7 @@ group CarePlan(source src : CarePlanR4B, target tgt : CarePlanR5) extends Domain
   src.encounter -> tgt.encounter;
   src.period -> tgt.period;
   src.created -> tgt.created;
-  src.custodian -> tgt.custodian;
+  src.author -> tgt.custodian;
   src.contributor -> tgt.contributor;
   src.careTeam -> tgt.careTeam;
   src.addresses -> tgt.addresses;
@@ -47,8 +47,9 @@ group CarePlan(source src : CarePlanR4B, target tgt : CarePlanR5) extends Domain
 }
 
 group CarePlanActivity(source src, target tgt) extends BackboneElement {
-  src.performedActivity -> tgt.performedActivity;
+  src.outcomeCodeableConcept : CodeableConcept -> tgt.performedActivity;
+  src.outcomeReference : Reference -> tgt.performedActivity;
   src.progress -> tgt.progress;
-  src.plannedActivityReference -> tgt.plannedActivityReference;
+  src.reference -> tgt.plannedActivityReference;
 }
 

@@ -28,7 +28,7 @@ group ChargeItem(source src : ChargeItemR4, target tgt : ChargeItemR5) extends D
   src.partOf -> tgt.partOf;
   src.code -> tgt.code;
   src.subject -> tgt.subject;
-  src.encounter -> tgt.encounter;
+  src.context -> tgt.encounter;
   src.occurrence : dateTime -> tgt.occurrence;
   src.occurrence : Period -> tgt.occurrence;
   src.occurrence : Timing -> tgt.occurrence;
@@ -38,17 +38,23 @@ group ChargeItem(source src : ChargeItemR4, target tgt : ChargeItemR5) extends D
   src.costCenter -> tgt.costCenter;
   src.quantity -> tgt.quantity;
   src.bodysite -> tgt.bodysite;
-  src.unitPriceComponent -> tgt.unitPriceComponent;
-  src.totalPriceComponent -> tgt.totalPriceComponent;
+//  src.unitPriceComponent -> tgt.unitPriceComponent;
+  src.priceOverride as s -> tgt.totalPriceComponent as t then ChargeItemTotalPriceOverride(s,t);
   src.overrideReason -> tgt.overrideReason;
   src.enterer -> tgt.enterer;
   src.enteredDate -> tgt.enteredDate;
   src.reason -> tgt.reason;
   src.service -> tgt.service;
-  src.product -> tgt.product;
+  src.product : Reference -> tgt.product;
+  src.product : CodeableConcept -> tgt.product;
   src.account -> tgt.account;
   src.note -> tgt.note;
   src.supportingInformation -> tgt.supportingInformation;
+}
+
+group ChargeItemTotalPriceOverride(source src, target tgt) extends BackboneElement {
+  src.value as v -> tgt.type = "base";
+  src.value as v -> tgt.amount = v "money";
 }
 
 group ChargeItemPerformer(source src, target tgt) extends BackboneElement {

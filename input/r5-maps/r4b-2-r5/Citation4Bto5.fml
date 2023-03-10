@@ -21,8 +21,8 @@ group Citation(source src : CitationR4B, target tgt : CitationR5) extends Domain
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;
-  src.versionAlgorithm : string -> tgt.versionAlgorithm;
-  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : string -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.status as v -> tgt.status = translate(v, '#PublicationStatus', 'code');
@@ -35,7 +35,7 @@ group Citation(source src : CitationR4B, target tgt : CitationR5) extends Domain
   src.jurisdiction -> tgt.jurisdiction;
   src.purpose -> tgt.purpose;
   src.copyright -> tgt.copyright;
-  src.copyrightLabel -> tgt.copyrightLabel;
+//  src.copyrightLabel -> tgt.copyrightLabel;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
   src.effectivePeriod -> tgt.effectivePeriod;
@@ -48,7 +48,11 @@ group Citation(source src : CitationR4B, target tgt : CitationR5) extends Domain
   src.note -> tgt.note;
   src.currentState -> tgt.currentState;
   src.statusDate as s -> tgt.statusDate as t then CitationStatusDate(s,t);
-  src.relatedArtifact -> tgt.relatedArtifact;
+  src.relatesTo as s -> tgt.relatedArtifact as t then {
+    s.relationshipType as v -> t.type = v.code "type";
+    s.targetClassifier -> t.classifier;
+    s.target : Reference -> t.resourceReference;
+  } "relatedArtifact";
   src.citedArtifact as s -> tgt.citedArtifact as t then CitationCitedArtifact(s,t);
 }
 
@@ -117,24 +121,36 @@ group CitationCitedArtifactPart(source src, target tgt) extends BackboneElement 
 }
 
 group CitationCitedArtifactRelatesTo(source src, target tgt) extends BackboneElement {
-  src.type -> tgt.type;
-  src.classifier -> tgt.classifier;
-  src.label -> tgt.label;
-  src.display -> tgt.display;
-  src.citation -> tgt.citation;
-  src.document -> tgt.document;
-  src.resource -> tgt.resource;
-  src.resourceReference -> tgt.resourceReference;
+//  src.type -> tgt.type;
+//  src.classifier -> tgt.classifier;
+//  src.label -> tgt.label;
+//  src.display -> tgt.display;
+//  src.citation -> tgt.citation;
+//  src.document -> tgt.document;
+//  src.resource -> tgt.resource;
+//  src.resourceReference -> tgt.resourceReference;
+  src.relationshipType as v -> tgt.type = v.code "type";
+  src.targetClassifier -> tgt.classifier;
+  src.target : Reference -> tgt.resourceReference;
 }
 
 group CitationCitedArtifactPublicationForm(source src, target tgt) extends BackboneElement {
   src.publishedIn as s -> tgt.publishedIn as t then CitationCitedArtifactPublicationFormPublishedIn(s,t);
-  src.citedMedium -> tgt.citedMedium;
-  src.volume -> tgt.volume;
-  src.issue -> tgt.issue;
+//  src.citedMedium -> tgt.citedMedium;
+//  src.volume -> tgt.volume;
+//  src.issue -> tgt.issue;
+//  src.publicationDateText -> tgt.publicationDateText;
+//  src.publicationDateSeason -> tgt.publicationDateSeason;
+  src.periodicRelease as s -> tgt then {
+    s.citedMedium -> tgt.citedMedium;
+    s.volume -> tgt.volume;
+    s.issue -> tgt.issue;
+    s.dateOfPublication as sd -> tgt then {
+      sd.text -> tgt.publicationDateText;
+      sd.season -> tgt.publicationDateSeason;
+    } "dateOfPublication";
+  } "periodicRelease";
   src.articleDate -> tgt.articleDate;
-  src.publicationDateText -> tgt.publicationDateText;
-  src.publicationDateSeason -> tgt.publicationDateSeason;
   src.lastRevisionDate -> tgt.lastRevisionDate;
   src.language -> tgt.language;
   src.accessionNumber -> tgt.accessionNumber;
@@ -154,14 +170,14 @@ group CitationCitedArtifactPublicationFormPublishedIn(source src, target tgt) ex
 }
 
 group CitationCitedArtifactWebLocation(source src, target tgt) extends BackboneElement {
-  src.classifier -> tgt.classifier;
+  src.type -> tgt.classifier;
   src.url -> tgt.url;
 }
 
 group CitationCitedArtifactClassification(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.classifier -> tgt.classifier;
-  src.artifactAssessment -> tgt.artifactAssessment;
+//  src.artifactAssessment -> tgt.artifactAssessment;
 }
 
 group CitationCitedArtifactContributorship(source src, target tgt) extends BackboneElement {
@@ -171,14 +187,14 @@ group CitationCitedArtifactContributorship(source src, target tgt) extends Backb
 }
 
 group CitationCitedArtifactContributorshipEntry(source src, target tgt) extends BackboneElement {
-  src.contributor -> tgt.contributor;
-  src.forenameInitials -> tgt.forenameInitials;
-  src.affiliation -> tgt.affiliation;
+//  src.contributor -> tgt.contributor;
+  src.initials -> tgt.forenameInitials;
+//  src.affiliation -> tgt.affiliation;
   src.contributionType -> tgt.contributionType;
   src.role -> tgt.role;
   src.contributionInstance as s -> tgt.contributionInstance as t then CitationCitedArtifactContributorshipEntryContributionInstance(s,t);
   src.correspondingContact -> tgt.correspondingContact;
-  src.rankingOrder -> tgt.rankingOrder;
+  src.listOrder -> tgt.rankingOrder;
 }
 
 group CitationCitedArtifactContributorshipEntryContributionInstance(source src, target tgt) extends BackboneElement {
