@@ -17,67 +17,67 @@ imports "http://hl7.org/fhir/StructureMap/*4to5"
 
 group AdverseEvent(source src : AdverseEventR4, target tgt : AdverseEventR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.status -> tgt.status;
+//  src.status -> tgt.status;
   src.actuality as v -> tgt.actuality = translate(v, '#AdverseEventActuality', 'code');
   src.category -> tgt.category;
-  src.code -> tgt.code;
+  src.event -> tgt.code;
   src.subject -> tgt.subject;
   src.encounter -> tgt.encounter;
-  src.occurrence : dateTime -> tgt.occurrence;
-  src.occurrence : Period -> tgt.occurrence;
-  src.occurrence : Timing -> tgt.occurrence;
+  src.date : dateTime -> tgt.occurrence;
+//  src.occurrence : Period -> tgt.occurrence;
+//  src.occurrence : Timing -> tgt.occurrence;
   src.detected -> tgt.detected;
   src.recordedDate -> tgt.recordedDate;
-  src.resultingEffect -> tgt.resultingEffect;
+  src.resultingCondition -> tgt.resultingEffect;
   src.location -> tgt.location;
   src.seriousness -> tgt.seriousness;
   src.outcome -> tgt.outcome;
   src.recorder -> tgt.recorder;
-  src.participant as s -> tgt.participant as t then AdverseEventParticipant(s,t);
+  src.contributor as s -> tgt.participant as t then AdverseEventParticipant(s,t);
   src.study -> tgt.study;
-  src.expectedInResearchStudy -> tgt.expectedInResearchStudy;
+//  src.expectedInResearchStudy -> tgt.expectedInResearchStudy;
   src.suspectEntity as s -> tgt.suspectEntity as t then AdverseEventSuspectEntity(s,t);
-  src.contributingFactor as s -> tgt.contributingFactor as t then AdverseEventContributingFactor(s,t);
-  src.preventiveAction as s -> tgt.preventiveAction as t then AdverseEventPreventiveAction(s,t);
-  src.mitigatingAction as s -> tgt.mitigatingAction as t then AdverseEventMitigatingAction(s,t);
-  src.supportingInfo as s -> tgt.supportingInfo as t then AdverseEventSupportingInfo(s,t);
-  src.note -> tgt.note;
+  src.subjectMedicalHistory as s -> tgt.contributingFactor as t then AdverseEventContributingFactor(s,t);
+//  src.preventiveAction as s -> tgt.preventiveAction as t then AdverseEventPreventiveAction(s,t);
+//  src.mitigatingAction as s -> tgt.mitigatingAction as t then AdverseEventMitigatingAction(s,t);
+//  src.supportingInfo as s -> tgt.supportingInfo as t then AdverseEventSupportingInfo(s,t);
+//  src.note -> tgt.note;
 }
 
 group AdverseEventParticipant(source src, target tgt) extends BackboneElement {
-  src.function -> tgt.function;
-  src.actor -> tgt.actor;
+//  src.function -> tgt.function;
+  src as v -> tgt.actor = v "reference";
 }
 
 group AdverseEventSuspectEntity(source src, target tgt) extends BackboneElement {
-  src.instance : CodeableConcept -> tgt.instance;
+//  src.instance : CodeableConcept -> tgt.instance;
   src.instance : Reference -> tgt.instance;
   src.causality as s -> tgt.causality as t then AdverseEventSuspectEntityCausality(s,t);
 }
 
 group AdverseEventSuspectEntityCausality(source src, target tgt) extends BackboneElement {
-  src.assessmentMethod -> tgt.assessmentMethod;
-  src.entityRelatedness -> tgt.entityRelatedness;
+  src.assessment -> tgt.assessmentMethod;
+  src.productRelatedness -> tgt.entityRelatedness;
   src.author -> tgt.author;
 }
 
 group AdverseEventContributingFactor(source src, target tgt) extends BackboneElement {
-  src.item : Reference -> tgt.item;
-  src.item : CodeableConcept -> tgt.item;
+  src as v -> tgt.item = v "reference";
+//  src.item : CodeableConcept -> tgt.item;
 }
 
-group AdverseEventPreventiveAction(source src, target tgt) extends BackboneElement {
-  src.item : Reference -> tgt.item;
-  src.item : CodeableConcept -> tgt.item;
-}
-
-group AdverseEventMitigatingAction(source src, target tgt) extends BackboneElement {
-  src.item : Reference -> tgt.item;
-  src.item : CodeableConcept -> tgt.item;
-}
-
-group AdverseEventSupportingInfo(source src, target tgt) extends BackboneElement {
-  src.item : Reference -> tgt.item;
-  src.item : CodeableConcept -> tgt.item;
-}
+//group AdverseEventPreventiveAction(source src, target tgt) extends BackboneElement {
+//  src.item : Reference -> tgt.item;
+//  src.item : CodeableConcept -> tgt.item;
+//}
+//
+//group AdverseEventMitigatingAction(source src, target tgt) extends BackboneElement {
+//  src.item : Reference -> tgt.item;
+//  src.item : CodeableConcept -> tgt.item;
+//}
+//
+//group AdverseEventSupportingInfo(source src, target tgt) extends BackboneElement {
+//  src.item : Reference -> tgt.item;
+//  src.item : CodeableConcept -> tgt.item;
+//}
 

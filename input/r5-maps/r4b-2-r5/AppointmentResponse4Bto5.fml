@@ -10,15 +10,15 @@ imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 group AppointmentResponse(source src : AppointmentResponseR4B, target tgt : AppointmentResponseR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.appointment -> tgt.appointment;
-  src.proposedNewTime -> tgt.proposedNewTime;
+//  src.proposedNewTime -> tgt.proposedNewTime;
   src.start -> tgt.start;
   src.end -> tgt.end;
   src.participantType -> tgt.participantType;
   src.actor -> tgt.actor;
   src.participantStatus -> tgt.participantStatus;
   src.comment -> tgt.comment;
-  src.recurring -> tgt.recurring;
-  src.occurrenceDate -> tgt.occurrenceDate;
-  src.recurrenceId -> tgt.recurrenceId;
+//  src.recurring -> tgt.recurring;
+//  src.occurrenceDate -> tgt.occurrenceDate;
+//  src.recurrenceId -> tgt.recurrenceId;
 }
 
