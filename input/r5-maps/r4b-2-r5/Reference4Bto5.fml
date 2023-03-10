@@ -11,7 +11,6 @@ uses "http://hl7.org/fhir/StructureDefinition/canonical" alias canonicalR5 as ta
 uses "http://hl7.org/fhir/4.3/StructureDefinition/url" alias urlR4B as source
 uses "http://hl7.org/fhir/StructureDefinition/url" alias urlR5 as target
 
-
 imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 
 group Reference(source src : ReferenceR4B, target tgt : ReferenceR5) extends Element <<type+>> {
@@ -33,18 +32,10 @@ group url2Reference(source src : urlR4B, target tgt : ReferenceR5) extends Eleme
 }
 
 group Reference2CodeableReference(source src : ReferenceR4B, target tgt : CodeableReferenceR5) extends Element <<type+>> {
-  src.reference as v -> tgt.reference = v "canonicalValue";
-}
-
-group Reference2CodeableReference(source src : ReferenceR4B, target tgt : CodeableReferenceR5) extends Element <<type+>> {
-  src.value as s -> tgt.reference as t then CodeableReferenceReference(s,t);
-}
-
-group CodeableReferenceReference(source src : ReferenceR4B, target tgt : ReferenceR5) extends Element <<type+>> {
-  src.reference -> tgt.reference;
-  src.type -> tgt.type;
-  src.identifier -> tgt.identifier;
-  src.display -> tgt.display;
+  src.reference as v -> tgt.reference as t, t.reference = v "reference";
+  src.type as v -> tgt.reference as t, t.type = v "type";
+  src.identifier as v -> tgt.reference as t, t.identifier = v "identifier";
+  src.display as v -> tgt.reference as t, t.display = v "display";
 }
 
 

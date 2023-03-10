@@ -32,18 +32,10 @@ group url2Reference(source src : urlR4, target tgt : ReferenceR5) extends Elemen
 }
 
 group Reference2CodeableReference(source src : ReferenceR4, target tgt : CodeableReferenceR5) extends Element <<type+>> {
-  src.reference as v -> tgt.reference = v "canonicalValue";
-}
-
-group Reference2CodeableReference(source src : ReferenceR4, target tgt : CodeableReferenceR5) extends Element <<type+>> {
-  src.value as s -> tgt.reference as t then CodeableReferenceReference(s,t);
-}
-
-group CodeableReferenceReference(source src : ReferenceR4, target tgt : ReferenceR5) extends Element <<type+>> {
-  src.reference -> tgt.reference;
-  src.type -> tgt.type;
-  src.identifier -> tgt.identifier;
-  src.display -> tgt.display;
+  src.reference as v -> tgt.reference as t, t.reference = v "reference";
+  src.type as v -> tgt.reference as t, t.type = v "type";
+  src.identifier as v -> tgt.reference as t, t.identifier = v "identifier";
+  src.display as v -> tgt.reference as t, t.display = v "display";
 }
 
 
