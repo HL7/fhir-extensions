@@ -119,6 +119,15 @@
       <value value="input/definitions/*"/>
     </parameter>
 
+
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/r5-maps/*"/>
+    </parameter>
+
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/guide-parameter-code"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/extensions">
-<version code="current" url=""/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/fhir-extensions" defaultVersion="current" defaultWorkgroup="" gitUrl="https://github.com/HL7/davinci-deqm" url="http://hl7.org/fhir/extensions">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-extensions"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/extensions/0.1.0"/>
 <version code="2.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2020Sep"/>
 <version code="2.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/STU2"/>
 <version code="1.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2020Feb"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/STU1"/>
 <version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2019May/STU3/index.html"/>
-<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/us/davinci-deqm/2018Sep/STU3/index.html"/>
 <version code="0.1" deprecated="true"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -253,6 +253,806 @@
 <artifact id="StructureDefinition/event-location" key="StructureDefinition-event-location" name="Event Location"/>
 <artifact deprecated="true" key="ExampleScenario" name="ExampleScenario"/>
 <artifact id="StructureDefinition/extended-contact-availability" key="StructureDefinition-extended-contact-availability" name="Extended Contact Availability"/>
+<artifact id="StructureMap/Account4to5" key="StructureMap-Account4to5" name="FML Conversion for Account: R4 to R5"/>
+<artifact id="StructureMap/Account4Bto5" key="StructureMap-Account4Bto5" name="FML Conversion for Account: R4B to R5"/>
+<artifact id="StructureMap/Account5to4" key="StructureMap-Account5to4" name="FML Conversion for Account: R5 to R4"/>
+<artifact id="StructureMap/Account5to4B" key="StructureMap-Account5to4B" name="FML Conversion for Account: R5 to R4B"/>
+<artifact id="StructureMap/ActivityDefinition4to5" key="StructureMap-ActivityDefinition4to5" name="FML Conversion for ActivityDefinition: R4 to R5"/>
+<artifact id="StructureMap/ActivityDefinition4Bto5" key="StructureMap-ActivityDefinition4Bto5" name="FML Conversion for ActivityDefinition: R4B to R5"/>
+<artifact id="StructureMap/ActivityDefinition5to4" key="StructureMap-ActivityDefinition5to4" name="FML Conversion for ActivityDefinition: R5 to R4"/>
+<artifact id="StructureMap/ActivityDefinition5to4B" key="StructureMap-ActivityDefinition5to4B" name="FML Conversion for ActivityDefinition: R5 to R4B"/>
+<artifact id="StructureMap/Address4to5" key="StructureMap-Address4to5" name="FML Conversion for Address: R4 to R5"/>
+<artifact id="StructureMap/Address4Bto5" key="StructureMap-Address4Bto5" name="FML Conversion for Address: R4B to R5"/>
+<artifact id="StructureMap/Address5to4" key="StructureMap-Address5to4" name="FML Conversion for Address: R5 to R4"/>
+<artifact id="StructureMap/Address5to4B" key="StructureMap-Address5to4B" name="FML Conversion for Address: R5 to R4B"/>
+<artifact id="StructureMap/AdministrableProductDefinition4to5" key="StructureMap-AdministrableProductDefinition4to5" name="FML Conversion for AdministrableProductDefinition: R4 to R5"/>
+<artifact id="StructureMap/AdministrableProductDefinition4Bto5" key="StructureMap-AdministrableProductDefinition4Bto5" name="FML Conversion for AdministrableProductDefinition: R4B to R5"/>
+<artifact id="StructureMap/AdministrableProductDefinition5to4" key="StructureMap-AdministrableProductDefinition5to4" name="FML Conversion for AdministrableProductDefinition: R5 to R4"/>
+<artifact id="StructureMap/AdministrableProductDefinition5to4B" key="StructureMap-AdministrableProductDefinition5to4B" name="FML Conversion for AdministrableProductDefinition: R5 to R4B"/>
+<artifact id="StructureMap/AdverseEvent4to5" key="StructureMap-AdverseEvent4to5" name="FML Conversion for AdverseEvent: R4 to R5"/>
+<artifact id="StructureMap/AdverseEvent4Bto5" key="StructureMap-AdverseEvent4Bto5" name="FML Conversion for AdverseEvent: R4B to R5"/>
+<artifact id="StructureMap/AdverseEvent5to4" key="StructureMap-AdverseEvent5to4" name="FML Conversion for AdverseEvent: R5 to R4"/>
+<artifact id="StructureMap/AdverseEvent5to4B" key="StructureMap-AdverseEvent5to4B" name="FML Conversion for AdverseEvent: R5 to R4B"/>
+<artifact id="StructureMap/Age4to5" key="StructureMap-Age4to5" name="FML Conversion for Age: R4 to R5"/>
+<artifact id="StructureMap/Age4Bto5" key="StructureMap-Age4Bto5" name="FML Conversion for Age: R4B to R5"/>
+<artifact id="StructureMap/Age5to4" key="StructureMap-Age5to4" name="FML Conversion for Age: R5 to R4"/>
+<artifact id="StructureMap/Age5to4B" key="StructureMap-Age5to4B" name="FML Conversion for Age: R5 to R4B"/>
+<artifact id="StructureMap/AllergyIntolerance4to5" key="StructureMap-AllergyIntolerance4to5" name="FML Conversion for AllergyIntolerance: R4 to R5"/>
+<artifact id="StructureMap/AllergyIntolerance4Bto5" key="StructureMap-AllergyIntolerance4Bto5" name="FML Conversion for AllergyIntolerance: R4B to R5"/>
+<artifact id="StructureMap/AllergyIntolerance5to4" key="StructureMap-AllergyIntolerance5to4" name="FML Conversion for AllergyIntolerance: R5 to R4"/>
+<artifact id="StructureMap/AllergyIntolerance5to4B" key="StructureMap-AllergyIntolerance5to4B" name="FML Conversion for AllergyIntolerance: R5 to R4B"/>
+<artifact id="StructureMap/Annotation4to5" key="StructureMap-Annotation4to5" name="FML Conversion for Annotation: R4 to R5"/>
+<artifact id="StructureMap/Annotation4Bto5" key="StructureMap-Annotation4Bto5" name="FML Conversion for Annotation: R4B to R5"/>
+<artifact id="StructureMap/Annotation5to4" key="StructureMap-Annotation5to4" name="FML Conversion for Annotation: R5 to R4"/>
+<artifact id="StructureMap/Annotation5to4B" key="StructureMap-Annotation5to4B" name="FML Conversion for Annotation: R5 to R4B"/>
+<artifact id="StructureMap/Appointment4to5" key="StructureMap-Appointment4to5" name="FML Conversion for Appointment: R4 to R5"/>
+<artifact id="StructureMap/Appointment4Bto5" key="StructureMap-Appointment4Bto5" name="FML Conversion for Appointment: R4B to R5"/>
+<artifact id="StructureMap/Appointment5to4" key="StructureMap-Appointment5to4" name="FML Conversion for Appointment: R5 to R4"/>
+<artifact id="StructureMap/Appointment5to4B" key="StructureMap-Appointment5to4B" name="FML Conversion for Appointment: R5 to R4B"/>
+<artifact id="StructureMap/AppointmentResponse4to5" key="StructureMap-AppointmentResponse4to5" name="FML Conversion for AppointmentResponse: R4 to R5"/>
+<artifact id="StructureMap/AppointmentResponse4Bto5" key="StructureMap-AppointmentResponse4Bto5" name="FML Conversion for AppointmentResponse: R4B to R5"/>
+<artifact id="StructureMap/AppointmentResponse5to4" key="StructureMap-AppointmentResponse5to4" name="FML Conversion for AppointmentResponse: R5 to R4"/>
+<artifact id="StructureMap/AppointmentResponse5to4B" key="StructureMap-AppointmentResponse5to4B" name="FML Conversion for AppointmentResponse: R5 to R4B"/>
+<artifact id="StructureMap/ArtifactAssessment4to5" key="StructureMap-ArtifactAssessment4to5" name="FML Conversion for ArtifactAssessment: R4 to R5"/>
+<artifact id="StructureMap/ArtifactAssessment4Bto5" key="StructureMap-ArtifactAssessment4Bto5" name="FML Conversion for ArtifactAssessment: R4B to R5"/>
+<artifact id="StructureMap/ArtifactAssessment5to4" key="StructureMap-ArtifactAssessment5to4" name="FML Conversion for ArtifactAssessment: R5 to R4"/>
+<artifact id="StructureMap/ArtifactAssessment5to4B" key="StructureMap-ArtifactAssessment5to4B" name="FML Conversion for ArtifactAssessment: R5 to R4B"/>
+<artifact id="StructureMap/Attachment4to5" key="StructureMap-Attachment4to5" name="FML Conversion for Attachment: R4 to R5"/>
+<artifact id="StructureMap/Attachment4Bto5" key="StructureMap-Attachment4Bto5" name="FML Conversion for Attachment: R4B to R5"/>
+<artifact id="StructureMap/Attachment5to4" key="StructureMap-Attachment5to4" name="FML Conversion for Attachment: R5 to R4"/>
+<artifact id="StructureMap/Attachment5to4B" key="StructureMap-Attachment5to4B" name="FML Conversion for Attachment: R5 to R4B"/>
+<artifact id="StructureMap/AuditEvent4to5" key="StructureMap-AuditEvent4to5" name="FML Conversion for AuditEvent: R4 to R5"/>
+<artifact id="StructureMap/AuditEvent4Bto5" key="StructureMap-AuditEvent4Bto5" name="FML Conversion for AuditEvent: R4B to R5"/>
+<artifact id="StructureMap/AuditEvent5to4" key="StructureMap-AuditEvent5to4" name="FML Conversion for AuditEvent: R5 to R4"/>
+<artifact id="StructureMap/AuditEvent5to4B" key="StructureMap-AuditEvent5to4B" name="FML Conversion for AuditEvent: R5 to R4B"/>
+<artifact id="StructureMap/Availability4to5" key="StructureMap-Availability4to5" name="FML Conversion for Availability: R4 to R5"/>
+<artifact id="StructureMap/Availability4Bto5" key="StructureMap-Availability4Bto5" name="FML Conversion for Availability: R4B to R5"/>
+<artifact id="StructureMap/Availability5to4" key="StructureMap-Availability5to4" name="FML Conversion for Availability: R5 to R4"/>
+<artifact id="StructureMap/Availability5to4B" key="StructureMap-Availability5to4B" name="FML Conversion for Availability: R5 to R4B"/>
+<artifact id="StructureMap/BackboneElement4to5" key="StructureMap-BackboneElement4to5" name="FML Conversion for BackboneElement: R4 to R5"/>
+<artifact id="StructureMap/BackboneElement4Bto5" key="StructureMap-BackboneElement4Bto5" name="FML Conversion for BackboneElement: R4B to R5"/>
+<artifact id="StructureMap/BackboneElement5to4" key="StructureMap-BackboneElement5to4" name="FML Conversion for BackboneElement: R5 to R4"/>
+<artifact id="StructureMap/BackboneElement5to4B" key="StructureMap-BackboneElement5to4B" name="FML Conversion for BackboneElement: R5 to R4B"/>
+<artifact id="StructureMap/Basic4to5" key="StructureMap-Basic4to5" name="FML Conversion for Basic: R4 to R5"/>
+<artifact id="StructureMap/Basic4Bto5" key="StructureMap-Basic4Bto5" name="FML Conversion for Basic: R4B to R5"/>
+<artifact id="StructureMap/Basic5to4" key="StructureMap-Basic5to4" name="FML Conversion for Basic: R5 to R4"/>
+<artifact id="StructureMap/Basic5to4B" key="StructureMap-Basic5to4B" name="FML Conversion for Basic: R5 to R4B"/>
+<artifact id="StructureMap/Binary4to5" key="StructureMap-Binary4to5" name="FML Conversion for Binary: R4 to R5"/>
+<artifact id="StructureMap/Binary4Bto5" key="StructureMap-Binary4Bto5" name="FML Conversion for Binary: R4B to R5"/>
+<artifact id="StructureMap/Binary5to4" key="StructureMap-Binary5to4" name="FML Conversion for Binary: R5 to R4"/>
+<artifact id="StructureMap/Binary5to4B" key="StructureMap-Binary5to4B" name="FML Conversion for Binary: R5 to R4B"/>
+<artifact id="StructureMap/BiologicallyDerivedProduct4to5" key="StructureMap-BiologicallyDerivedProduct4to5" name="FML Conversion for BiologicallyDerivedProduct: R4 to R5"/>
+<artifact id="StructureMap/BiologicallyDerivedProduct4Bto5" key="StructureMap-BiologicallyDerivedProduct4Bto5" name="FML Conversion for BiologicallyDerivedProduct: R4B to R5"/>
+<artifact id="StructureMap/BiologicallyDerivedProduct5to4" key="StructureMap-BiologicallyDerivedProduct5to4" name="FML Conversion for BiologicallyDerivedProduct: R5 to R4"/>
+<artifact id="StructureMap/BiologicallyDerivedProduct5to4B" key="StructureMap-BiologicallyDerivedProduct5to4B" name="FML Conversion for BiologicallyDerivedProduct: R5 to R4B"/>
+<artifact id="StructureMap/BiologicallyDerivedProductDispense4to5" key="StructureMap-BiologicallyDerivedProductDispense4to5" name="FML Conversion for BiologicallyDerivedProductDispense: R4 to R5"/>
+<artifact id="StructureMap/BiologicallyDerivedProductDispense4Bto5" key="StructureMap-BiologicallyDerivedProductDispense4Bto5" name="FML Conversion for BiologicallyDerivedProductDispense: R4B to R5"/>
+<artifact id="StructureMap/BiologicallyDerivedProductDispense5to4" key="StructureMap-BiologicallyDerivedProductDispense5to4" name="FML Conversion for BiologicallyDerivedProductDispense: R5 to R4"/>
+<artifact id="StructureMap/BiologicallyDerivedProductDispense5to4B" key="StructureMap-BiologicallyDerivedProductDispense5to4B" name="FML Conversion for BiologicallyDerivedProductDispense: R5 to R4B"/>
+<artifact id="StructureMap/BodyStructure4to5" key="StructureMap-BodyStructure4to5" name="FML Conversion for BodyStructure: R4 to R5"/>
+<artifact id="StructureMap/BodyStructure4Bto5" key="StructureMap-BodyStructure4Bto5" name="FML Conversion for BodyStructure: R4B to R5"/>
+<artifact id="StructureMap/BodyStructure5to4" key="StructureMap-BodyStructure5to4" name="FML Conversion for BodyStructure: R5 to R4"/>
+<artifact id="StructureMap/BodyStructure5to4B" key="StructureMap-BodyStructure5to4B" name="FML Conversion for BodyStructure: R5 to R4B"/>
+<artifact id="StructureMap/Bundle4to5" key="StructureMap-Bundle4to5" name="FML Conversion for Bundle: R4 to R5"/>
+<artifact id="StructureMap/Bundle4Bto5" key="StructureMap-Bundle4Bto5" name="FML Conversion for Bundle: R4B to R5"/>
+<artifact id="StructureMap/Bundle5to4" key="StructureMap-Bundle5to4" name="FML Conversion for Bundle: R5 to R4"/>
+<artifact id="StructureMap/Bundle5to4B" key="StructureMap-Bundle5to4B" name="FML Conversion for Bundle: R5 to R4B"/>
+<artifact id="StructureMap/CanonicalResource4to5" key="StructureMap-CanonicalResource4to5" name="FML Conversion for CanonicalResource: R4 to R5"/>
+<artifact id="StructureMap/CanonicalResource4Bto5" key="StructureMap-CanonicalResource4Bto5" name="FML Conversion for CanonicalResource: R4B to R5"/>
+<artifact id="StructureMap/CanonicalResource5to4" key="StructureMap-CanonicalResource5to4" name="FML Conversion for CanonicalResource: R5 to R4"/>
+<artifact id="StructureMap/CanonicalResource5to4B" key="StructureMap-CanonicalResource5to4B" name="FML Conversion for CanonicalResource: R5 to R4B"/>
+<artifact id="StructureMap/CapabilityStatement4to5" key="StructureMap-CapabilityStatement4to5" name="FML Conversion for CapabilityStatement: R4 to R5"/>
+<artifact id="StructureMap/CapabilityStatement4Bto5" key="StructureMap-CapabilityStatement4Bto5" name="FML Conversion for CapabilityStatement: R4B to R5"/>
+<artifact id="StructureMap/CapabilityStatement5to4" key="StructureMap-CapabilityStatement5to4" name="FML Conversion for CapabilityStatement: R5 to R4"/>
+<artifact id="StructureMap/CapabilityStatement5to4B" key="StructureMap-CapabilityStatement5to4B" name="FML Conversion for CapabilityStatement: R5 to R4B"/>
+<artifact id="StructureMap/CarePlan4to5" key="StructureMap-CarePlan4to5" name="FML Conversion for CarePlan: R4 to R5"/>
+<artifact id="StructureMap/CarePlan4Bto5" key="StructureMap-CarePlan4Bto5" name="FML Conversion for CarePlan: R4B to R5"/>
+<artifact id="StructureMap/CarePlan5to4" key="StructureMap-CarePlan5to4" name="FML Conversion for CarePlan: R5 to R4"/>
+<artifact id="StructureMap/CarePlan5to4B" key="StructureMap-CarePlan5to4B" name="FML Conversion for CarePlan: R5 to R4B"/>
+<artifact id="StructureMap/CareTeam4to5" key="StructureMap-CareTeam4to5" name="FML Conversion for CareTeam: R4 to R5"/>
+<artifact id="StructureMap/CareTeam4Bto5" key="StructureMap-CareTeam4Bto5" name="FML Conversion for CareTeam: R4B to R5"/>
+<artifact id="StructureMap/CareTeam5to4" key="StructureMap-CareTeam5to4" name="FML Conversion for CareTeam: R5 to R4"/>
+<artifact id="StructureMap/CareTeam5to4B" key="StructureMap-CareTeam5to4B" name="FML Conversion for CareTeam: R5 to R4B"/>
+<artifact id="StructureMap/ChargeItem4to5" key="StructureMap-ChargeItem4to5" name="FML Conversion for ChargeItem: R4 to R5"/>
+<artifact id="StructureMap/ChargeItem4Bto5" key="StructureMap-ChargeItem4Bto5" name="FML Conversion for ChargeItem: R4B to R5"/>
+<artifact id="StructureMap/ChargeItem5to4" key="StructureMap-ChargeItem5to4" name="FML Conversion for ChargeItem: R5 to R4"/>
+<artifact id="StructureMap/ChargeItem5to4B" key="StructureMap-ChargeItem5to4B" name="FML Conversion for ChargeItem: R5 to R4B"/>
+<artifact id="StructureMap/ChargeItemDefinition4to5" key="StructureMap-ChargeItemDefinition4to5" name="FML Conversion for ChargeItemDefinition: R4 to R5"/>
+<artifact id="StructureMap/ChargeItemDefinition4Bto5" key="StructureMap-ChargeItemDefinition4Bto5" name="FML Conversion for ChargeItemDefinition: R4B to R5"/>
+<artifact id="StructureMap/ChargeItemDefinition5to4" key="StructureMap-ChargeItemDefinition5to4" name="FML Conversion for ChargeItemDefinition: R5 to R4"/>
+<artifact id="StructureMap/ChargeItemDefinition5to4B" key="StructureMap-ChargeItemDefinition5to4B" name="FML Conversion for ChargeItemDefinition: R5 to R4B"/>
+<artifact id="StructureMap/Citation4to5" key="StructureMap-Citation4to5" name="FML Conversion for Citation: R4 to R5"/>
+<artifact id="StructureMap/Citation4Bto5" key="StructureMap-Citation4Bto5" name="FML Conversion for Citation: R4B to R5"/>
+<artifact id="StructureMap/Citation5to4" key="StructureMap-Citation5to4" name="FML Conversion for Citation: R5 to R4"/>
+<artifact id="StructureMap/Citation5to4B" key="StructureMap-Citation5to4B" name="FML Conversion for Citation: R5 to R4B"/>
+<artifact id="StructureMap/Claim4to5" key="StructureMap-Claim4to5" name="FML Conversion for Claim: R4 to R5"/>
+<artifact id="StructureMap/Claim4Bto5" key="StructureMap-Claim4Bto5" name="FML Conversion for Claim: R4B to R5"/>
+<artifact id="StructureMap/Claim5to4" key="StructureMap-Claim5to4" name="FML Conversion for Claim: R5 to R4"/>
+<artifact id="StructureMap/Claim5to4B" key="StructureMap-Claim5to4B" name="FML Conversion for Claim: R5 to R4B"/>
+<artifact id="StructureMap/ClaimResponse4to5" key="StructureMap-ClaimResponse4to5" name="FML Conversion for ClaimResponse: R4 to R5"/>
+<artifact id="StructureMap/ClaimResponse4Bto5" key="StructureMap-ClaimResponse4Bto5" name="FML Conversion for ClaimResponse: R4B to R5"/>
+<artifact id="StructureMap/ClaimResponse5to4" key="StructureMap-ClaimResponse5to4" name="FML Conversion for ClaimResponse: R5 to R4"/>
+<artifact id="StructureMap/ClaimResponse5to4B" key="StructureMap-ClaimResponse5to4B" name="FML Conversion for ClaimResponse: R5 to R4B"/>
+<artifact id="StructureMap/ClinicalImpression4to5" key="StructureMap-ClinicalImpression4to5" name="FML Conversion for ClinicalImpression: R4 to R5"/>
+<artifact id="StructureMap/ClinicalImpression4Bto5" key="StructureMap-ClinicalImpression4Bto5" name="FML Conversion for ClinicalImpression: R4B to R5"/>
+<artifact id="StructureMap/ClinicalImpression5to4" key="StructureMap-ClinicalImpression5to4" name="FML Conversion for ClinicalImpression: R5 to R4"/>
+<artifact id="StructureMap/ClinicalImpression5to4B" key="StructureMap-ClinicalImpression5to4B" name="FML Conversion for ClinicalImpression: R5 to R4B"/>
+<artifact id="StructureMap/ClinicalUseDefinition4to5" key="StructureMap-ClinicalUseDefinition4to5" name="FML Conversion for ClinicalUseDefinition: R4 to R5"/>
+<artifact id="StructureMap/ClinicalUseDefinition4Bto5" key="StructureMap-ClinicalUseDefinition4Bto5" name="FML Conversion for ClinicalUseDefinition: R4B to R5"/>
+<artifact id="StructureMap/ClinicalUseDefinition5to4" key="StructureMap-ClinicalUseDefinition5to4" name="FML Conversion for ClinicalUseDefinition: R5 to R4"/>
+<artifact id="StructureMap/ClinicalUseDefinition5to4B" key="StructureMap-ClinicalUseDefinition5to4B" name="FML Conversion for ClinicalUseDefinition: R5 to R4B"/>
+<artifact id="StructureMap/CodeSystem4to5" key="StructureMap-CodeSystem4to5" name="FML Conversion for CodeSystem: R4 to R5"/>
+<artifact id="StructureMap/CodeSystem4Bto5" key="StructureMap-CodeSystem4Bto5" name="FML Conversion for CodeSystem: R4B to R5"/>
+<artifact id="StructureMap/CodeSystem5to4" key="StructureMap-CodeSystem5to4" name="FML Conversion for CodeSystem: R5 to R4"/>
+<artifact id="StructureMap/CodeSystem5to4B" key="StructureMap-CodeSystem5to4B" name="FML Conversion for CodeSystem: R5 to R4B"/>
+<artifact id="StructureMap/CodeableConcept4to5" key="StructureMap-CodeableConcept4to5" name="FML Conversion for CodeableConcept: R4 to R5"/>
+<artifact id="StructureMap/CodeableConcept4Bto5" key="StructureMap-CodeableConcept4Bto5" name="FML Conversion for CodeableConcept: R4B to R5"/>
+<artifact id="StructureMap/CodeableConcept5to4" key="StructureMap-CodeableConcept5to4" name="FML Conversion for CodeableConcept: R5 to R4"/>
+<artifact id="StructureMap/CodeableConcept5to4B" key="StructureMap-CodeableConcept5to4B" name="FML Conversion for CodeableConcept: R5 to R4B"/>
+<artifact id="StructureMap/CodeableReference4Bto5" key="StructureMap-CodeableReference4Bto5" name="FML Conversion for CodeableReference: R4B to R5"/>
+<artifact id="StructureMap/CodeableReference5to4B" key="StructureMap-CodeableReference5to4B" name="FML Conversion for CodeableReference: R5 to R4B"/>
+<artifact id="StructureMap/Coding4to5" key="StructureMap-Coding4to5" name="FML Conversion for Coding: R4 to R5"/>
+<artifact id="StructureMap/Coding4Bto5" key="StructureMap-Coding4Bto5" name="FML Conversion for Coding: R4B to R5"/>
+<artifact id="StructureMap/Coding5to4" key="StructureMap-Coding5to4" name="FML Conversion for Coding: R5 to R4"/>
+<artifact id="StructureMap/Coding5to4B" key="StructureMap-Coding5to4B" name="FML Conversion for Coding: R5 to R4B"/>
+<artifact id="StructureMap/Communication4to5" key="StructureMap-Communication4to5" name="FML Conversion for Communication: R4 to R5"/>
+<artifact id="StructureMap/Communication4Bto5" key="StructureMap-Communication4Bto5" name="FML Conversion for Communication: R4B to R5"/>
+<artifact id="StructureMap/Communication5to4" key="StructureMap-Communication5to4" name="FML Conversion for Communication: R5 to R4"/>
+<artifact id="StructureMap/Communication5to4B" key="StructureMap-Communication5to4B" name="FML Conversion for Communication: R5 to R4B"/>
+<artifact id="StructureMap/CommunicationRequest4to5" key="StructureMap-CommunicationRequest4to5" name="FML Conversion for CommunicationRequest: R4 to R5"/>
+<artifact id="StructureMap/CommunicationRequest4Bto5" key="StructureMap-CommunicationRequest4Bto5" name="FML Conversion for CommunicationRequest: R4B to R5"/>
+<artifact id="StructureMap/CommunicationRequest5to4" key="StructureMap-CommunicationRequest5to4" name="FML Conversion for CommunicationRequest: R5 to R4"/>
+<artifact id="StructureMap/CommunicationRequest5to4B" key="StructureMap-CommunicationRequest5to4B" name="FML Conversion for CommunicationRequest: R5 to R4B"/>
+<artifact id="StructureMap/CompartmentDefinition4to5" key="StructureMap-CompartmentDefinition4to5" name="FML Conversion for CompartmentDefinition: R4 to R5"/>
+<artifact id="StructureMap/CompartmentDefinition4Bto5" key="StructureMap-CompartmentDefinition4Bto5" name="FML Conversion for CompartmentDefinition: R4B to R5"/>
+<artifact id="StructureMap/CompartmentDefinition5to4" key="StructureMap-CompartmentDefinition5to4" name="FML Conversion for CompartmentDefinition: R5 to R4"/>
+<artifact id="StructureMap/CompartmentDefinition5to4B" key="StructureMap-CompartmentDefinition5to4B" name="FML Conversion for CompartmentDefinition: R5 to R4B"/>
+<artifact id="StructureMap/Composition4to5" key="StructureMap-Composition4to5" name="FML Conversion for Composition: R4 to R5"/>
+<artifact id="StructureMap/Composition4Bto5" key="StructureMap-Composition4Bto5" name="FML Conversion for Composition: R4B to R5"/>
+<artifact id="StructureMap/Composition5to4" key="StructureMap-Composition5to4" name="FML Conversion for Composition: R5 to R4"/>
+<artifact id="StructureMap/Composition5to4B" key="StructureMap-Composition5to4B" name="FML Conversion for Composition: R5 to R4B"/>
+<artifact id="StructureMap/ConceptMap4to5" key="StructureMap-ConceptMap4to5" name="FML Conversion for ConceptMap: R4 to R5"/>
+<artifact id="StructureMap/ConceptMap4Bto5" key="StructureMap-ConceptMap4Bto5" name="FML Conversion for ConceptMap: R4B to R5"/>
+<artifact id="StructureMap/ConceptMap5to4" key="StructureMap-ConceptMap5to4" name="FML Conversion for ConceptMap: R5 to R4"/>
+<artifact id="StructureMap/ConceptMap5to4B" key="StructureMap-ConceptMap5to4B" name="FML Conversion for ConceptMap: R5 to R4B"/>
+<artifact id="StructureMap/Condition4to5" key="StructureMap-Condition4to5" name="FML Conversion for Condition: R4 to R5"/>
+<artifact id="StructureMap/Condition4Bto5" key="StructureMap-Condition4Bto5" name="FML Conversion for Condition: R4B to R5"/>
+<artifact id="StructureMap/Condition5to4" key="StructureMap-Condition5to4" name="FML Conversion for Condition: R5 to R4"/>
+<artifact id="StructureMap/Condition5to4B" key="StructureMap-Condition5to4B" name="FML Conversion for Condition: R5 to R4B"/>
+<artifact id="StructureMap/ConditionDefinition4to5" key="StructureMap-ConditionDefinition4to5" name="FML Conversion for ConditionDefinition: R4 to R5"/>
+<artifact id="StructureMap/ConditionDefinition4Bto5" key="StructureMap-ConditionDefinition4Bto5" name="FML Conversion for ConditionDefinition: R4B to R5"/>
+<artifact id="StructureMap/ConditionDefinition5to4" key="StructureMap-ConditionDefinition5to4" name="FML Conversion for ConditionDefinition: R5 to R4"/>
+<artifact id="StructureMap/ConditionDefinition5to4B" key="StructureMap-ConditionDefinition5to4B" name="FML Conversion for ConditionDefinition: R5 to R4B"/>
+<artifact id="StructureMap/Consent4to5" key="StructureMap-Consent4to5" name="FML Conversion for Consent: R4 to R5"/>
+<artifact id="StructureMap/Consent4Bto5" key="StructureMap-Consent4Bto5" name="FML Conversion for Consent: R4B to R5"/>
+<artifact id="StructureMap/Consent5to4" key="StructureMap-Consent5to4" name="FML Conversion for Consent: R5 to R4"/>
+<artifact id="StructureMap/Consent5to4B" key="StructureMap-Consent5to4B" name="FML Conversion for Consent: R5 to R4B"/>
+<artifact id="StructureMap/ContactDetail4to5" key="StructureMap-ContactDetail4to5" name="FML Conversion for ContactDetail: R4 to R5"/>
+<artifact id="StructureMap/ContactDetail4Bto5" key="StructureMap-ContactDetail4Bto5" name="FML Conversion for ContactDetail: R4B to R5"/>
+<artifact id="StructureMap/ContactDetail5to4" key="StructureMap-ContactDetail5to4" name="FML Conversion for ContactDetail: R5 to R4"/>
+<artifact id="StructureMap/ContactDetail5to4B" key="StructureMap-ContactDetail5to4B" name="FML Conversion for ContactDetail: R5 to R4B"/>
+<artifact id="StructureMap/ContactPoint4to5" key="StructureMap-ContactPoint4to5" name="FML Conversion for ContactPoint: R4 to R5"/>
+<artifact id="StructureMap/ContactPoint4Bto5" key="StructureMap-ContactPoint4Bto5" name="FML Conversion for ContactPoint: R4B to R5"/>
+<artifact id="StructureMap/ContactPoint5to4" key="StructureMap-ContactPoint5to4" name="FML Conversion for ContactPoint: R5 to R4"/>
+<artifact id="StructureMap/ContactPoint5to4B" key="StructureMap-ContactPoint5to4B" name="FML Conversion for ContactPoint: R5 to R4B"/>
+<artifact id="StructureMap/Contract4to5" key="StructureMap-Contract4to5" name="FML Conversion for Contract: R4 to R5"/>
+<artifact id="StructureMap/Contract4Bto5" key="StructureMap-Contract4Bto5" name="FML Conversion for Contract: R4B to R5"/>
+<artifact id="StructureMap/Contract5to4" key="StructureMap-Contract5to4" name="FML Conversion for Contract: R5 to R4"/>
+<artifact id="StructureMap/Contract5to4B" key="StructureMap-Contract5to4B" name="FML Conversion for Contract: R5 to R4B"/>
+<artifact id="StructureMap/Contributor4to5" key="StructureMap-Contributor4to5" name="FML Conversion for Contributor: R4 to R5"/>
+<artifact id="StructureMap/Contributor4Bto5" key="StructureMap-Contributor4Bto5" name="FML Conversion for Contributor: R4B to R5"/>
+<artifact id="StructureMap/Contributor5to4" key="StructureMap-Contributor5to4" name="FML Conversion for Contributor: R5 to R4"/>
+<artifact id="StructureMap/Contributor5to4B" key="StructureMap-Contributor5to4B" name="FML Conversion for Contributor: R5 to R4B"/>
+<artifact id="StructureMap/Count4to5" key="StructureMap-Count4to5" name="FML Conversion for Count: R4 to R5"/>
+<artifact id="StructureMap/Count4Bto5" key="StructureMap-Count4Bto5" name="FML Conversion for Count: R4B to R5"/>
+<artifact id="StructureMap/Count5to4" key="StructureMap-Count5to4" name="FML Conversion for Count: R5 to R4"/>
+<artifact id="StructureMap/Count5to4B" key="StructureMap-Count5to4B" name="FML Conversion for Count: R5 to R4B"/>
+<artifact id="StructureMap/Coverage4to5" key="StructureMap-Coverage4to5" name="FML Conversion for Coverage: R4 to R5"/>
+<artifact id="StructureMap/Coverage4Bto5" key="StructureMap-Coverage4Bto5" name="FML Conversion for Coverage: R4B to R5"/>
+<artifact id="StructureMap/Coverage5to4" key="StructureMap-Coverage5to4" name="FML Conversion for Coverage: R5 to R4"/>
+<artifact id="StructureMap/Coverage5to4B" key="StructureMap-Coverage5to4B" name="FML Conversion for Coverage: R5 to R4B"/>
+<artifact id="StructureMap/CoverageEligibilityRequest4to5" key="StructureMap-CoverageEligibilityRequest4to5" name="FML Conversion for CoverageEligibilityRequest: R4 to R5"/>
+<artifact id="StructureMap/CoverageEligibilityRequest4Bto5" key="StructureMap-CoverageEligibilityRequest4Bto5" name="FML Conversion for CoverageEligibilityRequest: R4B to R5"/>
+<artifact id="StructureMap/CoverageEligibilityRequest5to4" key="StructureMap-CoverageEligibilityRequest5to4" name="FML Conversion for CoverageEligibilityRequest: R5 to R4"/>
+<artifact id="StructureMap/CoverageEligibilityRequest5to4B" key="StructureMap-CoverageEligibilityRequest5to4B" name="FML Conversion for CoverageEligibilityRequest: R5 to R4B"/>
+<artifact id="StructureMap/CoverageEligibilityResponse4to5" key="StructureMap-CoverageEligibilityResponse4to5" name="FML Conversion for CoverageEligibilityResponse: R4 to R5"/>
+<artifact id="StructureMap/CoverageEligibilityResponse4Bto5" key="StructureMap-CoverageEligibilityResponse4Bto5" name="FML Conversion for CoverageEligibilityResponse: R4B to R5"/>
+<artifact id="StructureMap/CoverageEligibilityResponse5to4" key="StructureMap-CoverageEligibilityResponse5to4" name="FML Conversion for CoverageEligibilityResponse: R5 to R4"/>
+<artifact id="StructureMap/CoverageEligibilityResponse5to4B" key="StructureMap-CoverageEligibilityResponse5to4B" name="FML Conversion for CoverageEligibilityResponse: R5 to R4B"/>
+<artifact id="StructureMap/DataRequirement4to5" key="StructureMap-DataRequirement4to5" name="FML Conversion for DataRequirement: R4 to R5"/>
+<artifact id="StructureMap/DataRequirement4Bto5" key="StructureMap-DataRequirement4Bto5" name="FML Conversion for DataRequirement: R4B to R5"/>
+<artifact id="StructureMap/DataRequirement5to4" key="StructureMap-DataRequirement5to4" name="FML Conversion for DataRequirement: R5 to R4"/>
+<artifact id="StructureMap/DataRequirement5to4B" key="StructureMap-DataRequirement5to4B" name="FML Conversion for DataRequirement: R5 to R4B"/>
+<artifact id="StructureMap/DetectedIssue4to5" key="StructureMap-DetectedIssue4to5" name="FML Conversion for DetectedIssue: R4 to R5"/>
+<artifact id="StructureMap/DetectedIssue4Bto5" key="StructureMap-DetectedIssue4Bto5" name="FML Conversion for DetectedIssue: R4B to R5"/>
+<artifact id="StructureMap/DetectedIssue5to4" key="StructureMap-DetectedIssue5to4" name="FML Conversion for DetectedIssue: R5 to R4"/>
+<artifact id="StructureMap/DetectedIssue5to4B" key="StructureMap-DetectedIssue5to4B" name="FML Conversion for DetectedIssue: R5 to R4B"/>
+<artifact id="StructureMap/Device4to5" key="StructureMap-Device4to5" name="FML Conversion for Device: R4 to R5"/>
+<artifact id="StructureMap/Device4Bto5" key="StructureMap-Device4Bto5" name="FML Conversion for Device: R4B to R5"/>
+<artifact id="StructureMap/Device5to4" key="StructureMap-Device5to4" name="FML Conversion for Device: R5 to R4"/>
+<artifact id="StructureMap/Device5to4B" key="StructureMap-Device5to4B" name="FML Conversion for Device: R5 to R4B"/>
+<artifact id="StructureMap/DeviceAssociation4to5" key="StructureMap-DeviceAssociation4to5" name="FML Conversion for DeviceAssociation: R4 to R5"/>
+<artifact id="StructureMap/DeviceAssociation4Bto5" key="StructureMap-DeviceAssociation4Bto5" name="FML Conversion for DeviceAssociation: R4B to R5"/>
+<artifact id="StructureMap/DeviceAssociation5to4" key="StructureMap-DeviceAssociation5to4" name="FML Conversion for DeviceAssociation: R5 to R4"/>
+<artifact id="StructureMap/DeviceAssociation5to4B" key="StructureMap-DeviceAssociation5to4B" name="FML Conversion for DeviceAssociation: R5 to R4B"/>
+<artifact id="StructureMap/DeviceDefinition4to5" key="StructureMap-DeviceDefinition4to5" name="FML Conversion for DeviceDefinition: R4 to R5"/>
+<artifact id="StructureMap/DeviceDefinition4Bto5" key="StructureMap-DeviceDefinition4Bto5" name="FML Conversion for DeviceDefinition: R4B to R5"/>
+<artifact id="StructureMap/DeviceDefinition5to4" key="StructureMap-DeviceDefinition5to4" name="FML Conversion for DeviceDefinition: R5 to R4"/>
+<artifact id="StructureMap/DeviceDefinition5to4B" key="StructureMap-DeviceDefinition5to4B" name="FML Conversion for DeviceDefinition: R5 to R4B"/>
+<artifact id="StructureMap/DeviceDispense4to5" key="StructureMap-DeviceDispense4to5" name="FML Conversion for DeviceDispense: R4 to R5"/>
+<artifact id="StructureMap/DeviceDispense4Bto5" key="StructureMap-DeviceDispense4Bto5" name="FML Conversion for DeviceDispense: R4B to R5"/>
+<artifact id="StructureMap/DeviceDispense5to4" key="StructureMap-DeviceDispense5to4" name="FML Conversion for DeviceDispense: R5 to R4"/>
+<artifact id="StructureMap/DeviceDispense5to4B" key="StructureMap-DeviceDispense5to4B" name="FML Conversion for DeviceDispense: R5 to R4B"/>
+<artifact id="StructureMap/DeviceMetric4to5" key="StructureMap-DeviceMetric4to5" name="FML Conversion for DeviceMetric: R4 to R5"/>
+<artifact id="StructureMap/DeviceMetric4Bto5" key="StructureMap-DeviceMetric4Bto5" name="FML Conversion for DeviceMetric: R4B to R5"/>
+<artifact id="StructureMap/DeviceMetric5to4" key="StructureMap-DeviceMetric5to4" name="FML Conversion for DeviceMetric: R5 to R4"/>
+<artifact id="StructureMap/DeviceMetric5to4B" key="StructureMap-DeviceMetric5to4B" name="FML Conversion for DeviceMetric: R5 to R4B"/>
+<artifact id="StructureMap/DeviceRequest4to5" key="StructureMap-DeviceRequest4to5" name="FML Conversion for DeviceRequest: R4 to R5"/>
+<artifact id="StructureMap/DeviceRequest4Bto5" key="StructureMap-DeviceRequest4Bto5" name="FML Conversion for DeviceRequest: R4B to R5"/>
+<artifact id="StructureMap/DeviceRequest5to4" key="StructureMap-DeviceRequest5to4" name="FML Conversion for DeviceRequest: R5 to R4"/>
+<artifact id="StructureMap/DeviceRequest5to4B" key="StructureMap-DeviceRequest5to4B" name="FML Conversion for DeviceRequest: R5 to R4B"/>
+<artifact id="StructureMap/DeviceUsage4to5" key="StructureMap-DeviceUsage4to5" name="FML Conversion for DeviceUsage: R4 to R5"/>
+<artifact id="StructureMap/DeviceUsage4Bto5" key="StructureMap-DeviceUsage4Bto5" name="FML Conversion for DeviceUsage: R4B to R5"/>
+<artifact id="StructureMap/DeviceUsage5to4" key="StructureMap-DeviceUsage5to4" name="FML Conversion for DeviceUsage: R5 to R4"/>
+<artifact id="StructureMap/DeviceUsage5to4B" key="StructureMap-DeviceUsage5to4B" name="FML Conversion for DeviceUsage: R5 to R4B"/>
+<artifact id="StructureMap/DiagnosticReport4to5" key="StructureMap-DiagnosticReport4to5" name="FML Conversion for DiagnosticReport: R4 to R5"/>
+<artifact id="StructureMap/DiagnosticReport4Bto5" key="StructureMap-DiagnosticReport4Bto5" name="FML Conversion for DiagnosticReport: R4B to R5"/>
+<artifact id="StructureMap/DiagnosticReport5to4" key="StructureMap-DiagnosticReport5to4" name="FML Conversion for DiagnosticReport: R5 to R4"/>
+<artifact id="StructureMap/DiagnosticReport5to4B" key="StructureMap-DiagnosticReport5to4B" name="FML Conversion for DiagnosticReport: R5 to R4B"/>
+<artifact id="StructureMap/Distance4to5" key="StructureMap-Distance4to5" name="FML Conversion for Distance: R4 to R5"/>
+<artifact id="StructureMap/Distance4Bto5" key="StructureMap-Distance4Bto5" name="FML Conversion for Distance: R4B to R5"/>
+<artifact id="StructureMap/Distance5to4" key="StructureMap-Distance5to4" name="FML Conversion for Distance: R5 to R4"/>
+<artifact id="StructureMap/Distance5to4B" key="StructureMap-Distance5to4B" name="FML Conversion for Distance: R5 to R4B"/>
+<artifact id="StructureMap/DocumentReference4to5" key="StructureMap-DocumentReference4to5" name="FML Conversion for DocumentReference: R4 to R5"/>
+<artifact id="StructureMap/DocumentReference4Bto5" key="StructureMap-DocumentReference4Bto5" name="FML Conversion for DocumentReference: R4B to R5"/>
+<artifact id="StructureMap/DocumentReference5to4" key="StructureMap-DocumentReference5to4" name="FML Conversion for DocumentReference: R5 to R4"/>
+<artifact id="StructureMap/DocumentReference5to4B" key="StructureMap-DocumentReference5to4B" name="FML Conversion for DocumentReference: R5 to R4B"/>
+<artifact id="StructureMap/DomainResource4to5" key="StructureMap-DomainResource4to5" name="FML Conversion for DomainResource: R4 to R5"/>
+<artifact id="StructureMap/DomainResource4Bto5" key="StructureMap-DomainResource4Bto5" name="FML Conversion for DomainResource: R4B to R5"/>
+<artifact id="StructureMap/DomainResource5to4" key="StructureMap-DomainResource5to4" name="FML Conversion for DomainResource: R5 to R4"/>
+<artifact id="StructureMap/DomainResource5to4B" key="StructureMap-DomainResource5to4B" name="FML Conversion for DomainResource: R5 to R4B"/>
+<artifact id="StructureMap/Dosage4to5" key="StructureMap-Dosage4to5" name="FML Conversion for Dosage: R4 to R5"/>
+<artifact id="StructureMap/Dosage4Bto5" key="StructureMap-Dosage4Bto5" name="FML Conversion for Dosage: R4B to R5"/>
+<artifact id="StructureMap/Dosage5to4" key="StructureMap-Dosage5to4" name="FML Conversion for Dosage: R5 to R4"/>
+<artifact id="StructureMap/Dosage5to4B" key="StructureMap-Dosage5to4B" name="FML Conversion for Dosage: R5 to R4B"/>
+<artifact id="StructureMap/Duration4to5" key="StructureMap-Duration4to5" name="FML Conversion for Duration: R4 to R5"/>
+<artifact id="StructureMap/Duration4Bto5" key="StructureMap-Duration4Bto5" name="FML Conversion for Duration: R4B to R5"/>
+<artifact id="StructureMap/Duration5to4" key="StructureMap-Duration5to4" name="FML Conversion for Duration: R5 to R4"/>
+<artifact id="StructureMap/Duration5to4B" key="StructureMap-Duration5to4B" name="FML Conversion for Duration: R5 to R4B"/>
+<artifact id="StructureMap/Element4to5" key="StructureMap-Element4to5" name="FML Conversion for Element: R4 to R5"/>
+<artifact id="StructureMap/Element4Bto5" key="StructureMap-Element4Bto5" name="FML Conversion for Element: R4B to R5"/>
+<artifact id="StructureMap/Element5to4" key="StructureMap-Element5to4" name="FML Conversion for Element: R5 to R4"/>
+<artifact id="StructureMap/Element5to4B" key="StructureMap-Element5to4B" name="FML Conversion for Element: R5 to R4B"/>
+<artifact id="StructureMap/ElementDefinition4to5" key="StructureMap-ElementDefinition4to5" name="FML Conversion for ElementDefinition: R4 to R5"/>
+<artifact id="StructureMap/ElementDefinition4Bto5" key="StructureMap-ElementDefinition4Bto5" name="FML Conversion for ElementDefinition: R4B to R5"/>
+<artifact id="StructureMap/ElementDefinition5to4" key="StructureMap-ElementDefinition5to4" name="FML Conversion for ElementDefinition: R5 to R4"/>
+<artifact id="StructureMap/ElementDefinition5to4B" key="StructureMap-ElementDefinition5to4B" name="FML Conversion for ElementDefinition: R5 to R4B"/>
+<artifact id="StructureMap/Encounter4to5" key="StructureMap-Encounter4to5" name="FML Conversion for Encounter: R4 to R5"/>
+<artifact id="StructureMap/Encounter4Bto5" key="StructureMap-Encounter4Bto5" name="FML Conversion for Encounter: R4B to R5"/>
+<artifact id="StructureMap/Encounter5to4" key="StructureMap-Encounter5to4" name="FML Conversion for Encounter: R5 to R4"/>
+<artifact id="StructureMap/Encounter5to4B" key="StructureMap-Encounter5to4B" name="FML Conversion for Encounter: R5 to R4B"/>
+<artifact id="StructureMap/EncounterHistory4to5" key="StructureMap-EncounterHistory4to5" name="FML Conversion for EncounterHistory: R4 to R5"/>
+<artifact id="StructureMap/EncounterHistory4Bto5" key="StructureMap-EncounterHistory4Bto5" name="FML Conversion for EncounterHistory: R4B to R5"/>
+<artifact id="StructureMap/EncounterHistory5to4" key="StructureMap-EncounterHistory5to4" name="FML Conversion for EncounterHistory: R5 to R4"/>
+<artifact id="StructureMap/EncounterHistory5to4B" key="StructureMap-EncounterHistory5to4B" name="FML Conversion for EncounterHistory: R5 to R4B"/>
+<artifact id="StructureMap/Endpoint4to5" key="StructureMap-Endpoint4to5" name="FML Conversion for Endpoint: R4 to R5"/>
+<artifact id="StructureMap/Endpoint4Bto5" key="StructureMap-Endpoint4Bto5" name="FML Conversion for Endpoint: R4B to R5"/>
+<artifact id="StructureMap/Endpoint5to4" key="StructureMap-Endpoint5to4" name="FML Conversion for Endpoint: R5 to R4"/>
+<artifact id="StructureMap/Endpoint5to4B" key="StructureMap-Endpoint5to4B" name="FML Conversion for Endpoint: R5 to R4B"/>
+<artifact id="StructureMap/EnrollmentRequest4to5" key="StructureMap-EnrollmentRequest4to5" name="FML Conversion for EnrollmentRequest: R4 to R5"/>
+<artifact id="StructureMap/EnrollmentRequest4Bto5" key="StructureMap-EnrollmentRequest4Bto5" name="FML Conversion for EnrollmentRequest: R4B to R5"/>
+<artifact id="StructureMap/EnrollmentRequest5to4" key="StructureMap-EnrollmentRequest5to4" name="FML Conversion for EnrollmentRequest: R5 to R4"/>
+<artifact id="StructureMap/EnrollmentRequest5to4B" key="StructureMap-EnrollmentRequest5to4B" name="FML Conversion for EnrollmentRequest: R5 to R4B"/>
+<artifact id="StructureMap/EnrollmentResponse4to5" key="StructureMap-EnrollmentResponse4to5" name="FML Conversion for EnrollmentResponse: R4 to R5"/>
+<artifact id="StructureMap/EnrollmentResponse4Bto5" key="StructureMap-EnrollmentResponse4Bto5" name="FML Conversion for EnrollmentResponse: R4B to R5"/>
+<artifact id="StructureMap/EnrollmentResponse5to4" key="StructureMap-EnrollmentResponse5to4" name="FML Conversion for EnrollmentResponse: R5 to R4"/>
+<artifact id="StructureMap/EnrollmentResponse5to4B" key="StructureMap-EnrollmentResponse5to4B" name="FML Conversion for EnrollmentResponse: R5 to R4B"/>
+<artifact id="StructureMap/EpisodeOfCare4to5" key="StructureMap-EpisodeOfCare4to5" name="FML Conversion for EpisodeOfCare: R4 to R5"/>
+<artifact id="StructureMap/EpisodeOfCare4Bto5" key="StructureMap-EpisodeOfCare4Bto5" name="FML Conversion for EpisodeOfCare: R4B to R5"/>
+<artifact id="StructureMap/EpisodeOfCare5to4" key="StructureMap-EpisodeOfCare5to4" name="FML Conversion for EpisodeOfCare: R5 to R4"/>
+<artifact id="StructureMap/EpisodeOfCare5to4B" key="StructureMap-EpisodeOfCare5to4B" name="FML Conversion for EpisodeOfCare: R5 to R4B"/>
+<artifact id="StructureMap/EventDefinition4to5" key="StructureMap-EventDefinition4to5" name="FML Conversion for EventDefinition: R4 to R5"/>
+<artifact id="StructureMap/EventDefinition4Bto5" key="StructureMap-EventDefinition4Bto5" name="FML Conversion for EventDefinition: R4B to R5"/>
+<artifact id="StructureMap/EventDefinition5to4" key="StructureMap-EventDefinition5to4" name="FML Conversion for EventDefinition: R5 to R4"/>
+<artifact id="StructureMap/EventDefinition5to4B" key="StructureMap-EventDefinition5to4B" name="FML Conversion for EventDefinition: R5 to R4B"/>
+<artifact id="StructureMap/Evidence4to5" key="StructureMap-Evidence4to5" name="FML Conversion for Evidence: R4 to R5"/>
+<artifact id="StructureMap/Evidence4Bto5" key="StructureMap-Evidence4Bto5" name="FML Conversion for Evidence: R4B to R5"/>
+<artifact id="StructureMap/Evidence5to4" key="StructureMap-Evidence5to4" name="FML Conversion for Evidence: R5 to R4"/>
+<artifact id="StructureMap/Evidence5to4B" key="StructureMap-Evidence5to4B" name="FML Conversion for Evidence: R5 to R4B"/>
+<artifact id="StructureMap/EvidenceReport4to5" key="StructureMap-EvidenceReport4to5" name="FML Conversion for EvidenceReport: R4 to R5"/>
+<artifact id="StructureMap/EvidenceReport4Bto5" key="StructureMap-EvidenceReport4Bto5" name="FML Conversion for EvidenceReport: R4B to R5"/>
+<artifact id="StructureMap/EvidenceReport5to4" key="StructureMap-EvidenceReport5to4" name="FML Conversion for EvidenceReport: R5 to R4"/>
+<artifact id="StructureMap/EvidenceReport5to4B" key="StructureMap-EvidenceReport5to4B" name="FML Conversion for EvidenceReport: R5 to R4B"/>
+<artifact id="StructureMap/EvidenceVariable4to5" key="StructureMap-EvidenceVariable4to5" name="FML Conversion for EvidenceVariable: R4 to R5"/>
+<artifact id="StructureMap/EvidenceVariable4Bto5" key="StructureMap-EvidenceVariable4Bto5" name="FML Conversion for EvidenceVariable: R4B to R5"/>
+<artifact id="StructureMap/EvidenceVariable5to4" key="StructureMap-EvidenceVariable5to4" name="FML Conversion for EvidenceVariable: R5 to R4"/>
+<artifact id="StructureMap/EvidenceVariable5to4B" key="StructureMap-EvidenceVariable5to4B" name="FML Conversion for EvidenceVariable: R5 to R4B"/>
+<artifact id="StructureMap/ExampleScenario4to5" key="StructureMap-ExampleScenario4to5" name="FML Conversion for ExampleScenario: R4 to R5"/>
+<artifact id="StructureMap/ExampleScenario4Bto5" key="StructureMap-ExampleScenario4Bto5" name="FML Conversion for ExampleScenario: R4B to R5"/>
+<artifact id="StructureMap/ExampleScenario5to4" key="StructureMap-ExampleScenario5to4" name="FML Conversion for ExampleScenario: R5 to R4"/>
+<artifact id="StructureMap/ExampleScenario5to4B" key="StructureMap-ExampleScenario5to4B" name="FML Conversion for ExampleScenario: R5 to R4B"/>
+<artifact id="StructureMap/ExplanationOfBenefit4to5" key="StructureMap-ExplanationOfBenefit4to5" name="FML Conversion for ExplanationOfBenefit: R4 to R5"/>
+<artifact id="StructureMap/ExplanationOfBenefit4Bto5" key="StructureMap-ExplanationOfBenefit4Bto5" name="FML Conversion for ExplanationOfBenefit: R4B to R5"/>
+<artifact id="StructureMap/ExplanationOfBenefit5to4" key="StructureMap-ExplanationOfBenefit5to4" name="FML Conversion for ExplanationOfBenefit: R5 to R4"/>
+<artifact id="StructureMap/ExplanationOfBenefit5to4B" key="StructureMap-ExplanationOfBenefit5to4B" name="FML Conversion for ExplanationOfBenefit: R5 to R4B"/>
+<artifact id="StructureMap/Expression4to5" key="StructureMap-Expression4to5" name="FML Conversion for Expression: R4 to R5"/>
+<artifact id="StructureMap/Expression4Bto5" key="StructureMap-Expression4Bto5" name="FML Conversion for Expression: R4B to R5"/>
+<artifact id="StructureMap/Expression5to4" key="StructureMap-Expression5to4" name="FML Conversion for Expression: R5 to R4"/>
+<artifact id="StructureMap/Expression5to4B" key="StructureMap-Expression5to4B" name="FML Conversion for Expression: R5 to R4B"/>
+<artifact id="StructureMap/ExtendedContactDetail4to5" key="StructureMap-ExtendedContactDetail4to5" name="FML Conversion for ExtendedContactDetail: R4 to R5"/>
+<artifact id="StructureMap/ExtendedContactDetail4Bto5" key="StructureMap-ExtendedContactDetail4Bto5" name="FML Conversion for ExtendedContactDetail: R4B to R5"/>
+<artifact id="StructureMap/ExtendedContactDetail5to4" key="StructureMap-ExtendedContactDetail5to4" name="FML Conversion for ExtendedContactDetail: R5 to R4"/>
+<artifact id="StructureMap/ExtendedContactDetail5to4B" key="StructureMap-ExtendedContactDetail5to4B" name="FML Conversion for ExtendedContactDetail: R5 to R4B"/>
+<artifact id="StructureMap/Extension4to5" key="StructureMap-Extension4to5" name="FML Conversion for Extension: R4 to R5"/>
+<artifact id="StructureMap/Extension4Bto5" key="StructureMap-Extension4Bto5" name="FML Conversion for Extension: R4B to R5"/>
+<artifact id="StructureMap/Extension5to4" key="StructureMap-Extension5to4" name="FML Conversion for Extension: R5 to R4"/>
+<artifact id="StructureMap/Extension5to4B" key="StructureMap-Extension5to4B" name="FML Conversion for Extension: R5 to R4B"/>
+<artifact id="StructureMap/FamilyMemberHistory4to5" key="StructureMap-FamilyMemberHistory4to5" name="FML Conversion for FamilyMemberHistory: R4 to R5"/>
+<artifact id="StructureMap/FamilyMemberHistory4Bto5" key="StructureMap-FamilyMemberHistory4Bto5" name="FML Conversion for FamilyMemberHistory: R4B to R5"/>
+<artifact id="StructureMap/FamilyMemberHistory5to4" key="StructureMap-FamilyMemberHistory5to4" name="FML Conversion for FamilyMemberHistory: R5 to R4"/>
+<artifact id="StructureMap/FamilyMemberHistory5to4B" key="StructureMap-FamilyMemberHistory5to4B" name="FML Conversion for FamilyMemberHistory: R5 to R4B"/>
+<artifact id="StructureMap/Flag4to5" key="StructureMap-Flag4to5" name="FML Conversion for Flag: R4 to R5"/>
+<artifact id="StructureMap/Flag4Bto5" key="StructureMap-Flag4Bto5" name="FML Conversion for Flag: R4B to R5"/>
+<artifact id="StructureMap/Flag5to4" key="StructureMap-Flag5to4" name="FML Conversion for Flag: R5 to R4"/>
+<artifact id="StructureMap/Flag5to4B" key="StructureMap-Flag5to4B" name="FML Conversion for Flag: R5 to R4B"/>
+<artifact id="StructureMap/FormularyItem4to5" key="StructureMap-FormularyItem4to5" name="FML Conversion for FormularyItem: R4 to R5"/>
+<artifact id="StructureMap/FormularyItem4Bto5" key="StructureMap-FormularyItem4Bto5" name="FML Conversion for FormularyItem: R4B to R5"/>
+<artifact id="StructureMap/FormularyItem5to4" key="StructureMap-FormularyItem5to4" name="FML Conversion for FormularyItem: R5 to R4"/>
+<artifact id="StructureMap/FormularyItem5to4B" key="StructureMap-FormularyItem5to4B" name="FML Conversion for FormularyItem: R5 to R4B"/>
+<artifact id="StructureMap/GenomicStudy4to5" key="StructureMap-GenomicStudy4to5" name="FML Conversion for GenomicStudy: R4 to R5"/>
+<artifact id="StructureMap/GenomicStudy4Bto5" key="StructureMap-GenomicStudy4Bto5" name="FML Conversion for GenomicStudy: R4B to R5"/>
+<artifact id="StructureMap/GenomicStudy5to4" key="StructureMap-GenomicStudy5to4" name="FML Conversion for GenomicStudy: R5 to R4"/>
+<artifact id="StructureMap/GenomicStudy5to4B" key="StructureMap-GenomicStudy5to4B" name="FML Conversion for GenomicStudy: R5 to R4B"/>
+<artifact id="StructureMap/Goal4to5" key="StructureMap-Goal4to5" name="FML Conversion for Goal: R4 to R5"/>
+<artifact id="StructureMap/Goal4Bto5" key="StructureMap-Goal4Bto5" name="FML Conversion for Goal: R4B to R5"/>
+<artifact id="StructureMap/Goal5to4" key="StructureMap-Goal5to4" name="FML Conversion for Goal: R5 to R4"/>
+<artifact id="StructureMap/Goal5to4B" key="StructureMap-Goal5to4B" name="FML Conversion for Goal: R5 to R4B"/>
+<artifact id="StructureMap/Group4to5" key="StructureMap-Group4to5" name="FML Conversion for Group: R4 to R5"/>
+<artifact id="StructureMap/Group4Bto5" key="StructureMap-Group4Bto5" name="FML Conversion for Group: R4B to R5"/>
+<artifact id="StructureMap/Group5to4" key="StructureMap-Group5to4" name="FML Conversion for Group: R5 to R4"/>
+<artifact id="StructureMap/Group5to4B" key="StructureMap-Group5to4B" name="FML Conversion for Group: R5 to R4B"/>
+<artifact id="StructureMap/GuidanceResponse4to5" key="StructureMap-GuidanceResponse4to5" name="FML Conversion for GuidanceResponse: R4 to R5"/>
+<artifact id="StructureMap/GuidanceResponse4Bto5" key="StructureMap-GuidanceResponse4Bto5" name="FML Conversion for GuidanceResponse: R4B to R5"/>
+<artifact id="StructureMap/GuidanceResponse5to4" key="StructureMap-GuidanceResponse5to4" name="FML Conversion for GuidanceResponse: R5 to R4"/>
+<artifact id="StructureMap/GuidanceResponse5to4B" key="StructureMap-GuidanceResponse5to4B" name="FML Conversion for GuidanceResponse: R5 to R4B"/>
+<artifact id="StructureMap/HealthcareService4to5" key="StructureMap-HealthcareService4to5" name="FML Conversion for HealthcareService: R4 to R5"/>
+<artifact id="StructureMap/HealthcareService4Bto5" key="StructureMap-HealthcareService4Bto5" name="FML Conversion for HealthcareService: R4B to R5"/>
+<artifact id="StructureMap/HealthcareService5to4" key="StructureMap-HealthcareService5to4" name="FML Conversion for HealthcareService: R5 to R4"/>
+<artifact id="StructureMap/HealthcareService5to4B" key="StructureMap-HealthcareService5to4B" name="FML Conversion for HealthcareService: R5 to R4B"/>
+<artifact id="StructureMap/HumanName4to5" key="StructureMap-HumanName4to5" name="FML Conversion for HumanName: R4 to R5"/>
+<artifact id="StructureMap/HumanName4Bto5" key="StructureMap-HumanName4Bto5" name="FML Conversion for HumanName: R4B to R5"/>
+<artifact id="StructureMap/HumanName5to4" key="StructureMap-HumanName5to4" name="FML Conversion for HumanName: R5 to R4"/>
+<artifact id="StructureMap/HumanName5to4B" key="StructureMap-HumanName5to4B" name="FML Conversion for HumanName: R5 to R4B"/>
+<artifact id="StructureMap/Identifier4to5" key="StructureMap-Identifier4to5" name="FML Conversion for Identifier: R4 to R5"/>
+<artifact id="StructureMap/Identifier4Bto5" key="StructureMap-Identifier4Bto5" name="FML Conversion for Identifier: R4B to R5"/>
+<artifact id="StructureMap/Identifier5to4" key="StructureMap-Identifier5to4" name="FML Conversion for Identifier: R5 to R4"/>
+<artifact id="StructureMap/Identifier5to4B" key="StructureMap-Identifier5to4B" name="FML Conversion for Identifier: R5 to R4B"/>
+<artifact id="StructureMap/ImagingSelection4to5" key="StructureMap-ImagingSelection4to5" name="FML Conversion for ImagingSelection: R4 to R5"/>
+<artifact id="StructureMap/ImagingSelection4Bto5" key="StructureMap-ImagingSelection4Bto5" name="FML Conversion for ImagingSelection: R4B to R5"/>
+<artifact id="StructureMap/ImagingSelection5to4" key="StructureMap-ImagingSelection5to4" name="FML Conversion for ImagingSelection: R5 to R4"/>
+<artifact id="StructureMap/ImagingSelection5to4B" key="StructureMap-ImagingSelection5to4B" name="FML Conversion for ImagingSelection: R5 to R4B"/>
+<artifact id="StructureMap/ImagingStudy4to5" key="StructureMap-ImagingStudy4to5" name="FML Conversion for ImagingStudy: R4 to R5"/>
+<artifact id="StructureMap/ImagingStudy4Bto5" key="StructureMap-ImagingStudy4Bto5" name="FML Conversion for ImagingStudy: R4B to R5"/>
+<artifact id="StructureMap/ImagingStudy5to4" key="StructureMap-ImagingStudy5to4" name="FML Conversion for ImagingStudy: R5 to R4"/>
+<artifact id="StructureMap/ImagingStudy5to4B" key="StructureMap-ImagingStudy5to4B" name="FML Conversion for ImagingStudy: R5 to R4B"/>
+<artifact id="StructureMap/Immunization4to5" key="StructureMap-Immunization4to5" name="FML Conversion for Immunization: R4 to R5"/>
+<artifact id="StructureMap/Immunization4Bto5" key="StructureMap-Immunization4Bto5" name="FML Conversion for Immunization: R4B to R5"/>
+<artifact id="StructureMap/Immunization5to4" key="StructureMap-Immunization5to4" name="FML Conversion for Immunization: R5 to R4"/>
+<artifact id="StructureMap/Immunization5to4B" key="StructureMap-Immunization5to4B" name="FML Conversion for Immunization: R5 to R4B"/>
+<artifact id="StructureMap/ImmunizationEvaluation4to5" key="StructureMap-ImmunizationEvaluation4to5" name="FML Conversion for ImmunizationEvaluation: R4 to R5"/>
+<artifact id="StructureMap/ImmunizationEvaluation4Bto5" key="StructureMap-ImmunizationEvaluation4Bto5" name="FML Conversion for ImmunizationEvaluation: R4B to R5"/>
+<artifact id="StructureMap/ImmunizationEvaluation5to4" key="StructureMap-ImmunizationEvaluation5to4" name="FML Conversion for ImmunizationEvaluation: R5 to R4"/>
+<artifact id="StructureMap/ImmunizationEvaluation5to4B" key="StructureMap-ImmunizationEvaluation5to4B" name="FML Conversion for ImmunizationEvaluation: R5 to R4B"/>
+<artifact id="StructureMap/ImmunizationRecommendation4to5" key="StructureMap-ImmunizationRecommendation4to5" name="FML Conversion for ImmunizationRecommendation: R4 to R5"/>
+<artifact id="StructureMap/ImmunizationRecommendation4Bto5" key="StructureMap-ImmunizationRecommendation4Bto5" name="FML Conversion for ImmunizationRecommendation: R4B to R5"/>
+<artifact id="StructureMap/ImmunizationRecommendation5to4" key="StructureMap-ImmunizationRecommendation5to4" name="FML Conversion for ImmunizationRecommendation: R5 to R4"/>
+<artifact id="StructureMap/ImmunizationRecommendation5to4B" key="StructureMap-ImmunizationRecommendation5to4B" name="FML Conversion for ImmunizationRecommendation: R5 to R4B"/>
+<artifact id="StructureMap/ImplementationGuide4to5" key="StructureMap-ImplementationGuide4to5" name="FML Conversion for ImplementationGuide: R4 to R5"/>
+<artifact id="StructureMap/ImplementationGuide4Bto5" key="StructureMap-ImplementationGuide4Bto5" name="FML Conversion for ImplementationGuide: R4B to R5"/>
+<artifact id="StructureMap/ImplementationGuide5to4" key="StructureMap-ImplementationGuide5to4" name="FML Conversion for ImplementationGuide: R5 to R4"/>
+<artifact id="StructureMap/ImplementationGuide5to4B" key="StructureMap-ImplementationGuide5to4B" name="FML Conversion for ImplementationGuide: R5 to R4B"/>
+<artifact id="StructureMap/Ingredient4to5" key="StructureMap-Ingredient4to5" name="FML Conversion for Ingredient: R4 to R5"/>
+<artifact id="StructureMap/Ingredient4Bto5" key="StructureMap-Ingredient4Bto5" name="FML Conversion for Ingredient: R4B to R5"/>
+<artifact id="StructureMap/Ingredient5to4" key="StructureMap-Ingredient5to4" name="FML Conversion for Ingredient: R5 to R4"/>
+<artifact id="StructureMap/Ingredient5to4B" key="StructureMap-Ingredient5to4B" name="FML Conversion for Ingredient: R5 to R4B"/>
+<artifact id="StructureMap/InsurancePlan4to5" key="StructureMap-InsurancePlan4to5" name="FML Conversion for InsurancePlan: R4 to R5"/>
+<artifact id="StructureMap/InsurancePlan4Bto5" key="StructureMap-InsurancePlan4Bto5" name="FML Conversion for InsurancePlan: R4B to R5"/>
+<artifact id="StructureMap/InsurancePlan5to4" key="StructureMap-InsurancePlan5to4" name="FML Conversion for InsurancePlan: R5 to R4"/>
+<artifact id="StructureMap/InsurancePlan5to4B" key="StructureMap-InsurancePlan5to4B" name="FML Conversion for InsurancePlan: R5 to R4B"/>
+<artifact id="StructureMap/InventoryItem4to5" key="StructureMap-InventoryItem4to5" name="FML Conversion for InventoryItem: R4 to R5"/>
+<artifact id="StructureMap/InventoryItem4Bto5" key="StructureMap-InventoryItem4Bto5" name="FML Conversion for InventoryItem: R4B to R5"/>
+<artifact id="StructureMap/InventoryItem5to4" key="StructureMap-InventoryItem5to4" name="FML Conversion for InventoryItem: R5 to R4"/>
+<artifact id="StructureMap/InventoryItem5to4B" key="StructureMap-InventoryItem5to4B" name="FML Conversion for InventoryItem: R5 to R4B"/>
+<artifact id="StructureMap/InventoryReport4to5" key="StructureMap-InventoryReport4to5" name="FML Conversion for InventoryReport: R4 to R5"/>
+<artifact id="StructureMap/InventoryReport4Bto5" key="StructureMap-InventoryReport4Bto5" name="FML Conversion for InventoryReport: R4B to R5"/>
+<artifact id="StructureMap/InventoryReport5to4" key="StructureMap-InventoryReport5to4" name="FML Conversion for InventoryReport: R5 to R4"/>
+<artifact id="StructureMap/InventoryReport5to4B" key="StructureMap-InventoryReport5to4B" name="FML Conversion for InventoryReport: R5 to R4B"/>
+<artifact id="StructureMap/Invoice4to5" key="StructureMap-Invoice4to5" name="FML Conversion for Invoice: R4 to R5"/>
+<artifact id="StructureMap/Invoice4Bto5" key="StructureMap-Invoice4Bto5" name="FML Conversion for Invoice: R4B to R5"/>
+<artifact id="StructureMap/Invoice5to4" key="StructureMap-Invoice5to4" name="FML Conversion for Invoice: R5 to R4"/>
+<artifact id="StructureMap/Invoice5to4B" key="StructureMap-Invoice5to4B" name="FML Conversion for Invoice: R5 to R4B"/>
+<artifact id="StructureMap/Library4to5" key="StructureMap-Library4to5" name="FML Conversion for Library: R4 to R5"/>
+<artifact id="StructureMap/Library4Bto5" key="StructureMap-Library4Bto5" name="FML Conversion for Library: R4B to R5"/>
+<artifact id="StructureMap/Library5to4" key="StructureMap-Library5to4" name="FML Conversion for Library: R5 to R4"/>
+<artifact id="StructureMap/Library5to4B" key="StructureMap-Library5to4B" name="FML Conversion for Library: R5 to R4B"/>
+<artifact id="StructureMap/Linkage4to5" key="StructureMap-Linkage4to5" name="FML Conversion for Linkage: R4 to R5"/>
+<artifact id="StructureMap/Linkage4Bto5" key="StructureMap-Linkage4Bto5" name="FML Conversion for Linkage: R4B to R5"/>
+<artifact id="StructureMap/Linkage5to4" key="StructureMap-Linkage5to4" name="FML Conversion for Linkage: R5 to R4"/>
+<artifact id="StructureMap/Linkage5to4B" key="StructureMap-Linkage5to4B" name="FML Conversion for Linkage: R5 to R4B"/>
+<artifact id="StructureMap/List4to5" key="StructureMap-List4to5" name="FML Conversion for List: R4 to R5"/>
+<artifact id="StructureMap/List4Bto5" key="StructureMap-List4Bto5" name="FML Conversion for List: R4B to R5"/>
+<artifact id="StructureMap/List5to4" key="StructureMap-List5to4" name="FML Conversion for List: R5 to R4"/>
+<artifact id="StructureMap/List5to4B" key="StructureMap-List5to4B" name="FML Conversion for List: R5 to R4B"/>
+<artifact id="StructureMap/Location4to5" key="StructureMap-Location4to5" name="FML Conversion for Location: R4 to R5"/>
+<artifact id="StructureMap/Location4Bto5" key="StructureMap-Location4Bto5" name="FML Conversion for Location: R4B to R5"/>
+<artifact id="StructureMap/Location5to4" key="StructureMap-Location5to4" name="FML Conversion for Location: R5 to R4"/>
+<artifact id="StructureMap/Location5to4B" key="StructureMap-Location5to4B" name="FML Conversion for Location: R5 to R4B"/>
+<artifact id="StructureMap/ManufacturedItemDefinition4to5" key="StructureMap-ManufacturedItemDefinition4to5" name="FML Conversion for ManufacturedItemDefinition: R4 to R5"/>
+<artifact id="StructureMap/ManufacturedItemDefinition4Bto5" key="StructureMap-ManufacturedItemDefinition4Bto5" name="FML Conversion for ManufacturedItemDefinition: R4B to R5"/>
+<artifact id="StructureMap/ManufacturedItemDefinition5to4" key="StructureMap-ManufacturedItemDefinition5to4" name="FML Conversion for ManufacturedItemDefinition: R5 to R4"/>
+<artifact id="StructureMap/ManufacturedItemDefinition5to4B" key="StructureMap-ManufacturedItemDefinition5to4B" name="FML Conversion for ManufacturedItemDefinition: R5 to R4B"/>
+<artifact id="StructureMap/MarketingStatus4to5" key="StructureMap-MarketingStatus4to5" name="FML Conversion for MarketingStatus: R4 to R5"/>
+<artifact id="StructureMap/MarketingStatus4Bto5" key="StructureMap-MarketingStatus4Bto5" name="FML Conversion for MarketingStatus: R4B to R5"/>
+<artifact id="StructureMap/MarketingStatus5to4" key="StructureMap-MarketingStatus5to4" name="FML Conversion for MarketingStatus: R5 to R4"/>
+<artifact id="StructureMap/MarketingStatus5to4B" key="StructureMap-MarketingStatus5to4B" name="FML Conversion for MarketingStatus: R5 to R4B"/>
+<artifact id="StructureMap/Measure4to5" key="StructureMap-Measure4to5" name="FML Conversion for Measure: R4 to R5"/>
+<artifact id="StructureMap/Measure4Bto5" key="StructureMap-Measure4Bto5" name="FML Conversion for Measure: R4B to R5"/>
+<artifact id="StructureMap/Measure5to4" key="StructureMap-Measure5to4" name="FML Conversion for Measure: R5 to R4"/>
+<artifact id="StructureMap/Measure5to4B" key="StructureMap-Measure5to4B" name="FML Conversion for Measure: R5 to R4B"/>
+<artifact id="StructureMap/MeasureReport4to5" key="StructureMap-MeasureReport4to5" name="FML Conversion for MeasureReport: R4 to R5"/>
+<artifact id="StructureMap/MeasureReport4Bto5" key="StructureMap-MeasureReport4Bto5" name="FML Conversion for MeasureReport: R4B to R5"/>
+<artifact id="StructureMap/MeasureReport5to4" key="StructureMap-MeasureReport5to4" name="FML Conversion for MeasureReport: R5 to R4"/>
+<artifact id="StructureMap/MeasureReport5to4B" key="StructureMap-MeasureReport5to4B" name="FML Conversion for MeasureReport: R5 to R4B"/>
+<artifact id="StructureMap/Medication4to5" key="StructureMap-Medication4to5" name="FML Conversion for Medication: R4 to R5"/>
+<artifact id="StructureMap/Medication4Bto5" key="StructureMap-Medication4Bto5" name="FML Conversion for Medication: R4B to R5"/>
+<artifact id="StructureMap/Medication5to4" key="StructureMap-Medication5to4" name="FML Conversion for Medication: R5 to R4"/>
+<artifact id="StructureMap/Medication5to4B" key="StructureMap-Medication5to4B" name="FML Conversion for Medication: R5 to R4B"/>
+<artifact id="StructureMap/MedicationAdministration4to5" key="StructureMap-MedicationAdministration4to5" name="FML Conversion for MedicationAdministration: R4 to R5"/>
+<artifact id="StructureMap/MedicationAdministration4Bto5" key="StructureMap-MedicationAdministration4Bto5" name="FML Conversion for MedicationAdministration: R4B to R5"/>
+<artifact id="StructureMap/MedicationAdministration5to4" key="StructureMap-MedicationAdministration5to4" name="FML Conversion for MedicationAdministration: R5 to R4"/>
+<artifact id="StructureMap/MedicationAdministration5to4B" key="StructureMap-MedicationAdministration5to4B" name="FML Conversion for MedicationAdministration: R5 to R4B"/>
+<artifact id="StructureMap/MedicationDispense4to5" key="StructureMap-MedicationDispense4to5" name="FML Conversion for MedicationDispense: R4 to R5"/>
+<artifact id="StructureMap/MedicationDispense4Bto5" key="StructureMap-MedicationDispense4Bto5" name="FML Conversion for MedicationDispense: R4B to R5"/>
+<artifact id="StructureMap/MedicationDispense5to4" key="StructureMap-MedicationDispense5to4" name="FML Conversion for MedicationDispense: R5 to R4"/>
+<artifact id="StructureMap/MedicationDispense5to4B" key="StructureMap-MedicationDispense5to4B" name="FML Conversion for MedicationDispense: R5 to R4B"/>
+<artifact id="StructureMap/MedicationKnowledge4to5" key="StructureMap-MedicationKnowledge4to5" name="FML Conversion for MedicationKnowledge: R4 to R5"/>
+<artifact id="StructureMap/MedicationKnowledge4Bto5" key="StructureMap-MedicationKnowledge4Bto5" name="FML Conversion for MedicationKnowledge: R4B to R5"/>
+<artifact id="StructureMap/MedicationKnowledge5to4" key="StructureMap-MedicationKnowledge5to4" name="FML Conversion for MedicationKnowledge: R5 to R4"/>
+<artifact id="StructureMap/MedicationKnowledge5to4B" key="StructureMap-MedicationKnowledge5to4B" name="FML Conversion for MedicationKnowledge: R5 to R4B"/>
+<artifact id="StructureMap/MedicationRequest4to5" key="StructureMap-MedicationRequest4to5" name="FML Conversion for MedicationRequest: R4 to R5"/>
+<artifact id="StructureMap/MedicationRequest4Bto5" key="StructureMap-MedicationRequest4Bto5" name="FML Conversion for MedicationRequest: R4B to R5"/>
+<artifact id="StructureMap/MedicationRequest5to4" key="StructureMap-MedicationRequest5to4" name="FML Conversion for MedicationRequest: R5 to R4"/>
+<artifact id="StructureMap/MedicationRequest5to4B" key="StructureMap-MedicationRequest5to4B" name="FML Conversion for MedicationRequest: R5 to R4B"/>
+<artifact id="StructureMap/MedicationStatement4to5" key="StructureMap-MedicationStatement4to5" name="FML Conversion for MedicationStatement: R4 to R5"/>
+<artifact id="StructureMap/MedicationStatement4Bto5" key="StructureMap-MedicationStatement4Bto5" name="FML Conversion for MedicationStatement: R4B to R5"/>
+<artifact id="StructureMap/MedicationStatement5to4" key="StructureMap-MedicationStatement5to4" name="FML Conversion for MedicationStatement: R5 to R4"/>
+<artifact id="StructureMap/MedicationStatement5to4B" key="StructureMap-MedicationStatement5to4B" name="FML Conversion for MedicationStatement: R5 to R4B"/>
+<artifact id="StructureMap/MedicinalProductDefinition4to5" key="StructureMap-MedicinalProductDefinition4to5" name="FML Conversion for MedicinalProductDefinition: R4 to R5"/>
+<artifact id="StructureMap/MedicinalProductDefinition4Bto5" key="StructureMap-MedicinalProductDefinition4Bto5" name="FML Conversion for MedicinalProductDefinition: R4B to R5"/>
+<artifact id="StructureMap/MedicinalProductDefinition5to4" key="StructureMap-MedicinalProductDefinition5to4" name="FML Conversion for MedicinalProductDefinition: R5 to R4"/>
+<artifact id="StructureMap/MedicinalProductDefinition5to4B" key="StructureMap-MedicinalProductDefinition5to4B" name="FML Conversion for MedicinalProductDefinition: R5 to R4B"/>
+<artifact id="StructureMap/MessageDefinition4to5" key="StructureMap-MessageDefinition4to5" name="FML Conversion for MessageDefinition: R4 to R5"/>
+<artifact id="StructureMap/MessageDefinition4Bto5" key="StructureMap-MessageDefinition4Bto5" name="FML Conversion for MessageDefinition: R4B to R5"/>
+<artifact id="StructureMap/MessageDefinition5to4" key="StructureMap-MessageDefinition5to4" name="FML Conversion for MessageDefinition: R5 to R4"/>
+<artifact id="StructureMap/MessageDefinition5to4B" key="StructureMap-MessageDefinition5to4B" name="FML Conversion for MessageDefinition: R5 to R4B"/>
+<artifact id="StructureMap/MessageHeader4to5" key="StructureMap-MessageHeader4to5" name="FML Conversion for MessageHeader: R4 to R5"/>
+<artifact id="StructureMap/MessageHeader4Bto5" key="StructureMap-MessageHeader4Bto5" name="FML Conversion for MessageHeader: R4B to R5"/>
+<artifact id="StructureMap/MessageHeader5to4" key="StructureMap-MessageHeader5to4" name="FML Conversion for MessageHeader: R5 to R4"/>
+<artifact id="StructureMap/MessageHeader5to4B" key="StructureMap-MessageHeader5to4B" name="FML Conversion for MessageHeader: R5 to R4B"/>
+<artifact id="StructureMap/Meta4to5" key="StructureMap-Meta4to5" name="FML Conversion for Meta: R4 to R5"/>
+<artifact id="StructureMap/Meta4Bto5" key="StructureMap-Meta4Bto5" name="FML Conversion for Meta: R4B to R5"/>
+<artifact id="StructureMap/Meta5to4" key="StructureMap-Meta5to4" name="FML Conversion for Meta: R5 to R4"/>
+<artifact id="StructureMap/Meta5to4B" key="StructureMap-Meta5to4B" name="FML Conversion for Meta: R5 to R4B"/>
+<artifact id="StructureMap/MetadataResource4to5" key="StructureMap-MetadataResource4to5" name="FML Conversion for MetadataResource: R4 to R5"/>
+<artifact id="StructureMap/MetadataResource4Bto5" key="StructureMap-MetadataResource4Bto5" name="FML Conversion for MetadataResource: R4B to R5"/>
+<artifact id="StructureMap/MetadataResource5to4" key="StructureMap-MetadataResource5to4" name="FML Conversion for MetadataResource: R5 to R4"/>
+<artifact id="StructureMap/MetadataResource5to4B" key="StructureMap-MetadataResource5to4B" name="FML Conversion for MetadataResource: R5 to R4B"/>
+<artifact id="StructureMap/MolecularSequence4to5" key="StructureMap-MolecularSequence4to5" name="FML Conversion for MolecularSequence: R4 to R5"/>
+<artifact id="StructureMap/MolecularSequence4Bto5" key="StructureMap-MolecularSequence4Bto5" name="FML Conversion for MolecularSequence: R4B to R5"/>
+<artifact id="StructureMap/MolecularSequence5to4" key="StructureMap-MolecularSequence5to4" name="FML Conversion for MolecularSequence: R5 to R4"/>
+<artifact id="StructureMap/MolecularSequence5to4B" key="StructureMap-MolecularSequence5to4B" name="FML Conversion for MolecularSequence: R5 to R4B"/>
+<artifact id="StructureMap/MonetaryComponent4to5" key="StructureMap-MonetaryComponent4to5" name="FML Conversion for MonetaryComponent: R4 to R5"/>
+<artifact id="StructureMap/MonetaryComponent4Bto5" key="StructureMap-MonetaryComponent4Bto5" name="FML Conversion for MonetaryComponent: R4B to R5"/>
+<artifact id="StructureMap/MonetaryComponent5to4" key="StructureMap-MonetaryComponent5to4" name="FML Conversion for MonetaryComponent: R5 to R4"/>
+<artifact id="StructureMap/MonetaryComponent5to4B" key="StructureMap-MonetaryComponent5to4B" name="FML Conversion for MonetaryComponent: R5 to R4B"/>
+<artifact id="StructureMap/Money4to5" key="StructureMap-Money4to5" name="FML Conversion for Money: R4 to R5"/>
+<artifact id="StructureMap/Money4Bto5" key="StructureMap-Money4Bto5" name="FML Conversion for Money: R4B to R5"/>
+<artifact id="StructureMap/Money5to4" key="StructureMap-Money5to4" name="FML Conversion for Money: R5 to R4"/>
+<artifact id="StructureMap/Money5to4B" key="StructureMap-Money5to4B" name="FML Conversion for Money: R5 to R4B"/>
+<artifact id="StructureMap/NamingSystem4to5" key="StructureMap-NamingSystem4to5" name="FML Conversion for NamingSystem: R4 to R5"/>
+<artifact id="StructureMap/NamingSystem4Bto5" key="StructureMap-NamingSystem4Bto5" name="FML Conversion for NamingSystem: R4B to R5"/>
+<artifact id="StructureMap/NamingSystem5to4" key="StructureMap-NamingSystem5to4" name="FML Conversion for NamingSystem: R5 to R4"/>
+<artifact id="StructureMap/NamingSystem5to4B" key="StructureMap-NamingSystem5to4B" name="FML Conversion for NamingSystem: R5 to R4B"/>
+<artifact id="StructureMap/Narrative4to5" key="StructureMap-Narrative4to5" name="FML Conversion for Narrative: R4 to R5"/>
+<artifact id="StructureMap/Narrative4Bto5" key="StructureMap-Narrative4Bto5" name="FML Conversion for Narrative: R4B to R5"/>
+<artifact id="StructureMap/Narrative5to4" key="StructureMap-Narrative5to4" name="FML Conversion for Narrative: R5 to R4"/>
+<artifact id="StructureMap/Narrative5to4B" key="StructureMap-Narrative5to4B" name="FML Conversion for Narrative: R5 to R4B"/>
+<artifact id="StructureMap/NutritionIntake4to5" key="StructureMap-NutritionIntake4to5" name="FML Conversion for NutritionIntake: R4 to R5"/>
+<artifact id="StructureMap/NutritionIntake4Bto5" key="StructureMap-NutritionIntake4Bto5" name="FML Conversion for NutritionIntake: R4B to R5"/>
+<artifact id="StructureMap/NutritionIntake5to4" key="StructureMap-NutritionIntake5to4" name="FML Conversion for NutritionIntake: R5 to R4"/>
+<artifact id="StructureMap/NutritionIntake5to4B" key="StructureMap-NutritionIntake5to4B" name="FML Conversion for NutritionIntake: R5 to R4B"/>
+<artifact id="StructureMap/NutritionOrder4to5" key="StructureMap-NutritionOrder4to5" name="FML Conversion for NutritionOrder: R4 to R5"/>
+<artifact id="StructureMap/NutritionOrder4Bto5" key="StructureMap-NutritionOrder4Bto5" name="FML Conversion for NutritionOrder: R4B to R5"/>
+<artifact id="StructureMap/NutritionOrder5to4" key="StructureMap-NutritionOrder5to4" name="FML Conversion for NutritionOrder: R5 to R4"/>
+<artifact id="StructureMap/NutritionOrder5to4B" key="StructureMap-NutritionOrder5to4B" name="FML Conversion for NutritionOrder: R5 to R4B"/>
+<artifact id="StructureMap/NutritionProduct4to5" key="StructureMap-NutritionProduct4to5" name="FML Conversion for NutritionProduct: R4 to R5"/>
+<artifact id="StructureMap/NutritionProduct4Bto5" key="StructureMap-NutritionProduct4Bto5" name="FML Conversion for NutritionProduct: R4B to R5"/>
+<artifact id="StructureMap/NutritionProduct5to4" key="StructureMap-NutritionProduct5to4" name="FML Conversion for NutritionProduct: R5 to R4"/>
+<artifact id="StructureMap/NutritionProduct5to4B" key="StructureMap-NutritionProduct5to4B" name="FML Conversion for NutritionProduct: R5 to R4B"/>
+<artifact id="StructureMap/Observation4to5" key="StructureMap-Observation4to5" name="FML Conversion for Observation: R4 to R5"/>
+<artifact id="StructureMap/Observation4Bto5" key="StructureMap-Observation4Bto5" name="FML Conversion for Observation: R4B to R5"/>
+<artifact id="StructureMap/Observation5to4" key="StructureMap-Observation5to4" name="FML Conversion for Observation: R5 to R4"/>
+<artifact id="StructureMap/Observation5to4B" key="StructureMap-Observation5to4B" name="FML Conversion for Observation: R5 to R4B"/>
+<artifact id="StructureMap/ObservationDefinition4to5" key="StructureMap-ObservationDefinition4to5" name="FML Conversion for ObservationDefinition: R4 to R5"/>
+<artifact id="StructureMap/ObservationDefinition4Bto5" key="StructureMap-ObservationDefinition4Bto5" name="FML Conversion for ObservationDefinition: R4B to R5"/>
+<artifact id="StructureMap/ObservationDefinition5to4" key="StructureMap-ObservationDefinition5to4" name="FML Conversion for ObservationDefinition: R5 to R4"/>
+<artifact id="StructureMap/ObservationDefinition5to4B" key="StructureMap-ObservationDefinition5to4B" name="FML Conversion for ObservationDefinition: R5 to R4B"/>
+<artifact id="StructureMap/OperationDefinition4to5" key="StructureMap-OperationDefinition4to5" name="FML Conversion for OperationDefinition: R4 to R5"/>
+<artifact id="StructureMap/OperationDefinition4Bto5" key="StructureMap-OperationDefinition4Bto5" name="FML Conversion for OperationDefinition: R4B to R5"/>
+<artifact id="StructureMap/OperationDefinition5to4" key="StructureMap-OperationDefinition5to4" name="FML Conversion for OperationDefinition: R5 to R4"/>
+<artifact id="StructureMap/OperationDefinition5to4B" key="StructureMap-OperationDefinition5to4B" name="FML Conversion for OperationDefinition: R5 to R4B"/>
+<artifact id="StructureMap/OperationOutcome4to5" key="StructureMap-OperationOutcome4to5" name="FML Conversion for OperationOutcome: R4 to R5"/>
+<artifact id="StructureMap/OperationOutcome4Bto5" key="StructureMap-OperationOutcome4Bto5" name="FML Conversion for OperationOutcome: R4B to R5"/>
+<artifact id="StructureMap/OperationOutcome5to4" key="StructureMap-OperationOutcome5to4" name="FML Conversion for OperationOutcome: R5 to R4"/>
+<artifact id="StructureMap/OperationOutcome5to4B" key="StructureMap-OperationOutcome5to4B" name="FML Conversion for OperationOutcome: R5 to R4B"/>
+<artifact id="StructureMap/Organization4to5" key="StructureMap-Organization4to5" name="FML Conversion for Organization: R4 to R5"/>
+<artifact id="StructureMap/Organization4Bto5" key="StructureMap-Organization4Bto5" name="FML Conversion for Organization: R4B to R5"/>
+<artifact id="StructureMap/Organization5to4" key="StructureMap-Organization5to4" name="FML Conversion for Organization: R5 to R4"/>
+<artifact id="StructureMap/Organization5to4B" key="StructureMap-Organization5to4B" name="FML Conversion for Organization: R5 to R4B"/>
+<artifact id="StructureMap/OrganizationAffiliation4to5" key="StructureMap-OrganizationAffiliation4to5" name="FML Conversion for OrganizationAffiliation: R4 to R5"/>
+<artifact id="StructureMap/OrganizationAffiliation4Bto5" key="StructureMap-OrganizationAffiliation4Bto5" name="FML Conversion for OrganizationAffiliation: R4B to R5"/>
+<artifact id="StructureMap/OrganizationAffiliation5to4" key="StructureMap-OrganizationAffiliation5to4" name="FML Conversion for OrganizationAffiliation: R5 to R4"/>
+<artifact id="StructureMap/OrganizationAffiliation5to4B" key="StructureMap-OrganizationAffiliation5to4B" name="FML Conversion for OrganizationAffiliation: R5 to R4B"/>
+<artifact id="StructureMap/PackagedProductDefinition4to5" key="StructureMap-PackagedProductDefinition4to5" name="FML Conversion for PackagedProductDefinition: R4 to R5"/>
+<artifact id="StructureMap/PackagedProductDefinition4Bto5" key="StructureMap-PackagedProductDefinition4Bto5" name="FML Conversion for PackagedProductDefinition: R4B to R5"/>
+<artifact id="StructureMap/PackagedProductDefinition5to4" key="StructureMap-PackagedProductDefinition5to4" name="FML Conversion for PackagedProductDefinition: R5 to R4"/>
+<artifact id="StructureMap/PackagedProductDefinition5to4B" key="StructureMap-PackagedProductDefinition5to4B" name="FML Conversion for PackagedProductDefinition: R5 to R4B"/>
+<artifact id="StructureMap/ParameterDefinition4to5" key="StructureMap-ParameterDefinition4to5" name="FML Conversion for ParameterDefinition: R4 to R5"/>
+<artifact id="StructureMap/ParameterDefinition4Bto5" key="StructureMap-ParameterDefinition4Bto5" name="FML Conversion for ParameterDefinition: R4B to R5"/>
+<artifact id="StructureMap/ParameterDefinition5to4" key="StructureMap-ParameterDefinition5to4" name="FML Conversion for ParameterDefinition: R5 to R4"/>
+<artifact id="StructureMap/ParameterDefinition5to4B" key="StructureMap-ParameterDefinition5to4B" name="FML Conversion for ParameterDefinition: R5 to R4B"/>
+<artifact id="StructureMap/Parameters4to5" key="StructureMap-Parameters4to5" name="FML Conversion for Parameters: R4 to R5"/>
+<artifact id="StructureMap/Parameters4Bto5" key="StructureMap-Parameters4Bto5" name="FML Conversion for Parameters: R4B to R5"/>
+<artifact id="StructureMap/Parameters5to4" key="StructureMap-Parameters5to4" name="FML Conversion for Parameters: R5 to R4"/>
+<artifact id="StructureMap/Parameters5to4B" key="StructureMap-Parameters5to4B" name="FML Conversion for Parameters: R5 to R4B"/>
+<artifact id="StructureMap/Patient4to5" key="StructureMap-Patient4to5" name="FML Conversion for Patient: R4 to R5"/>
+<artifact id="StructureMap/Patient4Bto5" key="StructureMap-Patient4Bto5" name="FML Conversion for Patient: R4B to R5"/>
+<artifact id="StructureMap/Patient5to4" key="StructureMap-Patient5to4" name="FML Conversion for Patient: R5 to R4"/>
+<artifact id="StructureMap/Patient5to4B" key="StructureMap-Patient5to4B" name="FML Conversion for Patient: R5 to R4B"/>
+<artifact id="StructureMap/PaymentNotice4to5" key="StructureMap-PaymentNotice4to5" name="FML Conversion for PaymentNotice: R4 to R5"/>
+<artifact id="StructureMap/PaymentNotice4Bto5" key="StructureMap-PaymentNotice4Bto5" name="FML Conversion for PaymentNotice: R4B to R5"/>
+<artifact id="StructureMap/PaymentNotice5to4" key="StructureMap-PaymentNotice5to4" name="FML Conversion for PaymentNotice: R5 to R4"/>
+<artifact id="StructureMap/PaymentNotice5to4B" key="StructureMap-PaymentNotice5to4B" name="FML Conversion for PaymentNotice: R5 to R4B"/>
+<artifact id="StructureMap/PaymentReconciliation4to5" key="StructureMap-PaymentReconciliation4to5" name="FML Conversion for PaymentReconciliation: R4 to R5"/>
+<artifact id="StructureMap/PaymentReconciliation4Bto5" key="StructureMap-PaymentReconciliation4Bto5" name="FML Conversion for PaymentReconciliation: R4B to R5"/>
+<artifact id="StructureMap/PaymentReconciliation5to4" key="StructureMap-PaymentReconciliation5to4" name="FML Conversion for PaymentReconciliation: R5 to R4"/>
+<artifact id="StructureMap/PaymentReconciliation5to4B" key="StructureMap-PaymentReconciliation5to4B" name="FML Conversion for PaymentReconciliation: R5 to R4B"/>
+<artifact id="StructureMap/Period4to5" key="StructureMap-Period4to5" name="FML Conversion for Period: R4 to R5"/>
+<artifact id="StructureMap/Period4Bto5" key="StructureMap-Period4Bto5" name="FML Conversion for Period: R4B to R5"/>
+<artifact id="StructureMap/Period5to4" key="StructureMap-Period5to4" name="FML Conversion for Period: R5 to R4"/>
+<artifact id="StructureMap/Period5to4B" key="StructureMap-Period5to4B" name="FML Conversion for Period: R5 to R4B"/>
+<artifact id="StructureMap/Permission4to5" key="StructureMap-Permission4to5" name="FML Conversion for Permission: R4 to R5"/>
+<artifact id="StructureMap/Permission4Bto5" key="StructureMap-Permission4Bto5" name="FML Conversion for Permission: R4B to R5"/>
+<artifact id="StructureMap/Permission5to4" key="StructureMap-Permission5to4" name="FML Conversion for Permission: R5 to R4"/>
+<artifact id="StructureMap/Permission5to4B" key="StructureMap-Permission5to4B" name="FML Conversion for Permission: R5 to R4B"/>
+<artifact id="StructureMap/Person4to5" key="StructureMap-Person4to5" name="FML Conversion for Person: R4 to R5"/>
+<artifact id="StructureMap/Person4Bto5" key="StructureMap-Person4Bto5" name="FML Conversion for Person: R4B to R5"/>
+<artifact id="StructureMap/Person5to4" key="StructureMap-Person5to4" name="FML Conversion for Person: R5 to R4"/>
+<artifact id="StructureMap/Person5to4B" key="StructureMap-Person5to4B" name="FML Conversion for Person: R5 to R4B"/>
+<artifact id="StructureMap/PlanDefinition4to5" key="StructureMap-PlanDefinition4to5" name="FML Conversion for PlanDefinition: R4 to R5"/>
+<artifact id="StructureMap/PlanDefinition4Bto5" key="StructureMap-PlanDefinition4Bto5" name="FML Conversion for PlanDefinition: R4B to R5"/>
+<artifact id="StructureMap/PlanDefinition5to4" key="StructureMap-PlanDefinition5to4" name="FML Conversion for PlanDefinition: R5 to R4"/>
+<artifact id="StructureMap/PlanDefinition5to4B" key="StructureMap-PlanDefinition5to4B" name="FML Conversion for PlanDefinition: R5 to R4B"/>
+<artifact id="StructureMap/Population4to5" key="StructureMap-Population4to5" name="FML Conversion for Population: R4 to R5"/>
+<artifact id="StructureMap/Population4Bto5" key="StructureMap-Population4Bto5" name="FML Conversion for Population: R4B to R5"/>
+<artifact id="StructureMap/Population5to4" key="StructureMap-Population5to4" name="FML Conversion for Population: R5 to R4"/>
+<artifact id="StructureMap/Population5to4B" key="StructureMap-Population5to4B" name="FML Conversion for Population: R5 to R4B"/>
+<artifact id="StructureMap/Practitioner4to5" key="StructureMap-Practitioner4to5" name="FML Conversion for Practitioner: R4 to R5"/>
+<artifact id="StructureMap/Practitioner4Bto5" key="StructureMap-Practitioner4Bto5" name="FML Conversion for Practitioner: R4B to R5"/>
+<artifact id="StructureMap/Practitioner5to4" key="StructureMap-Practitioner5to4" name="FML Conversion for Practitioner: R5 to R4"/>
+<artifact id="StructureMap/Practitioner5to4B" key="StructureMap-Practitioner5to4B" name="FML Conversion for Practitioner: R5 to R4B"/>
+<artifact id="StructureMap/PractitionerRole4to5" key="StructureMap-PractitionerRole4to5" name="FML Conversion for PractitionerRole: R4 to R5"/>
+<artifact id="StructureMap/PractitionerRole4Bto5" key="StructureMap-PractitionerRole4Bto5" name="FML Conversion for PractitionerRole: R4B to R5"/>
+<artifact id="StructureMap/PractitionerRole5to4" key="StructureMap-PractitionerRole5to4" name="FML Conversion for PractitionerRole: R5 to R4"/>
+<artifact id="StructureMap/PractitionerRole5to4B" key="StructureMap-PractitionerRole5to4B" name="FML Conversion for PractitionerRole: R5 to R4B"/>
+<artifact id="StructureMap/Procedure4to5" key="StructureMap-Procedure4to5" name="FML Conversion for Procedure: R4 to R5"/>
+<artifact id="StructureMap/Procedure4Bto5" key="StructureMap-Procedure4Bto5" name="FML Conversion for Procedure: R4B to R5"/>
+<artifact id="StructureMap/Procedure5to4" key="StructureMap-Procedure5to4" name="FML Conversion for Procedure: R5 to R4"/>
+<artifact id="StructureMap/Procedure5to4B" key="StructureMap-Procedure5to4B" name="FML Conversion for Procedure: R5 to R4B"/>
+<artifact id="StructureMap/ProductShelfLife4to5" key="StructureMap-ProductShelfLife4to5" name="FML Conversion for ProductShelfLife: R4 to R5"/>
+<artifact id="StructureMap/ProductShelfLife4Bto5" key="StructureMap-ProductShelfLife4Bto5" name="FML Conversion for ProductShelfLife: R4B to R5"/>
+<artifact id="StructureMap/ProductShelfLife5to4" key="StructureMap-ProductShelfLife5to4" name="FML Conversion for ProductShelfLife: R5 to R4"/>
+<artifact id="StructureMap/ProductShelfLife5to4B" key="StructureMap-ProductShelfLife5to4B" name="FML Conversion for ProductShelfLife: R5 to R4B"/>
+<artifact id="StructureMap/Provenance4to5" key="StructureMap-Provenance4to5" name="FML Conversion for Provenance: R4 to R5"/>
+<artifact id="StructureMap/Provenance4Bto5" key="StructureMap-Provenance4Bto5" name="FML Conversion for Provenance: R4B to R5"/>
+<artifact id="StructureMap/Provenance5to4" key="StructureMap-Provenance5to4" name="FML Conversion for Provenance: R5 to R4"/>
+<artifact id="StructureMap/Provenance5to4B" key="StructureMap-Provenance5to4B" name="FML Conversion for Provenance: R5 to R4B"/>
+<artifact id="StructureMap/Quantity4to5" key="StructureMap-Quantity4to5" name="FML Conversion for Quantity: R4 to R5"/>
+<artifact id="StructureMap/Quantity4Bto5" key="StructureMap-Quantity4Bto5" name="FML Conversion for Quantity: R4B to R5"/>
+<artifact id="StructureMap/Quantity5to4" key="StructureMap-Quantity5to4" name="FML Conversion for Quantity: R5 to R4"/>
+<artifact id="StructureMap/Quantity5to4B" key="StructureMap-Quantity5to4B" name="FML Conversion for Quantity: R5 to R4B"/>
+<artifact id="StructureMap/Questionnaire4to5" key="StructureMap-Questionnaire4to5" name="FML Conversion for Questionnaire: R4 to R5"/>
+<artifact id="StructureMap/Questionnaire4Bto5" key="StructureMap-Questionnaire4Bto5" name="FML Conversion for Questionnaire: R4B to R5"/>
+<artifact id="StructureMap/Questionnaire5to4" key="StructureMap-Questionnaire5to4" name="FML Conversion for Questionnaire: R5 to R4"/>
+<artifact id="StructureMap/Questionnaire5to4B" key="StructureMap-Questionnaire5to4B" name="FML Conversion for Questionnaire: R5 to R4B"/>
+<artifact id="StructureMap/QuestionnaireResponse4to5" key="StructureMap-QuestionnaireResponse4to5" name="FML Conversion for QuestionnaireResponse: R4 to R5"/>
+<artifact id="StructureMap/QuestionnaireResponse4Bto5" key="StructureMap-QuestionnaireResponse4Bto5" name="FML Conversion for QuestionnaireResponse: R4B to R5"/>
+<artifact id="StructureMap/QuestionnaireResponse5to4" key="StructureMap-QuestionnaireResponse5to4" name="FML Conversion for QuestionnaireResponse: R5 to R4"/>
+<artifact id="StructureMap/QuestionnaireResponse5to4B" key="StructureMap-QuestionnaireResponse5to4B" name="FML Conversion for QuestionnaireResponse: R5 to R4B"/>
+<artifact id="StructureMap/Range4to5" key="StructureMap-Range4to5" name="FML Conversion for Range: R4 to R5"/>
+<artifact id="StructureMap/Range4Bto5" key="StructureMap-Range4Bto5" name="FML Conversion for Range: R4B to R5"/>
+<artifact id="StructureMap/Range5to4" key="StructureMap-Range5to4" name="FML Conversion for Range: R5 to R4"/>
+<artifact id="StructureMap/Range5to4B" key="StructureMap-Range5to4B" name="FML Conversion for Range: R5 to R4B"/>
+<artifact id="StructureMap/Ratio4to5" key="StructureMap-Ratio4to5" name="FML Conversion for Ratio: R4 to R5"/>
+<artifact id="StructureMap/Ratio4Bto5" key="StructureMap-Ratio4Bto5" name="FML Conversion for Ratio: R4B to R5"/>
+<artifact id="StructureMap/Ratio5to4" key="StructureMap-Ratio5to4" name="FML Conversion for Ratio: R5 to R4"/>
+<artifact id="StructureMap/Ratio5to4B" key="StructureMap-Ratio5to4B" name="FML Conversion for Ratio: R5 to R4B"/>
+<artifact id="StructureMap/RatioRange4Bto5" key="StructureMap-RatioRange4Bto5" name="FML Conversion for RatioRange: R4B to R5"/>
+<artifact id="StructureMap/RatioRange5to4B" key="StructureMap-RatioRange5to4B" name="FML Conversion for RatioRange: R5 to R4B"/>
+<artifact id="StructureMap/Reference4to5" key="StructureMap-Reference4to5" name="FML Conversion for Reference: R4 to R5"/>
+<artifact id="StructureMap/Reference4Bto5" key="StructureMap-Reference4Bto5" name="FML Conversion for Reference: R4B to R5"/>
+<artifact id="StructureMap/Reference5to4" key="StructureMap-Reference5to4" name="FML Conversion for Reference: R5 to R4"/>
+<artifact id="StructureMap/Reference5to4B" key="StructureMap-Reference5to4B" name="FML Conversion for Reference: R5 to R4B"/>
+<artifact id="StructureMap/RegulatedAuthorization4to5" key="StructureMap-RegulatedAuthorization4to5" name="FML Conversion for RegulatedAuthorization: R4 to R5"/>
+<artifact id="StructureMap/RegulatedAuthorization4Bto5" key="StructureMap-RegulatedAuthorization4Bto5" name="FML Conversion for RegulatedAuthorization: R4B to R5"/>
+<artifact id="StructureMap/RegulatedAuthorization5to4" key="StructureMap-RegulatedAuthorization5to4" name="FML Conversion for RegulatedAuthorization: R5 to R4"/>
+<artifact id="StructureMap/RegulatedAuthorization5to4B" key="StructureMap-RegulatedAuthorization5to4B" name="FML Conversion for RegulatedAuthorization: R5 to R4B"/>
+<artifact id="StructureMap/RelatedArtifact4to5" key="StructureMap-RelatedArtifact4to5" name="FML Conversion for RelatedArtifact: R4 to R5"/>
+<artifact id="StructureMap/RelatedArtifact4Bto5" key="StructureMap-RelatedArtifact4Bto5" name="FML Conversion for RelatedArtifact: R4B to R5"/>
+<artifact id="StructureMap/RelatedArtifact5to4" key="StructureMap-RelatedArtifact5to4" name="FML Conversion for RelatedArtifact: R5 to R4"/>
+<artifact id="StructureMap/RelatedArtifact5to4B" key="StructureMap-RelatedArtifact5to4B" name="FML Conversion for RelatedArtifact: R5 to R4B"/>
+<artifact id="StructureMap/RelatedPerson4to5" key="StructureMap-RelatedPerson4to5" name="FML Conversion for RelatedPerson: R4 to R5"/>
+<artifact id="StructureMap/RelatedPerson4Bto5" key="StructureMap-RelatedPerson4Bto5" name="FML Conversion for RelatedPerson: R4B to R5"/>
+<artifact id="StructureMap/RelatedPerson5to4" key="StructureMap-RelatedPerson5to4" name="FML Conversion for RelatedPerson: R5 to R4"/>
+<artifact id="StructureMap/RelatedPerson5to4B" key="StructureMap-RelatedPerson5to4B" name="FML Conversion for RelatedPerson: R5 to R4B"/>
+<artifact id="StructureMap/RequestOrchestration4to5" key="StructureMap-RequestOrchestration4to5" name="FML Conversion for RequestOrchestration: R4 to R5"/>
+<artifact id="StructureMap/RequestOrchestration4Bto5" key="StructureMap-RequestOrchestration4Bto5" name="FML Conversion for RequestOrchestration: R4B to R5"/>
+<artifact id="StructureMap/RequestOrchestration5to4" key="StructureMap-RequestOrchestration5to4" name="FML Conversion for RequestOrchestration: R5 to R4"/>
+<artifact id="StructureMap/RequestOrchestration5to4B" key="StructureMap-RequestOrchestration5to4B" name="FML Conversion for RequestOrchestration: R5 to R4B"/>
+<artifact id="StructureMap/ResearchStudy4to5" key="StructureMap-ResearchStudy4to5" name="FML Conversion for ResearchStudy: R4 to R5"/>
+<artifact id="StructureMap/ResearchStudy4Bto5" key="StructureMap-ResearchStudy4Bto5" name="FML Conversion for ResearchStudy: R4B to R5"/>
+<artifact id="StructureMap/ResearchStudy5to4" key="StructureMap-ResearchStudy5to4" name="FML Conversion for ResearchStudy: R5 to R4"/>
+<artifact id="StructureMap/ResearchStudy5to4B" key="StructureMap-ResearchStudy5to4B" name="FML Conversion for ResearchStudy: R5 to R4B"/>
+<artifact id="StructureMap/ResearchSubject4to5" key="StructureMap-ResearchSubject4to5" name="FML Conversion for ResearchSubject: R4 to R5"/>
+<artifact id="StructureMap/ResearchSubject4Bto5" key="StructureMap-ResearchSubject4Bto5" name="FML Conversion for ResearchSubject: R4B to R5"/>
+<artifact id="StructureMap/ResearchSubject5to4" key="StructureMap-ResearchSubject5to4" name="FML Conversion for ResearchSubject: R5 to R4"/>
+<artifact id="StructureMap/ResearchSubject5to4B" key="StructureMap-ResearchSubject5to4B" name="FML Conversion for ResearchSubject: R5 to R4B"/>
+<artifact id="StructureMap/Resource4to5" key="StructureMap-Resource4to5" name="FML Conversion for Resource: R4 to R5"/>
+<artifact id="StructureMap/Resource4Bto5" key="StructureMap-Resource4Bto5" name="FML Conversion for Resource: R4B to R5"/>
+<artifact id="StructureMap/Resource5to4" key="StructureMap-Resource5to4" name="FML Conversion for Resource: R5 to R4"/>
+<artifact id="StructureMap/Resource5to4B" key="StructureMap-Resource5to4B" name="FML Conversion for Resource: R5 to R4B"/>
+<artifact id="StructureMap/RiskAssessment4to5" key="StructureMap-RiskAssessment4to5" name="FML Conversion for RiskAssessment: R4 to R5"/>
+<artifact id="StructureMap/RiskAssessment4Bto5" key="StructureMap-RiskAssessment4Bto5" name="FML Conversion for RiskAssessment: R4B to R5"/>
+<artifact id="StructureMap/RiskAssessment5to4" key="StructureMap-RiskAssessment5to4" name="FML Conversion for RiskAssessment: R5 to R4"/>
+<artifact id="StructureMap/RiskAssessment5to4B" key="StructureMap-RiskAssessment5to4B" name="FML Conversion for RiskAssessment: R5 to R4B"/>
+<artifact id="StructureMap/SampledData4to5" key="StructureMap-SampledData4to5" name="FML Conversion for SampledData: R4 to R5"/>
+<artifact id="StructureMap/SampledData4Bto5" key="StructureMap-SampledData4Bto5" name="FML Conversion for SampledData: R4B to R5"/>
+<artifact id="StructureMap/SampledData5to4" key="StructureMap-SampledData5to4" name="FML Conversion for SampledData: R5 to R4"/>
+<artifact id="StructureMap/SampledData5to4B" key="StructureMap-SampledData5to4B" name="FML Conversion for SampledData: R5 to R4B"/>
+<artifact id="StructureMap/Schedule4to5" key="StructureMap-Schedule4to5" name="FML Conversion for Schedule: R4 to R5"/>
+<artifact id="StructureMap/Schedule4Bto5" key="StructureMap-Schedule4Bto5" name="FML Conversion for Schedule: R4B to R5"/>
+<artifact id="StructureMap/Schedule5to4" key="StructureMap-Schedule5to4" name="FML Conversion for Schedule: R5 to R4"/>
+<artifact id="StructureMap/Schedule5to4B" key="StructureMap-Schedule5to4B" name="FML Conversion for Schedule: R5 to R4B"/>
+<artifact id="StructureMap/SearchParameter4to5" key="StructureMap-SearchParameter4to5" name="FML Conversion for SearchParameter: R4 to R5"/>
+<artifact id="StructureMap/SearchParameter4Bto5" key="StructureMap-SearchParameter4Bto5" name="FML Conversion for SearchParameter: R4B to R5"/>
+<artifact id="StructureMap/SearchParameter5to4" key="StructureMap-SearchParameter5to4" name="FML Conversion for SearchParameter: R5 to R4"/>
+<artifact id="StructureMap/SearchParameter5to4B" key="StructureMap-SearchParameter5to4B" name="FML Conversion for SearchParameter: R5 to R4B"/>
+<artifact id="StructureMap/ServiceRequest4to5" key="StructureMap-ServiceRequest4to5" name="FML Conversion for ServiceRequest: R4 to R5"/>
+<artifact id="StructureMap/ServiceRequest4Bto5" key="StructureMap-ServiceRequest4Bto5" name="FML Conversion for ServiceRequest: R4B to R5"/>
+<artifact id="StructureMap/ServiceRequest5to4" key="StructureMap-ServiceRequest5to4" name="FML Conversion for ServiceRequest: R5 to R4"/>
+<artifact id="StructureMap/ServiceRequest5to4B" key="StructureMap-ServiceRequest5to4B" name="FML Conversion for ServiceRequest: R5 to R4B"/>
+<artifact id="StructureMap/Signature4to5" key="StructureMap-Signature4to5" name="FML Conversion for Signature: R4 to R5"/>
+<artifact id="StructureMap/Signature4Bto5" key="StructureMap-Signature4Bto5" name="FML Conversion for Signature: R4B to R5"/>
+<artifact id="StructureMap/Signature5to4" key="StructureMap-Signature5to4" name="FML Conversion for Signature: R5 to R4"/>
+<artifact id="StructureMap/Signature5to4B" key="StructureMap-Signature5to4B" name="FML Conversion for Signature: R5 to R4B"/>
+<artifact id="StructureMap/Slot4to5" key="StructureMap-Slot4to5" name="FML Conversion for Slot: R4 to R5"/>
+<artifact id="StructureMap/Slot4Bto5" key="StructureMap-Slot4Bto5" name="FML Conversion for Slot: R4B to R5"/>
+<artifact id="StructureMap/Slot5to4" key="StructureMap-Slot5to4" name="FML Conversion for Slot: R5 to R4"/>
+<artifact id="StructureMap/Slot5to4B" key="StructureMap-Slot5to4B" name="FML Conversion for Slot: R5 to R4B"/>
+<artifact id="StructureMap/Specimen4to5" key="StructureMap-Specimen4to5" name="FML Conversion for Specimen: R4 to R5"/>
+<artifact id="StructureMap/Specimen4Bto5" key="StructureMap-Specimen4Bto5" name="FML Conversion for Specimen: R4B to R5"/>
+<artifact id="StructureMap/Specimen5to4" key="StructureMap-Specimen5to4" name="FML Conversion for Specimen: R5 to R4"/>
+<artifact id="StructureMap/Specimen5to4B" key="StructureMap-Specimen5to4B" name="FML Conversion for Specimen: R5 to R4B"/>
+<artifact id="StructureMap/SpecimenDefinition4to5" key="StructureMap-SpecimenDefinition4to5" name="FML Conversion for SpecimenDefinition: R4 to R5"/>
+<artifact id="StructureMap/SpecimenDefinition4Bto5" key="StructureMap-SpecimenDefinition4Bto5" name="FML Conversion for SpecimenDefinition: R4B to R5"/>
+<artifact id="StructureMap/SpecimenDefinition5to4" key="StructureMap-SpecimenDefinition5to4" name="FML Conversion for SpecimenDefinition: R5 to R4"/>
+<artifact id="StructureMap/SpecimenDefinition5to4B" key="StructureMap-SpecimenDefinition5to4B" name="FML Conversion for SpecimenDefinition: R5 to R4B"/>
+<artifact id="StructureMap/StructureDefinition4to5" key="StructureMap-StructureDefinition4to5" name="FML Conversion for StructureDefinition: R4 to R5"/>
+<artifact id="StructureMap/StructureDefinition4Bto5" key="StructureMap-StructureDefinition4Bto5" name="FML Conversion for StructureDefinition: R4B to R5"/>
+<artifact id="StructureMap/StructureDefinition5to4" key="StructureMap-StructureDefinition5to4" name="FML Conversion for StructureDefinition: R5 to R4"/>
+<artifact id="StructureMap/StructureDefinition5to4B" key="StructureMap-StructureDefinition5to4B" name="FML Conversion for StructureDefinition: R5 to R4B"/>
+<artifact id="StructureMap/StructureMap4to5" key="StructureMap-StructureMap4to5" name="FML Conversion for StructureMap: R4 to R5"/>
+<artifact id="StructureMap/StructureMap4Bto5" key="StructureMap-StructureMap4Bto5" name="FML Conversion for StructureMap: R4B to R5"/>
+<artifact id="StructureMap/StructureMap5to4" key="StructureMap-StructureMap5to4" name="FML Conversion for StructureMap: R5 to R4"/>
+<artifact id="StructureMap/StructureMap5to4B" key="StructureMap-StructureMap5to4B" name="FML Conversion for StructureMap: R5 to R4B"/>
+<artifact id="StructureMap/Subscription4to5" key="StructureMap-Subscription4to5" name="FML Conversion for Subscription: R4 to R5"/>
+<artifact id="StructureMap/Subscription4Bto5" key="StructureMap-Subscription4Bto5" name="FML Conversion for Subscription: R4B to R5"/>
+<artifact id="StructureMap/Subscription5to4" key="StructureMap-Subscription5to4" name="FML Conversion for Subscription: R5 to R4"/>
+<artifact id="StructureMap/Subscription5to4B" key="StructureMap-Subscription5to4B" name="FML Conversion for Subscription: R5 to R4B"/>
+<artifact id="StructureMap/SubscriptionStatus4Bto5" key="StructureMap-SubscriptionStatus4Bto5" name="FML Conversion for SubscriptionStatus: R4B to R5"/>
+<artifact id="StructureMap/SubscriptionStatus5to4B" key="StructureMap-SubscriptionStatus5to4B" name="FML Conversion for SubscriptionStatus: R5 to R4B"/>
+<artifact id="StructureMap/SubscriptionTopic4Bto5" key="StructureMap-SubscriptionTopic4Bto5" name="FML Conversion for SubscriptionTopic: R4B to R5"/>
+<artifact id="StructureMap/SubscriptionTopic5to4B" key="StructureMap-SubscriptionTopic5to4B" name="FML Conversion for SubscriptionTopic: R5 to R4B"/>
+<artifact id="StructureMap/Substance4to5" key="StructureMap-Substance4to5" name="FML Conversion for Substance: R4 to R5"/>
+<artifact id="StructureMap/Substance4Bto5" key="StructureMap-Substance4Bto5" name="FML Conversion for Substance: R4B to R5"/>
+<artifact id="StructureMap/Substance5to4" key="StructureMap-Substance5to4" name="FML Conversion for Substance: R5 to R4"/>
+<artifact id="StructureMap/Substance5to4B" key="StructureMap-Substance5to4B" name="FML Conversion for Substance: R5 to R4B"/>
+<artifact id="StructureMap/SubstanceDefinition4to5" key="StructureMap-SubstanceDefinition4to5" name="FML Conversion for SubstanceDefinition: R4 to R5"/>
+<artifact id="StructureMap/SubstanceDefinition4Bto5" key="StructureMap-SubstanceDefinition4Bto5" name="FML Conversion for SubstanceDefinition: R4B to R5"/>
+<artifact id="StructureMap/SubstanceDefinition5to4" key="StructureMap-SubstanceDefinition5to4" name="FML Conversion for SubstanceDefinition: R5 to R4"/>
+<artifact id="StructureMap/SubstanceDefinition5to4B" key="StructureMap-SubstanceDefinition5to4B" name="FML Conversion for SubstanceDefinition: R5 to R4B"/>
+<artifact id="StructureMap/SubstanceNucleicAcid4to5" key="StructureMap-SubstanceNucleicAcid4to5" name="FML Conversion for SubstanceNucleicAcid: R4 to R5"/>
+<artifact id="StructureMap/SubstanceNucleicAcid4Bto5" key="StructureMap-SubstanceNucleicAcid4Bto5" name="FML Conversion for SubstanceNucleicAcid: R4B to R5"/>
+<artifact id="StructureMap/SubstanceNucleicAcid5to4" key="StructureMap-SubstanceNucleicAcid5to4" name="FML Conversion for SubstanceNucleicAcid: R5 to R4"/>
+<artifact id="StructureMap/SubstanceNucleicAcid5to4B" key="StructureMap-SubstanceNucleicAcid5to4B" name="FML Conversion for SubstanceNucleicAcid: R5 to R4B"/>
+<artifact id="StructureMap/SubstancePolymer4to5" key="StructureMap-SubstancePolymer4to5" name="FML Conversion for SubstancePolymer: R4 to R5"/>
+<artifact id="StructureMap/SubstancePolymer4Bto5" key="StructureMap-SubstancePolymer4Bto5" name="FML Conversion for SubstancePolymer: R4B to R5"/>
+<artifact id="StructureMap/SubstancePolymer5to4" key="StructureMap-SubstancePolymer5to4" name="FML Conversion for SubstancePolymer: R5 to R4"/>
+<artifact id="StructureMap/SubstancePolymer5to4B" key="StructureMap-SubstancePolymer5to4B" name="FML Conversion for SubstancePolymer: R5 to R4B"/>
+<artifact id="StructureMap/SubstanceProtein4to5" key="StructureMap-SubstanceProtein4to5" name="FML Conversion for SubstanceProtein: R4 to R5"/>
+<artifact id="StructureMap/SubstanceProtein4Bto5" key="StructureMap-SubstanceProtein4Bto5" name="FML Conversion for SubstanceProtein: R4B to R5"/>
+<artifact id="StructureMap/SubstanceProtein5to4" key="StructureMap-SubstanceProtein5to4" name="FML Conversion for SubstanceProtein: R5 to R4"/>
+<artifact id="StructureMap/SubstanceProtein5to4B" key="StructureMap-SubstanceProtein5to4B" name="FML Conversion for SubstanceProtein: R5 to R4B"/>
+<artifact id="StructureMap/SubstanceReferenceInformation4to5" key="StructureMap-SubstanceReferenceInformation4to5" name="FML Conversion for SubstanceReferenceInformation: R4 to R5"/>
+<artifact id="StructureMap/SubstanceReferenceInformation4Bto5" key="StructureMap-SubstanceReferenceInformation4Bto5" name="FML Conversion for SubstanceReferenceInformation: R4B to R5"/>
+<artifact id="StructureMap/SubstanceReferenceInformation5to4" key="StructureMap-SubstanceReferenceInformation5to4" name="FML Conversion for SubstanceReferenceInformation: R5 to R4"/>
+<artifact id="StructureMap/SubstanceReferenceInformation5to4B" key="StructureMap-SubstanceReferenceInformation5to4B" name="FML Conversion for SubstanceReferenceInformation: R5 to R4B"/>
+<artifact id="StructureMap/SubstanceSourceMaterial4to5" key="StructureMap-SubstanceSourceMaterial4to5" name="FML Conversion for SubstanceSourceMaterial: R4 to R5"/>
+<artifact id="StructureMap/SubstanceSourceMaterial4Bto5" key="StructureMap-SubstanceSourceMaterial4Bto5" name="FML Conversion for SubstanceSourceMaterial: R4B to R5"/>
+<artifact id="StructureMap/SubstanceSourceMaterial5to4" key="StructureMap-SubstanceSourceMaterial5to4" name="FML Conversion for SubstanceSourceMaterial: R5 to R4"/>
+<artifact id="StructureMap/SubstanceSourceMaterial5to4B" key="StructureMap-SubstanceSourceMaterial5to4B" name="FML Conversion for SubstanceSourceMaterial: R5 to R4B"/>
+<artifact id="StructureMap/SupplyDelivery4to5" key="StructureMap-SupplyDelivery4to5" name="FML Conversion for SupplyDelivery: R4 to R5"/>
+<artifact id="StructureMap/SupplyDelivery4Bto5" key="StructureMap-SupplyDelivery4Bto5" name="FML Conversion for SupplyDelivery: R4B to R5"/>
+<artifact id="StructureMap/SupplyDelivery5to4" key="StructureMap-SupplyDelivery5to4" name="FML Conversion for SupplyDelivery: R5 to R4"/>
+<artifact id="StructureMap/SupplyDelivery5to4B" key="StructureMap-SupplyDelivery5to4B" name="FML Conversion for SupplyDelivery: R5 to R4B"/>
+<artifact id="StructureMap/SupplyRequest4to5" key="StructureMap-SupplyRequest4to5" name="FML Conversion for SupplyRequest: R4 to R5"/>
+<artifact id="StructureMap/SupplyRequest4Bto5" key="StructureMap-SupplyRequest4Bto5" name="FML Conversion for SupplyRequest: R4B to R5"/>
+<artifact id="StructureMap/SupplyRequest5to4" key="StructureMap-SupplyRequest5to4" name="FML Conversion for SupplyRequest: R5 to R4"/>
+<artifact id="StructureMap/SupplyRequest5to4B" key="StructureMap-SupplyRequest5to4B" name="FML Conversion for SupplyRequest: R5 to R4B"/>
+<artifact id="StructureMap/Task4to5" key="StructureMap-Task4to5" name="FML Conversion for Task: R4 to R5"/>
+<artifact id="StructureMap/Task4Bto5" key="StructureMap-Task4Bto5" name="FML Conversion for Task: R4B to R5"/>
+<artifact id="StructureMap/Task5to4" key="StructureMap-Task5to4" name="FML Conversion for Task: R5 to R4"/>
+<artifact id="StructureMap/Task5to4B" key="StructureMap-Task5to4B" name="FML Conversion for Task: R5 to R4B"/>
+<artifact id="StructureMap/TerminologyCapabilities4to5" key="StructureMap-TerminologyCapabilities4to5" name="FML Conversion for TerminologyCapabilities: R4 to R5"/>
+<artifact id="StructureMap/TerminologyCapabilities4Bto5" key="StructureMap-TerminologyCapabilities4Bto5" name="FML Conversion for TerminologyCapabilities: R4B to R5"/>
+<artifact id="StructureMap/TerminologyCapabilities5to4" key="StructureMap-TerminologyCapabilities5to4" name="FML Conversion for TerminologyCapabilities: R5 to R4"/>
+<artifact id="StructureMap/TerminologyCapabilities5to4B" key="StructureMap-TerminologyCapabilities5to4B" name="FML Conversion for TerminologyCapabilities: R5 to R4B"/>
+<artifact id="StructureMap/TestReport4to5" key="StructureMap-TestReport4to5" name="FML Conversion for TestReport: R4 to R5"/>
+<artifact id="StructureMap/TestReport4Bto5" key="StructureMap-TestReport4Bto5" name="FML Conversion for TestReport: R4B to R5"/>
+<artifact id="StructureMap/TestReport5to4" key="StructureMap-TestReport5to4" name="FML Conversion for TestReport: R5 to R4"/>
+<artifact id="StructureMap/TestReport5to4B" key="StructureMap-TestReport5to4B" name="FML Conversion for TestReport: R5 to R4B"/>
+<artifact id="StructureMap/TestScript4to5" key="StructureMap-TestScript4to5" name="FML Conversion for TestScript: R4 to R5"/>
+<artifact id="StructureMap/TestScript4Bto5" key="StructureMap-TestScript4Bto5" name="FML Conversion for TestScript: R4B to R5"/>
+<artifact id="StructureMap/TestScript5to4" key="StructureMap-TestScript5to4" name="FML Conversion for TestScript: R5 to R4"/>
+<artifact id="StructureMap/TestScript5to4B" key="StructureMap-TestScript5to4B" name="FML Conversion for TestScript: R5 to R4B"/>
+<artifact id="StructureMap/Timing4to5" key="StructureMap-Timing4to5" name="FML Conversion for Timing: R4 to R5"/>
+<artifact id="StructureMap/Timing4Bto5" key="StructureMap-Timing4Bto5" name="FML Conversion for Timing: R4B to R5"/>
+<artifact id="StructureMap/Timing5to4" key="StructureMap-Timing5to4" name="FML Conversion for Timing: R5 to R4"/>
+<artifact id="StructureMap/Timing5to4B" key="StructureMap-Timing5to4B" name="FML Conversion for Timing: R5 to R4B"/>
+<artifact id="StructureMap/TriggerDefinition4to5" key="StructureMap-TriggerDefinition4to5" name="FML Conversion for TriggerDefinition: R4 to R5"/>
+<artifact id="StructureMap/TriggerDefinition4Bto5" key="StructureMap-TriggerDefinition4Bto5" name="FML Conversion for TriggerDefinition: R4B to R5"/>
+<artifact id="StructureMap/TriggerDefinition5to4" key="StructureMap-TriggerDefinition5to4" name="FML Conversion for TriggerDefinition: R5 to R4"/>
+<artifact id="StructureMap/TriggerDefinition5to4B" key="StructureMap-TriggerDefinition5to4B" name="FML Conversion for TriggerDefinition: R5 to R4B"/>
+<artifact id="StructureMap/UsageContext4to5" key="StructureMap-UsageContext4to5" name="FML Conversion for UsageContext: R4 to R5"/>
+<artifact id="StructureMap/UsageContext4Bto5" key="StructureMap-UsageContext4Bto5" name="FML Conversion for UsageContext: R4B to R5"/>
+<artifact id="StructureMap/UsageContext5to4" key="StructureMap-UsageContext5to4" name="FML Conversion for UsageContext: R5 to R4"/>
+<artifact id="StructureMap/UsageContext5to4B" key="StructureMap-UsageContext5to4B" name="FML Conversion for UsageContext: R5 to R4B"/>
+<artifact id="StructureMap/ValueSet4to5" key="StructureMap-ValueSet4to5" name="FML Conversion for ValueSet: R4 to R5"/>
+<artifact id="StructureMap/ValueSet4Bto5" key="StructureMap-ValueSet4Bto5" name="FML Conversion for ValueSet: R4B to R5"/>
+<artifact id="StructureMap/ValueSet5to4" key="StructureMap-ValueSet5to4" name="FML Conversion for ValueSet: R5 to R4"/>
+<artifact id="StructureMap/ValueSet5to4B" key="StructureMap-ValueSet5to4B" name="FML Conversion for ValueSet: R5 to R4B"/>
+<artifact id="StructureMap/VerificationResult4to5" key="StructureMap-VerificationResult4to5" name="FML Conversion for VerificationResult: R4 to R5"/>
+<artifact id="StructureMap/VerificationResult4Bto5" key="StructureMap-VerificationResult4Bto5" name="FML Conversion for VerificationResult: R4B to R5"/>
+<artifact id="StructureMap/VerificationResult5to4" key="StructureMap-VerificationResult5to4" name="FML Conversion for VerificationResult: R5 to R4"/>
+<artifact id="StructureMap/VerificationResult5to4B" key="StructureMap-VerificationResult5to4B" name="FML Conversion for VerificationResult: R5 to R4B"/>
+<artifact id="StructureMap/VisionPrescription4to5" key="StructureMap-VisionPrescription4to5" name="FML Conversion for VisionPrescription: R4 to R5"/>
+<artifact id="StructureMap/VisionPrescription4Bto5" key="StructureMap-VisionPrescription4Bto5" name="FML Conversion for VisionPrescription: R4B to R5"/>
+<artifact id="StructureMap/VisionPrescription5to4" key="StructureMap-VisionPrescription5to4" name="FML Conversion for VisionPrescription: R5 to R4"/>
+<artifact id="StructureMap/VisionPrescription5to4B" key="StructureMap-VisionPrescription5to4B" name="FML Conversion for VisionPrescription: R5 to R4B"/>
+<artifact id="StructureMap/primitives4to5" key="StructureMap-primitives4to5" name="FML Conversion for primtives: R4 to R5"/>
+<artifact id="StructureMap/primitives4Bto5" key="StructureMap-primitives4Bto5" name="FML Conversion for primtives: R4B to R5"/>
+<artifact id="StructureMap/primitives5to4" key="StructureMap-primitives5to4" name="FML Conversion for primtives: R5 to R4"/>
+<artifact id="StructureMap/primitives5to4B" key="StructureMap-primitives5to4B" name="FML Conversion for primtives: R5 to R4B"/>
 <artifact id="StructureDefinition/familymemberhistory-abatement" key="StructureDefinition-familymemberhistory-abatement" name="FamilyMemberHistory Abatement"/>
 <artifact id="StructureDefinition/family-member-history-genetics-observation" key="StructureDefinition-family-member-history-genetics-observation" name="FamilyMemberHistory Observation"/>
 <artifact id="StructureDefinition/family-member-history-genetics-parent" key="StructureDefinition-family-member-history-genetics-parent" name="FamilyMemberHistory Parent"/>
@@ -583,6 +1383,10 @@
 <artifact id="StructureDefinition/translation" key="StructureDefinition-translation" name="Translation"/>
 <artifact id="ValueSet/type-characteristics-code" key="ValueSet-type-characteristics-code" name="Type Characteristic Codes"/>
 <artifact id="CodeSystem/type-characteristics-code" key="CodeSystem-type-characteristics-code" name="Type Characteristic Codes"/>
+<artifact id="ConceptMap/types4to5" key="ConceptMap-types4to5" name="Type Mapping R4 to R5"/>
+<artifact id="ConceptMap/types5to4" key="ConceptMap-types5to4" name="Type Mapping R4 to R5"/>
+<artifact id="ConceptMap/types4Bto5" key="ConceptMap-types4Bto5" name="Type Mapping R4B to R5"/>
+<artifact id="ConceptMap/types5to4B" key="ConceptMap-types5to4B" name="Type Mapping R54 to R4B"/>
 <artifact id="StructureDefinition/elementdefinition-type-must-support" key="StructureDefinition-elementdefinition-type-must-support" name="Type must support"/>
 <artifact id="StructureDefinition/timing-uncertainDate" key="StructureDefinition-timing-uncertainDate" name="Uncertain date"/>
 <artifact id="StructureDefinition/uncertainPeriod" key="StructureDefinition-uncertainPeriod" name="Uncertain period"/>
@@ -761,6 +1565,7 @@
 <page key="extensions-Basic" name="Basic Extensions"/>
 <page key="extensions-Binary" name="Binary Extensions"/>
 <page key="extensions-BiologicallyDerivedProduct" name="BiologicallyDerivedProduct Extensions"/>
+<page key="extensions-BiologicallyDerivedProductDispense" name="BiologicallyDerivedProductDispense Extensions"/>
 <page key="extensions-BodyStructure" name="BodyStructure Extensions"/>
 <page key="extensions-Bundle" name="Bundle Extensions"/>
 <page key="extensions-CanonicalResource" name="CanonicalResource Extensions"/>
@@ -803,6 +1608,7 @@
 <page key="extensions-datatypes" name="Datatype Extensions"/>
 <page key="extensions-DetectedIssue" name="DetectedIssue Extensions"/>
 <page key="extensions-Device" name="Device Extensions"/>
+<page key="extensions-DeviceAssociation" name="DeviceAssociation Extensions"/>
 <page key="extensions-DeviceDefinition" name="DeviceDefinition Extensions"/>
 <page key="extensions-DeviceDispense" name="DeviceDispense Extensions"/>
 <page key="extensions-DeviceMetric" name="DeviceMetric Extensions"/>
@@ -810,7 +1616,6 @@
 <page key="extensions-DeviceUsage" name="DeviceUsage Extensions"/>
 <page key="extensions-DiagnosticReport" name="DiagnosticReport Extensions"/>
 <page key="extensions-Distance" name="Distance Extensions"/>
-<page key="extensions-DocumentManifest" name="DocumentManifest Extensions"/>
 <page key="extensions-DocumentReference" name="DocumentReference Extensions"/>
 <page key="extensions-DomainResource" name="DomainResource Extensions"/>
 <page key="extensions-Dosage" name="Dosage Extensions"/>
@@ -819,6 +1624,7 @@
 <page key="extensions-Element" name="Element Extensions"/>
 <page key="extensions-ElementDefinition" name="ElementDefinition Extensions"/>
 <page key="extensions-Encounter" name="Encounter Extensions"/>
+<page key="extensions-EncounterHistory" name="EncounterHistory Extensions"/>
 <page key="extensions-Endpoint" name="Endpoint Extensions"/>
 <page key="extensions-EnrollmentRequest" name="EnrollmentRequest Extensions"/>
 <page key="extensions-EnrollmentResponse" name="EnrollmentResponse Extensions"/>
@@ -861,6 +1667,7 @@
 <page deprecated="true" key="indv-reporting" name="Individual Reporting"/>
 <page key="extensions-Ingredient" name="Ingredient Extensions"/>
 <page key="extensions-InsurancePlan" name="InsurancePlan Extensions"/>
+<page key="extensions-InventoryItem" name="InventoryItem Extensions"/>
 <page key="extensions-InventoryReport" name="InventoryReport Extensions"/>
 <page key="extensions-Invoice" name="Invoice Extensions"/>
 <page key="extensions-Library" name="Library Extensions"/>
@@ -877,7 +1684,7 @@
 <page key="extensions-MedicationDispense" name="MedicationDispense Extensions"/>
 <page key="extensions-MedicationKnowledge" name="MedicationKnowledge Extensions"/>
 <page key="extensions-MedicationRequest" name="MedicationRequest Extensions"/>
-<page key="extensions-MedicationUsage" name="MedicationUsage Extensions"/>
+<page key="extensions-MedicationStatement" name="MedicationStatement Extensions"/>
 <page key="extensions-MedicinalProductDefinition" name="MedicinalProductDefinition Extensions"/>
 <page key="extensions-MessageDefinition" name="MessageDefinition Extensions"/>
 <page key="extensions-MessageHeader" name="MessageHeader Extensions"/>
@@ -960,6 +1767,7 @@
 <page key="extensions-Task" name="Task Extensions"/>
 <page deprecated="true" key="terminology" name="Terminology"/>
 <page key="extensions-TerminologyCapabilities" name="TerminologyCapabilities Extensions"/>
+<page key="extensions-TestPlan" name="TestPlan Extensions"/>
 <page key="extensions-TestReport" name="TestReport Extensions"/>
 <page key="extensions-TestScript" name="TestScript Extensions"/>
 <page key="extensions-Timing" name="Timing Extensions"/>
