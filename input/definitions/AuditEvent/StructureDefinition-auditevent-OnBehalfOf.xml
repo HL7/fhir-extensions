@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="observation-replaces"/>
+  <id value="auditevent-OnBehalfOf"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="oo"/>
+    <valueCode value="sec"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
@@ -11,36 +11,31 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/observation-replaces"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/auditevent-OnBehalfOf"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1456"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1003"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="ObsReplaces"/>
-  <title value="Observation Replaces"/>
+  <name value="AEonBehalfOf"/>
+  <title value="AuditEvent agent OnBehalfOf"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2015-03-02"/>
-  <publisher value="Health Level Seven, Inc. - OO WG"/>
+  <date value="2023-02-21T14:55:11+11:00"/>
+  <publisher value="Health Level Seven, Inc. - Security WG"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/orders"/>
+      <value value="http://www.hl7.org/Special/committees/security/index.cfm"/>
     </telecom>
   </contact>
-  <description value="This observation replaces a previous observation (i.e. a revised value)."/>
+  <description value="When an AuditEvent is attributed to an agent that is acting on behalf of another agent. Typically needed when multiple agents are acting on behalf of different organizations, and when PractitionerRole is not appropriate."/>
   <fhirVersion value="5.0.0"/>
-  <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
-  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Observation"/>
+    <expression value="AuditEvent.agent"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -48,11 +43,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Replaces referenced Observation"/>
-      <definition value="This observation replaces a previous observation (i.e. a revised value)."/>
-      <comment value="This is an alternative to updating the Observation with a new version with status = 'amended'or 'corrected'. The implementer must consider the appropriate status to indicate that the replaced Observation is obsolete and also add that the notion of replacement and status are independent as to when one and/or the other can occur and driven by the use case context."/>
+      <short value="OnBehalfOf Reference"/>
+      <definition value="A reference to another actor that this agent is acting on behalf of."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -60,14 +54,19 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-replaces"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/auditevent-OnBehalfOf"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       </type>
     </element>
   </differential>

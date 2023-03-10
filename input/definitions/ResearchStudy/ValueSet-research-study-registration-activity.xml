@@ -37,7 +37,7 @@
       <value value="fhir@lists.hl7.org"/>
     </telecom>
   </contact>
-  <description value="Codes for study registration activities."/>
+  <description value="Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -48,12 +48,7 @@
   <immutable value="true"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/research-study-classifiers"/>
-      <filter>
-        <property value="concept"/>
-        <op value="descendent-of"/>
-        <value value="research-study-registration-activity"/>
-      </filter>
+      <system value="http://hl7.org/fhir/research-study-registration-activity"/>
     </include>
   </compose>
 </ValueSet>
