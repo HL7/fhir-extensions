@@ -88,6 +88,17 @@ conceptmap "ActivityParticipantType" {
   s:"relatedperson" - t:"related-person"
 }
 
+conceptmap "ParticipantToSubjectTypes" {
+  prefix s = "http://hl7.org/fhir/fhir-types"
+  prefix t = "http://hl7.org/fhir/4.3/resource-types"
+
+  s:"Patient" - t:"Patient"
+  s:"Practitioner" - t:"Practitioner"
+  s:"Organization" - t:"Organization"
+  s:"Location" - t:"Location"
+  s:"Device" - t:"Device"
+}
+
 conceptmap "PublicationStatus" {
   prefix s = "http://hl7.org/fhir/publication-status"
   prefix t = "http://hl7.org/fhir/4.3/publication-status"
@@ -125,7 +136,7 @@ group PlanDefinition(source src : PlanDefinitionR5, target tgt : PlanDefinitionR
   src.type -> tgt.type;
   src.status as v -> tgt.status = translate(v, '#PublicationStatus', 'code');
   src.experimental -> tgt.experimental;
-  src.subject : CodeableConcept -> tgt.subject;
+  src.subject : CodeableConcept as v -> tgt.subject = translate(v, '#ParticipantToSubjectTypes', 'CodeableConcept');
   src.subject : Reference -> tgt.subject;
   src.subject : canonical -> tgt.subject;
   src.date -> tgt.date;
@@ -201,7 +212,7 @@ group PlanDefinitionAction(source src, target tgt) extends BackboneElement {
   src.reason -> tgt.reason;
   src.documentation -> tgt.documentation;
   src.goalId -> tgt.goalId;
-  src.subject : CodeableConcept -> tgt.subject;
+  src.subject : CodeableConcept as v -> tgt.subject = translate(v, '#ParticipantToSubjectTypes', 'CodeableConcept');
   src.subject : Reference -> tgt.subject;
   src.subject : canonical -> tgt.subject;
   src.trigger -> tgt.trigger;
