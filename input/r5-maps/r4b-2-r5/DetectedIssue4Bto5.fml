@@ -19,11 +19,11 @@ imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 group DetectedIssue(source src : DetectedIssueR4B, target tgt : DetectedIssueR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
-  src.category -> tgt.category;
+//  src.category -> tgt.category;
   src.code -> tgt.code;
   src.severity as v -> tgt.severity = translate(v, '#DetectedIssueSeverity', 'code');
-  src.subject -> tgt.subject;
-  src.encounter -> tgt.encounter;
+  src.patient -> tgt.subject;
+//  src.encounter -> tgt.encounter;
   src.identified : dateTime -> tgt.identified;
   src.identified : Period -> tgt.identified;
   src.author -> tgt.author;
@@ -43,6 +43,6 @@ group DetectedIssueMitigation(source src, target tgt) extends BackboneElement {
   src.action -> tgt.action;
   src.date -> tgt.date;
   src.author -> tgt.author;
-  src.note -> tgt.note;
+//  src.note -> tgt.note;
 }
 
