@@ -21,7 +21,7 @@ group RegulatedAuthorization(source src : RegulatedAuthorizationR4B, target tgt 
   src.basis -> tgt.basis;
   src.holder -> tgt.holder;
   src.regulator -> tgt.regulator;
-  src.attachedDocument -> tgt.attachedDocument;
+//  src.attachedDocument -> tgt.attachedDocument;
   src.case as s -> tgt.case as t then RegulatedAuthorizationCase(s,t);
 }
 

@@ -26,10 +26,8 @@ group AuditEvent(source src : AuditEventR5, target tgt : AuditEventR4B) extends 
 //  src.occurred : Period -> tgt.occurred;
 //  src.occurred : dateTime -> tgt.occurred;
   src.recorded -> tgt.recorded;
-  src as s -> tgt.outcome as t then {
-    s.outcome as s -> tgt.code as t1, t1.system = 'http://hl7.org/fhir/issue-severity', t1.code = s;
-    s.outcomeDesc as s1 -> tgt.detail as t1, t1.text = s1;
-  };
+  src.outcome as s -> tgt.outcome as t then AuditEventOutcome(s,t);
+  src.outcome as s -> tgt.outcomeDesc as t then AuditEventOutcomeDesc(s,t);
 //  src.authorization -> tgt.authorization;
 //  src.basedOn -> tgt.basedOn;
 //  src.patient -> tgt.patient;
@@ -39,6 +37,20 @@ group AuditEvent(source src : AuditEventR5, target tgt : AuditEventR4B) extends 
   src.entity as s -> tgt.entity as t then AuditEventEntity(s,t);
 }
 
+group AuditEventOutcome(source src, target tgt) extends BackboneElement {
+//  src.code -> tgt.code;
+//  src.detail -> tgt.detail;
+  src.code as s where code = 'success' -> tgt = "0";
+  src.code as s where code = 'information' -> tgt = "0";
+  src.code as s where code = 'warning' -> tgt = "4";
+  src.code as s where code = 'error' -> tgt = "8";
+  src.code as s where code = 'fatal' -> tgt = "12";
+}
+
+group AuditEventOutcomeDesc(source src, target tgt) extends BackboneElement {
+  src.code as s -> tgt = s.display;
+}
+
 group AuditEventAgent(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.role -> tgt.role;
@@ -46,14 +58,14 @@ group AuditEventAgent(source src, target tgt) extends BackboneElement {
   src.requestor -> tgt.requestor;
   src.location -> tgt.location;
   src.policy -> tgt.policy;
-  src.network : Reference -> tgt.network;
-  src.network : uri -> tgt.network;
-  src.network : string -> tgt.network;
-  src.authorization -> tgt.authorization;
+  src.network : Reference as v -> tgt.network as t, t.address = v.display;
+  src.network : uri as v -> tgt.network as t, t.address = v.value;
+  src.network : string as v -> tgt.network as t, t.address = v.value;
+  src.authorization -> tgt.purposeOfUse;
 }
 
 group AuditEventSource(source src, target tgt) extends BackboneElement {
-  src.site -> tgt.site;
+  src.site as v -> tgt.site = v.display;
   src.observer -> tgt.observer;
   src.type -> tgt.type;
 }

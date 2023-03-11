@@ -21,9 +21,9 @@ group ChargeItemDefinition(source src : ChargeItemDefinitionR4, target tgt : Cha
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;
-  src.versionAlgorithm : string -> tgt.versionAlgorithm;
-  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
-  src.name -> tgt.name;
+//  src.versionAlgorithm : string -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
+//  src.name -> tgt.name;
   src.title -> tgt.title;
   src.derivedFromUri -> tgt.derivedFromUri;
   src.partOf -> tgt.partOf;
@@ -36,11 +36,12 @@ group ChargeItemDefinition(source src : ChargeItemDefinitionR4, target tgt : Cha
   src.description -> tgt.description;
   src.useContext -> tgt.useContext;
   src.jurisdiction -> tgt.jurisdiction;
-  src.purpose -> tgt.purpose;
+//  src.purpose -> tgt.purpose;
   src.copyright -> tgt.copyright;
-  src.copyrightLabel -> tgt.copyrightLabel;
+//  src.copyrightLabel -> tgt.copyrightLabel;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
+  src.effectivePeriod as v -> tgt.applicability as t, t.effectivePeriod = v "period";
   src.code -> tgt.code;
   src.instance -> tgt.instance;
   src.applicability as s -> tgt.applicability as t then ChargeItemDefinitionApplicability(s,t);
@@ -48,12 +49,12 @@ group ChargeItemDefinition(source src : ChargeItemDefinitionR4, target tgt : Cha
 }
 
 group ChargeItemDefinitionApplicability(source src, target tgt) extends BackboneElement {
-  src.condition -> tgt.condition;
-  src.effectivePeriod -> tgt.effectivePeriod;
-  src.relatedArtifact -> tgt.relatedArtifact;
+  src.expression as s -> tgt.condition = create('Expression') as t, t.expression = s.value;
+//  src.effectivePeriod -> tgt.effectivePeriod;
+//  src.relatedArtifact -> tgt.relatedArtifact;
 }
 
 group ChargeItemDefinitionPropertyGroup(source src, target tgt) extends BackboneElement {
-  src.priceComponent -> tgt.priceComponent;
+  src.priceComponent as s -> tgt.priceComponent = create('MonetaryComponent') as t, t.type = s.type, t.code = s.code, t.factor = s.factor, t.amount = s.amount;
 }
 
