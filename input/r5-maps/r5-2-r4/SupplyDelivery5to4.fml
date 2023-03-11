@@ -14,11 +14,11 @@ conceptmap "SupplyDeliveryStatus" {
 
 conceptmap "SupplyDeliverySupplyItemType" {
   prefix s = "http://hl7.org/fhir/supplydelivery-supplyitemtype"
-  prefix t = "http://hl7.org/fhir/4.0/supplydelivery-supplyitemtype"
+  prefix t = "http://terminology.hl7.org/CodeSystem/supply-item-type"
 
   s:"medication" - t:"medication"
   s:"device" - t:"device"
-  s:"biologicallyderivedproduct" - t:"biologicallyderivedproduct"
+//  s:"biologicallyderivedproduct" - t:"biologicallyderivedproduct"
 }
 
 uses "http://hl7.org/fhir/StructureDefinition/SupplyDelivery" alias SupplyDeliveryR5 as source

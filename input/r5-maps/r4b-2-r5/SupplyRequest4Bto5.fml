@@ -33,11 +33,12 @@ imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 group SupplyRequest(source src : SupplyRequestR4B, target tgt : SupplyRequestR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status as v -> tgt.status = translate(v, '#SupplyRequestStatus', 'code');
-  src.basedOn -> tgt.basedOn;
+//  src.basedOn -> tgt.basedOn;
   src.category -> tgt.category;
   src.priority as v -> tgt.priority = translate(v, '#RequestPriority', 'code');
-  src.deliverFor -> tgt.deliverFor;
-  src.item -> tgt.item;
+//  src.deliverFor -> tgt.deliverFor;
+  src.item : CodeableConcept -> tgt.item;
+  src.item : Reference -> tgt.item;
   src.quantity -> tgt.quantity;
   src.parameter as s -> tgt.parameter as t then SupplyRequestParameter(s,t);
   src.occurrence : dateTime -> tgt.occurrence;
@@ -46,7 +47,8 @@ group SupplyRequest(source src : SupplyRequestR4B, target tgt : SupplyRequestR5)
   src.authoredOn -> tgt.authoredOn;
   src.requester -> tgt.requester;
   src.supplier -> tgt.supplier;
-  src.reason -> tgt.reason;
+  src.reasonCode -> tgt.reason;
+  src.reasonReference -> tgt.reason;
   src.deliverFrom -> tgt.deliverFrom;
   src.deliverTo -> tgt.deliverTo;
 }
