@@ -2,20 +2,33 @@
 /// name = 'ActivityDefinition4to5'
 /// title = 'FML Conversion for ActivityDefinition: R4 to R5'
 
+// VP 8-Mar 2023: All OK sans version-specific extensions
+
 conceptmap "ActivityParticipantType" {
   prefix s = "http://hl7.org/fhir/4.0/action-participant-type"
   prefix t = "http://hl7.org/fhir/action-participant-type"
 
-  s:"careteam" - t:"careteam"
+  // s:"careteam" - t:"careteam"
   s:"device" - t:"device"
-  s:"group" - t:"group"
-  s:"healthcareservice" - t:"healthcareservice"
-  s:"location" - t:"location"
-  s:"organization" - t:"organization"
+  // s:"group" - t:"group"
+  // s:"healthcareservice" - t:"healthcareservice"
+  // s:"location" - t:"location"
+  // s:"organization" - t:"organization"
   s:"patient" - t:"patient"
   s:"practitioner" - t:"practitioner"
-  s:"practitionerrole" - t:"practitionerrole"
-  s:"relatedperson" - t:"relatedperson"
+  // s:"practitionerrole" - t:"practitionerrole"
+  s:"related-person" - t:"relatedperson"
+}
+
+conceptmap "SubjectToParticipantTypes" {
+  prefix s = "http://hl7.org/fhir/4.0/resource-types"
+  prefix t = "http://hl7.org/fhir/fhir-types"
+
+  s:"Patient" - t:"Patient"
+  s:"Practitioner" - t:"Practitioner"
+  s:"Organization" - t:"Organization"
+  s:"Location" - t:"Location"
+  s:"Device" - t:"Device"
 }
 
 conceptmap "PublicationStatus" {
@@ -62,16 +75,15 @@ group ActivityDefinition(source src : ActivityDefinitionR4, target tgt : Activit
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;
-  src.versionAlgorithm : string -> tgt.versionAlgorithm;
-  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
+  // src.versionAlgorithm : string -> tgt.versionAlgorithm;
+  // src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
   src.status as v -> tgt.status = translate(v, '#PublicationStatus', 'code');
   src.experimental -> tgt.experimental;
-  src.subject : CodeableConcept -> tgt.subject;
+  src.subject : CodeableConcept as v -> tgt.subject = translate(v, '#SubjectToParticipantTypes', 'CodeableConcept');
   src.subject : Reference -> tgt.subject;
-  src.subject : canonical -> tgt.subject;
   src.date -> tgt.date;
   src.publisher -> tgt.publisher;
   src.contact -> tgt.contact;
@@ -81,7 +93,7 @@ group ActivityDefinition(source src : ActivityDefinitionR4, target tgt : Activit
   src.purpose -> tgt.purpose;
   src.usage -> tgt.usage;
   src.copyright -> tgt.copyright;
-  src.copyrightLabel -> tgt.copyrightLabel;
+  // src.copyrightLabel -> tgt.copyrightLabel;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
   src.effectivePeriod -> tgt.effectivePeriod;
@@ -102,8 +114,8 @@ group ActivityDefinition(source src : ActivityDefinitionR4, target tgt : Activit
   src.timing : Age -> tgt.timing;
   src.timing : Range -> tgt.timing;
   src.timing : Duration -> tgt.timing;
-  src.asNeeded : boolean -> tgt.asNeeded;
-  src.asNeeded : CodeableConcept -> tgt.asNeeded;
+  // src.asNeeded : boolean -> tgt.asNeeded;
+  // src.asNeeded : CodeableConcept -> tgt.asNeeded;
   src.location -> tgt.location;
   src.participant as s -> tgt.participant as t then ActivityDefinitionParticipant(s,t);
   src.product : Reference -> tgt.product;
@@ -120,10 +132,10 @@ group ActivityDefinition(source src : ActivityDefinitionR4, target tgt : Activit
 
 group ActivityDefinitionParticipant(source src, target tgt) extends BackboneElement {
   src.type as v -> tgt.type = translate(v, '#ActivityParticipantType', 'code');
-  src.typeCanonical -> tgt.typeCanonical;
-  src.typeReference -> tgt.typeReference;
+  // src.typeCanonical -> tgt.typeCanonical;
+  // src.typeReference -> tgt.typeReference;
   src.role -> tgt.role;
-  src.function -> tgt.function;
+  // src.function -> tgt.function;
 }
 
 group ActivityDefinitionDynamicValue(source src, target tgt) extends BackboneElement {
