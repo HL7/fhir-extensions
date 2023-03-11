@@ -12,7 +12,7 @@ conceptmap "NoteType" {
 }
 
 conceptmap "PaymentOutcome" {
-  prefix s = "http://hl7.org/fhir/4.0/payment-outcome"
+  prefix s = "http://hl7.org/fhir/4.0/remittance-outcome"
   prefix t = "http://hl7.org/fhir/payment-outcome"
 
   s:"queued" - t:"queued"
@@ -38,32 +38,32 @@ imports "http://hl7.org/fhir/StructureMap/*4to5"
 
 group PaymentReconciliation(source src : PaymentReconciliationR4, target tgt : PaymentReconciliationR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.type -> tgt.type;
+//  src.type -> tgt.type;
   src.status as v -> tgt.status = translate(v, '#PaymentReconciliationStatus', 'code');
-  src.kind -> tgt.kind;
+//  src.kind -> tgt.kind;
   src.period -> tgt.period;
   src.created -> tgt.created;
-  src.enterer -> tgt.enterer;
-  src.issuerType -> tgt.issuerType;
+//  src.enterer -> tgt.enterer;
+//  src.issuerType -> tgt.issuerType;
   src.paymentIssuer -> tgt.paymentIssuer;
   src.request -> tgt.request;
   src.requestor -> tgt.requestor;
   src.outcome as v -> tgt.outcome = translate(v, '#PaymentOutcome', 'code');
   src.disposition -> tgt.disposition;
-  src.date -> tgt.date;
-  src.location -> tgt.location;
-  src.method -> tgt.method;
-  src.cardBrand -> tgt.cardBrand;
-  src.accountNumber -> tgt.accountNumber;
-  src.expirationDate -> tgt.expirationDate;
-  src.processor -> tgt.processor;
-  src.referenceNumber -> tgt.referenceNumber;
-  src.authorization -> tgt.authorization;
-  src.tenderedAmount -> tgt.tenderedAmount;
-  src.returnedAmount -> tgt.returnedAmount;
-  src.amount -> tgt.amount;
+  src.paymentDate -> tgt.date;
+//  src.location -> tgt.location;
+//  src.method -> tgt.method;
+//  src.cardBrand -> tgt.cardBrand;
+//  src.accountNumber -> tgt.accountNumber;
+//  src.expirationDate -> tgt.expirationDate;
+//  src.processor -> tgt.processor;
+//  src.referenceNumber -> tgt.referenceNumber;
+//  src.authorization -> tgt.authorization;
+//  src.tenderedAmount -> tgt.tenderedAmount;
+//  src.returnedAmount -> tgt.returnedAmount;
+  src.paymentAmount -> tgt.amount;
   src.paymentIdentifier -> tgt.paymentIdentifier;
-  src.allocation as s -> tgt.allocation as t then PaymentReconciliationAllocation(s,t);
+  src.detail as s -> tgt.allocation as t then PaymentReconciliationAllocation(s,t);
   src.formCode -> tgt.formCode;
   src.processNote as s -> tgt.processNote as t then PaymentReconciliationProcessNote(s,t);
 }
@@ -71,12 +71,12 @@ group PaymentReconciliation(source src : PaymentReconciliationR4, target tgt : P
 group PaymentReconciliationAllocation(source src, target tgt) extends BackboneElement {
   src.identifier -> tgt.identifier;
   src.predecessor -> tgt.predecessor;
-  src.target -> tgt.target;
-  src.targetItem : string -> tgt.targetItem;
-  src.targetItem : Identifier -> tgt.targetItem;
-  src.targetItem : positiveInt -> tgt.targetItem;
-  src.encounter -> tgt.encounter;
-  src.account -> tgt.account;
+//  src.target -> tgt.target;
+//  src.targetItem : string -> tgt.targetItem;
+//  src.targetItem : Identifier -> tgt.targetItem;
+//  src.targetItem : positiveInt -> tgt.targetItem;
+//  src.encounter -> tgt.encounter;
+//  src.account -> tgt.account;
   src.type -> tgt.type;
   src.submitter -> tgt.submitter;
   src.response -> tgt.response;
