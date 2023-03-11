@@ -21,8 +21,8 @@ group EventDefinition(source src : EventDefinitionR4B, target tgt : EventDefinit
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;
-  src.versionAlgorithm : string -> tgt.versionAlgorithm;
-  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : string -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
@@ -39,7 +39,7 @@ group EventDefinition(source src : EventDefinitionR4B, target tgt : EventDefinit
   src.purpose -> tgt.purpose;
   src.usage -> tgt.usage;
   src.copyright -> tgt.copyright;
-  src.copyrightLabel -> tgt.copyrightLabel;
+//  src.copyrightLabel -> tgt.copyrightLabel;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
   src.effectivePeriod -> tgt.effectivePeriod;

@@ -25,14 +25,14 @@ group EpisodeOfCare(source src : EpisodeOfCareR5, target tgt : EpisodeOfCareR4B)
   src.status as v -> tgt.status = translate(v, '#EpisodeOfCareStatus', 'code');
   src.statusHistory as s -> tgt.statusHistory as t then EpisodeOfCareStatusHistory(s,t);
   src.type -> tgt.type;
-  src.reason as s -> tgt.reason as t then EpisodeOfCareReason(s,t);
+//  src.reason as s -> tgt.reason as t then EpisodeOfCareReason(s,t);
   src.diagnosis as s -> tgt.diagnosis as t then EpisodeOfCareDiagnosis(s,t);
   src.patient -> tgt.patient;
   src.managingOrganization -> tgt.managingOrganization;
   src.period -> tgt.period;
   src.referralRequest -> tgt.referralRequest;
   src.careManager -> tgt.careManager;
-  src.careTeam -> tgt.careTeam;
+  src.careTeam -> tgt.team;
   src.account -> tgt.account;
 }
 
@@ -41,13 +41,13 @@ group EpisodeOfCareStatusHistory(source src, target tgt) extends BackboneElement
   src.period -> tgt.period;
 }
 
-group EpisodeOfCareReason(source src, target tgt) extends BackboneElement {
-  src.use -> tgt.use;
-  src.value -> tgt.value;
-}
+//group EpisodeOfCareReason(source src, target tgt) extends BackboneElement {
+//  src.use -> tgt.use;
+//  src.value -> tgt.value;
+//}
 
 group EpisodeOfCareDiagnosis(source src, target tgt) extends BackboneElement {
   src.condition -> tgt.condition;
-  src.use -> tgt.use;
+  src.use -> tgt.role;
 }
 

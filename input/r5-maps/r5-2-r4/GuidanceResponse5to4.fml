@@ -30,7 +30,8 @@ group GuidanceResponse(source src : GuidanceResponseR5, target tgt : GuidanceRes
   src.encounter -> tgt.encounter;
   src.occurrenceDateTime -> tgt.occurrenceDateTime;
   src.performer -> tgt.performer;
-  src.reason -> tgt.reason;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
   src.note -> tgt.note;
   src.evaluationMessage -> tgt.evaluationMessage;
   src.outputParameters -> tgt.outputParameters;

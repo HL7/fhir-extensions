@@ -51,7 +51,8 @@ group Communication(source src : CommunicationR4B, target tgt : CommunicationR5)
   src.received -> tgt.received;
   src.recipient -> tgt.recipient;
   src.sender -> tgt.sender;
-  src.reason -> tgt.reason;
+  src.reasonCode -> tgt.reason;
+  src.reasonReference -> tgt.reason;
   src.payload as s -> tgt.payload as t then CommunicationPayload(s,t);
   src.note -> tgt.note;
 }
@@ -59,6 +60,6 @@ group Communication(source src : CommunicationR4B, target tgt : CommunicationR5)
 group CommunicationPayload(source src, target tgt) extends BackboneElement {
   src.content : Attachment -> tgt.content;
   src.content : Reference -> tgt.content;
-  src.content : CodeableConcept -> tgt.content;
+  src.content : string -> tgt.content;
 }
 

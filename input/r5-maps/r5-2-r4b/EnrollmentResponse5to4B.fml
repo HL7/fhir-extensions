@@ -4,7 +4,7 @@
 
 conceptmap "EnrollmentOutcome" {
   prefix s = "http://hl7.org/fhir/enrollment-outcome"
-  prefix t = "http://hl7.org/fhir/4.3/enrollment-outcome"
+  prefix t = "http://hl7.org/fhir/4.3/remittance-outcome"
 
   s:"queued" - t:"queued"
   s:"complete" - t:"complete"

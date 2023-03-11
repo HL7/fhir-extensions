@@ -52,7 +52,7 @@ group CommunicationRequest(source src : CommunicationRequestR4, target tgt : Com
   src.groupIdentifier -> tgt.groupIdentifier;
   src.status as v -> tgt.status = translate(v, '#CommunicationRequestStatus', 'code');
   src.statusReason -> tgt.statusReason;
-  src.intent as v -> tgt.intent = translate(v, '#CommunicationRequestIntent', 'code');
+//  src.intent as v -> tgt.intent = translate(v, '#CommunicationRequestIntent', 'code');
   src.category -> tgt.category;
   src.priority as v -> tgt.priority = translate(v, '#CommunicationPriority', 'code');
   src.doNotPerform -> tgt.doNotPerform;
@@ -66,14 +66,15 @@ group CommunicationRequest(source src : CommunicationRequestR4, target tgt : Com
   src.authoredOn -> tgt.authoredOn;
   src.requester -> tgt.requester;
   src.recipient -> tgt.recipient;
-  src.informationProvider -> tgt.informationProvider;
-  src.reason -> tgt.reason;
+  src.sender -> tgt.informationProvider;
+  src.reasonCode -> tgt.reason;
+  src.reasonReference -> tgt.reason;
   src.note -> tgt.note;
 }
 
 group CommunicationRequestPayload(source src, target tgt) extends BackboneElement {
   src.content : Attachment -> tgt.content;
   src.content : Reference -> tgt.content;
-  src.content : CodeableConcept -> tgt.content;
+  src.content : string -> tgt.content;
 }
 
