@@ -18,13 +18,13 @@ imports "http://hl7.org/fhir/StructureMap/*5to4B"
 
 group Substance(source src : SubstanceR5, target tgt : SubstanceR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.instance -> tgt.instance;
+//  src.instance -> tgt.instance;
   src.status as v -> tgt.status = translate(v, '#FHIRSubstanceStatus', 'code');
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.description -> tgt.description;
-  src.expiry -> tgt.expiry;
-  src.quantity -> tgt.quantity;
+  src.expiry as s -> tgt.instance as t, t.expiry = s "expiry";
+  src.quantity as s -> tgt.instance as t, t.quantity = s "quantity";
   src.ingredient as s -> tgt.ingredient as t then SubstanceIngredient(s,t);
 }
 

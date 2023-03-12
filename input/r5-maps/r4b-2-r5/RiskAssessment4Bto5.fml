@@ -34,7 +34,8 @@ group RiskAssessment(source src : RiskAssessmentR4B, target tgt : RiskAssessment
   src.occurrence : Period -> tgt.occurrence;
   src.condition -> tgt.condition;
   src.performer -> tgt.performer;
-  src.reason -> tgt.reason;
+  src.reasonCode -> tgt.reason;
+  src.reasonReference -> tgt.reason;
   src.basis -> tgt.basis;
   src.prediction as s -> tgt.prediction as t then RiskAssessmentPrediction(s,t);
   src.mitigation -> tgt.mitigation;
