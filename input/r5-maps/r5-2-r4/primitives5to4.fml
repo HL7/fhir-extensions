@@ -1,6 +1,6 @@
-/// url = 'http://hl7.org/fhir/StructureMap/primitives5to4'
+/// url = 'http://hl7.org/fhir/StructureMap/Primitives5to4'
 /// name = 'Primitives5to4'
-/// title = 'FML Conversion for primtives: R5 to R4'
+/// title = 'FML Conversion for primitive datatypes: R5 to R4'
 
 // status: managed by Grahame, discuss proposed changes first
 

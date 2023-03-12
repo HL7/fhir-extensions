@@ -39,21 +39,21 @@
         <title value="Extension Registry"/>
         <generation value="markdown"/>
         <page>
+          <sourceUrl value="extensions-types.html"/>
+          <name value="extensions-types.html"/>
+          <title value="Types Extensions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
           <sourceUrl value="extensions-datatypes.html"/>
           <name value="extensions-datatypes.html"/>
-          <title value="Datatype Extensions"/>
+          <title value="Datatypes Extensions"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <sourceUrl value="extensions-Path.html"/>
-          <name value="extensions-Path.html"/>
-          <title value="Path Extensions"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <sourceUrl value="extensions-multiple.html"/>
-          <name value="extensions-multiple.html"/>
-          <title value="Extensions that have multiple contexts"/>
+          <sourceUrl value="extensions-metadatatypes.html"/>
+          <name value="extensions-metadatatypes.html"/>
+          <title value="Metadata Types Extensions"/>
           <generation value="markdown"/>
         </page>
       </page>
@@ -63,7 +63,30 @@
         <title value="Extension Search Registry"/>
         <generation value="html"/>
       </page>
-
+      <page>
+        <sourceUrl value="conversion-registry.html"/>
+        <name value="conversion-registry.html"/>
+        <title value="R4/R5 Conversion Registry"/>
+        <generation value="markdown"/>
+        <page>
+          <sourceUrl value="conversions-types.html"/>
+          <name value="conversions-types.html"/>
+          <title value="R4/R5 Conversions for the Types Framework"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="conversions-datatypes.html"/>
+          <name value="conversions-datatypes.html"/>
+          <title value="R4/R5 Conversions for Datatypes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <sourceUrl value="conversions-metadatatypes.html"/>
+          <name value="conversions-metadatatypes.html"/>
+          <title value="R4/R5 Conversion for Metadata Types"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>
@@ -149,6 +172,13 @@
         <code value="page-factory"/>
       </code>
       <value value="input/extension-resource-factory.json"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="page-factory"/>
+      </code>
+      <value value="input/structuremap-type-factory.json"/>
     </parameter>
     
     <parameter>

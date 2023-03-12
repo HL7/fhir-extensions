@@ -1,5 +1,6 @@
 {
-  "item-factory" : "datatypes",
+  "item-factory" : "manual",
+  "items" : ["Population", "Dosage", "ProductShelfLife", "ElementDefinition", "Reference", "MarketingStatus"],
   "source-file" : "input/extension-type-template.md",
   "variables" : [{
     "name" : "%type%",
@@ -11,3 +12,5 @@
   "generation" : "markdown",
   "page-title" : "%item% Extensions"
 }
+
+
