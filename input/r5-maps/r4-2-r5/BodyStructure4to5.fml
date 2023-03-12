@@ -2,6 +2,8 @@
 /// name = 'BodyStructure4to5'
 /// title = 'FML Conversion for BodyStructure: R4 to R5'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/4.0/StructureDefinition/BodyStructure" alias BodyStructureR4 as source
 uses "http://hl7.org/fhir/StructureDefinition/BodyStructure" alias BodyStructureR5 as target
 

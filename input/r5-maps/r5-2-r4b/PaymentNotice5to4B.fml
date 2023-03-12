@@ -2,6 +2,8 @@
 /// name = 'PaymentNotice5to4B'
 /// title = 'FML Conversion for PaymentNotice: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "PaymentNoticeStatus" {
   prefix s = "http://hl7.org/fhir/fm-status"
   prefix t = "http://hl7.org/fhir/4.3/fm-status"

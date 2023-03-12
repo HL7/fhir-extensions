@@ -2,6 +2,8 @@
 /// name = 'EpisodeOfCare5to4B'
 /// title = 'FML Conversion for EpisodeOfCare: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "EpisodeOfCareStatus" {
   prefix s = "http://hl7.org/fhir/episode-of-care-status"
   prefix t = "http://hl7.org/fhir/4.3/episode-of-care-status"

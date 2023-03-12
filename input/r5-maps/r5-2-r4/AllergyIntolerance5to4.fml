@@ -2,6 +2,8 @@
 /// name = 'AllergyIntolerance5to4'
 /// title = 'FML Conversion for AllergyIntolerance: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "AllergyIntoleranceCategory" {
   prefix s = "http://hl7.org/fhir/allergy-intolerance-category"
   prefix t = "http://hl7.org/fhir/4.0/allergy-intolerance-category"

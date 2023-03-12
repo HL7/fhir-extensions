@@ -2,6 +2,8 @@
 /// name = 'CareTeam5to4'
 /// title = 'FML Conversion for CareTeam: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "CareTeamStatus" {
   prefix s = "http://hl7.org/fhir/care-team-status"
   prefix t = "http://hl7.org/fhir/4.0/care-team-status"

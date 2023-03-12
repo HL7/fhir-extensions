@@ -2,6 +2,8 @@
 /// name = 'AdverseEvent5to4B'
 /// title = 'FML Conversion for AdverseEvent: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "AdverseEventActuality" {
   prefix s = "http://hl7.org/fhir/adverse-event-actuality"
   prefix t = "http://hl7.org/fhir/4.3/adverse-event-actuality"

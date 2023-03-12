@@ -2,6 +2,8 @@
 /// name = 'DetectedIssue5to4'
 /// title = 'FML Conversion for DetectedIssue: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "DetectedIssueSeverity" {
   prefix s = "http://hl7.org/fhir/detectedissue-severity"
   prefix t = "http://hl7.org/fhir/4.0/detectedissue-severity"

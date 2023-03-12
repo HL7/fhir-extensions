@@ -2,6 +2,8 @@
 /// name = 'Group4Bto5'
 /// title = 'FML Conversion for Group: R4B to R5'
 
+/// status = 'active'
+
 conceptmap "GroupType" {
   prefix s = "http://hl7.org/fhir/4.3/group-type"
   prefix t = "http://hl7.org/fhir/group-type"

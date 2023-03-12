@@ -2,6 +2,8 @@
 /// name = 'VerificationResult5to4'
 /// title = 'FML Conversion for VerificationResult: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "status" {
   prefix s = "http://hl7.org/fhir/CodeSystem/verificationresult-status"
   prefix t = "http://hl7.org/fhir/4.0/CodeSystem/status"

@@ -2,6 +2,8 @@
 /// name = 'Invoice5to4'
 /// title = 'FML Conversion for Invoice: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "InvoiceStatus" {
   prefix s = "http://hl7.org/fhir/invoice-status"
   prefix t = "http://hl7.org/fhir/4.0/invoice-status"

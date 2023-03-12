@@ -2,6 +2,8 @@
 /// name = 'SubstanceNucleicAcid5to4B'
 /// title = 'FML Conversion for SubstanceNucleicAcid: R5 to R4B'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid" alias SubstanceNucleicAcidR5 as source
 uses "http://hl7.org/fhir/4.3/StructureDefinition/SubstanceNucleicAcid" alias SubstanceNucleicAcidR4B as target
 

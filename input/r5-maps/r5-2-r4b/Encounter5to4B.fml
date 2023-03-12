@@ -2,7 +2,7 @@
 /// name = 'Encounter5to4B'
 /// title = 'FML Conversion for Encounter: R5 to R4B'
 
-// RJE 9-Mar 2023: All OK
+/// status = 'active'
 
 conceptmap "EncounterLocationStatus" {
   prefix s = "http://hl7.org/fhir/encounter-location-status"

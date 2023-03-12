@@ -2,6 +2,8 @@
 /// name = 'AuditEvent4to5'
 /// title = 'FML Conversion for AuditEvent: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "AuditEventAction" {
   prefix s = "http://hl7.org/fhir/4.0/audit-event-action"
   prefix t = "http://hl7.org/fhir/audit-event-action"

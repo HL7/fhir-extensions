@@ -2,6 +2,8 @@
 /// name = 'Ingredient5to4B'
 /// title = 'FML Conversion for Ingredient: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "IngredientManufacturerRole" {
   prefix s = "http://hl7.org/fhir/ingredient-manufacturer-role"
   prefix t = "http://hl7.org/fhir/4.3/ingredient-manufacturer-role"

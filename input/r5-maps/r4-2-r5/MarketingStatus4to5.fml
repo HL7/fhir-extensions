@@ -2,6 +2,8 @@
 /// name = 'MarketingStatus4to5'
 /// title = 'FML Conversion for MarketingStatus: R4 to R5'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/4.0/StructureDefinition/MarketingStatus" alias MarketingStatusR4 as source
 uses "http://hl7.org/fhir/StructureDefinition/MarketingStatus" alias MarketingStatusR5 as target
 

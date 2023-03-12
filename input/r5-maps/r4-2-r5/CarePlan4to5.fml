@@ -2,6 +2,8 @@
 /// name = 'CarePlan4to5'
 /// title = 'FML Conversion for CarePlan: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "CarePlanStatus" {
   prefix s = "http://hl7.org/fhir/4.0/request-status"
   prefix t = "http://hl7.org/fhir/request-status"

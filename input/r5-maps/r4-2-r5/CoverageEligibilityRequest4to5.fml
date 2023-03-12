@@ -2,6 +2,8 @@
 /// name = 'CoverageEligibilityRequest4to5'
 /// title = 'FML Conversion for CoverageEligibilityRequest: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "EligibilityRequestPurpose" {
   prefix s = "http://hl7.org/fhir/4.0/eligibilityrequest-purpose"
   prefix t = "http://hl7.org/fhir/eligibilityrequest-purpose"

@@ -2,6 +2,8 @@
 /// name = 'Specimen5to4'
 /// title = 'FML Conversion for Specimen: R5 to R4'
 
+/// status = 'active'
+
 //conceptmap "PublicationStatus" {
 //  prefix s = "http://hl7.org/fhir/specimen-combined"
 //  prefix t = "http://hl7.org/fhir/4.0/specimen-combined"

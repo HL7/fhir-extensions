@@ -2,6 +2,8 @@
 /// name = 'DiagnosticReport4to5'
 /// title = 'FML Conversion for DiagnosticReport: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "DiagnosticReportStatus" {
   prefix s = "http://hl7.org/fhir/4.0/diagnostic-report-status"
   prefix t = "http://hl7.org/fhir/diagnostic-report-status"

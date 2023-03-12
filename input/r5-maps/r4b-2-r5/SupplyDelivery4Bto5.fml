@@ -2,6 +2,8 @@
 /// name = 'SupplyDelivery4Bto5'
 /// title = 'FML Conversion for SupplyDelivery: R4B to R5'
 
+/// status = 'active'
+
 conceptmap "SupplyDeliveryStatus" {
   prefix s = "http://hl7.org/fhir/4.3/supplydelivery-status"
   prefix t = "http://hl7.org/fhir/supplydelivery-status"

@@ -2,6 +2,8 @@
 /// name = 'Practitioner4to5'
 /// title = 'FML Conversion for Practitioner: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "AdministrativeGender" {
   prefix s = "http://hl7.org/fhir/4.0/administrative-gender"
   prefix t = "http://hl7.org/fhir/administrative-gender"

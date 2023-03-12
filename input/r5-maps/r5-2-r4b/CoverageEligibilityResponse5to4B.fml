@@ -2,6 +2,8 @@
 /// name = 'CoverageEligibilityResponse5to4B'
 /// title = 'FML Conversion for CoverageEligibilityResponse: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "EligibilityOutcome" {
   prefix s = "http://hl7.org/fhir/eligibility-outcome"
   prefix t = "http://hl7.org/fhir/4.3/remittance-outcome"

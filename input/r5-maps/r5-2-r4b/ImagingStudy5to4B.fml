@@ -2,6 +2,8 @@
 /// name = 'ImagingStudy5to4B'
 /// title = 'FML Conversion for ImagingStudy: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "ImagingStudyStatus" {
   prefix s = "http://hl7.org/fhir/imagingstudy-status"
   prefix t = "http://hl7.org/fhir/4.3/imagingstudy-status"

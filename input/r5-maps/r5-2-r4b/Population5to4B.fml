@@ -2,6 +2,8 @@
 /// name = 'Population5to4B'
 /// title = 'FML Conversion for Population: R5 to R4B'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/Population" alias PopulationR5 as source
 uses "http://hl7.org/fhir/4.3/StructureDefinition/Population" alias PopulationR4B as target
 

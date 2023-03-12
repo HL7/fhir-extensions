@@ -2,6 +2,8 @@
 /// name = 'ManufacturedItemDefinition5to4B'
 /// title = 'FML Conversion for ManufacturedItemDefinition: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "PublicationStatus" {
   prefix s = "http://hl7.org/fhir/publication-status"
   prefix t = "http://hl7.org/fhir/4.3/publication-status"

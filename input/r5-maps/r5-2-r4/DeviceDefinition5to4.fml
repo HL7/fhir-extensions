@@ -2,6 +2,8 @@
 /// name = 'DeviceDefinition5to4'
 /// title = 'FML Conversion for DeviceDefinition: R5 to R4'
 
+/// status = 'active'
+
 //conceptmap "DeviceCorrectiveActionScope" {
 //  prefix s = "http://hl7.org/fhir/device-correctiveactionscope"
 //  prefix t = "http://hl7.org/fhir/4.0/device-correctiveactionscope"

@@ -2,6 +2,8 @@
 /// name = 'RiskAssessment4to5'
 /// title = 'FML Conversion for RiskAssessment: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "RiskAssessmentStatus" {
   prefix s = "http://hl7.org/fhir/4.0/observation-status"
   prefix t = "http://hl7.org/fhir/observation-status"

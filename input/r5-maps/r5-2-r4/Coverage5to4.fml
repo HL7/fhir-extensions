@@ -2,6 +2,8 @@
 /// name = 'Coverage5to4'
 /// title = 'FML Conversion for Coverage: R5 to R4'
 
+/// status = 'active'
+
 //conceptmap "CoverageKind" {
 //  prefix s = "http://hl7.org/fhir/coverage-kind"
 //  prefix t = "http://hl7.org/fhir/4.0/coverage-kind"

@@ -2,6 +2,8 @@
 /// name = 'PractitionerRole5to4B'
 /// title = 'FML Conversion for PractitionerRole: R5 to R4B'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/PractitionerRole" alias PractitionerRoleR5 as source
 uses "http://hl7.org/fhir/4.3/StructureDefinition/PractitionerRole" alias PractitionerRoleR4B as target
 

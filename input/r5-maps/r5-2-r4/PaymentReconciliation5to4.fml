@@ -2,6 +2,8 @@
 /// name = 'PaymentReconciliation5to4'
 /// title = 'FML Conversion for PaymentReconciliation: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "NoteType" {
   prefix s = "http://hl7.org/fhir/note-type"
   prefix t = "http://hl7.org/fhir/4.0/note-type"

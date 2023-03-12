@@ -2,6 +2,8 @@
 /// name = 'ClinicalImpression5to4'
 /// title = 'FML Conversion for ClinicalImpression: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "ClinicalImpressionStatus" {
   prefix s = "http://hl7.org/fhir/event-status"
   prefix t = "http://hl7.org/fhir/4.0/event-status"

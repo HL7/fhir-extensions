@@ -2,6 +2,8 @@
 /// name = 'Organization5to4'
 /// title = 'FML Conversion for Organization: R5 to R4'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/Organization" alias OrganizationR5 as source
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Organization" alias OrganizationR4 as target
 

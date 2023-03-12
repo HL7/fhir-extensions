@@ -2,6 +2,8 @@
 /// name = 'SupplyRequest4to5'
 /// title = 'FML Conversion for SupplyRequest: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "RequestPriority" {
   prefix s = "http://hl7.org/fhir/4.0/request-priority"
   prefix t = "http://hl7.org/fhir/request-priority"

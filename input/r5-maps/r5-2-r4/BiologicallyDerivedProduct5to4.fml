@@ -2,6 +2,8 @@
 /// name = 'BiologicallyDerivedProduct5to4'
 /// title = 'FML Conversion for BiologicallyDerivedProduct: R5 to R4'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct" alias BiologicallyDerivedProductR5 as source
 uses "http://hl7.org/fhir/4.0/StructureDefinition/BiologicallyDerivedProduct" alias BiologicallyDerivedProductR4 as target
 

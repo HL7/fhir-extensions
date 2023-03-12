@@ -2,6 +2,8 @@
 /// name = 'HealthcareService4to5'
 /// title = 'FML Conversion for HealthcareService: R4 to R5'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/4.0/StructureDefinition/HealthcareService" alias HealthcareServiceR4 as source
 uses "http://hl7.org/fhir/StructureDefinition/HealthcareService" alias HealthcareServiceR5 as target
 

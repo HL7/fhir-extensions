@@ -2,6 +2,8 @@
 /// name = 'Substance5to4'
 /// title = 'FML Conversion for Substance: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "FHIRSubstanceStatus" {
   prefix s = "http://hl7.org/fhir/substance-status"
   prefix t = "http://hl7.org/fhir/4.0/substance-status"

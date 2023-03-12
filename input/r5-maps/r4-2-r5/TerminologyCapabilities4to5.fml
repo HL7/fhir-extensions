@@ -2,6 +2,8 @@
 /// name = 'TerminologyCapabilities4to5'
 /// title = 'FML Conversion for TerminologyCapabilities: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "CapabilityStatementKind" {
   prefix s = "http://hl7.org/fhir/4.0/capability-statement-kind"
   prefix t = "http://hl7.org/fhir/capability-statement-kind"

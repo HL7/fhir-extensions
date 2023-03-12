@@ -2,6 +2,8 @@
 /// name = 'AppointmentResponse5to4'
 /// title = 'FML Conversion for AppointmentResponse: R5 to R4'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/AppointmentResponse" alias AppointmentResponseR5 as source
 uses "http://hl7.org/fhir/4.0/StructureDefinition/AppointmentResponse" alias AppointmentResponseR4 as target
 

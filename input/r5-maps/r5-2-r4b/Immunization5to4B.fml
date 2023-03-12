@@ -2,6 +2,8 @@
 /// name = 'Immunization5to4B'
 /// title = 'FML Conversion for Immunization: R5 to R4B'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/Immunization" alias ImmunizationR5 as source
 uses "http://hl7.org/fhir/4.3/StructureDefinition/Immunization" alias ImmunizationR4B as target
 

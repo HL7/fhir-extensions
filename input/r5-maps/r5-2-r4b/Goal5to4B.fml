@@ -2,6 +2,8 @@
 /// name = 'Goal5to4B'
 /// title = 'FML Conversion for Goal: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "GoalLifecycleStatus" {
   prefix s = "http://hl7.org/fhir/goal-status"
   prefix t = "http://hl7.org/fhir/4.3/goal-status"

@@ -2,6 +2,8 @@
 /// name = 'GuidanceResponse5to4'
 /// title = 'FML Conversion for GuidanceResponse: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "GuidanceResponseStatus" {
   prefix s = "http://hl7.org/fhir/guidance-response-status"
   prefix t = "http://hl7.org/fhir/4.0/guidance-response-status"

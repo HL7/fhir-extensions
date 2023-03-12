@@ -2,6 +2,8 @@
 /// name = 'DeviceMetric5to4'
 /// title = 'FML Conversion for DeviceMetric: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "DeviceMetricCalibrationState" {
   prefix s = "http://hl7.org/fhir/metric-calibration-state"
   prefix t = "http://hl7.org/fhir/4.0/metric-calibration-state"

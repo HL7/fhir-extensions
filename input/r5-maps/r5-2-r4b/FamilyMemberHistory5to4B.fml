@@ -2,6 +2,8 @@
 /// name = 'FamilyMemberHistory5to4B'
 /// title = 'FML Conversion for FamilyMemberHistory: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "FamilyHistoryStatus" {
   prefix s = "http://hl7.org/fhir/history-status"
   prefix t = "http://hl7.org/fhir/4.3/history-status"

@@ -2,6 +2,8 @@
 /// name = 'Endpoint5to4'
 /// title = 'FML Conversion for Endpoint: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "EndpointStatus" {
   prefix s = "http://hl7.org/fhir/endpoint-status"
   prefix t = "http://hl7.org/fhir/4.0/endpoint-status"

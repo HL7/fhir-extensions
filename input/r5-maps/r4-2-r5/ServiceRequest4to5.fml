@@ -2,6 +2,8 @@
 /// name = 'ServiceRequest4to5'
 /// title = 'FML Conversion for ServiceRequest: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "ServiceRequestIntent" {
   prefix s = "http://hl7.org/fhir/4.0/request-intent"
   prefix t = "http://hl7.org/fhir/request-intent"

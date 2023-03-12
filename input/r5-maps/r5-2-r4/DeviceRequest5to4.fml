@@ -2,6 +2,8 @@
 /// name = 'DeviceRequest5to4'
 /// title = 'FML Conversion for DeviceRequest: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "DeviceRequestStatus" {
   prefix s = "http://hl7.org/fhir/request-status"
   prefix t = "http://hl7.org/fhir/4.0/request-status"

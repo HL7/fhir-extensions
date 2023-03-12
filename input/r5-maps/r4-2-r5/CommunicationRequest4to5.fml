@@ -2,6 +2,8 @@
 /// name = 'CommunicationRequest4to5'
 /// title = 'FML Conversion for CommunicationRequest: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "CommunicationPriority" {
   prefix s = "http://hl7.org/fhir/4.0/request-priority"
   prefix t = "http://hl7.org/fhir/request-priority"
