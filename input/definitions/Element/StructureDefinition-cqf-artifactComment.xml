@@ -85,7 +85,7 @@
           <valueString value="ArtifactCommentType"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/artifact-comment-type|5.0.0-snapshot3"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/artifact-comment-type|5.0.0"/>
       </binding>
     </element>
     <element id="Extension.extension:text">

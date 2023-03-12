@@ -145,7 +145,7 @@
           <valueString value="ConstraintSeverity"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/constraint-severity|5.0.0-snapshot3"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/constraint-severity|5.0.0"/>
       </binding>
     </element>
     <element id="Extension.extension:expression">

@@ -76,7 +76,7 @@
           <valueString value="NameRepresentationUse"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/name-v3-representation|5.0.0-snapshot3"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/name-v3-representation|5.0.0"/>
       </binding>
     </element>
   </differential>
