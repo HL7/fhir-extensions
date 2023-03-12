@@ -2,6 +2,8 @@
 /// name = 'InsurancePlan5to4B'
 /// title = 'FML Conversion for InsurancePlan: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "PublicationStatus" {
   prefix s = "http://hl7.org/fhir/publication-status"
   prefix t = "http://hl7.org/fhir/4.3/publication-status"
@@ -27,7 +29,12 @@ group InsurancePlan(source src : InsurancePlanR5, target tgt : InsurancePlanR4B)
   src.ownedBy -> tgt.ownedBy;
   src.administeredBy -> tgt.administeredBy;
   src.coverageArea -> tgt.coverageArea;
-  src.contact -> tgt.contact;
+  src.contact as s -> tgt.contact as t then {
+    s.purpose -> t.purpose;
+    s.name -> t.name;
+    s.telecom -> t.telecom;
+    s.address -> t.address;
+  };
   src.endpoint -> tgt.endpoint;
   src.network -> tgt.network;
   src.coverage as s -> tgt.coverage as t then InsurancePlanCoverage(s,t);

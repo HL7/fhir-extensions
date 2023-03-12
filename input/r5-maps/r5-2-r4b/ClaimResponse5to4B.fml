@@ -2,6 +2,8 @@
 /// name = 'ClaimResponse5to4B'
 /// title = 'FML Conversion for ClaimResponse: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "ClaimResponseStatus" {
   prefix s = "http://hl7.org/fhir/fm-status"
   prefix t = "http://hl7.org/fhir/4.3/fm-status"

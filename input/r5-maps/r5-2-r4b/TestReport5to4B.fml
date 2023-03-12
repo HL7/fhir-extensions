@@ -2,6 +2,8 @@
 /// name = 'TestReport5to4B'
 /// title = 'FML Conversion for TestReport: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "TestReportActionResult" {
   prefix s = "http://hl7.org/fhir/report-action-result-codes"
   prefix t = "http://hl7.org/fhir/4.3/report-action-result-codes"

@@ -2,7 +2,7 @@
 /// name = 'Location5to4'
 /// title = 'FML Conversion for Location: R5 to R4'
 
-// RJE 9-Mar 2023: All OK
+/// status = 'active'
 
 conceptmap "LocationMode" {
   prefix s = "http://hl7.org/fhir/location-mode"

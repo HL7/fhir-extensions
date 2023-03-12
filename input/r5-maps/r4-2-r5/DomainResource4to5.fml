@@ -2,6 +2,8 @@
 /// name = 'DomainResource4to5'
 /// title = 'FML Conversion for DomainResource: R4 to R5'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/4.0/StructureDefinition/DomainResource" alias DomainResourceR4 as source
 uses "http://hl7.org/fhir/StructureDefinition/DomainResource" alias DomainResourceR5 as target
 
@@ -9,7 +11,7 @@ imports "http://hl7.org/fhir/StructureMap/*4to5"
 
 group DomainResource(source src : DomainResourceR4, target tgt : DomainResourceR5) extends Resource <<type+>> {
   src.text -> tgt.text;
-  src.contained -> tgt.contained;
+  src.contained : Resource -> tgt.contained;
   src.extension -> tgt.extension;
   src.modifierExtension -> tgt.modifierExtension;
 }

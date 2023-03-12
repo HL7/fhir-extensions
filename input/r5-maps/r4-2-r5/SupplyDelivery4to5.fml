@@ -2,6 +2,8 @@
 /// name = 'SupplyDelivery4to5'
 /// title = 'FML Conversion for SupplyDelivery: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "SupplyDeliveryStatus" {
   prefix s = "http://hl7.org/fhir/4.0/supplydelivery-status"
   prefix t = "http://hl7.org/fhir/supplydelivery-status"
@@ -13,12 +15,12 @@ conceptmap "SupplyDeliveryStatus" {
 }
 
 conceptmap "SupplyDeliverySupplyItemType" {
-  prefix s = "http://hl7.org/fhir/4.0/supplydelivery-supplyitemtype"
+  prefix s = "http://terminology.hl7.org/CodeSystem/supply-item-type"
   prefix t = "http://hl7.org/fhir/supplydelivery-supplyitemtype"
 
   s:"medication" - t:"medication"
   s:"device" - t:"device"
-  s:"biologicallyderivedproduct" - t:"biologicallyderivedproduct"
+//  s:"biologicallyderivedproduct" - t:"biologicallyderivedproduct"
 }
 
 uses "http://hl7.org/fhir/4.0/StructureDefinition/SupplyDelivery" alias SupplyDeliveryR4 as source

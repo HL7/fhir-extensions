@@ -2,6 +2,8 @@
 /// name = 'DetectedIssue5to4'
 /// title = 'FML Conversion for DetectedIssue: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "DetectedIssueSeverity" {
   prefix s = "http://hl7.org/fhir/detectedissue-severity"
   prefix t = "http://hl7.org/fhir/4.0/detectedissue-severity"
@@ -19,11 +21,11 @@ imports "http://hl7.org/fhir/StructureMap/*5to4"
 group DetectedIssue(source src : DetectedIssueR5, target tgt : DetectedIssueR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status -> tgt.status;
-  src.category -> tgt.category;
+//  src.category -> tgt.category;
   src.code -> tgt.code;
   src.severity as v -> tgt.severity = translate(v, '#DetectedIssueSeverity', 'code');
-  src.subject -> tgt.subject;
-  src.encounter -> tgt.encounter;
+  src.subject -> tgt.patient;
+//  src.encounter -> tgt.encounter;
   src.identified : dateTime -> tgt.identified;
   src.identified : Period -> tgt.identified;
   src.author -> tgt.author;
@@ -43,6 +45,6 @@ group DetectedIssueMitigation(source src, target tgt) extends BackboneElement {
   src.action -> tgt.action;
   src.date -> tgt.date;
   src.author -> tgt.author;
-  src.note -> tgt.note;
+//  src.note -> tgt.note;
 }
 

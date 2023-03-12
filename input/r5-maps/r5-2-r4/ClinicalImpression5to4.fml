@@ -2,6 +2,8 @@
 /// name = 'ClinicalImpression5to4'
 /// title = 'FML Conversion for ClinicalImpression: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "ClinicalImpressionStatus" {
   prefix s = "http://hl7.org/fhir/event-status"
   prefix t = "http://hl7.org/fhir/4.0/event-status"
@@ -31,10 +33,10 @@ group ClinicalImpression(source src : ClinicalImpressionR5, target tgt : Clinica
   src.effective : dateTime -> tgt.effective;
   src.effective : Period -> tgt.effective;
   src.date -> tgt.date;
-  src.performer -> tgt.performer;
+  src.performer -> tgt.assessor;
   src.previous -> tgt.previous;
   src.problem -> tgt.problem;
-  src.changePattern -> tgt.changePattern;
+//  src.changePattern -> tgt.changePattern;
   src.protocol -> tgt.protocol;
   src.summary -> tgt.summary;
   src.finding as s -> tgt.finding as t then ClinicalImpressionFinding(s,t);
@@ -45,7 +47,8 @@ group ClinicalImpression(source src : ClinicalImpressionR5, target tgt : Clinica
 }
 
 group ClinicalImpressionFinding(source src, target tgt) extends BackboneElement {
-  src.item -> tgt.item;
+  src.item -> tgt.itemCodeableConcept;
+  src.item -> tgt.itemReference;
   src.basis -> tgt.basis;
 }
 

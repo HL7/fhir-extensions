@@ -28,15 +28,11 @@ group Condition(source src : ConditionR5, target tgt : ConditionR4) extends Doma
   src.abatement : Range -> tgt.abatement;
   src.abatement : string -> tgt.abatement;
   src.recordedDate -> tgt.recordedDate;
-  src.participant as s -> tgt.participant as t then ConditionParticipant(s,t);
+  src.participant as s where code = 'enterer' -> tgt.recorder = s.actor "recorder";
+  src.participant as s where code = 'author' -> tgt.asserter = s.actor "asserter";
   src.stage as s -> tgt.stage as t then ConditionStage(s,t);
-  src.evidence -> tgt.evidence;
+  src.evidence as s -> tgt.evidence as t, t.code = s.concept, t.detail = s.reference;
   src.note -> tgt.note;
-}
-
-group ConditionParticipant(source src, target tgt) extends BackboneElement {
-  src.function -> tgt.function;
-  src.actor -> tgt.actor;
 }
 
 group ConditionStage(source src, target tgt) extends BackboneElement {

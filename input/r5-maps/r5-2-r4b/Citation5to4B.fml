@@ -21,8 +21,8 @@ group Citation(source src : CitationR5, target tgt : CitationR4B) extends Domain
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;
-  src.versionAlgorithm : string -> tgt.versionAlgorithm;
-  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : string -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.status as v -> tgt.status = translate(v, '#PublicationStatus', 'code');
@@ -35,7 +35,7 @@ group Citation(source src : CitationR5, target tgt : CitationR4B) extends Domain
   src.jurisdiction -> tgt.jurisdiction;
   src.purpose -> tgt.purpose;
   src.copyright -> tgt.copyright;
-  src.copyrightLabel -> tgt.copyrightLabel;
+//  src.copyrightLabel -> tgt.copyrightLabel;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
   src.effectivePeriod -> tgt.effectivePeriod;
@@ -48,7 +48,11 @@ group Citation(source src : CitationR5, target tgt : CitationR4B) extends Domain
   src.note -> tgt.note;
   src.currentState -> tgt.currentState;
   src.statusDate as s -> tgt.statusDate as t then CitationStatusDate(s,t);
-  src.relatedArtifact -> tgt.relatedArtifact;
+  src.relatedArtifact as s -> tgt.relatesTo as t then {
+    s.type as v -> t.relationshipType = create('CodeableConcept') as t, t.coding = create('Coding') as tc, tc.system = "http://terminology.hl7.org/CodeSystem/artifact-relationship-type", tc.code = v.value;
+    s.classifier -> t.targetClassifier;
+    s.resourceReference -> t.target;
+  } "relatedArtifact";
   src.citedArtifact as s -> tgt.citedArtifact as t then CitationCitedArtifact(s,t);
 }
 
@@ -117,24 +121,32 @@ group CitationCitedArtifactPart(source src, target tgt) extends BackboneElement 
 }
 
 group CitationCitedArtifactRelatesTo(source src, target tgt) extends BackboneElement {
-  src.type -> tgt.type;
-  src.classifier -> tgt.classifier;
-  src.label -> tgt.label;
-  src.display -> tgt.display;
-  src.citation -> tgt.citation;
-  src.document -> tgt.document;
-  src.resource -> tgt.resource;
-  src.resourceReference -> tgt.resourceReference;
+//  src.type -> tgt.type;
+//  src.classifier -> tgt.classifier;
+//  src.label -> tgt.label;
+//  src.display -> tgt.display;
+//  src.citation -> tgt.citation;
+//  src.document -> tgt.document;
+//  src.resource -> tgt.resource;
+//  src.resourceReference -> tgt.resourceReference;
+  src.type as v -> tgt.relationshipType = create('CodeableConcept') as t, t.coding = create('Coding') as tc, tc.system = "http://terminology.hl7.org/CodeSystem/artifact-relationship-type", tc.code = v.value;
+  src.classifier -> tgt.targetClassifier;
+  src.resourceReference -> tgt.target;
 }
 
 group CitationCitedArtifactPublicationForm(source src, target tgt) extends BackboneElement {
   src.publishedIn as s -> tgt.publishedIn as t then CitationCitedArtifactPublicationFormPublishedIn(s,t);
-  src.citedMedium -> tgt.citedMedium;
-  src.volume -> tgt.volume;
-  src.issue -> tgt.issue;
+//  src.citedMedium -> tgt.citedMedium;
+//  src.volume -> tgt.volume;
+//  src.issue -> tgt.issue;
+//  src.publicationDateText -> tgt.publicationDateText;
+//  src.publicationDateSeason -> tgt.publicationDateSeason;
+  src.citedMedium as v -> tgt.periodicRelease as t, t.citedMedium = v "citedMedium";
+  src.volume as v -> tgt.periodicRelease as t, t.volume = v "volume";
+  src.issue as v -> tgt.periodicRelease as t, t.issue = v "issue";
+  src.publicationDateText as v -> tgt.periodicRelease as t, t.dateOfPublication as td, td.text = v "publicationDateText";
+  src.publicationDateSeason as v -> tgt.periodicRelease as t, t.dateOfPublication as td, td.season = v "publicationDateSeason";
   src.articleDate -> tgt.articleDate;
-  src.publicationDateText -> tgt.publicationDateText;
-  src.publicationDateSeason -> tgt.publicationDateSeason;
   src.lastRevisionDate -> tgt.lastRevisionDate;
   src.language -> tgt.language;
   src.accessionNumber -> tgt.accessionNumber;
@@ -154,14 +166,14 @@ group CitationCitedArtifactPublicationFormPublishedIn(source src, target tgt) ex
 }
 
 group CitationCitedArtifactWebLocation(source src, target tgt) extends BackboneElement {
-  src.classifier -> tgt.classifier;
+  src.classifier -> tgt.type;
   src.url -> tgt.url;
 }
 
 group CitationCitedArtifactClassification(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.classifier -> tgt.classifier;
-  src.artifactAssessment -> tgt.artifactAssessment;
+//  src.artifactAssessment -> tgt.artifactAssessment;
 }
 
 group CitationCitedArtifactContributorship(source src, target tgt) extends BackboneElement {
@@ -171,14 +183,14 @@ group CitationCitedArtifactContributorship(source src, target tgt) extends Backb
 }
 
 group CitationCitedArtifactContributorshipEntry(source src, target tgt) extends BackboneElement {
-  src.contributor -> tgt.contributor;
-  src.forenameInitials -> tgt.forenameInitials;
-  src.affiliation -> tgt.affiliation;
+//  src.contributor -> tgt.contributor;
+  src.forenameInitials -> tgt.initials;
+//  src.affiliation -> tgt.affiliation;
   src.contributionType -> tgt.contributionType;
   src.role -> tgt.role;
   src.contributionInstance as s -> tgt.contributionInstance as t then CitationCitedArtifactContributorshipEntryContributionInstance(s,t);
   src.correspondingContact -> tgt.correspondingContact;
-  src.rankingOrder -> tgt.rankingOrder;
+  src.rankingOrder -> tgt.listOrder;
 }
 
 group CitationCitedArtifactContributorshipEntryContributionInstance(source src, target tgt) extends BackboneElement {

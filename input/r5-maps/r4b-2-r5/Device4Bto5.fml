@@ -2,13 +2,18 @@
 /// name = 'Device4Bto5'
 /// title = 'FML Conversion for Device: R4B to R5'
 
+/// status = 'active'
+
 conceptmap "DeviceNameType" {
   prefix s = "http://hl7.org/fhir/4.3/device-nametype"
   prefix t = "http://hl7.org/fhir/device-nametype"
 
-  s:"registered-name" - t:"registered-name"
+  s:"udi-label-name" - t:"registered-name"
   s:"user-friendly-name" - t:"user-friendly-name"
   s:"patient-reported-name" - t:"patient-reported-name"
+  s:"manufacturer-name" - t:"registered-name"
+  s:"model-name" - t:"registered-name"
+  s:"other" - t:"registered-name"
 }
 
 conceptmap "FHIRDeviceStatus" {
@@ -29,7 +34,7 @@ conceptmap "UDIEntryType" {
   s:"manual" - t:"manual"
   s:"card" - t:"card"
   s:"self-reported" - t:"self-reported"
-  s:"electronic-transmission" - t:"electronic-transmission"
+//  s:"electronic-transmission" - t:"electronic-transmission"
   s:"unknown" - t:"unknown"
 }
 
@@ -40,34 +45,34 @@ imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 
 group Device(source src : DeviceR4B, target tgt : DeviceR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.displayName -> tgt.displayName;
+//  src.displayName -> tgt.displayName;
   src.definition -> tgt.definition;
   src.udiCarrier as s -> tgt.udiCarrier as t then DeviceUdiCarrier(s,t);
   src.status as v -> tgt.status = translate(v, '#FHIRDeviceStatus', 'code');
-  src.availabilityStatus -> tgt.availabilityStatus;
-  src.biologicalSourceEvent -> tgt.biologicalSourceEvent;
+//  src.availabilityStatus -> tgt.availabilityStatus;
+//  src.biologicalSourceEvent -> tgt.biologicalSourceEvent;
   src.manufacturer -> tgt.manufacturer;
   src.manufactureDate -> tgt.manufactureDate;
   src.expirationDate -> tgt.expirationDate;
   src.lotNumber -> tgt.lotNumber;
   src.serialNumber -> tgt.serialNumber;
-  src.name as s -> tgt.name as t then DeviceName(s,t);
+  src.deviceName as s -> tgt.name as t then DeviceName(s,t);
   src.modelNumber -> tgt.modelNumber;
   src.partNumber -> tgt.partNumber;
-  src.category -> tgt.category;
+//  src.category -> tgt.category;
   src.type -> tgt.type;
   src.version as s -> tgt.version as t then DeviceVersion(s,t);
-  src.conformsTo as s -> tgt.conformsTo as t then DeviceConformsTo(s,t);
+//  src.conformsTo as s -> tgt.conformsTo as t then DeviceConformsTo(s,t);
   src.property as s -> tgt.property as t then DeviceProperty(s,t);
-  src.mode -> tgt.mode;
-  src.cycle -> tgt.cycle;
-  src.duration -> tgt.duration;
+//  src.mode -> tgt.mode;
+//  src.cycle -> tgt.cycle;
+//  src.duration -> tgt.duration;
   src.owner -> tgt.owner;
   src.contact -> tgt.contact;
   src.location -> tgt.location;
   src.url -> tgt.url;
-  src.endpoint -> tgt.endpoint;
-  src.gateway -> tgt.gateway;
+//  src.endpoint -> tgt.endpoint;
+//  src.gateway -> tgt.gateway;
   src.note -> tgt.note;
   src.safety -> tgt.safety;
   src.parent -> tgt.parent;
@@ -83,32 +88,32 @@ group DeviceUdiCarrier(source src, target tgt) extends BackboneElement {
 }
 
 group DeviceName(source src, target tgt) extends BackboneElement {
-  src.value -> tgt.value;
+  src.name -> tgt.value;
   src.type as v -> tgt.type = translate(v, '#DeviceNameType', 'code');
-  src.display -> tgt.display;
+//  src.display -> tgt.display;
 }
 
 group DeviceVersion(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.component -> tgt.component;
-  src.installDate -> tgt.installDate;
+//  src.installDate -> tgt.installDate;
   src.value -> tgt.value;
 }
 
-group DeviceConformsTo(source src, target tgt) extends BackboneElement {
-  src.category -> tgt.category;
-  src.specification -> tgt.specification;
-  src.version -> tgt.version;
-}
+//group DeviceConformsTo(source src, target tgt) extends BackboneElement {
+//  src.category -> tgt.category;
+//  src.specification -> tgt.specification;
+//  src.version -> tgt.version;
+//}
 
 group DeviceProperty(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
-  src.value : Quantity -> tgt.value;
-  src.value : CodeableConcept -> tgt.value;
-  src.value : string -> tgt.value;
-  src.value : boolean -> tgt.value;
-  src.value : integer -> tgt.value;
-  src.value : Range -> tgt.value;
-  src.value : Attachment -> tgt.value;
+  src.valueQuantity : Quantity -> tgt.value;
+  src.valueCode : CodeableConcept -> tgt.value;
+//  src.value : string -> tgt.value;
+//  src.value : boolean -> tgt.value;
+//  src.value : integer -> tgt.value;
+//  src.value : Range -> tgt.value;
+//  src.value : Attachment -> tgt.value;
 }
 

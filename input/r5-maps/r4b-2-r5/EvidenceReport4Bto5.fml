@@ -80,15 +80,17 @@ group EvidenceReportSubjectCharacteristic(source src, target tgt) extends Backbo
 
 group EvidenceReportRelatesTo(source src, target tgt) extends BackboneElement {
   src.code as v -> tgt.code = translate(v, '#ReportRelationshipType', 'code');
-  src.target as s -> tgt.target as t then EvidenceReportRelatesToTarget(s,t);
+//  src.target as s -> tgt.target as t then EvidenceReportRelatesToTarget(s,t);
+  src.target : Identifier as v -> tgt.target as t, t.identifier = v "identifier";
+  src.target : Reference as v -> tgt.target as t, t.resource = v "reference";
 }
 
-group EvidenceReportRelatesToTarget(source src, target tgt) extends BackboneElement {
-  src.url -> tgt.url;
-  src.identifier -> tgt.identifier;
-  src.display -> tgt.display;
-  src.resource -> tgt.resource;
-}
+//group EvidenceReportRelatesToTarget(source src, target tgt) extends BackboneElement {
+//  src.url -> tgt.url;
+//  src.identifier -> tgt.identifier;
+//  src.display -> tgt.display;
+//  src.resource -> tgt.resource;
+//}
 
 group EvidenceReportSection(source src, target tgt) extends BackboneElement {
   src.title -> tgt.title;

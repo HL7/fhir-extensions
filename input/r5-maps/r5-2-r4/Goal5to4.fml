@@ -2,6 +2,8 @@
 /// name = 'Goal5to4'
 /// title = 'FML Conversion for Goal: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "GoalLifecycleStatus" {
   prefix s = "http://hl7.org/fhir/goal-status"
   prefix t = "http://hl7.org/fhir/4.0/goal-status"
@@ -27,7 +29,7 @@ group Goal(source src : GoalR5, target tgt : GoalR4) extends DomainResource <<ty
   src.lifecycleStatus as v -> tgt.lifecycleStatus = translate(v, '#GoalLifecycleStatus', 'code');
   src.achievementStatus -> tgt.achievementStatus;
   src.category -> tgt.category;
-  src.continuous -> tgt.continuous;
+//  src.continuous -> tgt.continuous;
   src.priority -> tgt.priority;
   src.description -> tgt.description;
   src.subject -> tgt.subject;
@@ -36,10 +38,11 @@ group Goal(source src : GoalR5, target tgt : GoalR4) extends DomainResource <<ty
   src.target as s -> tgt.target as t then GoalTarget(s,t);
   src.statusDate -> tgt.statusDate;
   src.statusReason -> tgt.statusReason;
-  src.source -> tgt.source;
+//  src.source -> tgt.source;
   src.addresses -> tgt.addresses;
   src.note -> tgt.note;
-  src.outcome -> tgt.outcome;
+  src.outcome -> tgt.outcomeCode;
+  src.outcome -> tgt.outcomeReference;
 }
 
 group GoalTarget(source src, target tgt) extends BackboneElement {

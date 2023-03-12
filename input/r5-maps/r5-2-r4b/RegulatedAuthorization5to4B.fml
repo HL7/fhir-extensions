@@ -2,6 +2,8 @@
 /// name = 'RegulatedAuthorization5to4B'
 /// title = 'FML Conversion for RegulatedAuthorization: R5 to R4B'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/RegulatedAuthorization" alias RegulatedAuthorizationR5 as source
 uses "http://hl7.org/fhir/4.3/StructureDefinition/RegulatedAuthorization" alias RegulatedAuthorizationR4B as target
 
@@ -21,7 +23,7 @@ group RegulatedAuthorization(source src : RegulatedAuthorizationR5, target tgt :
   src.basis -> tgt.basis;
   src.holder -> tgt.holder;
   src.regulator -> tgt.regulator;
-  src.attachedDocument -> tgt.attachedDocument;
+//  src.attachedDocument -> tgt.attachedDocument;
   src.case as s -> tgt.case as t then RegulatedAuthorizationCase(s,t);
 }
 

@@ -2,6 +2,8 @@
 /// name = 'CommunicationRequest5to4B'
 /// title = 'FML Conversion for CommunicationRequest: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "CommunicationPriority" {
   prefix s = "http://hl7.org/fhir/request-priority"
   prefix t = "http://hl7.org/fhir/4.3/request-priority"
@@ -52,7 +54,7 @@ group CommunicationRequest(source src : CommunicationRequestR5, target tgt : Com
   src.groupIdentifier -> tgt.groupIdentifier;
   src.status as v -> tgt.status = translate(v, '#CommunicationRequestStatus', 'code');
   src.statusReason -> tgt.statusReason;
-  src.intent as v -> tgt.intent = translate(v, '#CommunicationRequestIntent', 'code');
+//  src.intent as v -> tgt.intent = translate(v, '#CommunicationRequestIntent', 'code');
   src.category -> tgt.category;
   src.priority as v -> tgt.priority = translate(v, '#CommunicationPriority', 'code');
   src.doNotPerform -> tgt.doNotPerform;
@@ -66,8 +68,9 @@ group CommunicationRequest(source src : CommunicationRequestR5, target tgt : Com
   src.authoredOn -> tgt.authoredOn;
   src.requester -> tgt.requester;
   src.recipient -> tgt.recipient;
-  src.informationProvider -> tgt.informationProvider;
-  src.reason -> tgt.reason;
+  src.informationProvider -> tgt.sender;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
   src.note -> tgt.note;
 }
 

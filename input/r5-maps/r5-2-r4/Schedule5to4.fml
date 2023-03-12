@@ -2,6 +2,8 @@
 /// name = 'Schedule5to4'
 /// title = 'FML Conversion for Schedule: R5 to R4'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/Schedule" alias ScheduleR5 as source
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Schedule" alias ScheduleR4 as target
 
@@ -13,7 +15,7 @@ group Schedule(source src : ScheduleR5, target tgt : ScheduleR4) extends DomainR
   src.serviceCategory -> tgt.serviceCategory;
   src.serviceType -> tgt.serviceType;
   src.specialty -> tgt.specialty;
-  src.name -> tgt.name;
+//  src.name -> tgt.name;
   src.actor -> tgt.actor;
   src.planningHorizon -> tgt.planningHorizon;
   src.comment -> tgt.comment;

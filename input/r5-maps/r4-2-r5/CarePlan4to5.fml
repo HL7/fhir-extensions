@@ -2,6 +2,8 @@
 /// name = 'CarePlan4to5'
 /// title = 'FML Conversion for CarePlan: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "CarePlanStatus" {
   prefix s = "http://hl7.org/fhir/4.0/request-status"
   prefix t = "http://hl7.org/fhir/request-status"
@@ -36,7 +38,7 @@ group CarePlan(source src : CarePlanR4, target tgt : CarePlanR5) extends DomainR
   src.encounter -> tgt.encounter;
   src.period -> tgt.period;
   src.created -> tgt.created;
-  src.custodian -> tgt.custodian;
+  src.author -> tgt.custodian;
   src.contributor -> tgt.contributor;
   src.careTeam -> tgt.careTeam;
   src.addresses -> tgt.addresses;
@@ -47,8 +49,9 @@ group CarePlan(source src : CarePlanR4, target tgt : CarePlanR5) extends DomainR
 }
 
 group CarePlanActivity(source src, target tgt) extends BackboneElement {
-  src.performedActivity -> tgt.performedActivity;
+  src.outcomeCodeableConcept : CodeableConcept -> tgt.performedActivity;
+  src.outcomeReference : Reference -> tgt.performedActivity;
   src.progress -> tgt.progress;
-  src.plannedActivityReference -> tgt.plannedActivityReference;
+  src.reference -> tgt.plannedActivityReference;
 }
 

@@ -2,6 +2,8 @@
 /// name = 'FamilyMemberHistory4Bto5'
 /// title = 'FML Conversion for FamilyMemberHistory: R4B to R5'
 
+/// status = 'active'
+
 conceptmap "FamilyHistoryStatus" {
   prefix s = "http://hl7.org/fhir/4.3/history-status"
   prefix t = "http://hl7.org/fhir/history-status"
@@ -25,7 +27,7 @@ group FamilyMemberHistory(source src : FamilyMemberHistoryR4B, target tgt : Fami
   src.dataAbsentReason -> tgt.dataAbsentReason;
   src.patient -> tgt.patient;
   src.date -> tgt.date;
-  src.participant as s -> tgt.participant as t then FamilyMemberHistoryParticipant(s,t);
+//  src.participant as s -> tgt.participant as t then FamilyMemberHistoryParticipant(s,t);
   src.name -> tgt.name;
   src.relationship -> tgt.relationship;
   src.sex -> tgt.sex;
@@ -41,16 +43,17 @@ group FamilyMemberHistory(source src : FamilyMemberHistoryR4B, target tgt : Fami
   src.deceased : Range -> tgt.deceased;
   src.deceased : date -> tgt.deceased;
   src.deceased : string -> tgt.deceased;
-  src.reason -> tgt.reason;
+  src.reasonCode -> tgt.reason;
+  src.reasonReference -> tgt.reason;
   src.note -> tgt.note;
   src.condition as s -> tgt.condition as t then FamilyMemberHistoryCondition(s,t);
-  src.procedure as s -> tgt.procedure as t then FamilyMemberHistoryProcedure(s,t);
+//  src.procedure as s -> tgt.procedure as t then FamilyMemberHistoryProcedure(s,t);
 }
 
-group FamilyMemberHistoryParticipant(source src, target tgt) extends BackboneElement {
-  src.function -> tgt.function;
-  src.actor -> tgt.actor;
-}
+//group FamilyMemberHistoryParticipant(source src, target tgt) extends BackboneElement {
+//  src.function -> tgt.function;
+//  src.actor -> tgt.actor;
+//}
 
 group FamilyMemberHistoryCondition(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
@@ -63,15 +66,15 @@ group FamilyMemberHistoryCondition(source src, target tgt) extends BackboneEleme
   src.note -> tgt.note;
 }
 
-group FamilyMemberHistoryProcedure(source src, target tgt) extends BackboneElement {
-  src.code -> tgt.code;
-  src.outcome -> tgt.outcome;
-  src.contributedToDeath -> tgt.contributedToDeath;
-  src.performed : Age -> tgt.performed;
-  src.performed : Range -> tgt.performed;
-  src.performed : Period -> tgt.performed;
-  src.performed : string -> tgt.performed;
-  src.performed : dateTime -> tgt.performed;
-  src.note -> tgt.note;
-}
+//group FamilyMemberHistoryProcedure(source src, target tgt) extends BackboneElement {
+//  src.code -> tgt.code;
+//  src.outcome -> tgt.outcome;
+//  src.contributedToDeath -> tgt.contributedToDeath;
+//  src.performed : Age -> tgt.performed;
+//  src.performed : Range -> tgt.performed;
+//  src.performed : Period -> tgt.performed;
+//  src.performed : string -> tgt.performed;
+//  src.performed : dateTime -> tgt.performed;
+//  src.note -> tgt.note;
+//}
 

@@ -31,10 +31,10 @@ group ClinicalImpression(source src : ClinicalImpressionR4B, target tgt : Clinic
   src.effective : dateTime -> tgt.effective;
   src.effective : Period -> tgt.effective;
   src.date -> tgt.date;
-  src.performer -> tgt.performer;
+  src.assessor -> tgt.performer;
   src.previous -> tgt.previous;
   src.problem -> tgt.problem;
-  src.changePattern -> tgt.changePattern;
+//  src.changePattern -> tgt.changePattern;
   src.protocol -> tgt.protocol;
   src.summary -> tgt.summary;
   src.finding as s -> tgt.finding as t then ClinicalImpressionFinding(s,t);
@@ -45,7 +45,8 @@ group ClinicalImpression(source src : ClinicalImpressionR4B, target tgt : Clinic
 }
 
 group ClinicalImpressionFinding(source src, target tgt) extends BackboneElement {
-  src.item -> tgt.item;
+  src.itemCodeableConcept -> tgt.item;
+  src.itemReference -> tgt.item;
   src.basis -> tgt.basis;
 }
 

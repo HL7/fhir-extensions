@@ -2,6 +2,8 @@
 /// name = 'QuestionnaireResponse5to4B'
 /// title = 'FML Conversion for QuestionnaireResponse: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "QuestionnaireResponseStatus" {
   prefix s = "http://hl7.org/fhir/questionnaire-answers-status"
   prefix t = "http://hl7.org/fhir/4.3/questionnaire-answers-status"

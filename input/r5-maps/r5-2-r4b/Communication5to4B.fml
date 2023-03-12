@@ -2,6 +2,8 @@
 /// name = 'Communication5to4B'
 /// title = 'FML Conversion for Communication: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "CommunicationPriority" {
   prefix s = "http://hl7.org/fhir/request-priority"
   prefix t = "http://hl7.org/fhir/4.3/request-priority"
@@ -51,7 +53,8 @@ group Communication(source src : CommunicationR5, target tgt : CommunicationR4B)
   src.received -> tgt.received;
   src.recipient -> tgt.recipient;
   src.sender -> tgt.sender;
-  src.reason -> tgt.reason;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
   src.payload as s -> tgt.payload as t then CommunicationPayload(s,t);
   src.note -> tgt.note;
 }

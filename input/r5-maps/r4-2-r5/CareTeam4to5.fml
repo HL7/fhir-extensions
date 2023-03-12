@@ -2,6 +2,8 @@
 /// name = 'CareTeam4to5'
 /// title = 'FML Conversion for CareTeam: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "CareTeamStatus" {
   prefix s = "http://hl7.org/fhir/4.0/care-team-status"
   prefix t = "http://hl7.org/fhir/care-team-status"
@@ -26,7 +28,8 @@ group CareTeam(source src : CareTeamR4, target tgt : CareTeamR5) extends DomainR
   src.subject -> tgt.subject;
   src.period -> tgt.period;
   src.participant as s -> tgt.participant as t then CareTeamParticipant(s,t);
-  src.reason -> tgt.reason;
+  src.reasonCode : CodeableConcept -> tgt.reason;
+  src.reasonReference : Reference -> tgt.reason;
   src.managingOrganization -> tgt.managingOrganization;
   src.telecom -> tgt.telecom;
   src.note -> tgt.note;
@@ -36,7 +39,7 @@ group CareTeamParticipant(source src, target tgt) extends BackboneElement {
   src.role -> tgt.role;
   src.member -> tgt.member;
   src.onBehalfOf -> tgt.onBehalfOf;
-  src.coverage : Period -> tgt.coverage;
-  src.coverage : Timing -> tgt.coverage;
+  src.period : Period -> tgt.coverage;
+//  src.coverage : Timing -> tgt.coverage;
 }
 

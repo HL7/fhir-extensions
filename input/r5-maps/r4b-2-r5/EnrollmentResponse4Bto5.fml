@@ -2,8 +2,10 @@
 /// name = 'EnrollmentResponse4Bto5'
 /// title = 'FML Conversion for EnrollmentResponse: R4B to R5'
 
+/// status = 'active'
+
 conceptmap "EnrollmentOutcome" {
-  prefix s = "http://hl7.org/fhir/4.3/enrollment-outcome"
+  prefix s = "http://hl7.org/fhir/4.3/remittance-outcome"
   prefix t = "http://hl7.org/fhir/enrollment-outcome"
 
   s:"queued" - t:"queued"

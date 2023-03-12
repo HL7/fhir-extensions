@@ -2,6 +2,8 @@
 /// name = 'DeviceMetric5to4B'
 /// title = 'FML Conversion for DeviceMetric: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "DeviceMetricCalibrationState" {
   prefix s = "http://hl7.org/fhir/metric-calibration-state"
   prefix t = "http://hl7.org/fhir/4.3/metric-calibration-state"
@@ -65,11 +67,11 @@ group DeviceMetric(source src : DeviceMetricR5, target tgt : DeviceMetricR4B) ex
   src.identifier -> tgt.identifier;
   src.type -> tgt.type;
   src.unit -> tgt.unit;
-  src.device -> tgt.device;
+  src.device -> tgt.parent;
   src.operationalStatus as v -> tgt.operationalStatus = translate(v, '#DeviceMetricOperationalStatus', 'code');
   src.color as v -> tgt.color = translate(v, '#DeviceMetricColor', 'code');
   src.category as v -> tgt.category = translate(v, '#DeviceMetricCategory', 'code');
-  src.measurementFrequency -> tgt.measurementFrequency;
+//  src.measurementFrequency -> tgt.measurementFrequency;
   src.calibration as s -> tgt.calibration as t then DeviceMetricCalibration(s,t);
 }
 

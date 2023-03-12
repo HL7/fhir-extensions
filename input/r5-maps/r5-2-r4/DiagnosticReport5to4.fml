@@ -2,6 +2,8 @@
 /// name = 'DiagnosticReport5to4'
 /// title = 'FML Conversion for DiagnosticReport: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "DiagnosticReportStatus" {
   prefix s = "http://hl7.org/fhir/diagnostic-report-status"
   prefix t = "http://hl7.org/fhir/4.0/diagnostic-report-status"
@@ -38,20 +40,20 @@ group DiagnosticReport(source src : DiagnosticReportR5, target tgt : DiagnosticR
   src.resultsInterpreter -> tgt.resultsInterpreter;
   src.specimen -> tgt.specimen;
   src.result -> tgt.result;
-  src.note -> tgt.note;
-  src.study -> tgt.study;
-  src.supportingInfo as s -> tgt.supportingInfo as t then DiagnosticReportSupportingInfo(s,t);
+//  src.note -> tgt.note;
+//  src.study -> tgt.study;
+//  src.supportingInfo as s -> tgt.supportingInfo as t then DiagnosticReportSupportingInfo(s,t);
   src.media as s -> tgt.media as t then DiagnosticReportMedia(s,t);
-  src.composition -> tgt.composition;
+//  src.composition -> tgt.composition;
   src.conclusion -> tgt.conclusion;
   src.conclusionCode -> tgt.conclusionCode;
   src.presentedForm -> tgt.presentedForm;
 }
 
-group DiagnosticReportSupportingInfo(source src, target tgt) extends BackboneElement {
-  src.type -> tgt.type;
-  src.reference -> tgt.reference;
-}
+//group DiagnosticReportSupportingInfo(source src, target tgt) extends BackboneElement {
+//  src.type -> tgt.type;
+//  src.reference -> tgt.reference;
+//}
 
 group DiagnosticReportMedia(source src, target tgt) extends BackboneElement {
   src.comment -> tgt.comment;

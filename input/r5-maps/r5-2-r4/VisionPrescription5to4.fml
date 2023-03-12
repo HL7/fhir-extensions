@@ -2,6 +2,8 @@
 /// name = 'VisionPrescription5to4'
 /// title = 'FML Conversion for VisionPrescription: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "VisionBase" {
   prefix s = "http://hl7.org/fhir/vision-base-codes"
   prefix t = "http://hl7.org/fhir/4.0/vision-base-codes"

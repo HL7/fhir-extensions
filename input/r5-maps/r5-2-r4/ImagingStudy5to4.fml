@@ -2,6 +2,8 @@
 /// name = 'ImagingStudy5to4'
 /// title = 'FML Conversion for ImagingStudy: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "ImagingStudyStatus" {
   prefix s = "http://hl7.org/fhir/imagingstudy-status"
   prefix t = "http://hl7.org/fhir/4.0/imagingstudy-status"
@@ -26,14 +28,16 @@ group ImagingStudy(source src : ImagingStudyR5, target tgt : ImagingStudyR4) ext
   src.encounter -> tgt.encounter;
   src.started -> tgt.started;
   src.basedOn -> tgt.basedOn;
-  src.partOf -> tgt.partOf;
+//  src.partOf -> tgt.partOf;
   src.referrer -> tgt.referrer;
   src.endpoint -> tgt.endpoint;
   src.numberOfSeries -> tgt.numberOfSeries;
   src.numberOfInstances -> tgt.numberOfInstances;
-  src.procedure -> tgt.procedure;
+  src.procedure -> tgt.procedureCode;
+  src.procedure -> tgt.procedureReference;
   src.location -> tgt.location;
-  src.reason -> tgt.reason;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
   src.note -> tgt.note;
   src.description -> tgt.description;
   src.series as s -> tgt.series as t then ImagingStudySeries(s,t);

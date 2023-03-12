@@ -2,6 +2,8 @@
 /// name = 'Group4to5'
 /// title = 'FML Conversion for Group: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "GroupType" {
   prefix s = "http://hl7.org/fhir/4.0/group-type"
   prefix t = "http://hl7.org/fhir/group-type"
@@ -10,21 +12,21 @@ conceptmap "GroupType" {
   s:"animal" - t:"animal"
   s:"practitioner" - t:"practitioner"
   s:"device" - t:"device"
-  s:"careteam" - t:"careteam"
-  s:"healthcareservice" - t:"healthcareservice"
-  s:"location" - t:"location"
-  s:"organization" - t:"organization"
-  s:"relatedperson" - t:"relatedperson"
-  s:"specimen" - t:"specimen"
+//  s:"careteam" - t:"careteam"
+//  s:"healthcareservice" - t:"healthcareservice"
+//  s:"location" - t:"location"
+//  s:"organization" - t:"organization"
+//  s:"relatedperson" - t:"relatedperson"
+//  s:"specimen" - t:"specimen"
 }
 
-conceptmap "group-membership-basis" {
-  prefix s = "http://hl7.org/fhir/4.0/group-membership-basis"
-  prefix t = "http://hl7.org/fhir/group-membership-basis"
-
-  s:"definitional" - t:"definitional"
-  s:"enumerated" - t:"enumerated"
-}
+//conceptmap "group-membership-basis" {
+//  prefix s = "http://hl7.org/fhir/4.0/group-membership-basis"
+//  prefix t = "http://hl7.org/fhir/group-membership-basis"
+//
+//  s:"definitional" - t:"definitional"
+//  s:"enumerated" - t:"enumerated"
+//}
 
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Group" alias GroupR4 as source
 uses "http://hl7.org/fhir/StructureDefinition/Group" alias GroupR5 as target
@@ -35,10 +37,10 @@ group Group(source src : GroupR4, target tgt : GroupR5) extends DomainResource <
   src.identifier -> tgt.identifier;
   src.active -> tgt.active;
   src.type as v -> tgt.type = translate(v, '#GroupType', 'code');
-  src.membership as v -> tgt.membership = translate(v, '#group-membership-basis', 'code');
+//  src.membership as v -> tgt.membership = translate(v, '#group-membership-basis', 'code');
   src.code -> tgt.code;
   src.name -> tgt.name;
-  src.description -> tgt.description;
+//  src.description -> tgt.description;
   src.quantity -> tgt.quantity;
   src.managingEntity -> tgt.managingEntity;
   src.characteristic as s -> tgt.characteristic as t then GroupCharacteristic(s,t);

@@ -2,6 +2,8 @@
 /// name = 'Organization4Bto5'
 /// title = 'FML Conversion for Organization: R4B to R5'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/4.3/StructureDefinition/Organization" alias OrganizationR4B as source
 uses "http://hl7.org/fhir/StructureDefinition/Organization" alias OrganizationR5 as target
 
@@ -13,17 +15,22 @@ group Organization(source src : OrganizationR4B, target tgt : OrganizationR5) ex
   src.type -> tgt.type;
   src.name -> tgt.name;
   src.alias -> tgt.alias;
-  src.description -> tgt.description;
-  src.contact -> tgt.contact;
+//  src.description -> tgt.description;
+  src.contact as s -> tgt.contact as t then {
+    s.purpose -> t.purpose;
+    s.name -> t.name;
+    s.telecom -> t.telecom;
+    s.address -> t.address;
+  };
   src.partOf -> tgt.partOf;
   src.endpoint -> tgt.endpoint;
-  src.qualification as s -> tgt.qualification as t then OrganizationQualification(s,t);
+//  src.qualification as s -> tgt.qualification as t then OrganizationQualification(s,t);
 }
 
-group OrganizationQualification(source src, target tgt) extends BackboneElement {
-  src.identifier -> tgt.identifier;
-  src.code -> tgt.code;
-  src.period -> tgt.period;
-  src.issuer -> tgt.issuer;
-}
+//group OrganizationQualification(source src, target tgt) extends BackboneElement {
+//  src.identifier -> tgt.identifier;
+//  src.code -> tgt.code;
+//  src.period -> tgt.period;
+//  src.issuer -> tgt.issuer;
+//}
 

@@ -2,6 +2,8 @@
 /// name = 'GuidanceResponse4to5'
 /// title = 'FML Conversion for GuidanceResponse: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "GuidanceResponseStatus" {
   prefix s = "http://hl7.org/fhir/4.0/guidance-response-status"
   prefix t = "http://hl7.org/fhir/guidance-response-status"
@@ -30,7 +32,8 @@ group GuidanceResponse(source src : GuidanceResponseR4, target tgt : GuidanceRes
   src.encounter -> tgt.encounter;
   src.occurrenceDateTime -> tgt.occurrenceDateTime;
   src.performer -> tgt.performer;
-  src.reason -> tgt.reason;
+  src.reasonCode -> tgt.reason;
+  src.reasonReference -> tgt.reason;
   src.note -> tgt.note;
   src.evaluationMessage -> tgt.evaluationMessage;
   src.outputParameters -> tgt.outputParameters;

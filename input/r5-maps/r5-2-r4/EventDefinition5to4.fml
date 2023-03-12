@@ -2,6 +2,8 @@
 /// name = 'EventDefinition5to4'
 /// title = 'FML Conversion for EventDefinition: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "PublicationStatus" {
   prefix s = "http://hl7.org/fhir/publication-status"
   prefix t = "http://hl7.org/fhir/4.0/publication-status"
@@ -21,8 +23,8 @@ group EventDefinition(source src : EventDefinitionR5, target tgt : EventDefiniti
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;
-  src.versionAlgorithm : string -> tgt.versionAlgorithm;
-  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : string -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.subtitle -> tgt.subtitle;
@@ -39,7 +41,7 @@ group EventDefinition(source src : EventDefinitionR5, target tgt : EventDefiniti
   src.purpose -> tgt.purpose;
   src.usage -> tgt.usage;
   src.copyright -> tgt.copyright;
-  src.copyrightLabel -> tgt.copyrightLabel;
+//  src.copyrightLabel -> tgt.copyrightLabel;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
   src.effectivePeriod -> tgt.effectivePeriod;

@@ -2,6 +2,8 @@
 /// name = 'Resource5to4B'
 /// title = 'FML Conversion for Resource: R5 to R4B'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/StructureDefinition/Resource" alias ResourceR5 as source
 uses "http://hl7.org/fhir/4.3/StructureDefinition/Resource" alias ResourceR4B as target
 
