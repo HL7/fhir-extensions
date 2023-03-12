@@ -1,0 +1,12 @@
+﻿/// url = 'http://hl7.org/fhir/StructureMap/Base4Bto5'
+/// name = 'Base4Bto5'
+/// title = 'FML Conversion for Base: R4 to R5'
+
+uses "http://hl7.org/fhir/4.0/StructureDefinition/Base" alias BaseR4B as source
+uses "http://hl7.org/fhir/StructureDefinition/Base" alias BaseR5 as target
+
+imports "http://hl7.org/fhir/StructureMap/*4to5"
+
+group Base(source src : BaseR4B, target tgt : BaseR5) {
+}
+

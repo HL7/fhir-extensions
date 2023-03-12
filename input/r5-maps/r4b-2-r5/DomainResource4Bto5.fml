@@ -9,7 +9,7 @@ imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 
 group DomainResource(source src : DomainResourceR4B, target tgt : DomainResourceR5) extends Resource <<type+>> {
   src.text -> tgt.text;
-  src.contained -> tgt.contained;
+  src.contained : Resource -> tgt.contained;
   src.extension -> tgt.extension;
   src.modifierExtension -> tgt.modifierExtension;
 }
