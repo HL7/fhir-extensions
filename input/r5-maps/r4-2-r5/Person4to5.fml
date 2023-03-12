@@ -34,20 +34,20 @@ group Person(source src : PersonR4, target tgt : PersonR5) extends DomainResourc
   src.telecom -> tgt.telecom;
   src.gender as v -> tgt.gender = translate(v, '#AdministrativeGender', 'code');
   src.birthDate -> tgt.birthDate;
-  src.deceased : boolean -> tgt.deceased;
-  src.deceased : dateTime -> tgt.deceased;
+//  src.deceased : boolean -> tgt.deceased;
+//  src.deceased : dateTime -> tgt.deceased;
   src.address -> tgt.address;
-  src.maritalStatus -> tgt.maritalStatus;
+//  src.maritalStatus -> tgt.maritalStatus;
   src.photo -> tgt.photo;
-  src.communication as s -> tgt.communication as t then PersonCommunication(s,t);
+//  src.communication as s -> tgt.communication as t then PersonCommunication(s,t);
   src.managingOrganization -> tgt.managingOrganization;
   src.link as s -> tgt.link as t then PersonLink(s,t);
 }
 
-group PersonCommunication(source src, target tgt) extends BackboneElement {
-  src.language -> tgt.language;
-  src.preferred -> tgt.preferred;
-}
+//group PersonCommunication(source src, target tgt) extends BackboneElement {
+//  src.language -> tgt.language;
+//  src.preferred -> tgt.preferred;
+//}
 
 group PersonLink(source src, target tgt) extends BackboneElement {
   src.target -> tgt.target;
