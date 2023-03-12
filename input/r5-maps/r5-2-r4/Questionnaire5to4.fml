@@ -2,13 +2,13 @@
 /// name = 'Questionnaire5to4'
 /// title = 'FML Conversion for Questionnaire: R5 to R4'
 
-conceptmap "DisabledDisplay" {
-  prefix s = "http://hl7.org/fhir/questionnaire-disabled-display"
-  prefix t = "http://hl7.org/fhir/4.0/questionnaire-disabled-display"
+// conceptmap "DisabledDisplay" {
+//   prefix s = "http://hl7.org/fhir/questionnaire-disabled-display"
+//   prefix t = "http://hl7.org/fhir/4.0/questionnaire-disabled-display"
 
-  s:"hidden" - t:"hidden"
-  s:"protected" - t:"protected"
-}
+//   s:"hidden" - t:"hidden"
+//   s:"protected" - t:"protected"
+// }
 
 conceptmap "EnableWhenBehavior" {
   prefix s = "http://hl7.org/fhir/questionnaire-enable-behavior"
@@ -28,14 +28,14 @@ conceptmap "PublicationStatus" {
   s:"unknown" - t:"unknown"
 }
 
-conceptmap "QuestionnaireAnswerConstraint" {
-  prefix s = "http://hl7.org/fhir/questionnaire-answer-constraint"
-  prefix t = "http://hl7.org/fhir/4.0/questionnaire-answer-constraint"
+// conceptmap "QuestionnaireAnswerConstraint" {
+//   prefix s = "http://hl7.org/fhir/questionnaire-answer-constraint"
+//   prefix t = "http://hl7.org/fhir/4.0/questionnaire-answer-constraint"
 
-  s:"optionsOnly" - t:"optionsOnly"
-  s:"optionsOrType" - t:"optionsOrType"
-  s:"optionsOrString" - t:"optionsOrString"
-}
+//   s:"optionsOnly" - t:"optionsOnly"
+//   s:"optionsOrType" - t:"optionsOrType"
+//   s:"optionsOrString" - t:"optionsOrString"
+// }
 
 conceptmap "QuestionnaireItemOperator" {
   prefix s = "http://hl7.org/fhir/questionnaire-enable-operator"
@@ -66,7 +66,7 @@ conceptmap "QuestionnaireItemType" {
   s:"string" - t:"string"
   s:"text" - t:"text"
   s:"url" - t:"url"
-  s:"coding" - t:"coding"
+  s:"coding" - t:"open-choice"
   s:"attachment" - t:"attachment"
   s:"reference" - t:"reference"
   s:"quantity" - t:"quantity"
@@ -81,8 +81,8 @@ group Questionnaire(source src : QuestionnaireR5, target tgt : QuestionnaireR4) 
   src.url -> tgt.url;
   src.identifier -> tgt.identifier;
   src.version -> tgt.version;
-  src.versionAlgorithm : string -> tgt.versionAlgorithm;
-  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
+  // src.versionAlgorithm : string -> tgt.versionAlgorithm;
+  // src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
   src.name -> tgt.name;
   src.title -> tgt.title;
   src.derivedFrom -> tgt.derivedFrom;
@@ -97,7 +97,7 @@ group Questionnaire(source src : QuestionnaireR5, target tgt : QuestionnaireR4) 
   src.jurisdiction -> tgt.jurisdiction;
   src.purpose -> tgt.purpose;
   src.copyright -> tgt.copyright;
-  src.copyrightLabel -> tgt.copyrightLabel;
+  // src.copyrightLabel -> tgt.copyrightLabel;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
   src.effectivePeriod -> tgt.effectivePeriod;
@@ -114,12 +114,14 @@ group QuestionnaireItem(source src, target tgt) extends BackboneElement {
   src.type as v -> tgt.type = translate(v, '#QuestionnaireItemType', 'code');
   src.enableWhen as s -> tgt.enableWhen as t then QuestionnaireItemEnableWhen(s,t);
   src.enableBehavior as v -> tgt.enableBehavior = translate(v, '#EnableWhenBehavior', 'code');
-  src.disabledDisplay as v -> tgt.disabledDisplay = translate(v, '#DisabledDisplay', 'code');
+  // src.disabledDisplay as v -> tgt.disabledDisplay = translate(v, '#DisabledDisplay', 'code');
   src.required -> tgt.required;
   src.repeats -> tgt.repeats;
   src.readOnly -> tgt.readOnly;
   src.maxLength -> tgt.maxLength;
-  src.answerConstraint as v -> tgt.answerConstraint = translate(v, '#QuestionnaireAnswerConstraint', 'code');
+  src.answerConstraint as v where answerConstraint = 'optionsOnly' -> tgt.type as t, t.value = 'choice';
+  src.answerConstraint as v where answerConstraint = 'optionsOrType' -> tgt.type as t, t.value = 'open-choice';
+  src.answerConstraint as v where answerConstraint = 'optionsOrString' -> tgt.type as t, t.value = 'open-choice';
   src.answerValueSet -> tgt.answerValueSet;
   src.answerOption as s -> tgt.answerOption as t then QuestionnaireItemAnswerOption(s,t);
   src.initial as s -> tgt.initial as t then QuestionnaireItemInitial(s,t);
