@@ -24,8 +24,8 @@ group ImmunizationRecommendationRecommendation(source src, target tgt) extends B
   src.dateCriterion as s -> tgt.dateCriterion as t then ImmunizationRecommendationRecommendationDateCriterion(s,t);
   src.description -> tgt.description;
   src.series -> tgt.series;
-  src.doseNumber -> tgt.doseNumber;
-  src.seriesDoses -> tgt.seriesDoses;
+  src.doseNumber : string -> tgt.doseNumber;
+  src.seriesDoses : string -> tgt.seriesDoses;
   src.supportingImmunization -> tgt.supportingImmunization;
   src.supportingPatientInformation -> tgt.supportingPatientInformation;
 }

@@ -13,7 +13,7 @@ group Schedule(source src : ScheduleR5, target tgt : ScheduleR4B) extends Domain
   src.serviceCategory -> tgt.serviceCategory;
   src.serviceType -> tgt.serviceType;
   src.specialty -> tgt.specialty;
-  src.name -> tgt.name;
+//  src.name -> tgt.name;
   src.actor -> tgt.actor;
   src.planningHorizon -> tgt.planningHorizon;
   src.comment -> tgt.comment;

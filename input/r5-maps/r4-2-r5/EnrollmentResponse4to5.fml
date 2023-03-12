@@ -3,7 +3,7 @@
 /// title = 'FML Conversion for EnrollmentResponse: R4 to R5'
 
 conceptmap "EnrollmentOutcome" {
-  prefix s = "http://hl7.org/fhir/4.0/enrollment-outcome"
+  prefix s = "http://hl7.org/fhir/4.0/remittance-outcome"
   prefix t = "http://hl7.org/fhir/enrollment-outcome"
 
   s:"queued" - t:"queued"

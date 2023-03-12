@@ -24,12 +24,12 @@ group Practitioner(source src : PractitionerR4B, target tgt : PractitionerR5) ex
   src.telecom -> tgt.telecom;
   src.gender as v -> tgt.gender = translate(v, '#AdministrativeGender', 'code');
   src.birthDate -> tgt.birthDate;
-  src.deceased : boolean -> tgt.deceased;
-  src.deceased : dateTime -> tgt.deceased;
+//  src.deceased : boolean -> tgt.deceased;
+//  src.deceased : dateTime -> tgt.deceased;
   src.address -> tgt.address;
   src.photo -> tgt.photo;
   src.qualification as s -> tgt.qualification as t then PractitionerQualification(s,t);
-  src.communication as s -> tgt.communication as t then PractitionerCommunication(s,t);
+  src.communication as s -> tgt.communication as t, t.language = s "communication";
 }
 
 group PractitionerQualification(source src, target tgt) extends BackboneElement {
@@ -39,8 +39,8 @@ group PractitionerQualification(source src, target tgt) extends BackboneElement 
   src.issuer -> tgt.issuer;
 }
 
-group PractitionerCommunication(source src, target tgt) extends BackboneElement {
-  src.language -> tgt.language;
-  src.preferred -> tgt.preferred;
-}
+//group PractitionerCommunication(source src, target tgt) extends BackboneElement {
+//  src.language -> tgt.language;
+//  src.preferred -> tgt.preferred;
+//}
 

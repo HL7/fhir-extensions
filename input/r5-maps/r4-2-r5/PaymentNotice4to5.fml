@@ -23,7 +23,7 @@ group PaymentNotice(source src : PaymentNoticeR4, target tgt : PaymentNoticeR5) 
   src.request -> tgt.request;
   src.response -> tgt.response;
   src.created -> tgt.created;
-  src.reporter -> tgt.reporter;
+  src.provider -> tgt.reporter;
   src.payment -> tgt.payment;
   src.paymentDate -> tgt.paymentDate;
   src.payee -> tgt.payee;

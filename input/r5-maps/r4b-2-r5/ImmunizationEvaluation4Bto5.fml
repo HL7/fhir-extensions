@@ -19,7 +19,7 @@ group ImmunizationEvaluation(source src : ImmunizationEvaluationR4B, target tgt 
   src.doseStatusReason -> tgt.doseStatusReason;
   src.description -> tgt.description;
   src.series -> tgt.series;
-  src.doseNumber -> tgt.doseNumber;
-  src.seriesDoses -> tgt.seriesDoses;
+  src.doseNumber : string -> tgt.doseNumber;
+  src.seriesDoses : string -> tgt.seriesDoses;
 }
 

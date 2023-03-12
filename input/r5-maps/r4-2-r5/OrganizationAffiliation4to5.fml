@@ -18,7 +18,7 @@ group OrganizationAffiliation(source src : OrganizationAffiliationR4, target tgt
   src.specialty -> tgt.specialty;
   src.location -> tgt.location;
   src.healthcareService -> tgt.healthcareService;
-  src.contact -> tgt.contact;
+  src.telecom as s -> tgt.contact as t, t.telecom = s "contact";
   src.endpoint -> tgt.endpoint;
 }
 
