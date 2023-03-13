@@ -1,6 +1,7 @@
 ﻿/// url = 'http://hl7.org/fhir/StructureMap/Condition5to4B'
 /// name = 'Condition5to4B'
 /// title = 'FML Conversion for Condition: R5 to R4B'
+/// status = 'active'
 
 uses "http://hl7.org/fhir/StructureDefinition/Condition" alias ConditionR5 as source
 uses "http://hl7.org/fhir/4.3/StructureDefinition/Condition" alias ConditionR4B as target

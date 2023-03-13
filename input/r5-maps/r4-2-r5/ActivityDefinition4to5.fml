@@ -1,8 +1,7 @@
 ﻿/// url = 'http://hl7.org/fhir/StructureMap/ActivityDefinition4to5'
 /// name = 'ActivityDefinition4to5'
 /// title = 'FML Conversion for ActivityDefinition: R4 to R5'
-
-// VP 8-Mar 2023: All OK sans version-specific extensions
+/// status = 'active'
 
 conceptmap "ActivityParticipantType" {
   prefix s = "http://hl7.org/fhir/4.0/action-participant-type"

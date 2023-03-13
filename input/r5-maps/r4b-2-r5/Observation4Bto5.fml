@@ -1,6 +1,7 @@
 ﻿/// url = 'http://hl7.org/fhir/StructureMap/Observation4Bto5'
 /// name = 'Observation4Bto5'
 /// title = 'FML Conversion for Observation: R4B to R5'
+/// status = 'active'
 
 conceptmap "ObservationStatus" {
   prefix s = "http://hl7.org/fhir/4.3/observation-status"
@@ -16,14 +17,14 @@ conceptmap "ObservationStatus" {
   s:"unknown" - t:"unknown"
 }
 
-conceptmap "TriggeredByType" {
-  prefix s = "http://hl7.org/fhir/4.3/observation-triggeredbytype"
-  prefix t = "http://hl7.org/fhir/observation-triggeredbytype"
+// conceptmap "TriggeredByType" {
+//   prefix s = "http://hl7.org/fhir/4.3/observation-triggeredbytype"
+//   prefix t = "http://hl7.org/fhir/observation-triggeredbytype"
 
-  s:"reflex" - t:"reflex"
-  s:"repeat" - t:"repeat"
-  s:"re-run" - t:"re-run"
-}
+//   s:"reflex" - t:"reflex"
+//   s:"repeat" - t:"repeat"
+//   s:"re-run" - t:"re-run"
+// }
 
 uses "http://hl7.org/fhir/4.3/StructureDefinition/Observation" alias ObservationR4B as source
 uses "http://hl7.org/fhir/StructureDefinition/Observation" alias ObservationR5 as target
@@ -32,10 +33,10 @@ imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 
 group Observation(source src : ObservationR4B, target tgt : ObservationR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.instantiates : canonical -> tgt.instantiates;
-  src.instantiates : Reference -> tgt.instantiates;
+  // src.instantiates : canonical -> tgt.instantiates;
+  // src.instantiates : Reference -> tgt.instantiates;
   src.basedOn -> tgt.basedOn;
-  src.triggeredBy as s -> tgt.triggeredBy as t then ObservationTriggeredBy(s,t);
+  // src.triggeredBy as s -> tgt.triggeredBy as t then ObservationTriggeredBy(s,t);
   src.partOf -> tgt.partOf;
   src.status as v -> tgt.status = translate(v, '#ObservationStatus', 'code');
   src.category -> tgt.category;
@@ -51,7 +52,7 @@ group Observation(source src : ObservationR4B, target tgt : ObservationR5) exten
   src.performer -> tgt.performer;
   src.value : Quantity -> tgt.value;
   src.value : CodeableConcept -> tgt.value;
-  src.value : markdown -> tgt.value;
+  src.value : string -> tgt.value;
   src.value : boolean -> tgt.value;
   src.value : integer -> tgt.value;
   src.value : Range -> tgt.value;
@@ -60,14 +61,14 @@ group Observation(source src : ObservationR4B, target tgt : ObservationR5) exten
   src.value : time -> tgt.value;
   src.value : dateTime -> tgt.value;
   src.value : Period -> tgt.value;
-  src.value : Attachment -> tgt.value;
-  src.value : Reference -> tgt.value;
-  src.value : canonical -> tgt.value;
+  // src.value : Attachment -> tgt.value;
+  // src.value : Reference -> tgt.value;
+  // src.value : canonical -> tgt.value;
   src.dataAbsentReason -> tgt.dataAbsentReason;
   src.interpretation -> tgt.interpretation;
   src.note -> tgt.note;
   src.bodySite -> tgt.bodySite;
-  src.bodyStructure -> tgt.bodyStructure;
+  // src.bodyStructure -> tgt.bodyStructure;
   src.method -> tgt.method;
   src.specimen -> tgt.specimen;
   src.device -> tgt.device;
@@ -77,16 +78,16 @@ group Observation(source src : ObservationR4B, target tgt : ObservationR5) exten
   src.component as s -> tgt.component as t then ObservationComponent(s,t);
 }
 
-group ObservationTriggeredBy(source src, target tgt) extends BackboneElement {
-  src.observation -> tgt.observation;
-  src.type as v -> tgt.type = translate(v, '#TriggeredByType', 'code');
-  src.reason -> tgt.reason;
-}
+// group ObservationTriggeredBy(source src, target tgt) extends BackboneElement {
+//   src.observation -> tgt.observation;
+//   src.type as v -> tgt.type = translate(v, '#TriggeredByType', 'code');
+//   src.reason -> tgt.reason;
+// }
 
 group ObservationReferenceRange(source src, target tgt) extends BackboneElement {
   src.low -> tgt.low;
   src.high -> tgt.high;
-  src.normalValue -> tgt.normalValue;
+  // src.normalValue -> tgt.normalValue;
   src.type -> tgt.type;
   src.appliesTo -> tgt.appliesTo;
   src.age -> tgt.age;
@@ -97,7 +98,7 @@ group ObservationComponent(source src, target tgt) extends BackboneElement {
   src.code -> tgt.code;
   src.value : Quantity -> tgt.value;
   src.value : CodeableConcept -> tgt.value;
-  src.value : markdown -> tgt.value;
+  src.value : string -> tgt.value;
   src.value : boolean -> tgt.value;
   src.value : integer -> tgt.value;
   src.value : Range -> tgt.value;
@@ -106,9 +107,9 @@ group ObservationComponent(source src, target tgt) extends BackboneElement {
   src.value : time -> tgt.value;
   src.value : dateTime -> tgt.value;
   src.value : Period -> tgt.value;
-  src.value : Attachment -> tgt.value;
-  src.value : Reference -> tgt.value;
-  src.value : canonical -> tgt.value;
+  // src.value : Attachment -> tgt.value;
+  // src.value : Reference -> tgt.value;
+  // src.value : canonical -> tgt.value;
   src.dataAbsentReason -> tgt.dataAbsentReason;
   src.interpretation -> tgt.interpretation;
 }

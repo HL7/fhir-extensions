@@ -1,6 +1,7 @@
 ﻿/// url = 'http://hl7.org/fhir/StructureMap/Questionnaire4to5'
 /// name = 'Questionnaire4to5'
 /// title = 'FML Conversion for Questionnaire: R4 to R5'
+/// status = 'active'
 
 // conceptmap "DisabledDisplay" {
 //   prefix s = "http://hl7.org/fhir/4.0/questionnaire-disabled-display"
