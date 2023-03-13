@@ -11,6 +11,13 @@ and can also be used to convert between the formats automatically.
 The following table summarizes the state of the R5:R5 maps for each resource type, along with 
 the data types.
 </p>
+<p>
+These maps are intended to be a starting base, and not the complete solution for your data 
+conversion work - since in some cases the complete context needed for a particular usecase is only 
+available closer to runtime. Additionally, the maps in their current state place most focus on 
+bringing the content from R4 over to R5, and less so on the reverse conversion - that is, 
+they don't make use of the version-specific extensions on the R5 to R4 data downgrade yet.
+</p>
 <table class="grid">
   <tr style="background-color: #eeeeee">
     <th>Resource</th>
