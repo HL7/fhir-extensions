@@ -1,6 +1,7 @@
 ﻿/// url = 'http://hl7.org/fhir/StructureMap/PlanDefinition5to4'
 /// name = 'PlanDefinition5to4'
 /// title = 'FML Conversion for PlanDefinition: R5 to R4'
+/// status = 'active'
 
 conceptmap "ActionCardinalityBehavior" {
   prefix s = "http://hl7.org/fhir/action-cardinality-behavior"
