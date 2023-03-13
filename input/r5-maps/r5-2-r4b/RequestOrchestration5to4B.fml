@@ -2,6 +2,8 @@
 /// name = 'RequestOrchestration5to4B'
 /// title = 'FML Conversion for RequestOrchestration: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "ActionCardinalityBehavior" {
   prefix s = "http://hl7.org/fhir/action-cardinality-behavior"
   prefix t = "http://hl7.org/fhir/4.3/action-cardinality-behavior"
@@ -72,21 +74,21 @@ conceptmap "ActionSelectionBehavior" {
   s:"one-or-more" - t:"one-or-more"
 }
 
-conceptmap "ActivityParticipantType" {
-  prefix s = "http://hl7.org/fhir/action-participant-type"
-  prefix t = "http://hl7.org/fhir/4.3/action-participant-type"
-
-  s:"careteam" - t:"careteam"
-  s:"device" - t:"device"
-  s:"group" - t:"group"
-  s:"healthcareservice" - t:"healthcareservice"
-  s:"location" - t:"location"
-  s:"organization" - t:"organization"
-  s:"patient" - t:"patient"
-  s:"practitioner" - t:"practitioner"
-  s:"practitionerrole" - t:"practitionerrole"
-  s:"relatedperson" - t:"relatedperson"
-}
+//conceptmap "ActivityParticipantType" {
+//  prefix s = "http://hl7.org/fhir/action-participant-type"
+//  prefix t = "http://hl7.org/fhir/4.3/action-participant-type"
+//
+//  s:"careteam" - t:"careteam"
+//  s:"device" - t:"device"
+//  s:"group" - t:"group"
+//  s:"healthcareservice" - t:"healthcareservice"
+//  s:"location" - t:"location"
+//  s:"organization" - t:"organization"
+//  s:"patient" - t:"patient"
+//  s:"practitioner" - t:"practitioner"
+//  s:"practitionerrole" - t:"practitionerrole"
+//  s:"relatedperson" - t:"relatedperson"
+//}
 
 conceptmap "RequestIntent" {
   prefix s = "http://hl7.org/fhir/request-intent"
@@ -127,11 +129,11 @@ conceptmap "RequestStatus" {
 }
 
 uses "http://hl7.org/fhir/StructureDefinition/RequestOrchestration" alias RequestOrchestrationR5 as source
-uses "http://hl7.org/fhir/4.3/StructureDefinition/RequestOrchestration" alias RequestOrchestrationR4B as target
+uses "http://hl7.org/fhir/4.3/StructureDefinition/RequestGroup" alias RequestGroupR4B as target
 
 imports "http://hl7.org/fhir/StructureMap/*5to4B"
 
-group RequestOrchestration(source src : RequestOrchestrationR5, target tgt : RequestOrchestrationR4B) extends DomainResource <<type+>> {
+group RequestOrchestration(source src : RequestOrchestrationR5, target tgt : RequestGroupR4B) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.instantiatesCanonical -> tgt.instantiatesCanonical;
   src.instantiatesUri -> tgt.instantiatesUri;
@@ -146,14 +148,15 @@ group RequestOrchestration(source src : RequestOrchestrationR5, target tgt : Req
   src.encounter -> tgt.encounter;
   src.authoredOn -> tgt.authoredOn;
   src.author -> tgt.author;
-  src.reason -> tgt.reason;
-  src.goal -> tgt.goal;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
+//  src.goal -> tgt.goal;
   src.note -> tgt.note;
   src.action as s -> tgt.action as t then RequestOrchestrationAction(s,t);
 }
 
 group RequestOrchestrationAction(source src, target tgt) extends BackboneElement {
-  src.linkId -> tgt.linkId;
+//  src.linkId -> tgt.linkId;
   src.prefix -> tgt.prefix;
   src.title -> tgt.title;
   src.description -> tgt.description;
@@ -161,10 +164,10 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.priority as v -> tgt.priority = translate(v, '#RequestPriority', 'code');
   src.code -> tgt.code;
   src.documentation -> tgt.documentation;
-  src.goal -> tgt.goal;
+//  src.goal -> tgt.goal;
   src.condition as s -> tgt.condition as t then RequestOrchestrationActionCondition(s,t);
-  src.input as s -> tgt.input as t then RequestOrchestrationActionInput(s,t);
-  src.output as s -> tgt.output as t then RequestOrchestrationActionOutput(s,t);
+//  src.input as s -> tgt.input as t then RequestOrchestrationActionInput(s,t);
+//  src.output as s -> tgt.output as t then RequestOrchestrationActionOutput(s,t);
   src.relatedAction as s -> tgt.relatedAction as t then RequestOrchestrationActionRelatedAction(s,t);
   src.timing : dateTime -> tgt.timing;
   src.timing : Age -> tgt.timing;
@@ -172,8 +175,8 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.timing : Duration -> tgt.timing;
   src.timing : Range -> tgt.timing;
   src.timing : Timing -> tgt.timing;
-  src.location -> tgt.location;
-  src.participant as s -> tgt.participant as t then RequestOrchestrationActionParticipant(s,t);
+//  src.location -> tgt.location;
+  src.participant as s -> tgt.participant = s.actor;
   src.type -> tgt.type;
   src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, '#ActionGroupingBehavior', 'code');
   src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, '#ActionSelectionBehavior', 'code');
@@ -181,10 +184,10 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.precheckBehavior as v -> tgt.precheckBehavior = translate(v, '#ActionPrecheckBehavior', 'code');
   src.cardinalityBehavior as v -> tgt.cardinalityBehavior = translate(v, '#ActionCardinalityBehavior', 'code');
   src.resource -> tgt.resource;
-  src.definition : canonical -> tgt.definition;
-  src.definition : uri -> tgt.definition;
-  src.transform -> tgt.transform;
-  src.dynamicValue as s -> tgt.dynamicValue as t then RequestOrchestrationActionDynamicValue(s,t);
+//  src.definition : canonical -> tgt.definition;
+//  src.definition : uri -> tgt.definition;
+//  src.transform -> tgt.transform;
+//  src.dynamicValue as s -> tgt.dynamicValue as t then RequestOrchestrationActionDynamicValue(s,t);
 }
 
 group RequestOrchestrationActionCondition(source src, target tgt) extends BackboneElement {
@@ -192,38 +195,38 @@ group RequestOrchestrationActionCondition(source src, target tgt) extends Backbo
   src.expression -> tgt.expression;
 }
 
-group RequestOrchestrationActionInput(source src, target tgt) extends BackboneElement {
-  src.title -> tgt.title;
-  src.requirement -> tgt.requirement;
-  src.relatedData -> tgt.relatedData;
-}
+//group RequestOrchestrationActionInput(source src, target tgt) extends BackboneElement {
+//  src.title -> tgt.title;
+//  src.requirement -> tgt.requirement;
+//  src.relatedData -> tgt.relatedData;
+//}
 
-group RequestOrchestrationActionOutput(source src, target tgt) extends BackboneElement {
-  src.title -> tgt.title;
-  src.requirement -> tgt.requirement;
-  src.relatedData -> tgt.relatedData;
-}
+//group RequestOrchestrationActionOutput(source src, target tgt) extends BackboneElement {
+//  src.title -> tgt.title;
+//  src.requirement -> tgt.requirement;
+//  src.relatedData -> tgt.relatedData;
+//}
 
 group RequestOrchestrationActionRelatedAction(source src, target tgt) extends BackboneElement {
-  src.targetId -> tgt.targetId;
+  src.targetId -> tgt.actionId;
   src.relationship as v -> tgt.relationship = translate(v, '#ActionRelationshipType', 'code');
-  src.endRelationship as v -> tgt.endRelationship = translate(v, '#ActionRelationshipType', 'code');
+//  src.endRelationship as v -> tgt.endRelationship = translate(v, '#ActionRelationshipType', 'code');
   src.offset : Duration -> tgt.offset;
   src.offset : Range -> tgt.offset;
 }
 
-group RequestOrchestrationActionParticipant(source src, target tgt) extends BackboneElement {
-  src.type as v -> tgt.type = translate(v, '#ActivityParticipantType', 'code');
-  src.typeCanonical -> tgt.typeCanonical;
-  src.typeReference -> tgt.typeReference;
-  src.role -> tgt.role;
-  src.function -> tgt.function;
-  src.actor : canonical -> tgt.actor;
-  src.actor : Reference -> tgt.actor;
-}
+//group RequestOrchestrationActionParticipant(source src, target tgt) extends BackboneElement {
+//  src.type as v -> tgt.type = translate(v, '#ActivityParticipantType', 'code');
+//  src.typeCanonical -> tgt.typeCanonical;
+//  src.typeReference -> tgt.typeReference;
+//  src.role -> tgt.role;
+//  src.function -> tgt.function;
+//  src.actor : canonical -> tgt.actor;
+//  src.actor : Reference -> tgt.actor;
+//}
 
-group RequestOrchestrationActionDynamicValue(source src, target tgt) extends BackboneElement {
-  src.path -> tgt.path;
-  src.expression -> tgt.expression;
-}
+//group RequestOrchestrationActionDynamicValue(source src, target tgt) extends BackboneElement {
+//  src.path -> tgt.path;
+//  src.expression -> tgt.expression;
+//}
 
