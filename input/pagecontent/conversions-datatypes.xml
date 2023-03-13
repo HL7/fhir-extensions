@@ -1,0 +1,159 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
+
+<a name="conv-Base"> </a>
+<h3>Primitive Datatypes</h3>
+
+<h4>FML Conversion for primitive datatypes: R4 to R5 (Ready for Use)</h4>
+
+{% include StructureMap-Primitives4to5-html.xhtml %}
+
+<h4>FML Conversion for primitive datatypes: R4B to R5 (Ready for Use)</h4>
+
+{% include StructureMap-Primitives4to5-html.xhtml %}
+
+<h4>FML Conversion for primitive datatypes: R5 to R4 (Ready for Use)</h4>
+
+{% include StructureMap-Primitives5to4-html.xhtml %}
+
+<h4>FML Conversion for primitive datatypes: R5 to R4B (Ready for Use)</h4>
+
+{% include StructureMap-Primitives5to4B-html.xhtml %}
+
+<a name="conv-Attachment"> </a>
+<h3>Attachment</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Attachment-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Attachment.xhtml %}
+
+<a name="conv-Coding"> </a>
+<h3>Coding</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Coding-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Coding.xhtml %}
+
+<a name="conv-CodeableConcept"> </a>
+<h3>CodeableConcept</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:CodeableConcept-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-CodeableConcept.xhtml %}
+
+<a name="conv-Quantity"> </a>
+<h3>Quantity</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Quantity-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Quantity.xhtml %}
+
+<a name="conv-Money"> </a>
+<h3>Money</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Money-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Money.xhtml %}
+
+<a name="conv-Range"> </a>
+<h3>Range</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Range-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Range.xhtml %}
+
+<a name="conv-Ratio"> </a>
+<h3>Ratio</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Ratio-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Ratio.xhtml %}
+
+<a name="conv-RatioRange"> </a>
+<h3>RatioRange</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:RatioRange-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-RatioRange.xhtml %}
+
+<a name="conv-Period"> </a>
+<h3>Period</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Period-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Period.xhtml %}
+
+<a name="conv-SampledData"> </a>
+<h3>SampledData</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:SampledData-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-SampledData.xhtml %}
+
+<a name="conv-Identifier"> </a>
+<h3>Identifier</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Identifier-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Identifier.xhtml %}
+
+<a name="conv-HumanName"> </a>
+<h3>HumanName</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:HumanName-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-HumanName.xhtml %}
+
+<a name="conv-Address"> </a>
+<h3>Address</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Address-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Address.xhtml %}
+
+<a name="conv-ContactPoint"> </a>
+<h3>ContactPoint</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:ContactPoint-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-ContactPoint.xhtml %}
+
+<a name="conv-Timing"> </a>
+<h3>Timing</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Timing-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Timing.xhtml %}
+
+<a name="conv-Signature"> </a>
+<h3>Signature</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Signature-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Signature.xhtml %}
+
+<a name="conv-Annotation"> </a>
+<h3>Annotation</h3>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Annotation-->See also <a href="datatypes.html#Attachment">Base Definition</a>, <a href="datatypes-examples.html#Attachment">Examples</a>, <a href="datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a href="datatypes-mappings.html#Attachment">Mappings</a>, <a href="datatypes-profiles.html#Attachment">Profiles</a> and <a href="datatypes-extensions.html#Attachment">Extensions</a>
+</p>
+
+{% include maps-Annotation.xhtml %}
+
+
+</div>

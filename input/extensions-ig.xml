@@ -69,22 +69,22 @@
         <title value="R4/R5 Conversion Registry"/>
         <generation value="html"/>
         <page>
-          <sourceUrl value="conversions-types.html"/>
+          <sourceUrl value="conversions-types.xml"/>
           <name value="conversions-types.html"/>
           <title value="R4/R5 Conversions for the Types Framework"/>
-          <generation value="markdown"/>
+          <generation value="html"/>
         </page>
         <page>
-          <sourceUrl value="conversions-datatypes.html"/>
+          <sourceUrl value="conversions-datatypes.xml"/>
           <name value="conversions-datatypes.html"/>
           <title value="R4/R5 Conversions for Datatypes"/>
-          <generation value="markdown"/>
+          <generation value="html"/>
         </page>
         <page>
-          <sourceUrl value="conversions-metadatatypes.html"/>
+          <sourceUrl value="conversions-metadatatypes.xml"/>
           <name value="conversions-metadatatypes.html"/>
           <title value="R4/R5 Conversion for Metadata Types"/>
-          <generation value="markdown"/>
+          <generation value="html"/>
         </page>
       </page>
     </page>
