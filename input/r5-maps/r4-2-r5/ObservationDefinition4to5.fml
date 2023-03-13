@@ -2,6 +2,8 @@
 /// name = 'ObservationDefinition4to5'
 /// title = 'FML Conversion for ObservationDefinition: R4 to R5'
 
+/// status = 'active'
+
 conceptmap "AdministrativeGender" {
   prefix s = "http://hl7.org/fhir/4.0/administrative-gender"
   prefix t = "http://hl7.org/fhir/administrative-gender"
@@ -54,44 +56,48 @@ uses "http://hl7.org/fhir/StructureDefinition/ObservationDefinition" alias Obser
 imports "http://hl7.org/fhir/StructureMap/*4to5"
 
 group ObservationDefinition(source src : ObservationDefinitionR4, target tgt : ObservationDefinitionR5) extends DomainResource <<type+>> {
-  src.url -> tgt.url;
+//  src.url -> tgt.url;
   src.identifier -> tgt.identifier;
-  src.version -> tgt.version;
-  src.versionAlgorithm : string -> tgt.versionAlgorithm;
-  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
-  src.name -> tgt.name;
-  src.title -> tgt.title;
-  src.status as v -> tgt.status = translate(v, '#PublicationStatus', 'code');
-  src.experimental -> tgt.experimental;
-  src.date -> tgt.date;
-  src.publisher -> tgt.publisher;
-  src.contact -> tgt.contact;
-  src.description -> tgt.description;
-  src.useContext -> tgt.useContext;
-  src.jurisdiction -> tgt.jurisdiction;
-  src.purpose -> tgt.purpose;
-  src.copyright -> tgt.copyright;
-  src.copyrightLabel -> tgt.copyrightLabel;
-  src.approvalDate -> tgt.approvalDate;
-  src.lastReviewDate -> tgt.lastReviewDate;
-  src.effectivePeriod -> tgt.effectivePeriod;
-  src.derivedFromCanonical -> tgt.derivedFromCanonical;
-  src.derivedFromUri -> tgt.derivedFromUri;
-  src.subject -> tgt.subject;
-  src.performerType -> tgt.performerType;
+//  src.version -> tgt.version;
+//  src.versionAlgorithm : string -> tgt.versionAlgorithm;
+//  src.versionAlgorithm : Coding -> tgt.versionAlgorithm;
+//  src.name -> tgt.name;
+//  src.title -> tgt.title;
+//  src.status as v -> tgt.status = translate(v, '#PublicationStatus', 'code');
+//  src.experimental -> tgt.experimental;
+//  src.date -> tgt.date;
+//  src.publisher -> tgt.publisher;
+//  src.contact -> tgt.contact;
+//  src.description -> tgt.description;
+//  src.useContext -> tgt.useContext;
+//  src.jurisdiction -> tgt.jurisdiction;
+//  src.purpose -> tgt.purpose;
+//  src.copyright -> tgt.copyright;
+//  src.copyrightLabel -> tgt.copyrightLabel;
+//  src.approvalDate -> tgt.approvalDate;
+//  src.lastReviewDate -> tgt.lastReviewDate;
+//  src.effectivePeriod -> tgt.effectivePeriod;
+//  src.derivedFromCanonical -> tgt.derivedFromCanonical;
+//  src.derivedFromUri -> tgt.derivedFromUri;
+//  src.subject -> tgt.subject;
+//  src.performerType -> tgt.performerType;
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.permittedDataType as v -> tgt.permittedDataType = translate(v, '#ObservationDataType', 'code');
   src.multipleResultsAllowed -> tgt.multipleResultsAllowed;
-  src.bodySite -> tgt.bodySite;
+//  src.bodySite -> tgt.bodySite;
   src.method -> tgt.method;
-  src.specimen -> tgt.specimen;
-  src.device -> tgt.device;
+//  src.specimen -> tgt.specimen;
+//  src.device -> tgt.device;
   src.preferredReportName -> tgt.preferredReportName;
   src.quantitativeDetails as s -> tgt.quantitativeDetails as t then ObservationDefinitionQuantitativeDetails(s,t);
-  src.qualifiedValue as s -> tgt.qualifiedValue as t then ObservationDefinitionQualifiedValue(s,t);
-  src.hasMember -> tgt.hasMember;
-  src.component as s -> tgt.component as t then ObservationDefinitionComponent(s,t);
+  src.qualifiedInterval as s -> tgt.qualifiedValue as t then ObservationDefinitionQualifiedValue(s,t);
+  src.validCodedValueSet as s -> tgt.qualifiedValue as t, t.validCodedValueSet = s;
+  src.normalCodedValueSet as s -> tgt.qualifiedValue as t, t.normalCodedValueSet = s;
+  src.abnormalCodedValueSet as s -> tgt.qualifiedValue as t, t.abnormalCodedValueSet = s;
+  src.criticalCodedValueSet as s -> tgt.qualifiedValue as t, t.criticalCodedValueSet = s;
+//  src.hasMember -> tgt.hasMember;
+//  src.component as s -> tgt.component as t then ObservationDefinitionComponent(s,t);
 }
 
 group ObservationDefinitionQuantitativeDetails(source src, target tgt) extends BackboneElement {
@@ -108,16 +114,16 @@ group ObservationDefinitionQualifiedValue(source src, target tgt) extends Backbo
   src.age -> tgt.age;
   src.gestationalAge -> tgt.gestationalAge;
   src.condition -> tgt.condition;
-  src.rangeCategory as v -> tgt.rangeCategory = translate(v, '#ObservationRangeCategory', 'code');
+  src.category as v -> tgt.rangeCategory = translate(v, '#ObservationRangeCategory', 'code');
   src.range -> tgt.range;
-  src.validCodedValueSet -> tgt.validCodedValueSet;
-  src.normalCodedValueSet -> tgt.normalCodedValueSet;
-  src.abnormalCodedValueSet -> tgt.abnormalCodedValueSet;
-  src.criticalCodedValueSet -> tgt.criticalCodedValueSet;
+//  src.validCodedValueSet -> tgt.validCodedValueSet;
+//  src.normalCodedValueSet -> tgt.normalCodedValueSet;
+//  src.abnormalCodedValueSet -> tgt.abnormalCodedValueSet;
+//  src.criticalCodedValueSet -> tgt.criticalCodedValueSet;
 }
 
-group ObservationDefinitionComponent(source src, target tgt) extends BackboneElement {
-  src.code -> tgt.code;
-  src.permittedDataType as v -> tgt.permittedDataType = translate(v, '#ObservationDataType', 'code');
-}
+//group ObservationDefinitionComponent(source src, target tgt) extends BackboneElement {
+//  src.code -> tgt.code;
+//  src.permittedDataType as v -> tgt.permittedDataType = translate(v, '#ObservationDataType', 'code');
+//}
 
