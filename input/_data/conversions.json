@@ -3,24 +3,24 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Account"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ActivityDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ActivityDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ActorDefinition" : {
@@ -44,55 +44,55 @@
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AdministrableProductDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "AdverseEvent" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "AllergyIntolerance" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Appointment" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Appointment"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "AppointmentResponse" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AppointmentResponse"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ArtifactAssessment" : {
@@ -111,48 +111,48 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Basic" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Basic"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Binary" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Binary"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "BiologicallyDerivedProduct" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/BiologicallyDerivedProduct"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "BiologicallyDerivedProductDispense" : {
@@ -171,84 +171,84 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/BodyStructure"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Bundle" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Bundle"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "CapabilityStatement" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "CarePlan" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CarePlan"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "CareTeam" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CareTeam"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ChargeItem" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ChargeItem"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ChargeItemDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ChargeItemDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Citation" : {
@@ -260,43 +260,43 @@
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Citation"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Claim" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Claim"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ClaimResponse" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ClaimResponse"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ClinicalImpression" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ClinicalImpression"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ClinicalUseDefinition" : {
@@ -308,91 +308,91 @@
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ClinicalUseDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "CodeSystem" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Communication" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Communication"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "CommunicationRequest" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CommunicationRequest"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "CompartmentDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CompartmentDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Composition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Composition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ConceptMap" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ConceptMap"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Condition" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Condition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ConditionDefinition" : {
@@ -411,84 +411,84 @@
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Consent"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Contract" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Contract"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Coverage" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Coverage"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "CoverageEligibilityRequest" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityRequest"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "CoverageEligibilityResponse" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityResponse"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "DetectedIssue" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DetectedIssue"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Device" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Device"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "DeviceAssociation" : {
@@ -507,12 +507,12 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DeviceDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "DeviceDispense" : {
@@ -531,72 +531,72 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DeviceMetric"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "DeviceRequest" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DeviceRequest"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "DeviceUsage" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DeviceUseStatement"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "DiagnosticReport" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DiagnosticReport"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "DocumentReference" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DocumentReference"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Encounter" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Encounter"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "EncounterHistory" : {
@@ -615,72 +615,72 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Endpoint"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "EnrollmentRequest" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentRequest"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "EnrollmentResponse" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentResponse"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "EpisodeOfCare" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EpisodeOfCare"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "EventDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EventDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Evidence" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Evidence"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "EvidenceReport" : {
@@ -692,67 +692,67 @@
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EvidenceReport"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "EvidenceVariable" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EvidenceVariable"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ExampleScenario" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ExampleScenario"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ExplanationOfBenefit" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ExplanationOfBenefit"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "FamilyMemberHistory" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/FamilyMemberHistory"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Flag" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Flag"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "FormularyItem" : {
@@ -783,12 +783,12 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Goal"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "GraphDefinition" : {
@@ -807,36 +807,36 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Group"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "GuidanceResponse" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/GuidanceResponse"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "HealthcareService" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/HealthcareService"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ImagingSelection" : {
@@ -855,60 +855,60 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ImagingStudy"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Immunization" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Immunization"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ImmunizationEvaluation" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ImmunizationEvaluation"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ImmunizationRecommendation" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ImmunizationRecommendation"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ImplementationGuide" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Ingredient" : {
@@ -920,19 +920,19 @@
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Ingredient"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "InsurancePlan" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/InsurancePlan"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "InventoryItem" : {
@@ -963,60 +963,60 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Invoice"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Library" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Library"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Linkage" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Linkage"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "List" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/List"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Location" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Location"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ManufacturedItemDefinition" : {
@@ -1028,103 +1028,103 @@
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ManufacturedItemDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Measure" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Measure"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MeasureReport" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Medication" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Medication"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MedicationAdministration" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationAdministration"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MedicationDispense" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationDispense"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MedicationKnowledge" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationKnowledge"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MedicationRequest" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationRequest"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MedicationStatement" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationStatement"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MedicinalProductDefinition" : {
@@ -1136,55 +1136,55 @@
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicinalProductDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MessageDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MessageDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MessageHeader" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MessageHeader"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "MolecularSequence" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "NamingSystem" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "NutritionIntake" : {
@@ -1203,12 +1203,12 @@
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/NutritionOrder"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "NutritionProduct" : {
@@ -1227,72 +1227,72 @@
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Observation"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ObservationDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "OperationDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "OperationOutcome" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/OperationOutcome"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Organization" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Organization"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "OrganizationAffiliation" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/OrganizationAffiliation"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "PackagedProductDefinition" : {
@@ -1304,7 +1304,7 @@
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PackagedProductDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Parameters" : {
@@ -1316,43 +1316,43 @@
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Parameters"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Patient" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Patient"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "PaymentNotice" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PaymentNotice"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "PaymentReconciliation" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PaymentReconciliation"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Permission" : {
@@ -1371,96 +1371,96 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Person"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "PlanDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Practitioner" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Practitioner"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "PractitionerRole" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PractitionerRole"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Procedure" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Procedure"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Provenance" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Provenance"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Questionnaire" : {
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "QuestionnaireResponse" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/QuestionnaireResponse"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "RegulatedAuthorization" : {
@@ -1472,19 +1472,19 @@
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/RegulatedAuthorization"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "RelatedPerson" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/RelatedPerson"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "RequestOrchestration" : {
@@ -1515,144 +1515,144 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ResearchSubject" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ResearchSubject"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "RiskAssessment" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/RiskAssessment"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Schedule" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Schedule"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "SearchParameter" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "ServiceRequest" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ServiceRequest"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Slot" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Slot"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Specimen" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Specimen"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "SpecimenDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SpecimenDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "StructureDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "StructureMap" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/StructureMap"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Subscription" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Subscription"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "SubscriptionStatus" : {
@@ -1664,7 +1664,7 @@
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionStatus"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "SubscriptionTopic" : {
@@ -1676,19 +1676,19 @@
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Substance" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Substance"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "SubstanceDefinition" : {
@@ -1700,7 +1700,7 @@
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceDefinition"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "SubstanceNucleicAcid" : {
@@ -1767,48 +1767,48 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SupplyDelivery"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "SupplyRequest" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SupplyRequest"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Task" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Task"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "TerminologyCapabilities" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/TerminologyCapabilities"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "TestPlan" : {
@@ -1827,24 +1827,24 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/TestReport"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "TestScript" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/TestScript"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Transport" : {
@@ -1863,36 +1863,36 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ValueSet"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "VerificationResult" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/VerificationResult"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "VisionPrescription" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "not done yet"
+      "testMessage" : "Error: Not done yet!"
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/VisionPrescription"
+      "testMessage" : "Error: Not done yet!"
     }
   },
   "Address" : {
