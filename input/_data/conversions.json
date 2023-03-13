@@ -1,0 +1,2354 @@
+{
+  "Account" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Account"
+    }
+  },
+  "ActivityDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ActivityDefinition"
+    }
+  },
+  "ActorDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "AdministrableProductDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AdministrableProductDefinition"
+    }
+  },
+  "AdverseEvent" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AdverseEvent"
+    }
+  },
+  "AllergyIntolerance" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AllergyIntolerance"
+    }
+  },
+  "Appointment" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Appointment"
+    }
+  },
+  "AppointmentResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AppointmentResponse"
+    }
+  },
+  "ArtifactAssessment" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "AuditEvent" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/AuditEvent"
+    }
+  },
+  "Basic" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Basic"
+    }
+  },
+  "Binary" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Binary"
+    }
+  },
+  "BiologicallyDerivedProduct" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/BiologicallyDerivedProduct"
+    }
+  },
+  "BiologicallyDerivedProductDispense" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "BodyStructure" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/BodyStructure"
+    }
+  },
+  "Bundle" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Bundle"
+    }
+  },
+  "CapabilityStatement" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CapabilityStatement"
+    }
+  },
+  "CarePlan" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CarePlan"
+    }
+  },
+  "CareTeam" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CareTeam"
+    }
+  },
+  "ChargeItem" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ChargeItem"
+    }
+  },
+  "ChargeItemDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ChargeItemDefinition"
+    }
+  },
+  "Citation" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Citation"
+    }
+  },
+  "Claim" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Claim"
+    }
+  },
+  "ClaimResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ClaimResponse"
+    }
+  },
+  "ClinicalImpression" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ClinicalImpression"
+    }
+  },
+  "ClinicalUseDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.0/StructureDefinition/ClinicalUseDefinition"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ClinicalUseDefinition"
+    }
+  },
+  "CodeSystem" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CodeSystem"
+    }
+  },
+  "Communication" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Communication"
+    }
+  },
+  "CommunicationRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CommunicationRequest"
+    }
+  },
+  "CompartmentDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CompartmentDefinition"
+    }
+  },
+  "Composition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Composition"
+    }
+  },
+  "ConceptMap" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ConceptMap"
+    }
+  },
+  "Condition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Condition"
+    }
+  },
+  "ConditionDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Consent" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Consent"
+    }
+  },
+  "Contract" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Contract"
+    }
+  },
+  "Coverage" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Coverage"
+    }
+  },
+  "CoverageEligibilityRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityRequest"
+    }
+  },
+  "CoverageEligibilityResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/CoverageEligibilityResponse"
+    }
+  },
+  "DetectedIssue" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DetectedIssue"
+    }
+  },
+  "Device" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Device"
+    }
+  },
+  "DeviceAssociation" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "DeviceDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DeviceDefinition"
+    }
+  },
+  "DeviceDispense" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "DeviceMetric" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DeviceMetric"
+    }
+  },
+  "DeviceRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DeviceRequest"
+    }
+  },
+  "DeviceUsage" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DeviceUseStatement"
+    }
+  },
+  "DiagnosticReport" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DiagnosticReport"
+    }
+  },
+  "DocumentReference" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/DocumentReference"
+    }
+  },
+  "Encounter" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Encounter"
+    }
+  },
+  "EncounterHistory" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Endpoint" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Endpoint"
+    }
+  },
+  "EnrollmentRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentRequest"
+    }
+  },
+  "EnrollmentResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EnrollmentResponse"
+    }
+  },
+  "EpisodeOfCare" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EpisodeOfCare"
+    }
+  },
+  "EventDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EventDefinition"
+    }
+  },
+  "Evidence" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Evidence"
+    }
+  },
+  "EvidenceReport" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EvidenceReport"
+    }
+  },
+  "EvidenceVariable" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/EvidenceVariable"
+    }
+  },
+  "ExampleScenario" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ExampleScenario"
+    }
+  },
+  "ExplanationOfBenefit" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ExplanationOfBenefit"
+    }
+  },
+  "FamilyMemberHistory" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/FamilyMemberHistory"
+    }
+  },
+  "Flag" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Flag"
+    }
+  },
+  "FormularyItem" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "GenomicStudy" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Goal" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Goal"
+    }
+  },
+  "GraphDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Group" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Group"
+    }
+  },
+  "GuidanceResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/GuidanceResponse"
+    }
+  },
+  "HealthcareService" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/HealthcareService"
+    }
+  },
+  "ImagingSelection" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "ImagingStudy" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ImagingStudy"
+    }
+  },
+  "Immunization" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Immunization"
+    }
+  },
+  "ImmunizationEvaluation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ImmunizationEvaluation"
+    }
+  },
+  "ImmunizationRecommendation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ImmunizationRecommendation"
+    }
+  },
+  "ImplementationGuide" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ImplementationGuide"
+    }
+  },
+  "Ingredient" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Ingredient"
+    }
+  },
+  "InsurancePlan" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/InsurancePlan"
+    }
+  },
+  "InventoryItem" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "InventoryReport" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Invoice" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Invoice"
+    }
+  },
+  "Library" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Library"
+    }
+  },
+  "Linkage" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Linkage"
+    }
+  },
+  "List" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/List"
+    }
+  },
+  "Location" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Location"
+    }
+  },
+  "ManufacturedItemDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ManufacturedItemDefinition"
+    }
+  },
+  "Measure" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Measure"
+    }
+  },
+  "MeasureReport" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MeasureReport"
+    }
+  },
+  "Medication" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Medication"
+    }
+  },
+  "MedicationAdministration" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationAdministration"
+    }
+  },
+  "MedicationDispense" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationDispense"
+    }
+  },
+  "MedicationKnowledge" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationKnowledge"
+    }
+  },
+  "MedicationRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationRequest"
+    }
+  },
+  "MedicationStatement" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicationStatement"
+    }
+  },
+  "MedicinalProductDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.0/StructureDefinition/MedicinalProductDefinition"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MedicinalProductDefinition"
+    }
+  },
+  "MessageDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MessageDefinition"
+    }
+  },
+  "MessageHeader" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MessageHeader"
+    }
+  },
+  "MolecularSequence" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/MolecularSequence"
+    }
+  },
+  "NamingSystem" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/NamingSystem"
+    }
+  },
+  "NutritionIntake" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "NutritionOrder" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/NutritionOrder"
+    }
+  },
+  "NutritionProduct" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Observation" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Observation"
+    }
+  },
+  "ObservationDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ObservationDefinition"
+    }
+  },
+  "OperationDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/OperationDefinition"
+    }
+  },
+  "OperationOutcome" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/OperationOutcome"
+    }
+  },
+  "Organization" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Organization"
+    }
+  },
+  "OrganizationAffiliation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/OrganizationAffiliation"
+    }
+  },
+  "PackagedProductDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PackagedProductDefinition"
+    }
+  },
+  "Parameters" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Parameters"
+    }
+  },
+  "Patient" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Patient"
+    }
+  },
+  "PaymentNotice" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PaymentNotice"
+    }
+  },
+  "PaymentReconciliation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PaymentReconciliation"
+    }
+  },
+  "Permission" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Person" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Person"
+    }
+  },
+  "PlanDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PlanDefinition"
+    }
+  },
+  "Practitioner" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Practitioner"
+    }
+  },
+  "PractitionerRole" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/PractitionerRole"
+    }
+  },
+  "Procedure" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Procedure"
+    }
+  },
+  "Provenance" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Provenance"
+    }
+  },
+  "Questionnaire" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Questionnaire"
+    }
+  },
+  "QuestionnaireResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/QuestionnaireResponse"
+    }
+  },
+  "RegulatedAuthorization" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/RegulatedAuthorization"
+    }
+  },
+  "RelatedPerson" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/RelatedPerson"
+    }
+  },
+  "RequestOrchestration" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.0/StructureDefinition/RequestOrchestration"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/RequestOrchestration"
+    }
+  },
+  "Requirements" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "ResearchStudy" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ResearchStudy"
+    }
+  },
+  "ResearchSubject" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ResearchSubject"
+    }
+  },
+  "RiskAssessment" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/RiskAssessment"
+    }
+  },
+  "Schedule" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Schedule"
+    }
+  },
+  "SearchParameter" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SearchParameter"
+    }
+  },
+  "ServiceRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ServiceRequest"
+    }
+  },
+  "Slot" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Slot"
+    }
+  },
+  "Specimen" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Specimen"
+    }
+  },
+  "SpecimenDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SpecimenDefinition"
+    }
+  },
+  "StructureDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/StructureDefinition"
+    }
+  },
+  "StructureMap" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/StructureMap"
+    }
+  },
+  "Subscription" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Subscription"
+    }
+  },
+  "SubscriptionStatus" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionStatus"
+    }
+  },
+  "SubscriptionTopic" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubscriptionTopic"
+    }
+  },
+  "Substance" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Substance"
+    }
+  },
+  "SubstanceDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.0/StructureDefinition/SubstanceDefinition"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceDefinition"
+    }
+  },
+  "SubstanceNucleicAcid" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceNucleicAcid"
+    }
+  },
+  "SubstancePolymer" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstancePolymer"
+    }
+  },
+  "SubstanceProtein" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceProtein"
+    }
+  },
+  "SubstanceReferenceInformation" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceReferenceInformation"
+    }
+  },
+  "SubstanceSourceMaterial" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceSourceMaterial"
+    }
+  },
+  "SupplyDelivery" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SupplyDelivery"
+    }
+  },
+  "SupplyRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SupplyRequest"
+    }
+  },
+  "Task" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/Task"
+    }
+  },
+  "TerminologyCapabilities" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/TerminologyCapabilities"
+    }
+  },
+  "TestPlan" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "TestReport" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/TestReport"
+    }
+  },
+  "TestScript" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/TestScript"
+    }
+  },
+  "Transport" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "ValueSet" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/ValueSet"
+    }
+  },
+  "VerificationResult" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/VerificationResult"
+    }
+  },
+  "VisionPrescription" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/VisionPrescription"
+    }
+  },
+  "Address" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Age" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Annotation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Attachment" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "CodeableConcept" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "CodeableReference" : {
+    "r4" : {
+      "status" : "4 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "6 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Coding" : {
+    "r4" : {
+      "status" : "4 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "4 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ContactPoint" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Count" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Distance" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Duration" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "HumanName" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Identifier" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Money" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Period" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Quantity" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Range" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Ratio" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "RatioRange" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Reference" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "SampledData" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Signature" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Timing" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ContactDetail" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "DataRequirement" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Expression" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ParameterDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "RelatedArtifact" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "TriggerDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "UsageContext" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Availability" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ExtendedContactDetail" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Dosage" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Meta" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Population" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ProductShelfLife" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ElementDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "MarketingStatus" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  }
+}
