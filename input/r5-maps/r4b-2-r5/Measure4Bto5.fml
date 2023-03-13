@@ -2,6 +2,8 @@
 /// name = 'Measure4Bto5'
 /// title = 'FML Conversion for Measure: R4B to R5'
 
+/// status = 'active'
+
 //conceptmap "BasisType" {
 //  prefix s = "http://hl7.org/fhir/4.3/fhir-types"
 //  prefix t = "http://hl7.org/fhir/fhir-types"
