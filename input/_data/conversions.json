@@ -1896,6 +1896,7 @@
     }
   },
   "Address" : {
+    "link" : "conversions-datatypes.html#conv-Address",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -1908,6 +1909,7 @@
     }
   },
   "Age" : {
+    "link" : "conversions-datatypes.html#conv-Age",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -1920,6 +1922,7 @@
     }
   },
   "Annotation" : {
+    "link" : "conversions-datatypes.html#conv-Annotation",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -1932,6 +1935,7 @@
     }
   },
   "Attachment" : {
+    "link" : "conversions-datatypes.html#conv-Attachment",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -1944,6 +1948,7 @@
     }
   },
   "CodeableConcept" : {
+    "link" : "conversions-datatypes.html#conv-CodeableConcept",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -1956,6 +1961,7 @@
     }
   },
   "CodeableReference" : {
+    "link" : "conversions-datatypes.html#conv-CodeableReference",
     "r4" : {
       "status" : "4 Maps Defined",
       "testColor" : "#eeeeee",
@@ -1968,6 +1974,7 @@
     }
   },
   "Coding" : {
+    "link" : "conversions-datatypes.html#conv-Coding",
     "r4" : {
       "status" : "4 Maps Defined",
       "testColor" : "#eeeeee",
@@ -1980,6 +1987,7 @@
     }
   },
   "ContactPoint" : {
+    "link" : "conversions-datatypes.html#conv-ContactPoint",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -1992,6 +2000,7 @@
     }
   },
   "Count" : {
+    "link" : "conversions-datatypes.html#conv-Count",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2004,6 +2013,7 @@
     }
   },
   "Distance" : {
+    "link" : "conversions-datatypes.html#conv-Distance",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2016,6 +2026,7 @@
     }
   },
   "Duration" : {
+    "link" : "conversions-datatypes.html#conv-Duration",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2028,6 +2039,7 @@
     }
   },
   "HumanName" : {
+    "link" : "conversions-datatypes.html#conv-HumanName",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2040,6 +2052,7 @@
     }
   },
   "Identifier" : {
+    "link" : "conversions-datatypes.html#conv-Identifier",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2052,6 +2065,7 @@
     }
   },
   "Money" : {
+    "link" : "conversions-datatypes.html#conv-Money",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2064,6 +2078,7 @@
     }
   },
   "Period" : {
+    "link" : "conversions-datatypes.html#conv-Period",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2076,6 +2091,7 @@
     }
   },
   "Quantity" : {
+    "link" : "conversions-datatypes.html#conv-Quantity",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2088,6 +2104,7 @@
     }
   },
   "Range" : {
+    "link" : "conversions-datatypes.html#conv-Range",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2100,6 +2117,7 @@
     }
   },
   "Ratio" : {
+    "link" : "conversions-datatypes.html#conv-Ratio",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2112,6 +2130,7 @@
     }
   },
   "RatioRange" : {
+    "link" : "conversions-datatypes.html#conv-RatioRange",
     "r4" : {
       "status" : "No Maps Defined",
       "testColor" : "#dddddd",
@@ -2124,6 +2143,7 @@
     }
   },
   "Reference" : {
+    "link" : "conversions-Reference.html#conv-Reference",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2136,6 +2156,7 @@
     }
   },
   "SampledData" : {
+    "link" : "conversions-datatypes.html#conv-SampledData",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2148,6 +2169,7 @@
     }
   },
   "Signature" : {
+    "link" : "conversions-datatypes.html#conv-Signature",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2160,6 +2182,7 @@
     }
   },
   "Timing" : {
+    "link" : "conversions-datatypes.html#conv-Timing",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2172,6 +2195,7 @@
     }
   },
   "ContactDetail" : {
+    "link" : "conversions-metadatatypes.html#conv-ContactDetail",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2184,6 +2208,7 @@
     }
   },
   "DataRequirement" : {
+    "link" : "conversions-metadatatypes.html#conv-DataRequirement",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2196,6 +2221,7 @@
     }
   },
   "Expression" : {
+    "link" : "conversions-metadatatypes.html#conv-Expression",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2208,6 +2234,7 @@
     }
   },
   "ParameterDefinition" : {
+    "link" : "conversions-metadatatypes.html#conv-ParameterDefinition",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2220,6 +2247,7 @@
     }
   },
   "RelatedArtifact" : {
+    "link" : "conversions-metadatatypes.html#conv-RelatedArtifact",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2232,6 +2260,7 @@
     }
   },
   "TriggerDefinition" : {
+    "link" : "conversions-metadatatypes.html#conv-TriggerDefinition",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2244,6 +2273,7 @@
     }
   },
   "UsageContext" : {
+    "link" : "conversions-metadatatypes.html#conv-UsageContext",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2256,6 +2286,7 @@
     }
   },
   "Availability" : {
+    "link" : "conversions-datatypes.html#conv-Availability",
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#eeeeee",
@@ -2268,6 +2299,7 @@
     }
   },
   "ExtendedContactDetail" : {
+    "link" : "conversions-metadatatypes.html#conv-ExtendedContactDetail",
     "r4" : {
       "status" : "No Maps Defined",
       "testColor" : "#dddddd",
@@ -2280,6 +2312,7 @@
     }
   },
   "Dosage" : {
+    "link" : "conversions-datatypes.html#conv-Dosage",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2292,6 +2325,7 @@
     }
   },
   "Meta" : {
+    "link" : "conversions-datatypes.html#conv-Meta",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2304,6 +2338,7 @@
     }
   },
   "Population" : {
+    "link" : "conversions-Population.html#conv-Population",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2316,6 +2351,7 @@
     }
   },
   "ProductShelfLife" : {
+    "link" : "conversions-ProductShelfLife.html#conv-ProductShelfLife",
     "r4" : {
       "status" : "2 Maps Defined (draft)",
       "testColor" : "#eeeeee",
@@ -2328,6 +2364,7 @@
     }
   },
   "ElementDefinition" : {
+    "link" : "conversions-ElementDefinition.html#conv-ElementDefinition",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2340,6 +2377,7 @@
     }
   },
   "MarketingStatus" : {
+    "link" : "conversions-MarketingStatus.html#conv-MarketingStatus",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
