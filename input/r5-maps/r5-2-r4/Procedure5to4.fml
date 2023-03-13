@@ -2,6 +2,8 @@
 /// name = 'Procedure5to4'
 /// title = 'FML Conversion for Procedure: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "ProcedureStatus" {
   prefix s = "http://hl7.org/fhir/event-status"
   prefix t = "http://hl7.org/fhir/4.0/event-status"
@@ -32,21 +34,22 @@ group Procedure(source src : ProcedureR5, target tgt : ProcedureR4) extends Doma
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.subject -> tgt.subject;
-  src.focus -> tgt.focus;
+//  src.focus -> tgt.focus;
   src.encounter -> tgt.encounter;
-  src.occurrence : dateTime -> tgt.occurrence;
-  src.occurrence : Period -> tgt.occurrence;
-  src.occurrence : string -> tgt.occurrence;
-  src.occurrence : Age -> tgt.occurrence;
-  src.occurrence : Range -> tgt.occurrence;
-  src.occurrence : Timing -> tgt.occurrence;
-  src.recorded -> tgt.recorded;
+  src.occurrence : dateTime -> tgt.performed;
+  src.occurrence : Period -> tgt.performed;
+  src.occurrence : string -> tgt.performed;
+  src.occurrence : Age -> tgt.performed;
+  src.occurrence : Range -> tgt.performed;
+//  src.occurrence : Timing -> tgt.occurrence;
+//  src.recorded -> tgt.recorded;
   src.recorder -> tgt.recorder;
-  src.reported : boolean -> tgt.reported;
-  src.reported : Reference -> tgt.reported;
+//  src.reported : boolean -> tgt.reported;
+//  src.reported : Reference -> tgt.reported;
   src.performer as s -> tgt.performer as t then ProcedurePerformer(s,t);
   src.location -> tgt.location;
-  src.reason -> tgt.reason;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
   src.bodySite -> tgt.bodySite;
   src.outcome -> tgt.outcome;
   src.report -> tgt.report;
@@ -54,15 +57,16 @@ group Procedure(source src : ProcedureR5, target tgt : ProcedureR4) extends Doma
   src.followUp -> tgt.followUp;
   src.note -> tgt.note;
   src.focalDevice as s -> tgt.focalDevice as t then ProcedureFocalDevice(s,t);
-  src.used -> tgt.used;
-  src.supportingInfo -> tgt.supportingInfo;
+  src.used -> tgt.usedCode;
+  src.used -> tgt.usedReference;
+//  src.supportingInfo -> tgt.supportingInfo;
 }
 
 group ProcedurePerformer(source src, target tgt) extends BackboneElement {
   src.function -> tgt.function;
   src.actor -> tgt.actor;
   src.onBehalfOf -> tgt.onBehalfOf;
-  src.period -> tgt.period;
+//  src.period -> tgt.period;
 }
 
 group ProcedureFocalDevice(source src, target tgt) extends BackboneElement {
