@@ -64,10 +64,10 @@
         <generation value="html"/>
       </page>
       <page>
-        <sourceUrl value="conversion-registry.html"/>
+        <sourceUrl value="conversion-registry.xml"/>
         <name value="conversion-registry.html"/>
         <title value="R4/R5 Conversion Registry"/>
-        <generation value="markdown"/>
+        <generation value="html"/>
         <page>
           <sourceUrl value="conversions-types.html"/>
           <name value="conversions-types.html"/>
@@ -142,6 +142,14 @@
       <value value="input/definitions/*"/>
     </parameter>
 
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-data"/>
+      </code>
+      <value value="input/_data"/>
+    </parameter>
+
 
     <parameter>
       <code>
@@ -179,6 +187,13 @@
         <code value="page-factory"/>
       </code>
       <value value="input/structuremap-type-factory.json"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="page-factory"/>
+      </code>
+      <value value="input/structuremap-resource-factory.json"/>
     </parameter>
     
     <parameter>

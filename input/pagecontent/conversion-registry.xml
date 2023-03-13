@@ -1,0 +1,1475 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
+
+<p>
+This specification provides transforms between R4 and R5 for most resources
+that were in R4. These transforms are expressed using the 
+<a href="mapping-language.html">FHIR Mapping Language</a>, and serve as
+formal documentation of the relationship between the resource structures in R4 and R5, 
+and can also be used to convert between the formats automatically. 
+</p>
+<p>
+The following table summarizes the state of the R5:R5 maps for each resource type, along with 
+the data types.
+</p>
+<table class="grid">
+  <tr style="background-color: #eeeeee">
+    <th>Resource</th>
+    <th>R4 Status</th>
+    <th>R4 Tests</th>
+    <th>R4B Status</th>
+    <th>R4B Tests</th>
+  </tr>
+  <tr>
+    <td><a href="conversions-Account.html">Account</a></td>
+    <td>{{site.data.conversions.Account.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Account.r4.testColor}}">{{site.data.conversions.Account.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Account.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Account.r4b.testColor}}">{{site.data.conversions.Account.r4b.testMessage}}</td>    
+  </tr>  
+  <tr>
+    <td><a href="conversions-ActivityDefinition.html">ActivityDefinition</a></td>
+    <td>{{site.data.conversions.ActivityDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ActivityDefinition.r4.testColor}}">{{site.data.conversions.ActivityDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ActivityDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ActivityDefinition.r4b.testColor}}">{{site.data.conversions.ActivityDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ActorDefinition.html">ActorDefinition</a></td>
+    <td>{{site.data.conversions.ActorDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ActorDefinition.r4.testColor}}">{{site.data.conversions.ActorDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ActorDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ActorDefinition.r4b.testColor}}">{{site.data.conversions.ActorDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-AdministrableProductDefinition.html">AdministrableProductDefinition</a></td>
+    <td>{{site.data.conversions.AdministrableProductDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.AdministrableProductDefinition.r4.testColor}}">{{site.data.conversions.AdministrableProductDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.AdministrableProductDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.AdministrableProductDefinition.r4b.testColor}}">{{site.data.conversions.AdministrableProductDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-AdverseEvent.html">AdverseEvent</a></td>
+    <td>{{site.data.conversions.AdverseEvent.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.AdverseEvent.r4.testColor}}">{{site.data.conversions.AdverseEvent.r4.testMessage}}</td>
+    <td>{{site.data.conversions.AdverseEvent.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.AdverseEvent.r4b.testColor}}">{{site.data.conversions.AdverseEvent.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-AllergyIntolerance.html">AllergyIntolerance</a></td>
+    <td>{{site.data.conversions.AllergyIntolerance.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.AllergyIntolerance.r4.testColor}}">{{site.data.conversions.AllergyIntolerance.r4.testMessage}}</td>
+    <td>{{site.data.conversions.AllergyIntolerance.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.AllergyIntolerance.r4b.testColor}}">{{site.data.conversions.AllergyIntolerance.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Appointment.html">Appointment</a></td>
+    <td>{{site.data.conversions.Appointment.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Appointment.r4.testColor}}">{{site.data.conversions.Appointment.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Appointment.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Appointment.r4b.testColor}}">{{site.data.conversions.Appointment.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-AppointmentResponse.html">AppointmentResponse</a></td>
+    <td>{{site.data.conversions.AppointmentResponse.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.AppointmentResponse.r4.testColor}}">{{site.data.conversions.AppointmentResponse.r4.testMessage}}</td>
+    <td>{{site.data.conversions.AppointmentResponse.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.AppointmentResponse.r4b.testColor}}">{{site.data.conversions.AppointmentResponse.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ArtifactAssessment.html">ArtifactAssessment</a></td>
+    <td>{{site.data.conversions.ArtifactAssessment.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ArtifactAssessment.r4.testColor}}">{{site.data.conversions.ArtifactAssessment.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ArtifactAssessment.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ArtifactAssessment.r4b.testColor}}">{{site.data.conversions.ArtifactAssessment.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-AuditEvent.html">AuditEvent</a></td>
+    <td>{{site.data.conversions.AuditEvent.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.AuditEvent.r4.testColor}}">{{site.data.conversions.AuditEvent.r4.testMessage}}</td>
+    <td>{{site.data.conversions.AuditEvent.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.AuditEvent.r4b.testColor}}">{{site.data.conversions.AuditEvent.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Basic.html">Basic</a></td>
+    <td>{{site.data.conversions.Basic.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Basic.r4.testColor}}">{{site.data.conversions.Basic.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Basic.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Basic.r4b.testColor}}">{{site.data.conversions.Basic.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Binary.html">Binary</a></td>
+    <td>{{site.data.conversions.Binary.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Binary.r4.testColor}}">{{site.data.conversions.Binary.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Binary.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Binary.r4b.testColor}}">{{site.data.conversions.Binary.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-BiologicallyDerivedProduct.html">BiologicallyDerivedProduct</a></td>
+    <td>{{site.data.conversions.BiologicallyDerivedProduct.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.BiologicallyDerivedProduct.r4.testColor}}">{{site.data.conversions.BiologicallyDerivedProduct.r4.testMessage}}</td>
+    <td>{{site.data.conversions.BiologicallyDerivedProduct.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.BiologicallyDerivedProduct.r4b.testColor}}">{{site.data.conversions.BiologicallyDerivedProduct.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-BiologicallyDerivedProductDispense.html">BiologicallyDerivedProductDispense</a></td>
+    <td>{{site.data.conversions.BiologicallyDerivedProductDispense.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.BiologicallyDerivedProductDispense.r4.testColor}}">{{site.data.conversions.BiologicallyDerivedProductDispense.r4.testMessage}}</td>
+    <td>{{site.data.conversions.BiologicallyDerivedProductDispense.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.BiologicallyDerivedProductDispense.r4b.testColor}}">{{site.data.conversions.BiologicallyDerivedProductDispense.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-BodyStructure.html">BodyStructure</a></td>
+    <td>{{site.data.conversions.BodyStructure.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.BodyStructure.r4.testColor}}">{{site.data.conversions.BodyStructure.r4.testMessage}}</td>
+    <td>{{site.data.conversions.BodyStructure.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.BodyStructure.r4b.testColor}}">{{site.data.conversions.BodyStructure.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Bundle.html">Bundle</a></td>
+    <td>{{site.data.conversions.Bundle.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Bundle.r4.testColor}}">{{site.data.conversions.Bundle.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Bundle.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Bundle.r4b.testColor}}">{{site.data.conversions.Bundle.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CapabilityStatement.html">CapabilityStatement</a></td>
+    <td>{{site.data.conversions.CapabilityStatement.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CapabilityStatement.r4.testColor}}">{{site.data.conversions.CapabilityStatement.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CapabilityStatement.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CapabilityStatement.r4b.testColor}}">{{site.data.conversions.CapabilityStatement.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CarePlan.html">CarePlan</a></td>
+    <td>{{site.data.conversions.CarePlan.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CarePlan.r4.testColor}}">{{site.data.conversions.CarePlan.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CarePlan.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CarePlan.r4b.testColor}}">{{site.data.conversions.CarePlan.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CareTeam.html">CareTeam</a></td>
+    <td>{{site.data.conversions.CareTeam.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CareTeam.r4.testColor}}">{{site.data.conversions.CareTeam.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CareTeam.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CareTeam.r4b.testColor}}">{{site.data.conversions.CareTeam.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ChargeItem.html">ChargeItem</a></td>
+    <td>{{site.data.conversions.ChargeItem.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ChargeItem.r4.testColor}}">{{site.data.conversions.ChargeItem.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ChargeItem.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ChargeItem.r4b.testColor}}">{{site.data.conversions.ChargeItem.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ChargeItemDefinition.html">ChargeItemDefinition</a></td>
+    <td>{{site.data.conversions.ChargeItemDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ChargeItemDefinition.r4.testColor}}">{{site.data.conversions.ChargeItemDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ChargeItemDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ChargeItemDefinition.r4b.testColor}}">{{site.data.conversions.ChargeItemDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Citation.html">Citation</a></td>
+    <td>{{site.data.conversions.Citation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Citation.r4.testColor}}">{{site.data.conversions.Citation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Citation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Citation.r4b.testColor}}">{{site.data.conversions.Citation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Claim.html">Claim</a></td>
+    <td>{{site.data.conversions.Claim.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Claim.r4.testColor}}">{{site.data.conversions.Claim.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Claim.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Claim.r4b.testColor}}">{{site.data.conversions.Claim.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ClaimResponse.html">ClaimResponse</a></td>
+    <td>{{site.data.conversions.ClaimResponse.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ClaimResponse.r4.testColor}}">{{site.data.conversions.ClaimResponse.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ClaimResponse.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ClaimResponse.r4b.testColor}}">{{site.data.conversions.ClaimResponse.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ClinicalImpression.html">ClinicalImpression</a></td>
+    <td>{{site.data.conversions.ClinicalImpression.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ClinicalImpression.r4.testColor}}">{{site.data.conversions.ClinicalImpression.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ClinicalImpression.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ClinicalImpression.r4b.testColor}}">{{site.data.conversions.ClinicalImpression.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ClinicalUseDefinition.html">ClinicalUseDefinition</a></td>
+    <td>{{site.data.conversions.ClinicalUseDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ClinicalUseDefinition.r4.testColor}}">{{site.data.conversions.ClinicalUseDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ClinicalUseDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ClinicalUseDefinition.r4b.testColor}}">{{site.data.conversions.ClinicalUseDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CodeSystem.html">CodeSystem</a></td>
+    <td>{{site.data.conversions.CodeSystem.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CodeSystem.r4.testColor}}">{{site.data.conversions.CodeSystem.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CodeSystem.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CodeSystem.r4b.testColor}}">{{site.data.conversions.CodeSystem.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Communication.html">Communication</a></td>
+    <td>{{site.data.conversions.Communication.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Communication.r4.testColor}}">{{site.data.conversions.Communication.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Communication.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Communication.r4b.testColor}}">{{site.data.conversions.Communication.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CommunicationRequest.html">CommunicationRequest</a></td>
+    <td>{{site.data.conversions.CommunicationRequest.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CommunicationRequest.r4.testColor}}">{{site.data.conversions.CommunicationRequest.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CommunicationRequest.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CommunicationRequest.r4b.testColor}}">{{site.data.conversions.CommunicationRequest.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CompartmentDefinition.html">CompartmentDefinition</a></td>
+    <td>{{site.data.conversions.CompartmentDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CompartmentDefinition.r4.testColor}}">{{site.data.conversions.CompartmentDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CompartmentDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CompartmentDefinition.r4b.testColor}}">{{site.data.conversions.CompartmentDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Composition.html">Composition</a></td>
+    <td>{{site.data.conversions.Composition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Composition.r4.testColor}}">{{site.data.conversions.Composition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Composition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Composition.r4b.testColor}}">{{site.data.conversions.Composition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ConceptMap.html">ConceptMap</a></td>
+    <td>{{site.data.conversions.ConceptMap.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ConceptMap.r4.testColor}}">{{site.data.conversions.ConceptMap.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ConceptMap.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ConceptMap.r4b.testColor}}">{{site.data.conversions.ConceptMap.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Condition.html">Condition</a></td>
+    <td>{{site.data.conversions.Condition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Condition.r4.testColor}}">{{site.data.conversions.Condition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Condition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Condition.r4b.testColor}}">{{site.data.conversions.Condition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ConditionDefinition.html">ConditionDefinition</a></td>
+    <td>{{site.data.conversions.ConditionDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ConditionDefinition.r4.testColor}}">{{site.data.conversions.ConditionDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ConditionDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ConditionDefinition.r4b.testColor}}">{{site.data.conversions.ConditionDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Consent.html">Consent</a></td>
+    <td>{{site.data.conversions.Consent.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Consent.r4.testColor}}">{{site.data.conversions.Consent.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Consent.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Consent.r4b.testColor}}">{{site.data.conversions.Consent.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Contract.html">Contract</a></td>
+    <td>{{site.data.conversions.Contract.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Contract.r4.testColor}}">{{site.data.conversions.Contract.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Contract.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Contract.r4b.testColor}}">{{site.data.conversions.Contract.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Coverage.html">Coverage</a></td>
+    <td>{{site.data.conversions.Coverage.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Coverage.r4.testColor}}">{{site.data.conversions.Coverage.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Coverage.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Coverage.r4b.testColor}}">{{site.data.conversions.Coverage.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CoverageEligibilityRequest.html">CoverageEligibilityRequest</a></td>
+    <td>{{site.data.conversions.CoverageEligibilityRequest.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CoverageEligibilityRequest.r4.testColor}}">{{site.data.conversions.CoverageEligibilityRequest.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CoverageEligibilityRequest.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CoverageEligibilityRequest.r4b.testColor}}">{{site.data.conversions.CoverageEligibilityRequest.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CoverageEligibilityResponse.html">CoverageEligibilityResponse</a></td>
+    <td>{{site.data.conversions.CoverageEligibilityResponse.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CoverageEligibilityResponse.r4.testColor}}">{{site.data.conversions.CoverageEligibilityResponse.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CoverageEligibilityResponse.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CoverageEligibilityResponse.r4b.testColor}}">{{site.data.conversions.CoverageEligibilityResponse.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DetectedIssue.html">DetectedIssue</a></td>
+    <td>{{site.data.conversions.DetectedIssue.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DetectedIssue.r4.testColor}}">{{site.data.conversions.DetectedIssue.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DetectedIssue.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DetectedIssue.r4b.testColor}}">{{site.data.conversions.DetectedIssue.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Device.html">Device</a></td>
+    <td>{{site.data.conversions.Device.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Device.r4.testColor}}">{{site.data.conversions.Device.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Device.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Device.r4b.testColor}}">{{site.data.conversions.Device.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DeviceAssociation.html">DeviceAssociation</a></td>
+    <td>{{site.data.conversions.DeviceAssociation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceAssociation.r4.testColor}}">{{site.data.conversions.DeviceAssociation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DeviceAssociation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceAssociation.r4b.testColor}}">{{site.data.conversions.DeviceAssociation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DeviceDefinition.html">DeviceDefinition</a></td>
+    <td>{{site.data.conversions.DeviceDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceDefinition.r4.testColor}}">{{site.data.conversions.DeviceDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DeviceDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceDefinition.r4b.testColor}}">{{site.data.conversions.DeviceDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DeviceDispense.html">DeviceDispense</a></td>
+    <td>{{site.data.conversions.DeviceDispense.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceDispense.r4.testColor}}">{{site.data.conversions.DeviceDispense.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DeviceDispense.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceDispense.r4b.testColor}}">{{site.data.conversions.DeviceDispense.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DeviceMetric.html">DeviceMetric</a></td>
+    <td>{{site.data.conversions.DeviceMetric.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceMetric.r4.testColor}}">{{site.data.conversions.DeviceMetric.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DeviceMetric.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceMetric.r4b.testColor}}">{{site.data.conversions.DeviceMetric.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DeviceRequest.html">DeviceRequest</a></td>
+    <td>{{site.data.conversions.DeviceRequest.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceRequest.r4.testColor}}">{{site.data.conversions.DeviceRequest.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DeviceRequest.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceRequest.r4b.testColor}}">{{site.data.conversions.DeviceRequest.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DeviceUsage.html">DeviceUsage</a></td>
+    <td>{{site.data.conversions.DeviceUsage.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceUsage.r4.testColor}}">{{site.data.conversions.DeviceUsage.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DeviceUsage.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DeviceUsage.r4b.testColor}}">{{site.data.conversions.DeviceUsage.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DiagnosticReport.html">DiagnosticReport</a></td>
+    <td>{{site.data.conversions.DiagnosticReport.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DiagnosticReport.r4.testColor}}">{{site.data.conversions.DiagnosticReport.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DiagnosticReport.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DiagnosticReport.r4b.testColor}}">{{site.data.conversions.DiagnosticReport.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DocumentReference.html">DocumentReference</a></td>
+    <td>{{site.data.conversions.DocumentReference.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DocumentReference.r4.testColor}}">{{site.data.conversions.DocumentReference.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DocumentReference.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DocumentReference.r4b.testColor}}">{{site.data.conversions.DocumentReference.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Encounter.html">Encounter</a></td>
+    <td>{{site.data.conversions.Encounter.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Encounter.r4.testColor}}">{{site.data.conversions.Encounter.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Encounter.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Encounter.r4b.testColor}}">{{site.data.conversions.Encounter.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-EncounterHistory.html">EncounterHistory</a></td>
+    <td>{{site.data.conversions.EncounterHistory.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.EncounterHistory.r4.testColor}}">{{site.data.conversions.EncounterHistory.r4.testMessage}}</td>
+    <td>{{site.data.conversions.EncounterHistory.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.EncounterHistory.r4b.testColor}}">{{site.data.conversions.EncounterHistory.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Endpoint.html">Endpoint</a></td>
+    <td>{{site.data.conversions.Endpoint.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Endpoint.r4.testColor}}">{{site.data.conversions.Endpoint.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Endpoint.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Endpoint.r4b.testColor}}">{{site.data.conversions.Endpoint.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-EnrollmentRequest.html">EnrollmentRequest</a></td>
+    <td>{{site.data.conversions.EnrollmentRequest.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.EnrollmentRequest.r4.testColor}}">{{site.data.conversions.EnrollmentRequest.r4.testMessage}}</td>
+    <td>{{site.data.conversions.EnrollmentRequest.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.EnrollmentRequest.r4b.testColor}}">{{site.data.conversions.EnrollmentRequest.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-EnrollmentResponse.html">EnrollmentResponse</a></td>
+    <td>{{site.data.conversions.EnrollmentResponse.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.EnrollmentResponse.r4.testColor}}">{{site.data.conversions.EnrollmentResponse.r4.testMessage}}</td>
+    <td>{{site.data.conversions.EnrollmentResponse.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.EnrollmentResponse.r4b.testColor}}">{{site.data.conversions.EnrollmentResponse.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-EpisodeOfCare.html">EpisodeOfCare</a></td>
+    <td>{{site.data.conversions.EpisodeOfCare.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.EpisodeOfCare.r4.testColor}}">{{site.data.conversions.EpisodeOfCare.r4.testMessage}}</td>
+    <td>{{site.data.conversions.EpisodeOfCare.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.EpisodeOfCare.r4b.testColor}}">{{site.data.conversions.EpisodeOfCare.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-EventDefinition.html">EventDefinition</a></td>
+    <td>{{site.data.conversions.EventDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.EventDefinition.r4.testColor}}">{{site.data.conversions.EventDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.EventDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.EventDefinition.r4b.testColor}}">{{site.data.conversions.EventDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Evidence.html">Evidence</a></td>
+    <td>{{site.data.conversions.Evidence.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Evidence.r4.testColor}}">{{site.data.conversions.Evidence.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Evidence.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Evidence.r4b.testColor}}">{{site.data.conversions.Evidence.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-EvidenceReport.html">EvidenceReport</a></td>
+    <td>{{site.data.conversions.EvidenceReport.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.EvidenceReport.r4.testColor}}">{{site.data.conversions.EvidenceReport.r4.testMessage}}</td>
+    <td>{{site.data.conversions.EvidenceReport.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.EvidenceReport.r4b.testColor}}">{{site.data.conversions.EvidenceReport.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-EvidenceVariable.html">EvidenceVariable</a></td>
+    <td>{{site.data.conversions.EvidenceVariable.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.EvidenceVariable.r4.testColor}}">{{site.data.conversions.EvidenceVariable.r4.testMessage}}</td>
+    <td>{{site.data.conversions.EvidenceVariable.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.EvidenceVariable.r4b.testColor}}">{{site.data.conversions.EvidenceVariable.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ExampleScenario.html">ExampleScenario</a></td>
+    <td>{{site.data.conversions.ExampleScenario.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ExampleScenario.r4.testColor}}">{{site.data.conversions.ExampleScenario.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ExampleScenario.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ExampleScenario.r4b.testColor}}">{{site.data.conversions.ExampleScenario.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ExplanationOfBenefit.html">ExplanationOfBenefit</a></td>
+    <td>{{site.data.conversions.ExplanationOfBenefit.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ExplanationOfBenefit.r4.testColor}}">{{site.data.conversions.ExplanationOfBenefit.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ExplanationOfBenefit.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ExplanationOfBenefit.r4b.testColor}}">{{site.data.conversions.ExplanationOfBenefit.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-FamilyMemberHistory.html">FamilyMemberHistory</a></td>
+    <td>{{site.data.conversions.FamilyMemberHistory.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.FamilyMemberHistory.r4.testColor}}">{{site.data.conversions.FamilyMemberHistory.r4.testMessage}}</td>
+    <td>{{site.data.conversions.FamilyMemberHistory.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.FamilyMemberHistory.r4b.testColor}}">{{site.data.conversions.FamilyMemberHistory.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Flag.html">Flag</a></td>
+    <td>{{site.data.conversions.Flag.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Flag.r4.testColor}}">{{site.data.conversions.Flag.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Flag.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Flag.r4b.testColor}}">{{site.data.conversions.Flag.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-FormularyItem.html">FormularyItem</a></td>
+    <td>{{site.data.conversions.FormularyItem.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.FormularyItem.r4.testColor}}">{{site.data.conversions.FormularyItem.r4.testMessage}}</td>
+    <td>{{site.data.conversions.FormularyItem.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.FormularyItem.r4b.testColor}}">{{site.data.conversions.FormularyItem.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-GenomicStudy.html">GenomicStudy</a></td>
+    <td>{{site.data.conversions.GenomicStudy.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.GenomicStudy.r4.testColor}}">{{site.data.conversions.GenomicStudy.r4.testMessage}}</td>
+    <td>{{site.data.conversions.GenomicStudy.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.GenomicStudy.r4b.testColor}}">{{site.data.conversions.GenomicStudy.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Goal.html">Goal</a></td>
+    <td>{{site.data.conversions.Goal.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Goal.r4.testColor}}">{{site.data.conversions.Goal.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Goal.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Goal.r4b.testColor}}">{{site.data.conversions.Goal.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-GraphDefinition.html">GraphDefinition</a></td>
+    <td>{{site.data.conversions.GraphDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.GraphDefinition.r4.testColor}}">{{site.data.conversions.GraphDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.GraphDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.GraphDefinition.r4b.testColor}}">{{site.data.conversions.GraphDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Group.html">Group</a></td>
+    <td>{{site.data.conversions.Group.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Group.r4.testColor}}">{{site.data.conversions.Group.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Group.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Group.r4b.testColor}}">{{site.data.conversions.Group.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-GuidanceResponse.html">GuidanceResponse</a></td>
+    <td>{{site.data.conversions.GuidanceResponse.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.GuidanceResponse.r4.testColor}}">{{site.data.conversions.GuidanceResponse.r4.testMessage}}</td>
+    <td>{{site.data.conversions.GuidanceResponse.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.GuidanceResponse.r4b.testColor}}">{{site.data.conversions.GuidanceResponse.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-HealthcareService.html">HealthcareService</a></td>
+    <td>{{site.data.conversions.HealthcareService.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.HealthcareService.r4.testColor}}">{{site.data.conversions.HealthcareService.r4.testMessage}}</td>
+    <td>{{site.data.conversions.HealthcareService.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.HealthcareService.r4b.testColor}}">{{site.data.conversions.HealthcareService.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ImagingSelection.html">ImagingSelection</a></td>
+    <td>{{site.data.conversions.ImagingSelection.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImagingSelection.r4.testColor}}">{{site.data.conversions.ImagingSelection.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ImagingSelection.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImagingSelection.r4b.testColor}}">{{site.data.conversions.ImagingSelection.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ImagingStudy.html">ImagingStudy</a></td>
+    <td>{{site.data.conversions.ImagingStudy.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImagingStudy.r4.testColor}}">{{site.data.conversions.ImagingStudy.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ImagingStudy.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImagingStudy.r4b.testColor}}">{{site.data.conversions.ImagingStudy.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Immunization.html">Immunization</a></td>
+    <td>{{site.data.conversions.Immunization.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Immunization.r4.testColor}}">{{site.data.conversions.Immunization.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Immunization.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Immunization.r4b.testColor}}">{{site.data.conversions.Immunization.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ImmunizationEvaluation.html">ImmunizationEvaluation</a></td>
+    <td>{{site.data.conversions.ImmunizationEvaluation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImmunizationEvaluation.r4.testColor}}">{{site.data.conversions.ImmunizationEvaluation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ImmunizationEvaluation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImmunizationEvaluation.r4b.testColor}}">{{site.data.conversions.ImmunizationEvaluation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ImmunizationRecommendation.html">ImmunizationRecommendation</a></td>
+    <td>{{site.data.conversions.ImmunizationRecommendation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImmunizationRecommendation.r4.testColor}}">{{site.data.conversions.ImmunizationRecommendation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ImmunizationRecommendation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImmunizationRecommendation.r4b.testColor}}">{{site.data.conversions.ImmunizationRecommendation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ImplementationGuide.html">ImplementationGuide</a></td>
+    <td>{{site.data.conversions.ImplementationGuide.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImplementationGuide.r4.testColor}}">{{site.data.conversions.ImplementationGuide.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ImplementationGuide.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ImplementationGuide.r4b.testColor}}">{{site.data.conversions.ImplementationGuide.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Ingredient.html">Ingredient</a></td>
+    <td>{{site.data.conversions.Ingredient.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Ingredient.r4.testColor}}">{{site.data.conversions.Ingredient.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Ingredient.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Ingredient.r4b.testColor}}">{{site.data.conversions.Ingredient.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-InsurancePlan.html">InsurancePlan</a></td>
+    <td>{{site.data.conversions.InsurancePlan.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.InsurancePlan.r4.testColor}}">{{site.data.conversions.InsurancePlan.r4.testMessage}}</td>
+    <td>{{site.data.conversions.InsurancePlan.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.InsurancePlan.r4b.testColor}}">{{site.data.conversions.InsurancePlan.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-InventoryItem.html">InventoryItem</a></td>
+    <td>{{site.data.conversions.InventoryItem.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.InventoryItem.r4.testColor}}">{{site.data.conversions.InventoryItem.r4.testMessage}}</td>
+    <td>{{site.data.conversions.InventoryItem.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.InventoryItem.r4b.testColor}}">{{site.data.conversions.InventoryItem.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-InventoryReport.html">InventoryReport</a></td>
+    <td>{{site.data.conversions.InventoryReport.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.InventoryReport.r4.testColor}}">{{site.data.conversions.InventoryReport.r4.testMessage}}</td>
+    <td>{{site.data.conversions.InventoryReport.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.InventoryReport.r4b.testColor}}">{{site.data.conversions.InventoryReport.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Invoice.html">Invoice</a></td>
+    <td>{{site.data.conversions.Invoice.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Invoice.r4.testColor}}">{{site.data.conversions.Invoice.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Invoice.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Invoice.r4b.testColor}}">{{site.data.conversions.Invoice.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Library.html">Library</a></td>
+    <td>{{site.data.conversions.Library.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Library.r4.testColor}}">{{site.data.conversions.Library.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Library.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Library.r4b.testColor}}">{{site.data.conversions.Library.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Linkage.html">Linkage</a></td>
+    <td>{{site.data.conversions.Linkage.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Linkage.r4.testColor}}">{{site.data.conversions.Linkage.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Linkage.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Linkage.r4b.testColor}}">{{site.data.conversions.Linkage.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-List.html">List</a></td>
+    <td>{{site.data.conversions.List.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.List.r4.testColor}}">{{site.data.conversions.List.r4.testMessage}}</td>
+    <td>{{site.data.conversions.List.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.List.r4b.testColor}}">{{site.data.conversions.List.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Location.html">Location</a></td>
+    <td>{{site.data.conversions.Location.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Location.r4.testColor}}">{{site.data.conversions.Location.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Location.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Location.r4b.testColor}}">{{site.data.conversions.Location.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ManufacturedItemDefinition.html">ManufacturedItemDefinition</a></td>
+    <td>{{site.data.conversions.ManufacturedItemDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ManufacturedItemDefinition.r4.testColor}}">{{site.data.conversions.ManufacturedItemDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ManufacturedItemDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ManufacturedItemDefinition.r4b.testColor}}">{{site.data.conversions.ManufacturedItemDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Measure.html">Measure</a></td>
+    <td>{{site.data.conversions.Measure.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Measure.r4.testColor}}">{{site.data.conversions.Measure.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Measure.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Measure.r4b.testColor}}">{{site.data.conversions.Measure.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MeasureReport.html">MeasureReport</a></td>
+    <td>{{site.data.conversions.MeasureReport.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MeasureReport.r4.testColor}}">{{site.data.conversions.MeasureReport.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MeasureReport.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MeasureReport.r4b.testColor}}">{{site.data.conversions.MeasureReport.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Medication.html">Medication</a></td>
+    <td>{{site.data.conversions.Medication.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Medication.r4.testColor}}">{{site.data.conversions.Medication.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Medication.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Medication.r4b.testColor}}">{{site.data.conversions.Medication.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MedicationAdministration.html">MedicationAdministration</a></td>
+    <td>{{site.data.conversions.MedicationAdministration.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationAdministration.r4.testColor}}">{{site.data.conversions.MedicationAdministration.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MedicationAdministration.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationAdministration.r4b.testColor}}">{{site.data.conversions.MedicationAdministration.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MedicationDispense.html">MedicationDispense</a></td>
+    <td>{{site.data.conversions.MedicationDispense.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationDispense.r4.testColor}}">{{site.data.conversions.MedicationDispense.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MedicationDispense.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationDispense.r4b.testColor}}">{{site.data.conversions.MedicationDispense.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MedicationKnowledge.html">MedicationKnowledge</a></td>
+    <td>{{site.data.conversions.MedicationKnowledge.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationKnowledge.r4.testColor}}">{{site.data.conversions.MedicationKnowledge.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MedicationKnowledge.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationKnowledge.r4b.testColor}}">{{site.data.conversions.MedicationKnowledge.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MedicationRequest.html">MedicationRequest</a></td>
+    <td>{{site.data.conversions.MedicationRequest.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationRequest.r4.testColor}}">{{site.data.conversions.MedicationRequest.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MedicationRequest.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationRequest.r4b.testColor}}">{{site.data.conversions.MedicationRequest.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MedicationStatement.html">MedicationStatement</a></td>
+    <td>{{site.data.conversions.MedicationStatement.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationStatement.r4.testColor}}">{{site.data.conversions.MedicationStatement.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MedicationStatement.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicationStatement.r4b.testColor}}">{{site.data.conversions.MedicationStatement.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MedicinalProductDefinition.html">MedicinalProductDefinition</a></td>
+    <td>{{site.data.conversions.MedicinalProductDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicinalProductDefinition.r4.testColor}}">{{site.data.conversions.MedicinalProductDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MedicinalProductDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MedicinalProductDefinition.r4b.testColor}}">{{site.data.conversions.MedicinalProductDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MessageDefinition.html">MessageDefinition</a></td>
+    <td>{{site.data.conversions.MessageDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MessageDefinition.r4.testColor}}">{{site.data.conversions.MessageDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MessageDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MessageDefinition.r4b.testColor}}">{{site.data.conversions.MessageDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MessageHeader.html">MessageHeader</a></td>
+    <td>{{site.data.conversions.MessageHeader.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MessageHeader.r4.testColor}}">{{site.data.conversions.MessageHeader.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MessageHeader.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MessageHeader.r4b.testColor}}">{{site.data.conversions.MessageHeader.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MolecularSequence.html">MolecularSequence</a></td>
+    <td>{{site.data.conversions.MolecularSequence.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MolecularSequence.r4.testColor}}">{{site.data.conversions.MolecularSequence.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MolecularSequence.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MolecularSequence.r4b.testColor}}">{{site.data.conversions.MolecularSequence.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-NamingSystem.html">NamingSystem</a></td>
+    <td>{{site.data.conversions.NamingSystem.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.NamingSystem.r4.testColor}}">{{site.data.conversions.NamingSystem.r4.testMessage}}</td>
+    <td>{{site.data.conversions.NamingSystem.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.NamingSystem.r4b.testColor}}">{{site.data.conversions.NamingSystem.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-NutritionIntake.html">NutritionIntake</a></td>
+    <td>{{site.data.conversions.NutritionIntake.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.NutritionIntake.r4.testColor}}">{{site.data.conversions.NutritionIntake.r4.testMessage}}</td>
+    <td>{{site.data.conversions.NutritionIntake.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.NutritionIntake.r4b.testColor}}">{{site.data.conversions.NutritionIntake.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-NutritionOrder.html">NutritionOrder</a></td>
+    <td>{{site.data.conversions.NutritionOrder.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.NutritionOrder.r4.testColor}}">{{site.data.conversions.NutritionOrder.r4.testMessage}}</td>
+    <td>{{site.data.conversions.NutritionOrder.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.NutritionOrder.r4b.testColor}}">{{site.data.conversions.NutritionOrder.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-NutritionProduct.html">NutritionProduct</a></td>
+    <td>{{site.data.conversions.NutritionProduct.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.NutritionProduct.r4.testColor}}">{{site.data.conversions.NutritionProduct.r4.testMessage}}</td>
+    <td>{{site.data.conversions.NutritionProduct.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.NutritionProduct.r4b.testColor}}">{{site.data.conversions.NutritionProduct.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Observation.html">Observation</a></td>
+    <td>{{site.data.conversions.Observation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Observation.r4.testColor}}">{{site.data.conversions.Observation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Observation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Observation.r4b.testColor}}">{{site.data.conversions.Observation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ObservationDefinition.html">ObservationDefinition</a></td>
+    <td>{{site.data.conversions.ObservationDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ObservationDefinition.r4.testColor}}">{{site.data.conversions.ObservationDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ObservationDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ObservationDefinition.r4b.testColor}}">{{site.data.conversions.ObservationDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-OperationDefinition.html">OperationDefinition</a></td>
+    <td>{{site.data.conversions.OperationDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.OperationDefinition.r4.testColor}}">{{site.data.conversions.OperationDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.OperationDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.OperationDefinition.r4b.testColor}}">{{site.data.conversions.OperationDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-OperationOutcome.html">OperationOutcome</a></td>
+    <td>{{site.data.conversions.OperationOutcome.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.OperationOutcome.r4.testColor}}">{{site.data.conversions.OperationOutcome.r4.testMessage}}</td>
+    <td>{{site.data.conversions.OperationOutcome.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.OperationOutcome.r4b.testColor}}">{{site.data.conversions.OperationOutcome.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Organization.html">Organization</a></td>
+    <td>{{site.data.conversions.Organization.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Organization.r4.testColor}}">{{site.data.conversions.Organization.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Organization.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Organization.r4b.testColor}}">{{site.data.conversions.Organization.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-OrganizationAffiliation.html">OrganizationAffiliation</a></td>
+    <td>{{site.data.conversions.OrganizationAffiliation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.OrganizationAffiliation.r4.testColor}}">{{site.data.conversions.OrganizationAffiliation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.OrganizationAffiliation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.OrganizationAffiliation.r4b.testColor}}">{{site.data.conversions.OrganizationAffiliation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-PackagedProductDefinition.html">PackagedProductDefinition</a></td>
+    <td>{{site.data.conversions.PackagedProductDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.PackagedProductDefinition.r4.testColor}}">{{site.data.conversions.PackagedProductDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.PackagedProductDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.PackagedProductDefinition.r4b.testColor}}">{{site.data.conversions.PackagedProductDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Parameters.html">Parameters</a></td>
+    <td>{{site.data.conversions.Parameters.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Parameters.r4.testColor}}">{{site.data.conversions.Parameters.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Parameters.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Parameters.r4b.testColor}}">{{site.data.conversions.Parameters.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Patient.html">Patient</a></td>
+    <td>{{site.data.conversions.Patient.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Patient.r4.testColor}}">{{site.data.conversions.Patient.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Patient.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Patient.r4b.testColor}}">{{site.data.conversions.Patient.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-PaymentNotice.html">PaymentNotice</a></td>
+    <td>{{site.data.conversions.PaymentNotice.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.PaymentNotice.r4.testColor}}">{{site.data.conversions.PaymentNotice.r4.testMessage}}</td>
+    <td>{{site.data.conversions.PaymentNotice.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.PaymentNotice.r4b.testColor}}">{{site.data.conversions.PaymentNotice.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-PaymentReconciliation.html">PaymentReconciliation</a></td>
+    <td>{{site.data.conversions.PaymentReconciliation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.PaymentReconciliation.r4.testColor}}">{{site.data.conversions.PaymentReconciliation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.PaymentReconciliation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.PaymentReconciliation.r4b.testColor}}">{{site.data.conversions.PaymentReconciliation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Permission.html">Permission</a></td>
+    <td>{{site.data.conversions.Permission.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Permission.r4.testColor}}">{{site.data.conversions.Permission.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Permission.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Permission.r4b.testColor}}">{{site.data.conversions.Permission.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Person.html">Person</a></td>
+    <td>{{site.data.conversions.Person.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Person.r4.testColor}}">{{site.data.conversions.Person.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Person.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Person.r4b.testColor}}">{{site.data.conversions.Person.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-PlanDefinition.html">PlanDefinition</a></td>
+    <td>{{site.data.conversions.PlanDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.PlanDefinition.r4.testColor}}">{{site.data.conversions.PlanDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.PlanDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.PlanDefinition.r4b.testColor}}">{{site.data.conversions.PlanDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Practitioner.html">Practitioner</a></td>
+    <td>{{site.data.conversions.Practitioner.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Practitioner.r4.testColor}}">{{site.data.conversions.Practitioner.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Practitioner.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Practitioner.r4b.testColor}}">{{site.data.conversions.Practitioner.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-PractitionerRole.html">PractitionerRole</a></td>
+    <td>{{site.data.conversions.PractitionerRole.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.PractitionerRole.r4.testColor}}">{{site.data.conversions.PractitionerRole.r4.testMessage}}</td>
+    <td>{{site.data.conversions.PractitionerRole.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.PractitionerRole.r4b.testColor}}">{{site.data.conversions.PractitionerRole.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Procedure.html">Procedure</a></td>
+    <td>{{site.data.conversions.Procedure.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Procedure.r4.testColor}}">{{site.data.conversions.Procedure.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Procedure.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Procedure.r4b.testColor}}">{{site.data.conversions.Procedure.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Provenance.html">Provenance</a></td>
+    <td>{{site.data.conversions.Provenance.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Provenance.r4.testColor}}">{{site.data.conversions.Provenance.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Provenance.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Provenance.r4b.testColor}}">{{site.data.conversions.Provenance.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Questionnaire.html">Questionnaire</a></td>
+    <td>{{site.data.conversions.Questionnaire.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Questionnaire.r4.testColor}}">{{site.data.conversions.Questionnaire.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Questionnaire.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Questionnaire.r4b.testColor}}">{{site.data.conversions.Questionnaire.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-QuestionnaireResponse.html">QuestionnaireResponse</a></td>
+    <td>{{site.data.conversions.QuestionnaireResponse.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.QuestionnaireResponse.r4.testColor}}">{{site.data.conversions.QuestionnaireResponse.r4.testMessage}}</td>
+    <td>{{site.data.conversions.QuestionnaireResponse.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.QuestionnaireResponse.r4b.testColor}}">{{site.data.conversions.QuestionnaireResponse.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-RegulatedAuthorization.html">RegulatedAuthorization</a></td>
+    <td>{{site.data.conversions.RegulatedAuthorization.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.RegulatedAuthorization.r4.testColor}}">{{site.data.conversions.RegulatedAuthorization.r4.testMessage}}</td>
+    <td>{{site.data.conversions.RegulatedAuthorization.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.RegulatedAuthorization.r4b.testColor}}">{{site.data.conversions.RegulatedAuthorization.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-RelatedPerson.html">RelatedPerson</a></td>
+    <td>{{site.data.conversions.RelatedPerson.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.RelatedPerson.r4.testColor}}">{{site.data.conversions.RelatedPerson.r4.testMessage}}</td>
+    <td>{{site.data.conversions.RelatedPerson.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.RelatedPerson.r4b.testColor}}">{{site.data.conversions.RelatedPerson.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-RequestOrchestration.html">RequestOrchestration</a></td>
+    <td>{{site.data.conversions.RequestOrchestration.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.RequestOrchestration.r4.testColor}}">{{site.data.conversions.RequestOrchestration.r4.testMessage}}</td>
+    <td>{{site.data.conversions.RequestOrchestration.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.RequestOrchestration.r4b.testColor}}">{{site.data.conversions.RequestOrchestration.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Requirements.html">Requirements</a></td>
+    <td>{{site.data.conversions.Requirements.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Requirements.r4.testColor}}">{{site.data.conversions.Requirements.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Requirements.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Requirements.r4b.testColor}}">{{site.data.conversions.Requirements.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ResearchStudy.html">ResearchStudy</a></td>
+    <td>{{site.data.conversions.ResearchStudy.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ResearchStudy.r4.testColor}}">{{site.data.conversions.ResearchStudy.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ResearchStudy.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ResearchStudy.r4b.testColor}}">{{site.data.conversions.ResearchStudy.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ResearchSubject.html">ResearchSubject</a></td>
+    <td>{{site.data.conversions.ResearchSubject.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ResearchSubject.r4.testColor}}">{{site.data.conversions.ResearchSubject.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ResearchSubject.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ResearchSubject.r4b.testColor}}">{{site.data.conversions.ResearchSubject.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-RiskAssessment.html">RiskAssessment</a></td>
+    <td>{{site.data.conversions.RiskAssessment.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.RiskAssessment.r4.testColor}}">{{site.data.conversions.RiskAssessment.r4.testMessage}}</td>
+    <td>{{site.data.conversions.RiskAssessment.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.RiskAssessment.r4b.testColor}}">{{site.data.conversions.RiskAssessment.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Schedule.html">Schedule</a></td>
+    <td>{{site.data.conversions.Schedule.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Schedule.r4.testColor}}">{{site.data.conversions.Schedule.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Schedule.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Schedule.r4b.testColor}}">{{site.data.conversions.Schedule.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SearchParameter.html">SearchParameter</a></td>
+    <td>{{site.data.conversions.SearchParameter.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SearchParameter.r4.testColor}}">{{site.data.conversions.SearchParameter.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SearchParameter.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SearchParameter.r4b.testColor}}">{{site.data.conversions.SearchParameter.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ServiceRequest.html">ServiceRequest</a></td>
+    <td>{{site.data.conversions.ServiceRequest.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ServiceRequest.r4.testColor}}">{{site.data.conversions.ServiceRequest.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ServiceRequest.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ServiceRequest.r4b.testColor}}">{{site.data.conversions.ServiceRequest.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Slot.html">Slot</a></td>
+    <td>{{site.data.conversions.Slot.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Slot.r4.testColor}}">{{site.data.conversions.Slot.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Slot.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Slot.r4b.testColor}}">{{site.data.conversions.Slot.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Specimen.html">Specimen</a></td>
+    <td>{{site.data.conversions.Specimen.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Specimen.r4.testColor}}">{{site.data.conversions.Specimen.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Specimen.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Specimen.r4b.testColor}}">{{site.data.conversions.Specimen.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SpecimenDefinition.html">SpecimenDefinition</a></td>
+    <td>{{site.data.conversions.SpecimenDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SpecimenDefinition.r4.testColor}}">{{site.data.conversions.SpecimenDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SpecimenDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SpecimenDefinition.r4b.testColor}}">{{site.data.conversions.SpecimenDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-StructureDefinition.html">StructureDefinition</a></td>
+    <td>{{site.data.conversions.StructureDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.StructureDefinition.r4.testColor}}">{{site.data.conversions.StructureDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.StructureDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.StructureDefinition.r4b.testColor}}">{{site.data.conversions.StructureDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-StructureMap.html">StructureMap</a></td>
+    <td>{{site.data.conversions.StructureMap.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.StructureMap.r4.testColor}}">{{site.data.conversions.StructureMap.r4.testMessage}}</td>
+    <td>{{site.data.conversions.StructureMap.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.StructureMap.r4b.testColor}}">{{site.data.conversions.StructureMap.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Subscription.html">Subscription</a></td>
+    <td>{{site.data.conversions.Subscription.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Subscription.r4.testColor}}">{{site.data.conversions.Subscription.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Subscription.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Subscription.r4b.testColor}}">{{site.data.conversions.Subscription.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SubscriptionStatus.html">SubscriptionStatus</a></td>
+    <td>{{site.data.conversions.SubscriptionStatus.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubscriptionStatus.r4.testColor}}">{{site.data.conversions.SubscriptionStatus.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SubscriptionStatus.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubscriptionStatus.r4b.testColor}}">{{site.data.conversions.SubscriptionStatus.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SubscriptionTopic.html">SubscriptionTopic</a></td>
+    <td>{{site.data.conversions.SubscriptionTopic.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubscriptionTopic.r4.testColor}}">{{site.data.conversions.SubscriptionTopic.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SubscriptionTopic.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubscriptionTopic.r4b.testColor}}">{{site.data.conversions.SubscriptionTopic.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Substance.html">Substance</a></td>
+    <td>{{site.data.conversions.Substance.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Substance.r4.testColor}}">{{site.data.conversions.Substance.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Substance.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Substance.r4b.testColor}}">{{site.data.conversions.Substance.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SubstanceDefinition.html">SubstanceDefinition</a></td>
+    <td>{{site.data.conversions.SubstanceDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceDefinition.r4.testColor}}">{{site.data.conversions.SubstanceDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SubstanceDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceDefinition.r4b.testColor}}">{{site.data.conversions.SubstanceDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SubstanceNucleicAcid.html">SubstanceNucleicAcid</a></td>
+    <td>{{site.data.conversions.SubstanceNucleicAcid.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceNucleicAcid.r4.testColor}}">{{site.data.conversions.SubstanceNucleicAcid.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SubstanceNucleicAcid.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceNucleicAcid.r4b.testColor}}">{{site.data.conversions.SubstanceNucleicAcid.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SubstancePolymer.html">SubstancePolymer</a></td>
+    <td>{{site.data.conversions.SubstancePolymer.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstancePolymer.r4.testColor}}">{{site.data.conversions.SubstancePolymer.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SubstancePolymer.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstancePolymer.r4b.testColor}}">{{site.data.conversions.SubstancePolymer.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SubstanceProtein.html">SubstanceProtein</a></td>
+    <td>{{site.data.conversions.SubstanceProtein.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceProtein.r4.testColor}}">{{site.data.conversions.SubstanceProtein.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SubstanceProtein.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceProtein.r4b.testColor}}">{{site.data.conversions.SubstanceProtein.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SubstanceReferenceInformation.html">SubstanceReferenceInformation</a></td>
+    <td>{{site.data.conversions.SubstanceReferenceInformation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceReferenceInformation.r4.testColor}}">{{site.data.conversions.SubstanceReferenceInformation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SubstanceReferenceInformation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceReferenceInformation.r4b.testColor}}">{{site.data.conversions.SubstanceReferenceInformation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SubstanceSourceMaterial.html">SubstanceSourceMaterial</a></td>
+    <td>{{site.data.conversions.SubstanceSourceMaterial.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceSourceMaterial.r4.testColor}}">{{site.data.conversions.SubstanceSourceMaterial.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SubstanceSourceMaterial.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SubstanceSourceMaterial.r4b.testColor}}">{{site.data.conversions.SubstanceSourceMaterial.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SupplyDelivery.html">SupplyDelivery</a></td>
+    <td>{{site.data.conversions.SupplyDelivery.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SupplyDelivery.r4.testColor}}">{{site.data.conversions.SupplyDelivery.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SupplyDelivery.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SupplyDelivery.r4b.testColor}}">{{site.data.conversions.SupplyDelivery.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SupplyRequest.html">SupplyRequest</a></td>
+    <td>{{site.data.conversions.SupplyRequest.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SupplyRequest.r4.testColor}}">{{site.data.conversions.SupplyRequest.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SupplyRequest.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SupplyRequest.r4b.testColor}}">{{site.data.conversions.SupplyRequest.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Task.html">Task</a></td>
+    <td>{{site.data.conversions.Task.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Task.r4.testColor}}">{{site.data.conversions.Task.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Task.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Task.r4b.testColor}}">{{site.data.conversions.Task.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-TerminologyCapabilities.html">TerminologyCapabilities</a></td>
+    <td>{{site.data.conversions.TerminologyCapabilities.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.TerminologyCapabilities.r4.testColor}}">{{site.data.conversions.TerminologyCapabilities.r4.testMessage}}</td>
+    <td>{{site.data.conversions.TerminologyCapabilities.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.TerminologyCapabilities.r4b.testColor}}">{{site.data.conversions.TerminologyCapabilities.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-TestPlan.html">TestPlan</a></td>
+    <td>{{site.data.conversions.TestPlan.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.TestPlan.r4.testColor}}">{{site.data.conversions.TestPlan.r4.testMessage}}</td>
+    <td>{{site.data.conversions.TestPlan.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.TestPlan.r4b.testColor}}">{{site.data.conversions.TestPlan.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-TestReport.html">TestReport</a></td>
+    <td>{{site.data.conversions.TestReport.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.TestReport.r4.testColor}}">{{site.data.conversions.TestReport.r4.testMessage}}</td>
+    <td>{{site.data.conversions.TestReport.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.TestReport.r4b.testColor}}">{{site.data.conversions.TestReport.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-TestScript.html">TestScript</a></td>
+    <td>{{site.data.conversions.TestScript.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.TestScript.r4.testColor}}">{{site.data.conversions.TestScript.r4.testMessage}}</td>
+    <td>{{site.data.conversions.TestScript.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.TestScript.r4b.testColor}}">{{site.data.conversions.TestScript.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Transport.html">Transport</a></td>
+    <td>{{site.data.conversions.Transport.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Transport.r4.testColor}}">{{site.data.conversions.Transport.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Transport.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Transport.r4b.testColor}}">{{site.data.conversions.Transport.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ValueSet.html">ValueSet</a></td>
+    <td>{{site.data.conversions.ValueSet.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ValueSet.r4.testColor}}">{{site.data.conversions.ValueSet.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ValueSet.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ValueSet.r4b.testColor}}">{{site.data.conversions.ValueSet.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-VerificationResult.html">VerificationResult</a></td>
+    <td>{{site.data.conversions.VerificationResult.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.VerificationResult.r4.testColor}}">{{site.data.conversions.VerificationResult.r4.testMessage}}</td>
+    <td>{{site.data.conversions.VerificationResult.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.VerificationResult.r4b.testColor}}">{{site.data.conversions.VerificationResult.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-VisionPrescription.html">VisionPrescription</a></td>
+    <td>{{site.data.conversions.VisionPrescription.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.VisionPrescription.r4.testColor}}">{{site.data.conversions.VisionPrescription.r4.testMessage}}</td>
+    <td>{{site.data.conversions.VisionPrescription.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.VisionPrescription.r4b.testColor}}">{{site.data.conversions.VisionPrescription.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-VisionPrescription.html">VisionPrescription</a></td>
+    <td>{{site.data.conversions.VisionPrescription.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.VisionPrescription.r4.testColor}}">{{site.data.conversions.VisionPrescription.r4.testMessage}}</td>
+    <td>{{site.data.conversions.VisionPrescription.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.VisionPrescription.r4b.testColor}}">{{site.data.conversions.VisionPrescription.r4b.testMessage}}</td>    
+  </tr>
+  <tr style="background-color: #eeeeee">
+    <th>Datatype</th>
+    <th>R4 Status</th>
+    <th>R4 Tests</th>
+    <th>R4B Status</th>
+    <th>R4B Tests</th>
+  </tr>
+  <tr>
+    <td><a href="conversions-Address.html">Address</a></td>
+    <td>{{site.data.conversions.Address.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Address.r4.testColor}}">{{site.data.conversions.Address.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Address.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Address.r4b.testColor}}">{{site.data.conversions.Address.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Age.html">Age</a></td>
+    <td>{{site.data.conversions.Age.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Age.r4.testColor}}">{{site.data.conversions.Age.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Age.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Age.r4b.testColor}}">{{site.data.conversions.Age.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Annotation.html">Annotation</a></td>
+    <td>{{site.data.conversions.Annotation.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Annotation.r4.testColor}}">{{site.data.conversions.Annotation.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Annotation.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Annotation.r4b.testColor}}">{{site.data.conversions.Annotation.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Attachment.html">Attachment</a></td>
+    <td>{{site.data.conversions.Attachment.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Attachment.r4.testColor}}">{{site.data.conversions.Attachment.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Attachment.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Attachment.r4b.testColor}}">{{site.data.conversions.Attachment.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CodeableConcept.html">CodeableConcept</a></td>
+    <td>{{site.data.conversions.CodeableConcept.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CodeableConcept.r4.testColor}}">{{site.data.conversions.CodeableConcept.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CodeableConcept.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CodeableConcept.r4b.testColor}}">{{site.data.conversions.CodeableConcept.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-CodeableReference.html">CodeableReference</a></td>
+    <td>{{site.data.conversions.CodeableReference.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.CodeableReference.r4.testColor}}">{{site.data.conversions.CodeableReference.r4.testMessage}}</td>
+    <td>{{site.data.conversions.CodeableReference.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.CodeableReference.r4b.testColor}}">{{site.data.conversions.CodeableReference.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Coding.html">Coding</a></td>
+    <td>{{site.data.conversions.Coding.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Coding.r4.testColor}}">{{site.data.conversions.Coding.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Coding.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Coding.r4b.testColor}}">{{site.data.conversions.Coding.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ContactPoint.html">ContactPoint</a></td>
+    <td>{{site.data.conversions.ContactPoint.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ContactPoint.r4.testColor}}">{{site.data.conversions.ContactPoint.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ContactPoint.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ContactPoint.r4b.testColor}}">{{site.data.conversions.ContactPoint.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Count.html">Count</a></td>
+    <td>{{site.data.conversions.Count.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Count.r4.testColor}}">{{site.data.conversions.Count.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Count.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Count.r4b.testColor}}">{{site.data.conversions.Count.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Distance.html">Distance</a></td>
+    <td>{{site.data.conversions.Distance.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Distance.r4.testColor}}">{{site.data.conversions.Distance.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Distance.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Distance.r4b.testColor}}">{{site.data.conversions.Distance.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Duration.html">Duration</a></td>
+    <td>{{site.data.conversions.Duration.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Duration.r4.testColor}}">{{site.data.conversions.Duration.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Duration.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Duration.r4b.testColor}}">{{site.data.conversions.Duration.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-HumanName.html">HumanName</a></td>
+    <td>{{site.data.conversions.HumanName.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.HumanName.r4.testColor}}">{{site.data.conversions.HumanName.r4.testMessage}}</td>
+    <td>{{site.data.conversions.HumanName.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.HumanName.r4b.testColor}}">{{site.data.conversions.HumanName.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Identifier.html">Identifier</a></td>
+    <td>{{site.data.conversions.Identifier.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Identifier.r4.testColor}}">{{site.data.conversions.Identifier.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Identifier.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Identifier.r4b.testColor}}">{{site.data.conversions.Identifier.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Money.html">Money</a></td>
+    <td>{{site.data.conversions.Money.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Money.r4.testColor}}">{{site.data.conversions.Money.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Money.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Money.r4b.testColor}}">{{site.data.conversions.Money.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Period.html">Period</a></td>
+    <td>{{site.data.conversions.Period.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Period.r4.testColor}}">{{site.data.conversions.Period.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Period.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Period.r4b.testColor}}">{{site.data.conversions.Period.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Quantity.html">Quantity</a></td>
+    <td>{{site.data.conversions.Quantity.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Quantity.r4.testColor}}">{{site.data.conversions.Quantity.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Quantity.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Quantity.r4b.testColor}}">{{site.data.conversions.Quantity.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Range.html">Range</a></td>
+    <td>{{site.data.conversions.Range.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Range.r4.testColor}}">{{site.data.conversions.Range.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Range.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Range.r4b.testColor}}">{{site.data.conversions.Range.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Ratio.html">Ratio</a></td>
+    <td>{{site.data.conversions.Ratio.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Ratio.r4.testColor}}">{{site.data.conversions.Ratio.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Ratio.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Ratio.r4b.testColor}}">{{site.data.conversions.Ratio.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-RatioRange.html">RatioRange</a></td>
+    <td>{{site.data.conversions.RatioRange.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.RatioRange.r4.testColor}}">{{site.data.conversions.RatioRange.r4.testMessage}}</td>
+    <td>{{site.data.conversions.RatioRange.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.RatioRange.r4b.testColor}}">{{site.data.conversions.RatioRange.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Reference.html">Reference</a></td>
+    <td>{{site.data.conversions.Reference.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Reference.r4.testColor}}">{{site.data.conversions.Reference.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Reference.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Reference.r4b.testColor}}">{{site.data.conversions.Reference.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-SampledData.html">SampledData</a></td>
+    <td>{{site.data.conversions.SampledData.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.SampledData.r4.testColor}}">{{site.data.conversions.SampledData.r4.testMessage}}</td>
+    <td>{{site.data.conversions.SampledData.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.SampledData.r4b.testColor}}">{{site.data.conversions.SampledData.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Signature.html">Signature</a></td>
+    <td>{{site.data.conversions.Signature.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Signature.r4.testColor}}">{{site.data.conversions.Signature.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Signature.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Signature.r4b.testColor}}">{{site.data.conversions.Signature.r4b.testMessage}}</td>r4.status
+  </tr>
+  <tr>
+    <td><a href="conversions-Timing.html">Timing</a></td>
+    <td>{{site.data.conversions.Timing.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Timing.r4.testColor}}">{{site.data.conversions.Timing.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Timing.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Timing.r4b.testColor}}">{{site.data.conversions.Timing.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ContactDetail.html">ContactDetail</a></td>
+    <td>{{site.data.conversions.ContactDetail.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ContactDetail.r4.testColor}}">{{site.data.conversions.ContactDetail.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ContactDetail.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ContactDetail.r4b.testColor}}">{{site.data.conversions.ContactDetail.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-DataRequirement.html">DataRequirement</a></td>
+    <td>{{site.data.conversions.DataRequirement.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.DataRequirement.r4.testColor}}">{{site.data.conversions.DataRequirement.r4.testMessage}}</td>
+    <td>{{site.data.conversions.DataRequirement.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.DataRequirement.r4b.testColor}}">{{site.data.conversions.DataRequirement.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Expression.html">Expression</a></td>
+    <td>{{site.data.conversions.Expression.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Expression.r4.testColor}}">{{site.data.conversions.Expression.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Expression.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Expression.r4b.testColor}}">{{site.data.conversions.Expression.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ParameterDefinition.html">ParameterDefinition</a></td>
+    <td>{{site.data.conversions.ParameterDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ParameterDefinition.r4.testColor}}">{{site.data.conversions.ParameterDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ParameterDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ParameterDefinition.r4b.testColor}}">{{site.data.conversions.ParameterDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-RelatedArtifact.html">RelatedArtifact</a></td>
+    <td>{{site.data.conversions.RelatedArtifact.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.RelatedArtifact.r4.testColor}}">{{site.data.conversions.RelatedArtifact.r4.testMessage}}</td>
+    <td>{{site.data.conversions.RelatedArtifact.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.RelatedArtifact.r4b.testColor}}">{{site.data.conversions.RelatedArtifact.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-TriggerDefinition.html">TriggerDefinition</a></td>
+    <td>{{site.data.conversions.TriggerDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.TriggerDefinition.r4.testColor}}">{{site.data.conversions.TriggerDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.TriggerDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.TriggerDefinition.r4b.testColor}}">{{site.data.conversions.TriggerDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-UsageContext.html">UsageContext</a></td>
+    <td>{{site.data.conversions.UsageContext.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.UsageContext.r4.testColor}}">{{site.data.conversions.UsageContext.r4.testMessage}}</td>
+    <td>{{site.data.conversions.UsageContext.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.UsageContext.r4b.testColor}}">{{site.data.conversions.UsageContext.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Availability.html">Availability</a></td>
+    <td>{{site.data.conversions.Availability.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Availability.r4.testColor}}">{{site.data.conversions.Availability.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Availability.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Availability.r4b.testColor}}">{{site.data.conversions.Availability.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ExtendedContactDetail.html">ExtendedContactDetail</a></td>
+    <td>{{site.data.conversions.ExtendedContactDetail.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ExtendedContactDetail.r4.testColor}}">{{site.data.conversions.ExtendedContactDetail.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ExtendedContactDetail.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ExtendedContactDetail.r4b.testColor}}">{{site.data.conversions.ExtendedContactDetail.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Dosage.html">Dosage</a></td>
+    <td>{{site.data.conversions.Dosage.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Dosage.r4.testColor}}">{{site.data.conversions.Dosage.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Dosage.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Dosage.r4b.testColor}}">{{site.data.conversions.Dosage.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Meta.html">Meta</a></td>
+    <td>{{site.data.conversions.Meta.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Meta.r4.testColor}}">{{site.data.conversions.Meta.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Meta.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Meta.r4b.testColor}}">{{site.data.conversions.Meta.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ElementDefinition.html">ElementDefinition</a></td>
+    <td>{{site.data.conversions.ElementDefinition.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ElementDefinition.r4.testColor}}">{{site.data.conversions.ElementDefinition.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ElementDefinition.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ElementDefinition.r4b.testColor}}">{{site.data.conversions.ElementDefinition.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-Population.html">Population</a></td>
+    <td>{{site.data.conversions.Population.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.Population.r4.testColor}}">{{site.data.conversions.Population.r4.testMessage}}</td>
+    <td>{{site.data.conversions.Population.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.Population.r4b.testColor}}">{{site.data.conversions.Population.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-ProductShelfLife.html">ProductShelfLife</a></td>
+    <td>{{site.data.conversions.ProductShelfLife.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.ProductShelfLife.r4.testColor}}">{{site.data.conversions.ProductShelfLife.r4.testMessage}}</td>
+    <td>{{site.data.conversions.ProductShelfLife.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.ProductShelfLife.r4b.testColor}}">{{site.data.conversions.ProductShelfLife.r4b.testMessage}}</td>    
+  </tr>
+  <tr>
+    <td><a href="conversions-MarketingStatus.html">MarketingStatus</a></td>
+    <td>{{site.data.conversions.MarketingStatus.r4.status}}</td>
+    <td style="background-color: {{site.data.conversions.MarketingStatus.r4.testColor}}">{{site.data.conversions.MarketingStatus.r4.testMessage}}</td>
+    <td>{{site.data.conversions.MarketingStatus.r4b.status}}</td>
+    <td style="background-color: {{site.data.conversions.MarketingStatus.r4b.testColor}}">{{site.data.conversions.MarketingStatus.r4b.testMessage}}</td>    
+  </tr>
+</table>
+
+<a name="about"> </a>
+<h3>About the transforms</h3>
+
+<p>
+The transforms are published in the <a href="{{{{site.data.fhir.path}}}}packages.html">NPM package</a> <code>hl7.fhir.uv.extension</code>.
+The java validator can check the transforms for correctness. To do this:
+</p>
+<pre>
+java -jar validator.jar 
+  -version 5.0 hl7.fhir.uv.extension -ig hl7.fhir.uv.extension -alt-version R4 -alt-version R4 -output {local-file-name} -output-style compact
+</pre>
+<p>
+Note that in the transforms, all the resources from the prior standards have the version of the base standard
+added, e.g. <code>http://hl7.org/fhir/StructureDefinition/Resource</code> becomes 
+<code>http://hl7.org/fhir/StructureDefinition/4.0/Resource</code> for R4. The versioned canonical format of 
+<code>http://hl7.org/fhir/StructureDefinition/Resource|4.0</code> is not used to prevent conflicts with existing
+uses of the canonical resource version in the prior standards, and because the different base versions each 
+define their own resource space.
+</p>
+<p>
+Transforms are tested using the following method:
+</p>
+<ol>
+  <li>For each example resource in the R4 release of the FHIR specification that has a transform to R5</li>
+  <li>apply the transform to R5</li>
+  <li>validate against the R5 specification</li>
+  <li>apply the reverse transform back to R4</li>
+  <li>compare the outcome with the original resource - ideally, it should be identical</li>
+</ol>
+
+<!-- <li>
+   All transforms should execute - that is, they should be able to take any R4 resource, represent the content in R5, and then generate an R4 representation for the same content.
+   Note, though, that in a few cases, the differences between R4 and R5 designs are so significant that not all examples can be successfully transformed at all.
+ </li>
+ <li>
+   For some resources, the differences in design between R4 and R5 are sufficiently great that the R4 examples cannot reproduce the same output 
+   after conversion to R5 and then back to R4. For example, the R5 resource may have a different set of status codes with imperfect maps
+ </li>
+ <li>
+   For some resources, the information available in the R4 examples is not enough to generate valid R5 resources, and so the resources generate
+   R5 validation errors. (e.g. R4 resources missing an element that is required in R5)
+ </li>
+ <li>
+   The transform scripts are only tested to the degree that R4 provided example data
+ </li>
+ <li style="background: gold">For all these reasons, the maps provided in the specification are not authoritative; they are provided to help implementers 
+   who need to convert between the R2 and R4 format, but additional revision may be required in an implementation specific context</li>
+ <li>The maps are subject to ongoing maintenance using the <a href="packages.html">FHIR NPM Package</a> "<code>hl7.fhir.xver.r4r5</code>" which is maintained on <a href="https://github.com/FHIR/packages">GitHub</a>.
+   See also 
+   <a href="https://confluence.hl7.org/display/FHIR/R4-R5+Transformations">FHIR Wiki</a> for other ongoing work to support R4/R5 transformations</li> 
+</ul>
+
+<table class="grid">
+ <tr>
+  <td><b>Resource</b></td>
+  <td title="The number of resource examples defined for this resource type as part of FHIR R4"><b># Tests</b></td>
+  <td title="The % of the tests that result in succesfully producing an R4 resource (R4 to R5, back to R4)"><b>% Execute OK</b></td>
+  <td title="The % of successful tests that produce an identical resource (compare starting example to final example)"><b>% RoundTrip Ok</b></td>
+  <td title="The % of successful test that produce a valid R5 resource"><b>% R5 Valid</b></td>
+  <td title="The total number of R5 validation error messages"><b>R5 Error Count</b></td>
+ </tr>
+[%r3maps-summary%]
+</table>
+-->
+
+</div>
