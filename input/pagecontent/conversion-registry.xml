@@ -17,6 +17,8 @@ conversion work - since in some cases the complete context needed for a particul
 available closer to runtime. Additionally, the maps in their current state place most focus on 
 bringing the content from R4 over to R5, and less so on the reverse conversion - that is, 
 they don't make use of the version-specific extensions on the R5 to R4 data downgrade yet.
+Contributions to continue development of the maps further is welcome as pull requests to 
+<a href="https://github.com/HL7/fhir-extensions">HL7/fhir-extensions</a>.
 </p>
 <table class="grid">
   <tr style="background-color: #eeeeee">
