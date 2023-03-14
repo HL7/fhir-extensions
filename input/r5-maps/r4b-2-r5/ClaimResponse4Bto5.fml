@@ -15,7 +15,7 @@ conceptmap "ClaimResponseStatus" {
 }
 
 conceptmap "RemittanceOutcome" {
-  prefix s = "http://hl7.org/fhir/4.3/claim-outcome"
+  prefix s = "http://hl7.org/fhir/4.3/remittance-outcome"
   prefix t = "http://hl7.org/fhir/claim-outcome"
 
   s:"queued" - t:"queued"
@@ -40,7 +40,7 @@ imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 
 group ClaimResponse(source src : ClaimResponseR4B, target tgt : ClaimResponseR5) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.traceNumber -> tgt.traceNumber;
+//  src.traceNumber -> tgt.traceNumber;
   src.status as v -> tgt.status = translate(v, '#ClaimResponseStatus', 'code');
   src.type -> tgt.type;
   src.subType -> tgt.subType;
@@ -51,14 +51,14 @@ group ClaimResponse(source src : ClaimResponseR4B, target tgt : ClaimResponseR5)
   src.requestor -> tgt.requestor;
   src.request -> tgt.request;
   src.outcome as v -> tgt.outcome = translate(v, '#RemittanceOutcome', 'code');
-  src.decision -> tgt.decision;
+//  src.decision -> tgt.decision;
   src.disposition -> tgt.disposition;
   src.preAuthRef -> tgt.preAuthRef;
   src.preAuthPeriod -> tgt.preAuthPeriod;
-  src.event as s -> tgt.event as t then ClaimResponseEvent(s,t);
+//  src.event as s -> tgt.event as t then ClaimResponseEvent(s,t);
   src.payeeType -> tgt.payeeType;
-  src.encounter -> tgt.encounter;
-  src.diagnosisRelatedGroup -> tgt.diagnosisRelatedGroup;
+//  src.encounter -> tgt.encounter;
+//  src.diagnosisRelatedGroup -> tgt.diagnosisRelatedGroup;
   src.item as s -> tgt.item as t then ClaimResponseItem(s,t);
   src.addItem as s -> tgt.addItem as t then ClaimResponseAddItem(s,t);
   src.total as s -> tgt.total as t then ClaimResponseTotal(s,t);
@@ -72,45 +72,45 @@ group ClaimResponse(source src : ClaimResponseR4B, target tgt : ClaimResponseR5)
   src.error as s -> tgt.error as t then ClaimResponseError(s,t);
 }
 
-group ClaimResponseEvent(source src, target tgt) extends BackboneElement {
-  src.type -> tgt.type;
-  src.when : dateTime -> tgt.when;
-  src.when : Period -> tgt.when;
-}
+//group ClaimResponseEvent(source src, target tgt) extends BackboneElement {
+//  src.type -> tgt.type;
+//  src.when : dateTime -> tgt.when;
+//  src.when : Period -> tgt.when;
+//}
 
 group ClaimResponseItem(source src, target tgt) extends BackboneElement {
   src.itemSequence -> tgt.itemSequence;
-  src.traceNumber -> tgt.traceNumber;
+//  src.traceNumber -> tgt.traceNumber;
   src.noteNumber -> tgt.noteNumber;
-  src.reviewOutcome as s -> tgt.reviewOutcome as t then ClaimResponseItemReviewOutcome(s,t);
+//  src.reviewOutcome as s -> tgt.reviewOutcome as t then ClaimResponseItemReviewOutcome(s,t);
   src.adjudication as s -> tgt.adjudication as t then ClaimResponseItemAdjudication(s,t);
   src.detail as s -> tgt.detail as t then ClaimResponseItemDetail(s,t);
 }
 
-group ClaimResponseItemReviewOutcome(source src, target tgt) extends BackboneElement {
-  src.decision -> tgt.decision;
-  src.reason -> tgt.reason;
-  src.preAuthRef -> tgt.preAuthRef;
-  src.preAuthPeriod -> tgt.preAuthPeriod;
-}
+//group ClaimResponseItemReviewOutcome(source src, target tgt) extends BackboneElement {
+//  src.decision -> tgt.decision;
+//  src.reason -> tgt.reason;
+//  src.preAuthRef -> tgt.preAuthRef;
+//  src.preAuthPeriod -> tgt.preAuthPeriod;
+//}
 
 group ClaimResponseItemAdjudication(source src, target tgt) extends BackboneElement {
   src.category -> tgt.category;
   src.reason -> tgt.reason;
   src.amount -> tgt.amount;
-  src.quantity -> tgt.quantity;
+  src.value as s -> tgt.quantity as t, t.value = s;
 }
 
 group ClaimResponseItemDetail(source src, target tgt) extends BackboneElement {
   src.detailSequence -> tgt.detailSequence;
-  src.traceNumber -> tgt.traceNumber;
+//  src.traceNumber -> tgt.traceNumber;
   src.noteNumber -> tgt.noteNumber;
   src.subDetail as s -> tgt.subDetail as t then ClaimResponseItemDetailSubDetail(s,t);
 }
 
 group ClaimResponseItemDetailSubDetail(source src, target tgt) extends BackboneElement {
   src.subDetailSequence -> tgt.subDetailSequence;
-  src.traceNumber -> tgt.traceNumber;
+//  src.traceNumber -> tgt.traceNumber;
   src.noteNumber -> tgt.noteNumber;
 }
 
@@ -118,12 +118,12 @@ group ClaimResponseAddItem(source src, target tgt) extends BackboneElement {
   src.itemSequence -> tgt.itemSequence;
   src.detailSequence -> tgt.detailSequence;
   src.subdetailSequence -> tgt.subdetailSequence;
-  src.traceNumber -> tgt.traceNumber;
+//  src.traceNumber -> tgt.traceNumber;
   src.provider -> tgt.provider;
-  src.revenue -> tgt.revenue;
+//  src.revenue -> tgt.revenue;
   src.productOrService -> tgt.productOrService;
-  src.productOrServiceEnd -> tgt.productOrServiceEnd;
-  src.request -> tgt.request;
+//  src.productOrServiceEnd -> tgt.productOrServiceEnd;
+//  src.request -> tgt.request;
   src.modifier -> tgt.modifier;
   src.programCode -> tgt.programCode;
   src.serviced : date -> tgt.serviced;
@@ -134,43 +134,43 @@ group ClaimResponseAddItem(source src, target tgt) extends BackboneElement {
   src.quantity -> tgt.quantity;
   src.unitPrice -> tgt.unitPrice;
   src.factor -> tgt.factor;
-  src.tax -> tgt.tax;
+//  src.tax -> tgt.tax;
   src.net -> tgt.net;
-  src.bodySite as s -> tgt.bodySite as t then ClaimResponseAddItemBodySite(s,t);
+  src.bodySite as s -> tgt.bodySite as t, t.site = s;
   src.noteNumber -> tgt.noteNumber;
   src.detail as s -> tgt.detail as t then ClaimResponseAddItemDetail(s,t);
 }
 
-group ClaimResponseAddItemBodySite(source src, target tgt) extends BackboneElement {
-  src.site -> tgt.site;
-  src.subSite -> tgt.subSite;
-}
+//group ClaimResponseAddItemBodySite(source src, target tgt) extends BackboneElement {
+//  src.site -> tgt.site;
+//  src.subSite -> tgt.subSite;
+//}
 
 group ClaimResponseAddItemDetail(source src, target tgt) extends BackboneElement {
-  src.traceNumber -> tgt.traceNumber;
-  src.revenue -> tgt.revenue;
+//  src.traceNumber -> tgt.traceNumber;
+//  src.revenue -> tgt.revenue;
   src.productOrService -> tgt.productOrService;
-  src.productOrServiceEnd -> tgt.productOrServiceEnd;
+//  src.productOrServiceEnd -> tgt.productOrServiceEnd;
   src.modifier -> tgt.modifier;
   src.quantity -> tgt.quantity;
   src.unitPrice -> tgt.unitPrice;
   src.factor -> tgt.factor;
-  src.tax -> tgt.tax;
+//  src.tax -> tgt.tax;
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
   src.subDetail as s -> tgt.subDetail as t then ClaimResponseAddItemDetailSubDetail(s,t);
 }
 
 group ClaimResponseAddItemDetailSubDetail(source src, target tgt) extends BackboneElement {
-  src.traceNumber -> tgt.traceNumber;
-  src.revenue -> tgt.revenue;
+//  src.traceNumber -> tgt.traceNumber;
+//  src.revenue -> tgt.revenue;
   src.productOrService -> tgt.productOrService;
-  src.productOrServiceEnd -> tgt.productOrServiceEnd;
+//  src.productOrServiceEnd -> tgt.productOrServiceEnd;
   src.modifier -> tgt.modifier;
   src.quantity -> tgt.quantity;
   src.unitPrice -> tgt.unitPrice;
   src.factor -> tgt.factor;
-  src.tax -> tgt.tax;
+//  src.tax -> tgt.tax;
   src.net -> tgt.net;
   src.noteNumber -> tgt.noteNumber;
 }
@@ -191,7 +191,9 @@ group ClaimResponsePayment(source src, target tgt) extends BackboneElement {
 
 group ClaimResponseProcessNote(source src, target tgt) extends BackboneElement {
   src.number -> tgt.number;
-  src.type -> tgt.type;
+  src.type as s where code = 'display' -> tgt.type = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://hl7.org/fhir/note-type", tcc.code = "display", tcc.display = "display";
+  src.type as s where code = 'print' -> tgt.type = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://hl7.org/fhir/note-type", tcc.code = "print", tcc.display = "Print (Form)";
+  src.type as s where code = 'printoper' -> tgt.type = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://hl7.org/fhir/note-type", tcc.code = "printoper", tcc.display = "Print (Operator)";
   src.text -> tgt.text;
   src.language -> tgt.language;
 }
@@ -209,6 +211,6 @@ group ClaimResponseError(source src, target tgt) extends BackboneElement {
   src.detailSequence -> tgt.detailSequence;
   src.subDetailSequence -> tgt.subDetailSequence;
   src.code -> tgt.code;
-  src.expression -> tgt.expression;
+//  src.expression -> tgt.expression;
 }
 
