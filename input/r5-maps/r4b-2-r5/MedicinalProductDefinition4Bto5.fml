@@ -2,6 +2,8 @@
 /// name = 'MedicinalProductDefinition4Bto5'
 /// title = 'FML Conversion for MedicinalProductDefinition: R4B to R5'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/4.3/StructureDefinition/MedicinalProductDefinition" alias MedicinalProductDefinitionR4B as source
 uses "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition" alias MedicinalProductDefinitionR5 as target
 
@@ -25,7 +27,7 @@ group MedicinalProductDefinition(source src : MedicinalProductDefinitionR4B, tar
   src.classification -> tgt.classification;
   src.marketingStatus -> tgt.marketingStatus;
   src.packagedMedicinalProduct -> tgt.packagedMedicinalProduct;
-  src.comprisedOf -> tgt.comprisedOf;
+//  src.comprisedOf -> tgt.comprisedOf;
   src.ingredient -> tgt.ingredient;
   src.impurity -> tgt.impurity;
   src.attachedDocument -> tgt.attachedDocument;
@@ -47,8 +49,8 @@ group MedicinalProductDefinitionContact(source src, target tgt) extends Backbone
 group MedicinalProductDefinitionName(source src, target tgt) extends BackboneElement {
   src.productName -> tgt.productName;
   src.type -> tgt.type;
-  src.part as s -> tgt.part as t then MedicinalProductDefinitionNamePart(s,t);
-  src.usage as s -> tgt.usage as t then MedicinalProductDefinitionNameUsage(s,t);
+  src.namePart as s -> tgt.part as t then MedicinalProductDefinitionNamePart(s,t);
+  src.countryLanguage as s -> tgt.usage as t then MedicinalProductDefinitionNameUsage(s,t);
 }
 
 group MedicinalProductDefinitionNamePart(source src, target tgt) extends BackboneElement {
@@ -77,9 +79,9 @@ group MedicinalProductDefinitionOperation(source src, target tgt) extends Backbo
 group MedicinalProductDefinitionCharacteristic(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.value : CodeableConcept -> tgt.value;
-  src.value : markdown -> tgt.value;
+//  src.value : markdown -> tgt.value;
   src.value : Quantity -> tgt.value;
-  src.value : integer -> tgt.value;
+//  src.value : integer -> tgt.value;
   src.value : date -> tgt.value;
   src.value : boolean -> tgt.value;
   src.value : Attachment -> tgt.value;

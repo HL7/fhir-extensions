@@ -2,9 +2,11 @@
 /// name = 'MedicationDispense5to4'
 /// title = 'FML Conversion for MedicationDispense: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "MedicationDispenseStatus" {
   prefix s = "http://hl7.org/fhir/CodeSystem/medicationdispense-status"
-  prefix t = "http://hl7.org/fhir/4.0/CodeSystem/medicationdispense-status"
+  prefix t = "http://terminology.hl7.org/CodeSystem/medicationdispense-status"
 
   s:"preparation" - t:"preparation"
   s:"in-progress" - t:"in-progress"
@@ -24,15 +26,15 @@ imports "http://hl7.org/fhir/StructureMap/*5to4"
 
 group MedicationDispense(source src : MedicationDispenseR5, target tgt : MedicationDispenseR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.basedOn -> tgt.basedOn;
+//  src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
   src.status as v -> tgt.status = translate(v, '#MedicationDispenseStatus', 'code');
-  src.notPerformedReason -> tgt.notPerformedReason;
-  src.statusChanged -> tgt.statusChanged;
+  src.notPerformedReason -> tgt.statusReason;
+//  src.statusChanged -> tgt.statusChanged;
   src.category -> tgt.category;
   src.medication -> tgt.medication;
   src.subject -> tgt.subject;
-  src.encounter -> tgt.encounter;
+  src.encounter -> tgt.context;
   src.supportingInformation -> tgt.supportingInformation;
   src.performer as s -> tgt.performer as t then MedicationDispensePerformer(s,t);
   src.location -> tgt.location;
@@ -40,13 +42,13 @@ group MedicationDispense(source src : MedicationDispenseR5, target tgt : Medicat
   src.type -> tgt.type;
   src.quantity -> tgt.quantity;
   src.daysSupply -> tgt.daysSupply;
-  src.recorded -> tgt.recorded;
+//  src.recorded -> tgt.recorded;
   src.whenPrepared -> tgt.whenPrepared;
   src.whenHandedOver -> tgt.whenHandedOver;
   src.destination -> tgt.destination;
   src.receiver -> tgt.receiver;
   src.note -> tgt.note;
-  src.renderedDosageInstruction -> tgt.renderedDosageInstruction;
+//  src.renderedDosageInstruction -> tgt.renderedDosageInstruction;
   src.dosageInstruction -> tgt.dosageInstruction;
   src.substitution as s -> tgt.substitution as t then MedicationDispenseSubstitution(s,t);
   src.eventHistory -> tgt.eventHistory;
