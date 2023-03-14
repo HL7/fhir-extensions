@@ -64,7 +64,7 @@ group BundleLink(source src, target tgt) extends BackboneElement {
 
 group BundleEntry(source src, target tgt) extends BackboneElement {
   src.fullUrl -> tgt.fullUrl;
-  src.resource -> tgt.resource;
+  src.resource : Resource -> tgt.resource;
   src.search as s -> tgt.search as t then BundleEntrySearch(s,t);
   src.request as s -> tgt.request as t then BundleEntryRequest(s,t);
   src.response as s -> tgt.response as t then BundleEntryResponse(s,t);
@@ -89,6 +89,6 @@ group BundleEntryResponse(source src, target tgt) extends BackboneElement {
   src.location -> tgt.location;
   src.etag -> tgt.etag;
   src.lastModified -> tgt.lastModified;
-  src.outcome -> tgt.outcome;
+  src.outcome : Resource -> tgt.outcome;
 }
 

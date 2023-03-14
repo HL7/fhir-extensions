@@ -69,6 +69,6 @@ group ParametersParameter(source src, target tgt) extends BackboneElement {
 //  src.value : ExtendedContactDetail -> tgt.value;
   src.value : Dosage -> tgt.value;
   src.value : Meta -> tgt.value;
-  src.resource -> tgt.resource;
+  src.resource : Resource -> tgt.resource;
 }
 
