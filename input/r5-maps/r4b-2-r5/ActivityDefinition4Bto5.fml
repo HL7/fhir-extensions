@@ -19,16 +19,16 @@ conceptmap "ActivityParticipantType" {
   s:"related-person" - t:"relatedperson"
 }
 
-conceptmap "SubjectToParticipantTypes" {
-  prefix s = "http://hl7.org/fhir/4.3/resource-types"
-  prefix t = "http://hl7.org/fhir/fhir-types"
-
-  s:"Patient" - t:"Patient"
-  s:"Practitioner" - t:"Practitioner"
-  s:"Organization" - t:"Organization"
-  s:"Location" - t:"Location"
-  s:"Device" - t:"Device"
-}
+//conceptmap "SubjectToParticipantTypes" {
+//  prefix s = "http://hl7.org/fhir/4.3/resource-types"
+//  prefix t = "http://hl7.org/fhir/fhir-types"
+//
+//  s:"Patient" - t:"Patient"
+//  s:"Practitioner" - t:"Practitioner"
+//  s:"Organization" - t:"Organization"
+//  s:"Location" - t:"Location"
+//  s:"Device" - t:"Device"
+//}
 
 conceptmap "PublicationStatus" {
   prefix s = "http://hl7.org/fhir/4.3/publication-status"
@@ -81,7 +81,11 @@ group ActivityDefinition(source src : ActivityDefinitionR4B, target tgt : Activi
   src.subtitle -> tgt.subtitle;
   src.status as v -> tgt.status = translate(v, '#PublicationStatus', 'code');
   src.experimental -> tgt.experimental;
-  src.subject : CodeableConcept as v -> tgt.subject = translate(v, '#SubjectToParticipantTypes', 'CodeableConcept');
+  src.subject as s where code = 'Patient' -> tgt.subject = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://hl7.org/fhir/fhir-types", tcc.code = "Patient", tcc.display = "Patient";
+  src.subject as s where code = 'Practitioner' -> tgt.subject = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://hl7.org/fhir/fhir-types", tcc.code = "Patient", tcc.display = "Practitioner";
+  src.subject as s where code = 'Organization' -> tgt.subject = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://hl7.org/fhir/fhir-types", tcc.code = "Patient", tcc.display = "Organization";
+  src.subject as s where code = 'Location' -> tgt.subject = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://hl7.org/fhir/fhir-types", tcc.code = "Patient", tcc.display = "Location";
+  src.subject as s where code = 'Device' -> tgt.subject = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://hl7.org/fhir/fhir-types", tcc.code = "Patient", tcc.display = "Device";
   src.subject : Reference -> tgt.subject;
   src.subject : canonical -> tgt.subject;
   src.date -> tgt.date;
