@@ -78,7 +78,7 @@
           <valueBoolean value="true"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason|5.0.0"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
       </binding>
     </element>
   </differential>

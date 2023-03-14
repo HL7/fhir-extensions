@@ -1,6 +1,6 @@
 {
   "item-factory" : "manual",
-  "items" : ["Population", "Dosage", "ProductShelfLife", "ElementDefinition", "Reference", "MarketingStatus", "Meta"],
+  "items" : ["Dosage", "ProductShelfLife", "ElementDefinition", "MarketingStatus", "Meta", "Extension", "Narrative"],
   "source-file" : "input/structuremap-type-template.md",
   "variables" : [{
     "name" : "%type%",

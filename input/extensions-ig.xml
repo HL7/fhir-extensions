@@ -39,22 +39,28 @@
         <title value="Extension Registry"/>
         <generation value="markdown"/>
         <page>
-          <sourceUrl value="extensions-types.html"/>
+          <sourceUrl value="extensions-types.xml"/>
           <name value="extensions-types.html"/>
           <title value="Types Extensions"/>
-          <generation value="markdown"/>
+          <generation value="html"/>
         </page>
         <page>
-          <sourceUrl value="extensions-datatypes.html"/>
+          <sourceUrl value="extensions-datatypes.xml"/>
           <name value="extensions-datatypes.html"/>
           <title value="Datatypes Extensions"/>
-          <generation value="markdown"/>
+          <generation value="html"/>
         </page>
         <page>
-          <sourceUrl value="extensions-metadatatypes.html"/>
+          <sourceUrl value="extensions-metadatatypes.xml"/>
           <name value="extensions-metadatatypes.html"/>
           <title value="Metadata Types Extensions"/>
-          <generation value="markdown"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <sourceUrl value="extensions-references.xml"/>
+          <name value="extensions-references.html"/>
+          <title value="Reference Types Extensions"/>
+          <generation value="html"/>
         </page>
       </page>
       <page>
@@ -84,6 +90,12 @@
           <sourceUrl value="conversions-metadatatypes.xml"/>
           <name value="conversions-metadatatypes.html"/>
           <title value="R4/R5 Conversion for Metadata Types"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <sourceUrl value="conversions-references.xml"/>
+          <name value="conversions-references.html"/>
+          <title value="R4/R5 Conversion for Reference Types"/>
           <generation value="html"/>
         </page>
       </page>

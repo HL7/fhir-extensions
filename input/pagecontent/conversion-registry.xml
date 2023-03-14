@@ -3,7 +3,7 @@
 <p>
 This specification provides transforms between R4 and R5 for most resources
 that were in R4. These transforms are expressed using the 
-<a href="mapping-language.html">FHIR Mapping Language</a>, and serve as
+<a href="{{site.data.fhir.path}}mapping-language.html">FHIR Mapping Language</a>, and serve as
 formal documentation of the relationship between the resource structures in R4 and R5, 
 and can also be used to convert between the formats automatically. 
 </p>
@@ -1155,6 +1155,7 @@ Contributions to continue development of the maps further are welcome as pull re
     <td>{{site.data.conversions.Address.r4b.status}}</td>
     <td style="background-color: {{site.data.conversions.Address.r4b.testColor}}">{{site.data.conversions.Address.r4b.testMessage}}</td>    
   </tr>
+  <!--
   <tr>
     <td><a href="{{site.data.conversions.Age.link}}">Age</a></td>
     <td>{{site.data.conversions.Age.r4.status}}</td>
@@ -1162,6 +1163,7 @@ Contributions to continue development of the maps further are welcome as pull re
     <td>{{site.data.conversions.Age.r4b.status}}</td>
     <td style="background-color: {{site.data.conversions.Age.r4b.testColor}}">{{site.data.conversions.Age.r4b.testMessage}}</td>    
   </tr>
+  -->
   <tr>
     <td><a href="{{site.data.conversions.Annotation.link}}">Annotation</a></td>
     <td>{{site.data.conversions.Annotation.r4.status}}</td>
@@ -1204,6 +1206,7 @@ Contributions to continue development of the maps further are welcome as pull re
     <td>{{site.data.conversions.ContactPoint.r4b.status}}</td>
     <td style="background-color: {{site.data.conversions.ContactPoint.r4b.testColor}}">{{site.data.conversions.ContactPoint.r4b.testMessage}}</td>    
   </tr>
+  <!--
   <tr>
     <td><a href="{{site.data.conversions.Count.link}}">Count</a></td>
     <td>{{site.data.conversions.Count.r4.status}}</td>
@@ -1225,6 +1228,7 @@ Contributions to continue development of the maps further are welcome as pull re
     <td>{{site.data.conversions.Duration.r4b.status}}</td>
     <td style="background-color: {{site.data.conversions.Duration.r4b.testColor}}">{{site.data.conversions.Duration.r4b.testMessage}}</td>    
   </tr>
+  -->
   <tr>
     <td><a href="{{site.data.conversions.HumanName.link}}">HumanName</a></td>
     <td>{{site.data.conversions.HumanName.r4.status}}</td>
@@ -1392,13 +1396,6 @@ Contributions to continue development of the maps further are welcome as pull re
     <td style="background-color: {{site.data.conversions.ElementDefinition.r4.testColor}}">{{site.data.conversions.ElementDefinition.r4.testMessage}}</td>
     <td>{{site.data.conversions.ElementDefinition.r4b.status}}</td>
     <td style="background-color: {{site.data.conversions.ElementDefinition.r4b.testColor}}">{{site.data.conversions.ElementDefinition.r4b.testMessage}}</td>    
-  </tr>
-  <tr>
-    <td><a href="{{site.data.conversions.Population.link}}">Population</a></td>
-    <td>{{site.data.conversions.Population.r4.status}}</td>
-    <td style="background-color: {{site.data.conversions.Population.r4.testColor}}">{{site.data.conversions.Population.r4.testMessage}}</td>
-    <td>{{site.data.conversions.Population.r4b.status}}</td>
-    <td style="background-color: {{site.data.conversions.Population.r4b.testColor}}">{{site.data.conversions.Population.r4b.testMessage}}</td>    
   </tr>
   <tr>
     <td><a href="{{site.data.conversions.ProductShelfLife.link}}">ProductShelfLife</a></td>

@@ -1961,7 +1961,7 @@
     }
   },
   "CodeableReference" : {
-    "link" : "conversions-datatypes.html#conv-CodeableReference",
+    "link" : "conversions-references.html#conv-CodeableReference",
     "r4" : {
       "status" : "4 Maps Defined",
       "testColor" : "#eeeeee",
@@ -2143,7 +2143,7 @@
     }
   },
   "Reference" : {
-    "link" : "conversions-Reference.html#conv-Reference",
+    "link" : "conversions-references.html#conv-Reference",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",

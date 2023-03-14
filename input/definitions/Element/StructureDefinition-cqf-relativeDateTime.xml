@@ -149,7 +149,7 @@
           <valueString value="ActionRelationshipType"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/action-relationship-type|5.0.0"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/action-relationship-type"/>
       </binding>
     </element>
     <element id="Extension.extension:offset">

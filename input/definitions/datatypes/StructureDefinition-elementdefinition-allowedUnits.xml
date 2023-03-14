@@ -89,7 +89,7 @@
           <valueString value="Units"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/ucum-units|5.0.0"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/ucum-units"/>
       </binding>
     </element>
   </differential>
