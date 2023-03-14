@@ -2,6 +2,8 @@
 /// name = 'Consent5to4B'
 /// title = 'FML Conversion for Consent: R5 to R4B'
 
+/// status = 'active'
+
 conceptmap "ConsentDataMeaning" {
   prefix s = "http://hl7.org/fhir/consent-data-meaning"
   prefix t = "http://hl7.org/fhir/4.3/consent-data-meaning"
@@ -27,9 +29,9 @@ conceptmap "ConsentState" {
   s:"draft" - t:"draft"
   s:"active" - t:"active"
   s:"inactive" - t:"inactive"
-  s:"not-done" - t:"not-done"
+  s:"not-done" - t:"rejected"
   s:"entered-in-error" - t:"entered-in-error"
-  s:"unknown" - t:"unknown"
+  s:"unknown" - t:"proposed"
 }
 
 uses "http://hl7.org/fhir/StructureDefinition/Consent" alias ConsentR5 as source
@@ -41,32 +43,32 @@ group Consent(source src : ConsentR5, target tgt : ConsentR4B) extends DomainRes
   src.identifier -> tgt.identifier;
   src.status as v -> tgt.status = translate(v, '#ConsentState', 'code');
   src.category -> tgt.category;
-  src.subject -> tgt.subject;
-  src.date -> tgt.date;
-  src.period -> tgt.period;
-  src.grantor -> tgt.grantor;
-  src.grantee -> tgt.grantee;
-  src.manager -> tgt.manager;
-  src.controller -> tgt.controller;
-  src.sourceAttachment -> tgt.sourceAttachment;
-  src.sourceReference -> tgt.sourceReference;
-  src.regulatoryBasis -> tgt.regulatoryBasis;
-  src.policyBasis as s -> tgt.policyBasis as t then ConsentPolicyBasis(s,t);
-  src.policyText -> tgt.policyText;
+  src.subject -> tgt.patient;
+  src.date -> tgt.dateTime;
+//  src.period -> tgt.period;
+//  src.grantor -> tgt.grantor;
+  src.grantee -> tgt.performer;
+//  src.manager -> tgt.manager;
+//  src.controller -> tgt.controller;
+  src.sourceAttachment -> tgt.source;
+  src.sourceReference -> tgt.source;
+  src.regulatoryBasis -> tgt.policyRule;
+  src.policyBasis as s -> tgt.policy as t, t.uri = s.url;
+//  src.policyText -> tgt.policyText;
   src.verification as s -> tgt.verification as t then ConsentVerification(s,t);
-  src.decision as v -> tgt.decision = translate(v, '#ConsentProvisionType', 'code');
+//  src.decision as v -> tgt.decision = translate(v, '#ConsentProvisionType', 'code');
   src.provision as s -> tgt.provision as t then ConsentProvision(s,t);
 }
 
-group ConsentPolicyBasis(source src, target tgt) extends BackboneElement {
-  src.reference -> tgt.reference;
-  src.url -> tgt.url;
-}
+//group ConsentPolicyBasis(source src, target tgt) extends BackboneElement {
+//  src.reference -> tgt.reference;
+//  src.url -> tgt.url;
+//}
 
 group ConsentVerification(source src, target tgt) extends BackboneElement {
   src.verified -> tgt.verified;
-  src.verificationType -> tgt.verificationType;
-  src.verifiedBy -> tgt.verifiedBy;
+//  src.verificationType -> tgt.verificationType;
+//  src.verifiedBy -> tgt.verifiedBy;
   src.verifiedWith -> tgt.verifiedWith;
   src.verificationDate -> tgt.verificationDate;
 }
@@ -77,12 +79,12 @@ group ConsentProvision(source src, target tgt) extends BackboneElement {
   src.action -> tgt.action;
   src.securityLabel -> tgt.securityLabel;
   src.purpose -> tgt.purpose;
-  src.documentType -> tgt.documentType;
-  src.resourceType -> tgt.resourceType;
+  src.documentType -> tgt.class;
+//  src.resourceType -> tgt.resourceType;
   src.code -> tgt.code;
   src.dataPeriod -> tgt.dataPeriod;
   src.data as s -> tgt.data as t then ConsentProvisionData(s,t);
-  src.expression -> tgt.expression;
+//  src.expression -> tgt.expression;
 }
 
 group ConsentProvisionActor(source src, target tgt) extends BackboneElement {
