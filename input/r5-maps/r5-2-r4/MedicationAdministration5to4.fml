@@ -2,9 +2,11 @@
 /// name = 'MedicationAdministration5to4'
 /// title = 'FML Conversion for MedicationAdministration: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "MedicationAdministrationStatus" {
   prefix s = "http://hl7.org/fhir/CodeSystem/medication-admin-status"
-  prefix t = "http://hl7.org/fhir/4.0/CodeSystem/medication-admin-status"
+  prefix t = "http://terminology.hl7.org/CodeSystem/medication-admin-status"
 
   s:"in-progress" - t:"in-progress"
   s:"not-done" - t:"not-done"
@@ -22,23 +24,24 @@ imports "http://hl7.org/fhir/StructureMap/*5to4"
 
 group MedicationAdministration(source src : MedicationAdministrationR5, target tgt : MedicationAdministrationR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
-  src.basedOn -> tgt.basedOn;
+//  src.basedOn -> tgt.basedOn;
   src.partOf -> tgt.partOf;
   src.status as v -> tgt.status = translate(v, '#MedicationAdministrationStatus', 'code');
   src.statusReason -> tgt.statusReason;
   src.category -> tgt.category;
   src.medication -> tgt.medication;
   src.subject -> tgt.subject;
-  src.encounter -> tgt.encounter;
+  src.encounter -> tgt.context;
   src.supportingInformation -> tgt.supportingInformation;
-  src.occurence : dateTime -> tgt.occurence;
-  src.occurence : Period -> tgt.occurence;
-  src.occurence : Timing -> tgt.occurence;
-  src.recorded -> tgt.recorded;
-  src.isSubPotent -> tgt.isSubPotent;
-  src.subPotentReason -> tgt.subPotentReason;
+  src.occurence : dateTime -> tgt.effective;
+  src.occurence : Period -> tgt.effective;
+//  src.occurence : Timing -> tgt.occurence;
+//  src.recorded -> tgt.recorded;
+//  src.isSubPotent -> tgt.isSubPotent;
+//  src.subPotentReason -> tgt.subPotentReason;
   src.performer as s -> tgt.performer as t then MedicationAdministrationPerformer(s,t);
-  src.reason -> tgt.reason;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
   src.request -> tgt.request;
   src.device -> tgt.device;
   src.note -> tgt.note;

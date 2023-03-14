@@ -2,6 +2,8 @@
 /// name = 'Medication5to4'
 /// title = 'FML Conversion for Medication: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "MedicationStatus" {
   prefix s = "http://hl7.org/fhir/CodeSystem/medication-status"
   prefix t = "http://hl7.org/fhir/4.0/CodeSystem/medication-status"
@@ -20,20 +22,20 @@ group Medication(source src : MedicationR5, target tgt : MedicationR4) extends D
   src.identifier -> tgt.identifier;
   src.code -> tgt.code;
   src.status as v -> tgt.status = translate(v, '#MedicationStatus', 'code');
-  src.marketingAuthorizationHolder -> tgt.marketingAuthorizationHolder;
-  src.doseForm -> tgt.doseForm;
-  src.totalVolume -> tgt.totalVolume;
+  src.marketingAuthorizationHolder -> tgt.manufacturer;
+  src.doseForm -> tgt.form;
+  src.totalVolume as s -> tgt.amount as t, t.numerator = s;
   src.ingredient as s -> tgt.ingredient as t then MedicationIngredient(s,t);
   src.batch as s -> tgt.batch as t then MedicationBatch(s,t);
-  src.definition -> tgt.definition;
+//  src.definition -> tgt.definition;
 }
 
 group MedicationIngredient(source src, target tgt) extends BackboneElement {
   src.item -> tgt.item;
   src.isActive -> tgt.isActive;
   src.strength : Ratio -> tgt.strength;
-  src.strength : CodeableConcept -> tgt.strength;
-  src.strength : Quantity -> tgt.strength;
+//  src.strength : CodeableConcept -> tgt.strength;
+//  src.strength : Quantity -> tgt.strength;
 }
 
 group MedicationBatch(source src, target tgt) extends BackboneElement {
