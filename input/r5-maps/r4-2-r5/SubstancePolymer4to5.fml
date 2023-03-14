@@ -2,13 +2,15 @@
 /// name = 'SubstancePolymer4to5'
 /// title = 'FML Conversion for SubstancePolymer: R4 to R5'
 
+/// status = 'active'
+
 uses "http://hl7.org/fhir/4.0/StructureDefinition/SubstancePolymer" alias SubstancePolymerR4 as source
 uses "http://hl7.org/fhir/StructureDefinition/SubstancePolymer" alias SubstancePolymerR5 as target
 
 imports "http://hl7.org/fhir/StructureMap/*4to5"
 
 group SubstancePolymer(source src : SubstancePolymerR4, target tgt : SubstancePolymerR5) extends DomainResource <<type+>> {
-  src.identifier -> tgt.identifier;
+//  src.identifier -> tgt.identifier;
   src.class -> tgt.class;
   src.geometry -> tgt.geometry;
   src.copolymerConnectivity -> tgt.copolymerConnectivity;
@@ -23,10 +25,10 @@ group SubstancePolymerMonomerSet(source src, target tgt) extends BackboneElement
 }
 
 group SubstancePolymerMonomerSetStartingMaterial(source src, target tgt) extends BackboneElement {
-  src.code -> tgt.code;
-  src.category -> tgt.category;
+  src.material -> tgt.code;
+  src.type -> tgt.category;
   src.isDefining -> tgt.isDefining;
-  src.amount -> tgt.amount;
+  src.amount as s -> tgt.amount as t, t = s.amount;
 }
 
 group SubstancePolymerRepeat(source src, target tgt) extends BackboneElement {
@@ -36,24 +38,28 @@ group SubstancePolymerRepeat(source src, target tgt) extends BackboneElement {
 }
 
 group SubstancePolymerRepeatRepeatUnit(source src, target tgt) extends BackboneElement {
-  src.unit -> tgt.unit;
-  src.orientation -> tgt.orientation;
-  src.amount -> tgt.amount;
+  src.repeatUnit -> tgt.unit;
+  src.orientationOfPolymerisation -> tgt.orientation;
+//  src.amount -> tgt.amount;
   src.degreeOfPolymerisation as s -> tgt.degreeOfPolymerisation as t then SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation(s,t);
   src.structuralRepresentation as s -> tgt.structuralRepresentation as t then SubstancePolymerRepeatRepeatUnitStructuralRepresentation(s,t);
 }
 
 group SubstancePolymerRepeatRepeatUnitDegreeOfPolymerisation(source src, target tgt) extends BackboneElement {
-  src.type -> tgt.type;
-  src.average -> tgt.average;
-  src.low -> tgt.low;
-  src.high -> tgt.high;
+  src.degree -> tgt.type;
+  src.amount as s -> tgt then {
+    s.amount : Quantity as v -> tgt.average = v.value;
+    s.referenceRange as sr -> tgt then {
+      sr.lowLimit as vl -> tgt.low = vl.value;
+      sr.highLimit as vh -> tgt.high = vh.value;
+    };
+  };
 }
 
 group SubstancePolymerRepeatRepeatUnitStructuralRepresentation(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.representation -> tgt.representation;
-  src.format -> tgt.format;
+//  src.format -> tgt.format;
   src.attachment -> tgt.attachment;
 }
 
