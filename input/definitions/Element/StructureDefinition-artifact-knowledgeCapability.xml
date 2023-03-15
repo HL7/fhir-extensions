@@ -70,7 +70,7 @@
         </extension>
         <strength value="required"/>
         <description value="A knowledge capability provided by a knowledge artifact"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/knowledge-capability|5.0.0-snapshot3"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/knowledge-capability"/>
       </binding>
     </element>
   </differential>

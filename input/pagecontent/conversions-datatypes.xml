@@ -1,0 +1,193 @@
+﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
+
+<a name="conv-primitives"> </a>
+<a name="primitives"> </a>
+<h3>Primitive Datatypes</h3>
+
+<h4>FML Conversion for primitive datatypes: R4 to R5 (Ready for Use)</h4>
+
+{% include StructureMap-Primitives4to5-html.xhtml %}
+
+<h4>FML Conversion for primitive datatypes: R4B to R5 (Ready for Use)</h4>
+
+{% include StructureMap-Primitives4to5-html.xhtml %}
+
+<h4>FML Conversion for primitive datatypes: R5 to R4 (Ready for Use)</h4>
+
+{% include StructureMap-Primitives5to4-html.xhtml %}
+
+<h4>FML Conversion for primitive datatypes: R5 to R4B (Ready for Use)</h4>
+
+{% include StructureMap-Primitives5to4B-html.xhtml %}
+
+<a name="conv-Attachment"> </a>
+<a name="Attachment"> </a>
+<h3>Attachment</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Attachment-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Attachment">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Attachment">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Attachment">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Attachment">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Attachment">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Attachment">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Attachment">R4 Conversions</a>
+</p>
+
+{% include maps-Attachment.xhtml %}
+
+<a name="conv-Coding"> </a>
+<a name="Coding"> </a>
+<h3>Coding</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Coding-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Coding">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Coding">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Coding">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Coding">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Coding">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Coding">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Coding">R4 Conversions</a>
+</p>
+
+{% include maps-Coding.xhtml %}
+
+<a name="conv-CodeableConcept"> </a>
+<a name="CodeableConcept"> </a>
+<h3>CodeableConcept</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:CodeableConcept-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#CodeableConcept">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#CodeableConcept">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#CodeableConcept">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#CodeableConcept">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#CodeableConcept">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#CodeableConcept">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#CodeableConcept">R4 Conversions</a>
+</p>
+
+{% include maps-CodeableConcept.xhtml %}
+
+<a name="conv-Quantity"> </a>
+<a name="Quantity"> </a>
+<h3>Quantity</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Quantity-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Quantity">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Quantity">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Quantity">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Quantity">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Quantity">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Quantity">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Quantity">R4 Conversions</a>
+</p>
+
+{% include maps-Quantity.xhtml %}
+
+<a name="conv-Money"> </a>
+<a name="Money"> </a>
+<h3>Money</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Money-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Money">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Money">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Money">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Money">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Money">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Money">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Money">R4 Conversions</a>
+</p>
+
+{% include maps-Money.xhtml %}
+
+<a name="conv-Range"> </a>
+<a name="Range"> </a>
+<h3>Range</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Range-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Range">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Range">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Range">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Range">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Range">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Range">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Range">R4 Conversions</a>
+</p>
+
+{% include maps-Range.xhtml %}
+
+<a name="conv-Ratio"> </a>
+<a name="Ratio"> </a>
+<h3>Ratio</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Ratio-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Ratio">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Ratio">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Ratio">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Ratio">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Ratio">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Ratio">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Ratio">R4 Conversions</a>
+</p>
+
+{% include maps-Ratio.xhtml %}
+
+<a name="conv-RatioRange"> </a>
+<a name="RatioRange"> </a>
+<h3>RatioRange</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:RatioRange-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#RatioRange">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#RatioRange">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#RatioRange">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#RatioRange">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#RatioRange">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#RatioRange">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#RatioRange">R4 Conversions</a>
+</p>
+
+{% include maps-RatioRange.xhtml %}
+
+<a name="conv-Period"> </a>
+<a name="Period"> </a>
+<h3>Period</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Period-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Period">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Period">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Period">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Period">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Period">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Period">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Period">R4 Conversions</a>
+</p>
+
+{% include maps-Period.xhtml %}
+
+<a name="conv-SampledData"> </a>
+<a name="SampledData"> </a>
+<h3>SampledData</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:SampledData-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#SampledData">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#SampledData">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#SampledData">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#SampledData">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#SampledData">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#SampledData">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#SampledData">R4 Conversions</a>
+</p>
+
+{% include maps-SampledData.xhtml %}
+
+<a name="conv-Identifier"> </a>
+<a name="Identifier"> </a>
+<h3>Identifier</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Identifier-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Identifier">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Identifier">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Identifier">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Identifier">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Identifier">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Identifier">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Identifier">R4 Conversions</a>
+</p>
+
+{% include maps-Identifier.xhtml %}
+
+<a name="conv-HumanName"> </a>
+<a name="HumanName"> </a>
+<h3>HumanName</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:HumanName-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#HumanName">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#HumanName">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#HumanName">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#HumanName">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#HumanName">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#HumanName">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#HumanName">R4 Conversions</a>
+</p>
+
+{% include maps-HumanName.xhtml %}
+
+<a name="conv-Address"> </a>
+<a name="Address"> </a>
+<h3>Address</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Address-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Address">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Address">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Address">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Address">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Address">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Address">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Address">R4 Conversions</a>
+</p>
+
+{% include maps-Address.xhtml %}
+
+<a name="conv-ContactPoint"> </a>
+<a name="ContactPoint"> </a>
+<h3>ContactPoint</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:ContactPoint-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#ContactPoint">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#ContactPoint">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#ContactPoint">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#ContactPoint">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#ContactPoint">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#ContactPoint">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#ContactPoint">R4 Conversions</a>
+</p>
+
+{% include maps-ContactPoint.xhtml %}
+
+<a name="conv-Timing"> </a>
+<a name="Timing"> </a>
+<h3>Timing</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Timing-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Timing">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Timing">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Timing">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Timing">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Timing">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Timing">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Timing">R4 Conversions</a>
+</p>
+
+{% include maps-Timing.xhtml %}
+
+<a name="conv-Signature"> </a>
+<a name="Signature"> </a>
+<h3>Signature</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Signature-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Signature">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Signature">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Signature">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Signature">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Signature">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Signature">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Signature">R4 Conversions</a>
+</p>
+
+{% include maps-Signature.xhtml %}
+
+<a name="conv-Annotation"> </a>
+<a name="Annotation"> </a>
+<h3>Annotation</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Annotation-->See also <a no-external="true" href="{{site.data.fhir.path}}datatypes.html#Annotation">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-examples.html#Annotation">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-definitions.html#Annotation">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-mappings.html#Annotation">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}datatypes-profiles.html#Annotation">Profiles</a>, <a no-external="true" href="extensions-datatypes.html#Annotation">Extensions</a> and <a no-external="true" href="conversions-datatypes.html#Annotation">R4 Conversions</a>
+</p>
+
+{% include maps-Annotation.xhtml %}
+
+</div>

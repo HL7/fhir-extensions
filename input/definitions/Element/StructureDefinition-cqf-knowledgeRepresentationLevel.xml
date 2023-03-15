@@ -71,7 +71,7 @@
           <valueString value="KnowledgeRepresentationLevel"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/knowledge-representation-level|5.0.0-snapshot3"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/knowledge-representation-level"/>
       </binding>
     </element>
   </differential>

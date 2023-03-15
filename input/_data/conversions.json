@@ -1,0 +1,2392 @@
+{
+  "Account" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ActivityDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ActorDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "AdministrableProductDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "AdverseEvent" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "AllergyIntolerance" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Appointment" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "AppointmentResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ArtifactAssessment" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "AuditEvent" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Basic" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Binary" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "BiologicallyDerivedProduct" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "BiologicallyDerivedProductDispense" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "BodyStructure" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Bundle" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "CapabilityStatement" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "CarePlan" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "CareTeam" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ChargeItem" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ChargeItemDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Citation" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Claim" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ClaimResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ClinicalImpression" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ClinicalUseDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.0/StructureDefinition/ClinicalUseDefinition"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "CodeSystem" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Communication" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "CommunicationRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "CompartmentDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Composition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ConceptMap" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Condition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ConditionDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Consent" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Contract" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Coverage" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "CoverageEligibilityRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "CoverageEligibilityResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "DetectedIssue" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Device" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "DeviceAssociation" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "DeviceDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "DeviceDispense" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "DeviceMetric" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "DeviceRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "DeviceUsage" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "DiagnosticReport" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "DocumentReference" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Encounter" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "EncounterHistory" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Endpoint" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "EnrollmentRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "EnrollmentResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "EpisodeOfCare" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "EventDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Evidence" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "EvidenceReport" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "EvidenceVariable" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ExampleScenario" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ExplanationOfBenefit" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "FamilyMemberHistory" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Flag" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "FormularyItem" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "GenomicStudy" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Goal" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "GraphDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Group" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "GuidanceResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "HealthcareService" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ImagingSelection" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "ImagingStudy" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Immunization" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ImmunizationEvaluation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ImmunizationRecommendation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ImplementationGuide" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Ingredient" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "InsurancePlan" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "InventoryItem" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "InventoryReport" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Invoice" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Library" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Linkage" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "List" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Location" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ManufacturedItemDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Measure" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MeasureReport" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Medication" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MedicationAdministration" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MedicationDispense" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MedicationKnowledge" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MedicationRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MedicationStatement" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MedicinalProductDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.0/StructureDefinition/MedicinalProductDefinition"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MessageDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MessageHeader" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "MolecularSequence" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "NamingSystem" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "NutritionIntake" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "NutritionOrder" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "NutritionProduct" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Observation" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ObservationDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "OperationDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "OperationOutcome" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Organization" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "OrganizationAffiliation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "PackagedProductDefinition" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Parameters" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Patient" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "PaymentNotice" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "PaymentReconciliation" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Permission" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Person" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "PlanDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Practitioner" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "PractitionerRole" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Procedure" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Provenance" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Questionnaire" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "QuestionnaireResponse" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "RegulatedAuthorization" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "RelatedPerson" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "RequestOrchestration" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.0/StructureDefinition/RequestOrchestration"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/RequestOrchestration"
+    }
+  },
+  "Requirements" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "ResearchStudy" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ResearchSubject" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "RiskAssessment" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Schedule" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "SearchParameter" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "ServiceRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Slot" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Specimen" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "SpecimenDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "StructureDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "StructureMap" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Subscription" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "SubscriptionStatus" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "SubscriptionTopic" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Substance" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "SubstanceDefinition" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.0/StructureDefinition/SubstanceDefinition"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "SubstanceNucleicAcid" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceNucleicAcid"
+    }
+  },
+  "SubstancePolymer" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstancePolymer"
+    }
+  },
+  "SubstanceProtein" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceProtein"
+    }
+  },
+  "SubstanceReferenceInformation" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceReferenceInformation"
+    }
+  },
+  "SubstanceSourceMaterial" : {
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "not done yet"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Undefined type http://hl7.org/fhir/4.3/StructureDefinition/SubstanceSourceMaterial"
+    }
+  },
+  "SupplyDelivery" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "SupplyRequest" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Task" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "TerminologyCapabilities" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "TestPlan" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "TestReport" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "TestScript" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Transport" : {
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "ValueSet" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "VerificationResult" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "VisionPrescription" : {
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#ffcccc",
+      "testMessage" : "Error: Not done yet!"
+    }
+  },
+  "Address" : {
+    "link" : "conversions-datatypes.html#conv-Address",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Age" : {
+    "link" : "conversions-datatypes.html#conv-Age",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Annotation" : {
+    "link" : "conversions-datatypes.html#conv-Annotation",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Attachment" : {
+    "link" : "conversions-datatypes.html#conv-Attachment",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "CodeableConcept" : {
+    "link" : "conversions-datatypes.html#conv-CodeableConcept",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "CodeableReference" : {
+    "link" : "conversions-references.html#conv-CodeableReference",
+    "r4" : {
+      "status" : "4 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "6 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Coding" : {
+    "link" : "conversions-datatypes.html#conv-Coding",
+    "r4" : {
+      "status" : "4 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "4 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ContactPoint" : {
+    "link" : "conversions-datatypes.html#conv-ContactPoint",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Count" : {
+    "link" : "conversions-datatypes.html#conv-Count",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Distance" : {
+    "link" : "conversions-datatypes.html#conv-Distance",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Duration" : {
+    "link" : "conversions-datatypes.html#conv-Duration",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "HumanName" : {
+    "link" : "conversions-datatypes.html#conv-HumanName",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Identifier" : {
+    "link" : "conversions-datatypes.html#conv-Identifier",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Money" : {
+    "link" : "conversions-datatypes.html#conv-Money",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Period" : {
+    "link" : "conversions-datatypes.html#conv-Period",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Quantity" : {
+    "link" : "conversions-datatypes.html#conv-Quantity",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Range" : {
+    "link" : "conversions-datatypes.html#conv-Range",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Ratio" : {
+    "link" : "conversions-datatypes.html#conv-Ratio",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "RatioRange" : {
+    "link" : "conversions-datatypes.html#conv-RatioRange",
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Reference" : {
+    "link" : "conversions-references.html#conv-Reference",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "SampledData" : {
+    "link" : "conversions-datatypes.html#conv-SampledData",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Signature" : {
+    "link" : "conversions-datatypes.html#conv-Signature",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Timing" : {
+    "link" : "conversions-datatypes.html#conv-Timing",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ContactDetail" : {
+    "link" : "conversions-metadatatypes.html#conv-ContactDetail",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "DataRequirement" : {
+    "link" : "conversions-metadatatypes.html#conv-DataRequirement",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Expression" : {
+    "link" : "conversions-metadatatypes.html#conv-Expression",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ParameterDefinition" : {
+    "link" : "conversions-metadatatypes.html#conv-ParameterDefinition",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "RelatedArtifact" : {
+    "link" : "conversions-metadatatypes.html#conv-RelatedArtifact",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "TriggerDefinition" : {
+    "link" : "conversions-metadatatypes.html#conv-TriggerDefinition",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "UsageContext" : {
+    "link" : "conversions-metadatatypes.html#conv-UsageContext",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Availability" : {
+    "link" : "conversions-datatypes.html#conv-Availability",
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ExtendedContactDetail" : {
+    "link" : "conversions-metadatatypes.html#conv-ExtendedContactDetail",
+    "r4" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    },
+    "r4b" : {
+      "status" : "No Maps Defined",
+      "testColor" : "#dddddd",
+      "testMessage" : "--"
+    }
+  },
+  "Dosage" : {
+    "link" : "conversions-datatypes.html#conv-Dosage",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Meta" : {
+    "link" : "conversions-datatypes.html#conv-Meta",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "Population" : {
+    "link" : "conversions-Population.html#conv-Population",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ProductShelfLife" : {
+    "link" : "conversions-ProductShelfLife.html#conv-ProductShelfLife",
+    "r4" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined (draft)",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "ElementDefinition" : {
+    "link" : "conversions-ElementDefinition.html#conv-ElementDefinition",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  },
+  "MarketingStatus" : {
+    "link" : "conversions-MarketingStatus.html#conv-MarketingStatus",
+    "r4" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    },
+    "r4b" : {
+      "status" : "2 Maps Defined",
+      "testColor" : "#eeeeee",
+      "testMessage" : "n/a"
+    }
+  }
+}

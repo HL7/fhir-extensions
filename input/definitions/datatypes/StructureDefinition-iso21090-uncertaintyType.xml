@@ -76,7 +76,7 @@
           <valueString value="ProbabilityDistributionType"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/probability-distribution-type|5.0.0-snapshot3"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/probability-distribution-type"/>
       </binding>
     </element>
   </differential>

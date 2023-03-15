@@ -48,7 +48,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Patient Friendly Insructions"/>
+      <short value="Patient Friendly Instructions"/>
       <definition value="Simple concise instructions to be read by the patient.  For example  “twice a day” rather than “BID.”."/>
       <comment value="Should use only common terms and sentences.  Use of unfamiliar words and jargon should be avoided."/>
       <min value="0"/>
