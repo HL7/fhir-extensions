@@ -20,7 +20,7 @@ group Reference(source src : ReferenceR4B, target tgt : ReferenceR5) extends Ele
   src.display -> tgt.display;
 }
 
-group Reference(source src : ReferenceR4B, target tgt : canonicalR5) extends Element <<type+>> {
+group Reference2canonical(source src : ReferenceR4B, target tgt : canonicalR5) extends Element <<type+>> {
   src.reference as v -> tgt.value = v "canonicalValue";
 }
 
