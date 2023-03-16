@@ -60,7 +60,7 @@ group ExampleScenarioActor(source src, target tgt) extends BackboneElement {
 
 group ExampleScenarioInstance(source src, target tgt) extends BackboneElement {
   src.key -> tgt.resourceId;
-  src.structureType as s -> tgt.resourceType = s.code;
+  src.structureType as s -> tgt.resourceType = (s.code);
   src.structureVersion as s -> tgt.version as t, t.versionId = s;
 //  src.structureProfile : canonical -> tgt.structureProfile;
 //  src.structureProfile : uri -> tgt.structureProfile;
@@ -100,7 +100,7 @@ group ExampleScenarioProcessStep(source src, target tgt) extends BackboneElement
 }
 
 group ExampleScenarioProcessStepOperation(source src, target tgt) extends BackboneElement {
-  src.type as s -> tgt.type = s.code;
+  src.type as s -> tgt.type = (s.code);
 //  src.title -> tgt.title;
   src.initiator -> tgt.initiator;
   src.receiver -> tgt.receiver;

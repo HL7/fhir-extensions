@@ -116,7 +116,7 @@ group NutritionOrderEnteralFormula(source src, target tgt) extends BackboneEleme
   src.baseFormulaType -> tgt.baseFormulaType;
   src.baseFormulaProductName -> tgt.baseFormulaProductName;
 //  src.deliveryDevice -> tgt.deliveryDevice;
-  src.additive as s -> tgt.additiveType = s.type;
+  src.additive as s -> tgt.additiveType = (s.type);
   src.additive as s -> tgt.additiveProductName = s.productName;
   src.caloricDensity -> tgt.caloricDensity;
   src.routeOfAdministration -> tgt.routeofAdministration;

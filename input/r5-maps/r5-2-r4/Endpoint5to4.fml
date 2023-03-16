@@ -30,7 +30,7 @@ group Endpoint(source src : EndpointR5, target tgt : EndpointR4) extends DomainR
   src.managingOrganization -> tgt.managingOrganization;
   src.contact -> tgt.contact;
   src.period -> tgt.period;
-  src.payload as s -> tgt.payloadType = s.type "payloadType";
+  src.payload as s -> tgt.payloadType = (s.type) "payloadType";
   src.payload as s -> tgt.payloadMimeType = s.mimeType "payloadMimeType";
   src.address -> tgt.address;
   src.header -> tgt.header;

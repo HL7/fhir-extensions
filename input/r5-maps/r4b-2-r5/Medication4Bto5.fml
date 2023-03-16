@@ -24,7 +24,7 @@ group Medication(source src : MedicationR4B, target tgt : MedicationR5) extends 
   src.status as v -> tgt.status = translate(v, '#MedicationStatus', 'code');
   src.manufacturer -> tgt.marketingAuthorizationHolder;
   src.form -> tgt.doseForm;
-  src.amount as s -> tgt.totalVolume = s.numerator;
+  src.amount as s -> tgt.totalVolume = (s.numerator);
   src.ingredient as s -> tgt.ingredient as t then MedicationIngredient(s,t);
   src.batch as s -> tgt.batch as t then MedicationBatch(s,t);
 //  src.definition -> tgt.definition;

@@ -37,7 +37,7 @@ imports "http://hl7.org/fhir/StructureMap/*5to4"
 group Encounter(source src : EncounterR5, target tgt : EncounterR4) extends DomainResource <<type+>> {
   src.identifier -> tgt.identifier;
   src.status as v -> tgt.status = translate(v, '#EncounterStatus', 'code');
-  src.class as s -> tgt.class = create('Coding') as tc, tc.system = s.system, tc.code = s.code, tc.display = s.display;
+  src.class as s -> tgt.class = create('Coding') as tc, tc.system = (s.system), tc.code = (s.code), tc.display = s.display;
   src.priority -> tgt.priority;
   src.type -> tgt.type;
   src.serviceType -> tgt.serviceType;

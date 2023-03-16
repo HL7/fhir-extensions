@@ -35,7 +35,7 @@ group Location(source src : LocationR4B, target tgt : LocationR5) extends Domain
   src.description -> tgt.description;
   src.mode as v -> tgt.mode = translate(v, '#LocationMode', 'code');
   src.type -> tgt.type;
-  src.telecom as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom = s.value;
+  src.telecom as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom = (s.value);
   src.address -> tgt.address;
   src.physicalType -> tgt.form;
   src.position as s -> tgt.position as t then LocationPosition(s,t);

@@ -210,7 +210,7 @@ group ExplanationOfBenefitItemAdjudication(source src, target tgt) extends Backb
   src.category -> tgt.category;
   src.reason -> tgt.reason;
   src.amount -> tgt.amount;
-  src.quantity as s -> tgt.value as t, t = s.value;
+  src.quantity as s -> tgt.value as t, t = (s.value);
 }
 
 group ExplanationOfBenefitItemDetail(source src, target tgt) extends BackboneElement {

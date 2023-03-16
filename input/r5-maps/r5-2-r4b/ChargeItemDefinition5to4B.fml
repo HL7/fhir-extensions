@@ -59,6 +59,6 @@ group ChargeItemDefinitionApplicability(source src, target tgt) extends Backbone
 }
 
 group ChargeItemDefinitionPropertyGroup(source src, target tgt) extends BackboneElement {
-  src.priceComponent as s -> tgt.priceComponent as t, t.type = s.type, t.code = s.code, t.factor = s.factor, t.amount = s.amount;
+  src.priceComponent as s -> tgt.priceComponent as t, t.type = (s.type), t.code = (s.code), t.factor = (s.factor), t.amount = s.amount;
 }
 

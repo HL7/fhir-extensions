@@ -41,7 +41,7 @@ group ChargeItem(source src : ChargeItemR5, target tgt : ChargeItemR4) extends D
   src.quantity -> tgt.quantity;
   src.bodysite -> tgt.bodysite;
 //  src.unitPriceComponent -> tgt.unitPriceComponent;
-  src.totalPriceComponent as s -> tgt.priceOverride = s.money;
+  src.totalPriceComponent as s -> tgt.priceOverride = (s.money);
   src.overrideReason -> tgt.overrideReason;
   src.enterer -> tgt.enterer;
   src.enteredDate -> tgt.enteredDate;

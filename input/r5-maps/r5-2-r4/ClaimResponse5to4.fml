@@ -98,7 +98,7 @@ group ClaimResponseItemAdjudication(source src, target tgt) extends BackboneElem
   src.category -> tgt.category;
   src.reason -> tgt.reason;
   src.amount -> tgt.amount;
-  src.quantity as s -> tgt.value = s.value;
+  src.quantity as s -> tgt.value = (s.value);
 }
 
 group ClaimResponseItemDetail(source src, target tgt) extends BackboneElement {

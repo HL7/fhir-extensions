@@ -344,46 +344,25 @@
   "CapabilityStatement" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4to5', 'code') on Rule \"CapabilityStatement4to5|CapabilityStatementRestResource|type\": Concept map http://hl7.org/fhir/interversion/types4to5 found no translation for CatalogEntry",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 8,
       "parsedOk" : 8,
-      "convertToR5OK" : 7,
-      "r5validated" : 7,
-      "r5InError" : 5,
-      "convertToR4OK" : 7,
-      "base" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4to5', 'code') on Rule \"CapabilityStatement4to5|CapabilityStatementRestResource|type\": Concept map http://hl7.org/fhir/interversion/types4to5 found no translation for CatalogEntry"
-      }
+      "convertToR5OK" : 8,
+      "r5validated" : 8,
+      "r5InError" : 3,
+      "convertToR4OK" : 8
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4bto5', 'code') on Rule \"CapabilityStatement4Bto5|CapabilityStatementRestResource|type\": No map found for http://hl7.org/fhir/interversion/types4bto5",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 8,
       "parsedOk" : 8,
-      "convertToR5OK" : 2,
-      "r5validated" : 2,
-      "r5InError" : 0,
-      "convertToR4OK" : 2,
-      "base" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4bto5', 'code') on Rule \"CapabilityStatement4Bto5|CapabilityStatementRestResource|type\": No map found for http://hl7.org/fhir/interversion/types4bto5"
-      },
-      "example" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4bto5', 'code') on Rule \"CapabilityStatement4Bto5|CapabilityStatementRestResource|type\": No map found for http://hl7.org/fhir/interversion/types4bto5"
-      },
-      "knowledge-repository" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4bto5', 'code') on Rule \"CapabilityStatement4Bto5|CapabilityStatementRestResource|type\": No map found for http://hl7.org/fhir/interversion/types4bto5"
-      },
-      "measure-processor" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4bto5', 'code') on Rule \"CapabilityStatement4Bto5|CapabilityStatementRestResource|type\": No map found for http://hl7.org/fhir/interversion/types4bto5"
-      },
-      "phr" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4bto5', 'code') on Rule \"CapabilityStatement4Bto5|CapabilityStatementRestResource|type\": No map found for http://hl7.org/fhir/interversion/types4bto5"
-      },
-      "terminology-server" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, 'http://hl7.org/fhir/interversion/types4bto5', 'code') on Rule \"CapabilityStatement4Bto5|CapabilityStatementRestResource|type\": No map found for http://hl7.org/fhir/interversion/types4bto5"
-      }
+      "convertToR5OK" : 8,
+      "r5validated" : 8,
+      "r5InError" : 2,
+      "convertToR4OK" : 8
     }
   },
   "CarePlan" : {
@@ -437,38 +416,32 @@
   "ChargeItem" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to an Money",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 1,
       "parsedOk" : 1,
-      "convertToR5OK" : 0,
-      "r5validated" : 0,
+      "convertToR5OK" : 1,
+      "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "example" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to an Money"
-      }
+      "convertToR4OK" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to an Money",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 1,
       "parsedOk" : 1,
-      "convertToR5OK" : 0,
-      "r5validated" : 0,
+      "convertToR5OK" : 1,
+      "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "example" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to an Money"
-      }
+      "convertToR4OK" : 1
     }
   },
   "ChargeItemDefinition" : {
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Period, Error: Exception executing transform t.expression = s.value on Rule \"ChargeItemDefinition4to5|ChargeItemDefinitionApplicability|expression\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/string)], target variables [tgt: (ChargeItemDefinition.applicability), t: (Expression)], shared variables [])",
+      "testMessage" : "Error: Error setting effectivePeriod on ChargeItemDefinition.applicability for rule ChargeItemDefinition4to5|ChargeItemDefinition|period to value effectivePeriod=http://hl7.org/fhir/4.0/StructureDefinition/Period[2 children]: Unable to convert a http://hl7.org/fhir/4.0/StructureDefinition/Period(org.hl7.fhir.r5.elementmodel.Element) to a Period, Error: Exception executing transform t.factor = (s.factor) on Rule \"ChargeItemDefinition4to5|ChargeItemDefinitionPropertyGroup|priceComponent\": Variable s.factor not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], target variables [tgt: (ChargeItemDefinition.propertyGroup), t: (MonetaryComponent)], shared variables [])",
       "totalInstances" : 2,
       "parsedOk" : 2,
       "convertToR5OK" : 0,
@@ -476,16 +449,16 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "device" : {
-        "conversion-error" : "Exception executing transform t.expression = s.value on Rule \"ChargeItemDefinition4to5|ChargeItemDefinitionApplicability|expression\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/string)], target variables [tgt: (ChargeItemDefinition.applicability), t: (Expression)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.factor = (s.factor) on Rule \"ChargeItemDefinition4to5|ChargeItemDefinitionPropertyGroup|priceComponent\": Variable s.factor not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], target variables [tgt: (ChargeItemDefinition.propertyGroup), t: (MonetaryComponent)], shared variables [])"
       },
       "ebm" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Period"
+        "conversion-error" : "Error setting effectivePeriod on ChargeItemDefinition.applicability for rule ChargeItemDefinition4to5|ChargeItemDefinition|period to value effectivePeriod=http://hl7.org/fhir/4.0/StructureDefinition/Period[2 children]: Unable to convert a http://hl7.org/fhir/4.0/StructureDefinition/Period(org.hl7.fhir.r5.elementmodel.Element) to a Period"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Period, Error: Exception executing transform t.expression = s.value on Rule \"ChargeItemDefinition4Bto5|ChargeItemDefinitionApplicability|expression\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/string)], target variables [tgt: (ChargeItemDefinition.applicability), t: (Expression)], shared variables [])",
+      "testMessage" : "Error: Error setting effectivePeriod on ChargeItemDefinition.applicability for rule ChargeItemDefinition4Bto5|ChargeItemDefinition|period to value effectivePeriod=http://hl7.org/fhir/4.3/StructureDefinition/Period[2 children]: Unable to convert a http://hl7.org/fhir/4.3/StructureDefinition/Period(org.hl7.fhir.r5.elementmodel.Element) to a Period, Error: Exception executing transform t.factor = (s.factor) on Rule \"ChargeItemDefinition4Bto5|ChargeItemDefinitionPropertyGroup|priceComponent\": Variable s.factor not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], target variables [tgt: (ChargeItemDefinition.propertyGroup), t: (MonetaryComponent)], shared variables [])",
       "totalInstances" : 2,
       "parsedOk" : 2,
       "convertToR5OK" : 0,
@@ -493,10 +466,10 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "device" : {
-        "conversion-error" : "Exception executing transform t.expression = s.value on Rule \"ChargeItemDefinition4Bto5|ChargeItemDefinitionApplicability|expression\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/string)], target variables [tgt: (ChargeItemDefinition.applicability), t: (Expression)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.factor = (s.factor) on Rule \"ChargeItemDefinition4Bto5|ChargeItemDefinitionPropertyGroup|priceComponent\": Variable s.factor not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], target variables [tgt: (ChargeItemDefinition.propertyGroup), t: (MonetaryComponent)], shared variables [])"
       },
       "ebm" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Period"
+        "conversion-error" : "Error setting effectivePeriod on ChargeItemDefinition.applicability for rule ChargeItemDefinition4Bto5|ChargeItemDefinition|period to value effectivePeriod=http://hl7.org/fhir/4.3/StructureDefinition/Period[2 children]: Unable to convert a http://hl7.org/fhir/4.3/StructureDefinition/Period(org.hl7.fhir.r5.elementmodel.Element) to a Period"
       }
     }
   },
@@ -522,7 +495,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept",
+      "testMessage" : "Error: Error setting site on Claim.item.bodySite for rule Claim4to5|ClaimItem|bodySite to value bodySite=http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept[1 children]: Unable to convert a http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept(org.hl7.fhir.r5.elementmodel.Element) to a CodeableConcept",
       "totalInstances" : 17,
       "parsedOk" : 17,
       "convertToR5OK" : 14,
@@ -530,19 +503,19 @@
       "r5InError" : 14,
       "convertToR4OK" : 14,
       "100151" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept"
+        "conversion-error" : "Error setting site on Claim.item.bodySite for rule Claim4to5|ClaimItem|bodySite to value bodySite=http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept[1 children]: Unable to convert a http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept(org.hl7.fhir.r5.elementmodel.Element) to a CodeableConcept"
       },
       "100153" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept"
+        "conversion-error" : "Error setting site on Claim.item.bodySite for rule Claim4to5|ClaimItem|bodySite to value bodySite=http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept[1 children]: Unable to convert a http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept(org.hl7.fhir.r5.elementmodel.Element) to a CodeableConcept"
       },
       "100156" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept"
+        "conversion-error" : "Error setting site on Claim.item.bodySite for rule Claim4to5|ClaimItem|bodySite to value bodySite=http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept[1 children]: Unable to convert a http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept(org.hl7.fhir.r5.elementmodel.Element) to a CodeableConcept"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept",
+      "testMessage" : "Error: Error setting site on Claim.item.bodySite for rule Claim4Bto5|ClaimItem|bodySite to value bodySite=http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept[1 children]: Unable to convert a http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept(org.hl7.fhir.r5.elementmodel.Element) to a CodeableConcept",
       "totalInstances" : 17,
       "parsedOk" : 17,
       "convertToR5OK" : 14,
@@ -550,13 +523,13 @@
       "r5InError" : 14,
       "convertToR4OK" : 14,
       "100151" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept"
+        "conversion-error" : "Error setting site on Claim.item.bodySite for rule Claim4Bto5|ClaimItem|bodySite to value bodySite=http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept[1 children]: Unable to convert a http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept(org.hl7.fhir.r5.elementmodel.Element) to a CodeableConcept"
       },
       "100153" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept"
+        "conversion-error" : "Error setting site on Claim.item.bodySite for rule Claim4Bto5|ClaimItem|bodySite to value bodySite=http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept[1 children]: Unable to convert a http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept(org.hl7.fhir.r5.elementmodel.Element) to a CodeableConcept"
       },
       "100156" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept"
+        "conversion-error" : "Error setting site on Claim.item.bodySite for rule Claim4Bto5|ClaimItem|bodySite to value bodySite=http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept[1 children]: Unable to convert a http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept(org.hl7.fhir.r5.elementmodel.Element) to a CodeableConcept"
       }
     }
   },
@@ -564,7 +537,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.value = s.value on Rule \"ClaimResponse5to4|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.value = (s.value) on Rule \"ClaimResponse5to4|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])",
       "totalInstances" : 5,
       "parsedOk" : 5,
       "convertToR5OK" : 5,
@@ -572,19 +545,19 @@
       "r5InError" : 0,
       "convertToR4OK" : 2,
       "R3500" : {
-        "return-error" : "Exception executing transform tgt.value = s.value on Rule \"ClaimResponse5to4|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.value = (s.value) on Rule \"ClaimResponse5to4|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "R3502" : {
-        "return-error" : "Exception executing transform tgt.value = s.value on Rule \"ClaimResponse5to4|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.value = (s.value) on Rule \"ClaimResponse5to4|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "R3503" : {
-        "return-error" : "Exception executing transform tgt.value = s.value on Rule \"ClaimResponse5to4|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.value = (s.value) on Rule \"ClaimResponse5to4|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.value = s.value on Rule \"ClaimResponse5to4B|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.value = (s.value) on Rule \"ClaimResponse5to4B|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])",
       "totalInstances" : 5,
       "parsedOk" : 5,
       "convertToR5OK" : 5,
@@ -592,13 +565,13 @@
       "r5InError" : 0,
       "convertToR4OK" : 2,
       "R3500" : {
-        "return-error" : "Exception executing transform tgt.value = s.value on Rule \"ClaimResponse5to4B|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.value = (s.value) on Rule \"ClaimResponse5to4B|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "R3502" : {
-        "return-error" : "Exception executing transform tgt.value = s.value on Rule \"ClaimResponse5to4B|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.value = (s.value) on Rule \"ClaimResponse5to4B|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "R3503" : {
-        "return-error" : "Exception executing transform tgt.value = s.value on Rule \"ClaimResponse5to4B|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.value = (s.value) on Rule \"ClaimResponse5to4B|ClaimResponseItemAdjudication|quantity\": Variable s.value not found (source variables [src: (ClaimResponse.item.adjudication), s: (Quantity)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       }
     }
   },
@@ -1269,7 +1242,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform t.code = s.concept on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform t.code = (s.concept) on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])",
       "totalInstances" : 12,
       "parsedOk" : 12,
       "convertToR5OK" : 12,
@@ -1277,28 +1250,28 @@
       "r5InError" : 0,
       "convertToR4OK" : 6,
       "f001" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f002" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f003" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f201" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f202" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f203" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform t.code = s.concept on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform t.code = (s.concept) on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])",
       "totalInstances" : 12,
       "parsedOk" : 12,
       "convertToR5OK" : 12,
@@ -1306,22 +1279,22 @@
       "r5InError" : 0,
       "convertToR4OK" : 6,
       "f001" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f002" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f003" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f201" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f202" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       },
       "f203" : {
-        "return-error" : "Exception executing transform t.code = s.concept on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform t.code = (s.concept) on Rule \"Condition5to4B|Condition|evidence\": Variable s.concept not found (source variables [src: (Condition), s: (CodeableReference)], target variables [tgt: (Condition), t: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       }
     }
   },
@@ -1389,7 +1362,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.subscriberId = s.value on Rule \"Coverage5to4|Coverage|subscriberId\": Variable s.value not found (source variables [src: (Coverage), s: (Identifier)], target variables [tgt: (Coverage)], shared variables []), Error: Exception executing transform tgt.value = s.value on Rule \"Coverage5to4|CoverageClass|classValue\": Variable s.value not found (source variables [src: (Coverage.class), s: (Identifier)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.subscriberId = (s.value) on Rule \"Coverage5to4|Coverage|subscriberId\": Variable s.value not found (source variables [src: (Coverage), s: (Identifier)], target variables [tgt: (Coverage)], shared variables []), Error: Exception executing transform tgt.value = (s.value) on Rule \"Coverage5to4|CoverageClass|classValue\": Variable s.value not found (source variables [src: (Coverage.class), s: (Identifier)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])",
       "totalInstances" : 4,
       "parsedOk" : 4,
       "convertToR5OK" : 4,
@@ -1397,16 +1370,16 @@
       "r5InError" : 4,
       "convertToR4OK" : 2,
       "7546D" : {
-        "return-error" : "Exception executing transform tgt.subscriberId = s.value on Rule \"Coverage5to4|Coverage|subscriberId\": Variable s.value not found (source variables [src: (Coverage), s: (Identifier)], target variables [tgt: (Coverage)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.subscriberId = (s.value) on Rule \"Coverage5to4|Coverage|subscriberId\": Variable s.value not found (source variables [src: (Coverage), s: (Identifier)], target variables [tgt: (Coverage)], shared variables [])"
       },
       "9876B1" : {
-        "return-error" : "Exception executing transform tgt.value = s.value on Rule \"Coverage5to4|CoverageClass|classValue\": Variable s.value not found (source variables [src: (Coverage.class), s: (Identifier)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.value = (s.value) on Rule \"Coverage5to4|CoverageClass|classValue\": Variable s.value not found (source variables [src: (Coverage.class), s: (Identifier)], target variables [tgt: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.subscriberId = s.value on Rule \"Coverage5to4B|Coverage|subscriberId\": Variable s.value not found (source variables [src: (Coverage), s: (Identifier)], target variables [tgt: (Coverage)], shared variables []), Error: Exception executing transform tgt.value = s.value on Rule \"Coverage5to4B|CoverageClass|classValue\": Variable s.value not found (source variables [src: (Coverage.class), s: (Identifier)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.subscriberId = (s.value) on Rule \"Coverage5to4B|Coverage|subscriberId\": Variable s.value not found (source variables [src: (Coverage), s: (Identifier)], target variables [tgt: (Coverage)], shared variables []), Error: Exception executing transform tgt.value = (s.value) on Rule \"Coverage5to4B|CoverageClass|classValue\": Variable s.value not found (source variables [src: (Coverage.class), s: (Identifier)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])",
       "totalInstances" : 4,
       "parsedOk" : 4,
       "convertToR5OK" : 4,
@@ -1414,10 +1387,10 @@
       "r5InError" : 4,
       "convertToR4OK" : 2,
       "7546D" : {
-        "return-error" : "Exception executing transform tgt.subscriberId = s.value on Rule \"Coverage5to4B|Coverage|subscriberId\": Variable s.value not found (source variables [src: (Coverage), s: (Identifier)], target variables [tgt: (Coverage)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.subscriberId = (s.value) on Rule \"Coverage5to4B|Coverage|subscriberId\": Variable s.value not found (source variables [src: (Coverage), s: (Identifier)], target variables [tgt: (Coverage)], shared variables [])"
       },
       "9876B1" : {
-        "return-error" : "Exception executing transform tgt.value = s.value on Rule \"Coverage5to4B|CoverageClass|classValue\": Variable s.value not found (source variables [src: (Coverage.class), s: (Identifier)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.value = (s.value) on Rule \"Coverage5to4B|CoverageClass|classValue\": Variable s.value not found (source variables [src: (Coverage.class), s: (Identifier)], target variables [tgt: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], shared variables [])"
       }
     }
   },
@@ -1695,7 +1668,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])",
       "totalInstances" : 10,
       "parsedOk" : 10,
       "convertToR5OK" : 0,
@@ -1703,40 +1676,40 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "emerg" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "example" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f001" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f002" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f003" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f201" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f202" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f203" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "home" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "xcda" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4to5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])",
       "totalInstances" : 10,
       "parsedOk" : 10,
       "convertToR5OK" : 0,
@@ -1744,34 +1717,34 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "emerg" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "example" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f001" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f002" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f003" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f201" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f202" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "f203" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "home" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       },
       "xcda" : {
-        "conversion-error" : "Exception executing transform tc.system = s.system on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tc.system = (s.system) on Rule \"Encounter4Bto5|Encounter|class\": Variable s.system not found (source variables [src: (Encounter), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (Encounter), t: (CodeableConcept), tc: (Coding)], shared variables [])"
       }
     }
   },
@@ -1791,7 +1764,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])",
       "totalInstances" : 4,
       "parsedOk" : 4,
       "convertToR5OK" : 4,
@@ -1799,22 +1772,22 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "direct-endpoint" : {
-        "return-error" : "Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
       },
       "example-iid" : {
-        "return-error" : "Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
       },
       "example-wadors" : {
-        "return-error" : "Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
       },
       "example" : {
-        "return-error" : "Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])",
       "totalInstances" : 4,
       "parsedOk" : 4,
       "convertToR5OK" : 4,
@@ -1822,16 +1795,16 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "direct-endpoint" : {
-        "return-error" : "Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
       },
       "example-iid" : {
-        "return-error" : "Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
       },
       "example-wadors" : {
-        "return-error" : "Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
       },
       "example" : {
-        "return-error" : "Exception executing transform tgt.payloadType = s.type on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.payloadType = (s.type) on Rule \"Endpoint5to4B|Endpoint|payloadType\": Variable s.type not found (source variables [src: (Endpoint), s: (Endpoint.payload)], target variables [tgt: (Endpoint)], shared variables [])"
       }
     }
   },
@@ -2004,7 +1977,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform t.code = s.value on Rule \"ExampleScenario4to5|ExampleScenarioInstance|resourceType\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/code)], target variables [tgt: (ExampleScenario.instance), t: (Coding)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform t.code = (s.value) on Rule \"ExampleScenario4to5|ExampleScenarioInstance|resourceType\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/code)], target variables [tgt: (ExampleScenario.instance), t: (Coding)], shared variables [])",
       "totalInstances" : 1,
       "parsedOk" : 1,
       "convertToR5OK" : 0,
@@ -2012,13 +1985,13 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "example" : {
-        "conversion-error" : "Exception executing transform t.code = s.value on Rule \"ExampleScenario4to5|ExampleScenarioInstance|resourceType\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/code)], target variables [tgt: (ExampleScenario.instance), t: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.code = (s.value) on Rule \"ExampleScenario4to5|ExampleScenarioInstance|resourceType\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/code)], target variables [tgt: (ExampleScenario.instance), t: (Coding)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform t.code = s.value on Rule \"ExampleScenario4Bto5|ExampleScenarioInstance|resourceType\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/code)], target variables [tgt: (ExampleScenario.instance), t: (Coding)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform t.code = (s.value) on Rule \"ExampleScenario4Bto5|ExampleScenarioInstance|resourceType\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/code)], target variables [tgt: (ExampleScenario.instance), t: (Coding)], shared variables [])",
       "totalInstances" : 1,
       "parsedOk" : 1,
       "convertToR5OK" : 0,
@@ -2026,7 +1999,7 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "example" : {
-        "conversion-error" : "Exception executing transform t.code = s.value on Rule \"ExampleScenario4Bto5|ExampleScenarioInstance|resourceType\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/code)], target variables [tgt: (ExampleScenario.instance), t: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.code = (s.value) on Rule \"ExampleScenario4Bto5|ExampleScenarioInstance|resourceType\": Variable s.value not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/code)], target variables [tgt: (ExampleScenario.instance), t: (Coding)], shared variables [])"
       }
     }
   },
@@ -2262,7 +2235,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tcc.system = a.system on Rule \"CodeableConcept4to5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tcc.system = (a.system) on Rule \"CodeableConcept4to5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])",
       "totalInstances" : 2,
       "parsedOk" : 2,
       "convertToR5OK" : 0,
@@ -2270,16 +2243,16 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "example-xr" : {
-        "conversion-error" : "Exception executing transform tcc.system = a.system on Rule \"CodeableConcept4to5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tcc.system = (a.system) on Rule \"CodeableConcept4to5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])"
       },
       "example" : {
-        "conversion-error" : "Exception executing transform tcc.system = a.system on Rule \"CodeableConcept4to5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tcc.system = (a.system) on Rule \"CodeableConcept4to5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.0/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tcc.system = a.system on Rule \"CodeableConcept4Bto5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tcc.system = (a.system) on Rule \"CodeableConcept4Bto5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])",
       "totalInstances" : 2,
       "parsedOk" : 2,
       "convertToR5OK" : 0,
@@ -2287,10 +2260,10 @@
       "r5InError" : 0,
       "convertToR4OK" : 0,
       "example-xr" : {
-        "conversion-error" : "Exception executing transform tcc.system = a.system on Rule \"CodeableConcept4Bto5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tcc.system = (a.system) on Rule \"CodeableConcept4Bto5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])"
       },
       "example" : {
-        "conversion-error" : "Exception executing transform tcc.system = a.system on Rule \"CodeableConcept4Bto5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])"
+        "conversion-error" : "Exception executing transform tcc.system = (a.system) on Rule \"CodeableConcept4Bto5|Coding2CodeableReference|Coding2CodeableReference\": Variable a.system not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/Coding), s: (http://hl7.org/fhir/4.3/StructureDefinition/Coding)], target variables [tgt: (CodeableReference), tc: (CodeableConcept), tcc: (Coding)], shared variables [])"
       }
     }
   },
@@ -2298,7 +2271,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.programEligibility = s.program on Rule \"Immunization5to4|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.programEligibility = (s.program) on Rule \"Immunization5to4|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])",
       "totalInstances" : 5,
       "parsedOk" : 5,
       "convertToR5OK" : 5,
@@ -2306,19 +2279,19 @@
       "r5InError" : 5,
       "convertToR4OK" : 2,
       "example" : {
-        "return-error" : "Exception executing transform tgt.programEligibility = s.program on Rule \"Immunization5to4|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.programEligibility = (s.program) on Rule \"Immunization5to4|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
       },
       "protocol" : {
-        "return-error" : "Exception executing transform tgt.programEligibility = s.program on Rule \"Immunization5to4|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.programEligibility = (s.program) on Rule \"Immunization5to4|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
       },
       "subpotent" : {
-        "return-error" : "Exception executing transform tgt.programEligibility = s.program on Rule \"Immunization5to4|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.programEligibility = (s.program) on Rule \"Immunization5to4|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.programEligibility = s.program on Rule \"Immunization5to4B|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.programEligibility = (s.program) on Rule \"Immunization5to4B|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])",
       "totalInstances" : 5,
       "parsedOk" : 5,
       "convertToR5OK" : 5,
@@ -2326,13 +2299,13 @@
       "r5InError" : 5,
       "convertToR4OK" : 2,
       "example" : {
-        "return-error" : "Exception executing transform tgt.programEligibility = s.program on Rule \"Immunization5to4B|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.programEligibility = (s.program) on Rule \"Immunization5to4B|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
       },
       "protocol" : {
-        "return-error" : "Exception executing transform tgt.programEligibility = s.program on Rule \"Immunization5to4B|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.programEligibility = (s.program) on Rule \"Immunization5to4B|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
       },
       "subpotent" : {
-        "return-error" : "Exception executing transform tgt.programEligibility = s.program on Rule \"Immunization5to4B|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.programEligibility = (s.program) on Rule \"Immunization5to4B|Immunization|programEligibility\": Variable s.program not found (source variables [src: (Immunization), s: (Immunization.programEligibility)], target variables [tgt: (Immunization)], shared variables [])"
       }
     }
   },
@@ -2610,7 +2583,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform t.telecom = s.value on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform t.telecom = (s.value) on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])",
       "totalInstances" : 6,
       "parsedOk" : 6,
       "convertToR5OK" : 2,
@@ -2618,22 +2591,22 @@
       "r5InError" : 0,
       "convertToR4OK" : 2,
       "1" : {
-        "conversion-error" : "Exception executing transform t.telecom = s.value on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.telecom = (s.value) on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
       },
       "2" : {
-        "conversion-error" : "Exception executing transform t.telecom = s.value on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.telecom = (s.value) on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
       },
       "amb" : {
-        "conversion-error" : "Exception executing transform t.telecom = s.value on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.telecom = (s.value) on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
       },
       "hl7" : {
-        "conversion-error" : "Exception executing transform t.telecom = s.value on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.telecom = (s.value) on Rule \"Location4to5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.0/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform t.telecom = s.value on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform t.telecom = (s.value) on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])",
       "totalInstances" : 6,
       "parsedOk" : 6,
       "convertToR5OK" : 2,
@@ -2641,16 +2614,16 @@
       "r5InError" : 0,
       "convertToR4OK" : 2,
       "1" : {
-        "conversion-error" : "Exception executing transform t.telecom = s.value on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.telecom = (s.value) on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
       },
       "2" : {
-        "conversion-error" : "Exception executing transform t.telecom = s.value on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.telecom = (s.value) on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
       },
       "amb" : {
-        "conversion-error" : "Exception executing transform t.telecom = s.value on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.telecom = (s.value) on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
       },
       "hl7" : {
-        "conversion-error" : "Exception executing transform t.telecom = s.value on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
+        "conversion-error" : "Exception executing transform t.telecom = (s.value) on Rule \"Location4Bto5|Location|telecom\": Variable s.value not found (source variables [src: (Location), s: (http://hl7.org/fhir/4.3/StructureDefinition/ContactPoint)], target variables [tgt: (Location), t: (ExtendedContactDetail)], shared variables [])"
       }
     }
   },
@@ -2676,7 +2649,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.definition = s.definition on Rule \"Measure5to4|Measure|term\": Variable s.definition not found (source variables [src: (Measure), s: (Measure.term)], target variables [tgt: (Measure)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.definition = (s.definition) on Rule \"Measure5to4|Measure|term\": Variable s.definition not found (source variables [src: (Measure), s: (Measure.term)], target variables [tgt: (Measure)], shared variables [])",
       "totalInstances" : 7,
       "parsedOk" : 7,
       "convertToR5OK" : 7,
@@ -2684,13 +2657,13 @@
       "r5InError" : 5,
       "convertToR4OK" : 6,
       "measure-exclusive-breastfeeding" : {
-        "return-error" : "Exception executing transform tgt.definition = s.definition on Rule \"Measure5to4|Measure|term\": Variable s.definition not found (source variables [src: (Measure), s: (Measure.term)], target variables [tgt: (Measure)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.definition = (s.definition) on Rule \"Measure5to4|Measure|term\": Variable s.definition not found (source variables [src: (Measure), s: (Measure.term)], target variables [tgt: (Measure)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.definition = s.definition on Rule \"Measure5to4B|Measure|term\": Variable s.definition not found (source variables [src: (Measure), s: (Measure.term)], target variables [tgt: (Measure)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.definition = (s.definition) on Rule \"Measure5to4B|Measure|term\": Variable s.definition not found (source variables [src: (Measure), s: (Measure.term)], target variables [tgt: (Measure)], shared variables [])",
       "totalInstances" : 7,
       "parsedOk" : 7,
       "convertToR5OK" : 7,
@@ -2698,7 +2671,7 @@
       "r5InError" : 2,
       "convertToR4OK" : 6,
       "measure-exclusive-breastfeeding" : {
-        "return-error" : "Exception executing transform tgt.definition = s.definition on Rule \"Measure5to4B|Measure|term\": Variable s.definition not found (source variables [src: (Measure), s: (Measure.term)], target variables [tgt: (Measure)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.definition = (s.definition) on Rule \"Measure5to4B|Measure|term\": Variable s.definition not found (source variables [src: (Measure), s: (Measure.term)], target variables [tgt: (Measure)], shared variables [])"
       }
     }
   },
@@ -2730,7 +2703,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.totalVolume = s.numerator on Rule \"Medication4to5|Medication|amount\": Variable s.numerator not found (source variables [src: (Medication), s: (http://hl7.org/fhir/4.0/StructureDefinition/Ratio)], target variables [tgt: (Medication)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.totalVolume = (s.numerator) on Rule \"Medication4to5|Medication|amount\": Variable s.numerator not found (source variables [src: (Medication), s: (http://hl7.org/fhir/4.0/StructureDefinition/Ratio)], target variables [tgt: (Medication)], shared variables [])",
       "totalInstances" : 23,
       "parsedOk" : 23,
       "convertToR5OK" : 22,
@@ -2738,13 +2711,13 @@
       "r5InError" : 20,
       "convertToR4OK" : 22,
       "med0313" : {
-        "conversion-error" : "Exception executing transform tgt.totalVolume = s.numerator on Rule \"Medication4to5|Medication|amount\": Variable s.numerator not found (source variables [src: (Medication), s: (http://hl7.org/fhir/4.0/StructureDefinition/Ratio)], target variables [tgt: (Medication)], shared variables [])"
+        "conversion-error" : "Exception executing transform tgt.totalVolume = (s.numerator) on Rule \"Medication4to5|Medication|amount\": Variable s.numerator not found (source variables [src: (Medication), s: (http://hl7.org/fhir/4.0/StructureDefinition/Ratio)], target variables [tgt: (Medication)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.totalVolume = s.numerator on Rule \"Medication4Bto5|Medication|amount\": Variable s.numerator not found (source variables [src: (Medication), s: (http://hl7.org/fhir/4.3/StructureDefinition/Ratio)], target variables [tgt: (Medication)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.totalVolume = (s.numerator) on Rule \"Medication4Bto5|Medication|amount\": Variable s.numerator not found (source variables [src: (Medication), s: (http://hl7.org/fhir/4.3/StructureDefinition/Ratio)], target variables [tgt: (Medication)], shared variables [])",
       "totalInstances" : 23,
       "parsedOk" : 23,
       "convertToR5OK" : 22,
@@ -2752,7 +2725,7 @@
       "r5InError" : 20,
       "convertToR4OK" : 22,
       "med0313" : {
-        "conversion-error" : "Exception executing transform tgt.totalVolume = s.numerator on Rule \"Medication4Bto5|Medication|amount\": Variable s.numerator not found (source variables [src: (Medication), s: (http://hl7.org/fhir/4.3/StructureDefinition/Ratio)], target variables [tgt: (Medication)], shared variables [])"
+        "conversion-error" : "Exception executing transform tgt.totalVolume = (s.numerator) on Rule \"Medication4Bto5|Medication|amount\": Variable s.numerator not found (source variables [src: (Medication), s: (http://hl7.org/fhir/4.3/StructureDefinition/Ratio)], target variables [tgt: (Medication)], shared variables [])"
       }
     }
   },
@@ -3702,7 +3675,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.communication = s.language on Rule \"Practitioner5to4|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.communication = (s.language) on Rule \"Practitioner5to4|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])",
       "totalInstances" : 14,
       "parsedOk" : 14,
       "convertToR5OK" : 14,
@@ -3710,19 +3683,19 @@
       "r5InError" : 0,
       "convertToR4OK" : 11,
       "f003" : {
-        "return-error" : "Exception executing transform tgt.communication = s.language on Rule \"Practitioner5to4|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.communication = (s.language) on Rule \"Practitioner5to4|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
       },
       "f004" : {
-        "return-error" : "Exception executing transform tgt.communication = s.language on Rule \"Practitioner5to4|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.communication = (s.language) on Rule \"Practitioner5to4|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
       },
       "f005" : {
-        "return-error" : "Exception executing transform tgt.communication = s.language on Rule \"Practitioner5to4|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.communication = (s.language) on Rule \"Practitioner5to4|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.communication = s.language on Rule \"Practitioner5to4B|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.communication = (s.language) on Rule \"Practitioner5to4B|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])",
       "totalInstances" : 14,
       "parsedOk" : 14,
       "convertToR5OK" : 14,
@@ -3730,13 +3703,13 @@
       "r5InError" : 0,
       "convertToR4OK" : 11,
       "f003" : {
-        "return-error" : "Exception executing transform tgt.communication = s.language on Rule \"Practitioner5to4B|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.communication = (s.language) on Rule \"Practitioner5to4B|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
       },
       "f004" : {
-        "return-error" : "Exception executing transform tgt.communication = s.language on Rule \"Practitioner5to4B|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.communication = (s.language) on Rule \"Practitioner5to4B|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
       },
       "f005" : {
-        "return-error" : "Exception executing transform tgt.communication = s.language on Rule \"Practitioner5to4B|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
+        "return-error" : "Exception executing transform tgt.communication = (s.language) on Rule \"Practitioner5to4B|Practitioner|communication\": Variable s.language not found (source variables [src: (Practitioner), s: (Practitioner.communication)], target variables [tgt: (Practitioner)], shared variables [])"
       }
     }
   },
@@ -8190,7 +8163,7 @@
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.expiry = s.expiry on Rule \"Substance4to5|Substance|expiry\": Variable s.expiry not found (source variables [src: (Substance), s: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], target variables [tgt: (Substance)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.expiry = (s.expiry) on Rule \"Substance4to5|Substance|expiry\": Variable s.expiry not found (source variables [src: (Substance), s: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], target variables [tgt: (Substance)], shared variables [])",
       "totalInstances" : 6,
       "parsedOk" : 6,
       "convertToR5OK" : 5,
@@ -8198,13 +8171,13 @@
       "r5InError" : 5,
       "convertToR4OK" : 5,
       "f204" : {
-        "conversion-error" : "Exception executing transform tgt.expiry = s.expiry on Rule \"Substance4to5|Substance|expiry\": Variable s.expiry not found (source variables [src: (Substance), s: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], target variables [tgt: (Substance)], shared variables [])"
+        "conversion-error" : "Exception executing transform tgt.expiry = (s.expiry) on Rule \"Substance4to5|Substance|expiry\": Variable s.expiry not found (source variables [src: (Substance), s: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], target variables [tgt: (Substance)], shared variables [])"
       }
     },
     "r4b" : {
       "status" : "2 Maps Defined",
       "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.expiry = s.expiry on Rule \"Substance4Bto5|Substance|expiry\": Variable s.expiry not found (source variables [src: (Substance), s: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], target variables [tgt: (Substance)], shared variables [])",
+      "testMessage" : "Error: Exception executing transform tgt.expiry = (s.expiry) on Rule \"Substance4Bto5|Substance|expiry\": Variable s.expiry not found (source variables [src: (Substance), s: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], target variables [tgt: (Substance)], shared variables [])",
       "totalInstances" : 6,
       "parsedOk" : 6,
       "convertToR5OK" : 5,
@@ -8212,7 +8185,7 @@
       "r5InError" : 5,
       "convertToR4OK" : 5,
       "f204" : {
-        "conversion-error" : "Exception executing transform tgt.expiry = s.expiry on Rule \"Substance4Bto5|Substance|expiry\": Variable s.expiry not found (source variables [src: (Substance), s: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], target variables [tgt: (Substance)], shared variables [])"
+        "conversion-error" : "Exception executing transform tgt.expiry = (s.expiry) on Rule \"Substance4Bto5|Substance|expiry\": Variable s.expiry not found (source variables [src: (Substance), s: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], target variables [tgt: (Substance)], shared variables [])"
       }
     }
   },

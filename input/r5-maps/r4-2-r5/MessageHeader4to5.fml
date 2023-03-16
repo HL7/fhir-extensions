@@ -48,7 +48,7 @@ group MessageHeaderSource(source src, target tgt) extends BackboneElement {
 }
 
 group MessageHeaderResponse(source src, target tgt) extends BackboneElement {
-  src.identifier as s -> tgt.identifier as t, t.value = s.value;
+  src.identifier as s -> tgt.identifier as t, t.value = (s.value);
   src.code as v -> tgt.code = translate(v, '#ResponseType', 'code');
   src.details -> tgt.details;
 }

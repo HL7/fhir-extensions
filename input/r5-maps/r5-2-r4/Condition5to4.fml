@@ -32,7 +32,7 @@ group Condition(source src : ConditionR5, target tgt : ConditionR4) extends Doma
   src.participant as s where code = 'enterer' -> tgt.recorder = s.actor "recorder";
   src.participant as s where code = 'author' -> tgt.asserter = s.actor "asserter";
   src.stage as s -> tgt.stage as t then ConditionStage(s,t);
-  src.evidence as s -> tgt.evidence as t, t.code = s.concept, t.detail = s.reference;
+  src.evidence as s -> tgt.evidence as t, t.code = (s.concept), t.detail = s.reference;
   src.note -> tgt.note;
 }
 

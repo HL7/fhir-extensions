@@ -46,7 +46,7 @@ group Coding2CodeableConcept(source src : CodingR4B, target tgt : CodeableConcep
 }
 
 group Coding2CodeableReference(source src : CodingR4B, target tgt : CodeableReferenceR5) extends Element <<types>> {
-  src as s -> tgt.concept = create('CodeableConcept') as tc, tc.coding = create ('Coding') as tcc, tcc.system = a.system, tcc.code = s.code, tcc.display = s.display "Coding2CodeableReference";
+  src as s -> tgt.concept = create('CodeableConcept') as tc, tc.coding = create ('Coding') as tcc, tcc.system = (a.system), tcc.code = (s.code), tcc.display = s.display "Coding2CodeableReference";
 }
 
 group CodeableConcept2code(source src : CodeableConceptR4B, target tgt : codeR5, source sysUrl : string) extends Element <<types>> {

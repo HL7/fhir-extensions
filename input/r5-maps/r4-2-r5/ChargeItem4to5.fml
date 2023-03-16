@@ -56,7 +56,7 @@ group ChargeItem(source src : ChargeItemR4, target tgt : ChargeItemR5) extends D
 
 group ChargeItemTotalPriceOverride(source src, target tgt) extends BackboneElement {
   src.value as v -> tgt.type = "base";
-  src.value as v -> tgt.amount = v "money";
+  src as v -> tgt.amount = v "money";
 }
 
 group ChargeItemPerformer(source src, target tgt) extends BackboneElement {
