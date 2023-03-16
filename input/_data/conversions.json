@@ -4936,12 +4936,6 @@
       "communicationrequest-initiatingLocation" : {
         "validation-error" : "Cannot invoke \"org.hl7.fhir.r5.model.Base.primitiveValue()\" because the return value of \"org.hl7.fhir.r5.elementmodel.Element.getExtensionValue(String)\" is null"
       },
-      "composition-clinicaldocument-otherConfidentiality" : {
-        "validation-error" : "Cannot invoke \"org.hl7.fhir.r5.model.Base.primitiveValue()\" because the return value of \"org.hl7.fhir.r5.elementmodel.Element.getExtensionValue(String)\" is null"
-      },
-      "composition-clinicaldocument-versionNumber" : {
-        "validation-error" : "Cannot invoke \"org.hl7.fhir.r5.model.Base.primitiveValue()\" because the return value of \"org.hl7.fhir.r5.elementmodel.Element.getExtensionValue(String)\" is null"
-      },
       "composition-section-subject" : {
         "validation-error" : "Cannot invoke \"org.hl7.fhir.r5.model.Base.primitiveValue()\" because the return value of \"org.hl7.fhir.r5.elementmodel.Element.getExtensionValue(String)\" is null"
       },
@@ -6880,12 +6874,6 @@
         "validation-error" : null
       },
       "communicationrequest-initiatingLocation" : {
-        "validation-error" : null
-      },
-      "composition-clinicaldocument-otherConfidentiality" : {
-        "validation-error" : null
-      },
-      "composition-clinicaldocument-versionNumber" : {
         "validation-error" : null
       },
       "composition-section-subject" : {
