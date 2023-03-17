@@ -25,8 +25,10 @@ group Substance(source src : SubstanceR4B, target tgt : SubstanceR5) extends Dom
   src.category -> tgt.category;
   src.code -> tgt.code;
   src.description -> tgt.description;
-  src.instance as s -> tgt.expiry = (s.expiry) "expiry";
-  src.instance as s -> tgt.quantity = s.quantity "quantity";
+  src.instance as s -> tgt then {
+    s.expiry -> tgt.expiry;
+    s.quantity -> tgt.quantity;
+  };
   src.ingredient as s -> tgt.ingredient as t then SubstanceIngredient(s,t);
 }
 

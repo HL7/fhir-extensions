@@ -33,14 +33,14 @@ group MessageHeader(source src : MessageHeaderR4B, target tgt : MessageHeaderR5)
 }
 
 group MessageHeaderDestination(source src, target tgt) extends BackboneElement {
-  src.endpoint -> tgt.endpoint;
+  src.endpoint : url -> tgt.endpoint;
   src.name -> tgt.name;
   src.target -> tgt.target;
   src.receiver -> tgt.receiver;
 }
 
 group MessageHeaderSource(source src, target tgt) extends BackboneElement {
-  src.endpoint -> tgt.endpoint;
+  src.endpoint : url -> tgt.endpoint;
   src.name -> tgt.name;
   src.software -> tgt.software;
   src.version -> tgt.version;
@@ -48,7 +48,7 @@ group MessageHeaderSource(source src, target tgt) extends BackboneElement {
 }
 
 group MessageHeaderResponse(source src, target tgt) extends BackboneElement {
-  src.identifier as s -> tgt.identifier as t, t.value = (s.value);
+  src.identifier as s -> tgt.identifier = create('Identifier') as t, t.value = s;
   src.code as v -> tgt.code = translate(v, '#ResponseType', 'code');
   src.details -> tgt.details;
 }

@@ -140,8 +140,14 @@ group MedicationKnowledgeDefinitional(source src, target tgt) extends BackboneEl
 //  src.intendedRoute -> tgt.intendedRoute;
 //  src.ingredient as s -> tgt.ingredient as t then MedicationKnowledgeDefinitionalIngredient(s,t);
 //  src.drugCharacteristic as s -> tgt.drugCharacteristic as t then MedicationKnowledgeDefinitionalDrugCharacteristic(s,t);
-  src.drugCharacteristic as s -> tgt.type = (s.type);
-  src.drugCharacteristic as s -> tgt.value = (s.value);
+  src.drugCharacteristic as s -> tgt then {
+    s.type -> tgt.type;
+    s.value : CodeableConcept -> tgt.value;
+    s.value : string -> tgt.value;
+    s.value : Quantity -> tgt.value;
+    s.value : base64Binary -> tgt.value;
+//    s.value : Attachment -> tgt.value;
+  };
 }
 
 //group MedicationKnowledgeDefinitionalIngredient(source src, target tgt) extends BackboneElement {

@@ -68,7 +68,7 @@ group MedicationKnowledgeIndicationGuideline(source src, target tgt) extends Bac
   src.indication : CodeableConcept -> tgt.indication;
   src.indication : Reference -> tgt.indication;
 //  src.dosage as s -> tgt.dosingGuideline as t then MedicationKnowledgeIndicationGuidelineDosingGuideline(s,t);
-  src.dosage as s -> tgt.dosingGuideline as t, t.dosage = create('BackboneElement') as td, td.type = (s.type), td.dosage = s.dosage;
+  src.dosage as s -> tgt.dosingGuideline as t, t.dosage = create('BackboneElement') as td then MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage(s,td);
   src.patientCharacteristics as s -> tgt.dosingGuideline as t then {
     s.value as v -> t.patientCharacteristic as tp, tp.type = create('CodeableConcept') as tc, tc.text = v;
     s.characteristic : CodeableConcept as v -> t.patientCharacteristic as tp, tp.value = v;
