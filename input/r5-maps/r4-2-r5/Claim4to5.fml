@@ -163,7 +163,7 @@ group ClaimItem(source src, target tgt) extends BackboneElement {
 //  src.tax -> tgt.tax;
   src.net -> tgt.net;
   src.udi -> tgt.udi;
-  src.bodySite as s -> tgt.bodySite as t, t.site = s;
+  src.bodySite : CodeableConcept as s -> tgt.bodySite as t, t.site = s;
   src.encounter -> tgt.encounter;
   src.detail as s -> tgt.detail as t then ClaimItemDetail(s,t);
 }

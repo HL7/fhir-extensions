@@ -31,7 +31,9 @@ group Practitioner(source src : PractitionerR5, target tgt : PractitionerR4) ext
   src.address -> tgt.address;
   src.photo -> tgt.photo;
   src.qualification as s -> tgt.qualification as t then PractitionerQualification(s,t);
-  src.communication as s -> tgt.communication = (s.language) "communication";
+  src.communication as s -> tgt then {
+    s.language -> tgt.communication;
+  };
 }
 
 group PractitionerQualification(source src, target tgt) extends BackboneElement {

@@ -102,6 +102,9 @@ group instant(source src : instantR4, target tgt : instantR5) extends Element <<
 group integer(source src : integerR4, target tgt : integerR5) extends Element <<type+>> {
   src.value as v -> tgt.value = v "integerValue";
 }
+group integer(source src : integerR4, target tgt : integer64R5) extends Element <<types>> {
+  src.value as v -> tgt.value = v "integerValue";
+}
 group markdown(source src : markdownR4, target tgt : markdownR5) extends Element <<type+>> {
   src.value as v -> tgt.value = v "markdownValue";
 }

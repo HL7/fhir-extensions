@@ -22,7 +22,6 @@ conceptmap "OperationKind" {
   s:"query" - t:"query"
 }
 
-
 conceptmap "OperationParameterUse" {
   prefix s = "http://hl7.org/fhir/operation-parameter-use"
   prefix t = "http://hl7.org/fhir/4.0/operation-parameter-use"
