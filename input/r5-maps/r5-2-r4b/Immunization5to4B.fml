@@ -36,7 +36,9 @@ group Immunization(source src : ImmunizationR5, target tgt : ImmunizationR4B) ex
   src.reason -> tgt.reasonReference;
   src.isSubpotent -> tgt.isSubpotent;
   src.subpotentReason -> tgt.subpotentReason;
-  src.programEligibility as s -> tgt.programEligibility = (s.program);
+  src.programEligibility as s -> tgt then {
+    s.program -> tgt.programEligibility;
+  };
   src.fundingSource -> tgt.fundingSource;
   src.reaction as s -> tgt.reaction as t then ImmunizationReaction(s,t);
   src.protocolApplied as s -> tgt.protocolApplied as t then ImmunizationProtocolApplied(s,t);

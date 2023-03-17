@@ -301,7 +301,9 @@ group Measure(source src : MeasureR5, target tgt : MeasureR4) extends DomainReso
   src.rationale -> tgt.rationale;
   src.clinicalRecommendationStatement -> tgt.clinicalRecommendationStatement;
   src.improvementNotation -> tgt.improvementNotation;
-  src.term as s -> tgt.definition = (s.definition);
+  src.term as s -> tgt then {
+    s.definition -> tgt.definition;
+  };
   src.guidance -> tgt.guidance;
   src.group as s -> tgt.group as t then MeasureGroup(s,t);
   src.supplementalData as s -> tgt.supplementalData as t then MeasureSupplementalData(s,t);

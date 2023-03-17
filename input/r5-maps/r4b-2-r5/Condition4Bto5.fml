@@ -32,9 +32,9 @@ group Condition(source src : ConditionR4B, target tgt : ConditionR5) extends Dom
   src.recorder as s -> tgt.participant as t then ConditionRecorder(s,t);
   src.asserter as s -> tgt.participant as t then ConditionAsserter(s,t);
   src.stage as s -> tgt.stage as t then ConditionStage(s,t);
-  src.evidence as s then {
-    s.code as c -> tgt.evidence;
-    s.detail as d -> tgt.evidence;
+  src.evidence as s -> tgt then {
+    s.code : CodeableConcept as c -> tgt.evidence;
+    s.detail : Reference as d -> tgt.evidence;
   };
   src.note -> tgt.note;
 }
@@ -48,10 +48,10 @@ group ConditionStage(source src, target tgt) extends BackboneElement {
 
 group ConditionRecorder(source src, target tgt) extends BackboneElement {
   src.reference as v -> tgt.function = create('CodeableConcept') as t, t.coding = create('Coding') as tc, tc.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type", tc.code = "enterer", tc.display = "Enterer";
-  src as v -> tgt.actor = v "reference";
+  src : Reference as v -> tgt.actor = v "reference";
 }
 
 group ConditionAsserter(source src, target tgt) extends BackboneElement {
   src.reference as v -> tgt.function = create('CodeableConcept') as t, t.coding = create('Coding') as tc, tc.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type", tc.code = "author", tc.display = "Author";
-  src as v -> tgt.actor = v "reference";
+  src : Reference as v -> tgt.actor = v "reference";
 }

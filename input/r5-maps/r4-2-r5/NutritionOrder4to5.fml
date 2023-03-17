@@ -75,7 +75,7 @@ group NutritionOrder(source src : NutritionOrderR4, target tgt : NutritionOrderR
 
 group NutritionOrderOralDiet(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
-  src.schedule as s -> tgt.schedule as t, t.timing = s;
+  src.schedule : Timing as s -> tgt.schedule as t, t.timing = s;
   src.nutrient as s -> tgt.nutrient as t then NutritionOrderOralDietNutrient(s,t);
   src.texture as s -> tgt.texture as t then NutritionOrderOralDietTexture(s,t);
   src.fluidConsistencyType -> tgt.fluidConsistencyType;
@@ -101,7 +101,7 @@ group NutritionOrderOralDietTexture(source src, target tgt) extends BackboneElem
 group NutritionOrderSupplement(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
   src.productName -> tgt.productName;
-  src.schedule as s -> tgt.schedule as t, t.timing = s;
+  src.schedule : Timing as s -> tgt.schedule as t, t.timing = s;
   src.quantity -> tgt.quantity;
   src.instruction -> tgt.instruction;
 }
@@ -116,7 +116,7 @@ group NutritionOrderEnteralFormula(source src, target tgt) extends BackboneEleme
   src.baseFormulaType -> tgt.baseFormulaType;
   src.baseFormulaProductName -> tgt.baseFormulaProductName;
 //  src.deliveryDevice -> tgt.deliveryDevice;
-  src.additiveType as s -> tgt.additive as t, t.type = s;
+  src.additiveType : CodeableConcept as s -> tgt.additive as t, t.type = s;
   src.additiveProductName as s -> tgt.additive as t, t.productName = s;
   src.caloricDensity -> tgt.caloricDensity;
   src.routeofAdministration -> tgt.routeOfAdministration;
@@ -132,7 +132,7 @@ group NutritionOrderEnteralFormula(source src, target tgt) extends BackboneEleme
 //}
 
 group NutritionOrderEnteralFormulaAdministration(source src, target tgt) extends BackboneElement {
-  src.schedule as s -> tgt.schedule as t, t.timing = s;
+  src.schedule : Timing as s -> tgt.schedule as t, t.timing = s;
   src.quantity -> tgt.quantity;
   src.rate : Quantity -> tgt.rate;
   src.rate : Ratio -> tgt.rate;

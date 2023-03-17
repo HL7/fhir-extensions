@@ -61,7 +61,9 @@ group DeviceDefinition(source src : DeviceDefinitionR5, target tgt : DeviceDefin
 //  src.conformsTo as s -> tgt.conformsTo as t then DeviceDefinitionConformsTo(s,t);
 //  src.hasPart as s -> tgt.hasPart as t then DeviceDefinitionHasPart(s,t);
 //  src.packaging as s -> tgt.packaging as t then DeviceDefinitionPackaging(s,t);
-  src.version as s -> tgt.version = (s.value) "version";
+  src.version as s -> tgt then {
+    s.value -> tgt.version;
+  };
   src.safety -> tgt.safety;
   src.shelfLifeStorage -> tgt.shelfLifeStorage;
   src.languageCode -> tgt.languageCode;

@@ -83,10 +83,10 @@ group MedicationKnowledgeIndicationGuideline(source src, target tgt) extends Bac
 //  src.patientCharacteristic as s -> tgt.patientCharacteristic as t then MedicationKnowledgeIndicationGuidelineDosingGuidelinePatientCharacteristic(s,t);
 //}
 
-//group MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage(source src, target tgt) extends BackboneElement {
-//  src.type -> tgt.type;
-//  src.dosage -> tgt.dosage;
-//}
+group MedicationKnowledgeIndicationGuidelineDosingGuidelineDosage(source src, target tgt) extends BackboneElement {
+  src.type -> tgt.type;
+  src.dosage -> tgt.dosage;
+}
 
 //group MedicationKnowledgeIndicationGuidelineDosingGuidelinePatientCharacteristic(source src, target tgt) extends BackboneElement {
 //  src.type -> tgt.type;
