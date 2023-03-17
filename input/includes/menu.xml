@@ -1,7 +1,8 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="toc.html">Contents</a></li>
   <li><a href="index.html">Home</a></li>
-  <li><a href="extension-registry.html">Extension Registy</a></li>
+  <li><a href="extension-registry.html">Extension Registry</a></li>
   <li><a href="search-params.html">Search Registry</a></li>
+  <li><a href="conversion-registry.html">Conversion Registry</a></li>
   <li><a href="artifacts.html">Artifact List</a></li>
 </ul>      

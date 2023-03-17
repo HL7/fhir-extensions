@@ -70,7 +70,7 @@
         </extension>
         <strength value="required"/>
         <description value="A level of knowledge representation provided by this artifact"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/knowledge-representation-level|5.0.0-snapshot3"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/knowledge-representation-level"/>
       </binding>
     </element>
   </differential>

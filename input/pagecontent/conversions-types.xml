@@ -1,0 +1,63 @@
+﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
+
+<a name="conv-Base"> </a>
+<a name="Base"> </a>
+<h3>Base</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Base-->See also <a no-external="true" href="{{site.data.fhir.path}}types.html#Base">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}types-definitions.html#Base">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}types-mappings.html#Base">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}types-profiles.html#Base">Profiles</a>, <a no-external="true" href="extensions-types.html#Base">Extensions</a> and <a no-external="true" href="conversions-types.html#Base">R4 Conversions</a>
+</p>
+
+{% include maps-Base.xhtml %}
+
+<a name="conv-Element"> </a>
+<a name="Element"> </a>
+<h3>Element</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Element-->See also <a no-external="true" href="{{site.data.fhir.path}}types.html#Element">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}types-definitions.html#Element">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}types-mappings.html#Element">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}types-profiles.html#Element">Profiles</a>, <a no-external="true" href="extensions-types.html#Element">Extensions</a> and <a no-external="true" href="conversions-types.html#Element">R4 Conversions</a>
+</p>
+
+{% include maps-Element.xhtml %}
+
+<a name="conv-BackboneElement"> </a>
+<a name="BackboneElement"> </a>
+<h3>BackboneElement</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:BackboneElement-->See also <a no-external="true" href="{{site.data.fhir.path}}types.html#BackboneElement">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}types-definitions.html#BackboneElement">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}types-mappings.html#BackboneElement">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}types-profiles.html#BackboneElement">Profiles</a>, <a no-external="true" href="extensions-types.html#BackboneElement">Extensions</a> and <a no-external="true" href="conversions-types.html#BackboneElement">R4 Conversions</a>
+</p>
+
+{% include maps-BackboneElement.xhtml %}
+
+<a name="conv-DataType"> </a>
+<a name="DataType"> </a>
+<h3>DataType</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:DataType-->See also <a no-external="true" href="{{site.data.fhir.path}}types.html#DataType">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}types-definitions.html#DataType">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}types-mappings.html#DataType">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}types-profiles.html#DataType">Profiles</a>, <a no-external="true" href="extensions-types.html#DataType">Extensions</a> and <a no-external="true" href="conversions-types.html#DataType">R4 Conversions</a>
+</p>
+
+{% include maps-DataType.xhtml %}
+
+<a name="conv-BackboneType"> </a>
+<a name="BackboneType"> </a>
+<h3>BackboneType</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:BackboneType-->See also <a no-external="true" href="{{site.data.fhir.path}}types.html#BackboneType">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}types-definitions.html#BackboneType">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}types-mappings.html#BackboneType">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}types-profiles.html#BackboneType">Profiles</a>, <a no-external="true" href="extensions-types.html#BackboneType">Extensions</a> and <a no-external="true" href="conversions-types.html#BackboneType">R4 Conversions</a>
+</p>
+
+{% include maps-BackboneType.xhtml %}
+
+<a name="conv-PrimitiveType"> </a>
+<a name="PrimitiveType"> </a>
+<h3>PrimitiveType</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:PrimitiveType-->See also <a no-external="true" href="{{site.data.fhir.path}}types.html#PrimitiveType">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}types-definitions.html#PrimitiveType">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}types-mappings.html#PrimitiveType">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}types-profiles.html#PrimitiveType">Profiles</a>, <a no-external="true" href="extensions-types.html#PrimitiveType">Extensions</a> and <a no-external="true" href="conversions-types.html#PrimitiveType">R4 Conversions</a>
+</p>
+
+{% include maps-PrimitiveType.xhtml %}
+
+</div>

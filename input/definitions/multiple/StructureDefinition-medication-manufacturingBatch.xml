@@ -29,6 +29,7 @@
       <value value="HL7"/>
     </telecom>
   </contact>
+  <description value="The date at which the drug substance or drug product was manufactured.  The specific operation/step in the process used to determine the date is specified by the manufacturingDateClassification element."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

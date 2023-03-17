@@ -1,0 +1,122 @@
+﻿/// url = 'http://hl7.org/fhir/StructureMap/MolecularSequence5to4'
+/// name = 'MolecularSequence5to4'
+/// title = 'FML Conversion for MolecularSequence: R5 to R4'
+
+/// status = 'active'
+
+conceptmap "orientationType" {
+  prefix s = "http://hl7.org/fhir/orientation-type"
+  prefix t = "http://hl7.org/fhir/4.0/orientation-type"
+
+  s:"sense" - t:"sense"
+  s:"antisense" - t:"antisense"
+}
+
+conceptmap "sequenceType" {
+  prefix s = "http://hl7.org/fhir/sequence-type"
+  prefix t = "http://hl7.org/fhir/4.0/sequence-type"
+
+  s:"aa" - t:"aa"
+  s:"dna" - t:"dna"
+  s:"rna" - t:"rna"
+}
+
+conceptmap "strandType" {
+  prefix s = "http://hl7.org/fhir/strand-type"
+  prefix t = "http://hl7.org/fhir/4.0/strand-type"
+
+  s:"watson" - t:"watson"
+  s:"crick" - t:"crick"
+}
+
+uses "http://hl7.org/fhir/StructureDefinition/MolecularSequence" alias MolecularSequenceR5 as source
+uses "http://hl7.org/fhir/4.0/StructureDefinition/MolecularSequence" alias MolecularSequenceR4 as target
+
+imports "http://hl7.org/fhir/StructureMap/*5to4"
+
+group MolecularSequence(source src : MolecularSequenceR5, target tgt : MolecularSequenceR4) extends DomainResource <<type+>> {
+  src.identifier -> tgt.identifier;
+  src.type as v -> tgt.type = translate(v, '#sequenceType', 'code');
+  src.subject -> tgt.patient;
+//  src.focus -> tgt.focus;
+  src.specimen -> tgt.specimen;
+  src.device -> tgt.device;
+  src.performer -> tgt.performer;
+//  src.literal -> tgt.literal;
+//  src.formatted -> tgt.formatted;
+  src.relative as s -> tgt.referenceSeq as t then MolecularSequenceReferenceSeq(s,t);
+  src.relative as s -> tgt.variant as t then MolecularSequenceVariant(s,t);
+}
+
+group MolecularSequenceReferenceSeq(source src, target tgt) extends BackboneElement {
+  src.startingSequence as s -> tgt then {
+    s.chromosome as s where code = 'LA21254-0' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "1", tcc.display = "chromosome 1";
+    s.chromosome as s where code = 'LA21255-7' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "2", tcc.display = "chromosome 2";
+    s.chromosome as s where code = 'LA21256-5' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "3", tcc.display = "chromosome 3";
+    s.chromosome as s where code = 'LA21257-3' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "4", tcc.display = "chromosome 4";
+    s.chromosome as s where code = 'LA21258-1' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "5", tcc.display = "chromosome 5";
+    s.chromosome as s where code = 'LA21259-9' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "6", tcc.display = "chromosome 6";
+    s.chromosome as s where code = 'LA21260-7' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "7", tcc.display = "chromosome 7";
+    s.chromosome as s where code = 'LA21261-5' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "8", tcc.display = "chromosome 8";
+    s.chromosome as s where code = 'LA21262-3' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "9", tcc.display = "chromosome 9";
+    s.chromosome as s where code = 'LA21263-1' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "10", tcc.display = "chromosome 10";
+    s.chromosome as s where code = 'LA21264-9' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "11", tcc.display = "chromosome 11";
+    s.chromosome as s where code = 'LA21265-6' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "12", tcc.display = "chromosome 12";
+    s.chromosome as s where code = 'LA21266-4' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "13", tcc.display = "chromosome 13";
+    s.chromosome as s where code = 'LA21267-2' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "14", tcc.display = "chromosome 14";
+    s.chromosome as s where code = 'LA21268-0' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "15", tcc.display = "chromosome 15";
+    s.chromosome as s where code = 'LA21269-8' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "16", tcc.display = "chromosome 16";
+    s.chromosome as s where code = 'LA21270-6' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "17", tcc.display = "chromosome 17";
+    s.chromosome as s where code = 'LA21271-4' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "18", tcc.display = "chromosome 18";
+    s.chromosome as s where code = 'LA21272-2' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "19", tcc.display = "chromosome 19";
+    s.chromosome as s where code = 'LA21273-0' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "20", tcc.display = "chromosome 20";
+    s.chromosome as s where code = 'LA21274-8' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "21", tcc.display = "chromosome 21";
+    s.chromosome as s where code = 'LA21275-5' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "22", tcc.display = "chromosome 22";
+    s.chromosome as s where code = 'LA21276-3' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "X", tcc.display = "chromosome X";
+    s.chromosome as s where code = 'LA21277-1' -> tgt.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://terminology.hl7.org/CodeSystem/chromosome-human", tcc.code = "Y", tcc.display = "chromosome Y";  
+    s.sequence : CodeableConcept -> tgt.referenceSeqId;
+    s.sequence : Reference -> tgt.referenceSeqPointer;
+    s.sequence : string -> tgt.referenceSeqString;
+    s.windowStart -> tgt.windowStart;
+    s.windowEnd -> tgt.windowEnd;
+    s.orientation as v -> tgt.orientation = translate(v, '#orientationType', 'code');
+    s.strand as v -> tgt.strand = translate(v, '#strandType', 'code');
+  };
+}
+
+group MolecularSequenceVariant(source src, target tgt) extends BackboneElement {
+  src.edit as s -> tgt then {
+    s.start -> tgt.start;
+    s.end -> tgt.end;
+    s.replacementSequence -> tgt.observedAllele;
+    s.replacedSequence -> tgt.referenceAllele;
+  };
+}
+
+//group MolecularSequenceRelative(source src, target tgt) extends BackboneElement {
+//  src.coordinateSystem -> tgt.coordinateSystem;
+//  src.ordinalPosition -> tgt.ordinalPosition;
+//  src.sequenceRange -> tgt.sequenceRange;
+//  src.startingSequence as s -> tgt.startingSequence as t then MolecularSequenceRelativeStartingSequence(s,t);
+//  src.edit as s -> tgt.edit as t then MolecularSequenceRelativeEdit(s,t);
+//}
+//
+//group MolecularSequenceRelativeStartingSequence(source src, target tgt) extends BackboneElement {
+//  src.genomeAssembly -> tgt.genomeAssembly;
+//  src.chromosome -> tgt.chromosome;
+//  src.sequence : CodeableConcept -> tgt.sequence;
+//  src.sequence : string -> tgt.sequence;
+//  src.sequence : Reference -> tgt.sequence;
+//  src.windowStart -> tgt.windowStart;
+//  src.windowEnd -> tgt.windowEnd;
+//  src.orientation as v -> tgt.orientation = translate(v, '#orientationType', 'code');
+//  src.strand as v -> tgt.strand = translate(v, '#strandType', 'code');
+//}
+//
+//group MolecularSequenceRelativeEdit(source src, target tgt) extends BackboneElement {
+//  src.start -> tgt.start;
+//  src.end -> tgt.end;
+//  src.replacementSequence -> tgt.replacementSequence;
+//  src.replacedSequence -> tgt.replacedSequence;
+//}
+

@@ -1,0 +1,24 @@
+﻿Load Test Outcomes
+Load R5
+Load Maps
+Load hl7.terminology.r5#5.0.0
+Load hl7.fhir.uv.extensions#dev
+Load /Users/grahamegrieve/work/fhir-extensions/input/r5-maps/r4-2-r5
+Load /Users/grahamegrieve/work/fhir-extensions/input/r5-maps/r4b-2-r5
+Load /Users/grahamegrieve/work/fhir-extensions/input/r5-maps/r5-2-r4
+Load /Users/grahamegrieve/work/fhir-extensions/input/r5-maps/r5-2-r4b
+Load hl7.fhir.r4.core#4.0.1
+Load hl7.fhir.r4b.core#4.3.0
+Load R4 Examples
+Load R4B Examples
+Go. 162 types of resources
+Map Count = 698
+  ChargeItemDefinition
+  Test hl7.fhir.r4.examples::ChargeItemDefinition-device.json
+error: Exception executing transform t.factor = (s.factor) on Rule "ChargeItemDefinition4to5|ChargeItemDefinitionPropertyGroup|priceComponent": Variable s.factor not found (source variables [src: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.0/StructureDefinition/BackboneElement)], target variables [tgt: (ChargeItemDefinition.propertyGroup), t: (MonetaryComponent)], shared variables [])
+  Test hl7.fhir.r4.examples::ChargeItemDefinition-ebm.json
+error: Error setting effectivePeriod on ChargeItemDefinition.applicability for rule ChargeItemDefinition4to5|ChargeItemDefinition|period to value effectivePeriod=http://hl7.org/fhir/4.0/StructureDefinition/Period[2 children]: Unable to convert a http://hl7.org/fhir/4.0/StructureDefinition/Period(org.hl7.fhir.r5.elementmodel.Element) to a Period
+  Test hl7.fhir.r4b.examples::ChargeItemDefinition-device.json
+error: Exception executing transform t.factor = (s.factor) on Rule "ChargeItemDefinition4Bto5|ChargeItemDefinitionPropertyGroup|priceComponent": Variable s.factor not found (source variables [src: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement), s: (http://hl7.org/fhir/4.3/StructureDefinition/BackboneElement)], target variables [tgt: (ChargeItemDefinition.propertyGroup), t: (MonetaryComponent)], shared variables [])
+  Test hl7.fhir.r4b.examples::ChargeItemDefinition-ebm.json
+error: Error setting effectivePeriod on ChargeItemDefinition.applicability for rule ChargeItemDefinition4Bto5|ChargeItemDefinition|period to value effectivePeriod=http://hl7.org/fhir/4.3/StructureDefinition/Period[2 children]: Unable to convert a http://hl7.org/fhir/4.3/StructureDefinition/Period(org.hl7.fhir.r5.elementmodel.Element) to a Period

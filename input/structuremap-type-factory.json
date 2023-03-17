@@ -1,0 +1,14 @@
+{
+  "item-factory" : "manual",
+  "items" : ["Dosage", "ProductShelfLife", "ElementDefinition", "MarketingStatus", "Meta", "Extension", "Narrative"],
+  "source-file" : "input/structuremap-type-template.md",
+  "variables" : [{
+    "name" : "%type%",
+    "transform" : "n/a"
+  }],
+  "generated-file-name": "conversions-%item%.md",
+  "stated-file-name": "conversions-%item%.html",
+  "parent-page" : "conversion-registry.html",
+  "generation" : "markdown",
+  "page-title" : "%item% Conversion Maps"
+}
