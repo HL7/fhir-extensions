@@ -18,7 +18,7 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-04-12"/>
-  <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
+  <publisher value="Health Level Seven, Inc. - FHIR Infrastructure WG"/>
   <contact>
     <telecom>
       <system value="url"/>

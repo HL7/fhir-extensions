@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="requirements-parent"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fhir-i"/>
+    <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
