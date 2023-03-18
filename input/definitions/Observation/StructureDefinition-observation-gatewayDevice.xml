@@ -29,7 +29,7 @@
       <value value="http://hl7.org/special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="The Provenance/AuditEvent resources can represent the same information.  Note that the Provenance/AuditEvent resources can represent the same information."/>
+  <description value="To be used when the actual gateway used at the time of the observation, and the referenced device is also specified.  Note that the Provenance/AuditEvent resources can represent the same information."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Gateway Device"/>
-      <definition value="The Provenance/AuditEvent resources can represent the same information.  Note that the Provenance/AuditEvent resources can represent the same information."/>
+      <definition value="To be used when the actual gateway used at the time of the observation, and the referenced device is also specified.  Note that the Provenance/AuditEvent resources can represent the same information."/>
       <min value="0"/>
       <max value="1"/>
     </element>
