@@ -1,0 +1,20 @@
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml ../../schema/fhir-xhtml.xsd" xmlns="http://www.w3.org/1999/xhtml">
+
+<div>
+<p>
+Using this extension on the Observation resource vs Device.gateway:  
+The actual gateway used must be preserved as the gateway on the Device may change over time, providing a consistent/simpler approach through this extension rather than having to use contained resources or have a history.
+</p>
+</div>
+
+
+<!-- (optional):
+<div>
+<h2>Background and Context</h2>
+<p>
+Provides additional detail on exactly how the resource is to be used
+</p>
+</div>
+-->
+
+</div>

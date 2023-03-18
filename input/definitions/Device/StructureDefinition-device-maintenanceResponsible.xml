@@ -1,0 +1,109 @@
+<StructureDefinition xmlns='http://hl7.org/fhir'>
+  <id value='device-maintenanceresponsibility'/>
+  <extension url='http://hl7.org/fhir/StructureDefinition/structuredefinition-wg'>
+    <valueCode value='oo'/>
+  </extension>
+  <extension url='http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm'>
+    <valueInteger value='0'/>
+  </extension>
+  <extension url='http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status'>
+    <valueCode value='trial-use'/>
+  </extension>
+  <url value='http://hl7.org/fhir/StructureDefinition/device-maintenanceresponsibility'/>
+  <version value='0.1.0'/>
+  <name value='DeviceMaintenanceResponsibility'/>
+  <title value='Device Maintenance Responsibility'/>
+  <status value='draft'/>
+  <experimental value='false'/>
+  <date value='2023-03-18'/>
+  <publisher value='HL7 International / Orders and Observations'/>
+  <contact>
+    <telecom>
+      <system value='url'/>
+      <value value='http://hl7.org/Special/committees/orders'/>
+    </telecom>
+  </contact>
+  <description value='Extension containing the information about the person and/or organization responsible for the maintenance of the device.'/>
+  <jurisdiction>
+    <coding>
+      <system value='http://unstats.un.org/unsd/methods/m49/m49.htm'/>
+      <code value='001'/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value='4.0.1'/>
+  <mapping>
+    <identity value='rim'/>
+    <uri value='http://hl7.org/v3'/>
+    <name value='RIM Mapping'/>
+  </mapping>
+  <kind value='complex-type'/>
+  <abstract value='false'/>
+  <context>
+    <type value='element'/>
+    <expression value='Device'/>
+  </context>
+  <type value='Extension'/>
+  <baseDefinition value='http://hl7.org/fhir/StructureDefinition/Extension'/>
+  <derivation value='constraint'/>
+  <differential>
+    <element id='Extension'>
+      <short value='Device Maintenance Responsibility'/>
+      <path value='Extension'/>
+      <definition value='The entity or entities that are responsible for maintenance for a given device.'/>
+    </element>
+    <element id='Extension.extension:person'>
+      <sliceName value='person'/>
+      <path value='Extension.extension'/>
+      <short value='Responsible individual'/>
+      <definition value='A person that is individually responsible for the device maintenance.'/>
+      <min value='0'/>
+      <max value='1'/>
+    </element>
+    <element id='Extension.extension:person.extension'>
+      <max value='0'/>
+      <path value='Extension.extension.extension'/>
+    </element>
+    <element id='Extension.extension:person.url'>
+      <fixedUri value='person'/>
+      <path value='Extension.extension.url'/>
+    </element>
+    <element id='Extension.extension:person.value[x]'>
+      <type>
+        <code value='Reference'/>
+        <targetProfile value='http://hl7.org/fhir/StructureDefinition/Person'/>
+      </type>
+      <path value='Extension.extension.value[x]'/>
+    </element>
+    <element id='Extension.extension:organization'>
+      <sliceName value='organization'/>
+      <path value='Extension.extension'/>
+      <short value='Responsible organization'/>
+      <definition value='The organization that is responsible for the device maintenance.'/>
+      <min value='0'/>
+      <max value='1'/>
+    </element>
+    <element id='Extension.extension:organization.extension'>
+      <max value='0'/>
+      <path value='Extension.extension.extension'/>
+    </element>
+    <element id='Extension.extension:organization.url'>
+      <fixedUri value='organization'/>
+      <path value='Extension.extension.url'/>
+    </element>
+    <element id='Extension.extension:organization.value[x]'>
+      <type>
+        <code value='Reference'/>
+        <targetProfile value='http://hl7.org/fhir/StructureDefinition/Organization'/>
+      </type>
+      <path value='Extension.extension.value[x]'/>
+    </element>
+    <element id='Extension.url'>
+      <fixedUri value='http://hl7.org/fhir/StructureDefinition/device-maintenanceresponsibility'/>
+      <path value='Extension.url'/>
+    </element>
+    <element id='Extension.value[x]'>
+      <max value='0'/>
+      <path value='Extension.value[x]'/>
+    </element>
+  </differential>
+</StructureDefinition>
