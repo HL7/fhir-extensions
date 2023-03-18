@@ -33,7 +33,7 @@ group PractitionerRole(source src : PractitionerRoleR5, target tgt : Practitione
 
 group PractitionerRoleAvailabilityAvailableTime(source src, target tgt) extends Element {
   src.daysOfWeek -> tgt.daysOfWeek;
-  src.allDay -> tgt.allDays;
+  src.allDay -> tgt.allDay;
   src.availableStartTime -> tgt.availableStartTime;
   src.availableEndTime -> tgt.availableEndTime;
 }
