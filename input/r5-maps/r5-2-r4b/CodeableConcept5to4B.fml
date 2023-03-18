@@ -26,7 +26,7 @@ group CodeableReference2CodeableConcept(source src : CodeableReferenceR5, target
 
 group CodeableReference2Coding(source src : CodeableReferenceR5, target tgt : CodingR4B) extends Element <<types>> {
   src.concept as s -> tgt then {
-    s.coding as v -> tgt then Coding(v,t);
+    s.coding as v -> tgt then Coding(v,tgt);
   };
 }
 
