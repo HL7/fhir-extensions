@@ -22,20 +22,19 @@ group PractitionerRole(source src : PractitionerRoleR4B, target tgt : Practition
   src.telecom : ContactPoint as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom = s;
 //  src.characteristic -> tgt.characteristic;
 //  src.communication -> tgt.communication;
-  src.availableTime : BackboneElement as s -> tgt.availability as t then PractitionerRoleAvailabilityAvailableTime(s,t) "availableTime";
-  src.notAvailable : BackboneElement as s -> tgt.availability as t then PractitionerRoleAvailabilityNotAvailableTime(s,t) "notAvailableTime";
+  src.availableTime as s -> tgt.availability = create('Availability') as av share av, av.availableTime as t then PractitionerRoleAvailabilityAvailableTime(s,t) "availableTime";
+  src.notAvailable as s -> tgt.availability = create('Availability') as av share av, av.notAvailableTime as t then PractitionerRoleAvailabilityNotAvailableTime(s,t) "notAvailableTime";
   src.endpoint -> tgt.endpoint;
 }
 
 group PractitionerRoleAvailabilityAvailableTime(source src, target tgt) extends BackboneElement {
-  src.daysOfWeek as s -> tgt.availableTime as t, t.daysOfWeek = s;
-  src.allDay as s -> tgt.availableTime as t, t.allDay = s;
-  src.availableStartTime : time as s -> tgt.availableTime as t, t.availableStartTime = s;
-  src.availableEndTime : time as s -> tgt.availableTime as t, t.availableEndTime = s;
+  src.availableTime as s -> tgt.daysOfWeek as t, t = s.daysOfWeek;
+  src.availableTime as s -> tgt.allDay as t, t = s.allDay;
+  src.availableTime as s -> tgt.availableStartTime as t, t = s.availableStartTime;
+  src.availableTime as s -> tgt.availableEndTime as t, t = s.availableEndTime;
 }
 
 group PractitionerRoleAvailabilityNotAvailableTime(source src, target tgt) extends BackboneElement {
-  src.description as s -> tgt.notAvailableTime as t, t.description = s;
-  src.during : Period as s -> tgt.notAvailableTime as t, t.during = s;
+  src.notAvailableTime as s -> tgt.description as t, t = s.description;
+  src.notAvailableTime as s -> tgt.during as t, t = s.during;
 }
-
