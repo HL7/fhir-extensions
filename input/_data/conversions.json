@@ -1832,31 +1832,25 @@
   "ExplanationOfBenefit" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Rule \"ExplanationOfBenefit5to4|ExplanationOfBenefitItemAdjudication|quantity\": Not supported yet",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 2,
       "parsedOk" : 2,
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 1,
-      "convertToR4OK" : 1,
-      "EB3500" : {
-        "return-error" : "Rule \"ExplanationOfBenefit5to4|ExplanationOfBenefitItemAdjudication|quantity\": Not supported yet"
-      }
+      "convertToR4OK" : 2
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Rule \"ExplanationOfBenefit5to4B|ExplanationOfBenefitItemAdjudication|quantity\": Not supported yet",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 2,
       "parsedOk" : 2,
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 1,
-      "convertToR4OK" : 1,
-      "EB3500" : {
-        "return-error" : "Rule \"ExplanationOfBenefit5to4B|ExplanationOfBenefitItemAdjudication|quantity\": Not supported yet"
-      }
+      "convertToR4OK" : 2
     }
   },
   "FamilyMemberHistory" : {
@@ -2018,31 +2012,25 @@
   "HealthcareService" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Boolean",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 1,
       "parsedOk" : 1,
-      "convertToR5OK" : 0,
-      "r5validated" : 0,
-      "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "example" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Boolean"
-      }
+      "convertToR5OK" : 1,
+      "r5validated" : 1,
+      "r5InError" : 1,
+      "convertToR4OK" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Boolean",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 1,
       "parsedOk" : 1,
-      "convertToR5OK" : 0,
-      "r5validated" : 0,
-      "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "example" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Boolean"
-      }
+      "convertToR5OK" : 1,
+      "r5validated" : 1,
+      "r5InError" : 1,
+      "convertToR4OK" : 1
     }
   },
   "ImagingSelection" : {
@@ -3215,31 +3203,25 @@
   "PractitionerRole" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Attempt to read invalid property 'modifierExtension' on type Availability",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 1,
       "parsedOk" : 1,
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "example" : {
-        "return-error" : "Attempt to read invalid property 'modifierExtension' on type Availability"
-      }
+      "convertToR4OK" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Attempt to read invalid property 'modifierExtension' on type Availability",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 1,
       "parsedOk" : 1,
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "example" : {
-        "return-error" : "Attempt to read invalid property 'modifierExtension' on type Availability"
-      }
+      "convertToR4OK" : 1
     }
   },
   "Procedure" : {

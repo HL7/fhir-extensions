@@ -22,8 +22,8 @@ group PractitionerRole(source src : PractitionerRoleR4B, target tgt : Practition
   src.telecom : ContactPoint as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom = s;
 //  src.characteristic -> tgt.characteristic;
 //  src.communication -> tgt.communication;
-  src.availableTime as s -> tgt.availability as t then PractitionerRoleAvailabilityAvailableTime(s,t) "availableTime";
-  src.notAvailable as s -> tgt.availability as t then PractitionerRoleAvailabilityNotAvailableTime(s,t) "notAvailableTime";
+  src.availableTime : BackboneElement as s -> tgt.availability as t then PractitionerRoleAvailabilityAvailableTime(s,t) "availableTime";
+  src.notAvailable : BackboneElement as s -> tgt.availability as t then PractitionerRoleAvailabilityNotAvailableTime(s,t) "notAvailableTime";
   src.endpoint -> tgt.endpoint;
 }
 
