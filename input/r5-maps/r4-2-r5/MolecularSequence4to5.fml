@@ -73,18 +73,18 @@ group MolecularSequenceReferenceSeq(source src, target tgt) extends BackboneElem
   src.chromosome as s where code = '22' -> tgt.startingSequence as t, t.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://loinc.org", tcc.code = "LA21275-5", tcc.display = "Chromosome 22";
   src.chromosome as s where code = 'X' -> tgt.startingSequence as t, t.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://loinc.org", tcc.code = "LA21276-3", tcc.display = "Chromosome X";
   src.chromosome as s where code = 'Y' -> tgt.startingSequence as t, t.chromosome = create('CodeableConcept') as tc, tc.coding = create('Coding') as tcc, tcc.system = "http://loinc.org", tcc.code = "LA21277-1", tcc.display = "Chromosome Y";
-  src.referenceSeqId as s -> tgt.startingSequence as t, t.sequence = s;
-  src.referenceSeqPointer as s -> tgt.startingSequence as t, t.sequence = s;
-  src.referenceSeqString as s -> tgt.startingSequence as t, t.sequence = s;
-  src.windowStart as s -> tgt.startingSequence as t, t.windowStart = s;
-  src.windowEnd as s -> tgt.startingSequence as t, t.windowEnd = s;
+  src.referenceSeqId : CodeableConcept as s -> tgt.startingSequence as t, t.sequence = s;
+  src.referenceSeqPointer : Reference as s -> tgt.startingSequence as t, t.sequence = s;
+  src.referenceSeqString : string as s -> tgt.startingSequence as t, t.sequence = s;
+  src.windowStart : integer as s -> tgt.startingSequence as t, t.windowStart = s;
+  src.windowEnd : integer as s -> tgt.startingSequence as t, t.windowEnd = s;
   src.orientation as v -> tgt.startingSequence as t, t.orientation = translate(v, '#orientationType', 'code');
   src.strand as v -> tgt.startingSequence as t, t.strand = translate(v, '#strandType', 'code');
 }
 
 group MolecularSequenceVariant(source src, target tgt) extends BackboneElement {
-  src.start as s -> tgt.edit as t, t.start = s;
-  src.end as s -> tgt.edit as t, t.end = s;
+  src.start : integer as s -> tgt.edit as t, t.start = s;
+  src.end : integer as s -> tgt.edit as t, t.end = s;
   src.observedAllele as s -> tgt.edit as t, t.replacementSequence = s;
   src.referenceAllele as s -> tgt.edit as t, t.replacedSequence = s;
 }

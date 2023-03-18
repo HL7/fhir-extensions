@@ -2636,127 +2636,25 @@
   "MolecularSequence" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/string, Error: Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept, Error: Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/Reference, Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Integer",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 17,
       "parsedOk" : 17,
-      "convertToR5OK" : 0,
-      "r5validated" : 0,
-      "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "breastcancer" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "coord-0-base" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/string"
-      },
-      "coord-1-base" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/string"
-      },
-      "example-TPMT-one" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "example-TPMT-two" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "example-pgx-1" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "example-pgx-2" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "example" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "fda-example" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "fda-vcf-comparison" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "fda-vcfeval-comparison" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "graphic-example-1" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "graphic-example-2" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/string"
-      },
-      "graphic-example-3" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/Reference"
-      },
-      "graphic-example-4" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Integer"
-      },
-      "graphic-example-5" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      },
-      "sequence-complex-variant" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      }
+      "convertToR5OK" : 17,
+      "r5validated" : 17,
+      "r5InError" : 17,
+      "convertToR4OK" : 17
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Integer, Error: Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept, Error: Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/Reference, Error: Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/string",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 17,
       "parsedOk" : 17,
-      "convertToR5OK" : 0,
-      "r5validated" : 0,
-      "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "breastcancer" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "coord-0-base" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/string"
-      },
-      "coord-1-base" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/string"
-      },
-      "example-TPMT-one" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "example-TPMT-two" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "example-pgx-1" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "example-pgx-2" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "example" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "fda-example" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "fda-vcf-comparison" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "fda-vcfeval-comparison" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "graphic-example-1" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "graphic-example-2" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/string"
-      },
-      "graphic-example-3" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/Reference"
-      },
-      "graphic-example-4" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a Integer"
-      },
-      "graphic-example-5" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      },
-      "sequence-complex-variant" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      }
+      "convertToR5OK" : 17,
+      "r5validated" : 17,
+      "r5InError" : 17,
+      "convertToR4OK" : 17
     }
   },
   "NamingSystem" : {
@@ -2954,37 +2852,25 @@
   "OrganizationAffiliation" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a ContactPoint",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 3,
       "parsedOk" : 3,
-      "convertToR5OK" : 1,
-      "r5validated" : 1,
+      "convertToR5OK" : 3,
+      "r5validated" : 3,
       "r5InError" : 0,
-      "convertToR4OK" : 1,
-      "example" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a ContactPoint"
-      },
-      "orgrole1" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a ContactPoint"
-      }
+      "convertToR4OK" : 3
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a ContactPoint",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 3,
       "parsedOk" : 3,
-      "convertToR5OK" : 1,
-      "r5validated" : 1,
+      "convertToR5OK" : 3,
+      "r5validated" : 3,
       "r5InError" : 0,
-      "convertToR4OK" : 1,
-      "example" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a ContactPoint"
-      },
-      "orgrole1" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a ContactPoint"
-      }
+      "convertToR4OK" : 3
     }
   },
   "PackagedProductDefinition" : {
@@ -3350,31 +3236,25 @@
   "RequestOrchestration" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/Reference",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 2,
       "parsedOk" : 2,
-      "convertToR5OK" : 1,
-      "r5validated" : 1,
-      "r5InError" : 1,
-      "convertToR4OK" : 1,
-      "example" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/Reference"
-      }
+      "convertToR5OK" : 2,
+      "r5validated" : 2,
+      "r5InError" : 2,
+      "convertToR4OK" : 2
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/Reference",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 2,
       "parsedOk" : 2,
-      "convertToR5OK" : 1,
-      "r5validated" : 1,
-      "r5InError" : 1,
-      "convertToR4OK" : 1,
-      "example" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/Reference"
-      }
+      "convertToR5OK" : 2,
+      "r5validated" : 2,
+      "r5InError" : 2,
+      "convertToR4OK" : 2
     }
   },
   "Requirements" : {
@@ -3512,37 +3392,25 @@
   "ServiceRequest" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/string, Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 20,
       "parsedOk" : 20,
-      "convertToR5OK" : 18,
-      "r5validated" : 18,
+      "convertToR5OK" : 20,
+      "r5validated" : 20,
       "r5InError" : 2,
-      "convertToR4OK" : 18,
-      "benchpress" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.0/StructureDefinition/string"
-      },
-      "vent" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept"
-      }
+      "convertToR4OK" : 20
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/string, Error: Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 20,
       "parsedOk" : 20,
-      "convertToR5OK" : 18,
-      "r5validated" : 18,
+      "convertToR5OK" : 20,
+      "r5validated" : 20,
       "r5InError" : 2,
-      "convertToR4OK" : 18,
-      "benchpress" : {
-        "conversion-error" : "Unknown data type name http://hl7.org/fhir/4.3/StructureDefinition/string"
-      },
-      "vent" : {
-        "conversion-error" : "Unable to convert a org.hl7.fhir.r5.elementmodel.Element to a CodeableConcept"
-      }
+      "convertToR4OK" : 20
     }
   },
   "Slot" : {
@@ -7594,17 +7462,14 @@
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.eventsSinceSubscriptionStart = create() as vvv on Rule \"SubscriptionStatus4Bto5|SubscriptionStatus|eventsSinceSubscriptionStart\": Unknown Resource or Type Name 'integer64'",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 1,
       "parsedOk" : 1,
-      "convertToR5OK" : 0,
-      "r5validated" : 0,
-      "r5InError" : 0,
-      "convertToR4OK" : 0,
-      "example" : {
-        "conversion-error" : "Exception executing transform tgt.eventsSinceSubscriptionStart = create() as vvv on Rule \"SubscriptionStatus4Bto5|SubscriptionStatus|eventsSinceSubscriptionStart\": Unknown Resource or Type Name 'integer64'"
-      }
+      "convertToR5OK" : 1,
+      "r5validated" : 1,
+      "r5InError" : 1,
+      "convertToR4OK" : 1
     }
   },
   "SubscriptionTopic" : {
@@ -7766,31 +7631,25 @@
   "SupplyDelivery" : {
     "r4" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.type = translate(v, '#SupplyDeliverySupplyItemType', 'code') on Rule \"SupplyDelivery4to5|SupplyDelivery|type\": Unable to translate source http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 2,
       "parsedOk" : 2,
-      "convertToR5OK" : 1,
-      "r5validated" : 1,
+      "convertToR5OK" : 2,
+      "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 1,
-      "simpledelivery" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, '#SupplyDeliverySupplyItemType', 'code') on Rule \"SupplyDelivery4to5|SupplyDelivery|type\": Unable to translate source http://hl7.org/fhir/4.0/StructureDefinition/CodeableConcept"
-      }
+      "convertToR4OK" : 2
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Exception executing transform tgt.type = translate(v, '#SupplyDeliverySupplyItemType', 'code') on Rule \"SupplyDelivery4Bto5|SupplyDelivery|type\": Unable to translate source http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK",
       "totalInstances" : 2,
       "parsedOk" : 2,
-      "convertToR5OK" : 1,
-      "r5validated" : 1,
+      "convertToR5OK" : 2,
+      "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 1,
-      "simpledelivery" : {
-        "conversion-error" : "Exception executing transform tgt.type = translate(v, '#SupplyDeliverySupplyItemType', 'code') on Rule \"SupplyDelivery4Bto5|SupplyDelivery|type\": Unable to translate source http://hl7.org/fhir/4.3/StructureDefinition/CodeableConcept"
-      }
+      "convertToR4OK" : 2
     }
   },
   "SupplyRequest" : {
