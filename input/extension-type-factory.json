@@ -5,6 +5,9 @@
   "variables" : [{
     "name" : "%type%",
     "transform" : "n/a"
+  }, {
+    "name" : "%ltype%",
+    "transform" : "lowercase"
   }],
   "generated-file-name": "extensions-%item%.xml",
   "stated-file-name": "extensions-%item%.html",

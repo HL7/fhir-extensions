@@ -26,13 +26,13 @@
   {% if prefix11=="extensions-" %}
     <li class="active"><a href="#">Extensions</a></li>
   {% else %}
-    <li><a href="extensions-{{ltype}}.html">Extensions</a></li>
+    <li><a href="extensions-{{type}}.html">Extensions</a></li>
   {% endif %}
   {% if site.data.modules.resources[resourceName].noConv!="Y" %}
     {% if prefix12=="conversions-" %}
       <li class="active"><a href="#">R4 Conversions</a></li>
     {% else %}
-      <li><a href="conversions-{{ltype}}.html">R4 Conversions</a></li>
+      <li><a href="conversions-{{type}}.html">R4 Conversions</a></li>
     {% endif %}
   {% endif %}
 </ul>
