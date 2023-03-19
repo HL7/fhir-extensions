@@ -66,7 +66,7 @@
       "module": "Foundation",
       "section": "2.19"
     },
-    "Reference": {
+    "references": {
       "module": "Foundation",
       "section": "2.1.3.3",
       "section2": "2.1.3.4",
@@ -100,7 +100,6 @@
       "section2": "2.1.27.7.14",
       "noEx": "Y",
       "noMap": "Y",
-      "noConv": "Y",
       "inDoc": "Y",
       "inFt": "Y"
     },
@@ -110,18 +109,17 @@
       "section2": "2.1.27.8.14",
       "noEx": "Y",
       "noMap": "Y",
-      "noConv": "Y",
       "inDoc": "Y",
       "inFt": "Y"
     },
-    "MetaDatatypes": {
+    "metadatatypes": {
       "module": "Foundation",
       "section": "2.1.28.10.1",
       "section2": "2.1.28.10.2",
       "inDoc": "Y",
       "inDt": "Y",
       "isDt": "Y",
-      "tab": "MetaDatatypes"
+      "tab": "Meta Datatypes"
     },
     "ElementDefinition": {
       "module": "Foundation",
@@ -132,7 +130,7 @@
       "isDt": "Y",
       "tab": "ElementDefinition Detail"
     },
-    "Datatypes": {
+    "datatypes": {
       "module": "Foundation",
       "section": "2.1.28.8",
       "section2": "2.1.28.9",

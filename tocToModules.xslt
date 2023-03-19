@@ -5,13 +5,13 @@
     <datatypes>
       <datatype page="Resource" name="Base Resource Definitions" noEx="Y" noMap="Y"/>
       <datatype page="DomainResource" name="DomainResource Resource" noEx="Y" noMap="Y"/>
-      <datatype page="CanonicalResource" name="Resource CanonicalResource - Content" noEx="Y" noMap="Y" noConv="Y"/>
-      <datatype page="MetadataResource" name="Resource MetadataResource - Content" noEx="Y" noMap="Y" noConv="Y"/>
-      <datatype page="Datatypes" name="Datatypes" tab="Datatypes" isDt="Y"/>
+      <datatype page="CanonicalResource" name="Resource CanonicalResource - Content" noEx="Y" noMap="Y"/>
+      <datatype page="MetadataResource" name="Resource MetadataResource - Content" noEx="Y" noMap="Y"/>
+      <datatype page="datatypes" name="Datatypes" tab="Datatypes" isDt="Y"/>
       <datatype page="Dosage" name="Dosage" tab="Dosage Detail" isDt="Y"/>
       <datatype page="ElementDefinition" name="Element Definition" tab="ElementDefinition Detail" isDt="Y"/>
-      <datatype page="MetaDatatypes" name="MetaDatatypes" tab="MetaDatatypes" isDt="Y"/>
-      <datatype page="Reference" name="Resource References" tab="References" noEx="Y" noMap="Y" isDt="Y"/>
+      <datatype page="metadatatypes" name="MetaDatatypes" tab="Meta Datatypes" isDt="Y"/>
+      <datatype page="references" name="Resource References" tab="References" noEx="Y" noMap="Y" isDt="Y"/>
     </datatypes>
   </xsl:variable>
   <xsl:variable name="special" as="element(special)">

@@ -40,14 +40,14 @@
 <h2 class="self-link-parent"><span class="sectioncount">{{section}}<a name="{{section}}"> </a></span>
 {% if prefix11=="extensions-" %}
   {% if site.data.modules.resources[resourceName].tab %}
-    {{if site.data.modules.resources[resourceName].tab}}
+    {{site.data.modules.resources[resourceName].tab}}
   {% else %}
     Resource {{resourceName}}
   {% endif %}
  - Extensions <a href="extensions-{{resourceName}}.html#{{section}}" title="link to here" class="self-link">
 {% elsif prefix12=="conversions-" %}
   {% if site.data.modules.resources[resourceName].tab %}
-    {{if site.data.modules.resources[resourceName].tab}}
+    {{site.data.modules.resources[resourceName].tab}}
   {% else %}
     Resource {{resourceName}}
   {% endif %}
