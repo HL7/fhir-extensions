@@ -121,9 +121,6 @@ group positiveInt(source src : positiveIntR4B, target tgt : positiveIntR5) exten
 group string(source src : stringR4B, target tgt : stringR5) extends Element <<type+>> {
   src.value as v -> tgt.value = v "stringValue";
 }
-group string2integer64(source src : stringR4B, target tgt : integer64R5) extends Element <<type+>> {
-  src.value as v -> tgt.value = (%v.toInteger()) "string2integer64";
-}
 group string2markdown(source src : stringR4B, target tgt : markdownR5) extends Element <<types>> {
   // todo: deal with markdown escaping issues
   src.value as v -> tgt.value = v "string2markdownValue";

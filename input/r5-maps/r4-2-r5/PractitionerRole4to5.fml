@@ -19,12 +19,12 @@ group PractitionerRole(source src : PractitionerRoleR4, target tgt : Practitione
   src.specialty -> tgt.specialty;
   src.location -> tgt.location;
   src.healthcareService -> tgt.healthcareService;
-  src.telecom : ContactPoint as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom = s;
+  src.telecom as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom as telecom then ContactPoint(s, telecom) "contact";
 //  src.characteristic -> tgt.characteristic;
 //  src.communication -> tgt.communication;
   src.availableTime as s -> tgt.availability = create('Availability') as av share av, av.availableTime as t then PractitionerRoleAvailabilityAvailableTime(s,t) "availableTime";
   src.notAvailable as s -> tgt.availability = create('Availability') as av share av, av.notAvailableTime as t then PractitionerRoleAvailabilityNotAvailableTime(s,t) "notAvailableTime";
-  src.telecom as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom as telecom then ContactPoint(s, telecom) "contact";
+  src.endpoint -> tgt.endpoint;
 }
 
 group PractitionerRoleAvailabilityAvailableTime(source src, target tgt) extends BackboneElement {

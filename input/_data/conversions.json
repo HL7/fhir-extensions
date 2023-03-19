@@ -695,7 +695,7 @@
       "parsedOk" : 2,
       "convertToR5OK" : 2,
       "r5validated" : 2,
-      "r5InError" : 0,
+      "r5InError" : 1,
       "convertToR4OK" : 2
     },
     "r4b" : {
@@ -706,7 +706,7 @@
       "parsedOk" : 2,
       "convertToR5OK" : 2,
       "r5validated" : 2,
-      "r5InError" : 0,
+      "r5InError" : 1,
       "convertToR4OK" : 2
     }
   },

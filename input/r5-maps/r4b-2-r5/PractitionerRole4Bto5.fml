@@ -19,7 +19,7 @@ group PractitionerRole(source src : PractitionerRoleR4B, target tgt : Practition
   src.specialty -> tgt.specialty;
   src.location -> tgt.location;
   src.healthcareService -> tgt.healthcareService;
-  src.telecom : ContactPoint as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom = s;
+  src.telecom as s -> tgt.contact = create('ExtendedContactDetail') as t, t.telecom as telecom then ContactPoint(s, telecom) "contact";
 //  src.characteristic -> tgt.characteristic;
 //  src.communication -> tgt.communication;
   src.availableTime as s -> tgt.availability = create('Availability') as av share av, av.availableTime as t then PractitionerRoleAvailabilityAvailableTime(s,t) "availableTime";
@@ -28,13 +28,13 @@ group PractitionerRole(source src : PractitionerRoleR4B, target tgt : Practition
 }
 
 group PractitionerRoleAvailabilityAvailableTime(source src, target tgt) extends BackboneElement {
-  src.availableTime as s -> tgt.daysOfWeek as t, t = s.daysOfWeek;
-  src.availableTime as s -> tgt.allDay as t, t = s.allDay;
-  src.availableTime as s -> tgt.availableStartTime as t, t = s.availableStartTime;
-  src.availableTime as s -> tgt.availableEndTime as t, t = s.availableEndTime;
+  src.daysOfWeek -> tgt.daysOfWeek;
+  src.allDay -> tgt.allDay;
+  src.availableStartTime -> tgt.availableStartTime;
+  src.availableEndTime -> tgt.availableEndTime;
 }
 
 group PractitionerRoleAvailabilityNotAvailableTime(source src, target tgt) extends BackboneElement {
-  src.notAvailableTime as s -> tgt.description as t, t = s.description;
-  src.notAvailableTime as s -> tgt.during as t, t = s.during;
+  src.description -> tgt.description;
+  src.during -> tgt.during;
 }
