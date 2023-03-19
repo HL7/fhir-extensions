@@ -2,6 +2,8 @@
 /// name = 'MedicationRequest5to4'
 /// title = 'FML Conversion for MedicationRequest: R5 to R4'
 
+/// status = 'active'
+
 conceptmap "MedicationRequestIntent" {
   prefix s = "http://hl7.org/fhir/CodeSystem/medicationrequest-intent"
   prefix t = "http://hl7.org/fhir/4.0/CodeSystem/medicationrequest-intent"
@@ -32,7 +34,7 @@ conceptmap "MedicationRequestStatus" {
 
   s:"active" - t:"active"
   s:"on-hold" - t:"on-hold"
-  s:"ended" - t:"ended"
+  s:"ended" - t:"completed"
   s:"stopped" - t:"stopped"
   s:"completed" - t:"completed"
   s:"cancelled" - t:"cancelled"
@@ -53,30 +55,31 @@ group MedicationRequest(source src : MedicationRequestR5, target tgt : Medicatio
   src.groupIdentifier -> tgt.groupIdentifier;
   src.status as v -> tgt.status = translate(v, '#MedicationRequestStatus', 'code');
   src.statusReason -> tgt.statusReason;
-  src.statusChanged -> tgt.statusChanged;
+//  src.statusChanged -> tgt.statusChanged;
   src.intent as v -> tgt.intent = translate(v, '#MedicationRequestIntent', 'code');
   src.category -> tgt.category;
   src.priority as v -> tgt.priority = translate(v, '#MedicationRequestPriority', 'code');
   src.doNotPerform -> tgt.doNotPerform;
   src.medication -> tgt.medication;
   src.subject -> tgt.subject;
-  src.informationSource -> tgt.informationSource;
+//  src.informationSource -> tgt.informationSource;
   src.encounter -> tgt.encounter;
   src.supportingInformation -> tgt.supportingInformation;
   src.authoredOn -> tgt.authoredOn;
   src.requester -> tgt.requester;
-  src.reported -> tgt.reported;
+//  src.reported -> tgt.reported;
   src.performerType -> tgt.performerType;
   src.performer -> tgt.performer;
-  src.device -> tgt.device;
+//  src.device -> tgt.device;
   src.recorder -> tgt.recorder;
-  src.reason -> tgt.reason;
+  src.reason -> tgt.reasonCode;
+  src.reason -> tgt.reasonReference;
   src.courseOfTherapyType -> tgt.courseOfTherapyType;
   src.insurance -> tgt.insurance;
   src.note -> tgt.note;
-  src.renderedDosageInstruction -> tgt.renderedDosageInstruction;
-  src.effectiveDosePeriod -> tgt.effectiveDosePeriod;
-  src.dosageInstruction -> tgt.dosageInstruction;
+//  src.renderedDosageInstruction -> tgt.renderedDosageInstruction;
+//  src.effectiveDosePeriod -> tgt.effectiveDosePeriod;
+//  src.dosageInstruction -> tgt.dosageInstruction;
   src.dispenseRequest as s -> tgt.dispenseRequest as t then MedicationRequestDispenseRequest(s,t);
   src.substitution as s -> tgt.substitution as t then MedicationRequestSubstitution(s,t);
   src.eventHistory -> tgt.eventHistory;
@@ -89,9 +92,9 @@ group MedicationRequestDispenseRequest(source src, target tgt) extends BackboneE
   src.numberOfRepeatsAllowed -> tgt.numberOfRepeatsAllowed;
   src.quantity -> tgt.quantity;
   src.expectedSupplyDuration -> tgt.expectedSupplyDuration;
-  src.dispenser -> tgt.dispenser;
-  src.dispenserInstruction -> tgt.dispenserInstruction;
-  src.doseAdministrationAid -> tgt.doseAdministrationAid;
+  src.dispenser -> tgt.performer;
+//  src.dispenserInstruction -> tgt.dispenserInstruction;
+//  src.doseAdministrationAid -> tgt.doseAdministrationAid;
 }
 
 group MedicationRequestDispenseRequestInitialFill(source src, target tgt) extends BackboneElement {

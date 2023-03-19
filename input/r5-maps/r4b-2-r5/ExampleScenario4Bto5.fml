@@ -60,8 +60,8 @@ group ExampleScenarioActor(source src, target tgt) extends BackboneElement {
 
 group ExampleScenarioInstance(source src, target tgt) extends BackboneElement {
   src.resourceId -> tgt.key;
-  src.resourceType as s -> tgt.structureType = create('Coding') as t, t.system = "http://hl7.org/fhir/fhir-types", t.code = s.value;
-  src.version as s -> tgt.structureVersion = s.versionId;
+  src.resourceType as s -> tgt.structureType = create('Coding') as t, t.system = "http://hl7.org/fhir/fhir-types", t.code = s;
+  src.version as s -> tgt.version as t then ExampleScenarioInstanceVersion(s,t);
 //  src.structureProfile : canonical -> tgt.structureProfile;
 //  src.structureProfile : uri -> tgt.structureProfile;
   src.name -> tgt.title;
@@ -71,12 +71,12 @@ group ExampleScenarioInstance(source src, target tgt) extends BackboneElement {
   src.containedInstance as s -> tgt.containedInstance as t then ExampleScenarioInstanceContainedInstance(s,t);
 }
 
-//group ExampleScenarioInstanceVersion(source src, target tgt) extends BackboneElement {
-//  src.key -> tgt.key;
+group ExampleScenarioInstanceVersion(source src, target tgt) extends BackboneElement {
+  src.versionId -> tgt.key;
 //  src.title -> tgt.title;
-//  src.description -> tgt.description;
+  src.description -> tgt.description;
 //  src.content -> tgt.content;
-//}
+}
 
 group ExampleScenarioInstanceContainedInstance(source src, target tgt) extends BackboneElement {
   src.resourceId -> tgt.instanceReference;
@@ -100,8 +100,8 @@ group ExampleScenarioProcessStep(source src, target tgt) extends BackboneElement
 }
 
 group ExampleScenarioProcessStepOperation(source src, target tgt) extends BackboneElement {
-  src.type as s -> tgt.type = s.code;
-//  src.title -> tgt.title;
+//  src.type -> tgt.type;
+  src.type -> tgt.title;
   src.initiator -> tgt.initiator;
   src.receiver -> tgt.receiver;
   src.description -> tgt.description;

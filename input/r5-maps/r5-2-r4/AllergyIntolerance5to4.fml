@@ -54,8 +54,12 @@ group AllergyIntolerance(source src : AllergyIntoleranceR5, target tgt : Allergy
   src.onset : Range -> tgt.onset;
   src.onset : string -> tgt.onset;
   src.recordedDate -> tgt.recordedDate;
-  src.participant as s where code = 'enterer' -> tgt.recorder = s.actor "recorder";
-  src.participant as s where code = 'author' -> tgt.asserter = s.actor "asserter";
+  src.participant as s where code = 'enterer' -> tgt then {
+    s.actor -> tgt.recorder;
+  };
+  src.participant as s where code = 'author' -> tgt then {
+    s.actor -> tgt.recorder;
+  };
   src.lastOccurrence -> tgt.lastOccurrence;
   src.note -> tgt.note;
   src.reaction as s -> tgt.reaction as t then AllergyIntoleranceReaction(s,t);

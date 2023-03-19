@@ -71,7 +71,7 @@ group MedicinalProductDefinitionNameUsage(source src, target tgt) extends Backbo
 
 group MedicinalProductDefinitionOperation(source src, target tgt) extends BackboneElement {
   src.type -> tgt.operationType;
-  src.effectiveDate as s -> tgt.effectiveDate = s.start;
+  src.effectiveDate : Period as s -> tgt.effectiveDate = s.start;
   src.organization -> tgt.manufacturer;
   src.confidentialityIndicator -> tgt.confidentialityIndicator;
 }

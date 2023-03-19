@@ -14,7 +14,7 @@ group Attachment(source src : AttachmentR4, target tgt : AttachmentR5) extends E
   src.language -> tgt.language;
   src.data -> tgt.data;
   src.url -> tgt.url;
-  src.size -> tgt.size;
+  src.size : unsignedInt -> tgt.size;
   src.hash -> tgt.hash;
   src.title -> tgt.title;
   src.creation -> tgt.creation;

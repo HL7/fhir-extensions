@@ -43,7 +43,7 @@ group ChargeItemDefinition(source src : ChargeItemDefinitionR4B, target tgt : Ch
 //  src.copyrightLabel -> tgt.copyrightLabel;
   src.approvalDate -> tgt.approvalDate;
   src.lastReviewDate -> tgt.lastReviewDate;
-  src.effectivePeriod as v -> tgt.applicability as t, t.effectivePeriod = v "period";
+//  src.effectivePeriod as v -> tgt.applicability as t, t.effectivePeriod = v "period";
   src.code -> tgt.code;
   src.instance -> tgt.instance;
   src.applicability as s -> tgt.applicability as t then ChargeItemDefinitionApplicability(s,t);
@@ -51,12 +51,17 @@ group ChargeItemDefinition(source src : ChargeItemDefinitionR4B, target tgt : Ch
 }
 
 group ChargeItemDefinitionApplicability(source src, target tgt) extends BackboneElement {
-  src.expression as s -> tgt.condition = create('Expression') as t, t.expression = s.value;
+  src.expression as s -> tgt.condition = create('Expression') as t, t.expression = s;
 //  src.effectivePeriod -> tgt.effectivePeriod;
 //  src.relatedArtifact -> tgt.relatedArtifact;
 }
 
 group ChargeItemDefinitionPropertyGroup(source src, target tgt) extends BackboneElement {
-  src.priceComponent as s -> tgt.priceComponent = create('MonetaryComponent') as t, t.type = s.type, t.code = s.code, t.factor = s.factor, t.amount = s.amount;
+  src.priceComponent as s -> tgt.priceComponent as t then {
+    s.type -> t.type;
+    s.code -> t.code;
+    s.factor -> t.factor;
+    s.amount -> t.amount;
+  };
 }
 

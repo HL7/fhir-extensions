@@ -6,6 +6,7 @@
 
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Resource" alias ResourceR4 as source
 uses "http://hl7.org/fhir/StructureDefinition/Resource" alias ResourceR5 as target
+uses "http://hl7.org/fhir/StructureDefinition/Base" alias BaseR5 as source
 
 imports "http://hl7.org/fhir/StructureMap/*4to5"
 
@@ -14,5 +15,8 @@ group Resource(source src : ResourceR4, target tgt : ResourceR5) extends Base <<
   src.meta -> tgt.meta;
   src.implicitRules -> tgt.implicitRules;
   src.language -> tgt.language;
+}
+
+group Base(source src : BaseR5) {
 }
 

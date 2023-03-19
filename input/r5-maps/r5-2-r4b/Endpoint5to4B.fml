@@ -30,8 +30,10 @@ group Endpoint(source src : EndpointR5, target tgt : EndpointR4B) extends Domain
   src.managingOrganization -> tgt.managingOrganization;
   src.contact -> tgt.contact;
   src.period -> tgt.period;
-  src.payload as s -> tgt.payloadType = s.type "payloadType";
-  src.payload as s -> tgt.payloadMimeType = s.mimeType "payloadMimeType";
+  src.payload as s -> tgt then {
+    s.type -> tgt.payloadType;
+    s.mimeType -> tgt.payloadMimeType;
+  };
   src.address -> tgt.address;
   src.header -> tgt.header;
 }

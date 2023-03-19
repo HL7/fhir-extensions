@@ -34,7 +34,7 @@ imports "http://hl7.org/fhir/StructureMap/*4Bto5"
 group SubscriptionStatus(source src : SubscriptionStatusR4B, target tgt : SubscriptionStatusR5) extends DomainResource <<type+>> {
   src.status as v -> tgt.status = translate(v, '#SubscriptionStatus', 'code');
   src.type as v -> tgt.type = translate(v, '#SubscriptionNotificationType', 'code');
-  src.eventsSinceSubscriptionStart -> tgt.eventsSinceSubscriptionStart;
+  src.eventsSinceSubscriptionStart : string as s -> tgt.eventsSinceSubscriptionStart;
   src.notificationEvent as s -> tgt.notificationEvent as t then SubscriptionStatusNotificationEvent(s,t);
   src.subscription -> tgt.subscription;
   src.topic -> tgt.topic;
@@ -42,7 +42,7 @@ group SubscriptionStatus(source src : SubscriptionStatusR4B, target tgt : Subscr
 }
 
 group SubscriptionStatusNotificationEvent(source src, target tgt) extends BackboneElement {
-  src.eventNumber -> tgt.eventNumber;
+  src.eventNumber : string -> tgt.eventNumber;
   src.timestamp -> tgt.timestamp;
   src.focus -> tgt.focus;
   src.additionalContext -> tgt.additionalContext;

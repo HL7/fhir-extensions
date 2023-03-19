@@ -1,0 +1,64 @@
+<StructureDefinition xmlns='http://hl7.org/fhir'>
+  <id value='device-lastmaintenancetime'/>
+  <extension url='http://hl7.org/fhir/StructureDefinition/structuredefinition-wg'>
+    <valueCode value='oo'/>
+  </extension>
+  <extension url='http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm'>
+    <valueInteger value='0'/>
+  </extension>
+  <extension url='http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status'>
+    <valueCode value='trial-use'/>
+  </extension>
+  <url value='http://hl7.org/fhir/StructureDefinition/device-lastmaintenancetime'/>
+  <version value='5.0.0'/>
+  <name value='DeviceLastMaintenanceTime'/>
+  <title value='Device Last maintenance time'/>
+  <status value='draft'/>
+  <experimental value='false'/>
+  <date value='2023-03-18'/>
+  <publisher value='Health Level Seven, Inc. - FHIR WG'/>
+  <contact>
+    <telecom>
+      <system value='url'/>
+      <value value='HL7'/>
+    </telecom>
+  </contact>
+  <description value='DateTime of the last time the device was subject to maintenance.'/>
+  <fhirVersion value='4.0.1'/>
+  <mapping>
+    <identity value='rim'/>
+    <uri value='http://hl7.org/v3'/>
+    <name value='RIM Mapping'/>
+  </mapping>
+  <kind value='complex-type'/>
+  <abstract value='false'/>
+  <context>
+    <type value='element'/>
+    <expression value='Device'/>
+  </context>
+  <type value='Extension'/>
+  <baseDefinition value='http://hl7.org/fhir/StructureDefinition/Extension'/>
+  <derivation value='constraint'/>
+  <differential>
+    <element id='Extension'>
+      <path value='Extension'/>
+      <short value='Last maintenance time'/>
+      <definition value='When the device was last subject to maintenance.'/>
+      <max value='1'/>
+    </element>
+    <element id='Extension.extension'>
+      <path value='Extension.extension'/>
+      <max value='0'/>
+    </element>
+    <element id='Extension.url'>
+      <path value='Extension.url'/>
+      <fixedUri value='http://hl7.org/fhir/StructureDefinition/device-lastmaintenancetime'/>
+    </element>
+    <element id='Extension.value[x]'>
+      <path value='Extension.value[x]'/>
+      <type>
+        <code value='dateTime'/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

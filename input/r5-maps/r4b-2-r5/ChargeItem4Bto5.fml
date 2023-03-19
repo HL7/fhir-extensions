@@ -40,8 +40,7 @@ group ChargeItem(source src : ChargeItemR4B, target tgt : ChargeItemR5) extends 
   src.costCenter -> tgt.costCenter;
   src.quantity -> tgt.quantity;
   src.bodysite -> tgt.bodysite;
-//  src.unitPriceComponent -> tgt.unitPriceComponent;
-  src.priceOverride as s -> tgt.totalPriceComponent as t then ChargeItemTotalPriceOverride(s,t);
+  src.priceOverride : Money as s -> tgt.totalPriceComponent = create('MonetaryComponent') as t, t.type = "base", t.amount = s;
   src.overrideReason -> tgt.overrideReason;
   src.enterer -> tgt.enterer;
   src.enteredDate -> tgt.enteredDate;
@@ -54,10 +53,10 @@ group ChargeItem(source src : ChargeItemR4B, target tgt : ChargeItemR5) extends 
   src.supportingInformation -> tgt.supportingInformation;
 }
 
-group ChargeItemTotalPriceOverride(source src, target tgt) extends BackboneElement {
-  src.value as v -> tgt.type = "base";
-  src.value as v -> tgt.amount = v "money";
-}
+//group ChargeItemTotalPriceOverride(source src, target tgt) extends BackboneElement {
+//  src.value as v -> tgt.type = "base";
+//  src.value as v -> tgt.amount = v "money";
+//}
 
 group ChargeItemPerformer(source src, target tgt) extends BackboneElement {
   src.function -> tgt.function;

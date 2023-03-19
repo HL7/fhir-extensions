@@ -1,5 +1,6 @@
 {
   "item-factory" : "resources",
+  "except-items" : ["Resource"],
   "source-file" : "input/structuremap-resource-template.xml",
   "variables" : [{
     "name" : "%type%",

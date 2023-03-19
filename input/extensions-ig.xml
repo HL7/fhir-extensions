@@ -85,6 +85,12 @@
           <title value="Reference Types Extensions"/>
           <generation value="html"/>
         </page>
+        <page>
+          <sourceUrl value="extensions-resource.xml"/>
+          <name value="extensions-resource.html"/>
+          <title value="Resource Extensions"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -137,6 +143,12 @@
           <sourceUrl value="conversions-references.xml"/>
           <name value="conversions-references.html"/>
           <title value="R4/R5 Conversion for Reference Types"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <sourceUrl value="conversions-resource.xml"/>
+          <name value="conversions-resource.html"/>
+          <title value="R4/R5 Conversion for Resource"/>
           <generation value="html"/>
         </page>
       </page>

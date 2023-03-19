@@ -59,8 +59,8 @@ group ServiceRequest(source src : ServiceRequestR4B, target tgt : ServiceRequest
   src.category -> tgt.category;
   src.priority as v -> tgt.priority = translate(v, '#ServiceRequestPriority', 'code');
   src.doNotPerform -> tgt.doNotPerform;
-  src.code -> tgt.code;
-  src.orderDetail as s -> tgt.orderDetail as t, t.parameterFocus = s "orderDetail";
+  src.code : CodeableConcept -> tgt.code;
+  src.orderDetail : CodeableConcept as s -> tgt.orderDetail as t, t.parameterFocus = s "orderDetail";
   src.quantity : Quantity -> tgt.quantity;
   src.quantity : Ratio -> tgt.quantity;
   src.quantity : Range -> tgt.quantity;
@@ -86,7 +86,7 @@ group ServiceRequest(source src : ServiceRequestR4B, target tgt : ServiceRequest
   src.bodySite -> tgt.bodySite;
 //  src.bodyStructure -> tgt.bodyStructure;
   src.note -> tgt.note;
-  src.patientInstruction as s -> tgt.patientInstruction as t, t.instruction = s "instruction";
+  src.patientInstruction : string as s -> tgt.patientInstruction as t, t.instruction = s "instruction";
   src.relevantHistory -> tgt.relevantHistory;
 }
 

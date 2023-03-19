@@ -30,6 +30,18 @@ conceptmap "ReferredDocumentStatus" {
 //  s:"unknown" - t:"unknown"
 }
 
+//conceptmap "DocumentRelationshipType" {
+//  prefix s = "http://hl7.org/fhir/document-relationship-type"
+//  prefix t = "http://hl7.org/fhir/4.0/document-relationship-type"
+//
+//  s:"replaces" - t:"replaces"
+//  s:"transforms" - t:"transforms"
+//  s:"signs" - t:"signs"
+//  s:"appends" - t:"appends"
+//  s:"incorporates" - t:"appends"
+//  s:"summarizes" - t:"transforms"
+//}
+
 uses "http://hl7.org/fhir/StructureDefinition/DocumentReference" alias DocumentReferenceR5 as source
 uses "http://hl7.org/fhir/4.0/StructureDefinition/DocumentReference" alias DocumentReferenceR4 as target
 
@@ -45,18 +57,17 @@ group DocumentReference(source src : DocumentReferenceR5, target tgt : DocumentR
   src.type -> tgt.type;
   src.category -> tgt.category;
   src.subject -> tgt.subject;
-  src as sn -> tgt.context as t then {
-    src.event as s -> tgt then {
-      s.concept -> t.event;
-    } "event";
-    src.facilityType -> t.facilityType;
-    src.practiceSetting -> t.practiceSetting;
-    src.period -> t.period;
-  } "context";
+  src.context : Reference as s -> tgt.context as t, t.encounter = s;
+  src.event as s -> tgt.context as t, t.event = s;
+  src.facilityType as s -> tgt.context as t, t.facilityType = s;
+  src.practiceSetting as s -> tgt.context as t, t.practiceSetting = s;
+  src.period as s -> tgt.context as t, t.period = s;
 //  src.bodySite -> tgt.bodySite;
   src.date -> tgt.date;
   src.author -> tgt.author;
-  src.attester as s where src.attester.mode = 'professional' -> tgt.authenticator = s.party;
+  src.attester as s where src.attester.mode = 'professional' -> tgt then {
+    s.party -> tgt.authenticator;
+  };
   src.custodian -> tgt.custodian;
   src.relatesTo as s -> tgt.relatesTo as t then DocumentReferenceRelatesTo(s,t);
   src.description -> tgt.description;
@@ -65,10 +76,9 @@ group DocumentReference(source src : DocumentReferenceR5, target tgt : DocumentR
 }
 
 group DocumentReferenceRelatesTo(source src, target tgt) extends BackboneElement {
-  src.code as s -> tgt.code as t then CodeableConcept2code(s, t, 'http://hl7.org/fhir/document-relationship-type');
-//  src.code as s -> tgt then  {
-//    s.coding as c where c.system = 'http://hl7.org/fhir/document-relationship-type' -> tgt.code = c.code;
-//  };
+  src.code as s -> tgt then {
+    s.coding as sc -> tgt.code = sc;
+  };
   src.target -> tgt.target;
 }
 

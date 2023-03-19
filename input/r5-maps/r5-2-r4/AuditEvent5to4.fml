@@ -61,13 +61,15 @@ group AuditEventAgent(source src, target tgt) extends BackboneElement {
   src.location -> tgt.location;
   src.policy -> tgt.policy;
   src.network : Reference as v -> tgt.network as t, t.address = v.display;
-  src.network : uri as v -> tgt.network as t, t.address = v.value;
-  src.network : string as v -> tgt.network as t, t.address = v.value;
+  src.network : uri as v -> tgt.network as t, t.address = v;
+  src.network : string as v -> tgt.network as t, t.address = v;
   src.authorization -> tgt.purposeOfUse;
 }
 
 group AuditEventSource(source src, target tgt) extends BackboneElement {
-  src.site as v -> tgt.site = v.display;
+  src.site : Reference as s -> tgt then {
+    s.display -> tgt.site;
+  };
   src.observer -> tgt.observer;
   src.type -> tgt.type;
 }

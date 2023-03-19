@@ -148,8 +148,8 @@ group RequestOrchestration(source src : RequestGroupR4B, target tgt : RequestOrc
   src.encounter -> tgt.encounter;
   src.authoredOn -> tgt.authoredOn;
   src.author -> tgt.author;
-  src.reasonCode -> tgt.reason;
-  src.reasonReference -> tgt.reason;
+  src.reasonCode : CodeableConcept -> tgt.reason;
+  src.reasonReference : Reference -> tgt.reason;
 //  src.goal -> tgt.goal;
   src.note -> tgt.note;
   src.action as s -> tgt.action as t then RequestOrchestrationAction(s,t);
@@ -176,7 +176,7 @@ group RequestOrchestrationAction(source src, target tgt) extends BackboneElement
   src.timing : Range -> tgt.timing;
   src.timing : Timing -> tgt.timing;
 //  src.location -> tgt.location;
-  src.participant as s -> tgt.participant as t, t.actor = s;
+  src.participant : Reference as s -> tgt.participant as t, t.actor = s;
   src.type -> tgt.type;
   src.groupingBehavior as v -> tgt.groupingBehavior = translate(v, '#ActionGroupingBehavior', 'code');
   src.selectionBehavior as v -> tgt.selectionBehavior = translate(v, '#ActionSelectionBehavior', 'code');

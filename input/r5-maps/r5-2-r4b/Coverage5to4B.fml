@@ -36,7 +36,9 @@ group Coverage(source src : CoverageR5, target tgt : CoverageR4B) extends Domain
   src.type -> tgt.type;
   src.policyHolder -> tgt.policyHolder;
   src.subscriber -> tgt.subscriber;
-  src.subscriberId as s -> tgt.subscriberId = s.value "subscriberId";
+  src.subscriberId as s -> tgt then {
+    s.value -> tgt.subscriberId;
+  };
   src.beneficiary -> tgt.beneficiary;
   src.dependent -> tgt.dependent;
   src.relationship -> tgt.relationship;
@@ -58,7 +60,9 @@ group Coverage(source src : CoverageR5, target tgt : CoverageR4B) extends Domain
 
 group CoverageClass(source src, target tgt) extends BackboneElement {
   src.type -> tgt.type;
-  src.value as s -> tgt.value = s.value "classValue";
+  src.value as s -> tgt then {
+    s.value -> tgt.value;
+  };
   src.name -> tgt.name;
 }
 
