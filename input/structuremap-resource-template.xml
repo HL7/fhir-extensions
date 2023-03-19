@@ -1,5 +1,5 @@
 {% assign ltype="%type%" | downcase %}
-{% include tabstuff.xhtml %}
+{% include tabstuff.html %}
 
 <p>
 Following are maps for converting between the equivalent R4B resource and this R5 resource.

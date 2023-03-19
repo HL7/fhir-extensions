@@ -1,5 +1,5 @@
 {% assign ltype="%type%" | downcase %}
-{% include tabstuff.xhtml %}
+{% include tabstuff.html %}
 
 <p>
 This table lists extensions for the {{resourceName}} resource defined in association with the core specification. For background information, see
