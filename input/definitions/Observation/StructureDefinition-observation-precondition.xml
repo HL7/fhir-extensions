@@ -48,8 +48,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Other Observations needed to aid in  the interpretation of the source observation."/>
-      <definition value="Other preceding or concurrent observations that must be known to correctly interpret the the observation.  For example an fiO2 measure taken alongside of a SpO2 measurement.  See the [Observation notes](observation.html#notes) section for additional guidance."/>
+      <short
+        value="Other Observations needed to understand the context and significance of the source observation."/>
+      <definition value="Other preceding or concurrent observations that must be known to understand the context and significance of the observation.  For example an fiO2 measure taken alongside of a SpO2 measurement.  See the [Observation notes](observation.html#notes) section for additional guidance."/>
       <min value="0"/>
       <max value="*"/>
     </element>
