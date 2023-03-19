@@ -1,15 +1,15 @@
 {
   "item-factory" : "manual",
   "items" : ["Dosage", "ProductShelfLife", "ElementDefinition", "Reference", "MarketingStatus", "Meta"],
-  "source-file" : "input/extension-type-template.md",
+  "source-file" : "input/extension-type-template.xml",
   "variables" : [{
     "name" : "%type%",
     "transform" : "n/a"
   }],
-  "generated-file-name": "extensions-%item%.md",
+  "generated-file-name": "extensions-%item%.xml",
   "stated-file-name": "extensions-%item%.html",
   "parent-page" : "extension-registry.html",
-  "generation" : "markdown",
+  "generation" : "html",
   "page-title" : "%item% Extensions"
 }
 

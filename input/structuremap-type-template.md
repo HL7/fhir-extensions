@@ -1,3 +1,0 @@
-
-{% include maps-%type%.xhtml %}
-

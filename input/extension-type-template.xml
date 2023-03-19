@@ -2,7 +2,7 @@
 {% include tabstuff.xhtml %}
 
 <p>
-This table lists extensions for the {{resourceName}} resource defined in association with the core specification. For background information, see
+This table lists extensions for the {{resourceName}} data type defined in association with the core specification. For background information, see
 <a href="{{ site.data.fhir.path }}extensibility.html">Extensibility</a>.
 Additional extensions may be found in published
 <a href="http://fhir.org/guides/registry">Implementation Guides <img src="external.png" style="vertical-align: baseline"/></a> and in the
@@ -10,11 +10,3 @@ Additional extensions may be found in published
 </p>
 
 {% include extension-list-%type%.xhtml %}
-
-<a name="search"> </a>
-<h3>Extension Search Parameters</h3>
-<p>
-This table lists search parameters defined for any of the extensions listed above in association with the core specification.
-</p>
-
-{% include extension-search-list-%type%.xhtml %}

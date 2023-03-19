@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
-{% assign resourceNames = page.path | slice: 11, 200 | split: '.html' %}
-{% assign resourceName = resourceNames[0] %}
-{% assign prefix = page.path | slice: 0, 11 %}
-{% if prefix=="extensions-" %}
-{% assign isExtension="Y" %}
-{% assign moduleName=site.data.modules.resources[resourceName].module %}
-{% assign section=site.data.modules.resources[resourceName].section %}
-{% assign modulePath=site.data.modules.modules[moduleName].url %}
-{% assign moduleImage=site.data.modules.modules[moduleName].image %}
+{% if page.path=="extension-registry.html" or page.path=="conversion-registry.html" or page.path=="search-params.html" %}
+  {% assign resourceNames = page.path | split: '.html' %}
+  {% assign isExtension="Y" %}
+{% else %}
+  {% assign prefix11 = page.path | slice: 0, 11 %}
+  {% assign prefix12 = page.path | slice: 0, 12 %}
+  {% if prefix11=="extensions-" %}
+    {% assign resourceNames = page.path | slice: 11, 200 | split: '.html' %}
+    {% assign isExtension="Y" %}
+    {% assign noTitle="Y" %}
+  {% elsif prefix12=="conversions-" %}
+    {% assign resourceNames = page.path | slice: 12, 200 | split: '.html' %}
+    {% assign isExtension="Y" %}
+    {% assign noTitle="Y" %}
+  {% endif %}
+{% endif %}
+{% if isExtension=="Y" %}
+  {% assign resourceName = resourceNames[0] %}
+  {% assign moduleName=site.data.modules.resources[resourceName].module %}
+  {% assign modulePath=site.data.modules.modules[moduleName].url %}
+  {% assign moduleImage=site.data.modules.modules[moduleName].image %}
+  {%if prefix12=="conversions-" %}
+    {% assign section=site.data.modules.resources[resourceName].section2 %}
+  {% else %}
+    {% assign section=site.data.modules.resources[resourceName].section %}
+  {% endif %}
 {% endif %}
 
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -18,7 +35,7 @@
      - Marked visible hyperlinks as no-external if they were rooted in site.data.fhir.pth
 .  If/when the CI build diverges from R5, an elsif clause will need to be added that reflects the changes -->
 <head>
-  <title>{{moduleName}}|{{modulePath}}|{{moduleImage}}|{{section}} {{resourceName}} - FHIR v5.0.0-cibuild</title>
+  <title>{{resourceName}} - FHIR v5.0.0-cibuild</title>
 
   
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
@@ -53,7 +70,7 @@
 		<div class="container">    <!-- container -->
 			<a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="{{site.data.fhir.path}}assets/images/fhir-logo-www.png" alt="logo fhir" width="249" height="60"/> </a>
 			<div id="hl7-status">
-				<b>FHIR CI-Build</b> - FHIR Extensions v{{site.data.fhir.version}} ({{site.data.fhir.genDate | date: "%Y-%m-%d"}})
+				<b>{{site.data.fhir.ig.title | escape_once}}</b> v{{site.data.fhir.ig.version}} ({{site.data.fhir.genDate | date: "%Y-%m-%d"}})
 			</div>       	
 			
 			<div id="hl7-nav">
@@ -114,21 +131,37 @@
 	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
 		<div class="container">  <!-- container -->	
 			<ul class="breadcrumb">
-        <li><a no-external="true" href="{{site.data.fhir.path}}{{modulePath}}"><img src="{{site.data.fhir.path}}{{moduleImage}}" alt="link"/> {{moduleName}}</a></li><li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li><li><b>Extensions</b></li>
-
+        <li><a no-external="true" href="{{site.data.fhir.path}}{{modulePath}}"><img src="{{site.data.fhir.path}}{{moduleImage}}" alt="link"/> {{moduleName}}</a></li>
+        {% if site.data.modules.resources[resourceName].inDoc=="Y" %}
+          <li><a no-external="true" href="{{site.data.fhir.path}}documentation.html">Documentation Index</a></li>
+        {% endif %}
+        {% if site.data.modules.resources[resourceName].inDt=="Y" %}
+          <li><a no-external="true" href="{{site.data.fhir.path}}datatypes.html">Datatypes</a></li>
+        {% endif %}
+        {% if site.data.modules.resources[resourceName].inFt=="Y" %}
+          <li><a no-external="true" href="{{site.data.fhir.path}}types.html">Type Framework</a></li>
+        {% endif %}
+        {% if prefix11=="extensions-" %}
+          <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li>
+          <li><b>Extensions</b></li>
+        {% elsif prefix12=="conversions-" %}
+          <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li>
+          <li><b>Conversions</b></li>
+        {% else %}
+          <li><b>{{resourceName}}</b></a></li>
+        {% endif %}
 			</ul>	
 		</div>  <!-- /container -->
 	</div>  <!-- /segment-breadcrumb -->
 	
 
 	<div id="segment-content" class="segment">  <!-- segment-content -->
-	<div class="container">  <!-- container -->
-            <div class="row">
-            	<div class="inner-wrapper">
+	  <div class="container">  <!-- container -->
+      <div class="row">
+        <div class="inner-wrapper">
   <!-- CONTENT CONTENT -->
 
 <div class="col-12">
-<p style="background-color: #ffefef; border:1px solid maroon; padding: 5px; max-width: 790px;">This is the Continuous Integration Build of FHIR (will be incorrect/inconsistent at times). <br/>See the <a href="http://hl7.org/fhir/directory.html">Directory of published versions <img src="external.png" alt="icon" style="vertical-align: baseline"/></a></p>
 {% else %}
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>

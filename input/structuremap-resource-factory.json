@@ -1,13 +1,13 @@
 {
   "item-factory" : "resources",
-  "source-file" : "input/structuremap-resource-template.md",
+  "source-file" : "input/structuremap-resource-template.xml",
   "variables" : [{
     "name" : "%type%",
     "transform" : "n/a"
   }],
-  "generated-file-name": "conversions-%item%.md",
+  "generated-file-name": "conversions-%item%.xml",
   "stated-file-name": "conversions-%item%.html",
   "parent-page" : "conversion-registry.html",
-  "generation" : "markdown",
+  "generation" : "html",
   "page-title" : "%item% Conversion Maps"
 }

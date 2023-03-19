@@ -8,7 +8,7 @@
 		<valueInteger value="1"/>
 	</extension>
 	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-		<valueCode value="trial-use"/>
+		<valueCode value="draft"/>
 	</extension>
 	<url value="http://hl7.org/fhir/StructureDefinition/dosage-minimumGapBetweenDose"/>
 	<version value="5.0.0"/>
