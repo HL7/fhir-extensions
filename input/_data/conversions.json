@@ -9,7 +9,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "convertToR4OK" : 2,
-      "r5InError" : 0
+      "r5InError" : 0,
+      "elementsConverted" : 70,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -20,7 +22,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "convertToR4OK" : 2,
-      "r5InError" : 0
+      "r5InError" : 0,
+      "elementsConverted" : 80,
+      "elementsLost" : 0
     }
   },
   "ActivityDefinition" : {
@@ -33,7 +37,9 @@
       "convertToR5OK" : 9,
       "r5validated" : 9,
       "convertToR4OK" : 9,
-      "r5InError" : 8
+      "r5InError" : 8,
+      "elementsConverted" : 454,
+      "elementsLost" : 2
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -44,7 +50,9 @@
       "convertToR5OK" : 10,
       "r5validated" : 10,
       "convertToR4OK" : 10,
-      "r5InError" : 5
+      "r5InError" : 5,
+      "elementsConverted" : 536,
+      "elementsLost" : 3
     }
   },
   "ActorDefinition" : {
@@ -74,7 +82,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 27,
+      "elementsLost" : 0
     }
   },
   "AdverseEvent" : {
@@ -87,7 +97,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 38,
+      "elementsLost" : 23
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -98,7 +110,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 43,
+      "elementsLost" : 20
     }
   },
   "AllergyIntolerance" : {
@@ -111,7 +125,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 0,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 206,
+      "elementsLost" : 7
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -122,7 +138,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 0,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 236,
+      "elementsLost" : 6
     }
   },
   "Appointment" : {
@@ -135,7 +153,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 0,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 171,
+      "elementsLost" : 9
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -146,7 +166,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 0,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 186,
+      "elementsLost" : 8
     }
   },
   "AppointmentResponse" : {
@@ -159,7 +181,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 34,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -170,7 +194,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 44,
+      "elementsLost" : 0
     }
   },
   "ArtifactAssessment" : {
@@ -195,7 +221,9 @@
       "convertToR5OK" : 9,
       "r5validated" : 9,
       "r5InError" : 3,
-      "convertToR4OK" : 9
+      "convertToR4OK" : 9,
+      "elementsConverted" : 645,
+      "elementsLost" : 18
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -206,7 +234,9 @@
       "convertToR5OK" : 9,
       "r5validated" : 9,
       "r5InError" : 3,
-      "convertToR4OK" : 9
+      "convertToR4OK" : 9,
+      "elementsConverted" : 690,
+      "elementsLost" : 17
     }
   },
   "Basic" : {
@@ -219,7 +249,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 2,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 66,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -230,7 +262,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 2,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 81,
+      "elementsLost" : 0
     }
   },
   "Binary" : {
@@ -243,7 +277,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 10,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -254,7 +290,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 20,
+      "elementsLost" : 0
     }
   },
   "BiologicallyDerivedProduct" : {
@@ -267,7 +305,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 5,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -278,7 +318,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 10,
+      "elementsLost" : 0
     }
   },
   "BiologicallyDerivedProductDispense" : {
@@ -303,7 +345,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 1,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 75,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -314,7 +358,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 1,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 90,
+      "elementsLost" : 0
     }
   },
   "Bundle" : {
@@ -372,7 +418,9 @@
       "convertToR5OK" : 8,
       "r5validated" : 8,
       "r5InError" : 3,
-      "convertToR4OK" : 8
+      "convertToR4OK" : 8,
+      "elementsConverted" : 15896,
+      "elementsLost" : 97
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -383,7 +431,9 @@
       "convertToR5OK" : 8,
       "r5validated" : 8,
       "r5InError" : 2,
-      "convertToR4OK" : 8
+      "convertToR4OK" : 8,
+      "elementsConverted" : 15982,
+      "elementsLost" : 97
     }
   },
   "CarePlan" : {
@@ -396,7 +446,9 @@
       "convertToR5OK" : 11,
       "r5validated" : 11,
       "r5InError" : 10,
-      "convertToR4OK" : 11
+      "convertToR4OK" : 11,
+      "elementsConverted" : 655,
+      "elementsLost" : 53
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -407,7 +459,9 @@
       "convertToR5OK" : 11,
       "r5validated" : 11,
       "r5InError" : 10,
-      "convertToR4OK" : 11
+      "convertToR4OK" : 11,
+      "elementsConverted" : 710,
+      "elementsLost" : 49
     }
   },
   "CareTeam" : {
@@ -420,7 +474,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 41,
+      "elementsLost" : 14
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -431,7 +487,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 46,
+      "elementsLost" : 13
     }
   },
   "ChargeItem" : {
@@ -444,7 +502,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 64,
+      "elementsLost" : 6
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -455,7 +515,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 69,
+      "elementsLost" : 5
     }
   },
   "ChargeItemDefinition" : {
@@ -497,7 +559,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 11,
+      "elementsLost" : 0
     }
   },
   "Claim" : {
@@ -558,7 +622,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 35,
+      "elementsLost" : 31
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
@@ -569,7 +635,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 40,
+      "elementsLost" : 27
     }
   },
   "ClinicalUseDefinition" : {
@@ -587,7 +655,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 23,
+      "elementsLost" : 0
     }
   },
   "CodeSystem" : {
@@ -600,7 +670,9 @@
       "convertToR5OK" : 1062,
       "r5validated" : 1062,
       "r5InError" : 1012,
-      "convertToR4OK" : 1062
+      "convertToR4OK" : 1062,
+      "elementsConverted" : 158569,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -611,7 +683,9 @@
       "convertToR5OK" : 541,
       "r5validated" : 541,
       "r5InError" : 531,
-      "convertToR4OK" : 541
+      "convertToR4OK" : 541,
+      "elementsConverted" : 55182,
+      "elementsLost" : 0
     }
   },
   "Communication" : {
@@ -624,7 +698,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 3,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 101,
+      "elementsLost" : 11
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -635,7 +711,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 3,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 116,
+      "elementsLost" : 10
     }
   },
   "CommunicationRequest" : {
@@ -648,7 +726,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 2,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 52,
+      "elementsLost" : 13
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -659,7 +739,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 2,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 62,
+      "elementsLost" : 11
     }
   },
   "CompartmentDefinition" : {
@@ -672,7 +754,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 1,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 1891,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -683,7 +767,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 1,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 1831,
+      "elementsLost" : 0
     }
   },
   "Composition" : {
@@ -721,6 +807,8 @@
       "r5validated" : 0,
       "r5InError" : 0,
       "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0,
       "101" : {
         "conversion-error" : "The type s is not valid"
       },
@@ -972,6 +1060,8 @@
       "r5validated" : 0,
       "r5InError" : 0,
       "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0,
       "101" : {
         "conversion-error" : "The type s is not valid"
       },
@@ -1257,7 +1347,9 @@
       "convertToR5OK" : 12,
       "r5validated" : 12,
       "r5InError" : 2,
-      "convertToR4OK" : 12
+      "convertToR4OK" : 12,
+      "elementsConverted" : 620,
+      "elementsLost" : 44
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1268,7 +1360,9 @@
       "convertToR5OK" : 12,
       "r5validated" : 12,
       "r5InError" : 2,
-      "convertToR4OK" : 12
+      "convertToR4OK" : 12,
+      "elementsConverted" : 680,
+      "elementsLost" : 40
     }
   },
   "Contract" : {
@@ -1281,7 +1375,9 @@
       "convertToR5OK" : 8,
       "r5validated" : 8,
       "r5InError" : 7,
-      "convertToR4OK" : 8
+      "convertToR4OK" : 8,
+      "elementsConverted" : 427,
+      "elementsLost" : 17
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
@@ -1292,7 +1388,9 @@
       "convertToR5OK" : 8,
       "r5validated" : 8,
       "r5InError" : 7,
-      "convertToR4OK" : 8
+      "convertToR4OK" : 8,
+      "elementsConverted" : 466,
+      "elementsLost" : 16
     }
   },
   "Coverage" : {
@@ -1329,7 +1427,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 63,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1340,7 +1440,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 73,
+      "elementsLost" : 0
     }
   },
   "CoverageEligibilityResponse" : {
@@ -1353,7 +1455,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 1,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 318,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1364,7 +1468,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 1,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 338,
+      "elementsLost" : 0
     }
   },
   "DetectedIssue" : {
@@ -1377,7 +1483,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 0,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 71,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1388,7 +1496,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 0,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 91,
+      "elementsLost" : 0
     }
   },
   "Device" : {
@@ -1401,7 +1511,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 17,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1412,7 +1524,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 27,
+      "elementsLost" : 0
     }
   },
   "DeviceAssociation" : {
@@ -1437,7 +1551,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 7,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1448,7 +1564,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 12,
+      "elementsLost" : 0
     }
   },
   "DeviceDispense" : {
@@ -1473,7 +1591,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 34,
+      "elementsLost" : 20
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1484,7 +1604,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 39,
+      "elementsLost" : 17
     }
   },
   "DeviceRequest" : {
@@ -1497,7 +1619,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 4,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 126,
+      "elementsLost" : 4
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1508,7 +1632,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 4,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 146,
+      "elementsLost" : 4
     }
   },
   "DeviceUsage" : {
@@ -1521,7 +1647,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 16,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1532,7 +1660,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 21,
+      "elementsLost" : 0
     }
   },
   "DiagnosticReport" : {
@@ -1545,7 +1675,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 0,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 167,
+      "elementsLost" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1556,7 +1688,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 0,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 197,
+      "elementsLost" : 1
     }
   },
   "DocumentReference" : {
@@ -1653,7 +1787,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 18,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
@@ -1664,7 +1800,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 23,
+      "elementsLost" : 0
     }
   },
   "EnrollmentResponse" : {
@@ -1677,7 +1815,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 18,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1688,7 +1828,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 23,
+      "elementsLost" : 0
     }
   },
   "EpisodeOfCare" : {
@@ -1701,7 +1843,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 59,
+      "elementsLost" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1712,7 +1856,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 64,
+      "elementsLost" : 1
     }
   },
   "EventDefinition" : {
@@ -1725,7 +1871,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 16,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1749,7 +1897,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 8,
+      "elementsLost" : 25
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1760,7 +1910,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 5,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 723,
+      "elementsLost" : 28
     }
   },
   "EvidenceReport" : {
@@ -1778,7 +1930,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 14,
+      "elementsLost" : 0
     }
   },
   "EvidenceVariable" : {
@@ -1791,7 +1945,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 7,
+      "elementsLost" : 14
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1802,7 +1958,9 @@
       "convertToR5OK" : 10,
       "r5validated" : 10,
       "r5InError" : 10,
-      "convertToR4OK" : 10
+      "convertToR4OK" : 10,
+      "elementsConverted" : 310,
+      "elementsLost" : 6
     }
   },
   "ExampleScenario" : {
@@ -1863,7 +2021,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 54,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1874,7 +2034,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 64,
+      "elementsLost" : 0
     }
   },
   "Flag" : {
@@ -1887,7 +2049,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 50,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
@@ -1898,7 +2062,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 60,
+      "elementsLost" : 0
     }
   },
   "FormularyItem" : {
@@ -1935,7 +2101,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 64,
+      "elementsLost" : 4
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1946,7 +2114,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 74,
+      "elementsLost" : 4
     }
   },
   "GraphDefinition" : {
@@ -1971,7 +2141,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 4,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 93,
+      "elementsLost" : 4
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -1982,7 +2154,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 4,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 113,
+      "elementsLost" : 3
     }
   },
   "GuidanceResponse" : {
@@ -1995,7 +2169,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 25,
+      "elementsLost" : 8
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2006,7 +2182,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 30,
+      "elementsLost" : 6
     }
   },
   "HealthcareService" : {
@@ -2103,7 +2281,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 57,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2114,7 +2294,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 67,
+      "elementsLost" : 0
     }
   },
   "ImmunizationRecommendation" : {
@@ -2127,7 +2309,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 47,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2138,7 +2322,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 52,
+      "elementsLost" : 0
     }
   },
   "ImplementationGuide" : {
@@ -2151,7 +2337,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 3,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 193554,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2162,7 +2350,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 68,
+      "elementsLost" : 0
     }
   },
   "Ingredient" : {
@@ -2180,7 +2370,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 25,
+      "elementsLost" : 4
     }
   },
   "InsurancePlan" : {
@@ -2193,7 +2385,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 6,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2204,7 +2398,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 11,
+      "elementsLost" : 0
     }
   },
   "InventoryItem" : {
@@ -2241,7 +2437,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 32,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2252,7 +2450,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 37,
+      "elementsLost" : 0
     }
   },
   "Library" : {
@@ -2265,7 +2465,9 @@
       "convertToR5OK" : 21,
       "r5validated" : 21,
       "r5InError" : 18,
-      "convertToR4OK" : 21
+      "convertToR4OK" : 21,
+      "elementsConverted" : 1159,
+      "elementsLost" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2289,7 +2491,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 17,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2300,7 +2504,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 22,
+      "elementsLost" : 0
     }
   },
   "List" : {
@@ -2313,7 +2519,9 @@
       "convertToR5OK" : 10,
       "r5validated" : 10,
       "r5InError" : 4,
-      "convertToR4OK" : 10
+      "convertToR4OK" : 10,
+      "elementsConverted" : 1150,
+      "elementsLost" : 6
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
@@ -2324,7 +2532,9 @@
       "convertToR5OK" : 10,
       "r5validated" : 10,
       "r5InError" : 4,
-      "convertToR4OK" : 10
+      "convertToR4OK" : 10,
+      "elementsConverted" : 1200,
+      "elementsLost" : 6
     }
   },
   "Location" : {
@@ -2366,7 +2576,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 33,
+      "elementsLost" : 0
     }
   },
   "Measure" : {
@@ -2403,7 +2615,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 4,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 961,
+      "elementsLost" : 17
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2414,7 +2628,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 4,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 737,
+      "elementsLost" : 25
     }
   },
   "Medication" : {
@@ -2451,7 +2667,9 @@
       "convertToR5OK" : 14,
       "r5validated" : 14,
       "r5InError" : 14,
-      "convertToR4OK" : 14
+      "convertToR4OK" : 14,
+      "elementsConverted" : 500,
+      "elementsLost" : 5
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2462,7 +2680,9 @@
       "convertToR5OK" : 14,
       "r5validated" : 14,
       "r5InError" : 14,
-      "convertToR4OK" : 14
+      "convertToR4OK" : 14,
+      "elementsConverted" : 570,
+      "elementsLost" : 4
     }
   },
   "MedicationDispense" : {
@@ -2475,7 +2695,9 @@
       "convertToR5OK" : 31,
       "r5validated" : 31,
       "r5InError" : 31,
-      "convertToR4OK" : 31
+      "convertToR4OK" : 31,
+      "elementsConverted" : 1812,
+      "elementsLost" : 2
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2486,7 +2708,9 @@
       "convertToR5OK" : 31,
       "r5validated" : 31,
       "r5InError" : 31,
-      "convertToR4OK" : 31
+      "convertToR4OK" : 31,
+      "elementsConverted" : 1967,
+      "elementsLost" : 2
     }
   },
   "MedicationKnowledge" : {
@@ -2499,7 +2723,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 24,
+      "elementsLost" : 50
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2510,7 +2736,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 29,
+      "elementsLost" : 41
     }
   },
   "MedicationRequest" : {
@@ -2523,7 +2751,9 @@
       "convertToR5OK" : 40,
       "r5validated" : 40,
       "r5InError" : 40,
-      "convertToR4OK" : 40
+      "convertToR4OK" : 40,
+      "elementsConverted" : 2503,
+      "elementsLost" : 43
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2534,7 +2764,9 @@
       "convertToR5OK" : 40,
       "r5validated" : 40,
       "r5InError" : 40,
-      "convertToR4OK" : 40
+      "convertToR4OK" : 40,
+      "elementsConverted" : 2703,
+      "elementsLost" : 40
     }
   },
   "MedicationStatement" : {
@@ -2547,7 +2779,9 @@
       "convertToR5OK" : 7,
       "r5validated" : 7,
       "r5InError" : 7,
-      "convertToR4OK" : 7
+      "convertToR4OK" : 7,
+      "elementsConverted" : 229,
+      "elementsLost" : 10
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2558,7 +2792,9 @@
       "convertToR5OK" : 7,
       "r5validated" : 7,
       "r5InError" : 7,
-      "convertToR4OK" : 7
+      "convertToR4OK" : 7,
+      "elementsConverted" : 264,
+      "elementsLost" : 9
     }
   },
   "MedicinalProductDefinition" : {
@@ -2582,7 +2818,9 @@
       "convertToR5OK" : 8,
       "r5validated" : 8,
       "r5InError" : 0,
-      "convertToR4OK" : 8
+      "convertToR4OK" : 8,
+      "elementsConverted" : 253,
+      "elementsLost" : 13
     }
   },
   "MessageDefinition" : {
@@ -2595,7 +2833,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 3,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 99,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2606,7 +2846,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 3,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 99,
+      "elementsLost" : 0
     }
   },
   "MessageHeader" : {
@@ -2667,7 +2909,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 62,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2678,7 +2922,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 72,
+      "elementsLost" : 0
     }
   },
   "NutritionIntake" : {
@@ -2739,7 +2985,9 @@
       "convertToR5OK" : 64,
       "r5validated" : 64,
       "r5InError" : 28,
-      "convertToR4OK" : 64
+      "convertToR4OK" : 64,
+      "elementsConverted" : 2217,
+      "elementsLost" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2750,7 +2998,9 @@
       "convertToR5OK" : 64,
       "r5validated" : 64,
       "r5InError" : 28,
-      "convertToR4OK" : 64
+      "convertToR4OK" : 64,
+      "elementsConverted" : 2521,
+      "elementsLost" : 1
     }
   },
   "ObservationDefinition" : {
@@ -2763,7 +3013,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 10,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2774,7 +3026,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 15,
+      "elementsLost" : 0
     }
   },
   "OperationDefinition" : {
@@ -2787,7 +3041,9 @@
       "convertToR5OK" : 47,
       "r5validated" : 47,
       "r5InError" : 47,
-      "convertToR4OK" : 47
+      "convertToR4OK" : 47,
+      "elementsConverted" : 3550,
+      "elementsLost" : 8
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2811,7 +3067,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 0,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 70,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2822,7 +3080,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 0,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 100,
+      "elementsLost" : 0
     }
   },
   "Organization" : {
@@ -2835,7 +3095,9 @@
       "convertToR5OK" : 13,
       "r5validated" : 13,
       "r5InError" : 1,
-      "convertToR4OK" : 13
+      "convertToR4OK" : 13,
+      "elementsConverted" : 313,
+      "elementsLost" : 25
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2846,7 +3108,9 @@
       "convertToR5OK" : 13,
       "r5validated" : 13,
       "r5InError" : 0,
-      "convertToR4OK" : 13
+      "convertToR4OK" : 13,
+      "elementsConverted" : 378,
+      "elementsLost" : 20
     }
   },
   "OrganizationAffiliation" : {
@@ -2888,7 +3152,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 1,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 111,
+      "elementsLost" : 42
     }
   },
   "Parameters" : {
@@ -2901,7 +3167,9 @@
       "convertToR5OK" : 0,
       "r5validated" : 0,
       "r5InError" : 0,
-      "convertToR4OK" : 0
+      "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2912,7 +3180,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 19,
+      "elementsLost" : 31
     }
   },
   "Patient" : {
@@ -2925,7 +3195,9 @@
       "convertToR5OK" : 22,
       "r5validated" : 22,
       "r5InError" : 8,
-      "convertToR4OK" : 22
+      "convertToR4OK" : 22,
+      "elementsConverted" : 794,
+      "elementsLost" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2936,7 +3208,9 @@
       "convertToR5OK" : 22,
       "r5validated" : 22,
       "r5InError" : 8,
-      "convertToR4OK" : 22
+      "convertToR4OK" : 22,
+      "elementsConverted" : 900,
+      "elementsLost" : 0
     }
   },
   "PaymentNotice" : {
@@ -2949,7 +3223,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 32,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2960,7 +3236,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 37,
+      "elementsLost" : 0
     }
   },
   "PaymentReconciliation" : {
@@ -2973,7 +3251,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 85,
+      "elementsLost" : 7
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -2984,7 +3264,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 90,
+      "elementsLost" : 6
     }
   },
   "Permission" : {
@@ -3009,7 +3291,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 0,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 208,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3020,7 +3304,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 0,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 233,
+      "elementsLost" : 0
     }
   },
   "PlanDefinition" : {
@@ -3033,7 +3319,9 @@
       "convertToR5OK" : 18,
       "r5validated" : 18,
       "r5InError" : 17,
-      "convertToR4OK" : 18
+      "convertToR4OK" : 18,
+      "elementsConverted" : 1719,
+      "elementsLost" : 34
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3044,7 +3332,9 @@
       "convertToR5OK" : 18,
       "r5validated" : 18,
       "r5InError" : 11,
-      "convertToR4OK" : 18
+      "convertToR4OK" : 18,
+      "elementsConverted" : 1839,
+      "elementsLost" : 32
     }
   },
   "Practitioner" : {
@@ -3105,7 +3395,9 @@
       "convertToR5OK" : 16,
       "r5validated" : 16,
       "r5InError" : 1,
-      "convertToR4OK" : 16
+      "convertToR4OK" : 16,
+      "elementsConverted" : 526,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3116,7 +3408,9 @@
       "convertToR5OK" : 16,
       "r5validated" : 16,
       "r5InError" : 0,
-      "convertToR4OK" : 16
+      "convertToR4OK" : 16,
+      "elementsConverted" : 606,
+      "elementsLost" : 0
     }
   },
   "Provenance" : {
@@ -3129,7 +3423,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 0,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 154,
+      "elementsLost" : 9
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3140,7 +3436,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 0,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 179,
+      "elementsLost" : 7
     }
   },
   "Questionnaire" : {
@@ -3153,7 +3451,9 @@
       "convertToR5OK" : 7,
       "r5validated" : 7,
       "r5InError" : 2,
-      "convertToR4OK" : 7
+      "convertToR4OK" : 7,
+      "elementsConverted" : 1030,
+      "elementsLost" : 70
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3164,7 +3464,9 @@
       "convertToR5OK" : 7,
       "r5validated" : 7,
       "r5InError" : 2,
-      "convertToR4OK" : 7
+      "convertToR4OK" : 7,
+      "elementsConverted" : 1561,
+      "elementsLost" : 79
     }
   },
   "QuestionnaireResponse" : {
@@ -3177,7 +3479,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 5,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 1080,
+      "elementsLost" : 90
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3188,7 +3492,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 4,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 1105,
+      "elementsLost" : 88
     }
   },
   "RegulatedAuthorization" : {
@@ -3206,7 +3512,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 77,
+      "elementsLost" : 20
     }
   },
   "RelatedPerson" : {
@@ -3219,7 +3527,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 1,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 158,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined (draft)",
@@ -3230,7 +3540,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 1,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 183,
+      "elementsLost" : 0
     }
   },
   "RequestOrchestration" : {
@@ -3279,7 +3591,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 6,
+      "elementsLost" : 16
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3290,7 +3604,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 11,
+      "elementsLost" : 9
     }
   },
   "ResearchSubject" : {
@@ -3303,7 +3619,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 15,
+      "elementsLost" : 6
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3314,7 +3632,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 20,
+      "elementsLost" : 5
     }
   },
   "RiskAssessment" : {
@@ -3327,7 +3647,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 1,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 159,
+      "elementsLost" : 1
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3338,7 +3660,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 1,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 189,
+      "elementsLost" : 1
     }
   },
   "Schedule" : {
@@ -3351,7 +3675,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 0,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 93,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3362,7 +3688,9 @@
       "convertToR5OK" : 3,
       "r5validated" : 3,
       "r5InError" : 0,
-      "convertToR4OK" : 3
+      "convertToR4OK" : 3,
+      "elementsConverted" : 108,
+      "elementsLost" : 0
     }
   },
   "SearchParameter" : {
@@ -3375,7 +3703,9 @@
       "convertToR5OK" : 1400,
       "r5validated" : 1400,
       "r5InError" : 1387,
-      "convertToR4OK" : 1400
+      "convertToR4OK" : 1400,
+      "elementsConverted" : 50549,
+      "elementsLost" : 2
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3386,7 +3716,9 @@
       "convertToR5OK" : 25,
       "r5validated" : 25,
       "r5InError" : 12,
-      "convertToR4OK" : 25
+      "convertToR4OK" : 25,
+      "elementsConverted" : 370,
+      "elementsLost" : 3
     }
   },
   "ServiceRequest" : {
@@ -3423,7 +3755,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 0,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 77,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3434,7 +3768,9 @@
       "convertToR5OK" : 4,
       "r5validated" : 4,
       "r5InError" : 0,
-      "convertToR4OK" : 4
+      "convertToR4OK" : 4,
+      "elementsConverted" : 97,
+      "elementsLost" : 0
     }
   },
   "Specimen" : {
@@ -3447,7 +3783,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 5,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 176,
+      "elementsLost" : 17
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3458,7 +3796,9 @@
       "convertToR5OK" : 5,
       "r5validated" : 5,
       "r5InError" : 5,
-      "convertToR4OK" : 5
+      "convertToR4OK" : 5,
+      "elementsConverted" : 201,
+      "elementsLost" : 14
     }
   },
   "SpecimenDefinition" : {
@@ -3471,7 +3811,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 150,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -3482,7 +3824,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 155,
+      "elementsLost" : 0
     }
   },
   "StructureDefinition" : {
@@ -3496,6 +3840,8 @@
       "r5validated" : 9,
       "r5InError" : 9,
       "convertToR4OK" : 9,
+      "elementsConverted" : 3773,
+      "elementsLost" : 2,
       "11179-objectClass" : {
         "validation-error" : null
       },
@@ -5454,6 +5800,8 @@
       "r5validated" : 5,
       "r5InError" : 4,
       "convertToR4OK" : 5,
+      "elementsConverted" : 3270,
+      "elementsLost" : 2,
       "11179-objectClass" : {
         "validation-error" : null
       },
@@ -7404,7 +7752,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 2,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 151,
+      "elementsLost" : 9
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -7415,7 +7765,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 2,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 153,
+      "elementsLost" : 9
     }
   },
   "Subscription" : {
@@ -7429,6 +7781,8 @@
       "r5validated" : 0,
       "r5InError" : 0,
       "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0,
       "example-error" : {
         "conversion-error" : "Exception executing transform t.value = (%s1.substring(%s1.indexOf(': ') + 1)) on Rule \"Subscription4to5|Subscription|header\": Index 0 out of bounds for length 0"
       },
@@ -7446,6 +7800,8 @@
       "r5validated" : 0,
       "r5InError" : 0,
       "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0,
       "example-error" : {
         "conversion-error" : "Exception executing transform t.value = (%s1.substring(%s1.indexOf(': ') + 1)) on Rule \"Subscription4Bto5|Subscription|header\": Index 0 out of bounds for length 0"
       },
@@ -7487,7 +7843,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 45,
+      "elementsLost" : 15
     }
   },
   "Substance" : {
@@ -7524,7 +7882,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 5,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -7535,7 +7895,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 85,
+      "elementsLost" : 0
     }
   },
   "SubstanceNucleicAcid" : {
@@ -7548,7 +7910,9 @@
       "convertToR5OK" : 0,
       "r5validated" : 0,
       "r5InError" : 0,
-      "convertToR4OK" : 0
+      "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "No Maps Defined",
@@ -7566,7 +7930,9 @@
       "convertToR5OK" : 0,
       "r5validated" : 0,
       "r5InError" : 0,
-      "convertToR4OK" : 0
+      "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "No Maps Defined",
@@ -7584,7 +7950,9 @@
       "convertToR5OK" : 0,
       "r5validated" : 0,
       "r5InError" : 0,
-      "convertToR4OK" : 0
+      "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "No Maps Defined",
@@ -7602,7 +7970,9 @@
       "convertToR5OK" : 0,
       "r5validated" : 0,
       "r5InError" : 0,
-      "convertToR4OK" : 0
+      "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "No Maps Defined",
@@ -7620,7 +7990,9 @@
       "convertToR5OK" : 0,
       "r5validated" : 0,
       "r5InError" : 0,
-      "convertToR4OK" : 0
+      "convertToR4OK" : 0,
+      "elementsConverted" : 0,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "No Maps Defined",
@@ -7662,7 +8034,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 28,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -7673,7 +8047,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 33,
+      "elementsLost" : 0
     }
   },
   "Task" : {
@@ -7686,7 +8062,9 @@
       "convertToR5OK" : 12,
       "r5validated" : 12,
       "r5InError" : 9,
-      "convertToR4OK" : 12
+      "convertToR4OK" : 12,
+      "elementsConverted" : 520,
+      "elementsLost" : 6
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -7697,7 +8075,9 @@
       "convertToR5OK" : 12,
       "r5validated" : 12,
       "r5InError" : 9,
-      "convertToR4OK" : 12
+      "convertToR4OK" : 12,
+      "elementsConverted" : 580,
+      "elementsLost" : 5
     }
   },
   "TerminologyCapabilities" : {
@@ -7710,7 +8090,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 27,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -7721,7 +8103,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 27,
+      "elementsLost" : 0
     }
   },
   "TestPlan" : {
@@ -7746,7 +8130,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 105,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -7757,7 +8143,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 1,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 110,
+      "elementsLost" : 0
     }
   },
   "TestScript" : {
@@ -7781,7 +8169,9 @@
       "convertToR5OK" : 6,
       "r5validated" : 6,
       "r5InError" : 6,
-      "convertToR4OK" : 6
+      "convertToR4OK" : 6,
+      "elementsConverted" : 1000,
+      "elementsLost" : 0
     }
   },
   "Transport" : {
@@ -7807,6 +8197,8 @@
       "r5validated" : 1256,
       "r5InError" : 1254,
       "convertToR4OK" : 1256,
+      "elementsConverted" : 42907,
+      "elementsLost" : 0,
       "age-units" : {
         "validation-error" : "Attempt to use Terminology server when no Terminology server is available"
       },
@@ -7998,6 +8390,8 @@
       "r5validated" : 666,
       "r5InError" : 662,
       "convertToR4OK" : 666,
+      "elementsConverted" : 24760,
+      "elementsLost" : 0,
       "age-units" : {
         "validation-error" : "Attempt to use Terminology server when no Terminology server is available"
       },
@@ -8175,7 +8569,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 6,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -8186,7 +8582,9 @@
       "convertToR5OK" : 1,
       "r5validated" : 1,
       "r5InError" : 0,
-      "convertToR4OK" : 1
+      "convertToR4OK" : 1,
+      "elementsConverted" : 11,
+      "elementsLost" : 0
     }
   },
   "VisionPrescription" : {
@@ -8199,7 +8597,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 98,
+      "elementsLost" : 0
     },
     "r4b" : {
       "status" : "2 Maps Defined",
@@ -8210,7 +8610,9 @@
       "convertToR5OK" : 2,
       "r5validated" : 2,
       "r5InError" : 0,
-      "convertToR4OK" : 2
+      "convertToR4OK" : 2,
+      "elementsConverted" : 108,
+      "elementsLost" : 0
     }
   },
   "Address" : {
