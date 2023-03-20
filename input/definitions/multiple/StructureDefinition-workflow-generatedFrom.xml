@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-generatedFrom"/>
   <version value="5.0.0"/>
-  <name value="generatedFrom"/>
-  <title value="generated from"/>
+  <name value="GeneratedFrom"/>
+  <title value="Generated from"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

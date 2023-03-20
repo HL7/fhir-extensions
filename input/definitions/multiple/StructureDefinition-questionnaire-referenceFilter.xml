@@ -17,8 +17,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1233"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="referenceFilter"/>
-  <title value="referenceFilter"/>
+  <name value="ReferenceFilter"/>
+  <title value="ReferenceFilter"/>
   <status value="retired"/>
   <experimental value="false"/>
   <date value="2013-07-04"/>

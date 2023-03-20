@@ -71,9 +71,8 @@
         <code value="Coding"/> 
       </type> 
       <binding> 
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="Codes, potentially combination code, that describe an obligation that applies to
-           implementing applications."/> 
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="Codes, potentially combination code, that describe an obligation that applies to implementing applications."/> 
         </extension> 
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObligationCodes"/> 

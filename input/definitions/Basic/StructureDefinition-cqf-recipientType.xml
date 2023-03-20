@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-recipientType"/>
   <version value="5.0.0"/>
-  <name value="recipientType"/>
-  <title value="recipient type"/>
+  <name value="RecipientType"/>
+  <title value="Recipient type"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

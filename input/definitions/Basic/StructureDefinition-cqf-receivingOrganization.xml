@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-receivingOrganization"/>
   <version value="5.0.0"/>
-  <name value="receivingOrganization"/>
-  <title value="receiving organization"/>
+  <name value="ReceivingOrganization"/>
+  <title value="Receiving organization"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

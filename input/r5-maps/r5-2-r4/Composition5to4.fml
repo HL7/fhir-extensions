@@ -21,14 +21,14 @@ conceptmap "CompositionStatus" {
 //  s:"unknown" - t:"unknown"
 }
 
-conceptmap "SectionMode" {
-  prefix s = "http://hl7.org/fhir/list-mode"
-  prefix t = "http://hl7.org/fhir/4.0/list-mode"
-
-  s:"working" - t:"working"
-  s:"snapshot" - t:"snapshot"
-  s:"changes" - t:"changes"
-}
+//conceptmap "SectionMode" {
+//  prefix s = "http://hl7.org/fhir/list-mode"
+//  prefix t = "http://hl7.org/fhir/4.0/list-mode"
+//
+//  s:"working" - t:"working"
+//  s:"snapshot" - t:"snapshot"
+//  s:"changes" - t:"changes"
+//}
 
 uses "http://hl7.org/fhir/StructureDefinition/Composition" alias CompositionR5 as source
 uses "http://hl7.org/fhir/4.0/StructureDefinition/Composition" alias CompositionR4 as target
@@ -68,11 +68,10 @@ group CompositionAttester(source src, target tgt) extends BackboneElement {
 }
 
 group CompositionEvent(source src, target tgt) extends BackboneElement {
-  src.code -> tgt.code;
+//  src.code -> tgt.code;
   src.period -> tgt.period;
   src.detail -> tgt.detail;
 }
-
 
 group CompositionRelatesTo(source src, target tgt) extends Element {
   src.type where src.type in ('replaces' | 'transforms' | 'signs' | 'appends') -> tgt.code;
@@ -86,7 +85,7 @@ group CompositionSection(source src, target tgt) extends BackboneElement {
   src.author -> tgt.author;
   src.focus -> tgt.focus;
   src.text -> tgt.text;
-  src.mode as v -> tgt.mode = translate(v, '#SectionMode', 'code');
+//  src.mode as v -> tgt.mode = translate(v, '#SectionMode', 'code');
   src.orderedBy -> tgt.orderedBy;
   src.entry -> tgt.entry;
   src.emptyReason -> tgt.emptyReason;

@@ -1,0 +1,13 @@
+{% assign type="%type%" %}
+{% assign ltype="%ltype%" %}
+{% include tabstuff.html %}
+
+<p>
+This table lists extensions for the {{resourceName}} data type defined in association with the core specification. For background information, see
+<a href="{{ site.data.fhir.path }}extensibility.html">Extensibility</a>.
+Additional extensions may be found in published
+<a href="http://fhir.org/guides/registry">Implementation Guides <img src="external.png" style="vertical-align: baseline"/></a> and in the
+<a href="http://registry.fhir.org">Conformance resource registry <img src="external.png" style="vertical-align: baseline"/></a>.
+</p>
+
+{% include extension-list-%type%.xhtml %}

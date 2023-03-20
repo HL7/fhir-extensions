@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="specimen-additive"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/specimen-additive"/>
+  <version value="5.0.0"/>
+  <name value="SpecimenAdditive"/>
+  <title value="Specimen Additive"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2017-12-06"/>
+  <publisher value="Health Level Seven, Inc. - Orders and Observations WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="References a resource or provides a code or text that specifies a substance that is added to a laboratory specimen (part of the container device or added to the specimen indenpendently)."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Specimen"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Specimen.container"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Specifies a substance that is added to a laboratory specimen"/>
+      <definition value="References a resource or provides a code or text that specifies a substance that is added to a laboratory specimen (part of the container device or added to the specimen indenpendently)."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/specimen-additive"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableReference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SpecimenAdditiveSubstance"/>
+        </extension>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/specimen-additive-substance"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

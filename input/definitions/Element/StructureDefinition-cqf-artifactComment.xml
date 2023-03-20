@@ -13,7 +13,7 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-artifactComment"/>
   <version value="5.0.0"/>
-  <name value="artifactComment"/>
+  <name value="ArtifactComment"/>
   <title value="artifact comment"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -78,8 +78,8 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="The type of artifact comment (documentation, review, guidance)."/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="The type of artifact comment (documentation, review, guidance)."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ArtifactCommentType"/>

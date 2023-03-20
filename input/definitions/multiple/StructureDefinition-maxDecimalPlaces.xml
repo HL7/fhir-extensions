@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces"/>
   <version value="5.0.0"/>
-  <name value="maxDecimalPlaces"/>
-  <title value="max decimal places"/>
+  <name value="MaxDecimalPlaces"/>
+  <title value="Max decimal places"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-04-27"/>

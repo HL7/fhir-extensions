@@ -64,8 +64,8 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="A code that represents the preferred display order of the components of a human name."/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="A code that represents the preferred display order of the components of a human name."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="HumanNameAssemblyOrder"/>

@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode"/>
   <version value="5.0.0"/>
-  <name value="directReferenceCode"/>
-  <title value="direct reference code"/>
+  <name value="DirectReferenceCode"/>
+  <title value="Direct reference code"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

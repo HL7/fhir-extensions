@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-inputParameters"/>
   <version value="5.0.0"/>
-  <name value="inputParameters"/>
-  <title value="input parameters"/>
+  <name value="InputParameters"/>
+  <title value="Input parameters"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

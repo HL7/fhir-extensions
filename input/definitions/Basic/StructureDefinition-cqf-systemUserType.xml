@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-systemUserType"/>
   <version value="5.0.0"/>
-  <name value="systemUserType"/>
-  <title value="system user type"/>
+  <name value="SystemUserType"/>
+  <title value="System user type"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

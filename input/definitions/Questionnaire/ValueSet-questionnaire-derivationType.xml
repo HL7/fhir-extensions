@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../input-cache/schemas/R5/fhir-single.xsd">
+	<id value="questionnaire-derivationType"/>
+	<meta>
+		<lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+		<valueCode value="fhir"/>
+	</extension>
+	<url value="http://hl7.org/fhir/ValueSet/questionnaire-derivationType"/>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:oid:2.16.840.1.113883.4.642.3.3327"/>
+	</identifier>
+	<version value="5.0.0"/>
+	<name value="QuestionnaireDerivationType"/>
+	<title value="Questionnaire Derivation Type Valueset"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<description value="All standard questionnaire derivation types"/>
+	<jurisdiction>
+		<coding>
+			<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+			<code value="001"/>
+			<display value="World"/>
+		</coding>
+	</jurisdiction>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/questionnaire-derivationType"/>
+		</include>
+	</compose>
+</ValueSet>

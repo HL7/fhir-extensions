@@ -82,8 +82,8 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type."/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EntityNamePartQualifier"/>

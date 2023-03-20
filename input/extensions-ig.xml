@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
   <id value="hl7.fhir.extensions"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
   <url value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0"/>
-  <name value="FHIRGeneralExtensionsIG"/>
-  <title value="FHIR General Extensions IG"/>
+  <name value="FHIRExtensionPack"/>
+  <title value="FHIR Extensions Pack"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,73 +34,121 @@
   <fhirVersion value="5.0.0"/>
   <definition>
     <page>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="informative"/>
+      </extension>
       <sourceUrl value="index.html"/>
       <name value="index.html"/>
       <title value="Home Page"/>
       <generation value="html"/>
       <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
         <sourceUrl value="extension-registry.html"/>
         <name value="extension-registry.html"/>
         <title value="Extension Registry"/>
         <generation value="markdown"/>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
           <sourceUrl value="extensions-types.xml"/>
           <name value="extensions-types.html"/>
           <title value="Types Extensions"/>
           <generation value="html"/>
         </page>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
           <sourceUrl value="extensions-datatypes.xml"/>
           <name value="extensions-datatypes.html"/>
           <title value="Datatypes Extensions"/>
           <generation value="html"/>
         </page>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
           <sourceUrl value="extensions-metadatatypes.xml"/>
           <name value="extensions-metadatatypes.html"/>
           <title value="Metadata Types Extensions"/>
           <generation value="html"/>
         </page>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
           <sourceUrl value="extensions-references.xml"/>
           <name value="extensions-references.html"/>
           <title value="Reference Types Extensions"/>
           <generation value="html"/>
         </page>
+        <page>
+          <sourceUrl value="extensions-resource.xml"/>
+          <name value="extensions-resource.html"/>
+          <title value="Resource Extensions"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
         <sourceUrl value="search-params.xml"/>
         <name value="search-params.html"/>
         <title value="Extension Search Registry"/>
         <generation value="html"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
         <sourceUrl value="conversion-registry.xml"/>
         <name value="conversion-registry.html"/>
         <title value="R4/R5 Conversion Registry"/>
         <generation value="html"/>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
           <sourceUrl value="conversions-types.xml"/>
           <name value="conversions-types.html"/>
           <title value="R4/R5 Conversions for the Types Framework"/>
           <generation value="html"/>
         </page>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
           <sourceUrl value="conversions-datatypes.xml"/>
           <name value="conversions-datatypes.html"/>
           <title value="R4/R5 Conversions for Datatypes"/>
           <generation value="html"/>
         </page>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
           <sourceUrl value="conversions-metadatatypes.xml"/>
           <name value="conversions-metadatatypes.html"/>
           <title value="R4/R5 Conversion for Metadata Types"/>
           <generation value="html"/>
         </page>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
           <sourceUrl value="conversions-references.xml"/>
           <name value="conversions-references.html"/>
           <title value="R4/R5 Conversion for Reference Types"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <sourceUrl value="conversions-resource.xml"/>
+          <name value="conversions-resource.html"/>
+          <title value="R4/R5 Conversion for Resource"/>
           <generation value="html"/>
         </page>
       </page>
@@ -228,6 +281,35 @@
         <code value="generate-version"/>
       </code>
       <value value="r5"/>
+    </parameter>    
+
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="noRootToc"/>
+      </code>
+      <value value="true"/>
+    </parameter>    
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="artifactsOnRoot"/>
+      </code>
+      <value value="true"/>
+    </parameter>    
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="conversion-version"/>
+      </code>
+      <value value="R4"/>
+    </parameter>    
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="conversion-version"/>
+      </code>
+      <value value="R4B"/>
     </parameter>    
   </definition>
 </ImplementationGuide>

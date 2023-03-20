@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-initialValue"/>
   <version value="5.0.0"/>
-  <name value="initialValue"/>
-  <title value="initial value"/>
+  <name value="InitialValue"/>
+  <title value="Initial value"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

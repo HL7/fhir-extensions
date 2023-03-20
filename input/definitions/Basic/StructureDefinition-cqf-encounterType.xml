@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-encounterType"/>
   <version value="5.0.0"/>
-  <name value="encounterType"/>
-  <title value="encounter type"/>
+  <name value="EncounterType"/>
+  <title value="Encounter type"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

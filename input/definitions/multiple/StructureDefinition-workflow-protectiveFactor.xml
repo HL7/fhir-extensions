@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor"/>
   <version value="5.0.0"/>
-  <name value="protectiveFactor"/>
-  <title value="protective factor"/>
+  <name value="ProtectiveFactor"/>
+  <title value="Protective factor"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>
@@ -73,8 +73,8 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="Codes that describe characteristics or strengths of individuals, families, community situations or societies that mitigate risks and promote positivewell-being and healthy development."/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="Codes that describe characteristics or strengths of individuals, families, community situations or societies that mitigate risks and promote positivewell-being and healthy development."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProtectiveFactor"/>

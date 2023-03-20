@@ -54,34 +54,63 @@
       <min value="0"/>
       <max value="1"/>
     </element>
-    <element id="Extension.extension:target">
+    <element id="Extension.extension:targetReference">
       <path value="Extension.extension"/>
-      <sliceName value="target"/>
-      <short value="Event that the date is relative to"/>
-      <definition value="The event that the date(time) is relative to."/>
-      <comment value="This can be a reference to a particular event, or a kind of event (usually where the kind would not happen very frequently)."/>
+      <sliceName value="targetReference"/>
+      <short value="Specific event that the date is relative to"/>
+      <definition value="The specific event that the date(time) is relative to - e.g. an Encounter, an Observation, a Procedure, etc."/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:target.extension">
+    <element id="Extension.extension:targetReference.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:target.url">
+    <element id="Extension.extension:targetReference.url">
       <path value="Extension.extension.url"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="target"/>
+      <fixedUri value="targetReference"/>
     </element>
-    <element id="Extension.extension:target.value[x]">
+    <element id="Extension.extension:targetReference.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="CodeableReference"/>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="Extension.extension:targetCode">
+      <path value="Extension.extension"/>
+      <sliceName value="targetCode"/>
+      <short value="Kind of event that the date is relative to"/>
+      <definition value="The generic type of event that the date(time) is relative to."/>
+      <comment value="If present alongside targetReference, the kind of event is within the specified event - e.g. admission or discharge in an encounter, enrollment or start of therapy in a study, etc."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:targetCode.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:targetCode.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="targetCode"/>
+    </element>
+    <element id="Extension.extension:targetCode.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
       </type>
     </element>
     <element id="Extension.extension:targetPath">
@@ -143,8 +172,8 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="Defines the types of relationships between actions."/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="Defines the types of relationships between actions."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ActionRelationshipType"/>

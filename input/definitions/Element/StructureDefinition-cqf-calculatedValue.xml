@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-calculatedValue"/>
   <version value="5.0.0"/>
-  <name value="calculatedValue"/>
-  <title value="calculated value"/>
+  <name value="CalculatedValue"/>
+  <title value="Calculated value"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

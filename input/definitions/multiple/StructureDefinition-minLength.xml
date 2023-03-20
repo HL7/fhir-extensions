@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/minLength"/>
   <version value="5.0.0"/>
-  <name value="minLength"/>
-  <title value="min length"/>
+  <name value="MinLength"/>
+  <title value="Min length"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-04-27"/>

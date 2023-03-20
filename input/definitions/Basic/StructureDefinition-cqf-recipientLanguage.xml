@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-recipientLanguage"/>
   <version value="5.0.0"/>
-  <name value="recipientLanguage"/>
-  <title value="recipient language"/>
+  <name value="RecipientLanguage"/>
+  <title value="Recipient language"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
@@ -63,8 +63,8 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="A human language."/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="A human language."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
           <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>

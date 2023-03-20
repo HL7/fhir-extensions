@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/rendering-styleSensitive"/>
   <version value="5.0.0"/>
-  <name value="styleSensitive"/>
-  <title value="style sensitive"/>
+  <name value="StyleSensitive"/>
+  <title value="Style sensitive"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-04-23"/>

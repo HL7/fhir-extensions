@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"/>
   <version value="5.0.0"/>
-  <name value="nullFlavor"/>
-  <title value="null flavor"/>
+  <name value="NullFlavor"/>
+  <title value="Null flavor"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2012-06-24"/>
@@ -78,8 +78,8 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="A collection of codes specifying why a valid value is not present."/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="A collection of codes specifying why a valid value is not present."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="NullFlavor"/>

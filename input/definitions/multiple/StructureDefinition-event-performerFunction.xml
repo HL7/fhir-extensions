@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/event-performerFunction"/>
   <version value="5.0.0"/>
-  <name value="performerFunction"/>
-  <title value="performer function"/>
+  <name value="PerformerFunction"/>
+  <title value="Performer function"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

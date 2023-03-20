@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence"/>
   <version value="5.0.0"/>
-  <name value="qualityOfEvidence"/>
-  <title value="quality of evidence"/>
+  <name value="QualityOfEvidence"/>
+  <title value="Quality of evidence"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
@@ -64,8 +64,8 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
-          <valueString value="A rating system that describes the quality of evidence such as the GRADE, DynaMed, or Oxford CEBM systems."/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="A rating system that describes the quality of evidence such as the GRADE, DynaMed, or Oxford CEBM systems."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="QualityOfEvidenceRating"/>

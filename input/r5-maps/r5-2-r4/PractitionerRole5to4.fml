@@ -19,23 +19,27 @@ group PractitionerRole(source src : PractitionerRoleR5, target tgt : Practitione
   src.specialty -> tgt.specialty;
   src.location -> tgt.location;
   src.healthcareService -> tgt.healthcareService;
-  src.contact as s -> tgt.telecom = s.telecom "contact";
+  src.contact as s then {
+    s.telecom -> tgt.telecom;
+  };
 //  src.characteristic -> tgt.characteristic;
 //  src.communication -> tgt.communication;
-  src.availability as s -> tgt.availableTime as t then PractitionerRoleAvailabilityAvailableTime(s,t) "availableTime";
-  src.availability as s -> tgt.notAvailable as t then PractitionerRoleAvailabilityNotAvailableTime(s,t) "notAvailableTime";
+  src.availability as sav then {
+     sav.availableTime as s -> tgt.availableTime as t then PractitionerRoleAvailabilityAvailableTime(s,t) "availableTime";
+     sav.notAvailableTime as s -> tgt.notAvailable as t then PractitionerRoleAvailabilityNotAvailableTime(s,t) "availableTime";
+  };
   src.endpoint -> tgt.endpoint;
 }
 
-group PractitionerRoleAvailabilityAvailableTime(source src, target tgt) extends BackboneElement {
-  src.availableTime as s -> tgt.daysOfWeek as t, t = s.daysOfWeek;
-  src.availableTime as s -> tgt.allDay as t, t = s.allDay;
-  src.availableTime as s -> tgt.availableStartTime as t, t = s.availableStartTime;
-  src.availableTime as s -> tgt.availableEndTime as t, t = s.availableEndTime;
+group PractitionerRoleAvailabilityAvailableTime(source src, target tgt) extends Element {
+  src.daysOfWeek -> tgt.daysOfWeek;
+  src.allDay -> tgt.allDay;
+  src.availableStartTime -> tgt.availableStartTime;
+  src.availableEndTime -> tgt.availableEndTime;
 }
 
-group PractitionerRoleAvailabilityNotAvailableTime(source src, target tgt) extends BackboneElement {
-  src.notAvailableTime as s -> tgt.description as t, t = s.description;
-  src.notAvailableTime as s -> tgt.during as t, t = s.during;
+group PractitionerRoleAvailabilityNotAvailableTime(source src, target tgt) extends Element {
+  src.description -> tgt.description;
+  src.during -> tgt.during;
 }
 

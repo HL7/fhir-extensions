@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/request-relevantHistory"/>
   <version value="5.0.0"/>
-  <name value="relevantHistory"/>
-  <title value="relevant history"/>
+  <name value="RelevantHistory"/>
+  <title value="Relevant history"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

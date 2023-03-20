@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle"/>
   <version value="5.0.0"/>
-  <name value="daysOfCycle"/>
-  <title value="days of cycle"/>
+  <name value="DaysOfCycle"/>
+  <title value="Days of cycle"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>

@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/artifact-contactDetailReference"/>
   <version value="5.0.0"/>
-  <name value="contactDetailReference"/>
-  <title value="contact detail reference"/>
+  <name value="ContactDetailReference"/>
+  <title value="Contact detail reference"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>

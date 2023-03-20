@@ -33,11 +33,11 @@ group ImagingStudy(source src : ImagingStudyR4B, target tgt : ImagingStudyR5) ex
   src.endpoint -> tgt.endpoint;
   src.numberOfSeries -> tgt.numberOfSeries;
   src.numberOfInstances -> tgt.numberOfInstances;
-  src.procedureCode -> tgt.procedure;
-  src.procedureReference -> tgt.procedure;
+  src.procedureCode : CodeableConcept -> tgt.procedure;
+  src.procedureReference : Reference -> tgt.procedure;
   src.location -> tgt.location;
-  src.reasonCode -> tgt.reason;
-  src.reasonReference -> tgt.reason;
+  src.reasonCode : CodeableConcept -> tgt.reason;
+  src.reasonReference : Reference -> tgt.reason;
   src.note -> tgt.note;
   src.description -> tgt.description;
   src.series as s -> tgt.series as t then ImagingStudySeries(s,t);

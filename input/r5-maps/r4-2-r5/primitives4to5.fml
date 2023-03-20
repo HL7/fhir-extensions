@@ -102,8 +102,8 @@ group instant(source src : instantR4, target tgt : instantR5) extends Element <<
 group integer(source src : integerR4, target tgt : integerR5) extends Element <<type+>> {
   src.value as v -> tgt.value = v "integerValue";
 }
-group integer(source src : integerR4, target tgt : integer64R5) extends Element <<types>> {
-  src.value as v -> tgt.value = v "integerValue";
+group integer2integer64(source src : integerR4, target tgt : integer64R5) extends Element <<types>> {
+  src.value as v -> tgt.value = v "integer2integer64Value";
 }
 group markdown(source src : markdownR4, target tgt : markdownR5) extends Element <<type+>> {
   src.value as v -> tgt.value = v "markdownValue";
@@ -140,8 +140,8 @@ group time(source src : timeR4, target tgt : timeR5) extends Element <<type+>> {
 group unsignedInt(source src : unsignedIntR4, target tgt : unsignedIntR5) extends Element <<type+>> {
   src.value as v -> tgt.value = v "unsignedIntValue";
 }
-group unsignedInt(source src : unsignedIntR4, target tgt : integer64R5) extends Element <<type+>> {
-  src.value as v -> tgt.value = v "unsignedIntValue";
+group unsignedInt2integer64(source src : unsignedIntR4, target tgt : integer64R5) extends Element <<type+>> {
+  src.value as v -> tgt.value = v "unsignedInt2integer64Value";
 }
 group uri(source src : uriR4, target tgt : uriR5) extends Element <<type+>> {
   src.value as v -> tgt.value = v "uriValue";
