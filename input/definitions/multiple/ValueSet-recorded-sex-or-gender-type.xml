@@ -16,7 +16,7 @@
   <name value="RecordedSexOrGenderType"/>
   <title value="Recorded Sex Or Gender Type"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="FHIR Project team"/>
   <contact>
     <telecom>
