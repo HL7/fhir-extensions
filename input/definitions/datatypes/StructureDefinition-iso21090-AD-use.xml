@@ -68,7 +68,7 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
           <valueString value="Uses of an address not included in Address.use."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">

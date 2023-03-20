@@ -82,7 +82,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
           <valueString value="Units of measure allowed for an element."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">

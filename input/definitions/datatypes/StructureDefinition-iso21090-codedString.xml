@@ -68,7 +68,7 @@
         <code value="Coding"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
           <valueString value="A coded representation for a string.  Could be codes for country in a country address part, codes for prefixes in a name part, etc."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">

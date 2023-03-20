@@ -90,7 +90,7 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
           <valueString value="A human language."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">

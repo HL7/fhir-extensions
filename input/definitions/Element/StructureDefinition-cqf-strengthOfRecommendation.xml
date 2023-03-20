@@ -64,7 +64,7 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/binding-definition">
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
           <valueString value="A rating system that describes the strength of the recommendation, such as the GRADE, DynaMed, or HGPS systems."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
