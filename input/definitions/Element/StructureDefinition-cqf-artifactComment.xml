@@ -13,7 +13,7 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-artifactComment"/>
   <version value="5.0.0"/>
-  <name value="artifactComment"/>
+  <name value="ArtifactComment"/>
   <title value="artifact comment"/>
   <status value="draft"/>
   <experimental value="false"/>

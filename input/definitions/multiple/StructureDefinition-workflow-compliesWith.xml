@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-compliesWith"/>
   <version value="5.0.0"/>
-  <name value="compliesWith"/>
-  <title value="complies with"/>
+  <name value="CompliesWith"/>
+  <title value="Complies with"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

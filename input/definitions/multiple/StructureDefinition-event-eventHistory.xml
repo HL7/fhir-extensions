@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/event-eventHistory"/>
   <version value="5.0.0"/>
-  <name value="eventHistory"/>
-  <title value="event history"/>
+  <name value="EventHistory"/>
+  <title value="Event history"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-initiatingOrganization"/>
   <version value="5.0.0"/>
-  <name value="initiatingOrganization"/>
-  <title value="initiating organization"/>
+  <name value="InitiatingOrganization"/>
+  <title value="Initiating organization"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-recipientLanguage"/>
   <version value="5.0.0"/>
-  <name value="recipientLanguage"/>
-  <title value="recipient language"/>
+  <name value="RecipientLanguage"/>
+  <title value="Recipient language"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-researchStudy"/>
   <version value="5.0.0"/>
-  <name value="researchStudy"/>
-  <title value="research study"/>
+  <name value="ResearchStudy"/>
+  <title value="Research study"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

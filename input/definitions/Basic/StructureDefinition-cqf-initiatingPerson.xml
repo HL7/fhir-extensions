@@ -13,7 +13,7 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-initiatingPerson"/>
   <version value="5.0.0"/>
-  <name value="initiatingPerson"/>
+  <name value="InitiatingPerson"/>
   <title value="initiating person"/>
   <status value="draft"/>
   <experimental value="false"/>

@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/request-doNotPerform"/>
   <version value="5.0.0"/>
-  <name value="doNotPerform"/>
-  <title value="do not perform"/>
+  <name value="DoNotPerform"/>
+  <title value="Do not perform"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

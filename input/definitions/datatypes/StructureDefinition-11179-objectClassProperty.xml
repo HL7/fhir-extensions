@@ -13,7 +13,7 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/11179-objectClassProperty"/>
   <version value="5.0.0"/>
-  <name value="objectClassProperty"/>
+  <name value="ObjectClassProperty"/>
   <title value="object class property"/>
   <status value="draft"/>
   <experimental value="false"/>

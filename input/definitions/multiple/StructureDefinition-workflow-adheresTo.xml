@@ -13,7 +13,7 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-adheresTo"/>
   <version value="5.0.0"/>
-  <name value="adheresTo"/>
+  <name value="AdheresTo"/>
   <title value="adheres to"/>
   <status value="draft"/>
   <experimental value="false"/>

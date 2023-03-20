@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/entryFormat"/>
   <version value="5.0.0"/>
-  <name value="entryFormat"/>
-  <title value="entry format"/>
+  <name value="EntryFormat"/>
+  <title value="Entry format"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-04-27"/>

@@ -13,7 +13,7 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/11179-objectClass"/>
   <version value="5.0.0"/>
-  <name value="objectClass"/>
+  <name value="ObjectClass"/>
   <title value="object class"/>
   <status value="draft"/>
   <experimental value="false"/>

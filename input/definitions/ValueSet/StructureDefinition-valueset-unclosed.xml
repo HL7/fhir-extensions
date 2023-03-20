@@ -17,7 +17,7 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1209"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="VS Unclosed"/>
+  <name value="VSUnclosed"/>
   <title value="ValueSet Unclosed"/>
   <status value="draft"/>
   <experimental value="false"/>

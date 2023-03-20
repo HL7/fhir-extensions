@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/event-basedOn"/>
   <version value="5.0.0"/>
-  <name value="basedOn"/>
-  <title value="based on"/>
+  <name value="BasedOn"/>
+  <title value="Based on"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>
