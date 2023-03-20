@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-derivationType"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <url value="http://hl7.org/fhir/questionnaire-derivationType"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.1.1275"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="QuestionnaireDerivationType"/>
+  <title value="Questionnaire Derivation Type Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <description value="Codes defining types of relationships between Questionnaires"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="extends"/>
+    <display value="extends"/>
+    <definition value="Indicates this Questionnaire includes all of the items and permitted answers present in the target Questionnaire, however it also adds additional items and/or answers, such that a QuestionnaireResponse against the referencing Questionnaire may no longer be valid against the referenced Questionnaire."/>
+  </concept>
+  <concept>
+    <code value="compliesWith"/>
+    <display value="complies with"/>
+    <definition value="Indicates this Questionnaire is derived in a manner that ensures that QuestionnaireResponses completed against this form will also be valid against the referenced questionnaire.  To be a valid constraint, linkId, item types, and item order must align and all required items and answers must be included. However, cardinality can be tightened and answers can be restricted. If a Questionnaire complies with a parent Questionnaire, that does not mean that the derived Questionnaire is considered to have the same validity as the parent Questionnaire."/>
+  </concept>
+  <concept>
+    <code value="inspiredBy"/>
+    <display value="inspired by"/>
+    <definition value="Indicates that some portion of the content of this Questionnaire was drawn from the referenced Questionnaire.  Responses created against this Questionnaire have no expectation of being valid against the referenced Questionnaire. linkIds, question text, answer choices, etc. may all vary and items may have been added or removed."/>
+  </concept>
+</CodeSystem>

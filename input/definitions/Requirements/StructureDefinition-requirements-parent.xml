@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../input-cache/schemas/R5/fhir-single.xsd">
+	<id value="requirements-parent"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+		<valueCode value="fhir"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="0"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+		<valueCode value="draft"/>
+	</extension>
+	<url value="http://hl7.org/fhir/StructureDefinition/requirements-parent"/>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:oid:2.16.840.1.113883.4.642.5.1365"/>
+	</identifier>
+	<version value="5.0.0"/>
+	<name value="RequirementsParent"/>
+	<title value="Requirements Parent"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<date value="2023-03-18"/>
+	<publisher value="Health Level Seven, Inc. - FHIR I WG"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="http://hl7.org/Special/committees/fiwg"/>
+		</telecom>
+	</contact>
+	<description value="A larger/more generic set of requirements that this set of requirements helps to refine and enable."/>
+	<fhirVersion value="5.0.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="Requirements.statement"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="Details for more general requirements"/>
+			<definition value="A larger/more generic set of requirements that this set of requirements helps to refine and enable."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension">
+			<path value="Extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/StructureDefinition/requirements-parent"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="canonical"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Requirements"/>
+			</type>
+    </element>
+	</differential>
+</StructureDefinition>

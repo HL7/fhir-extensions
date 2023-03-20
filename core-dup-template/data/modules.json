@@ -54,629 +54,886 @@
     }
   },
   "resources": {
+    "extension-registry": {
+      "module": "Foundation",
+      "section": "2.17"
+    },
+    "conversion-registry": {
+      "module": "Foundation",
+      "section": "2.18"
+    },
+    "search-params": {
+      "module": "Foundation",
+      "section": "2.19"
+    },
+    "references": {
+      "module": "Foundation",
+      "section": "2.1.3.3",
+      "section2": "2.1.3.4",
+      "noEx": "Y",
+      "noMap": "Y",
+      "inDoc": "Y",
+      "isDt": "Y",
+      "tab": "References"
+    },
+    "Resource": {
+      "module": "Foundation",
+      "section": "2.1.27.5.13",
+      "section2": "2.1.27.5.14",
+      "noEx": "Y",
+      "noMap": "Y",
+      "inDoc": "Y",
+      "inFt": "Y"
+    },
+    "DomainResource": {
+      "module": "Foundation",
+      "section": "2.1.27.6.13",
+      "section2": "2.1.27.6.14",
+      "noEx": "Y",
+      "noMap": "Y",
+      "inDoc": "Y",
+      "inFt": "Y"
+    },
+    "CanonicalResource": {
+      "module": "Foundation",
+      "section": "2.1.27.7.13",
+      "section2": "2.1.27.7.14",
+      "noEx": "Y",
+      "noMap": "Y",
+      "inDoc": "Y",
+      "inFt": "Y"
+    },
+    "MetadataResource": {
+      "module": "Foundation",
+      "section": "2.1.27.8.13",
+      "section2": "2.1.27.8.14",
+      "noEx": "Y",
+      "noMap": "Y",
+      "inDoc": "Y",
+      "inFt": "Y"
+    },
+    "metadatatypes": {
+      "module": "Foundation",
+      "section": "2.1.28.10.1",
+      "section2": "2.1.28.10.2",
+      "inDoc": "Y",
+      "inDt": "Y",
+      "isDt": "Y",
+      "tab": "Meta Datatypes"
+    },
+    "ElementDefinition": {
+      "module": "Foundation",
+      "section": "2.1.28.11.1",
+      "section2": "2.1.28.11.2",
+      "inDoc": "Y",
+      "inDt": "Y",
+      "isDt": "Y",
+      "tab": "ElementDefinition Detail"
+    },
+    "datatypes": {
+      "module": "Foundation",
+      "section": "2.1.28.8",
+      "section2": "2.1.28.9",
+      "inDoc": "Y",
+      "isDt": "Y",
+      "tab": "Datatypes"
+    },
     "Basic": {
       "module": "Foundation",
-      "section": "2.2.26"
+      "section": "2.2.26",
+      "section2": "2.2.27"
     },
     "Binary": {
       "module": "Foundation",
-      "section": "2.3.13"
+      "section": "2.3.15",
+      "section2": "2.3.16"
     },
     "Bundle": {
       "module": "Foundation",
-      "section": "2.4.22"
+      "section": "2.4.22",
+      "section2": "2.4.23"
     },
     "Questionnaire": {
       "module": "Foundation",
-      "section": "2.5.39"
+      "section": "2.5.39",
+      "section2": "2.5.40"
     },
     "QuestionnaireResponse": {
       "module": "Foundation",
-      "section": "2.6.30"
+      "section": "2.6.30",
+      "section2": "2.6.31"
     },
     "List": {
       "module": "Foundation",
-      "section": "2.7.37"
+      "section": "2.7.36",
+      "section2": "2.7.37"
     },
     "Composition": {
       "module": "Foundation",
-      "section": "2.8.40"
+      "section": "2.8.39",
+      "section2": "2.8.40"
     },
     "OperationOutcome": {
       "module": "Foundation",
-      "section": "2.10.16"
+      "section": "2.10.18",
+      "section2": "2.10.19"
     },
     "Parameters": {
       "module": "Foundation",
-      "section": "2.11.14"
+      "section": "2.11.16",
+      "section2": "2.11.17"
     },
     "Subscription": {
       "module": "Foundation",
-      "section": "2.12.28"
+      "section": "2.12.34",
+      "section2": "2.12.35"
     },
     "SubscriptionStatus": {
       "module": "Foundation",
-      "section": "2.13.16"
+      "section": "2.13.19",
+      "section2": "2.13.20"
     },
     "SubscriptionTopic": {
       "module": "Foundation",
-      "section": "2.14.26"
+      "section": "2.14.28",
+      "section2": "2.14.29"
     },
     "MessageHeader": {
       "module": "Foundation",
-      "section": "2.15.30"
+      "section": "2.15.27",
+      "section2": "2.15.28"
     },
     "MessageDefinition": {
       "module": "Foundation",
-      "section": "2.16.33"
+      "section": "2.16.33",
+      "section2": "2.16.34"
     },
     "CodeSystem": {
       "module": "Terminology",
-      "section": "4.8.53"
+      "section": "4.8.51",
+      "section2": "4.8.52"
     },
     "ValueSet": {
       "module": "Terminology",
-      "section": "4.9.47"
+      "section": "4.9.46",
+      "section2": "4.9.47"
     },
     "ConceptMap": {
       "module": "Terminology",
-      "section": "4.10.54"
+      "section": "4.10.51",
+      "section2": "4.10.52"
     },
     "NamingSystem": {
       "module": "Terminology",
-      "section": "4.11.44"
+      "section": "4.11.43",
+      "section2": "4.11.44"
     },
     "TerminologyCapabilities": {
       "module": "Terminology",
-      "section": "4.12.30"
+      "section": "4.12.30",
+      "section2": "4.12.31"
     },
     "CapabilityStatement": {
       "module": "Conformance",
-      "section": "5.3.41"
+      "section": "5.3.41",
+      "section2": "5.3.42"
     },
     "StructureDefinition": {
       "module": "Conformance",
-      "section": "5.4.47"
+      "section": "5.4.46",
+      "section2": "5.4.47"
     },
     "OperationDefinition": {
       "module": "Conformance",
-      "section": "5.5.38"
+      "section": "5.5.39",
+      "section2": "5.5.40"
     },
     "SearchParameter": {
       "module": "Conformance",
-      "section": "5.6.37"
+      "section": "5.6.38",
+      "section2": "5.6.39"
     },
     "CompartmentDefinition": {
       "module": "Conformance",
-      "section": "5.7.30"
+      "section": "5.7.30",
+      "section2": "5.7.31"
     },
     "ImplementationGuide": {
       "module": "Conformance",
-      "section": "5.9.34"
+      "section": "5.9.35",
+      "section2": "5.9.36"
     },
     "GraphDefinition": {
       "module": "Conformance",
-      "section": "5.10.29"
+      "section": "5.10.30",
+      "section2": "5.10.31"
     },
     "ActorDefinition": {
       "module": "Conformance",
-      "section": "5.11.30"
+      "section": "5.11.30",
+      "section2": "5.11.31"
     },
     "Requirements": {
       "module": "Conformance",
-      "section": "5.12.33"
+      "section": "5.12.33",
+      "section2": "5.12.34"
     },
     "Consent": {
       "module": "Security and Privacy",
-      "section": "6.2.41"
+      "section": "6.2.41",
+      "section2": "6.2.42"
     },
     "Provenance": {
       "module": "Security and Privacy",
-      "section": "6.3.30"
+      "section": "6.3.30",
+      "section2": "6.3.31"
     },
     "AuditEvent": {
       "module": "Security and Privacy",
-      "section": "6.4.31"
+      "section": "6.4.31",
+      "section2": "6.4.32"
     },
     "Permission": {
       "module": "Security and Privacy",
-      "section": "6.5.16"
+      "section": "6.5.16",
+      "section2": "6.5.17"
+    },
+    "TestPlan": {
+      "module": "Implementation Support",
+      "section": "7.3.17",
+      "section2": "7.3.18"
     },
     "TestScript": {
       "module": "Implementation Support",
-      "section": "7.3.37"
+      "section": "7.4.37",
+      "section2": "7.4.38"
     },
     "TestReport": {
       "module": "Implementation Support",
-      "section": "7.4.23"
+      "section": "7.5.23",
+      "section2": "7.5.24"
     },
     "StructureMap": {
       "module": "Implementation Support",
-      "section": "7.8.32"
+      "section": "7.9.31",
+      "section2": "7.9.32"
     },
     "Patient": {
       "module": "Administration",
-      "section": "8.1.30"
+      "section": "8.1.47",
+      "section2": "8.1.48"
     },
     "RelatedPerson": {
       "module": "Administration",
-      "section": "8.2.34"
+      "section": "8.2.34",
+      "section2": "8.2.35"
     },
     "Group": {
       "module": "Administration",
-      "section": "8.3.29"
+      "section": "8.3.28",
+      "section2": "8.3.29"
     },
     "Practitioner": {
       "module": "Administration",
-      "section": "8.4.38"
+      "section": "8.4.38",
+      "section2": "8.4.39"
     },
     "PractitionerRole": {
       "module": "Administration",
-      "section": "8.5.31"
+      "section": "8.5.33",
+      "section2": "8.5.34"
     },
     "Organization": {
       "module": "Administration",
-      "section": "8.6.31"
+      "section": "8.6.31",
+      "section2": "8.6.32"
     },
     "Location": {
       "module": "Administration",
-      "section": "8.7.36"
+      "section": "8.7.36",
+      "section2": "8.7.37"
     },
     "HealthcareService": {
       "module": "Administration",
-      "section": "8.8.30"
+      "section": "8.8.31",
+      "section2": "8.8.32"
     },
     "Endpoint": {
       "module": "Administration",
-      "section": "8.9.24"
+      "section": "8.9.24",
+      "section2": "8.9.25"
     },
     "EpisodeOfCare": {
       "module": "Administration",
-      "section": "8.10.30"
+      "section": "8.10.31",
+      "section2": "8.10.32"
     },
     "Encounter": {
       "module": "Administration",
-      "section": "8.11.49"
+      "section": "8.11.49",
+      "section2": "8.11.50"
+    },
+    "EncounterHistory": {
+      "module": "Administration",
+      "section": "8.12.21",
+      "section2": "8.12.22"
     },
     "Account": {
       "module": "Administration",
-      "section": "8.12.27"
+      "section": "8.13.27",
+      "section2": "8.13.28"
     },
     "Flag": {
       "module": "Administration",
-      "section": "8.13.26"
+      "section": "8.14.26",
+      "section2": "8.14.27"
     },
     "Device": {
       "module": "Administration",
-      "section": "8.14.38"
+      "section": "8.15.39",
+      "section2": "8.15.40"
     },
     "DeviceAssociation": {
       "module": "Administration",
-      "section": "8.15.17"
+      "section": "8.16.20",
+      "section2": "8.16.21"
     },
     "DeviceDefinition": {
       "module": "Administration",
-      "section": "8.16.19"
+      "section": "8.17.23",
+      "section2": "8.17.24"
     },
     "DeviceMetric": {
       "module": "Administration",
-      "section": "8.17.22"
+      "section": "8.18.21",
+      "section2": "8.18.22"
     },
     "Substance": {
       "module": "Administration",
-      "section": "8.18.24"
+      "section": "8.19.24",
+      "section2": "8.19.25"
     },
     "Person": {
       "module": "Administration",
-      "section": "8.19.45"
+      "section": "8.20.45",
+      "section2": "8.20.46"
     },
     "Linkage": {
       "module": "Administration",
-      "section": "8.20.19"
+      "section": "8.21.19",
+      "section2": "8.21.20"
     },
     "Communication": {
       "module": "Administration",
-      "section": "8.21.33"
+      "section": "8.22.33",
+      "section2": "8.22.34"
     },
     "CommunicationRequest": {
       "module": "Administration",
-      "section": "8.22.32"
+      "section": "8.23.32",
+      "section2": "8.23.33"
     },
     "ResearchStudy": {
       "module": "Administration",
-      "section": "8.23.41"
+      "section": "8.24.41",
+      "section2": "8.24.42"
     },
     "ResearchSubject": {
       "module": "Administration",
-      "section": "8.24.22"
+      "section": "8.25.22",
+      "section2": "8.25.23"
+    },
+    "BiologicallyDerivedProduct": {
+      "module": "Administration",
+      "section": "8.26.24",
+      "section2": "8.26.25"
     },
     "ChargeItem": {
       "module": "Administration",
-      "section": "8.25.33"
+      "section": "8.27.34",
+      "section2": "8.27.35"
     },
     "ChargeItemDefinition": {
       "module": "Administration",
-      "section": "8.26.30"
+      "section": "8.28.29",
+      "section2": "8.28.30"
     },
     "ObservationDefinition": {
       "module": "Administration",
-      "section": "8.27.22"
+      "section": "8.29.22",
+      "section2": "8.29.23"
     },
     "NutritionProduct": {
       "module": "Administration",
-      "section": "8.30.19"
+      "section": "8.32.20",
+      "section2": "8.32.21"
     },
     "Invoice": {
       "module": "Administration",
-      "section": "8.31.28"
+      "section": "8.33.28",
+      "section2": "8.33.29"
     },
     "InsurancePlan": {
       "module": "Administration",
-      "section": "8.32.29"
+      "section": "8.34.29",
+      "section2": "8.34.30"
     },
     "OrganizationAffiliation": {
       "module": "Administration",
-      "section": "8.33.31"
+      "section": "8.35.31",
+      "section2": "8.35.32"
     },
     "VerificationResult": {
       "module": "Administration",
-      "section": "8.34.19"
+      "section": "8.36.28",
+      "section2": "8.36.29"
     },
     "AllergyIntolerance": {
       "module": "Clinical",
-      "section": "9.1.35"
+      "section": "9.1.35",
+      "section2": "9.1.36"
     },
     "Condition": {
       "module": "Clinical",
-      "section": "9.2.41"
+      "section": "9.2.41",
+      "section2": "9.2.42"
     },
     "Procedure": {
       "module": "Clinical",
-      "section": "9.3.33"
+      "section": "9.3.33",
+      "section2": "9.3.34"
     },
     "FamilyMemberHistory": {
       "module": "Clinical",
-      "section": "9.4.25"
+      "section": "9.4.25",
+      "section2": "9.4.26"
     },
     "CarePlan": {
       "module": "Clinical",
-      "section": "9.5.40"
+      "section": "9.5.35",
+      "section2": "9.5.36"
     },
     "Goal": {
       "module": "Clinical",
-      "section": "9.6.30"
+      "section": "9.6.30",
+      "section2": "9.6.31"
     },
     "CareTeam": {
       "module": "Clinical",
-      "section": "9.7.25"
+      "section": "9.7.25",
+      "section2": "9.7.26"
     },
     "ClinicalImpression": {
       "module": "Clinical",
-      "section": "9.8.28"
+      "section": "9.8.28",
+      "section2": "9.8.29"
     },
     "AdverseEvent": {
       "module": "Clinical",
-      "section": "9.9.30"
+      "section": "9.9.30",
+      "section2": "9.9.31"
     },
     "DetectedIssue": {
       "module": "Clinical",
-      "section": "9.10.29"
+      "section": "9.10.29",
+      "section2": "9.10.30"
     },
     "RiskAssessment": {
       "module": "Clinical",
-      "section": "9.11.27"
+      "section": "9.11.27",
+      "section2": "9.11.28"
     },
     "Observation": {
-      "module": "Diagnostics",
-      "section": "10.1.66"
+      "module": "Diagnostic Medicine",
+      "section": "10.1.65",
+      "section2": "10.1.66"
     },
     "DocumentReference": {
-      "module": "Diagnostics",
-      "section": "10.2.54"
+      "module": "Diagnostic Medicine",
+      "section": "10.2.54",
+      "section2": "10.2.55"
     },
     "DiagnosticReport": {
-      "module": "Diagnostics",
-      "section": "10.3.36"
+      "module": "Diagnostic Medicine",
+      "section": "10.3.36",
+      "section2": "10.3.37"
     },
     "GenomicStudy": {
-      "module": "Diagnostics",
-      "section": "10.4.20"
+      "module": "Diagnostic Medicine",
+      "section": "10.4.20",
+      "section2": "10.4.21"
     },
     "ImagingStudy": {
-      "module": "Diagnostics",
-      "section": "10.5.33"
+      "module": "Diagnostic Medicine",
+      "section": "10.5.33",
+      "section2": "10.5.34"
     },
     "ImagingSelection": {
-      "module": "Diagnostics",
-      "section": "10.6.26"
+      "module": "Diagnostic Medicine",
+      "section": "10.6.26",
+      "section2": "10.6.27"
     },
     "MolecularSequence": {
-      "module": "Diagnostics",
-      "section": "10.7.20"
+      "module": "Diagnostic Medicine",
+      "section": "10.7.21",
+      "section2": "10.7.22"
     },
     "Specimen": {
-      "module": "Diagnostics",
-      "section": "10.8.30"
+      "module": "Diagnostic Medicine",
+      "section": "10.8.30",
+      "section2": "10.8.31"
     },
     "SpecimenDefinition": {
-      "module": "Diagnostics",
-      "section": "10.9.25"
+      "module": "Diagnostic Medicine",
+      "section": "10.9.24",
+      "section2": "10.9.25"
     },
     "BodyStructure": {
-      "module": "Diagnostics",
-      "section": "10.10.20"
-    },
-    "BiologicallyDerivedProduct": {
-      "module": "Diagnostics",
-      "section": "10.12.24"
-    },
-    "BiologicallyDerivedProductDispense": {
-      "module": "Diagnostics",
-      "section": "10.13.18"
+      "module": "Diagnostic Medicine",
+      "section": "10.10.20",
+      "section2": "10.10.21"
     },
     "MedicationRequest": {
       "module": "Medications",
-      "section": "11.1.33"
+      "section": "11.1.33",
+      "section2": "11.1.34"
     },
     "MedicationAdministration": {
       "module": "Medications",
-      "section": "11.2.33"
+      "section": "11.2.33",
+      "section2": "11.2.34"
     },
     "MedicationDispense": {
       "module": "Medications",
-      "section": "11.3.35"
+      "section": "11.3.35",
+      "section2": "11.3.36"
     },
     "MedicationStatement": {
       "module": "Medications",
-      "section": "11.4.27"
+      "section": "11.4.27",
+      "section2": "11.4.28"
     },
     "Medication": {
       "module": "Medications",
-      "section": "11.5.26"
+      "section": "11.5.26",
+      "section2": "11.5.27"
     },
     "MedicationKnowledge": {
       "module": "Medications",
-      "section": "11.6.30"
+      "section": "11.6.30",
+      "section2": "11.6.31"
     },
     "Immunization": {
       "module": "Medications",
-      "section": "11.7.33"
+      "section": "11.7.33",
+      "section2": "11.7.34"
     },
     "ImmunizationEvaluation": {
       "module": "Medications",
-      "section": "11.8.24"
+      "section": "11.8.24",
+      "section2": "11.8.25"
     },
     "ImmunizationRecommendation": {
       "module": "Medications",
-      "section": "11.9.23"
+      "section": "11.9.23",
+      "section2": "11.9.24"
+    },
+    "Dosage": {
+      "module": "Medications",
+      "section": "11.10.5",
+      "section2": "11.10.6",
+      "isDt": "Y",
+      "tab": "Dosage Detail"
     },
     "FormularyItem": {
       "module": "Medications",
-      "section": "11.11.17"
+      "section": "11.11.17",
+      "section2": "11.11.18"
     },
     "Task": {
       "module": "Workflow",
-      "section": "12.1.44"
+      "section": "12.1.44",
+      "section2": "12.1.45"
     },
     "Transport": {
       "module": "Workflow",
-      "section": "12.2.18"
+      "section": "12.2.18",
+      "section2": "12.2.19"
     },
     "Appointment": {
       "module": "Workflow",
-      "section": "12.14.41"
+      "section": "12.14.41",
+      "section2": "12.14.42"
     },
     "AppointmentResponse": {
       "module": "Workflow",
-      "section": "12.15.24"
+      "section": "12.15.24",
+      "section2": "12.15.25"
     },
     "Schedule": {
       "module": "Workflow",
-      "section": "12.16.24"
+      "section": "12.16.24",
+      "section2": "12.16.25"
     },
     "Slot": {
       "module": "Workflow",
-      "section": "12.17.25"
+      "section": "12.17.25",
+      "section2": "12.17.26"
     },
     "ServiceRequest": {
       "module": "Workflow",
-      "section": "12.18.39"
+      "section": "12.18.39",
+      "section2": "12.18.40"
     },
     "NutritionOrder": {
       "module": "Workflow",
-      "section": "12.19.28"
+      "section": "12.19.29",
+      "section2": "12.19.30"
     },
     "NutritionIntake": {
       "module": "Workflow",
-      "section": "12.20.25"
+      "section": "12.20.25",
+      "section2": "12.20.26"
     },
     "VisionPrescription": {
       "module": "Workflow",
-      "section": "12.21.21"
+      "section": "12.21.21",
+      "section2": "12.21.22"
     },
     "ActivityDefinition": {
       "module": "Workflow",
-      "section": "12.22.40"
+      "section": "12.22.39",
+      "section2": "12.22.40"
     },
     "PlanDefinition": {
       "module": "Workflow",
-      "section": "12.23.42"
+      "section": "12.23.42",
+      "section2": "12.23.43"
     },
     "DeviceRequest": {
       "module": "Workflow",
-      "section": "12.24.34"
+      "section": "12.24.35",
+      "section2": "12.24.36"
     },
     "DeviceDispense": {
       "module": "Workflow",
-      "section": "12.25.17"
+      "section": "12.25.20",
+      "section2": "12.25.21"
     },
     "DeviceUsage": {
       "module": "Workflow",
-      "section": "12.26.18"
+      "section": "12.26.19",
+      "section2": "12.26.20"
     },
     "SupplyRequest": {
       "module": "Workflow",
-      "section": "12.27.24"
+      "section": "12.27.24",
+      "section2": "12.27.25"
     },
     "SupplyDelivery": {
       "module": "Workflow",
-      "section": "12.28.21"
+      "section": "12.28.21",
+      "section2": "12.28.22"
     },
     "InventoryReport": {
       "module": "Workflow",
-      "section": "12.29.13"
+      "section": "12.29.19",
+      "section2": "12.29.20"
     },
     "InventoryItem": {
       "module": "Workflow",
-      "section": "12.30.17"
+      "section": "12.30.19",
+      "section2": "12.30.20"
+    },
+    "BiologicallyDerivedProductDispense": {
+      "module": "Workflow",
+      "section": "12.31.20",
+      "section2": "12.31.21"
     },
     "ExampleScenario": {
       "module": "Workflow",
-      "section": "12.31.27"
+      "section": "12.32.27",
+      "section2": "12.32.28"
     },
     "Coverage": {
       "module": "Financial",
-      "section": "13.1.28"
+      "section": "13.1.28",
+      "section2": "13.1.29"
     },
     "CoverageEligibilityRequest": {
       "module": "Financial",
-      "section": "13.2.23"
+      "section": "13.2.22",
+      "section2": "13.2.23"
     },
     "CoverageEligibilityResponse": {
       "module": "Financial",
-      "section": "13.3.24"
+      "section": "13.3.24",
+      "section2": "13.3.25"
     },
     "EnrollmentRequest": {
       "module": "Financial",
-      "section": "13.4.19"
+      "section": "13.4.19",
+      "section2": "13.4.20"
     },
     "EnrollmentResponse": {
       "module": "Financial",
-      "section": "13.5.17"
+      "section": "13.5.17",
+      "section2": "13.5.18"
     },
     "Claim": {
       "module": "Financial",
-      "section": "13.6.33"
+      "section": "13.6.33",
+      "section2": "13.6.34"
     },
     "ClaimResponse": {
       "module": "Financial",
-      "section": "13.7.26"
+      "section": "13.7.27",
+      "section2": "13.7.28"
     },
     "PaymentNotice": {
       "module": "Financial",
-      "section": "13.8.22"
+      "section": "13.8.22",
+      "section2": "13.8.23"
     },
     "PaymentReconciliation": {
       "module": "Financial",
-      "section": "13.9.25"
+      "section": "13.9.25",
+      "section2": "13.9.26"
     },
     "ExplanationOfBenefit": {
       "module": "Financial",
-      "section": "13.10.33"
+      "section": "13.10.34",
+      "section2": "13.10.35"
     },
     "Contract": {
       "module": "Financial",
-      "section": "13.11.29"
+      "section": "13.11.29",
+      "section2": "13.11.30"
     },
     "ArtifactAssessment": {
       "module": "Clinical Reasoning",
-      "section": "14.8.18"
+      "section": "14.8.18",
+      "section2": "14.8.19"
     },
     "ConditionDefinition": {
       "module": "Clinical Reasoning",
-      "section": "14.9.30"
+      "section": "14.9.30",
+      "section2": "14.9.31"
     },
     "EventDefinition": {
       "module": "Clinical Reasoning",
-      "section": "14.10.36"
+      "section": "14.10.36",
+      "section2": "14.10.37"
     },
     "EvidenceReport": {
       "module": "Clinical Reasoning",
-      "section": "14.11.23"
+      "section": "14.11.23",
+      "section2": "14.11.24"
     },
     "Citation": {
       "module": "Clinical Reasoning",
-      "section": "14.12.30"
+      "section": "14.12.33",
+      "section2": "14.12.34"
     },
     "Evidence": {
       "module": "Clinical Reasoning",
-      "section": "14.13.27"
+      "section": "14.13.27",
+      "section2": "14.13.28"
     },
     "EvidenceVariable": {
       "module": "Clinical Reasoning",
-      "section": "14.14.34"
+      "section": "14.14.34",
+      "section2": "14.14.35"
     },
     "Library": {
       "module": "Clinical Reasoning",
-      "section": "14.15.42"
+      "section": "14.15.41",
+      "section2": "14.15.42"
     },
     "GuidanceResponse": {
       "module": "Clinical Reasoning",
-      "section": "14.16.22"
+      "section": "14.16.22",
+      "section2": "14.16.23"
     },
     "RequestOrchestration": {
       "module": "Clinical Reasoning",
-      "section": "14.17.30"
+      "section": "14.17.31",
+      "section2": "14.17.32"
     },
     "Measure": {
       "module": "Clinical Reasoning",
-      "section": "14.18.39"
+      "section": "14.18.38",
+      "section2": "14.18.39"
     },
     "MeasureReport": {
       "module": "Clinical Reasoning",
-      "section": "14.19.27"
+      "section": "14.19.27",
+      "section2": "14.19.28"
     },
     "MedicinalProductDefinition": {
       "module": "Medication Definition",
-      "section": "15.1.26"
+      "section": "15.1.25",
+      "section2": "15.1.26"
     },
     "PackagedProductDefinition": {
       "module": "Medication Definition",
-      "section": "15.2.24"
+      "section": "15.2.24",
+      "section2": "15.2.25"
     },
     "ManufacturedItemDefinition": {
       "module": "Medication Definition",
-      "section": "15.4.18"
+      "section": "15.4.18",
+      "section2": "15.4.19"
     },
     "AdministrableProductDefinition": {
       "module": "Medication Definition",
-      "section": "15.5.23"
+      "section": "15.5.23",
+      "section2": "15.5.24"
     },
     "RegulatedAuthorization": {
       "module": "Medication Definition",
-      "section": "15.6.20"
+      "section": "15.6.20",
+      "section2": "15.6.21"
     },
     "ClinicalUseDefinition": {
       "module": "Medication Definition",
-      "section": "15.7.26"
+      "section": "15.7.26",
+      "section2": "15.7.27"
     },
     "Ingredient": {
       "module": "Medication Definition",
-      "section": "15.8.26"
+      "section": "15.8.26",
+      "section2": "15.8.27"
     },
     "SubstanceDefinition": {
       "module": "Medication Definition",
-      "section": "15.9.18"
+      "section": "15.9.18",
+      "section2": "15.9.19"
     },
     "SubstancePolymer": {
       "module": "Medication Definition",
-      "section": "15.10.11"
+      "section": "15.10.13",
+      "section2": "15.10.14"
     },
     "SubstanceProtein": {
       "module": "Medication Definition",
-      "section": "15.11.11"
+      "section": "15.11.13",
+      "section2": "15.11.14"
     },
     "SubstanceNucleicAcid": {
       "module": "Medication Definition",
-      "section": "15.12.11"
+      "section": "15.12.13",
+      "section2": "15.12.14"
     },
     "SubstanceReferenceInformation": {
       "module": "Medication Definition",
-      "section": "15.13.11"
+      "section": "15.13.13",
+      "section2": "15.13.14"
     },
     "SubstanceSourceMaterial": {
       "module": "Medication Definition",
-      "section": "15.14.11"
+      "section": "15.14.13",
+      "section2": "15.14.14"
     }
   }
 }

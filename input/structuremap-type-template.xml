@@ -1,0 +1,10 @@
+{% assign type="%type%" %}
+{% assign ltype="%ltype%" %}
+{% include tabstuff.html %}
+
+<p>
+Following are maps for converting between the equivalent R4B data type and this R5 data type.
+</p>
+
+{% include maps-%type%.xhtml %}
+
