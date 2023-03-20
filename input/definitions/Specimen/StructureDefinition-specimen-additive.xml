@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="workflow-relatedArtifact"/>
+  <id value="specimen-additive"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -11,44 +11,31 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/specimen-additive"/>
   <version value="5.0.0"/>
-  <name value="RelatedArtifact"/>
-  <title value="Related artifact"/>
+  <name value="SpecimenAdditive"/>
+  <title value="Specimen Additive"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>
-  <publisher value="Health Level Seven, Inc. - FHIR WG"/>
+  <publisher value="Health Level Seven, Inc. - Orders and Observations WG"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/fwg"/>
+      <value value="http://hl7.org/special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Documents the 'knowledge artifacts' relevant to the base resource such as citations, supporting evidence, documentation of processes, caveats around testing methodology."/>
+  <description value="References a resource or provides a code or text that specifies a substance that is added to a laboratory specimen (part of the container device or added to the specimen indenpendently)."/>
   <fhirVersion value="5.0.0"/>
-  <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
-  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="ConceptMap"/>
+    <expression value="Specimen"/>
   </context>
   <context>
     <type value="element"/>
-    <expression value="DiagnosticReport"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="Observation"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="Observation.component"/>
+    <expression value="Specimen.container"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -56,9 +43,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Documentation relevant to the 'parent' resource"/>
-      <definition value="Documents the 'knowledge artifacts' relevant to the base resource such as citations, supporting evidence, documentation of processes, caveats around testing methodology."/>
-      <comment value="Note that in contrast to this extension, the [supportingInfo extension](StructureDefinition-workflow-supportingInfo.html) references other resources *from the patient record* that were used in creating the resource."/>
+      <short value="Specifies a substance that is added to a laboratory specimen"/>
+      <definition value="References a resource or provides a code or text that specifies a substance that is added to a laboratory specimen (part of the container device or added to the specimen indenpendently)."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -68,14 +54,22 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/specimen-additive"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="RelatedArtifact"/>
+        <code value="CodeableReference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"/>
       </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SpecimenAdditiveSubstance"/>
+        </extension>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/specimen-additive-substance"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
