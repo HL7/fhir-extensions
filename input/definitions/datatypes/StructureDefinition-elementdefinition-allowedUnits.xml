@@ -83,7 +83,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="Units of measure allowed for an element."/>
+          <valueMarkdown value="Units of measure allowed for an element."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Units"/>

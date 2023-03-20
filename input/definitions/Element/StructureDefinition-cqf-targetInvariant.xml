@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-targetInvariant"/>
   <version value="5.0.0"/>
-  <name value="targetInvariant"/>
-  <title value="target invariant"/>
+  <name value="TargetInvariant"/>
+  <title value="Target invariant"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
@@ -139,7 +139,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="SHALL applications comply with this constraint?"/>
+          <valueMarkdown value="SHALL applications comply with this constraint?"/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ConstraintSeverity"/>

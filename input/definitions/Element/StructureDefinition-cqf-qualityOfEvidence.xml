@@ -65,7 +65,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="A rating system that describes the quality of evidence such as the GRADE, DynaMed, or Oxford CEBM systems."/>
+          <valueMarkdown value="A rating system that describes the quality of evidence such as the GRADE, DynaMed, or Oxford CEBM systems."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="QualityOfEvidenceRating"/>

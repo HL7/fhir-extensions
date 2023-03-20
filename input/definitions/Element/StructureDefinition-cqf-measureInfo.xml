@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-measureInfo"/>
   <version value="5.0.0"/>
-  <name value="measureInfo"/>
-  <title value="measure info"/>
+  <name value="MeasureInfo"/>
+  <title value="Measure info"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

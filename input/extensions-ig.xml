@@ -297,7 +297,6 @@
       </code>
       <value value="true"/>
     </parameter>    
-    <!--
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -312,6 +311,5 @@
       </code>
       <value value="R4B"/>
     </parameter>    
-    -->
   </definition>
 </ImplementationGuide>

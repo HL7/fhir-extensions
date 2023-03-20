@@ -173,7 +173,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="Defines the types of relationships between actions."/>
+          <valueMarkdown value="Defines the types of relationships between actions."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ActionRelationshipType"/>

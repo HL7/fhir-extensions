@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/artifact-knowledgeRepresentationLevel"/>
   <version value="5.0.0"/>
-  <name value="knowledgeRepresentationLevel"/>
-  <title value="knowledge representation level"/>
+  <name value="KnowledgeRepresentationLevel"/>
+  <title value="Knowledge representation level"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>

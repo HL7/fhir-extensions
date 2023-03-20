@@ -70,7 +70,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="A set of codes advising a system or user which name in a set of names to select for a given purpose."/>
+          <valueMarkdown value="A set of codes advising a system or user which name in a set of names to select for a given purpose."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="EntityNameUse"/>

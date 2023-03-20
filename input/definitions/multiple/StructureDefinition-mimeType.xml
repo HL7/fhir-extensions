@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/mimeType"/>
   <version value="5.0.0"/>
-  <name value="mimeType"/>
-  <title value="mime type"/>
+  <name value="MimeType"/>
+  <title value="Mime type"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-04-27"/>
@@ -83,7 +83,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="The mime type of an attachment. Any valid mime type is allowed."/>
+          <valueMarkdown value="The mime type of an attachment. Any valid mime type is allowed."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MimeType"/>

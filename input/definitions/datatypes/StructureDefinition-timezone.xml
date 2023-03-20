@@ -82,7 +82,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="IANA Timezones (BCP 175)."/>
+          <valueMarkdown value="IANA Timezones (BCP 175)."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="IANATimezone"/>

@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation"/>
   <version value="5.0.0"/>
-  <name value="strengthOfRecommendation"/>
-  <title value="strength of recommendation"/>
+  <name value="StrengthOfRecommendation"/>
+  <title value="Strength of recommendation"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
@@ -65,7 +65,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="A rating system that describes the strength of the recommendation, such as the GRADE, DynaMed, or HGPS systems."/>
+          <valueMarkdown value="A rating system that describes the strength of the recommendation, such as the GRADE, DynaMed, or HGPS systems."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="StrengthOfRecommendationRating"/>

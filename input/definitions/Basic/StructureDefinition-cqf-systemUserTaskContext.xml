@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-systemUserTaskContext"/>
   <version value="5.0.0"/>
-  <name value="systemUserTaskContext"/>
-  <title value="system user task context"/>
+  <name value="SystemUserTaskContext"/>
+  <title value="System user task context"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

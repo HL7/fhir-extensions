@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-releaseDate"/>
   <version value="5.0.0"/>
-  <name value="releaseDate"/>
-  <title value="release date"/>
+  <name value="ReleaseDate"/>
+  <title value="Release date"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

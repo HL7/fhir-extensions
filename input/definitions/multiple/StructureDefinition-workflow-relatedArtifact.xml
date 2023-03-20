@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"/>
   <version value="5.0.0"/>
-  <name value="relatedArtifact"/>
-  <title value="related artifact"/>
+  <name value="RelatedArtifact"/>
+  <title value="Related artifact"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

@@ -79,7 +79,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="The type of artifact comment (documentation, review, guidance)."/>
+          <valueMarkdown value="The type of artifact comment (documentation, review, guidance)."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ArtifactCommentType"/>

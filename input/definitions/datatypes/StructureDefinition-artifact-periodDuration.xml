@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/artifact-periodDuration"/>
   <version value="5.0.0"/>
-  <name value="periodDuration"/>
-  <title value="period duration"/>
+  <name value="PeriodDuration"/>
+  <title value="Period duration"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>

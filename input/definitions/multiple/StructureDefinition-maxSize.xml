@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/maxSize"/>
   <version value="5.0.0"/>
-  <name value="maxSize"/>
-  <title value="max size"/>
+  <name value="MaxSize"/>
+  <title value="Max size"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-04-27"/>

@@ -17,8 +17,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"/>
   <version value="5.0.0"/>
-  <name value="relativeDateTime"/>
-  <title value="relative date time"/>
+  <name value="RelativeDateTime"/>
+  <title value="Relative date time"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
@@ -143,7 +143,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="A type that describes how two events are related in time."/>
+          <valueMarkdown value="A type that describes how two events are related in time."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ActionRelationshipType"/>

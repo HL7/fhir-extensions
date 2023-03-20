@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/request-performerOrder"/>
   <version value="5.0.0"/>
-  <name value="performerOrder"/>
-  <title value="performer order"/>
+  <name value="PerformerOrder"/>
+  <title value="Performer order"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

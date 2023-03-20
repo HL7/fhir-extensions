@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"/>
   <version value="5.0.0"/>
-  <name value="knowledgeRepresentationLevel"/>
-  <title value="knowledge representation level"/>
+  <name value="KnowledgeRepresentationLevel"/>
+  <title value="Knowledge representation level"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
@@ -65,7 +65,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="A level of knowledge representation provided by this artifact."/>
+          <valueMarkdown value="A level of knowledge representation provided by this artifact."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="KnowledgeRepresentationLevel"/>

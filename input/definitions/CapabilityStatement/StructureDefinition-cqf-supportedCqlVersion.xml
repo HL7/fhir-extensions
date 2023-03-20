@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-supportedCqlVersion"/>
   <version value="5.0.0"/>
-  <name value="supportedCqlVersion"/>
-  <title value="supported cql version"/>
+  <name value="SupportedCqlVersion"/>
+  <title value="Supported cql version"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

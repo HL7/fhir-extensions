@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/event-partOf"/>
   <version value="5.0.0"/>
-  <name value="partOf"/>
-  <title value="part of"/>
+  <name value="PartOf"/>
+  <title value="Part of"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

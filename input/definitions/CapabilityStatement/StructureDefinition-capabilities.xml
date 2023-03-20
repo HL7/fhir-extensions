@@ -65,7 +65,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="Codes that define what the server is capable of."/>
+          <valueMarkdown value="Codes that define what the server is capable of."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="SmartCapabilities"/>

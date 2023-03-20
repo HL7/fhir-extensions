@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/request-statusReason"/>
   <version value="5.0.0"/>
-  <name value="statusReason"/>
-  <title value="status reason"/>
+  <name value="StatusReason"/>
+  <title value="Status reason"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>
@@ -91,7 +91,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="Codes identifying the reason for the current state of an event."/>
+          <valueMarkdown value="Codes identifying the reason for the current state of an event."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="StatusReason"/>

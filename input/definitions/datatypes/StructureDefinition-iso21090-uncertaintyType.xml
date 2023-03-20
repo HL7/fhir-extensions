@@ -70,7 +70,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="Codes specifying the type of probability distribution."/>
+          <valueMarkdown value="Codes specifying the type of probability distribution."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProbabilityDistributionType"/>
