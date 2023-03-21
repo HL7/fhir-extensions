@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="text" encoding="UTF-8"/>
+	<!--
+    - noEx = no example tab
+    - noMap = no mapping tab
+    - isDoc = part of documents hierarchy
+    - isDt = part of datatype hierarchy
+    - isFt = part of foundation types hierarchy
+    - custom = custom page created for this, so not using generic resource/data type tab layout
+    -->
   <xsl:variable name="datatypes" as="element(datatypes)">
     <datatypes>
-      <datatype page="Resource" name="Base Resource Definitions" noEx="Y" noMap="Y"/>
+      <datatype page="Resource" name="Base Resource Definitions" noEx="Y" noMap="Y" custom="Y"/>
       <datatype page="DomainResource" name="DomainResource Resource" noEx="Y" noMap="Y"/>
       <datatype page="CanonicalResource" name="Resource CanonicalResource - Content" noEx="Y" noMap="Y"/>
       <datatype page="MetadataResource" name="Resource MetadataResource - Content" noEx="Y" noMap="Y"/>
-      <datatype page="datatypes" name="Datatypes" tab="Datatypes" isDt="Y"/>
+      <datatype page="datatypes" name="Datatypes" tab="Datatypes" isDt="Y" custom="Y"/>
       <datatype page="Dosage" name="Dosage" tab="Dosage Detail" isDt="Y"/>
       <datatype page="ElementDefinition" name="Element Definition" tab="ElementDefinition Detail" isDt="Y"/>
-      <datatype page="metadatatypes" name="MetaDatatypes" tab="Meta Datatypes" isDt="Y"/>
-      <datatype page="references" name="Resource References" tab="References" noEx="Y" noMap="Y" isDt="Y"/>
+      <datatype page="metadatatypes" name="MetaDatatypes" tab="Meta Datatypes" isDt="Y" custom="Y"/>
+      <datatype page="references" name="Resource References" tab="References" noEx="Y" noMap="Y" isDt="Y" custom="Y"/>
     </datatypes>
   </xsl:variable>
   <xsl:variable name="special" as="element(special)">
@@ -68,8 +76,8 @@
       <xsl:if test="@noMap='Y'">
         <xsl:text>","noMap":"Y</xsl:text>
       </xsl:if>
-      <xsl:if test="@noConv='Y'">
-        <xsl:text>","noConv":"Y</xsl:text>
+      <xsl:if test="@custom='Y'">
+        <xsl:text>","custom":"Y</xsl:text>
       </xsl:if>
       <xsl:if test="@inDoc='Y'">
         <xsl:text>","inDoc":"Y</xsl:text>
