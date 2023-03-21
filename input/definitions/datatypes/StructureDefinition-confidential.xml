@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="confidential"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="mnm"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/confidential"/>
+  <version value="5.0.0"/>
+  <name value="Confidential"/>
+  <title value="Confidential"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-03-20"/>
+  <publisher value="Health Level Seven International (Modeling and Methodology)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/mnm"/>
+    </telecom>
+  </contact>
+  <description value="Expresses the access policy associated with the element."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Address"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ContactPoint"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Confidential"/>
+      <definition value="Expresses the access policy or policies associated with the element."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/confidential"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+	    <code value="uri"/>
+	  </type>
+	  <type>
+        <code value="CodeableConcept"/>
+      </type>
+	  <binding>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="Uses of an address not included in Address.use."/>
+		</extension>
+		 <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="v3-Confidentiality"/>
+        </extension>
+        <strength value="example"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-Confidentiality"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
