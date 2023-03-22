@@ -13,7 +13,7 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/parameters-definition"/>
   <version value="5.0.0"/>
-  <name value="Parameters Definition"/>
+  <name value="ParametersDefinition"/>
   <title value="Parameters Definition for parameter"/>
   <status value="draft"/>
   <experimental value="false"/>

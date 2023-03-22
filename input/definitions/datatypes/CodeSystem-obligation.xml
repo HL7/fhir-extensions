@@ -134,7 +134,7 @@ many applications transfer resources as well&#10;
     <display value="ExchangerObligations"/>
     <definition value="Exchangers do not produce or consume resources; they only pass the resource on. They may store the resource in a persistent store between reception and subsequent transfer. The generic FHIR servers are exchangers, as are most middleware systems."/>
     <concept>
-      <code value="preserve"/>
+      <code value="unaltered"/>
       <display value="Conformant Applications SHALL/SHOULD/MAY ensure that this element does not change between receiving and transfer"/>
       <definition value="Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
       <property>
@@ -226,7 +226,7 @@ many applications transfer resources as well&#10;
       <concept>
         <code value="preserve"/>
         <display value="Conformant Applications SHALL/SHOULD/MAY keep the value of this element exactly"/>
-        <definition value="Notes: this is an expectation future references to the value, whether produced or consumed, will be to the exact same data. Alternative or truncated data is not allowed"/>
+        <definition value="Notes: this is an expectation that future references to the value, whether produced or consumed, will be to the exact same data. Alternative or truncated data is not allowed"/>
         <property>
           <code value="shall-should-may"/>
           <valueBoolean value="true"/>
@@ -235,7 +235,7 @@ many applications transfer resources as well&#10;
       <concept>
         <code value="modify"/>
         <display value="Conformant Applications SHALL/SHOULD/MAY keep the value of this element exactly"/>
-        <definition value="Notes: this is an expectation future references to the value, whether produced or consumed, will be to the exact same data. Alternative or truncated data is not allowed"/>
+        <definition value="Notes: this is an expectation that future references to the value, whether produced or consumed, will be to the exact same data. Alternative or truncated data is not allowed"/>
         <property>
           <code value="shall-should-may"/>
           <valueBoolean value="true"/>

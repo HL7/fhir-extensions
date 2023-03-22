@@ -47,7 +47,7 @@
   <copyright value="TBD"/>
   <compose>
     <include>
-      <system value="http://example.com"/>
+      <system value="http://example.org"/>
       <concept>
         <code value="1"/>
         <display value="STAT"/>

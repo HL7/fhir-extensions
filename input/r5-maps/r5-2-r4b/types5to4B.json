@@ -1,12 +1,13 @@
 {
   "resourceType" : "ConceptMap",
   "id" : "types5to4B",
-  "url" : "http://hl7.org/fhir/interversion/types5to4B",
+  "url" : "http://hl7.org/fhir/ConceptMap/types5to4B",
   "version" : "0.1",
   "name" : "Types5to4B", 
   "title" : "Type Mapping R54 to R4B",
   "description" : "Type Mapping R54 to R4B",
-  "status" : "active", 
+  "status" : "active",
+  "experimental" : false, 
   "date" : "2023-03-07", 
   "publisher" : "HL7", 
   "group" : [{

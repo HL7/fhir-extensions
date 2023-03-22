@@ -74,7 +74,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueString value="Codes that describe any obstacle that limits or prevents obtaining care."/>
+          <valueMarkdown value="Codes that describe any obstacle that limits or prevents obtaining care."/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Barrier"/>
