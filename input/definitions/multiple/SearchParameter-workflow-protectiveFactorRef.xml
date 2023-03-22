@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../input-cache/schemas/R5/fhir-single.xsd">
+	<id value="workflow-protectiveFactorRef"/>
+	<url value="http://hl7.org/fhir/SearchParameter/workflow-protectiveFactorRef"/>
+	<version value="5.0.0"/>
+	<name value="ProtectiveFactorRefSearchParameter"/>
+	<title value="Protective Factor Reference SearchParameter"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<description value="SearchParameter for Protective Factor Extension with Reference data type"/>
+	<code value="workflow-protectiveFactorRef"/>
+	<base value="CarePlan"/>
+	<base value="CommunicationRequest"/>
+	<base value="Goal"/>
+	<type value="reference"/>
+	<expression value="CarePlan.activity.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.reference |
+                     CommunicationRequest.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.reference |
+                     Goal.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.reference"/>
+	<processingMode value="normal"/>
+</SearchParameter>
