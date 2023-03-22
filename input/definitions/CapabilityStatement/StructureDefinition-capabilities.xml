@@ -71,7 +71,7 @@
           <valueString value="SmartCapabilities"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/smart-capabilities|0.1.0"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/smart-capabilities"/>
       </binding>
     </element>
   </differential>

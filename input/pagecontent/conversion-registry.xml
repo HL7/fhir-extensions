@@ -1417,7 +1417,7 @@ Contributions to continue development of the maps further are welcome as pull re
 <h3>About the transforms</h3>
 
 <p>
-The transforms are published in the <a href="{{{{site.data.fhir.path}}}}packages.html">NPM package</a> <code>hl7.fhir.uv.extension</code>.
+The transforms are published in the <a href="{{site.data.fhir.path}}packages.html">NPM package</a> <code>hl7.fhir.uv.extension</code>.
 The java validator can check the transforms for correctness. To do this:
 </p>
 <pre>

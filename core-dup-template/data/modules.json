@@ -26,9 +26,9 @@
     },
     "Clinical": {
       "image": "clinical.png",
-      "url": "clinical-module.html"
+      "url": "clinicalsummary-module.html"
     },
-    "Diagnostics": {
+    "Diagnostic Medicine": {
       "image": "diagnostics.jpg",
       "url": "diagnostics-module.html"
     },
