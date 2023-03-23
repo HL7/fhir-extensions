@@ -11,15 +11,17 @@
     -->
   <xsl:variable name="datatypes" as="element(datatypes)">
     <datatypes>
-      <datatype page="Resource" name="Base Resource Definitions" noEx="Y" noMap="Y" custom="Y"/>
+      <datatype page="resource" name="Base Resource Definitions" noEx="Y" noMap="Y" custom="Y"/>
       <datatype page="DomainResource" name="DomainResource Resource" noEx="Y" noMap="Y"/>
       <datatype page="CanonicalResource" name="Resource CanonicalResource - Content" noEx="Y" noMap="Y"/>
       <datatype page="MetadataResource" name="Resource MetadataResource - Content" noEx="Y" noMap="Y"/>
       <datatype page="Dosage" name="Dosage" tab="Dosage Detail" isDt="Y"/>
+      <datatype page="Extension" name="Extensibility" tab="Extensibility" isDt="Y" noEx="Y"/>
       <datatype page="ElementDefinition" name="Element Definition" tab="ElementDefinition Detail" isDt="Y"/>
       <datatype page="MarketingStatus" name="MarketingStatus" tab="MarketingStatus Detail" isDt="Y"/>
       <datatype page="ProductShelfLife" name="ProductShelfLife" tab="ProductShelfLife Detail" isDt="Y"/>
       <datatype page="datatypes" name="Datatypes" tab="Datatypes" isDt="Y" custom="Y"/>
+      <datatype page="types" name="FHIR Type Framework" tab="Type Framework" isDt="Y" custom="Y"/>
       <datatype page="metadatatypes" name="MetaDatatypes" tab="Meta Datatypes" isDt="Y" custom="Y"/>
       <datatype page="references" name="Resource References" tab="References" noEx="Y" noMap="Y" isDt="Y" custom="Y"/>
     </datatypes>

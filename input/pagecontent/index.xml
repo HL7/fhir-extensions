@@ -12,4 +12,29 @@
 	<ul>
     <li><a href="search-params.html">Extensions Search Registry</a></li>
   </ul>
+  
+  <a name="igs"> </a>
+  <h3>Dependencies</h3>
+  <p>
+    This IG depends on the following additional IGs:
+  </p>
+  
+  {%include dependency-table-short.xhtml %}
+  
+  {%include globals-table.xhtml %}
+
+	<a name="ip"> </a>
+	<h3>Intellectual Property Considerations</h3>
+	<p>
+    This implementation guide and the underlying FHIR specification are licensed as public domain under the <a href="{{site.data.fhir.path}}license.html#license">FHIR license</a>.  The
+    license page also describes rules for the use of the FHIR name and logo.
+  </p>
+  <p>    
+    This guide includes extensions making use of terminologies such
+    as LOINC and SNOMED CT that have more restrictive licensing requirements.  Implementers should make themselves familiar with licensing and
+    any other constraints of terminologies used as part of their implementation process.  In some cases,
+    licensing requirements may limit the systems that data captured using certain codes may be shared with.
+  </p>
+  {% include ip-statements.xhtml %}
+  
 </div>

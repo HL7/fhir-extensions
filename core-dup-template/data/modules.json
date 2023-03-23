@@ -77,7 +77,16 @@
       "isDt": "Y",
       "tab": "References"
     },
-    "Resource": {
+    "Extension": {
+      "module": "Foundation",
+      "section": "2.1.5.4",
+      "section2": "2.1.5.5",
+      "noEx": "Y",
+      "inDoc": "Y",
+      "isDt": "Y",
+      "tab": "Extensibility"
+    },
+    "resource": {
       "module": "Foundation",
       "section": "2.1.27.5.13",
       "section2": "2.1.27.5.14",
@@ -131,7 +140,7 @@
       "isDt": "Y",
       "tab": "ElementDefinition Detail"
     },
-    "datatypes": {
+    "types": {
       "module": "Foundation",
       "section": "2.1.28.8",
       "section2": "2.1.28.9",

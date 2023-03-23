@@ -36,7 +36,7 @@
       <value value="http://hl7.org/fhir"/>
     </telecom>
   </contact>
-  <description value=" This example value set defines a set of codes that can be used to indicate the priority of collection of a specimen."/>
+  <description value="This example value set defines a set of codes that can be used to indicate the priority of collection of a specimen."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -44,38 +44,10 @@
       <display value="World"/>
     </coding>
   </jurisdiction>
-  <copyright value="TBD"/>
+  <copyright value="Copyright HL7. Licensed under creative commons public domain"/>
   <compose>
     <include>
-      <system value="http://example.org"/>
-      <concept>
-        <code value="1"/>
-        <display value="STAT"/>
-      </concept>
-      <concept>
-        <code value="2"/>
-        <display value="ASAP"/>
-      </concept>
-      <concept>
-        <code value="3"/>
-        <display value="ASAP-ED"/>
-      </concept>
-      <concept>
-        <code value="4"/>
-        <display value="AM"/>
-      </concept>
-      <concept>
-        <code value="5"/>
-        <display value="ROUTINE"/>
-      </concept>
-      <concept>
-        <code value="6"/>
-        <display value="NURSE COLLECT"/>
-      </concept>
-      <concept>
-        <code value="7"/>
-        <display value="CALL OR FAX"/>
-      </concept>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0027"/>
     </include>
   </compose>
 </ValueSet>
