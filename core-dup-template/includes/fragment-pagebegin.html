@@ -127,7 +127,6 @@
 		</div>  <!-- /container -->
 	</div>  <!-- /segment-navbar -->
 	
-
 	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
 		<div class="container">  <!-- container -->	
 			<ul class="breadcrumb">
@@ -145,7 +144,11 @@
           <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li>
           <li><b>Extensions</b></li>
         {% elsif prefix12=="conversions-" %}
-          <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li>
+          {%if resourceName=="Extension" %}
+            <li><a no-external="true" href="{{site.data.fhir.path}}extensibility.html">Extensibility</a></li>
+          {% else %}
+            <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li>
+          {% endif %}
           <li><b>Conversions</b></li>
         {% else %}
           <li><b>{{resourceName}}</b></a></li>

@@ -16,7 +16,7 @@
       <datatype page="CanonicalResource" name="Resource CanonicalResource - Content" noEx="Y" noMap="Y"/>
       <datatype page="MetadataResource" name="Resource MetadataResource - Content" noEx="Y" noMap="Y"/>
       <datatype page="Dosage" name="Dosage" tab="Dosage Detail" isDt="Y"/>
-      <datatype page="Extensions" name="Extensibility" tab="Extensibility" isDt="Y" noEx="Y"/>
+      <datatype page="Extension" name="Extensibility" tab="Extensibility" link="extensibility" isDt="Y" noEx="Y"/>
       <datatype page="ElementDefinition" name="Element Definition" tab="ElementDefinition Detail" isDt="Y"/>
       <datatype page="MarketingStatus" name="MarketingStatus" tab="MarketingStatus Detail" isDt="Y"/>
       <datatype page="ProductShelfLife" name="ProductShelfLife" tab="ProductShelfLife Detail" isDt="Y"/>
@@ -74,6 +74,9 @@
           <xsl:value-of select="concat(@section, '&quot;,&quot;section2&quot;:&quot;', @section2)"/>
         </xsl:otherwise>
       </xsl:choose>
+      <xsl:if test="@link!=''">
+        <xsl:value-of select="concat('&quot;,&quot;link&quot;:&quot;', @link)"/>
+      </xsl:if>
       <xsl:if test="@noEx='Y'">
         <xsl:text>","noEx":"Y</xsl:text>
       </xsl:if>
