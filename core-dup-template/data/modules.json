@@ -140,6 +140,15 @@
       "isDt": "Y",
       "tab": "Datatypes"
     },
+    "types": {
+      "module": "Foundation",
+      "section": "2.1.28.8",
+      "section2": "2.1.28.9",
+      "custom": "Y",
+      "inDoc": "Y",
+      "isDt": "Y",
+      "tab": "Datatypes"
+    },
     "Basic": {
       "module": "Foundation",
       "section": "2.2.26",

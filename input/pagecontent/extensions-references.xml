@@ -15,7 +15,7 @@
 <h3>CodeableReference</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
 <p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
-<!--xlp:CodeableReference-->See also <a no-external="true" href="{{site.data.fhir.path}}references.html#CodeableReference">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}references-definitions.html#CodeableReference">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}references-profiles.html#CodeableReference">Profiles</a>, <a no-external="true" href="extensions-references.html#CodeableReference">Extensions</a> and <a no-external="true" href="conversions-references.html#CodeableReference">R4 Conversions</a>
+<!--xlp:CodeableReference-->See also <a no-external="true" href="{{site.data.fhir.path}}references.html#CodeableReference">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}references-definitions.html#CodeableReference">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}references-profiles.html#CodeableReference">Profiles</a> and <a no-external="true" href="conversions-references.html#CodeableReference">R4 Conversions</a>
 </p>
 
 {% include extension-list-CodeableReference.xhtml %}

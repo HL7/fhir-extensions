@@ -9006,7 +9006,7 @@
     }
   },
   "Availability" : {
-    "link" : "conversions-datatypes.html#conv-Availability",
+    "link" : "conversions-metadatatypes.html#conv-Availability",
     "r4" : {
       "status" : "No Maps Defined",
       "testColor" : "#dddddd",
@@ -9032,7 +9032,7 @@
     }
   },
   "Dosage" : {
-    "link" : "conversions-datatypes.html#conv-Dosage",
+    "link" : "conversions-Dosage.html#conv-Dosage-Source",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -9045,7 +9045,7 @@
     }
   },
   "Meta" : {
-    "link" : "conversions-datatypes.html#conv-Meta",
+    "link" : "conversions-resource.html#conv-Meta",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -9058,7 +9058,7 @@
     }
   },
   "ProductShelfLife" : {
-    "link" : "conversions-ProductShelfLife.html#conv-ProductShelfLife",
+    "link" : "conversions-ProductShelfLife.html#conv-ProductShelfLife-Source",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -9071,7 +9071,7 @@
     }
   },
   "ElementDefinition" : {
-    "link" : "conversions-ElementDefinition.html#conv-ElementDefinition",
+    "link" : "conversions-ElementDefinition.html#conv-ElementDefinition-Source",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
@@ -9084,7 +9084,7 @@
     }
   },
   "MarketingStatus" : {
-    "link" : "conversions-MarketingStatus.html#conv-MarketingStatus",
+    "link" : "conversions-MarketingStatus.html#conv-MarketingStatus-Source",
     "r4" : {
       "status" : "2 Maps Defined",
       "testColor" : "#eeeeee",
