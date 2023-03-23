@@ -5,7 +5,7 @@
 <h3>Resource</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
 <p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
-<!--xlp:Resource-->See also <a no-external="true" href="{{site.data.fhir.path}}resource.html#Resource">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}resource-definition.html#Resource">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}resource-profiles.html#Resource">Profiles</a>, <a no-external="true" href="extensions-resource.html#Resource">Extensions</a> and <a no-external="true" href="conversions-resource.html#Resource">R4 Conversions</a>
+<!--xlp:Resource-->See also <a no-external="true" href="{{site.data.fhir.path}}resource.html#Resource">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}resource-definitions.html#Resource">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}resource-profiles.html#Resource">Profiles</a>, <a no-external="true" href="extensions-resource.html#Resource">Extensions</a> and <a no-external="true" href="conversions-resource.html#Resource">R4 Conversions</a>
 </p>
 
 {% include extension-list-Resource.xhtml %}
