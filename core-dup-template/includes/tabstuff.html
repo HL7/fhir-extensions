@@ -4,35 +4,52 @@
 {% endunless %}
 
 <ul class="nav nav-tabs">
-  <li><a href="{{ site.data.fhir.path }}{{ltype}}.html">
-    {% if site.data.modules.resources[resourceName].tab %}
-      {{site.data.modules.resources[resourceName].tab}}
+  {% if resourceName=="Extension" or resourceName=="extension-registry" %}
+    <li><a href="{{site.data.fhir.path}}extensibility.html">Extensibility</a></li>
+    <li><a href="{{site.data.fhir.path}}defining-extensions.html">Defining Extensions</a></li>
+    <li><a href="{{site.data.fhir.path}}extensibility-examples.html">Examples</a></li>
+    <li><a href="{{site.data.fhir.path}}extensibility-definitions.html">Detailed Descriptions</a></li>
+    {% if resourceName="extension-registry" %}
+      <li class="active"><a href="#">Registry</a></li>
     {% else %}
-      Content
+      <li><a href="extension-registry.html">Registry</a></li>
     {% endif %}
-  </a></li>
-  {% if site.data.modules.resources[resourceName].noEx!="Y" %}
-    <li><a href="{{ site.data.fhir.path }}{{ltype}}-examples.html">Examples</a></li>
-  {% endif %}
-  <li><a href="{{ site.data.fhir.path }}{{ltype}}-definitions.html">Detailed Descriptions</a></li>
-  {% if site.data.modules.resources[resourceName].noMap!="Y" %}
-    <li><a href="{{ site.data.fhir.path }}{{ltype}}-mappings.html">Mappings</a></li>
-  {% endif %}
-  {% if site.data.modules.resources[resourceName].isDt!="Y" %}
-    <li><a href="{{ site.data.fhir.path }}{{ltype}}-operations.html">Operations</a></li>
-    <li><a href="{{ site.data.fhir.path }}{{ltype}}-search.html">Search Params</a></li>
-  {% endif %}
-  <li><a href="{{ site.data.fhir.path }}{{ltype}}-profiles.html">Profiles</a></li>
-  {% if prefix11=="extensions-" %}
-    <li class="active"><a href="#">Extensions</a></li>
-  {% else %}
-    <li><a href="extensions-{{type}}.html">Extensions</a></li>
-  {% endif %}
-  {% if site.data.modules.resources[resourceName].noConv!="Y" %}
-    {% if prefix12=="conversions-" %}
-      <li class="active"><a href="#">R4 Conversions</a></li>
+    {% if resourceName="Extension" %}
+      <li class="active"><a href="#">R4 Conversions</a></li>    
     {% else %}
-      <li><a href="conversions-{{type}}.html">R4 Conversions</a></li>
+      <li><a href="conversions-Extension.html">R4 Conversions</a></li>    
+    {% endif %}
+  {% else %}
+    <li><a href="{{ site.data.fhir.path }}{{ltype}}.html">
+      {% if site.data.modules.resources[resourceName].tab %}
+        {{site.data.modules.resources[resourceName].tab}}
+      {% else %}
+        Content
+      {% endif %}
+    </a></li>
+    {% if site.data.modules.resources[resourceName].noEx!="Y" %}
+      <li><a href="{{ site.data.fhir.path }}{{ltype}}-examples.html">Examples</a></li>
+    {% endif %}
+    <li><a href="{{ site.data.fhir.path }}{{ltype}}-definitions.html">Detailed Descriptions</a></li>
+    {% if site.data.modules.resources[resourceName].noMap!="Y" %}
+      <li><a href="{{ site.data.fhir.path }}{{ltype}}-mappings.html">Mappings</a></li>
+    {% endif %}
+    {% if site.data.modules.resources[resourceName].isDt!="Y" %}
+      <li><a href="{{ site.data.fhir.path }}{{ltype}}-operations.html">Operations</a></li>
+      <li><a href="{{ site.data.fhir.path }}{{ltype}}-search.html">Search Params</a></li>
+    {% endif %}
+    <li><a href="{{ site.data.fhir.path }}{{ltype}}-profiles.html">Profiles</a></li>
+    {% if prefix11=="extensions-" %}
+      <li class="active"><a href="#">Extensions</a></li>
+    {% else %}
+      <li><a href="extensions-{{type}}.html">Extensions</a></li>
+    {% endif %}
+    {% if site.data.modules.resources[resourceName].noConv!="Y" %}
+      {% if prefix12=="conversions-" %}
+        <li class="active"><a href="#">R4 Conversions</a></li>
+      {% else %}
+        <li><a href="conversions-{{type}}.html">R4 Conversions</a></li>
+      {% endif %}
     {% endif %}
   {% endif %}
 </ul>

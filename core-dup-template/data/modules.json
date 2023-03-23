@@ -936,6 +936,20 @@
       "module": "Medication Definition",
       "section": "15.14.13",
       "section2": "15.14.14"
+    },
+    "MarketingStatus": {
+      "module": "Medication Definition",
+      "section": "15.15.5",
+      "section2": "15.15.6",
+      "isDt": "Y",
+      "tab": "MarketingStatus Detail"
+    },
+    "ProductShelfLife": {
+      "module": "Medication Definition",
+      "section": "15.16.5",
+      "section2": "15.16.6",
+      "isDt": "Y",
+      "tab": "ProductShelfLife Detail"
     }
   }
 }

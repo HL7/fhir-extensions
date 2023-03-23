@@ -1,6 +1,6 @@
 {
   "item-factory" : "manual",
-  "items" : ["Dosage", "ProductShelfLife", "ElementDefinition", "Reference", "MarketingStatus", "Meta"],
+  "items" : ["Dosage", "ProductShelfLife", "ElementDefinition", "MarketingStatus"],
   "source-file" : "input/extension-type-template.xml",
   "variables" : [{
     "name" : "%type%",

@@ -151,6 +151,12 @@
           <title value="R4/R5 Conversion for Resource"/>
           <generation value="html"/>
         </page>
+        <page>
+          <sourceUrl value="history.xml"/>
+          <name value="history.html"/>
+          <title value="IG Version History"/>
+          <generation value="html"/>
+        </page>
       </page>
     </page>
     <!-- copyright year is a mandatory parameter -->
