@@ -16,7 +16,7 @@
       <datatype page="CanonicalResource" name="Resource CanonicalResource - Content" noEx="Y" noMap="Y"/>
       <datatype page="MetadataResource" name="Resource MetadataResource - Content" noEx="Y" noMap="Y"/>
       <datatype page="Dosage" name="Dosage" tab="Dosage Detail" isDt="Y"/>
-      <datatype page="Extension" name="Extensibility" tab="Extensibility" isDt="Y" noEx="Y"/>
+      <datatype page="Extensions" name="Extensibility" tab="Extensibility" isDt="Y" noEx="Y"/>
       <datatype page="ElementDefinition" name="Element Definition" tab="ElementDefinition Detail" isDt="Y"/>
       <datatype page="MarketingStatus" name="MarketingStatus" tab="MarketingStatus Detail" isDt="Y"/>
       <datatype page="ProductShelfLife" name="ProductShelfLife" tab="ProductShelfLife Detail" isDt="Y"/>
