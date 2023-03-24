@@ -74,10 +74,6 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="DocumentManifest"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="EpisodeOfCare"/>
   </context>
   <context>
