@@ -90,7 +90,7 @@ group ObservationDefinition(source src : ObservationDefinitionR4B, target tgt : 
 //  src.specimen -> tgt.specimen;
 //  src.device -> tgt.device;
   src.preferredReportName -> tgt.preferredReportName;
-  src.quantitativeDetails as s -> tgt.quantitativeDetails as t then ObservationDefinitionQuantitativeDetails(s,t);
+  src.quantitativeDetails as s -> tgt then ObservationDefinitionQuantitativeDetails(s,tgt);
   src.qualifiedInterval as s -> tgt.qualifiedValue as t then ObservationDefinitionQualifiedValue(s,t);
   src.validCodedValueSet as s -> tgt.qualifiedValue as t, t.validCodedValueSet = s;
   src.normalCodedValueSet as s -> tgt.qualifiedValue as t, t.normalCodedValueSet = s;
@@ -101,10 +101,14 @@ group ObservationDefinition(source src : ObservationDefinitionR4B, target tgt : 
 }
 
 group ObservationDefinitionQuantitativeDetails(source src, target tgt) extends BackboneElement {
-  src.unit -> tgt.unit;
-  src.customaryUnit -> tgt.customaryUnit;
-  src.conversionFactor -> tgt.conversionFactor;
-  src.decimalPrecision -> tgt.decimalPrecision;
+  src.customaryUnit as s -> tgt then {
+    s.coding -> tgt.permittedUnit;
+  };
+  src.unit as s -> tgt then {
+    s.coding -> tgt.permittedUnit;
+  };
+//  src.conversionFactor -> tgt.conversionFactor;
+//  src.decimalPrecision -> tgt.decimalPrecision;
 }
 
 group ObservationDefinitionQualifiedValue(source src, target tgt) extends BackboneElement {

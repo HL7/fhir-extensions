@@ -35,7 +35,7 @@ conceptmap "DeviceMetricCategory" {
 }
 
 conceptmap "DeviceMetricColor" {
-  prefix s = "http://hl7.org/fhir/metric-color"
+  prefix s = "http://hl7.org/fhir/color-names"
   prefix t = "http://hl7.org/fhir/4.0/metric-color"
 
   s:"black" - t:"black"

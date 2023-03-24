@@ -10,6 +10,7 @@ conceptmap "DiagnosticReportStatus" {
 
   s:"registered" - t:"registered"
   s:"partial" - t:"partial"
+  s:"modified" - t:"partial"
   s:"preliminary" - t:"preliminary"
   s:"final" - t:"final"
   s:"amended" - t:"amended"

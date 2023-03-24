@@ -51,6 +51,7 @@ conceptmap "IssueType" {
   s:"throttled" - t:"throttled"
   s:"informational" - t:"informational"
 //  s:"success" - t:"success"
+//  s:" limited-filter" - t:" limited-filter"
 }
 
 uses "http://hl7.org/fhir/StructureDefinition/OperationOutcome" alias OperationOutcomeR5 as source
