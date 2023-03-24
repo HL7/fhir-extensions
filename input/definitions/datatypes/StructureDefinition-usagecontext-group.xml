@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/usagecontext-group"/>
   <version value="5.0.0"/>
-  <name value="Group"/>
-  <title value="Group"/>
+  <name value="UsageContextGroup"/>
+  <title value="UsageContext Group"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2023-01-31T07:07:38+11:00"/>

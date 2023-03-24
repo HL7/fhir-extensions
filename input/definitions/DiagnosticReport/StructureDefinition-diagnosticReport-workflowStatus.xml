@@ -14,7 +14,7 @@
   <url value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-workflowStatus"/>
   
   <version value="5.0.0"/>
-  <name value="DRworkflowStatus"/>
+  <name value="DRWorkflowStatus"/>
   <title value="DiagnosticReport Workflow Status"/>
   <status value="draft"/>
   <experimental value="false"/>

@@ -17,8 +17,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1489"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="OOIssueSource"/>
-  <title value="OperationOutcome Source of Issue"/>
+  <name value="OOIssueMessageId"/>
+  <title value="OperationOutcome Message ID"/>
   <status value="draft"/>
   <date value="2014-01-31"/>
   <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
