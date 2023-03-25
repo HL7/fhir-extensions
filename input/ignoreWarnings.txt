@@ -2,7 +2,9 @@
 
 # We expect several extensions that aren't in shareablevalueset.  So long as the extensions are valid in their location and defined, we're ok
 # (and the validator should catch that)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablecodesystem|5.0.0-draft-final
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablecodesystem|5.0.0
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0-draft-final
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0
 
 # can't validate for some value sets
