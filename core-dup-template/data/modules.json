@@ -81,7 +81,7 @@
       "module": "Foundation",
       "section": "2.1.4.2",
       "section2": "2.1.4.3",
-      "noEx": "Y",
+      "noExt": "Y",
       "noMap": "Y",
       "noProfile": "Y",
       "inDoc": "Y",
@@ -201,8 +201,8 @@
     },
     "Composition": {
       "module": "Foundation",
-      "section": "2.8.39",
-      "section2": "2.8.40"
+      "section": "2.8.40",
+      "section2": "2.8.41"
     },
     "OperationOutcome": {
       "module": "Foundation",
@@ -331,8 +331,8 @@
     },
     "TestPlan": {
       "module": "Implementation Support",
-      "section": "7.3.17",
-      "section2": "7.3.18"
+      "section": "7.3.18",
+      "section2": "7.3.19"
     },
     "TestScript": {
       "module": "Implementation Support",
@@ -341,8 +341,8 @@
     },
     "TestReport": {
       "module": "Implementation Support",
-      "section": "7.5.23",
-      "section2": "7.5.24"
+      "section": "7.5.24",
+      "section2": "7.5.25"
     },
     "StructureMap": {
       "module": "Implementation Support",
@@ -494,6 +494,11 @@
       "section": "8.29.22",
       "section2": "8.29.23"
     },
+    "SpecimenDefinition": {
+      "module": "Administration",
+      "section": "8.30.24",
+      "section2": "8.30.25"
+    },
     "NutritionProduct": {
       "module": "Administration",
       "section": "8.32.20",
@@ -614,15 +619,10 @@
       "section": "10.8.30",
       "section2": "10.8.31"
     },
-    "SpecimenDefinition": {
-      "module": "Diagnostic Medicine",
-      "section": "10.9.24",
-      "section2": "10.9.25"
-    },
     "BodyStructure": {
       "module": "Diagnostic Medicine",
-      "section": "10.10.20",
-      "section2": "10.10.21"
+      "section": "10.9.20",
+      "section2": "10.9.21"
     },
     "MedicationRequest": {
       "module": "Medications",
@@ -843,8 +843,8 @@
     },
     "ArtifactAssessment": {
       "module": "Clinical Reasoning",
-      "section": "14.8.18",
-      "section2": "14.8.19"
+      "section": "14.8.19",
+      "section2": "14.8.20"
     },
     "ConditionDefinition": {
       "module": "Clinical Reasoning",

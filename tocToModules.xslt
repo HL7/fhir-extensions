@@ -3,6 +3,7 @@
 	<xsl:output method="text" encoding="UTF-8"/>
 	<!--
     - noEx = no example tab
+    - noExt = no extensions tab
     - noMap = no mapping tab
     - noProfile = no profile tab
     - isDoc = part of documents hierarchy
@@ -18,7 +19,7 @@
       <datatype page="MetadataResource" name="Resource MetadataResource - Content" noEx="Y" noMap="Y"/>
       <datatype page="Dosage" name="Dosage" tab="Dosage Detail" isDt="Y"/>
       <datatype page="Extension" name="Extensibility" tab="Extensibility" isDt="Y" noEx="Y"/>
-      <datatype page="Narrative" name="Narrative" tab="Narrative" noMap="Y" noEx="Y" noProfile="Y" isDt="Y"/>
+      <datatype page="Narrative" name="Narrative" tab="Narrative" noMap="Y" noExt="Y" noProfile="Y" isDt="Y"/>
       <datatype page="ElementDefinition" name="Element Definition" tab="ElementDefinition Detail" isDt="Y"/>
       <datatype page="MarketingStatus" name="MarketingStatus" tab="MarketingStatus Detail" isDt="Y"/>
       <datatype page="ProductShelfLife" name="ProductShelfLife" tab="ProductShelfLife Detail" isDt="Y"/>
@@ -78,6 +79,9 @@
       </xsl:choose>
       <xsl:if test="@noEx='Y'">
         <xsl:text>","noEx":"Y</xsl:text>
+      </xsl:if>
+      <xsl:if test="@noExt='Y'">
+        <xsl:text>","noExt":"Y</xsl:text>
       </xsl:if>
       <xsl:if test="@noMap='Y'">
         <xsl:text>","noMap":"Y</xsl:text>
