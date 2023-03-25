@@ -4296,19 +4296,16 @@
     },
     "r4b" : {
       "status" : "2 Maps Defined",
-      "testColor" : "#ffcccc",
-      "testMessage" : "Error: Cannot invoke \"org.hl7.fhir.r5.model.DataType.isPrimitive()\" because the return value of \"org.hl7.fhir.r5.model.Extension.getValue()\" is null",
+      "testColor" : "#d4ffdf",
+      "testMessage" : "All OK (~2% lost in 651 examples)",
       "totalInstances" : 651,
       "parsedOk" : 651,
       "convertToR5OK" : 651,
-      "r5validated" : 650,
-      "r5InError" : 649,
-      "convertToR4OK" : 650,
-      "elementsConverted" : 538179,
-      "elementsLost" : 2,
-      "example-composition" : {
-        "validation-error" : "Cannot invoke \"org.hl7.fhir.r5.model.DataType.isPrimitive()\" because the return value of \"org.hl7.fhir.r5.model.Extension.getValue()\" is null"
-      }
+      "r5validated" : 651,
+      "r5InError" : 650,
+      "convertToR4OK" : 651,
+      "elementsConverted" : 538239,
+      "elementsLost" : 2
     }
   },
   "StructureMap" : {
