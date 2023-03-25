@@ -9,7 +9,7 @@
   </extension>
   <url value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="FHIRExtensionPack"/>
   <title value="FHIR Extensions Pack"/>
   <status value="active"/>
