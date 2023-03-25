@@ -6,6 +6,12 @@
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
   <url value="http://hl7.org/fhir/CodeSystem/artifact-comment-type"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -14,7 +20,7 @@
   <version value="5.0.0"/>
   <name value="ArtifactCommentType"/>
   <title value="Artifact comment type"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-03-14T23:21:03-06:00"/>
   <publisher value="Clinical Quality Information Workgroup"/>

@@ -9,6 +9,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
   <url value="http://hl7.org/fhir/language-preference-type"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -18,7 +24,7 @@
   <name value="LanguagePreferenceType"/>
   <title value="language preference type"/>
   <status value="active"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <description value="This code system defines a defines the set of codes for describing the type or mode of the patient's preferred language."/>
   <jurisdiction>
     <coding>

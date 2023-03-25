@@ -2,12 +2,18 @@
 
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="patient-extensions-Patient-birthOrderBoolean"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
   <url value="http://hl7.org/fhir/SearchParameter/patient-extensions-Patient-birthOrderBoolean"/>
   <version value="5.0.0"/>
   <name value="BirthOrderBoolean"/>
   <title value="birth Order Boolean"/>
-  <status value="draft"/>
-  <experimental value="true"/>
+  <status value="active"/>
+  <experimental value="false"/>
   <description value="Search based on whether a patient was part of a multiple birth or not."/>
   <code value="birthOrderBoolean"/>
   <base value="Patient"/>

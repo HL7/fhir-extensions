@@ -8,6 +8,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
   <url value="http://hl7.org/fhir/concept-map-equivalence"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -16,7 +22,7 @@
   <version value="5.0.0"/>
   <name value="ConceptMapEquivalence"/>
   <title value="ConceptMapEquivalence"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2023-01-31T07:07:38+11:00"/>
   <description value="The degree of equivalence between concepts."/>
@@ -28,8 +34,8 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <hierarchyMeaning value="is-a"/>
   <valueSet value="http://hl7.org/fhir/ValueSet/concept-map-equivalence"/>
+  <hierarchyMeaning value="is-a"/>
   <content value="complete"/>
   <concept>
     <code value="relatedto"/>

@@ -6,7 +6,7 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -22,7 +22,6 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2021-03-23"/>
-  <purpose value="Allows Questionnaires to be defined using definitions and to be safely distinguished from other Questionnaires."/>
   <publisher value="HL7"/>
   <contact>
     <telecom>
@@ -31,6 +30,7 @@
     </telecom>
   </contact>
   <description value="If true, indicates that the Questionnaire relies on metadata from the ElementDefinitions referenced by item.definition and that rendering or validating the Questionnaire is likely to be unsafe if the system isn't capable of resolving the definition and using the metadata found there."/>
+  <purpose value="Allows Questionnaires to be defined using definitions and to be safely distinguished from other Questionnaires."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

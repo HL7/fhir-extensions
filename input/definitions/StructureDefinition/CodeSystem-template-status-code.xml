@@ -9,6 +9,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
   <url value="http://hl7.org/fhir/template-status-code"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -17,8 +23,8 @@
   <version value="5.0.0-cibuild"/>
   <name value="TemplateStatusCode"/>
   <title value="template status code"/>
-  <status value="active"/>
-  <experimental value="true"/>
+  <status value="draft"/>
+  <experimental value="false"/>
   <description value="TemplateStatusCode"/>
   <jurisdiction>
     <coding>
@@ -29,7 +35,6 @@
   </jurisdiction>
   <caseSensitive value="true"/>
   <content value="complete"/>
-
   <concept>
     <code value="draft"/>
     <display value="Draft"/>
@@ -70,5 +75,4 @@
     <display value="Terminated"/>
     <definition value="A design is determined to be erroneous or not fit for the intended purpose and should no longer be used, even for historical purposes. No new designs can be developed for this template. The associated template no longer needs to be published, but if published, is shown in the terminated state."/>
   </concept>
-
 </CodeSystem>

@@ -9,7 +9,7 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse"/>
   <identifier>
@@ -20,7 +20,7 @@
   <name value="PatSexParameterForClinicalUse"/>
   <title value="Patient Sex Parameter For Clinical Use"/>
   <status value="draft"/>
-  <experimental value="false"/>
+  <experimental value="true"/>
   <date value="2022-01-24T16:55:11+11:00"/>
   <publisher value="HL7"/>
   <description value="A Sex Parameter for Clinical Use is a parameter that provides guidance on how a recipient should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc..  This property is intended for use in clinical decision making, and indicates that treatment or diagnostic tests should consider best practices associated with the relevant reference population.  When exchanging these concepts, refer to the guidance in the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/)."/>

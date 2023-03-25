@@ -3,25 +3,63 @@
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
-    This IG defines the extensions used internally by the FHIR tools.
-    These extensions should never appear in implementations unless they
-    are concerned with code generation from the FHIR packages.
+    This IG defines the extensions that are globally defined and available in 
+    all FHIR implementation contexts. Prior to <a href="http://hl7.org/fhir/R5">R5</a>
+    these extensions were defined in the  core specification, but starting from R5
+    they have been moved out of the specification into a separate extensions pack
+    so that the extensions can be updated more often than the base specification.
+    This extension pack also defines some search parameters for the extensions.
+  </p>
+  <p>
+    In addition, the extension pack also contains a series of <a href="{{site.data.fhir.path}}mapping-language.html">mapping language</a>
+    scripts that provide a formal executable definition of the relationship between 
+    R5 and the prior versions R4 and R4B. These are located in the extension pack to allow 
+    them to also be updated as they are tested and used in production and improvements are made.
   </p>
 	<a name="topics"> </a>
-	<h3>Additional Documentation</h3>
+	<h3>Content Registries</h3>
 	<ul>
-    <li><a href="search-params.html">Extensions Search Registry</a></li>
+    <li><a href="extension-registry.html">Extension Registry</a></li>
+    <li><a href="search-params.html">Search Parameters for the Extensions</a></li>
+    <li><a href="conversion-registry.html">R5/R4(B) Conversion Registry</a></li>
   </ul>
   
-  <a name="igs"> </a>
-  <h3>Dependencies</h3>
+	<a name="policy"> </a>
+	<h3>Update Policy</h3>
+  
+	<a name="policy-extensions"> </a>
+	<h4>Extensions</h4>
+  
   <p>
-    This IG depends on the following additional IGs:
+  References to the extensions defined in this extension pack are found in <a href="{{site.data.fhir.path}}extensibility.html#Extension">Extension.url</a> 
+  or in profile references to defined extensions in <a href="{{site.data.fhir.path}}elementdefinition.html#ElementDefinition">ElementDefinition.type.profile</a>.
+  While the profile references may be versioned using <a href="{{site.data.fhir.path}}references.html#canonical">canonical versioned references</a>, 
+  the most important references are in <code>Extension.url</code> and these are version-less.
   </p>
+  <p>
+  For this reason, the extensions defined in this extension pack are managed very conservatively with regard to 
+  breaking changes:
+  </p>
+  <ul>
+   <li>Extensions that are active are not subject to breaking changes. New extensions will be introduced if necessary</li>
+   <li>Extensions labelled 'draft' may have breaking changes if the FHIR Management Group is satisfied that they are not in 
+     use in production, or if all the existing users are agree to making the change. The exact rules and processes still 
+     being discussed, but not all 'draft' extensions are subject to change</li>
+   <li>In this regard, the definitions for <a href="{{site.data.fhir.path}}versions.html#change">breaking change to Normative artifacts</a> 
+     apply. Note that the focus of these rules is preserving the validity and meaning of existing extensions, not preventing applications 
+     processing extensions from having to change</li>
+    <li>The extensions all have the status of 'trial-use' but once they are active they are treated as normative. The FHIR
+     Management Group has not yet decided how these extensions will be balloted in the future</li>
+  </ul>
+
+	<a name="policy-extensions"> </a>
+	<h4>Conversion Maps</h4>
   
-  {%include dependency-table-short.xhtml %}
-  
-  {%include globals-table.xhtml %}
+  <p>
+  The implementation scope of the conversion maps is fixed: implementing a proper transform from 
+  R4/R4B to R5 and vice versa. Ongoing changes may be made to the maps if they improve the mappings
+  within this scope, including catering for common extensions.
+  </p>
 
 	<a name="ip"> </a>
 	<h3>Intellectual Property Considerations</h3>
@@ -37,4 +75,17 @@
   </p>
   {% include ip-statements.xhtml %}
   
+<div style="display: none">
+  <a name="igs"> </a>
+  <h3>Dependencies</h3>
+  <p>
+    This IG depends on the following additional IGs:
+  </p>
+  
+  {%include dependency-table-short.xhtml %}
+
+
+  {%include globals-table.xhtml %}
+</div>
+
 </div>

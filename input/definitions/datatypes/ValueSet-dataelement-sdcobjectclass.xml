@@ -9,6 +9,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
   <url value="http://hl7.org/fhir/ValueSet/dataelement-sdcobjectclass"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -17,8 +23,8 @@
   <version value="5.0.0"/>
   <name value="DataElementSDCObjectClass"/>
   <title value="DataElement SDC Object Class"/>
-  <status value="draft"/>
-  <experimental value="true"/>
+  <status value="active"/>
+  <experimental value="false"/>
   <date value="2023-01-31T07:07:38+11:00"/>
   <publisher value="Office of the National Coordinator for Health IT"/>
   <contact>

@@ -6,20 +6,16 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This extension is deprecated, use the [relative-date](StructureDefinition-relative-date	.html) extension instead"/>
-      </extension>
-    </valueCode>
+    <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-relativeDateTime"/>
   <version value="5.0.0"/>
   <name value="RelativeDateTime"/>
   <title value="Relative date time"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
   <publisher value="Health Level Seven, Inc. - CDS WG"/>

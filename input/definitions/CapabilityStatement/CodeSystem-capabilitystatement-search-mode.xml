@@ -9,6 +9,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="vocab"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
   <url value="http://hl7.org/fhir/capabilitystatement-search-mode"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>

@@ -9,14 +9,14 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel"/>
   <version value="5.0.0"/>
   <name value="ArtifactCopyrightLabel"/>
   <title value="Artifact Copyright Label"/>
   <status value="draft"/>
-  <experimental value="false"/>
+  <experimental value="true"/>
   <date value="2022-02-07"/>
   <publisher value="Health Level Seven, Inc. - CDS WG"/>
   <contact>
@@ -47,8 +47,7 @@
       <path value="Extension"/>
       <short value="Copyright holder and year(s)"/>
       <definition value="A short string (&lt;50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved')."/>
-      <comment value="Defines the content expected to be rendered in all representations of the artifact. The (c) symbol should NOT be included in this string. It is expected to be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element."/> 
-      <requirements value=""/>
+      <comment value="Defines the content expected to be rendered in all representations of the artifact. The (c) symbol should NOT be included in this string. It is expected to be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element."/>
       <min value="0"/>
       <max value="1"/>
     </element>

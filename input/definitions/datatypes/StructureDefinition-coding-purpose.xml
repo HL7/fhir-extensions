@@ -9,14 +9,14 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/coding-purpose"/>
   <version value="5.0.0"/>
   <name value="CodingPurpose"/>
   <title value="Coding Purpose"/>
   <status value="draft"/>
-  <experimental value="false"/>
+  <experimental value="true"/>
   <date value="2015-02-28"/>
   <publisher value="Health Level Seven, Inc. - FHIR Core WG"/>
   <contact>
