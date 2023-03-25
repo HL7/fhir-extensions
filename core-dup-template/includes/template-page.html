@@ -8,7 +8,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  {% if site.data.modules.resources[resourceName].custom=="Y" or resourceName="Extension" or resourceName="extension-registry" %}
+  {% if site.data.modules.resources[resourceName].custom=="Y" %}
+    {% assign type=resourceName %}
+    {% assign ltype=resourceName | downcase %}
+    {% include tabstuff.html %}
+  {% elsif resourceName="Extension" or resourceName="extension-registry" %}
     {% assign type=resourceName %}
     {% assign ltype=resourceName | downcase %}
     {% include tabstuff.html %}

@@ -141,13 +141,25 @@
           <li><a no-external="true" href="{{site.data.fhir.path}}types.html">Type Framework</a></li>
         {% endif %}
         {% if prefix11=="extensions-" %}
-          <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li>
+          <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">
+            {%if site.data.modules.resource[resourceName].tab %}
+              {{site.data.modules.resource[resourceName].tab}}
+            {% else %}
+              {{resourceName}}
+            {% endif %}
+          </a></li>
           <li><b>Extensions</b></li>
         {% elsif prefix12=="conversions-" %}
           {%if resourceName=="Extension" %}
             <li><a no-external="true" href="{{site.data.fhir.path}}extensibility.html">Extensibility</a></li>
           {% else %}
-            <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">{{resourceName}}</a></li>
+            <li><a no-external="true" href="{{site.data.fhir.path}}{{resourceName | downcase}}.html">
+            {%if site.data.modules.resource[resourceName].tab %}
+              {{site.data.modules.resource[resourceName].tab}}
+            {% else %}
+              {{resourceName}}
+            {% endif %}
+            </a></li>
           {% endif %}
           <li><b>Conversions</b></li>
         {% else %}

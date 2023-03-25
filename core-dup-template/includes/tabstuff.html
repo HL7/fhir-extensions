@@ -9,12 +9,12 @@
     <li><a href="{{site.data.fhir.path}}defining-extensions.html">Defining Extensions</a></li>
     <li><a href="{{site.data.fhir.path}}extensibility-examples.html">Examples</a></li>
     <li><a href="{{site.data.fhir.path}}extensibility-definitions.html">Detailed Descriptions</a></li>
-    {% if resourceName="extension-registry" %}
+    {% if resourceName=="extension-registry" %}
       <li class="active"><a href="#">Registry</a></li>
     {% else %}
       <li><a href="extension-registry.html">Registry</a></li>
     {% endif %}
-    {% if resourceName="Extension" %}
+    {% if resourceName=="Extension" %}
       <li class="active"><a href="#">R4 Conversions</a></li>    
     {% else %}
       <li><a href="conversions-Extension.html">R4 Conversions</a></li>    
@@ -38,7 +38,9 @@
       <li><a href="{{ site.data.fhir.path }}{{ltype}}-operations.html">Operations</a></li>
       <li><a href="{{ site.data.fhir.path }}{{ltype}}-search.html">Search Params</a></li>
     {% endif %}
-    <li><a href="{{ site.data.fhir.path }}{{ltype}}-profiles.html">Profiles</a></li>
+    {% if site.data.modules.resources[resourceName].noProfile!="Y" %}
+      <li><a href="{{ site.data.fhir.path }}{{ltype}}-profiles.html">Profiles</a></li>
+    {% endif %}
     {% if prefix11=="extensions-" %}
       <li class="active"><a href="#">Extensions</a></li>
     {% else %}

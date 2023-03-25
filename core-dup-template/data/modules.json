@@ -77,11 +77,21 @@
       "isDt": "Y",
       "tab": "References"
     },
+    "Narrative": {
+      "module": "Foundation",
+      "section": "2.1.4.2",
+      "section2": "2.1.4.3",
+      "noEx": "Y",
+      "noMap": "Y",
+      "noProfile": "Y",
+      "inDoc": "Y",
+      "isDt": "Y",
+      "tab": "Narrative"
+    },
     "Extension": {
       "module": "Foundation",
       "section": "2.1.5.4",
       "section2": "2.1.5.5",
-      "link": "extensibility",
       "noEx": "Y",
       "inDoc": "Y",
       "isDt": "Y",
