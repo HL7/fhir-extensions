@@ -24,7 +24,7 @@
       <datatype page="MarketingStatus" name="MarketingStatus" tab="MarketingStatus Detail" isDt="Y"/>
       <datatype page="ProductShelfLife" name="ProductShelfLife" tab="ProductShelfLife Detail" isDt="Y"/>
       <datatype page="datatypes" name="Datatypes" tab="Datatypes" isDt="Y" custom="Y"/>
-      <datatype page="types" name="FHIR Type Framework" tab="Type Framework" isDt="Y" custom="Y"/>
+      <datatype page="types" name="FHIR Type Framework" tab="Type Framework" isDt="Y" noEx="Y" custom="Y"/>
       <datatype page="metadatatypes" name="MetaDatatypes" tab="Meta Datatypes" isDt="Y" custom="Y"/>
       <datatype page="references" name="Resource References" tab="References" noEx="Y" noMap="Y" isDt="Y" custom="Y"/>
     </datatypes>
