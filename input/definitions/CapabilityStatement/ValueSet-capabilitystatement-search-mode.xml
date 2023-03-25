@@ -9,6 +9,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="vocab"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
   <url value="http://hl7.org/fhir/ValueSet/capabilitystatement-search-mode"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -17,8 +20,8 @@
   <version value="5.0.0"/>
   <name value="CSSearchModeVS"/>
   <title value="CapabilityStatement Search Mode ValueSet"/>
-  <status value="active"/>
-  <experimental value="false"/>
+  <status value="draft"/>
+  <experimental value="true"/>
   <description value="Which search modes a server supports: GET, POST, or both"/>
   <jurisdiction>
     <coding>

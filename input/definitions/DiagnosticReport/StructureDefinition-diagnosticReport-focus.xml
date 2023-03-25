@@ -9,13 +9,14 @@
     <valueInteger value="0"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-focus"/>
   <version value="5.0.0"/>
   <name value="DRFocus"/>
   <title value="DiagnosticReport Delta"/>
   <status value="draft"/>
+  <experimental value="true"/>
   <date value="2023-02-02"/>
   <publisher value="Health Level Seven, Inc. - OO WG"/>
   <contact>

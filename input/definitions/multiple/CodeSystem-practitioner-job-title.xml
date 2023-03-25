@@ -9,6 +9,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
   <url value="http://hl7.org/fhir/practitioner-job-title"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -17,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="PractitionerJobTitle"/>
   <title value="Practitioner Job Title"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
   <description value="This example value set defines a set of codes that can be used to indicate the specialty of a Practitioner."/>
   <jurisdiction>

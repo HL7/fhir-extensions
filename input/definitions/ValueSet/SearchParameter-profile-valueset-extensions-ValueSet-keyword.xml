@@ -2,12 +2,18 @@
 
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="valueset-extensions-ValueSet-keyword"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
   <url value="http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-keyword"/>
   <version value="5.0.0"/>
   <name value="Keyword"/>
   <title value="keyword"/>
-  <status value="draft"/>
-  <experimental value="true"/>
+  <status value="active"/>
+  <experimental value="false"/>
   <description value="Optional Extensions Element"/>
   <code value="keyword"/>
   <base value="ValueSet"/>

@@ -2,6 +2,9 @@
 
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="workflow-researchStudy"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
   <url value="http://hl7.org/fhir/SearchParameter/workflow-researchStudy"/>
   <version value="5.0.0"/>
   <name value="ResearchStudySearchParameter"/>
@@ -10,7 +13,6 @@
   <experimental value="true"/>
   <description value="SearchParameter for Research Study Extension"/>
   <code value="researchStudy"/>
-
   <base value="Composition"/>
   <base value="Consent"/>
   <base value="DeviceUsage"/>
@@ -29,7 +31,6 @@
   <base value="ServiceRequest"/>
   <base value="SupplyDelivery"/>
   <base value="Task"/>
-
   <type value="reference"/>
   <expression value="CodeSystem.extension('http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value"/>
   <processingMode value="normal"/>

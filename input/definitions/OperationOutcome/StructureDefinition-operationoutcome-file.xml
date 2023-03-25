@@ -9,7 +9,7 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-file"/>
   <identifier>
@@ -20,6 +20,7 @@
   <name value="OOSourceFile"/>
   <title value="OperationOutcome Source File"/>
   <status value="draft"/>
+  <experimental value="true"/>
   <date value="2014-01-31"/>
   <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
   <contact>

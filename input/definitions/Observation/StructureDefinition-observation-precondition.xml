@@ -6,7 +6,7 @@
     <valueCode value="oo"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ObsPrecondition"/>
   <title value="Observation Precondition"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-03-02"/>
   <publisher value="Health Level Seven, Inc. - OO WG"/>
@@ -29,8 +29,7 @@
       <value value="http://hl7.org/special/committees/orders"/>
     </telecom>
   </contact>
-  <description
-    value="Other preceding or concurrent observations that must be known to understand the context and significance of the observation.  For example, an fiO2 measure taken alongside of a SpO2 measurement.  See the FHIR specification [Observation notes](http://hl7.org/fhir/observation.html#notes) section for additional guidance."/>
+  <description value="Other preceding or concurrent observations that must be known to understand the context and significance of the observation.  For example, an fiO2 measure taken alongside of a SpO2 measurement.  See the FHIR specification [Observation notes](http://hl7.org/fhir/observation.html#notes) section for additional guidance."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,10 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short
-        value="Other Observations needed to understand the context and significance of the source observation."/>
-      <definition
-        value="Other preceding or concurrent observations that must be known to understand the context and significance of the observation.  For example an fiO2 measure taken alongside of a SpO2 measurement.  See the FHIR specification [Observation notes](http://hl7.org/fhir/observation.html#notes) section for additional guidance."/>
+      <short value="Other Observations needed to understand the context and significance of the source observation."/>
+      <definition value="Other preceding or concurrent observations that must be known to understand the context and significance of the observation.  For example an fiO2 measure taken alongside of a SpO2 measurement.  See the FHIR specification [Observation notes](http://hl7.org/fhir/observation.html#notes) section for additional guidance."/>
       <min value="0"/>
       <max value="*"/>
     </element>

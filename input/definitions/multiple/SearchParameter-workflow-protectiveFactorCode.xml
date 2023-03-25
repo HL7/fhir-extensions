@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SearchParameter xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../input-cache/schemas/R5/fhir-single.xsd">
-	<id value="workflow-protectiveFactorCode"/>
-	<url value="http://hl7.org/fhir/SearchParameter/workflow-protectiveFactorCode"/>
-	<version value="5.0.0"/>
-	<name value="ProtectiveFactorCodeSearchParameter"/>
-	<title value="Protective Factor Code SearchParameter"/>
-	<status value="draft"/>
-	<experimental value="true"/>
-	<description value="SearchParameter for Protective Factor Extension with CodeableConcept data type"/>
-	<code value="workflow-protectiveFactorCode"/>
-	<base value="CarePlan"/>
-	<base value="CommunicationRequest"/>
-	<base value="Goal"/>
-	<type value="token"/>
-	<expression value="CarePlan.activity.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.concept |
-                     CommunicationRequest.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.concept |
-                     Goal.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.concept"/>
-	<processingMode value="normal"/>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="workflow-protectiveFactorCode"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/SearchParameter/workflow-protectiveFactorCode"/>
+  <version value="5.0.0"/>
+  <name value="ProtectiveFactorCodeSearchParameter"/>
+  <title value="Protective Factor Code SearchParameter"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <description value="SearchParameter for Protective Factor Extension with CodeableConcept data type"/>
+  <code value="workflow-protectiveFactorCode"/>
+  <base value="CarePlan"/>
+  <base value="CommunicationRequest"/>
+  <base value="Goal"/>
+  <type value="token"/>
+  <expression value="CarePlan.activity.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.concept |                      CommunicationRequest.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.concept |                      Goal.extension('http://hl7.org/fhir/StructureDefinition/workflow-protectiveFactor').value.concept"/>
+  <processingMode value="normal"/>
 </SearchParameter>

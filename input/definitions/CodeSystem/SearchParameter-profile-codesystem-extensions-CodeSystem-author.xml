@@ -2,12 +2,18 @@
 
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="codesystem-extensions-CodeSystem-author"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
   <url value="http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-author"/>
   <version value="5.0.0"/>
   <name value="Author"/>
   <title value="author"/>
-  <status value="draft"/>
-  <experimental value="true"/>
+  <status value="active"/>
+  <experimental value="false"/>
   <description value="Optional Extensions Element"/>
   <code value="author"/>
   <base value="CodeSystem"/>

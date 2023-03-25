@@ -1,316 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../input-cache/schemas/R5/fhir-single.xsd">
-	<id value="dosage-minimumGapBetweenDose"/>
-	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-		<valueCode value="fhir"/>
-	</extension>
-	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-		<valueInteger value="1"/>
-	</extension>
-	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-		<valueCode value="draft"/>
-	</extension>
-	<url value="http://hl7.org/fhir/StructureDefinition/dosage-minimumGapBetweenDose"/>
-	<version value="5.0.0"/>
-	<name value="DosageMinimumGapBetweenDose"/>
-	<title value="Dosage - Minimum Gap Between Doses"/>
-	<status value="draft"/>
-	<experimental value="false"/>
-	<date value="2019-01-25"/>
-	<publisher value="Health Level Seven, Inc. - Pharmacy WG"/>
-	<contact>
-		<telecom>
-			<system value="url"/>
-			<value value="http://hl7.org/special/committees/Pharmacy"/>
-		</telecom>
-	</contact>
-	<description value="The minimum amount of time that must pass between administering the specified dose amount."/>
-	<fhirVersion value="5.0.0"/>
-	<kind value="complex-type"/>
-	<abstract value="false"/>
-	<context>
-		<type value="element"/>
-		<expression value="Dosage"/>
-	</context>
-	<type value="Extension"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Extension">
-			<path value="Extension"/>
-			<short value="Time that must pass between doses"/>
-			<definition value="The minimum amount of time that must pass between administering the specified dose amount."/>
-			<comment value="Used on orders with flexible timing, such as PRN medications or PCA devices when there is a need to prevent too much medication from being administered in too short a period of time."/>
-			<alias value="lockout interval"/>
-			<min value="0"/>
-			<max value="1"/>
-		</element>
-		<element id="Extension.extension:meetGoal">
-			<path value="Extension.extension"/>
-			<sliceName value="meetGoal"/>
-			<definition value="Follow the dosage instructions until the specified goal is met."/>
-			<min value="0"/>
-			<max value="*"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:meetGoal.extension">
-			<path value="Extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:meetGoal.extension:offset">
-			<path value="Extension.extension.extension"/>
-			<sliceName value="offset"/>
-			<definition value="Specifies the offset before or after the goal is met to follow the instructions."/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:meetGoal.extension:offset.extension">
-			<path value="Extension.extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:meetGoal.extension:offset.url">
-			<path value="Extension.extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="offset"/>
-		</element>
-		<element id="Extension.extension:meetGoal.extension:offset.value[x]">
-			<path value="Extension.extension.extension.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="Duration"/>
-			</type>
-		</element>
-		<element id="Extension.extension:meetGoal.extension:goal">
-			<path value="Extension.extension.extension"/>
-			<sliceName value="goal"/>
-			<definition value="The specific goal to meet to follow the dosage instructions."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:meetGoal.extension:goal.extension">
-			<path value="Extension.extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:meetGoal.extension:goal.url">
-			<path value="Extension.extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="goal"/>
-		</element>
-		<element id="Extension.extension:meetGoal.extension:goal.value[x]">
-			<path value="Extension.extension.extension.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="string"/>
-			</type>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Goal"/>
-			</type>
-		</element>
-		<element id="Extension.extension:meetGoal.url">
-			<path value="Extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="meetGoal"/>
-		</element>
-		<element id="Extension.extension:meetGoal.value[x]">
-			<path value="Extension.extension.value[x]"/>
-			<min value="0"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:whenTrigger">
-			<path value="Extension.extension"/>
-			<sliceName value="whenTrigger"/>
-			<definition value="A condition that causes the dosage instructions to be followed."/>
-			<min value="0"/>
-			<max value="*"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension">
-			<path value="Extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension:offset">
-			<path value="Extension.extension.extension"/>
-			<sliceName value="offset"/>
-			<definition value="Specifies the offset before or after the trigger happens to follow the instructions."/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension:offset.extension">
-			<path value="Extension.extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension:offset.url">
-			<path value="Extension.extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="offset"/>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension:offset.value[x]">
-			<path value="Extension.extension.extension.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="Duration"/>
-			</type>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension:trigger">
-			<path value="Extension.extension.extension"/>
-			<sliceName value="trigger"/>
-			<definition value="The event that causes the dosage instruction to be followed."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension:trigger.extension">
-			<path value="Extension.extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension:trigger.url">
-			<path value="Extension.extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="trigger"/>
-		</element>
-		<element id="Extension.extension:whenTrigger.extension:trigger.value[x]">
-			<path value="Extension.extension.extension.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="string"/>
-			</type>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
-			</type>
-		</element>
-		<element id="Extension.extension:whenTrigger.url">
-			<path value="Extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="whenTrigger"/>
-		</element>
-		<element id="Extension.extension:whenTrigger.value[x]">
-			<path value="Extension.extension.value[x]"/>
-			<min value="0"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:precondition">
-			<path value="Extension.extension"/>
-			<sliceName value="precondition"/>
-			<definition value="A condition that must (or must not) be present for the dosage instructions to be followed."/>
-			<min value="0"/>
-			<max value="*"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:precondition.extension">
-			<path value="Extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:precondition.extension:doesNotOccur">
-			<path value="Extension.extension.extension"/>
-			<sliceName value="doesNotOccur"/>
-			<definition value="If set to 'true', indicates that the condition must not be present for the dosage instructions to be followed."/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:precondition.extension:doesNotOccur.extension">
-			<path value="Extension.extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:precondition.extension:doesNotOccur.url">
-			<path value="Extension.extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="doesNotOccur"/>
-		</element>
-		<element id="Extension.extension:precondition.extension:doesNotOccur.value[x]">
-			<path value="Extension.extension.extension.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="boolean"/>
-			</type>
-		</element>
-		<element id="Extension.extension:precondition.extension:condition">
-			<path value="Extension.extension.extension"/>
-			<sliceName value="condition"/>
-			<definition value="The event that causes the dosage instruction to be followed."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-			</type>
-		</element>
-		<element id="Extension.extension:precondition.extension:condition.extension">
-			<path value="Extension.extension.extension.extension"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.extension:precondition.extension:condition.url">
-			<path value="Extension.extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="condition"/>
-		</element>
-		<element id="Extension.extension:precondition.extension:condition.value[x]">
-			<path value="Extension.extension.extension.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
-			</type>
-		</element>
-		<element id="Extension.extension:precondition.url">
-			<path value="Extension.extension.url"/>
-			<type>
-				<code value="uri"/>
-			</type>
-			<fixedUri value="precondition"/>
-		</element>
-		<element id="Extension.extension:precondition.value[x]">
-			<path value="Extension.extension.value[x]"/>
-			<min value="0"/>
-			<max value="0"/>
-		</element>
-		<element id="Extension.url">
-			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/StructureDefinition/dosage-minimumGapBetweenDose"/>
-		</element>
-		<element id="Extension.value[x]">
-			<path value="Extension.value[x]"/>
-			<min value="0"/>
-			<max value="0"/>
-		</element>
-	</differential>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dosage-minimumGapBetweenDose"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/dosage-minimumGapBetweenDose"/>
+  <version value="5.0.0"/>
+  <name value="DosageMinimumGapBetweenDose"/>
+  <title value="Dosage - Minimum Gap Between Doses"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-01-25"/>
+  <publisher value="Health Level Seven, Inc. - Pharmacy WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/special/committees/Pharmacy"/>
+    </telecom>
+  </contact>
+  <description value="The minimum amount of time that must pass between administering the specified dose amount."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Dosage"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Time that must pass between doses"/>
+      <definition value="The minimum amount of time that must pass between administering the specified dose amount."/>
+      <comment value="Used on orders with flexible timing, such as PRN medications or PCA devices when there is a need to prevent too much medication from being administered in too short a period of time."/>
+      <alias value="lockout interval"/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:meetGoal">
+      <path value="Extension.extension"/>
+      <sliceName value="meetGoal"/>
+      <definition value="Follow the dosage instructions until the specified goal is met."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:meetGoal.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:meetGoal.extension:offset">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="offset"/>
+      <definition value="Specifies the offset before or after the goal is met to follow the instructions."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:meetGoal.extension:offset.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:meetGoal.extension:offset.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="offset"/>
+    </element>
+    <element id="Extension.extension:meetGoal.extension:offset.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Duration"/>
+      </type>
+    </element>
+    <element id="Extension.extension:meetGoal.extension:goal">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="goal"/>
+      <definition value="The specific goal to meet to follow the dosage instructions."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:meetGoal.extension:goal.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:meetGoal.extension:goal.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="goal"/>
+    </element>
+    <element id="Extension.extension:meetGoal.extension:goal.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Goal"/>
+      </type>
+    </element>
+    <element id="Extension.extension:meetGoal.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="meetGoal"/>
+    </element>
+    <element id="Extension.extension:meetGoal.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:whenTrigger">
+      <path value="Extension.extension"/>
+      <sliceName value="whenTrigger"/>
+      <definition value="A condition that causes the dosage instructions to be followed."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension:offset">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="offset"/>
+      <definition value="Specifies the offset before or after the trigger happens to follow the instructions."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension:offset.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension:offset.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="offset"/>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension:offset.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Duration"/>
+      </type>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension:trigger">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="trigger"/>
+      <definition value="The event that causes the dosage instruction to be followed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension:trigger.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension:trigger.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="trigger"/>
+    </element>
+    <element id="Extension.extension:whenTrigger.extension:trigger.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
+      </type>
+    </element>
+    <element id="Extension.extension:whenTrigger.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="whenTrigger"/>
+    </element>
+    <element id="Extension.extension:whenTrigger.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:precondition">
+      <path value="Extension.extension"/>
+      <sliceName value="precondition"/>
+      <definition value="A condition that must (or must not) be present for the dosage instructions to be followed."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:precondition.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:precondition.extension:doesNotOccur">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="doesNotOccur"/>
+      <definition value="If set to 'true', indicates that the condition must not be present for the dosage instructions to be followed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:precondition.extension:doesNotOccur.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:precondition.extension:doesNotOccur.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="doesNotOccur"/>
+    </element>
+    <element id="Extension.extension:precondition.extension:doesNotOccur.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Extension.extension:precondition.extension:condition">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="condition"/>
+      <definition value="The event that causes the dosage instruction to be followed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:precondition.extension:condition.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:precondition.extension:condition.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="condition"/>
+    </element>
+    <element id="Extension.extension:precondition.extension:condition.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
+      </type>
+    </element>
+    <element id="Extension.extension:precondition.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="precondition"/>
+    </element>
+    <element id="Extension.extension:precondition.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/dosage-minimumGapBetweenDose"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
 </StructureDefinition>

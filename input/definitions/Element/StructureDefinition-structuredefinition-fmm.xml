@@ -6,7 +6,7 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="FMMLevel"/>
   <title value="StructureDefinition FMM Level"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
   <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
@@ -41,6 +41,10 @@
   <context>
     <type value="element"/>
     <expression value="Element"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
