@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A numeric value that allows the comparison (less than, greater than) or other numerical manipulation of a concept (e.g. Adding up components of a score). Scores are usually a whole number, but occasionally decimals are encountered in scores. Note: This extension used to called http://hl7.org/fhir/StructureDefinition/ordinalValue"/>
+  <description value="A numeric value that allows the comparison (less than, greater than) or other numerical manipulation of a concept (e.g. Adding up components of a score). Scores are usually a whole number, but occasionally decimals are encountered in scores. Note: This extension used to be called http://hl7.org/fhir/StructureDefinition/ordinalValue"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
