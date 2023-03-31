@@ -11,7 +11,7 @@
   <url value="http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-author"/>
   <version value="5.0.0"/>
   <name value="Author"/>
-  <title value="author"/>
+  <title value="CodeSystem author"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Optional Extensions Element"/>

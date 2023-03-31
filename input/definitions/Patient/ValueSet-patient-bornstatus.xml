@@ -19,7 +19,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="BornStatus"/>
-  <title value="born status"/>
+  <title value="born status value set"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="FHIR Project team"/>

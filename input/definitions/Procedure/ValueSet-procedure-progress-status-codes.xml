@@ -32,7 +32,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="ProcedureProgressStatusCodes"/>
-  <title value="Procedure Progress Status Codes"/>
+  <title value="Procedure Progress Status Codes Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="FHIR Project team"/>

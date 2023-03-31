@@ -19,7 +19,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="BornStatus"/>
-  <title value="born status"/>
+  <title value="born status code system"/>
   <status value="draft"/>
   <experimental value="true"/>
   <description value="This birth status of a patient."/>

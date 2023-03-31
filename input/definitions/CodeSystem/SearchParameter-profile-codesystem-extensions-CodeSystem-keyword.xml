@@ -11,7 +11,7 @@
   <url value="http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-keyword"/>
   <version value="5.0.0"/>
   <name value="Keyword"/>
-  <title value="keyword"/>
+  <title value="CodeSystem keyword"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Optional Extensions Element"/>

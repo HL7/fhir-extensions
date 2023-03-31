@@ -22,7 +22,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="StandardsStatus"/>
-  <title value="standards status"/>
+  <title value="standards status code system"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="StandardsStatus"/>

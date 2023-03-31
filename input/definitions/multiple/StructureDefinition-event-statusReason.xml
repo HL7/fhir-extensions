@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/event-statusReason"/>
   <version value="5.0.0"/>
-  <name value="StatusReason"/>
-  <title value="Status reason"/>
+  <name value="EventStatusReason"/>
+  <title value="Event status reason"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>

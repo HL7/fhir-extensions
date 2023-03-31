@@ -13,8 +13,8 @@
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability"/>
   <version value="5.0.0"/>
-  <name value="KnowledgeCapability"/>
-  <title value="Knowledge capability"/>
+  <name value="CQF KnowledgeCapability"/>
+  <title value="CQF Knowledge capability"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>

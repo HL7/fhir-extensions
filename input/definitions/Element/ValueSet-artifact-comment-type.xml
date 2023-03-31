@@ -22,7 +22,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="ArtifactCommentType"/>
-  <title value="Artifact comment type"/>
+  <title value="Artifact comment type valueset"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-03-14T23:21:03-06:00"/>

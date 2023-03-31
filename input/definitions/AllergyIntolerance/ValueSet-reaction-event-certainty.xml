@@ -32,7 +32,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="AllergyIntoleranceCertainty"/>
-  <title value="AllergyIntolerance certainty"/>
+  <title value="AllergyIntolerance Certainty ValueSet"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Description Needed Here"/>

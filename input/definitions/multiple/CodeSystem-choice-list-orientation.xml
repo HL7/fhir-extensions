@@ -32,7 +32,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="ChoiceListOrientation"/>
-  <title value="choice list orientation"/>
+  <title value="choice list orientation code system"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="ChoiceListOrientation"/>

@@ -22,7 +22,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="ResourceSecurityCategory"/>
-  <title value="resource security category"/>
+  <title value="resource security category code system"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="ResourceSecurityCategory"/>

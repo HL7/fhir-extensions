@@ -32,7 +32,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="FlagPriorityCodes"/>
-  <title value="Flag Priority Codes"/>
+  <title value="Flag Priority Codes Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="FHIR Project team"/>
