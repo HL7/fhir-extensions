@@ -32,7 +32,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="GoalRelationshipType"/>
-  <title value="goal relationship type"/>
+  <title value="goal relationship type code system"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="GoalRelationshipType"/>

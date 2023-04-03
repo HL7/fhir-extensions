@@ -27,7 +27,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="QuestionnaireDisplayCategories"/>
-  <title value="Questionnaire Display Categories"/>
+  <title value="Questionnaire Display Categories Code System"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Codes defining the purpose of a Questionnaire item of type 'display'."/>

@@ -22,7 +22,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="GeneticObservationSecondaryFindings"/>
-  <title value="Genetic Observation Secondary Findings"/>
+  <title value="Genetic Observation Secondary Findings Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="FHIR Project team"/>

@@ -22,7 +22,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="ImplantStatus"/>
-  <title value="Implant Status"/>
+  <title value="Implant Status Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="Description Needed Here"/>

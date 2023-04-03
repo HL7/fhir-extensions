@@ -22,7 +22,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="CodeSystemPropertiesMode"/>
-  <title value="code system properties mode"/>
+  <title value="code system properties mode code system"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="CodeSystemPropertiesMode"/>

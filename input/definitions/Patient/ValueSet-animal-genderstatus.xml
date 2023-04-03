@@ -32,7 +32,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="GenderStatus"/>
-  <title value="gender status"/>
+  <title value="gender status value set"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="FHIR Project team"/>

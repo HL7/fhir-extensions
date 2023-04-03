@@ -27,7 +27,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="QuestionnaireItemUIControlCodes"/>
-  <title value="Questionnaire Item UI Control Codes"/>
+  <title value="Questionnaire Item UI Control Codes Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International - Patient Care WG"/>

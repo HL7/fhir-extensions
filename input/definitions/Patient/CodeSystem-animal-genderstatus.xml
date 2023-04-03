@@ -32,7 +32,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="GenderStatus"/>
-  <title value="gender status"/>
+  <title value="gender status code system"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="This example value set defines a set of codes that can be used to indicate the current state of the animal's reproductive organs."/>

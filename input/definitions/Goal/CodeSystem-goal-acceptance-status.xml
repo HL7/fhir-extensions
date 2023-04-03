@@ -32,7 +32,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="GoalAcceptanceStatus"/>
-  <title value="goal acceptance status"/>
+  <title value="goal acceptance status code system"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="GoalAcceptanceStatus"/>

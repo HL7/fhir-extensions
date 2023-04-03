@@ -27,7 +27,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="AllergyIntoleranceSubstanceExposureRisk"/>
-  <title value="AllergyIntolerance substance exposure risk"/>
+  <title value="AllergyIntolerance substance exposure risk codesystem"/>
   <status value="draft"/>
   <experimental value="false"/>
   <description value="AllergyIntoleranceSubstanceExposureRisk"/>

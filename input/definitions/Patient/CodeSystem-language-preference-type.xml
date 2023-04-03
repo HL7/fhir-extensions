@@ -22,7 +22,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="LanguagePreferenceType"/>
-  <title value="language preference type"/>
+  <title value="language preference type code system"/>
   <status value="active"/>
   <experimental value="false"/>
   <description value="This code system defines a defines the set of codes for describing the type or mode of the patient's preferred language."/>
