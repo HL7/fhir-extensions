@@ -287,7 +287,7 @@
         <code value="generate-version"/>
       </code>
       <value value="r5"/>
-    </parameter>    
+    </parameter>
 
     <parameter>
       <code>
@@ -295,27 +295,55 @@
         <code value="noRootToc"/>
       </code>
       <value value="true"/>
-    </parameter>    
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="artifactsOnRoot"/>
       </code>
       <value value="true"/>
-    </parameter>    
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="conversion-version"/>
       </code>
       <value value="R4"/>
-    </parameter>    
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="conversion-version"/>
       </code>
       <value value="R4B"/>
-    </parameter>    
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+<!--    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="default-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>-->
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+<!--    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="default-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>-->
   </definition>
 </ImplementationGuide>
