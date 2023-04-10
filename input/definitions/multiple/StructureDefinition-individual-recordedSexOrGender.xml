@@ -6,7 +6,7 @@
     <valueCode value="pa"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/>
+    <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="RecordedSexOrGender"/>
   <title value="Person Recorded Sex Or Gender"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2022-01-28"/>
   <publisher value="HL7"/>

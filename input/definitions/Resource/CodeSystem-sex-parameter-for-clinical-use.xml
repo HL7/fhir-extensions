@@ -8,6 +8,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
@@ -18,7 +21,7 @@
   </identifier>
   <name value="SexParameterForClinicalUseCS"/>
   <title value="Sex Parameter For Clinical Use"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <description value="A summary parameter that provides guidance on how a receiver should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.."/>
   <caseSensitive value="true"/>
