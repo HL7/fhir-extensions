@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/>
+    <valueInteger value="1"/>
   </extension>
   <url value="http://terminology.hl7.org/ValueSet/pronouns"/>
   <identifier>
@@ -22,7 +22,7 @@
   <version value="5.0.0"/>
   <name value="PersonalPronouns"/>
   <title value="Personal Pronouns"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="FHIR Project team"/>
   <contact>

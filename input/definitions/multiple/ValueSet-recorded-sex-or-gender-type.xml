@@ -12,7 +12,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/>
+    <valueInteger value="1"/>
   </extension>
   <url value="http://terminology.hl7.org/ValueSet/recorded-sex-or-gender-type"/>
   <identifier>
@@ -21,7 +21,7 @@
   </identifier>
   <name value="RecordedSexOrGenderType"/>
   <title value="Recorded Sex Or Gender Type"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="FHIR Project team"/>
   <contact>
