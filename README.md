@@ -1,8 +1,9 @@
 # Tooling IG
 
-Source for the tooling extensions documentation.
+Source for the extensions package.
 
-https://build.fhir.org/ig/FHIR/fhir-tools-ig
+https://build.fhir.org/ig/HL7/fhir-extensions
 
-This IG is used when building all IGs
+This IG is logically part of the main FHIR expectation
+
  
