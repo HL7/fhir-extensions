@@ -8,7 +8,7 @@
 <!--xlp:Base-->See also <a no-external="true" href="{{site.data.fhir.path}}types.html#Base">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}types-definitions.html#Base">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}types-mappings.html#Base">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}types-profiles.html#Base">Profiles</a>, <a no-external="true" href="extensions-types.html#Base">Extensions</a> and <a no-external="true" href="conversions-types.html#Base">R4 Conversions</a>
 </p>
 
-{% include extension-list-Base.xhtml %}
+<p>None</p>
 
 <a name="ext-Element"> </a>
 <a name="Element"> </a>
