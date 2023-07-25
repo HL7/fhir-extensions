@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cqf-resourceType",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+  "name": "ResourceType",
+  "title": "Resource Type",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "HL7 International - Clinical Decision Support",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/special/committees/cds"
+        }
+      ]
+    }
+  ],
+  "description": "Specifies the type of resource the canonical references.",
+  "purpose": "When a canonical reference is not constrained by the definition to reference a particular type of resource, the reference must typically be resolved or otherwise looked up to determine what type of resource is being referenced. This extension allows the resource type to be specified as part of the reference, facilitating dependency processing applications.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "canonical"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "What type of resource",
+        "definition": "Specifies the type of resource the canonical references. If present, this extension SHALL be consistent with the actual type of the resource specified by the canonical on which it appears.",
+        "comment": "Knowing the actual type of the target of a canonical resource allows for improved processing of knowledge artifacts, but this information cannot be reliably inferred from the canonical URL, the URL must be resolved. This extension can be used to provide this information to facilitate dependency processing.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "label": "What type of resource",
+        "requirements": "Implementations need to be able to tell what type of resource the canonical reference is targeting (cannot infer this from the URI)",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+            "valueString" : "ResourceType"
+          }],
+          "strength" : "required",
+          "valueSet" : "http://hl7.org/fhir/ValueSet/all-resource-types"
+        }
+      }
+    ]
+  }
+}

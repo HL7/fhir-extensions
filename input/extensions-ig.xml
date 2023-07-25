@@ -204,6 +204,20 @@
       </code>
       <value value="http://hl7.org/fhir/StructureDefinition/_datatype"/>
     </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="special-url"/>
+      </code>
+      <value value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="special-url"/>
+      </code>
+      <value value="http://terminology.hl7.org/ValueSet/artifact-version-policy"/>
+    </parameter>
     
     <parameter>
       <code>

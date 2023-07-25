@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cqf-scope",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-scope",
+  "version": "1.0.0",
+  "name": "Scope",
+  "title": "Scope",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-02-28",
+  "publisher": "Clinical Decision Support WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Defines the scope of an artifact as a string of the form {namespace-name}[@{namespace-uri}]. Namespace name shall be a valid NPM package id, and namespace uri shall be a valid uri. For FHIR implementation guides, scope is inferred using the package id and the base canonical. e.g. fhir.cqf.common@http://fhir.org/guides/cqf/common. This extension can be used on Implementation Guides, Libraries, on any knowledge artifact, to declare the scope of the artifact. In the absence of an explicit scope declaration, the scope of an artifact is inferred based on the IG in which the artifact is defined.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "purpose": "To allow artifacts to declare the scope in which they are defined and intended to be evaluated. Scope typically corresponds to the implementation guide in which the artifact is packaged. However, to support the use of non-IG-packaged content, this extension allows artifacts to declare their intended scope so that evaluation environments can correctly resolve namespaces and dependencies.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Resource"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "What scope the artifact is defined in",
+        "definition" : "The scope of the artifact as a string of the form {namespace-name}[@{namespace-uri}]. e.g. fhir.cqf.common, or fhir.cqf.common@http://fhir.org/guides/cqf/common",        
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-scope"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [{
+          "code" : "string"
+        }]
+      }
+    ]
+  }
+}

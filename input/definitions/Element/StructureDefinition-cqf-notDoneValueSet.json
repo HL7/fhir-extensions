@@ -1,0 +1,105 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cqf-notDoneValueSet",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-notDoneValueSet",
+  "name": "NotDoneValueSet",
+  "title": "Not Done ValueSet",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-11-01T09:29:23+11:00",
+  "publisher": "HL7 International - Clinical Decision Support",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/special/committees/cds"
+        }
+      ]
+    }
+  ],
+  "description": "A logical reference (e.g. a reference to ValueSet.url) to a value set/version that identifies a set of possible coded values representing activities that were not requested, ordered, or performed.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CodeableConcept"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "definition": "A logical reference (e.g. a reference to ValueSet.url) to a value set/version that identifies a set of possible coded values representing activities that were not requested, ordered, or performed.",
+        "short": "Url of a value set of activities not requested or performed",
+        "min": 0,
+        "mapping": [
+          {
+            "map": "CWE.",
+            "identity": "v2"
+          },
+          {
+            "map": "CD.valueSet/CD.valueSetVersion",
+            "identity": "rim"
+          }
+        ],
+        "isModifier": false,
+        "max": "1",
+        "id": "Extension",
+        "path": "Extension"
+      },
+      {
+        "max": "0",
+        "path": "Extension.extension",
+        "id": "Extension.extension"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-notDoneValueSet"
+      },
+      {
+        "min": 1,
+        "label": "Not done value set",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ValueSet"
+            ]
+          }
+        ],
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]"
+      }
+    ]
+  }
+}
