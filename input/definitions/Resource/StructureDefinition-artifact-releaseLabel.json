@@ -45,11 +45,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "RelatedArtifact"
-    },
-    {
-      "type": "fhirpath",
-      "expression": "type.exists() and type = 'composed-of'"
+      "expression": "Resource"
     }
   ],
   "type": "Extension",

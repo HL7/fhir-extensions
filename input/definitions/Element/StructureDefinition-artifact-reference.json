@@ -39,7 +39,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Resource"
+      "expression": "Element"
     }
   ],
   "type": "Extension",

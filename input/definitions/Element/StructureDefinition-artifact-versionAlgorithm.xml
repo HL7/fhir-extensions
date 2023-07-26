@@ -57,7 +57,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-version"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
@@ -65,6 +65,13 @@
       <type>
         <code value="string"/>
       </type>
+			<type>
+				<code value="Coding"/>
+			</type>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/version-algorithm"/>
+			</binding>
     </element>
   </differential>
 </StructureDefinition>
