@@ -14,29 +14,37 @@
   <url value="http://hl7.org/fhir/StructureDefinition/obligation"/>
   <version value="5.0.0"/>
   <name value="Obligation"/>
-  <title value="Obligation"/>
+  <title value="Obligation Extension"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2019-01-25"/>
-  <publisher value="Health Level Seven, Inc. - Pharmacy WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/fhir"/>
+      <value value="http://hl7.org/Special/committees/fhir-i"/>
     </telecom>
   </contact>
   <description value="Documents obligations that apply to applications implementing this element. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction> 
   <fhirVersion value="5.0.0"/>
-  <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
-  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Dosage"/>
+    <expression value="ElementDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="StructureDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition.type"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -49,6 +57,7 @@
       <min value="0"/>
       <max value="*"/>
     </element>
+
     <element id="Extension.extension:code">
       <path value="Extension.extension"/>
       <sliceName value="code"/>
@@ -56,30 +65,58 @@
       <definition value="A code that describes the obligations that apply to implementing applications."/>
       <comment value="The code may be a composite code that has SHALL/SHOULD/MAY along with the nature of the obligation (see the details on the coding system)."/>
       <min value="1"/>
-      <max value="*"/>
-    </element>
+      <max value="1"/> 
+    </element> 
+    <element id="Extension.extension:code.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
     <element id="Extension.extension:code.url">
       <path value="Extension.extension.url"/>
       <fixedUri value="code"/>
     </element>
     <element id="Extension.extension:code.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="Coding"/>
-      </type>
+      <path value="Extension.extension.value[x]"/> 
+      <min value="1"/> 
+      <type> 
+        <code value="code"/> 
+      </type> 
       <binding>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueMarkdown value="Codes, potentially combination code, that describe an obligation that applies to implementing applications."/>
-        </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObligationCodes"/>
         </extension>
-        <strength value="extensible"/>
+        <strength value="required"/>
+        <description value="Codes, potentially a combination code, that describe an obligation that applies to implementing applications"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/obligation"/>
       </binding>
     </element>
+
+    <element id="Extension.extension:elementId">
+      <path value="Extension.extension"/> 
+      <sliceName value="elementId"/> 
+      <short value="When the obligation is on the profile itself, not a particular element, a list of elements to which it applies"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+    </element> 
+    <element id="Extension.extension:elementId.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+    <element id="Extension.extension:elementId.url">
+      <path value="Extension.extension.url"/> 
+      <fixedUri value="elementId"/> 
+    </element> 
+    <element id="Extension.extension:elementId.value[x]">
+      <path value="Extension.extension.value[x]"/> 
+      <min value="1"/> 
+      <type> 
+        <code value="string"/> 
+      </type> 
+    </element> 
+
     <element id="Extension.extension:actor">
       <path value="Extension.extension"/>
       <sliceName value="actor"/>
@@ -89,6 +126,10 @@
       <min value="0"/>
       <max value="*"/>
     </element>
+    <element id="Extension.extension:actor.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
     <element id="Extension.extension:actor.url">
       <path value="Extension.extension.url"/>
       <fixedUri value="actor"/>
@@ -102,6 +143,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActorDefinition"/>
       </type>
     </element>
+    
     <element id="Extension.extension:documentation">
       <path value="Extension.extension"/>
       <sliceName value="documentation"/>
@@ -110,26 +152,37 @@
       <min value="0"/>
       <max value="1"/>
     </element>
+    <element id="Extension.extension:documentation.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
     <element id="Extension.extension:documentation.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="documentation"/>
-    </element>
+      <path value="Extension.extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="documentation"/> 
+    </element> 
     <element id="Extension.extension:documentation.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="markdown"/>
       </type>
     </element>
+
     <element id="Extension.extension:usage">
       <path value="Extension.extension"/>
       <sliceName value="usage"/>
       <short value="Qualifies the usage - jurisdiction, gender, workflow status etc"/>
-      <definition value="Qualifies the usage of the obligation. Typically obligations are qualified by jurisdiction, but they may also be qualified by gender, workflow status, clinical domain etc. The information to decide whether a usege context applies is usually outside the resource, determined by context, and this might present challenges for validation tooling."/>
+      <definition value="Qualifies the usage of the obligation. Typically obligations are qualified by jurisdiction, but they may also be qualified by gender, workflow status, clinical domain etc. The information to decide whether a usege context applies is usually outside the resource, determined by context, and this might present challenges for validation tooling. An expected use: limiting obligations to particular jurisdictions (e.g. in IPS)."/>
       <min value="0"/>
       <max value="*"/>
     </element>
+    <element id="Extension.extension:usage.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
     <element id="Extension.extension:usage.url">
       <path value="Extension.extension.url"/>
       <fixedUri value="usage"/>
@@ -137,11 +190,11 @@
     <element id="Extension.extension:usage.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="UsageContext"/>
       </type>
     </element>
+
     <element id="Extension.extension:filter">
       <path value="Extension.extension"/>
       <sliceName value="filter"/>
@@ -151,6 +204,10 @@
       <min value="0"/>
       <max value="1"/>
     </element>
+    <element id="Extension.extension:filter.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
     <element id="Extension.extension:filter.url">
       <path value="Extension.extension.url"/>
       <fixedUri value="filter"/>
@@ -158,11 +215,11 @@
     <element id="Extension.extension:filter.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
-      <max value="1"/>
       <type>
         <code value="string"/>
       </type>
     </element>
+
     <element id="Extension.extension:filterDocumentation">
       <path value="Extension.extension"/>
       <sliceName value="filterDocumentation"/>
@@ -171,18 +228,22 @@
       <min value="0"/>
       <max value="1"/>
     </element>
+    <element id="Extension.extension:filterDocumentation.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
     <element id="Extension.extension:filterDocumentation.url">
       <path value="Extension.extension.url"/>
       <fixedUri value="filterDocumentation"/>
     </element>
     <element id="Extension.extension:filterDocumentation.value[x]">
       <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <max value="1"/>
+      <min value="1"/>\
       <type>
         <code value="string"/>
       </type>
     </element>
+
     <element id="Extension.extension:process">
       <path value="Extension.extension"/>
       <sliceName value="process"/>
@@ -191,6 +252,10 @@
       <min value="0"/>
       <max value="*"/>
     </element>
+    <element id="Extension.extension:process.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
     <element id="Extension.extension:process.url">
       <path value="Extension.extension.url"/>
       <fixedUri value="process"/>
@@ -198,9 +263,8 @@
     <element id="Extension.extension:process.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
-      <max value="1"/>
       <type>
-        <code value="uri"/>
+        <code value="code"/>
       </type>
     </element>
     <element id="Extension.url">
