@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="Resource with details for flag"/>
       <definition value="Points to the Observation, AllergyIntolerance or other record that provides additional supporting information about this flag."/>
-      <comments value="Note that This extension will be replaced by Flag.supportingInfo in the FHIR R6 release."/>
+      <comment value="Note that This extension will be replaced by Flag.supportingInfo in the FHIR R6 release."/>
       <min value="0"/>
       <max value="*"/>
     </element>

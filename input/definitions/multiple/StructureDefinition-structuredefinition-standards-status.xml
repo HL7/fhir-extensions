@@ -82,6 +82,10 @@
     <type value="element"/>
     <expression value="OperationDefinition.parameter.targetProfile"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="ImplementationGuide.definition.page"/>
+  </context>
   
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
