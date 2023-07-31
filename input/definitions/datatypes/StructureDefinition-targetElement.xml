@@ -25,7 +25,7 @@
       <value value="http://hl7.org/special/committees/FHIR"/>
     </telecom>
   </contact>
-  <description value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by it's element id."/>
+  <description value="Indicates that the reference has a particular focus in the target resource, a particular element of interest, identified by its element id. This extension requires that an 'id' property be present on the element to be referenced, but does not require the use of simplified FHIRPath.  If the creator of the reference can't ensure an id will be present, the [[[http://hl7.org/fhir/StructureDefinition/targetPath]]] extension can be used instead."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
@@ -54,7 +54,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A particular element of interest in the target resource (by id)"/>
-      <definition value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by it's element id."/>
+      <definition value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by its element id. This extension requires that an 'id' property be present on the element to be referenced, but does not require the use of simplified FHIRPath.  If the creator of the reference can't ensure an id will be present, the [[[http://hl7.org/fhir/StructureDefinition/targetPath]]] extension can be used instead."/>
       <comment value="This behaves similar to a '#' element on a URL, but is more wide-open than how '#' is used in Reference.reference where it is limited to pointing only to contained resources (and where the contained resource must be of the appropriate resource type for the reference).  This extension allows referring to any Element (not necessarily a resource) within the target resource provided that it has a populated 'id' element. When there is no id on the element of interest, the extension [http://hl7.org/fhir/StructureDefinition/targetPath](StructureDefinition-targetPath.html) can be used."/>
       <min value="0"/>
       <max value="*"/>
