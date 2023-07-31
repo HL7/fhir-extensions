@@ -31,7 +31,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Questionnaire.item"/>
+    <expression value="Questionnaire.derivation"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -56,7 +56,7 @@
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="CodeableConcept"/>
+        <code value="Coding"/>
       </type>
       <binding>
         <strength value="extensible"/>
