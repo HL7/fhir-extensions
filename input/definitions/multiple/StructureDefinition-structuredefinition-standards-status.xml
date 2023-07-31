@@ -40,8 +40,49 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="CanonicalResource"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="CodeSystem.concept"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="StructureDefinition.context"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="SearchParameter.base"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition.type"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition.targetProfile"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter.type"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter.allowedType"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter.targetProfile"/>
+  </context>
+  
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
