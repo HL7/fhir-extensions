@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Comment associated with the ContactPoint"/>
-      <definition value="A comment associated with the ContactPoint such as usage notes or pronunciation."/>
+      <definition value="The [ContactPoint-purpose extension](StructureDefinition-contactpoint-purpose.html) (possibly just the .text element portion of it) is used to convey the circumstances in which the contact should be used.  The 'comment' is used for other purposes, such as days of week or time of day for use, who to ask for, etc."/>
       <min value="0"/>
       <max value="1"/>
     </element>
