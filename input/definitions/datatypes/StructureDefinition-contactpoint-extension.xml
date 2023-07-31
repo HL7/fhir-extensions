@@ -36,7 +36,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="ContactPoint"/>
+    <expression value="ContactPoint.value"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
