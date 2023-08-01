@@ -10,7 +10,7 @@
   <title value="Obligation Codes"/>
   <status value="active"/>
   <experimental value="true"/>
-  <description value="Codes that describe application obligations for handling FHIR content. There are three kinds of codes in this code system:&#xA; * Qualifier codes: SHALL/SHOULD&#xA; * Functional codes - these describe a functional behavior applications may implement, and have the concept property qualify = true, and must be qualified by one of SHALL, SHOULD, or MAY&#xA; * Composite codes - these specialise AggregateConcepts, and have an concept property 'expression' that defines them in terms of a set of functional codes&#xA; &#xA; Functional and Qualifier codes are combined using the syntax ```[modifierCode] &quot;:&quot; [obligationCode]``` e.g. SHALL:will-send&#xA; &#xA; The functional codes are grouped into three different high level categories:&#xA; * ResourceProducerObligations - functions that pertain to applications that produce resources (typically from databases or forms)&#xA; * ExchangerObligations - functions that pertain to applications that transfer resources between other applications (including FHIR repositories)&#xA; * ResourceConsumerObligations - functions that pertain to applications that consume the content of resources and do something with them&#xA; &#xA; Note that applications typically produce and consume resources, whether client, server or something else again, and &#xA; many applications transfer resources as well&#xA; "/>
+  <description value="Codes that describe application obligations for handling FHIR content. There are three kinds of codes in this code system:&#xA; * Qualifier codes: SHALL/SHOULD/MAY&#xA; * Functional codes - these describe a functional behavior applications may implement.  If they have a `modifiers` concept property, they must be qualified by one of SHALL, SHOULD, or MAY depending on what the modifiers property value is.&#xA; * Composite codes - these specialise AggregateConcepts, and have an concept property 'expression' that defines them in terms of a set of functional codes&#xA; &#xA; Functional and Qualifier codes are combined using the syntax ```[modifierCode] &quot;:&quot; [obligationCode]``` e.g. SHALL:populate&#xA;The display name for such post-coordinated codes is the space-separated concatenation of the diplay names for the two components.  E.g. 'SHALL populate'.&#xa;&#xA; The functional codes are grouped into three different high level categories:&#xA; * ResourceProducerObligations - functions that pertain to applications that produce resources (typically from databases or forms)&#xA; * ExchangerObligations - functions that pertain to applications that transfer resources between other applications (including FHIR repositories)&#xA; * ResourceConsumerObligations - functions that pertain to applications that consume the content of resources and do something with them&#xA; &#xA; Note that applications typically produce and consume resources, whether client, server or something else again, and many applications transfer resources as well."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -22,8 +22,24 @@
   <compositional value="true"/>
   <content value="complete"/>
   <property>
-    <code value="shall-should"/>
-    <description value="Codes with this property true must have shall or should appended in the grammar"/>
+    <code value="modifiers"/>
+    <description value="If present, indicates that modifier codes must be present and indicates which ones are permitted.  If not present, then modifiers cannot be used with the code.  Allowed property values are 'shall-should' or 'any'."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="not-selectable"/>
+    <uri value="http://hl7.org/fhir/concept-properties#notSelectable"/>
+    <description value="Codes with this property set are not intended to appear in instances.  They are for grouping/subsetting purposes only."/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="converse"/>
+    <description value="Indicates another obligation code with an opposite meaning to this one.  A single obligation cannot list two converse codes and an application cannot satisfy both a code and its coverse (though if the obligation strength for both is SHOULD or MAY, an application could conform with both obligations by adhering to one and not the other)."/>
+    <valueBoolean value="true"/>
+  </property>
+  <property>
+    <code value="security-dependent"/>
+    <description value="Obligation codes with this property set to true may be overridden by policies and regulations related to privacy and security, including patient consent.  Testing of such obligations will need to take such considerations into account."/>
     <type value="boolean"/>
   </property>
   <property>
@@ -34,82 +50,108 @@
   <concept>
     <code value="ModifierCodes"/>
     <display value="ModifierCodes"/>
-    <definition value="SHALL/SHOULD that can be prepended to codes that have the qualify property = true"/>
+    <definition value="Codes that can be prepended to other obligation codes to indicate the 'strength' of the obligation"/>
     <concept>
       <code value="SHALL"/>
       <display value="SHALL"/>
-      <definition value="The functional requirement is mandatory. Applications that do not implement this functional behavior are considered non-conformant"/>
+      <definition value="The functional requirement is mandatory. Applications that do not implement this functional behavior are considered non-conformant."/>
     </concept>
     <concept>
       <code value="SHOULD"/>
       <display value="SHOULD"/>
-      <definition value="The functional requirement is a recommendation"/>
+      <definition value="The functional requirement is a recommendation.  Applications are strongly encouraged to implement this functional behavior, but are still conformant if they do not."/>
+    </concept>
+    <concept>
+      <code value="MAY"/>
+      <display value="MAY"/>
+      <definition value="The functional requirement is an option worthy of consideration but there is no expectation or recommendation associated with its use.  NOTE: Elements not flagged with any obligation are intrinsically still 'MAY' (unless constraints dictate otherwise), but have not specifically been called out by the author as worthy of consideration."/>
     </concept>
   </concept>
   <concept>
     <code value="ResourceProducerObligations"/>
     <display value="ResourceProducerObligations"/>
     <definition value="Resource producers are applications that assembles resources in the first place. Resource producers may be a server, client, sender, receiver or some middleware device, and they may store the resource, or merely hand it on."/>
+    <property>
+      <code value="not-selectable"/>
+      <valueBoolean value="true"/>
+    </property>
     <concept>
-      <code value="can-send"/>
-      <display value="Conformant Applications producing resources SHALL/SHOULD be able to correctly populate this element"/>
-      <definition value="Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value"/>
+      <code value="able-populate"/>
+      <display value="be able to populate"/>
+      <definition value="Conformant applications producing resources SHALL/SHOULD/MAY be able to correctly populate this element.&#xa;Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value.  (i.e. not a data-absent-reason or equivalent.)  This obligation does not impose expectations on the circumstances in whichthe element will be sent, only that it can be in at least some situations."/>
       <property>
-        <code value="shall-should"/>
-        <valueBoolean value="true"/>
+        <code value="modifiers"/>
+        <valueCode value="any"/>
       </property>
       <concept>
-        <code value="will-send"/>
-        <display value="Conformant Applications producing resources SHALL/SHOULD send this element if a value is known, and allowed to be shared"/>
-        <definition value="Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it populates it, subject to security, consent and privacy considerations"/>
+        <code value="populate"/>
+        <display value="populate"/>
+        <definition value="Conformant applications producing resources SHALL/SHOULD include this element if a value is known and allowed to be shared.&#xa;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it populates it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared."/>
         <property>
-          <code value="shall-should"/>
+          <code value="modifiers"/>
+          <valueCode value="shall-should"/>
+        </property>
+        <property>
+          <code value="security-dependent"/>
           <valueBoolean value="true"/>
         </property>
       </concept>
     </concept>
     <concept>
-      <code value="use-reason"/>
-      <display value="Conformant Applications SHALL/SHOULD provide an element with a DataAbsentReason or a NullFlavor (or equivalent) if a value is not known and the element is mandatory"/>
-      <definition value="Notes: When no value for an element is known, the producer populates the element with a [DataAbsentReason](StructureDefinition-data-absent-reason.html) or a [NullFlavor](StructureDefinition-iso21090-nullFlavor.html) (or equivalent). If no particular reason is known or reportable, the DataAbsentReason 'unknown' is used. Which particular extension can be used, see [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives)"/>
-      <property>
-        <code value="shall-should"/>
-        <valueBoolean value="true"/>
-      </property>
-    </concept>
-    <concept>
       <code value="in-narrative"/>
-      <display value="Conformant Applications SHALL/SHOULD ensure that this data element is represented in any human readable representation in a resource"/>
-      <definition value="Notes: When no value for an element is known, the producer populates the element with a [DataAbsentReason](StructureDefinition-data-absent-reason.html) or a [NullFlavor](StructureDefinition-iso21090-nullFlavor.html) (or equivalent). If no particular reason is known or reportable, the DataAbsentReason 'unknown' is used. Which particular extension can be used, see [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives)"/>
+      <display value="include in narrative"/>
+      <definition value="Conformant applications SHALL/SHOULD/MAY ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
       <property>
-        <code value="shall-should"/>
+        <code value="modifiers"/>
+        <valueCode value="any"/>
+      </property>
+      <property>
+        <code value="security-dependent"/>
         <valueBoolean value="true"/>
       </property>
     </concept>
     <concept>
-      <code value="in-ui"/>
-      <display value="Conformant Applications SHALL/SHOULD ensure that users can enter a value for this element during data input"/>
-      <definition value="Notes: Exactly what form the input takes is not specified, but the expectation is that this is a value that comes from the user, and not implied internally by the application"/>
-      <property>
-        <code value="shall-should"/>
-        <valueBoolean value="true"/>
-      </property>
+      <code value="exclude-narrative"/>
+      <display value="SHALL exclude from narrative"/>
+      <definition value="Conformant applications SHALL ensure that this data element is NOT represented in any human readable representation of a resource.&#xa;Notes: This may be useful for profiles related to de-identified records"/>
     </concept>
     <concept>
-      <code value="in-store"/>
-      <display value="Conformant Applications SHALL/SHOULD ensure that the value for this element is stored in a persistent data store"/>
-      <definition value="Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understand that the same value will be available in later exchanges"/>
+      <code value="allow-entry"/>
+      <display value="allow data entry"/>
+      <definition value="Conformant applications SHALL/SHOULD/MAY ensure that users can enter a value for this element during data input/capture.&#xa;Notes: Exactly what form the input takes is not specified, but the expectation is that this is a value that comes from the user, and not implied internally by the application"/>
       <property>
-        <code value="shall-should"/>
-        <valueBoolean value="true"/>
+        <code value="modifiers"/>
+        <valueCode value="any"/>
       </property>
     </concept>
     <concept>
       <code value="must-explain"/>
-      <display value="Documentation applicable to Conformant Applications SHALL/SHOULD explain how this element is handled"/>
-      <definition value="Notes: this is really a rule about specifications, implying that another specification (which might be application documentation) either makes this element will-send, or explains how the use cases that involve this element do not arise, or how they are handled. An example: IPA marks Patient.active must-handle and must-explain. Client applications must process Patient.active correctly if they see it, but many (though *not all*) specifications and/or applications ensure that Patient.active will never be false, and so it will never be populated e.g. MedMij in Netherlands prohibits use of Patient.active, and explains that it is never false."/>
+      <display value="populate or document irrelevance"/>
+      <definition value="Documentation applicable to Conformant applications SHALL/SHOULD explain how this element is handled.&#xa;Notes: this is really a rule about specifications, implying that another specification (which might be application documentation) either makes this element `populate`, or explains how the use cases that involve this element do not arise, or how they are handled. An example: IPA marks Patient.active must-handle and must-explain. Client applications must process Patient.active correctly if they see it, but many (though *not all*) specifications and/or applications ensure that Patient.active will never be false, and so it will never be populated e.g. MedMij in Netherlands prohibits use of Patient.active, and explains that it is never false."/>
       <property>
-        <code value="shall-should"/>
+        <code value="modifiers"/>
+        <valueCode value="shall-should"/>
+      </property>
+    </concept>
+  </concept>
+  <concept>
+    <code value="GeneralObligations"/>
+    <display value="GeneralObligations"/>
+    <definition value="These obligations could apply to resource Producers, Exchangers, or Consumers."/>
+    <property>
+      <code value="not-selectable"/>
+      <valueBoolean value="true"/>
+    </property>
+    <concept>
+      <code value="persist"/>
+      <display value="persist"/>
+      <definition value="Conformant applications SHALL/SHOULD/MAY ensure that the value for this element is stored in a persistent data store.&#xa;Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
+      <property>
+        <code value="modifiers"/>
+        <valueCode value="any"/>
+      </property>
+      <property>
+        <code value="security-dependent"/>
         <valueBoolean value="true"/>
       </property>
     </concept>
@@ -117,134 +159,134 @@
   <concept>
     <code value="ExchangerObligations"/>
     <display value="ExchangerObligations"/>
-    <definition value="Exchangers do not produce or consume resources; they only pass the resource on. They may store the resource in a persistent store between reception and subsequent transfer. The generic FHIR servers are exchangers, as are most middleware systems."/>
+    <definition value="Exchangers do not produce or consume resources; they only pass the resource on. They may store the resource in a persistent store between reception and subsequent transfer. The generic FHIR servers are exchangers, as are most middleware systems.  Note that Exchanger obligations may also be taken on by Producers or Consumers if they act as intermediaries between other systems or between systems and users."/>
+    <property>
+      <code value="not-selectable"/>
+      <valueBoolean value="true"/>
+    </property>
     <concept>
       <code value="unaltered"/>
-      <display value="Conformant Applications SHALL/SHOULD ensure that this element does not change between receiving and transfer"/>
-      <definition value="Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
+      <display value="not alter"/>
+      <definition value="Conformant applications SHALL/SHOULD ensure that this element does not change between receiving and transfer.&#xa;Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
       <property>
-        <code value="shall-should"/>
-        <valueBoolean value="true"/>
+        <code value="modifiers"/>
+        <valueCode value="shall-should"/>
+      </property>
+      <property>
+        <code value="converse"/>
+        <valueCode value="may-alter"/>
       </property>
     </concept>
     <concept>
       <code value="may-alter"/>
-      <display value="Conformant Applications MAY choose not to alter this element value"/>
-      <definition value="Notes: this is the converse of preserve, and is really a null-statement - it's the default rule for an application. It's defined here to allow a specification to be explicit that it isn't conveying obligations for resource producers"/>
+      <display value="MAY alter"/>
+      <definition value="Conformant applications MAY choose not to alter this element value.&#xa;Notes: this is the converse of preserve, and is really a null-statement - it's the default rule for an application. It's defined here to allow a specification to be explicit that it isn't conveying obligations for resource producers"/>
+      <property>
+        <code value="converse"/>
+        <valueCode value="unaltered"/>
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="ResourceConsumerObligations"/>
     <display value="ResourceConsumerObligations"/>
     <definition value="Resource Consumers are applications that consume resources and do something with them, either displaying them to humans, transferring them to some other format for further re-use, or using them to drive some kind of application logic process AKA decision support. Resource Consumers often store resources, but do not need to, and whether resources are stored or not between receiving them and using them doesn't make any difference to the obligations"/>
+    <property>
+      <code value="not-selectable"/>
+      <valueBoolean value="true"/>
+    </property>
     <concept>
       <code value="no-error"/>
-      <display value="Conformant Applications SHALL/SHOULD accept resources containing any valid value for the element without error"/>
-      <definition value="Notes: Applications are still able to inform the user that a value cannot be processed correctly, but applications aren't able to reject the information out of hand or ignore the element value in order to process the resource correctly (which would be allowed for elements that do not have this obligation). This obligation also applies to elements that only contain a [DataAbsentReason](StructureDefinition-data-absent-reason.html) or a [NullFlavor](StructureDefinition-iso21090-nullFlavor.html) (or equivalent), should either of these be allowed on the consumer obligations"/>
+      <display value="not error if present"/>
+      <definition value="Conformant applications SHALL/SHOULD accept resources containing any valid value for the element without error.&#xa;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value where  (or equivalent), should either of these be allowed on the consumer obligations"/>
       <property>
-        <code value="shall-should"/>
-        <valueBoolean value="true"/>
+        <code value="modifiers"/>
+        <valueCode value="shall-should"/>
       </property>
     </concept>
     <concept>
       <code value="handle"/>
-      <display value="Conformant Applications SHALL/SHOULD handle the meaning of this element correctly"/>
-      <definition value="Notes: this rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc, but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
+      <display value="correctly handle"/>
+      <definition value="Conformant applications SHALL/SHOULD handle the meaning of this element correctly.&#xa;Notes: this rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
       <property>
-        <code value="shall-should"/>
-        <valueBoolean value="true"/>
+        <code value="modifiers"/>
+        <valueCode value="shall-should"/>
       </property>
       <concept>
         <code value="display"/>
-        <display value="Conformant Applications SHALL/SHOULD display the value of this element when presenting the data from the resource to a human user"/>
-        <definition value="Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
+        <display value="display"/>
+        <definition value="Conformant applications SHALL/SHOULD/MAY display the value of this element when presenting the data from the resource to a human user.&#xa;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
         <property>
-          <code value="shall-should"/>
-          <valueBoolean value="true"/>
+          <code value="modifiers"/>
+          <valueCode value="any"/>
         </property>
-      </concept>
-      <concept>
-        <code value="share"/>
-        <display value="Conformant Applications SHALL/SHOULD retain the value of this element when the information from the resource is shared with other applications"/>
-        <definition value="Notes: this rule applies whether the information is being shared in the form of a FHIR resource, or in some other format. The rule applies whether or not the resource is stored prior to sharing."/>
         <property>
-          <code value="shall-should"/>
+          <code value="security-dependent"/>
           <valueBoolean value="true"/>
         </property>
       </concept>
       <concept>
         <code value="process"/>
-        <display value="Conformant Applications SHALL/SHOULD consider the value of this element when processing the resource as specified by the IG"/>
-        <definition value="Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG [DataAbsentReason](StructureDefinition-data-absent-reason.html) or [NullFlavor](StructureDefinition-iso21090-nullFlavor.html) or equivalent when handling the resource or the information in it as specified by the other obligations."/>
+        <display value="process"/>
+        <definition value="Conformant applications SHALL/SHOULD/MAY consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
         <property>
-          <code value="shall-should"/>
-          <valueBoolean value="true"/>
+          <code value="modifiers"/>
+          <valueCode value="any"/>
         </property>
-      </concept>
-      <concept>
-        <code value="store"/>
-        <display value="Conformant Applications SHALL/SHOULD store the value of this element in a persistent data store"/>
-        <definition value="Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understand that the same value will be available in later exchanges"/>
         <property>
-          <code value="shall-should"/>
+          <code value="security-dependent"/>
           <valueBoolean value="true"/>
         </property>
       </concept>
       <concept>
         <code value="print"/>
-        <display value="Conformant Applications SHALL/SHOULD print the value of this element somewhere"/>
-        <definition value="Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
+        <display value="print"/>
+        <definition value="Conformant applications SHALL/SHOULD/MAY print the value of this element somewhere.&#xa;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
         <property>
-          <code value="shall-should"/>
+          <code value="modifiers"/>
+          <valueCode value="any"/>
+        </property>
+        <property>
+          <code value="security-dependent"/>
           <valueBoolean value="true"/>
         </property>
       </concept>
-      <concept>
-        <code value="ignore"/>
-        <display value="Conformant Applications SHALL/SHOULD ignore the value of this element somewhere"/>
-        <definition value="Notes: This is different to can-ignore, which indicates that the application may ignore it. This is an expectation that it will be ignored"/>
-        <property>
-          <code value="shall-should"/>
-          <valueBoolean value="true"/>
-        </property>
-      </concept>
-      <concept>
-        <code value="preserve"/>
-        <display value="Conformant Applications SHALL/SHOULD keep the value of this element exactly"/>
-        <definition value="Notes: this is an expectation that future references to the value, whether produced or consumed, will be to the exact same data. Alternative or truncated data is not allowed"/>
-        <property>
-          <code value="shall-should"/>
-          <valueBoolean value="true"/>
-        </property>
-      </concept>
-      <concept>
-        <code value="modify"/>
-        <display value="Conformant Applications SHALL/SHOULD keep the value of this element exactly"/>
-        <definition value="Notes: this is an expectation that future references to the value, whether produced or consumed, will be to the exact same data. Alternative or truncated data is not allowed"/>
-        <property>
-          <code value="shall-should"/>
-          <valueBoolean value="true"/>
-        </property>
-      </concept>
+    </concept>
+    <concept>
+      <code value="ignore"/>
+      <display value="ignore"/>
+      <definition value="Conformant applications SHALL/SHOULD/MAY ignore the value of this element somewhere."/>
+      <property>
+        <code value="modifiers"/>
+        <valueCode value="any"/>
+      </property>
+      <property>
+        <code value="converse"/>
+        <valueCode value="handle"/>
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="AggregateConcepts"/>
     <display value="AggregateConcepts"/>
-    <definition value="Predefined common combinations"/>
+    <definition value="Predefined common combinations.  NOTE: modifiers are already pre-coordinated into these, so additional modifiers are not allowed.  E.g. it is non-conformant to say MAY:may-populate."/>
+    <property>
+      <code value="not-selectable"/>
+      <valueBoolean value="true"/>
+    </property>
     <concept>
-      <code value="can-populate"/>
-      <display value="A Conformant Application MAY choose to populate this element or not"/>
-      <definition value="Notes: this is the converse of will-send, and is really a null-statement - it's the default rule for an application. It's defined here to allow a specification to be explicit that it isn't conveying obligations for resource producers"/>
+      <code value="may-populate"/>
+      <display value="may populate"/>
+      <definition value="A Conformant Application MAY choose to populate this element or not.&#xa;Notes: this is really a null-statement - it's the default rule for an application. It's defined here to allow a specification to be explicit that it isn't conveying obligations for resource producers."/>
       <property>
         <code value="combination"/>
-        <valueCode value="MAY:will-send"/>
+        <valueCode value="MAY:populate"/>
       </property>
     </concept>
     <concept>
-      <code value="can-ignore"/>
-      <display value="A Conformant Application MAY ignore this element"/>
-      <definition value="Notes: this is the converse of must-handle, and is really a null-statement - it's the default rue for an application. It's defined here to allow a specification to be explicit that it isn't converying obligations for resource consumers"/>
+      <code value="may-ignore"/>
+      <display value="may ignore"/>
+      <definition value="A Conformant Application MAY ignore this element.&#xa;Notes: this is the converse of must-handle, and is really a null-statement - it's the default rue for an application. It's defined here to allow a specification to be explicit that it isn't converying obligations for resource consumers"/>
       <property>
         <code value="component"/>
         <valueCode value="MAY:ignore"/>
@@ -252,27 +294,15 @@
     </concept>
     <concept>
       <code value="v2-re"/>
-      <display value="V2 RE"/>
+      <display value="V2 RE (required but may be empty)"/>
       <definition value="RE as defined in chapter 2 of the v2 specification"/>
       <property>
         <code value="component"/>
-        <valueCode value="SHALL:can-send"/>
+        <valueCode value="SHALL:populate"/>
       </property>
       <property>
         <code value="component"/>
-        <valueCode value="SHALL:use-dar-nf"/>
-      </property>
-      <property>
-        <code value="component"/>
-        <valueCode value="SHALL:must-handle"/>
-      </property>
-      <property>
-        <code value="component"/>
-        <valueCode value="SHALL:must-display"/>
-      </property>
-      <property>
-        <code value="component"/>
-        <valueCode value="SHOULD:must-share"/>
+        <valueCode value="SHALL:display"/>
       </property>
       <property>
         <code value="component"/>
@@ -289,11 +319,11 @@
       <definition value="R2 as defined in IHE Appendix Z"/>
       <property>
         <code value="component"/>
-        <valueCode value="SHALL:will-send"/>
+        <valueCode value="SHALL:populate"/>
       </property>
       <property>
         <code value="component"/>
-        <valueCode value="SHALL:can-ignore"/>
+        <valueCode value="MAY:ignore"/>
       </property>
       <property>
         <code value="component"/>
@@ -302,23 +332,19 @@
     </concept>
     <concept>
       <code value="std"/>
-      <display value="Standard Obligations"/>
+      <display value="Standard obligations"/>
       <definition value="The standard recommended set of obligations for IGs to use unless they know they want something different. Note that the standard codes don't include use-dar, use-dar-nf, use-dar-if-allowed / use-reason - that gets put on specific elements that justify this handling"/>
       <property>
         <code value="component"/>
-        <valueCode value="SHALL:will-send"/>
+        <valueCode value="SHALL:populate"/>
       </property>
       <property>
         <code value="component"/>
-        <valueCode value="SHALL:will-present"/>
+        <valueCode value="SHALL:display"/>
       </property>
       <property>
         <code value="component"/>
         <valueCode value="SHALL:no-error"/>
-      </property>
-      <property>
-        <code value="component"/>
-        <valueCode value="SHOULD:must-handle"/>
       </property>
     </concept>
   </concept>
