@@ -24,7 +24,7 @@
       <value value="http://hl7.org/Special/committees/fhir-i"/>
     </telecom>
   </contact>
-  <description value="Documents obligations that apply to applications implementing this element. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail"/>
+  <description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -52,20 +52,20 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Documents obligations for applications making use of this element"/>
-      <definition value="Documents obligations that apply to applications implementing this element. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element."/>
+      <short value="Obligations for applications using element/in model"/>
+      <definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail"/>
       <min value="0"/>
       <max value="*"/>
     </element>
-
+    
     <element id="Extension.extension:code">
       <path value="Extension.extension"/>
       <sliceName value="code"/>
       <short value="Composite code describing the nature of the obligation"/>
-      <definition value="A code that describes the obligations that apply to implementing applications."/>
+      <definition value="A code that describes the obligation(s) that apply to implementing applications."/>
       <comment value="The code may be a composite code that has SHALL/SHOULD/MAY along with the nature of the obligation (see the details on the coding system)."/>
       <min value="1"/>
-      <max value="1"/> 
+      <max value="*"/> 
     </element> 
     <element id="Extension.extension:code.extension">
       <path value="Extension.extension.extension"/> 
@@ -122,7 +122,7 @@
       <sliceName value="actor"/>
       <short value="Actor(s) this obligation applies to (all actors if none)"/>
       <definition value="Actor(s) to which the obligation applies."/>
-      <comment value="If not actors are specified, then the obligation applies to all implementations."/>
+      <comment value="If no actors are specified, then the obligation applies to all implementations.  (This should be done with caution as it may limit reuseability of the profile.)"/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -199,8 +199,8 @@
       <path value="Extension.extension"/>
       <sliceName value="filter"/>
       <short value="Limits obligation to some repeats by FHIRPath"/>
-      <definition value="A FHIRPath expression that restricts to the obligation to one of a set of repeats."/>
-      <comment value="This might be used to indicate obligations that apply to home phone number, and not to other phone numbers, for example."/>
+      <definition value="A FHIRPath expression that restricts to the obligation to only those occurrences of the element that fall into the collection defined by the expression."/>
+      <comment value="For example, this might be used to indicate obligations that apply to home phone numbers and not to other contact points."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -223,7 +223,7 @@
     <element id="Extension.extension:filterDocumentation">
       <path value="Extension.extension"/>
       <sliceName value="filterDocumentation"/>
-      <short value="Ddescribes the intent of the filter (short)"/>
+      <short value="Describes the intent of the filter (short)"/>
       <definition value="Documents the FHIRPath expression for the benefit of users who are not familiar with FHIRPath."/>
       <min value="0"/>
       <max value="1"/>
@@ -247,8 +247,8 @@
     <element id="Extension.extension:process">
       <path value="Extension.extension"/>
       <sliceName value="process"/>
-      <short value="The obligation only applies when perfomring the indicated process"/>
-      <definition value="A process that the obligation applies to. This might a canonical URL for an OperationDefiniti on, or some other reference."/>
+      <short value="The obligation only applies when performing the indicated process"/>
+      <definition value="A process that the obligation applies to. This might a canonical URL for an OperationDefinition, or a uri that refers to some externally defined process such as a section within an IG."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -264,7 +264,10 @@
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="code"/>
+        <code value="canonical(OperationDefinition)"/>
+      </type>
+      <type>
+        <code value="uri"/>
       </type>
     </element>
     <element id="Extension.url">
