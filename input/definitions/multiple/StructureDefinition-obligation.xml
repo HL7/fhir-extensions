@@ -238,7 +238,7 @@
     </element>
     <element id="Extension.extension:filterDocumentation.value[x]">
       <path value="Extension.extension.value[x]"/>
-      <min value="1"/>\
+      <min value="1"/>
       <type>
         <code value="string"/>
       </type>
@@ -264,7 +264,8 @@
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="canonical(OperationDefinition)"/>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
       </type>
       <type>
         <code value="uri"/>
