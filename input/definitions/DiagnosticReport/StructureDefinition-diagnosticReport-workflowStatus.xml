@@ -108,5 +108,13 @@
         <code value="instant"/>
       </type>
     </element>
+
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-workflowStatus"/>
+    </element>
   </differential>
 </StructureDefinition>

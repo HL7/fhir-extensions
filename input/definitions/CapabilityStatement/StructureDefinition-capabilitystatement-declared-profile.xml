@@ -68,7 +68,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="capabilitystatement-declared-profile"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/capabilitystatement-declared-profile"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

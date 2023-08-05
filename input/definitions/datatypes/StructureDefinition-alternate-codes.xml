@@ -69,7 +69,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/coding-purpose"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/alternate-codes"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

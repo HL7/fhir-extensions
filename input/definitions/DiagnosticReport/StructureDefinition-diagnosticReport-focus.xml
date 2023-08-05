@@ -55,7 +55,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-focus"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
