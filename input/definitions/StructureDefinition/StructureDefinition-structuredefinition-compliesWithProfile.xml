@@ -18,7 +18,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="SDcompliesWithProfile"/>
-  <title value="StructureDefinition Compiles With Profile"/>
+  <title value="StructureDefinition Complies With Profile"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2014-01-31"/>

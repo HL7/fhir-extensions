@@ -9,3 +9,5 @@ temp/
 
 output/
 /FHIR-extensions.xml
+
+.index.json

@@ -1,8 +1,13 @@
-# Tooling IG
+# Core FHIR Extensions IG
 
-Source for the tooling extensions documentation.
+Defines the 'standard' extensions that are referenced by the FHIR core specification.  Now maintained as a separate specification to allow faster iteration.
 
-https://build.fhir.org/ig/FHIR/fhir-tools-ig
+[https://build.fhir.org/ig/HL7/fhir-extensions](https://build.fhir.org/ig/HL7/fhir-extensions)
+=======
+Source for the extensions package.
 
-This IG is used when building all IGs
+https://build.fhir.org/ig/HL7/fhir-extensions
+
+This IG is logically part of the main FHIR expectation
+
  
