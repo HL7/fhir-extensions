@@ -76,7 +76,7 @@
       <valueBoolean value="true"/>
     </property>
     <concept>
-      <code value="able-populate"/>
+      <code value="able-to-populate"/>
       <display value="be able to populate"/>
       <definition value="Conformant applications producing resources SHALL/SHOULD/MAY be able to correctly populate this element.&#xa;Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value.  (i.e. not a data-absent-reason or equivalent.)  This obligation does not impose expectations on the circumstances in whichthe element will be sent, only that it can be in at least some situations."/>
       <property>
@@ -116,16 +116,16 @@
       <definition value="Conformant applications SHALL ensure that this data element is NOT represented in any human readable representation of a resource.&#xa;Notes: This may be useful for profiles related to de-identified records"/>
     </concept>
     <concept>
-      <code value="allow-entry"/>
-      <display value="allow data entry"/>
-      <definition value="Conformant applications SHALL/SHOULD/MAY ensure that users can enter a value for this element during data input/capture.&#xa;Notes: Exactly what form the input takes is not specified, but the expectation is that this is a value that comes from the user, and not implied internally by the application"/>
+      <code value="user-input"/>
+      <display value="allow user input"/>
+      <definition value="Conformant applications SHALL/SHOULD/MAY ensure that users can enter a value for this element during data input/capture.&#xa;Notes: Exactly what form the input takes is not specified, but the expectation is that this is a value that comes from the user, and not implied internally by the application."/>
       <property>
         <code value="modifiers"/>
         <valueCode value="any"/>
       </property>
     </concept>
     <concept>
-      <code value="must-explain"/>
+      <code value="explain"/>
       <display value="populate or document irrelevance"/>
       <definition value="Documentation applicable to Conformant applications SHALL/SHOULD explain how this element is handled.&#xa;Notes: this is really a rule about specifications, implying that another specification (which might be application documentation) either makes this element `populate`, or explains how the use cases that involve this element do not arise, or how they are handled. An example: IPA marks Patient.active must-handle and must-explain. Client applications must process Patient.active correctly if they see it, but many (though *not all*) specifications and/or applications ensure that Patient.active will never be false, and so it will never be populated e.g. MedMij in Netherlands prohibits use of Patient.active, and explains that it is never false."/>
       <property>
@@ -202,6 +202,32 @@
       <property>
         <code value="modifiers"/>
         <valueCode value="shall-should"/>
+      </property>
+    </concept>
+    <concept>
+      <code value="reject-invalid"/>
+      <display value="reject invalid"/>
+      <definition value="Conformant applications SHALL/SHOULD check that values for this element meet all data constraints asserted within the profile declaring this obligation.  If validity issues are found, not accept the instance.&#xa;Notes: This applies to validating the element with the obligation, but not resources referenced by it."/>
+      <property>
+        <code value="modifiers"/>
+        <valueCode value="shall-should"/>
+      </property>
+      <property>
+        <code value="converse"/>
+        <valueCode value="accept-invalid"/>
+      </property>
+    </concept>
+    <concept>
+      <code value="accept-invalid"/>
+      <display value="not validate"/>
+      <definition value="Conformant applications SHALL/SHOULD accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xa;This applies to non-valid constraints, not to non-valid syntax or failure to meet base resource validity expectations.  Typically used when a system needs to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
+      <property>
+        <code value="modifiers"/>
+        <valueCode value="shall-should"/>
+      </property>
+      <property>
+        <code value="converse"/>
+        <valueCode value="reject-invalid"/>
       </property>
     </concept>
     <concept>
