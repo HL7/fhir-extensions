@@ -63,7 +63,7 @@
       <sliceName value="code"/>
       <short value="Composite code describing the nature of the obligation"/>
       <definition value="A code that describes the obligation(s) that apply to implementing applications."/>
-      <comment value="The code may be a composite code that has SHALL/SHOULD/MAY along with the nature of the obligation (see the details on the coding system)."/>
+      <comment value="The code must be a 'selectable' code.  If multiple codes are specified, all obligations apply to the associated element(s).  When multiple codes are selected, they SHOULD NOT include (directly or by inheritance) a code that is a converse obligation and SHALL NOT include codes that are converses where the strength of both codes is SHALL."/>
       <min value="1"/>
       <max value="*"/> 
     </element> 
