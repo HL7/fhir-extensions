@@ -989,7 +989,7 @@
     <definition value="RE as defined in chapter 2 of the v2 specification"/>
     <property>
       <code value="parent"/>
-      <valueCode value="SHALL:be-able-populate"/>
+      <valueCode value="SHALL:able-to-populate"/>
     </property>
     <property>
       <code value="parent"/>
