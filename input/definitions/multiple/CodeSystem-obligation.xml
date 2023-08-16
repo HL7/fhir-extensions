@@ -997,7 +997,7 @@
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHOULD:store"/>
+      <valueCode value="SHOULD:persist"/>
     </property>
     <property>
       <code value="parent"/>
