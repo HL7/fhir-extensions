@@ -35,7 +35,7 @@
   <property>
     <code value="converse"/>
     <description value="Indicates another obligation code with an opposite meaning to this one.  A single obligation cannot list two converse codes and an application cannot satisfy both a code and its coverse (though if the obligation strength for both is SHOULD or MAY, an application could conform with both obligations by adhering to one and not the other)."/>
-    <type value="boolean"/>
+    <type value="code"/>
   </property>
   <property>
     <code value="security-dependent"/>
