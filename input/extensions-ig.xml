@@ -9,7 +9,7 @@
   </extension>
   <url value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="1.1.0-cibuild"/>
+  <version value="5.1.0-cibuild"/>
   <name value="FHIRExtensionPack"/>
   <title value="FHIR Extensions Pack"/>
   <status value="active"/>
@@ -275,14 +275,7 @@
       </code>
       <value value="input/structuremap-resource-factory.json"/>
     </parameter>
-    
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="version-comparison-master"/>
-      </code>
-      <value value="1.0.0"/>
-    </parameter>
+
 
     <parameter>
       <code>
