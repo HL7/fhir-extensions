@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="questionnaire-derivationType"/>
+  <id value="contactpoint-purpose"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -9,29 +9,34 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/contactpoint-purpose"/>
   <version value="5.0.0"/>
-  <name value="QuestionnaireDerivationType"/>
-  <title value="Questionnaire Derivation Type"/>
+  <name value="ContactPointPurpose"/>
+  <title value="ContactPoint Purpose"/>
   <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2023-03-19"/>
-  <publisher value="Health Level Seven International (FHIR Infrastructure)"/>
+  <experimental value="false"/>
+  <date value="2015-02-28"/>
+  <publisher value="Health Level Seven, Inc. - FHIR Core WG"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+      <value value="http://hl7.org/special/committees/FHIR"/>
     </telecom>
   </contact>
-  <description value="Provides more precision about the type of derivation relationship that exists."/>
+  <description value="Indicates the reasons that are considered appropriate to reach out to the contactable entity via this particular mechanism.  Only for use when the ContactPoint is NOT nested inside ExtendedContactDetail."/>
   <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Questionnaire.derivation"/>
+    <expression value="ContactPoint"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -39,8 +44,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Kind of derivation"/>
-      <definition value="Provides more precision about the type of derivation relationship that exists."/>
+      <short value="Comment associated with the ContactPoint"/>
+      <definition value="Indicates the reasons that are considered appropriate to reach out to the contactable entity via this particular mechanism.  Only for use when the ContactPoint is NOT nested inside ExtendedContactDetail."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -50,18 +55,14 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/contactpoint-purpose"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="Coding"/>
+        <code value="CodeableConcept"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/questionnaire-derivationType"/>
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
