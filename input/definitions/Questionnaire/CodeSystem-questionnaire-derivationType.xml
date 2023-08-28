@@ -35,7 +35,7 @@
   <concept>
     <code value="extends"/>
     <display value="extends"/>
-    <definition value="Indicates this Questionnaire includes all of the items and permitted answers present in the target Questionnaire, however it also adds additional items and/or answers, such that a QuestionnaireResponse against the referencing Questionnaire may no longer be valid against the referenced Questionnaire."/>
+    <definition value="Indicates this Questionnaire includes all of the items and permitted answers present in the target Questionnaire, however it also adds additional items and/or answers.  A QuestionnaireResponse against the referenced Questionnaire should be valid against the referencing Questionnaire.  However, a QuestionnaireResponse against the referencing Questionnaire might not be valid against the referenced Questionnaire."/>
   </concept>
   <concept>
     <code value="compliesWith"/>

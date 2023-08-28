@@ -25,7 +25,7 @@
       <value value="http://hl7.org/special/committees/FHIR"/>
     </telecom>
   </contact>
-  <description value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by a FHIRPath statement. The FHIRPath expression is limited to a the [simple subset](fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed."/>
+  <description value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by a FHIRPath statement. The FHIRPath expression is limited to a the [simple subset](fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed. This is a more sophisticated mechanism of referring to an element than [[[http://hl7.org/fhir/StructureDefinition/targetElement]]] but does require the system resolving the item to be able to use at least FHIRPath.  If the author of the reference has the ability to ensure an id will be present on the target [[[http://hl7.org/fhir/StructureDefinition/targetElement]]] might be more widely useable."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A particular element of interest in the target resource (by limited FHIRPath)"/>
-      <definition value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by a FHIRPath statement. The FHIRPath expression is limited to a the [simple subset](fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed."/>
+      <definition value="Indicates that the reference has a  particular focus in the target resource, a particular element of interest, identified by a FHIRPath statement. The FHIRPath expression is limited to a the [simple subset](fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed. This is a more sophisticated mechanism of referring to an element than [[[http://hl7.org/fhir/StructureDefinition/targetElement]]] but does require the system resolving the item to be able to use at least FHIRPath.  If the author of the reference has the ability to ensure an id will be present on the target [[[http://hl7.org/fhir/StructureDefinition/targetElement]]] might be more widely useable."/>
       <comment value="This extension can be used when the target element has no explicit id associated with it. When there is an id on the telement of interest, the extension [http://hl7.org/fhir/StructureDefinition/targetElement](StructureDefinition-targetElement.html) can be used since it is much simpler to implement."/>
       <min value="0"/>
       <max value="*"/>
