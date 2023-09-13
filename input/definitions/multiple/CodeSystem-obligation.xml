@@ -33,6 +33,11 @@
     <type value="code"/>
   </property>
   <property>
+    <code value="qualifier"/>
+    <description value="Indicates the level of adherence expected to the obligation concept"/>
+    <type value="code"/>
+  </property>
+  <property>
     <code value="converse"/>
     <description value="Indicates another obligation code with an opposite meaning to this one.  A single obligation cannot list two converse codes and an application cannot satisfy both a code and its coverse (though if the obligation strength for both is SHOULD or MAY, an application could conform with both obligations by adhering to one and not the other)."/>
     <type value="code"/>
@@ -353,7 +358,7 @@
     <display value="SHALL be able to populate"/>
     <definition value="Conformant applications producing resources SHALL be able to correctly populate this element.&#xa;Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value.  (i.e. not a data-absent-reason or equivalent.)  This obligation does not impose expectations on the circumstances in which the element will be sent, only that it can be in at least some situations."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -366,7 +371,7 @@
     <display value="SHOULD be able to populate"/>
     <definition value="Conformant applications producing resources SHOULD be able to correctly populate this element.&#xa;Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value.  (i.e. not a data-absent-reason or equivalent.)  This obligation does not impose expectations on the circumstances in which the element will be sent, only that it shold be in at least some situations."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -379,7 +384,7 @@
     <display value="MAY be able to populate"/>
     <definition value="Conformant applications producing resources MAY be able to correctly populate this element.&#xa;Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value.  (i.e. not a data-absent-reason or equivalent.)  This obligation does not impose expectations on the circumstances in which the element will be sent, only that it may be in at least some situations.  This is a null statement and is the default behavior for originating systems if other obligations are not specified."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
@@ -391,6 +396,10 @@
     <code value="SHALL:populate"/>
     <display value="SHALL populate"/>
     <definition value="Conformant applications producing resources SHALL include this element if a value is known and allowed to be shared.&#xa;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it populates it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared."/>
+    <property>
+      <code value="qualifier"/>
+      <valueCode value="SHALL"/>
+    </property>
     <property>
       <code value="parent"/>
       <valueCode value="SHALL:able-to-populate"/>
@@ -413,6 +422,10 @@
       <valueBoolean value="true"/>
     </property>
     <property>
+      <code value="qualifier"/>
+      <valueCode value="SHOULD"/>
+    </property>
+    <property>
       <code value="parent"/>
       <valueCode value="SHOULD:able-to-populate"/>
     </property>
@@ -430,7 +443,7 @@
     <display value="SHALL include in narrative"/>
     <definition value="Conformant applications SHALL ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -447,7 +460,7 @@
     <display value="SHOULD include in narrative"/>
     <definition value="Conformant applications SHOULD ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -464,7 +477,7 @@
     <display value="MAY include in narrative"/>
     <definition value="Conformant applications MAY ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
@@ -481,7 +494,7 @@
     <display value="SHALL exclude from narrative"/>
     <definition value="Conformant applications SHALL ensure that this data element is NOT represented in any human readable representation of a resource.&#xa;Notes: This may be useful for profiles related to de-identified records"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -494,7 +507,7 @@
     <display value="SHOULD exclude from narrative"/>
     <definition value="Conformant applications SHOULD ensure that this data element is NOT represented in any human readable representation of a resource.&#xa;Notes: This may be useful for profiles related to de-identified records"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -507,7 +520,7 @@
     <display value="SHALL allow user input"/>
     <definition value="Conformant applications SHALL ensure that users can enter a value for this element during data input/capture.&#xa;Notes: Exactly what form the input takes is not specified, but the expectation is that this is a value that comes from the user, and not implied internally by the application."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -520,7 +533,7 @@
     <display value="SHOULD allow user input"/>
     <definition value="Conformant applications SHOULD ensure that users can enter a value for this element during data input/capture.&#xa;Notes: Exactly what form the input takes is not specified, but the expectation is that this is a value that comes from the user, and not implied internally by the application."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -533,7 +546,7 @@
     <display value="MAY allow user input"/>
     <definition value="Conformant applications MAY ensure that users can enter a value for this element during data input/capture.&#xa;Notes: Exactly what form the input takes is not specified, but the expectation is that this is a value that comes from the user, and not implied internally by the application."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
@@ -546,7 +559,7 @@
     <display value="SHALL populate or document irrelevance"/>
     <definition value="Documentation applicable to Conformant applications SHALL explain how this element is handled.&#xa;Notes: this is really a rule about specifications, implying that another specification (which might be application documentation) either makes this element `populate`, or explains how the use cases that involve this element do not arise, or how they are handled. An example: IPA marks Patient.active must-handle and must-explain. Client applications must process Patient.active correctly if they see it, but many (though *not all*) specifications and/or applications ensure that Patient.active will never be false, and so it will never be populated e.g. MedMij in Netherlands prohibits use of Patient.active, and explains that it is never false."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -559,7 +572,7 @@
     <display value="SHOULD populate or document irrelevance"/>
     <definition value="Documentation applicable to Conformant applications SHOULD explain how this element is handled.&#xa;Notes: this is really a rule about specifications, implying that another specification (which might be application documentation) either makes this element `populate`, or explains how the use cases that involve this element do not arise, or how they are handled. An example: IPA marks Patient.active must-handle and must-explain. Client applications must process Patient.active correctly if they see it, but many (though *not all*) specifications and/or applications ensure that Patient.active will never be false, and so it will never be populated e.g. MedMij in Netherlands prohibits use of Patient.active, and explains that it is never false."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -572,7 +585,7 @@
     <display value="SHALL persist"/>
     <definition value="Conformant applications SHALL ensure that the value for this element is stored in a persistent data store.&#xa;Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -585,7 +598,7 @@
     <display value="SHOULD persist"/>
     <definition value="Conformant applications SHOULD ensure that the value for this element is stored in a persistent data store.&#xa;Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -598,7 +611,7 @@
     <display value="MAY persist"/>
     <definition value="Conformant applications MAY ensure that the value for this element is stored in a persistent data store.&#xa;Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
@@ -611,7 +624,7 @@
     <display value="SHALL not alter"/>
     <definition value="Conformant applications SHALL ensure that this element does not change between receiving and transfer.&#xa;Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -628,7 +641,7 @@
     <display value="SHOULD not alter"/>
     <definition value="Conformant applications SHOULD ensure that this element does not change between receiving and transfer.&#xa;Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -646,12 +659,12 @@
     <display value="MAY alter"/>
     <definition value="Conformant applications MAY choose to alter this element value.&#xa;Notes: this is really a null-statement - it's the default rule for an application. It's defined here to allow a specification to be explicit that it isn't conveying obligations for resource producers"/>
     <property>
-      <code value="parent"/>
-      <valueCode value="ResourceExchangerObligations"/>
+      <code value="qualifier"/>
+      <valueCode value="MAY"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="MAY"/>
+      <valueCode value="ResourceExchangerObligations"/>
     </property>
     <property>
       <code value="converse"/>
@@ -663,7 +676,7 @@
     <display value="SHALL not error if present"/>
     <definition value="Conformant applications SHALL accept resources containing any valid value for the element without error.&#xa;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value where  (or equivalent), should either of these be allowed on the consumer obligations"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -676,7 +689,7 @@
     <display value="SHOULD not error if present"/>
     <definition value="Conformant applications SHOULD accept resources containing any valid value for the element without error.&#xa;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value where  (or equivalent), should either of these be allowed on the consumer obligations"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -689,7 +702,7 @@
     <display value="SHALL reject invalid"/>
     <definition value="Conformant applications SHALL check that values for this element meet all data constraints asserted within the profile declaring this obligation.  If validity issues are found, the system SHALL not accept the instance.&#xa;Notes: This applies to validating the element with the obligation, but not resources referenced by it."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -706,7 +719,7 @@
     <display value="SHOULD reject invalid"/>
     <definition value="Conformant applications SHOULD check that values for this element meet all data constraints asserted within the profile declaring this obligation.  If validity issues are found, the system SHOULD not accept the instance.&#xa;Notes: This applies to validating the element with the obligation, but not resources referenced by it."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -723,7 +736,7 @@
     <display value="SHALL accept invalid"/>
     <definition value="Conformant applications SHALL accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xa;This applies to non-valid constraints, not to non-valid syntax or failure to meet base resource validity expectations.  Typically used when a system needs to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -740,7 +753,7 @@
     <display value="SHOULD accept invalid"/>
     <definition value="Conformant applications SHOULD accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xa;This applies to non-valid constraints, not to non-valid syntax or failure to meet base resource validity expectations.  Typically used when a system ought to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -757,7 +770,7 @@
     <display value="SHALL correctly handle"/>
     <definition value="Conformant applications SHALL handle the meaning of this element correctly.&#xa;Notes: this rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -770,7 +783,7 @@
     <display value="SHOULD correctly handle"/>
     <definition value="Conformant applications SHOULD handle the meaning of this element correctly.&#xa;Notes: this rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -782,6 +795,10 @@
     <code value="SHALL:display"/>
     <display value="SHALL display"/>
     <definition value="Conformant applications SHALL display the value of this element when presenting the data from the resource to a human user.&#xa;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
+    <property>
+      <code value="qualifier"/>
+      <valueCode value="SHALL"/>
+    </property>
     <property>
       <code value="parent"/>
       <valueCode value="SHALL:handle"/>
@@ -800,6 +817,10 @@
     <display value="SHOULD display"/>
     <definition value="Conformant applications SHOULD display the value of this element when presenting the data from the resource to a human user.&#xa;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
     <property>
+      <code value="qualifier"/>
+      <valueCode value="SHOULD"/>
+    </property>
+    <property>
       <code value="parent"/>
       <valueCode value="SHOULD:handle"/>
     </property>
@@ -817,7 +838,7 @@
     <display value="MAY display"/>
     <definition value="Conformant applications MAY display the value of this element when presenting the data from the resource to a human user.&#xa;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
@@ -833,6 +854,10 @@
     <code value="SHALL:process"/>
     <display value="SHALL process"/>
     <definition value="Conformant applications SHALL consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <property>
+      <code value="qualifier"/>
+      <valueCode value="SHALL"/>
+    </property>
     <property>
       <code value="parent"/>
       <valueCode value="SHALL:handle"/>
@@ -851,6 +876,10 @@
     <display value="SHOULD process"/>
     <definition value="Conformant applications SHOULD consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
+      <code value="qualifier"/>
+      <valueCode value="SHOULD"/>
+    </property>
+    <property>
       <code value="parent"/>
       <valueCode value="SHOULD:handle"/>
     </property>
@@ -868,7 +897,7 @@
     <display value="MAY process"/>
     <definition value="Conformant applications MAY consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
@@ -884,6 +913,10 @@
     <code value="SHALL:print"/>
     <display value="SHALL print"/>
     <definition value="Conformant applications SHALL print the value of this element somewhere.&#xa;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
+    <property>
+      <code value="qualifier"/>
+      <valueCode value="SHALL"/>
+    </property>
     <property>
       <code value="parent"/>
       <valueCode value="SHALL:handle"/>
@@ -902,6 +935,10 @@
     <display value="SHOULD print"/>
     <definition value="Conformant applications SHOULD print the value of this element somewhere.&#xa;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
     <property>
+      <code value="qualifier"/>
+      <valueCode value="SHOULD"/>
+    </property>
+    <property>
       <code value="parent"/>
       <valueCode value="SHOULD:handle"/>
     </property>
@@ -919,7 +956,7 @@
     <display value="MAY print"/>
     <definition value="Conformant applications MAY print the value of this element somewhere.&#xa;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
@@ -936,7 +973,7 @@
     <display value="SHALL ignore"/>
     <definition value="Conformant applications SHALL not make any use of the value of this element if received."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
@@ -953,7 +990,7 @@
     <display value="SHOULD ignore"/>
     <definition value="Conformant applications SHOULD not make any use of the value of this element if received."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
@@ -970,7 +1007,7 @@
     <display value="MAY ignore"/>
     <definition value="Conformant applications MAY not make any use of the value of this element if received.  This is a null statement and is the default behavior or consuming systems if other obligations are not specified."/>
     <property>
-      <code value="parent"/>
+      <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
