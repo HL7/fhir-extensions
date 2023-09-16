@@ -35,11 +35,11 @@
   <title value="Procedure Progress Status Codes Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="FHIR Project team"/>
+  <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
   <description value="This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the procedure performance process."/>

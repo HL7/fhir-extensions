@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2017-01-24"/>
-  <publisher value="Health Level Seven, Inc. - InM Work Group"/>
+  <publisher value="HL7 International / Infrastructure And Messaging"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/FHIR"/>
+      <value value="http://www.hl7.org/special/committees/inm"/>
     </telecom>
   </contact>
   <description value="This extension enables the capability currently available through MSH-16 (Application Level acknowledgement) in HL7 Version 2 to declare at a message instance level whether a response is required or only upon error or success, or never."/>

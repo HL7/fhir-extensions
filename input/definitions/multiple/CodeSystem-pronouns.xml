@@ -24,6 +24,13 @@
   <title value="Pronouns"/>
   <status value="draft"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
   <description value="This example code system defines a set of codes that can be used to indicate the pronouns used to communicate about an individual."/>
   <caseSensitive value="true"/>
   <content value="complete"/>

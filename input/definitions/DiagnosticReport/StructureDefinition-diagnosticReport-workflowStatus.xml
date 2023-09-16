@@ -18,11 +18,11 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2015-02-21"/>
-  <publisher value="Health Level Seven, Inc. - OO WG"/>
+  <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="HL7"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="The workflow status of the diagnostic report."/>

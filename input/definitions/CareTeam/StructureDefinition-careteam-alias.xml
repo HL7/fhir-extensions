@@ -22,12 +22,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-09-16"/>
-  <publisher value="Health Level Seven, Inc. - Patient Care WG"/>
+  <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/patientcare.html"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
+  </contact>
   </contact>
   <description value="Alternate names by which the team is also known."/>
   <fhirVersion value="5.0.0"/>

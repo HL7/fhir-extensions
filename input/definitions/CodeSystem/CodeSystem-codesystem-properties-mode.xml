@@ -25,6 +25,13 @@
   <title value="code system properties mode code system"/>
   <status value="draft"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+    </telecom>
+  </contact>
   <description value="CodeSystemPropertiesMode"/>
   <jurisdiction>
     <coding>

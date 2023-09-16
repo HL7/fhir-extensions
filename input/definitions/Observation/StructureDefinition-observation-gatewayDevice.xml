@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2015-03-02"/>
-  <publisher value="Health Level Seven, Inc. - OO WG"/>
+  <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/orders"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="To be used when the actual gateway used at the time of the observation, and the referenced device is also specified. The gateway device may be acting as a communication/data collector, translator or controller; This extension is useful when there is more than one gateway device, for example, where there are apps on a phone and each are a device, and more than one app is used to pass on the data to a FHIR Server. In that case you need to be able to say from the observation which specific app was used to act as gateway. Note that the Provenance/AuditEvent resources can represent the same information."/>

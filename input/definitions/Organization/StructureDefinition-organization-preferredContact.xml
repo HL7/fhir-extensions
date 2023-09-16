@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-21"/>
-  <publisher value="Health Level Seven, Inc. - FHIR WG"/>
+  <publisher value="HL7 International / Patient Administration"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="HL7"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
   <description value="This Contact is the preferred contact at this organization for the purpose of the contact&#xA;&#xA;There can be multiple contacts on an Organizations record with this value set to true, but these should all have different purpose values."/>

@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
-  <publisher value="Health Level Seven, Inc. - CBCC WG"/>
+  <publisher value="HL7 International / Community Based Collaborative Care"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/homehealth/index.cfm"/>
+      <value value="http://www.hl7.org/Special/committees/homehealth"/>
     </telecom>
   </contact>
   <description value="Restricts this exception to only apply a specific location as defined."/>

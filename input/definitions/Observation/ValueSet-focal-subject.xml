@@ -35,11 +35,11 @@
   <title value="Focal Subject Codes"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="HL7 International - Orders and Observations WG"/>
+  <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="Example value set composed from SNOMED CT and HL7 V3 codes for observation targets such as donor, fetus or spouse. As use cases are discovered, more values may be added."/>

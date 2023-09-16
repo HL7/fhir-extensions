@@ -22,6 +22,13 @@
   <title value="CapabilityStatement Search Mode ValueSet"/>
   <status value="draft"/>
   <experimental value="true"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+    </telecom>
+  </contact>
   <description value="Which search modes a server supports: GET, POST, or both"/>
   <jurisdiction>
     <coding>

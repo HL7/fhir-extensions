@@ -35,6 +35,13 @@
   <title value="gender status code system"/>
   <status value="active"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
   <description value="This example value set defines a set of codes that can be used to indicate the current state of the animal's reproductive organs."/>
   <jurisdiction>
     <coding>

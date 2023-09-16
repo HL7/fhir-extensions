@@ -18,11 +18,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
-  <publisher value="Health Level Seven, Inc. - FHIR Core WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/FHIR"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Will cause a GraphDefinition to be executed and the referred-to instance be considered &quot;valid&quot; for that GraphDefinition if the instance is the start of a result of executing that GraphDefinition."/>

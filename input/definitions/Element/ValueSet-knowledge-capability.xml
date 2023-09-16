@@ -19,7 +19,7 @@
     <valueCode value="structured"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fhir"/>
+    <valueCode value="cds"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -38,11 +38,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-07-21"/>
-  <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
   <description value="A capability afforded by a knowledge artifact, e.g. shareable, computable, publishable, executable"/>

@@ -22,7 +22,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-07-25T00:00:00+00:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / Biomedical Research and Regulation"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/rcrim"/>
+    </telecom>
+  </contact>
   <description value="Dates for study registration activities."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

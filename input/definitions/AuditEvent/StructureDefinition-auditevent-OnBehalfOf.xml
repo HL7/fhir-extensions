@@ -22,11 +22,11 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2023-02-21T14:55:11+11:00"/>
-  <publisher value="Health Level Seven, Inc. - Security WG"/>
+  <publisher value="HL7 International / Security"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/security/index.cfm"/>
+      <value value="http://www.hl7.org/Special/committees/secure"/>
     </telecom>
   </contact>
   <description value="When an AuditEvent is attributed to an agent that is acting on behalf of another agent. Typically needed when multiple agents are acting on behalf of different organizations, and when PractitionerRole is not appropriate."/>

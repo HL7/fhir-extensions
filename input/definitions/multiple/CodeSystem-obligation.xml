@@ -5,11 +5,21 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
   <url value="http://hl7.org/fhir/CodeSystem/obligation"/>
   <name value="ObligationCodes"/>
   <title value="Obligation Codes"/>
   <status value="active"/>
   <experimental value="true"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="Codes that describe application obligations for handling FHIR content. There are three kinds of codes in this code system:&#xA; * Qualifier codes: SHALL/SHOULD&#xA; * Functional codes - these describe a functional behavior applications may implement, and have the concept property qualify = true, and must be qualified by one of SHALL, SHOULD, or MAY&#xA; * Composite codes - these specialise AggregateConcepts, and have an concept property 'expression' that defines them in terms of a set of functional codes&#xA; &#xA; Functional and Qualifier codes are combined using the syntax ```[modifierCode] &quot;:&quot; [obligationCode]``` e.g. SHALL:will-send&#xA; &#xA; The functional codes are grouped into three different high level categories:&#xA; * ResourceProducerObligations - functions that pertain to applications that produce resources (typically from databases or forms)&#xA; * ExchangerObligations - functions that pertain to applications that transfer resources between other applications (including FHIR repositories)&#xA; * ResourceConsumerObligations - functions that pertain to applications that consume the content of resources and do something with them&#xA; &#xA; Note that applications typically produce and consume resources, whether client, server or something else again, and &#xA; many applications transfer resources as well&#xA; "/>
   <jurisdiction>
     <coding>
