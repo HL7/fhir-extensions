@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="namingsystem-checkDigit"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="mnm"/>
+    <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
@@ -18,7 +18,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-09-04"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="allow for a check digit and a check digit scheme to be conveyed as part of Naming System.    The rules of the ID Type determine if the check digit is part of the ID value or sent    separately."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

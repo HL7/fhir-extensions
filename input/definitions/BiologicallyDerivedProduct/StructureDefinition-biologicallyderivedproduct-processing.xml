@@ -22,11 +22,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-03-07"/>
-  <publisher value="Health Level Seven, Inc. - OO WG"/>
+  <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/orders"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="Extension for processing of a biologically dervied prodcut"/>

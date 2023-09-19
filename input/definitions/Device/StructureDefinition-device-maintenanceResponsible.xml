@@ -22,7 +22,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/orders"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="Extension containing the information about the person and/or organization responsible for the maintenance of the device."/>

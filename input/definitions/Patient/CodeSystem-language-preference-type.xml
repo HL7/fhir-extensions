@@ -25,6 +25,13 @@
   <title value="language preference type code system"/>
   <status value="active"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
   <description value="This code system defines a defines the set of codes for describing the type or mode of the patient's preferred language."/>
   <jurisdiction>
     <coding>

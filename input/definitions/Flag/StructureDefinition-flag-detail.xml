@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-21"/>
-  <publisher value="Health Level Seven, Inc. - Patient Care WG"/>
+  <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="HL7"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
   <description value="Points to the Observation, AllergyIntolerance or other record that provides additional supporting information about this flag. Note that This extension will be replaced by Flag.supportingInfo in the FHIR R6 release."/>

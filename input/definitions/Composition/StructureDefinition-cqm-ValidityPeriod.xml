@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
-  <publisher value="Health Level Seven, Inc. - Clinical Quality Information WG"/>
+  <publisher value="HL7 International / Structured Documents"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
+      <value value="http://www.hl7.org/Special/committees/structure"/>
     </telecom>
   </contact>
   <description value="The period in which the catalog is valid."/>

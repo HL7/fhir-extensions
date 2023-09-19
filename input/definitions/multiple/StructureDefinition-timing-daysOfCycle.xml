@@ -18,11 +18,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
-  <publisher value="Health Level Seven, Inc. - MnM WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/MnM"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Days of a possibly repeating cycle on which the action is to be performed. The cycle is defined by the first action with a timing element that is a parent of the daysOfCycle."/>

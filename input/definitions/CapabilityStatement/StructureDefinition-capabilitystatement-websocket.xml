@@ -22,11 +22,11 @@
   <status value="retired"/>
   <experimental value="false"/>
   <date value="2014-04-12"/>
-  <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/fhir.htm"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Where the server provides its web socket end-point. Note: this extension is deprecated because it's poorly defined and is also over-constrained to just 1 occurrence. If there is a need for an extension like this as a common extension, please submit a change request and we will create one that is better defined, clear about its purpose, and has an appropriate cardinality."/>

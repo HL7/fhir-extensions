@@ -8,6 +8,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/no-fixed-address"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
@@ -19,7 +22,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2021-07-05"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="This extension applies to the Address data type and is used to indicate that a location address is not a fixed address for an individual."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

@@ -22,7 +22,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-05-13T16:10:11-04:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="A natural language description for non-conformance and non-terminology resource instances that is represented in the resource for publication use."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -52,7 +58,6 @@
         <severity value="error"/>
         <human value="Cannot be used where description already exists or description is of type string or markdown."/>
         <expression value="%resource.description.exists().not() or ((%resource.description is string).not() and (%resource.description is markdown).not())"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
     </element>
     <element id="Extension.extension">

@@ -25,7 +25,7 @@
   <title value="Questionnaire Response Mode"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="HL7 International - FHIR Infrastructure"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>

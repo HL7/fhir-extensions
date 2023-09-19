@@ -18,11 +18,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
-  <publisher value="Health Level Seven, Inc. - FHIR Core WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/FHIR"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Indicates that the reference has a particular focus in the target resource, a particular element of interest, identified by its element id. This extension requires that an 'id' property be present on the element to be referenced, but does not require the use of simplified FHIRPath.  If the creator of the reference can't ensure an id will be present, the [[[http://hl7.org/fhir/StructureDefinition/targetPath]]] extension can be used instead."/>

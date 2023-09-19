@@ -22,11 +22,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-03-02"/>
-  <publisher value="Health Level Seven, Inc. - FHIR-I WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/fiwg"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Identifies files used as part of the the publication process other than resources referenced in definition.resource."/>

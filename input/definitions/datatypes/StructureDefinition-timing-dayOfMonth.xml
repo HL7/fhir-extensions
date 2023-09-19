@@ -18,11 +18,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
-  <publisher value="Health Level Seven, Inc. - MnM WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/MnM"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="When present, this extension indicates that the event actually only occurs on the specified days of the month, on the times as otherwise specified by the timing schedule."/>

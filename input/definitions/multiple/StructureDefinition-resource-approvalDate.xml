@@ -22,7 +22,13 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="The date on which the asset content was approved by the publisher. Approval happens once when the content is officially approved for usage."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

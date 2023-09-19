@@ -21,7 +21,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/fhir-i"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Documents obligations that apply to applications implementing this element. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail"/>
@@ -238,7 +238,7 @@
     </element>
     <element id="Extension.extension:filterDocumentation.value[x]">
       <path value="Extension.extension.value[x]"/>
-      <min value="1"/>\
+      <min value="1"/>
       <type>
         <code value="string"/>
       </type>

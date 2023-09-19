@@ -23,11 +23,11 @@
   <title value="Sex Parameter for Clinical Use"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="FHIR Project team"/>
+  <publisher value="HL7 International / Patient Administration"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
   <description value="A summary parameter that provides guidance on how a receiver should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.."/>

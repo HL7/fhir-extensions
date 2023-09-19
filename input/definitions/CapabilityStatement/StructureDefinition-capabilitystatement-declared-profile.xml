@@ -22,7 +22,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-08-19"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="This extension identifies a profile the system will recognize if it is declared in [`meta.profile`](resource.html#profile-tags). If the system supports the [`_profile`](search.html#profile) search parameter, it will be capable of searching on the profile. The system may support validation against the profile."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

@@ -18,7 +18,13 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2020-12-28T16:55:11+11:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
   <description value="Specifies a parameters (contained) resource that identifies the options for the CQL-to-ELM translator associated with the CQL content."/>
   <purpose value="Because CQL-to-ELM translator options may impact the translation of CQL source libraries, authoring, distribution, and evaluation environments need to know what options the CQL was built with."/>
   <fhirVersion value="5.0.0"/>

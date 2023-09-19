@@ -22,11 +22,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-02-21"/>
-  <publisher value="Health Level Seven, Inc. - FHIR WG"/>
+  <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="HL7"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
   <description value="The date or estimated date that the allergy or intolerance resolved. This is called abatement because of the many overloaded connotations associated with resolution."/>
