@@ -47,10 +47,31 @@
   </jurisdiction>
   <caseSensitive value="true"/>
   <content value="complete"/>
+
+  <concept>
+    <code value="aid"/>
+    <display value="Application Implementation and Design"/>
+    <definition value="Application Implementation and Design (http://www.hl7.org/Special/committees/java/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="arden"/>
+    <display value="Arden Syntax"/>
+    <definition value="http://www.hl7.org/Special/committees/arden/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="brr"/>
+    <display value="Biomedical Research and Regulation"/>
+    <definition value="Biomedical Research and Regulation (http://www.hl7.org/Special/committees/rcrim/index.cfm)."/>
+  </concept>
   <concept>
     <code value="cbcc"/>
     <display value="Community Based Collaborative Care"/>
     <definition value="Community Based Collaborative Care (http://www.hl7.org/Special/committees/cbcc/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="cdamg"/>
+    <display value="CDA Management Group"/>
+    <definition value="http://www.hl7.org/Special/committees/cdamg/index.cfm"/>
   </concept>
   <concept>
     <code value="cds"/>
@@ -58,14 +79,39 @@
     <definition value="Clinical Decision Support (http://www.hl7.org/Special/committees/dss/index.cfm)."/>
   </concept>
   <concept>
-    <code value="cqi"/>
-    <display value="Clinical Quality Information"/>
-    <definition value="Clinical Quality Information (http://www.hl7.org/Special/committees/cqi/index.cfm)."/>
-  </concept>
-  <concept>
     <code value="cg"/>
     <display value="Clinical Genomics"/>
     <definition value="Clinical Genomics (http://www.hl7.org/Special/committees/clingenomics/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="cgp"/>
+    <display value="Cross-Group Projects"/>
+    <definition value="http://www.hl7.org/Special/committees/cgp/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="cic"/>
+    <display value="Clinical Interoperability Council"/>
+    <definition value="Clinical Interoperability Council (http://www.hl7.org/Special/committees/cic/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="cic"/>
+    <display value="Clinical Interoperability Council"/>
+    <definition value="http://www.hl7.org/Special/committees/cic/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="cimi"/>
+    <display value="Clinical Information Modeling Initiative"/>
+    <definition value="http://www.hl7.org/Special/committees/cimi/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="claims"/>
+    <display value="Payer/Provider Information Exchange Work Group"/>
+    <definition value="http://www.hl7.org/Special/committees/claims/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="cqi"/>
+    <display value="Clinical Quality Information"/>
+    <definition value="Clinical Quality Information (http://www.hl7.org/Special/committees/cqi/index.cfm)."/>
   </concept>
   <concept>
     <code value="dev"/>
@@ -78,9 +124,19 @@
     <definition value="Electronic Health Records (http://www.hl7.org/special/committees/ehr/index.cfm)."/>
   </concept>
   <concept>
+    <code value="ec"/>
+    <display value="Emergency Care"/>
+    <definition value="http://www.hl7.org/Special/committees/emergencycare/index.cfm"/>
+  </concept>
+  <concept>
     <code value="fhir"/>
     <display value="FHIR Infrastructure"/>
     <definition value="FHIR Infrastructure (http://www.hl7.org/Special/committees/fiwg/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="fmg"/>
+    <display value="FHIR Management Group"/>
+    <definition value="http://www.hl7.org/Special/committees/fhirmg/index.cfm"/>
   </concept>
   <concept>
     <code value="fm"/>
@@ -91,6 +147,21 @@
     <code value="hsi"/>
     <display value="Health Standards Integration"/>
     <definition value="Health Standards Integration (http://www.hl7.org/Special/committees/hsi/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="hsswg"/>
+    <display value="Human and Social Services"/>
+    <definition value="http://www.hl7.org/Special/committees/hsswg/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="hta"/>
+    <display value="Terminology Authority"/>
+    <definition value="http://www.hl7.org/Special/committees/termauth/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="ictc"/>
+    <display value="Conformance"/>
+    <definition value="http://www.hl7.org/Special/committees/ictc/index.cfm"/>
   </concept>
   <concept>
     <code value="ii"/>
@@ -108,9 +179,19 @@
     <definition value="Implementable Technology Specifications (http://www.hl7.org/special/committees/xml/index.cfm)."/>
   </concept>
   <concept>
+    <code value="lhs"/>
+    <display value="Learning Health Systems"/>
+    <definition value="http://www.hl7.org/Special/committees/lhs/index.cfm"/>
+  </concept>
+  <concept>
     <code value="mnm"/>
     <display value="Modeling and Methodology"/>
     <definition value="Modeling and Methodology (http://www.hl7.org/Special/committees/mnm/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="mobile"/>
+    <display value="Mobile Health"/>
+    <definition value="http://www.hl7.org/Special/committees/mobile/index.cfm"/>
   </concept>
   <concept>
     <code value="oo"/>
@@ -121,6 +202,11 @@
     <code value="pa"/>
     <display value="Patient Administration"/>
     <definition value="Patient Administration (http://www.hl7.org/Special/committees/pafm/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="pe"/>
+    <display value="Patient Empowerment"/>
+    <definition value="http://www.hl7.org/Special/committees/patientempowerment/index.cfm"/>
   </concept>
   <concept>
     <code value="pc"/>
@@ -138,11 +224,6 @@
     <definition value="Pharmacy (http://www.hl7.org/Special/committees/medication/index.cfm)."/>
   </concept>
   <concept>
-    <code value="brr"/>
-    <display value="Biomedical Research and Regulation"/>
-    <definition value="Biomedical Research and Regulation (http://www.hl7.org/Special/committees/rcrim/index.cfm)."/>
-  </concept>
-  <concept>
     <code value="sd"/>
     <display value="Structured Documents"/>
     <definition value="Structured Documents (http://www.hl7.org/Special/committees/structure/index.cfm)."/>
@@ -153,18 +234,33 @@
     <definition value="Security (http://www.hl7.org/Special/committees/secure/index.cfm)."/>
   </concept>
   <concept>
+    <code value="soa"/>
+    <display value="Services Oriented Architecture"/>
+    <definition value="http://www.hl7.org/Special/committees/soa/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="ti"/>
+    <display value="Terminology Infrastructure Work Group"/>
+    <definition value="http://www.hl7.org/Special/committees/Vocab/index.cfm"/>
+  </concept>
+  <concept>
+    <code value="tsmg"/>
+    <display value="Terminology Services Management Group (TSMG)"/>
+    <definition value="http://www.hl7.org/Special/committees/tsmg/index.cfm"/>
+  </concept>
+  <concept>
     <code value="us"/>
-    <display value="US Realm Taskforce"/>
+    <display value="US Realm Steering Committee"/>
     <definition value="US Realm Taskforce (http://www.hl7.org/Special/committees/usrealm/index.cfm)."/>
+  </concept>
+  <concept>
+    <code value="v2"/>
+    <display value="V2 Management Group"/>
+    <definition value="http://www.hl7.org/Special/committees/v2management/index.cfm"/>
   </concept>
   <concept>
     <code value="vocab"/>
     <display value="Vocabulary"/>
     <definition value="Vocabulary (http://www.hl7.org/Special/committees/Vocab/index.cfm)."/>
-  </concept>
-  <concept>
-    <code value="aid"/>
-    <display value="Application Implementation and Design"/>
-    <definition value="Application Implementation and Design (http://www.hl7.org/Special/committees/java/index.cfm)."/>
   </concept>
 </CodeSystem>
