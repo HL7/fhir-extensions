@@ -5,11 +5,21 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
   <url value="http://hl7.org/fhir/CodeSystem/obligation"/>
   <name value="ObligationCodes"/>
   <title value="Obligation Codes"/>
   <status value="active"/>
   <experimental value="true"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="Codes that describe application obligations for handling FHIR content. There are five kinds of codes in this code system:&#xA; * Categorizer codes: ResourceProducerObligations, ResourcesExchangerObligations, and ResourceConsumerObligations which are used to construct value sets and indicate the contexts in which the obligations apply.  Note that many applications will be producers, consumers, and potentially exchangers simultaneously, so there is no need to limit obligations to only one category.  These are abstract and cannot be declared as obligations.&#xA; * Qualifier codes: SHALL/SHOULD/MAY which convey the 'strength' of an obligation.  These are also abstract and cannot be declared as obligations.&#xA; * Generic codes - these describe abstract functional obligation behaviors applications may implement, but do not specify a specific strength.  They may be organized in a hierarchy where one generic code specializes another.  These are also abstract cannot be declared as obligations.&#xa; * Leaf obligation codes - these are specific qualified obligations that can be declared by a data element and represent leaf-level obligations.  They always inherit from a qualification concept and usually inherit from a functional code concept.  These codes *can* be declared as obligations.&#xa; * Composite codes - these specialise Leaf obligation codes, inheriting the expectations of multiple concrete obligations.  They represent common or externally defined combinations of obligations for ease of reference.  These codes can also be declared as obligations."/>
   <jurisdiction>
     <coding>

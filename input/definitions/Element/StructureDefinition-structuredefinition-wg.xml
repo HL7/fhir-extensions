@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
-  <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/FHIR"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="The work group that owns and maintains this resource."/>

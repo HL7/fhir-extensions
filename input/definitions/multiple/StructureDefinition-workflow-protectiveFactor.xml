@@ -18,11 +18,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>
-  <publisher value="Health Level Seven, Inc. - FHIR WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/fwg"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Characteristics or strengths of individuals, families, community situations or societies that mitigate risks and promote positivewell-being and healthy development; attributes that help to successfully navigate difficult situations; factors that may contribute to or explain positive outcomes.  A trait or habit that &quot;protects&quot; people and makes them less likely to get a chronic disease that include, but are not limited to exercise, healthy eating, managing weight, managing blood pressure and cholesterol, managing mental health,  feeling happy, strong emotional support and social connections."/>

@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-21"/>
-  <publisher value="Health Level Seven, Inc. - FHIR WG"/>
+  <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="HL7"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
   <description value="It contains enriched media representation of the alert message, such as a voice recording.  This may be used, for example for compliance with jurisdictional accessibility requirements, literacy issues, or translations of the unstructured text content in other languages."/>

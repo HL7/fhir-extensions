@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2015-03-02"/>
-  <publisher value="Health Level Seven, Inc. - OO WG"/>
+  <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/orders"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="Other preceding or concurrent observations that must be known to understand the context and significance of the observation.  For example, an fiO2 measure taken alongside of a SpO2 measurement.  See the FHIR specification [Observation notes](http://hl7.org/fhir/observation.html#notes) section for additional guidance."/>

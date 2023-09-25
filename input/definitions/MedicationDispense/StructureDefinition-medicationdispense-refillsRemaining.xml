@@ -22,11 +22,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2019-03-23"/>
-  <publisher value="Health Level Seven, Inc. - FHIR WG"/>
+  <publisher value="HL7 International / Pharmacy"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="HL7"/>
+      <value value="http://www.hl7.org/Special/committees/medication"/>
     </telecom>
   </contact>
   <description value="The number of refills allowed or remaining after a dispensing event.  Does not include the current dispense."/>

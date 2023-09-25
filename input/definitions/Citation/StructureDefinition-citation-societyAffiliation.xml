@@ -18,7 +18,13 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2023-02-06T12:00:00+11:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
   <description value="A society affiliation for the venue (publication form) that the cited artifact is cited in."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

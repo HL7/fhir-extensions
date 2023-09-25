@@ -18,11 +18,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
-  <publisher value="Health Level Seven, Inc. - FHIR Core WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/FHIR"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="A comment associated with the ContactPoint such as usage notes or pronunciation."/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Comment associated with the ContactPoint"/>
-      <definition value="A comment associated with the ContactPoint such as usage notes or pronunciation."/>
+      <definition value="The [ContactPoint-purpose extension](StructureDefinition-contactpoint-purpose.html) (possibly just the .text element portion of it) is used to convey the circumstances in which the contact should be used.  The 'comment' is used for other purposes, such as days of week or time of day for use, who to ask for, etc."/>
       <min value="0"/>
       <max value="1"/>
     </element>

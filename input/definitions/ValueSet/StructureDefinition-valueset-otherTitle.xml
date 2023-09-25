@@ -22,7 +22,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+    </telecom>
+  </contact>
   <description value="Human readable titles for the valueset."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

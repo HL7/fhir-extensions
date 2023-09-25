@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2015-03-02"/>
-  <publisher value="Health Level Seven, Inc. - OO WG"/>
+  <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/orders"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="The position of the body when the observation was done, e.g. standing, sitting. To be used only when the body position in not precoordinated in the observation code."/>

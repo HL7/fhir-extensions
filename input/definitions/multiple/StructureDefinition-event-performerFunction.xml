@@ -18,11 +18,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>
-  <publisher value="Health Level Seven, Inc. - FHIR WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/fwg"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Distinguishes the type of involvement of the performer in the event. For example, 'author',  'verifier' or 'responsible party'."/>

@@ -5,12 +5,22 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
   <url value="http://hl7.org/fhir/SearchParameter/workflow-protectiveFactorCode"/>
   <version value="5.0.0"/>
   <name value="ProtectiveFactorCodeSearchParameter"/>
   <title value="Protective Factor Code SearchParameter"/>
   <status value="draft"/>
   <experimental value="true"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="SearchParameter for Protective Factor Extension with CodeableConcept data type"/>
   <code value="workflow-protectiveFactorCode"/>
   <base value="CarePlan"/>

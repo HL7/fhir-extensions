@@ -26,15 +26,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2023-01-31T07:07:38+11:00"/>
-  <publisher value="HL7 (FHIR Project)"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="fhir@lists.hl7.org"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="A set of codes for each different representation of a name."/>

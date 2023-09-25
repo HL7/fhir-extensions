@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
-  <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/FHIR"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="The FHIR type of a property - used on the value property of a primitive type (for which there is no type in the FHIR typing system), and Element.id, Resource.id, and Extension.url. All of these have a non-FHIR type in thir structure definition, and this specifies the applicable FHIR type."/>

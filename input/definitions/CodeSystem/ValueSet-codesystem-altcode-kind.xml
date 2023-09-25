@@ -25,6 +25,13 @@
   <title value="alternative code kind value set"/>
   <status value="active"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+    </telecom>
+  </contact>
   <description value="Description Needed Here"/>
   <jurisdiction>
     <coding>

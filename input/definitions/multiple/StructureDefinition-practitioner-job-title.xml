@@ -22,7 +22,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2021-01-02T08:58:31+11:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
   <description value="The job title may be independent of the role.  For example, a surgeon (role) may have a title of Head of Surgery.  Some titles may overlap with roles and could be represented as discrete PractitionerRoles, but some titles may be independent of role."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

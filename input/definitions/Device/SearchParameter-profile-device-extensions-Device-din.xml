@@ -8,12 +8,22 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="dev"/>
+  </extension>
   <url value="http://hl7.org/fhir/SearchParameter/device-extensions-Device-din"/>
   <version value="5.0.0"/>
   <name value="Din"/>
   <title value="din"/>
   <status value="active"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / Health Care Devices"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/healthcaredevices"/>
+    </telecom>
+  </contact>
   <description value="The donation identification number (DIN)"/>
   <code value="din"/>
   <base value="Device"/>

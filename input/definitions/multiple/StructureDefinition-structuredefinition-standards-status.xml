@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
-  <publisher value="Health Level Seven, Inc. - [WG Name] WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/FHIR"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="The Current HL7 ballot/Standards status of this artifact."/>
@@ -40,8 +40,53 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="CanonicalResource"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="CodeSystem.concept"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="StructureDefinition.context"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="SearchParameter.base"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition.type"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition.targetProfile"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter.type"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter.allowedType"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition.parameter.targetProfile"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ImplementationGuide.definition.page"/>
+  </context>
+  
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>

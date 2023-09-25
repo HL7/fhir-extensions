@@ -18,7 +18,13 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2023-01-31T07:07:38+11:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="Defines the group in which this usage context is a member. Multiple groups are &quot;OR'ed&quot;, contexts within a group are &quot;AND'ed&quot;."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

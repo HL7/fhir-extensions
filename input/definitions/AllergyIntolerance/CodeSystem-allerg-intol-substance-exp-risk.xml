@@ -30,6 +30,13 @@
   <title value="AllergyIntolerance substance exposure risk codesystem"/>
   <status value="draft"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / Patient Care"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+  </contact>
   <description value="AllergyIntoleranceSubstanceExposureRisk"/>
   <jurisdiction>
     <coding>

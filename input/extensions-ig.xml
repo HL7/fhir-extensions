@@ -4,12 +4,15 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
   <url value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
-  <version value="1.0.0"/>
+  <version value="5.1.0-cibuild"/>
   <name value="FHIRExtensionPack"/>
   <title value="FHIR Extensions Pack"/>
   <status value="active"/>
@@ -17,9 +20,8 @@
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
-      <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/fiwg"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="This IG defines the global extensions - the ones defined for everyone. These extensions are always in scope wherever FHIR is being used"/>
@@ -92,6 +94,15 @@
           <generation value="html"/>
         </page>
       </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="terminology-registry.html"/>
+        <name value="terminology-registry.html"/>
+        <title value="Terminology Registry"/>
+        <generation value="markdown"/>
+      </page>     
       <page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="informative"/>
@@ -266,7 +277,8 @@
       </code>
       <value value="input/structuremap-resource-factory.json"/>
     </parameter>
-    
+
+
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -316,6 +328,57 @@
         <code value="conversion-version"/>
       </code>
       <value value="R4B"/>
-    </parameter>    
+    </parameter>      
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="version-comparison-master"/>
+      </code>
+      <value value="1.0.0"/>
+    </parameter>
+  
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="default-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="default-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="default-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+        
   </definition>
 </ImplementationGuide>

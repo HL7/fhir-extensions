@@ -22,7 +22,13 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2021-01-02T08:58:31+11:00"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
   <description value="This patient is known to be an animal."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

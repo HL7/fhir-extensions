@@ -22,11 +22,11 @@
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2021-10-02T16:55:11+11:00"/>
-  <publisher value="Health Level Seven, Inc. - Security WG"/>
+  <publisher value="HL7 International / Security"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/security/index.cfm"/>
+      <value value="http://www.hl7.org/Special/committees/secure"/>
     </telecom>
   </contact>
   <description value="An Lifecycle event associated with this participant object."/>
