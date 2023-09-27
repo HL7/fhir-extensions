@@ -13,7 +13,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/>
+    <valueInteger value="3"/>
   </extension>
   <url value="http://hl7.org/fhir/hl7-work-group"/>
   <identifier>
@@ -28,7 +28,7 @@
   <version value="5.0.0"/>
   <name value="HL7Workgroup"/>
   <title value="hl7 workgroup code system"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
@@ -210,8 +210,8 @@
   </concept>
   <concept>
     <code value="pher"/>
-    <display value="Public Health and Emergency Response"/>
-    <definition value="Public Health and Emergency Response (http://www.hl7.org/Special/committees/pher/index.cfm)."/>
+    <display value="Public Health"/>
+    <definition value="Public Health (http://www.hl7.org/Special/committees/pher/index.cfm)."/>
   </concept>
   <concept>
     <code value="phx"/>
