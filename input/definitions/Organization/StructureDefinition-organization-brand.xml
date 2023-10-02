@@ -70,7 +70,7 @@
       <short value="Brand Logo License Type"/>
       <definition value="The license type for the brand logo. Uses SPDX license identifier when available. See https://spdx.org/licenses/ for more information."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension:brandLogoLicenseType.extension">
       <path value="Extension.extension.extension"/>
@@ -96,7 +96,7 @@
       <short value="Brand Logo License"/>
       <definition value="The license for the brand logo. This is a URL to the license details."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension:brandLogoLicense.extension">
       <path value="Extension.extension.extension"/>
