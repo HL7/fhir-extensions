@@ -118,7 +118,7 @@
       <short value="Portal Logo"/>
       <definition value="Portal logo image. Used if the portal has its own logo in addition to the Brand's logo. See the documentation for 'brand logo'."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension:logo.extension">
       <path value="Extension.extension.extension"/>
@@ -140,7 +140,7 @@
       <short value="Portal Logo License Type"/>
       <definition value="The license type for the portal logo. Uses SPDX license identifier when available. See https://spdx.org/licenses/ for more information."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension:logoLicenseType.extension">
       <path value="Extension.extension.extension"/>
@@ -166,7 +166,7 @@
       <short value="Portal Logo License"/>
       <definition value="The license for the portal logo. This is a URL to the license details."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension:logoLicense.extension">
       <path value="Extension.extension.extension"/>
