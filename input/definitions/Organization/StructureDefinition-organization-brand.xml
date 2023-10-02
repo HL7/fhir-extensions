@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="organization-brand"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/organization-brand"/>
+  <version value="5.0.0"/>
+  <name value="OrganizationBrand"/>
+  <title value="Organization Brand"/>
+  <status value="active"/>
+  <date value="2023-10-02T15:38:12-05:00"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <name value="HL7 FHIR Infrastructure WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Organization-level Brand information."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Organization"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Organization Brand"/>
+      <definition value="Organization-level Brand information."/>
+    </element>
+    <element id="Extension.extension:brandLogo">
+      <path value="Extension.extension"/>
+      <sliceName value="brandLogo"/>
+      <short value="Brand Logo"/>
+      <definition value="Brand logo URL. SHOULD be optimized for display as a 1 in / 2.54 cm square and formatted as SVG or 1024x1024 pixel PNG with transparent background. Logo should be be legible at small sizes. Additional resolutions can be supplied with repeated 'brandLogo' extensions."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:brandLogo.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:brandLogo.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="brandLogo"/>
+    </element>
+    <element id="Extension.extension:brandLogo.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="url"/>
+      </type>
+    </element>
+    <element id="Extension.extension:brandLogoLicenseType">
+      <path value="Extension.extension"/>
+      <sliceName value="brandLogoLicenseType"/>
+      <short value="Brand Logo License Type"/>
+      <definition value="The license type for the brand logo. Uses SPDX license identifier when available. See https://spdx.org/licenses/ for more information."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:brandLogoLicenseType.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:brandLogoLicenseType.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="brandLogoLicenseType"/>
+    </element>
+    <element id="Extension.extension:brandLogoLicenseType.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/spdx-license"/>
+      </binding>
+    </element>
+    <element id="Extension.extension:brandLogoLicense">
+      <path value="Extension.extension"/>
+      <sliceName value="brandLogoLicense"/>
+      <short value="Brand Logo License"/>
+      <definition value="The license for the brand logo. This is a URL to the license details."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:brandLogoLicense.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:brandLogoLicense.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="brandLogoLicense"/>
+    </element>
+    <element id="Extension.extension:brandLogoLicense.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="url"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/organization-brand"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
