@@ -21,7 +21,13 @@
   <title value="ValueSet Include ValueSet Title"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="HL7"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+    </telecom>
+  </contact>
   <description value="Human readable name for the included Value Set."/>
   <fhirVersion value="5.0.0"/>
   <mapping>

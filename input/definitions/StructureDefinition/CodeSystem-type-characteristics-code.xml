@@ -25,6 +25,13 @@
   <title value="Type Characteristic Codes System"/>
   <status value="draft"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
   <description value="Type Characteristic Codes"/>
   <jurisdiction>
     <coding>
@@ -75,5 +82,10 @@
     <code value="do-translations"/>
     <display value="Do Translations"/>
     <definition value="The content is uncontrolled human readable text that may make sense to translate"/>
+  </concept>
+  <concept>
+    <code value="can-be-target"/>
+    <display value="Can Be Target"/>
+    <definition value="The content has an identify and can be persisted with an appropriate life cycle such that it can be the target of a reference from a resource or another logical model"/>
   </concept>
 </CodeSystem>

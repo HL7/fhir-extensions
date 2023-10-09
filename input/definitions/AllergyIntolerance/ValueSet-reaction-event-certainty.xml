@@ -35,6 +35,13 @@
   <title value="AllergyIntolerance Certainty ValueSet"/>
   <status value="active"/>
   <experimental value="false"/>
+  <publisher value="HL7 International / Patient Care"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
+    </telecom>
+  </contact>
   <description value="Description Needed Here"/>
   <jurisdiction>
     <coding>

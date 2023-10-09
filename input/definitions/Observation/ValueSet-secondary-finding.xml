@@ -25,11 +25,11 @@
   <title value="Genetic Observation Secondary Findings Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="FHIR Project team"/>
+  <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="Codes to denote a guideline or policy statement when a genetic test result is being shared as a secondary finding."/>

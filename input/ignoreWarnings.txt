@@ -10,3 +10,8 @@ This element does not match any known slice defined in the profile http://hl7.or
 # can't validate for some value sets
 There was an error expanding the source value set, so this concept map can't be checked: 'There are 16777216 colors, so the full list of colors is not displayed'
 SM_TARGET_TRANSLATE_BINDING_VSE_TARGET
+
+Reference to draft item http://hl7.org/fhir/hl7-work-group|5.1.0-cibuild
+Reference to draft item http://hl7.org/fhir/standards-status|5.1.0-cibuild
+Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+

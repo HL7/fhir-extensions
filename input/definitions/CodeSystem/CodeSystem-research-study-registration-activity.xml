@@ -22,15 +22,11 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2022-05-15T16:55:11.085+11:00"/>
-  <publisher value="HL7 (FHIR Project)"/>
+  <publisher value="HL7 International / Biomedical Research and Regulation"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="fhir@lists.hl7.org"/>
+      <value value="http://www.hl7.org/Special/committees/rcrim"/>
     </telecom>
   </contact>
   <description value="Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation."/>

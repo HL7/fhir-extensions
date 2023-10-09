@@ -23,11 +23,11 @@
   <title value="Recorded Sex Or Gender Type"/>
   <status value="active"/>
   <experimental value="false"/>
-  <publisher value="FHIR Project team"/>
+  <publisher value="HL7 International / Patient Administration"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
   <description value="Codes that represent the type of the recorded sex and gender."/>

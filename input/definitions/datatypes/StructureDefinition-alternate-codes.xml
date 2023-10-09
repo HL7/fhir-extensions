@@ -18,11 +18,11 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2015-02-28"/>
-  <publisher value="Health Level Seven, Inc. - FHIR Core WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/FHIR"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value=" Indicates alternate codings and/or original text for the concept represented by the code."/>
@@ -69,7 +69,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/coding-purpose"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/alternate-codes"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

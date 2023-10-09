@@ -22,11 +22,11 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2023-03-18"/>
-  <publisher value="Health Level Seven, Inc. - FHIR I WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/fiwg"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="A larger/more generic set of requirements that this set of requirements helps to refine and enable."/>

@@ -29,15 +29,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2017-02-19T18:00:00+01:00"/>
-  <publisher value="HL7 (FHIR Project)"/>
+  <publisher value="HL7 International / Security"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/fhir"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="fhir@lists.hl7.org"/>
+      <value value="http://www.hl7.org/Special/committees/secure"/>
     </telecom>
   </contact>
   <description value="This FHIR value set is comprised of lifecycle event codes. The FHIR Actor value set is based on    DICOM Audit Message, ParticipantObjectDataLifeCycle;   ISO Standard, TS 21089-2017;  "/>

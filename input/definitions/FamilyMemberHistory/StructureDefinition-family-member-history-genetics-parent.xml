@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="family-member-history-genetics-parent"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="pc"/>
+    <valueCode value="cg"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
@@ -22,7 +22,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2019-05-29"/>
-  <publisher value="Health Level Seven International (Clinical Genomics)"/>
+  <publisher value="HL7 International / Clinical Genomics"/>
   <contact>
     <telecom>
       <system value="url"/>

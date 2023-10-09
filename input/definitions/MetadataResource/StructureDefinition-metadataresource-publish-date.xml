@@ -18,11 +18,11 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2023-03-17"/>
-  <publisher value="Health Level Seven, Inc. - FHIR Infrastructure WG"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/special/committees/fhir.htm"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="The date this artifact was first published."/>
