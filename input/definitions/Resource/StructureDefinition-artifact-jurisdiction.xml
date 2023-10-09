@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-experimental"/>
+  <id value="artifact-jurisdiction"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-experimental"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction"/>
   <version value="5.0.0"/>
-  <name value="ArtifactExperimental"/>
-  <title value="Artifact Experimental"/>
+  <name value="ArtifactJurisdiction"/>
+  <title value="Artifact Jurisdiction"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="A Boolean value to indicate that this {{title}} is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage."/>
+  <description value="A legal or geographic region in which the {{title}} is intended to be used."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,10 +45,11 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="For testing purposes, not real usage"/>
-      <definition value="A Boolean value to indicate that this {{title}} is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage."/>
+      <short value="Intended jurisdiction for {{title}} (if applicable)"/>
+      <definition value="A legal or geographic region in which the {{title}} is intended to be used."/>
+      <comment value="It may be possible for the {{title}} to be used in jurisdictions other than those for which it was originally designed or intended."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -56,14 +57,25 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-experimental"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-jurisdiction"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="boolean"/>
+        <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Jurisdiction"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="Countries and regions within which this artifact is targeted for use."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/jurisdiction"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

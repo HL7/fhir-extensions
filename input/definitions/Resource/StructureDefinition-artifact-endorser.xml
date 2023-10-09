@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-copyright"/>
+  <id value="artifact-endorser"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-copyright"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-endorser"/>
   <version value="5.0.0"/>
-  <name value="ArtifactCopyright"/>
-  <title value="Artifact Copyright"/>
+  <name value="ArtifactEndorser"/>
+  <title value="Artifact Endorser"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="A copyright statement relating to the {{title}} and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the {{title}}."/>
+  <description value="An individual or organization responsible for officially endorsing the {{title}} for use in some setting."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,11 +45,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Use and/or publishing restrictions"/>
-      <definition value="A copyright statement relating to the {{title}} and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the {{title}}."/>
-      <comment value="The short copyright declaration (e.g. (c) '2015+ xyz organization' should be sent in the copyrightLabel element."/>
+      <short value="Who endorsed the {{title}}"/>
+      <definition value="An individual or organization responsible for officially endorsing the {{title}} for use in some setting."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -57,13 +56,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-copyright"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-endorser"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="markdown"/>
+        <code value="ContactDetail"/>
       </type>
     </element>
   </differential>

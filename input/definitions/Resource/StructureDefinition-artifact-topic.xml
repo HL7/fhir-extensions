@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-status"/>
+  <id value="artifact-topic"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-status"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-topic"/>
   <version value="5.0.0"/>
-  <name value="ArtifactStatus"/>
-  <title value="Artifact Status"/>
+  <name value="ArtifactTopic"/>
+  <title value="Artifact Topic"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="The status of this {{title}}. Enables tracking the life-cycle of the content."/>
+  <description value="Descriptive topics related to the content of the artifact. Topics provide a high-level categorization of the artifact that can be useful for filtering and searching."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,12 +45,11 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="draft | active | retired | unknown"/>
-      <definition value="The status of this {{title}}. Enables tracking the life-cycle of the content."/>
+      <short value="E.g. Education, Treatment, Assessment, etc."/>
+      <definition value="Descriptive topics related to the content of the artifact. Topics provide a high-level categorization of the artifact that can be useful for filtering and searching."/>
+      <comment value="This element provides a topical categorization of the {{title}}, as opposed to the more structured context-of-use information provided in the useContext element."/>
       <min value="0"/>
-      <max value="1"/>
-      <isModifier value="true"/>
-      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not use a retired CodeSystem without due consideration"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -58,24 +57,21 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-status"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-topic"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="code"/>
+        <code value="CodeableConcept"/>
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PublicationStatus"/>
+          <valueString value="DefinitionTopic"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
-        <strength value="required"/>
-        <description value="The lifecycle status of an artifact."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/publication-status"/>
+        <strength value="example"/>
+        <description value="Topics associated with the artifact"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/definition-topic"/>
       </binding>
     </element>
   </differential>

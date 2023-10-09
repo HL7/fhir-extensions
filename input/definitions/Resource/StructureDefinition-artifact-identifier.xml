@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-copyrightLabel"/>
+  <id value="artifact-identifier"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-identifier"/>
   <version value="5.0.0"/>
-  <name value="ArtifactCopyrightLabel"/>
-  <title value="Artifact Copyright Label"/>
+  <name value="ArtifactIdentifier"/>
+  <title value="Artifact Identifier"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2022-02-07"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
   <contact>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="A short string (&lt;50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved')."/>
+  <description value="A formal identifier that is used to identify this {{title}} when it is represented in other formats, or referenced in a specification, model, design or an instance."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,11 +45,11 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Copyright holder and year(s)"/>
-      <definition value="A short string (&lt;50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved')."/>
-      <comment value="Defines the content expected to be rendered in all representations of the artifact. The (c) symbol should NOT be included in this string. It is expected to be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element."/>
+      <short value="Additional identifier for the {{title}}"/>
+      <definition value="A formal identifier that is used to identify this {{title}} when it is represented in other formats, or referenced in a specification, model, design or an instance."/>
+      <comment value="Typically, this is used for identifiers that can go in an HL7 V3 II (instance identifier) data type, and can then identify this {{title}} outside of FHIR, where it is not possible to use the logical URI."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -57,13 +57,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-identifier"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="string"/>
+        <code value="Identifier"/>
       </type>
     </element>
   </differential>

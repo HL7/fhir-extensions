@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-author"/>
+  <id value="artifact-title"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-author"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-title"/>
   <version value="5.0.0"/>
-  <name value="ArtifactAuthor"/>
-  <title value="Artifact Author"/>
+  <name value="ArtifactTitle"/>
+  <title value="Artifact Title"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="An individiual or organization primarily involved in the creation and maintenance of the {{title}}."/>
+  <description value="A short, descriptive, user-friendly title for the {{title}}."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="DomainResource"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,10 +45,11 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Who authored the {{title}}"/>
-      <definition value="An individiual or organization primarily involved in the creation and maintenance of the {{title}}."/>
+      <short value="Name for this {{title}} (human friendly)"/>
+      <definition value="A short, descriptive, user-friendly title for the {{title}}."/>
+      <comment value="This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -56,13 +57,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-author"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-title"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="ContactDetail"/>
+        <code value="string"/>
       </type>
     </element>
   </differential>

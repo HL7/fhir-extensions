@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-contact"/>
+  <id value="artifact-copyright"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-contact"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-copyright"/>
   <version value="5.0.0"/>
-  <name value="ArtifactContact"/>
-  <title value="Artifact Contact"/>
+  <name value="ArtifactCopyright"/>
+  <title value="Artifact Copyright"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Contact details to assist a user in finding and communicating with the publisher."/>
+  <description value="A copyright statement relating to the {{title}} and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the {{title}}."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,11 +45,11 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Contact details for the publisher"/>
-      <definition value="Contact details to assist a user in finding and communicating with the publisher."/>
-      <comment value="May be a web site, an email address, a telephone number, etc."/>
+      <short value="Use and/or publishing restrictions"/>
+      <definition value="A copyright statement relating to the {{title}} and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the {{title}}."/>
+      <comment value="The short copyright declaration (e.g. (c) '2015+ xyz organization' should be sent in the copyrightLabel element."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -57,13 +57,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-contact"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-copyright"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="ContactDetail"/>
+        <code value="markdown"/>
       </type>
     </element>
   </differential>

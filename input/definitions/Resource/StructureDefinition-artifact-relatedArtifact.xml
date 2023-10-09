@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-date"/>
+  <id value="artifact-relatedArtifact"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-date"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"/>
   <version value="5.0.0"/>
-  <name value="ArtifactDate"/>
-  <title value="Artifact Date"/>
+  <name value="ArtifactRelatedArtifact"/>
+  <title value="Artifact related artifact"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="The date  (and optionally time) when the {{title}} was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the {{title}} changes."/>
+  <description value="Related artifacts such as additional documentation, justification, dependencies, bibliographic references, and predecessor and successor artifacts."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,11 +45,11 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Date last changed"/>
-      <definition value="The date  (and optionally time) when the {{title}} was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the {{title}} changes."/>
-      <comment value="The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the {{title}}. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource."/>
+      <short value="Additional documentation, citations, etc."/>
+      <definition value="Related artifacts such as additional documentation, justification, dependencies, bibliographic references, and predecessor and successor artifacts."/>
+      <comment value="Each related artifact is either an attachment, or a reference to another resource, but not both."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -57,13 +57,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-date"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="dateTime"/>
+        <code value="RelatedArtifact"/>
       </type>
     </element>
   </differential>

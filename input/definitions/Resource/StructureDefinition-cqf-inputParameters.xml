@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-publisher"/>
+  <id value="cqf-inputParameters"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,13 +11,13 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-publisher"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/cqf-inputParameters"/>
   <version value="5.0.0"/>
-  <name value="ArtifactPublisher"/>
-  <title value="Artifact Publisher"/>
+  <name value="InputParameters"/>
+  <title value="Input parameters"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-02-07"/>
+  <date value="2015-05-30"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
   <contact>
     <telecom>
@@ -25,8 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="The name of the organization or individual responsible for the release and ongoing maintenance of the {{title}}."/>
-  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
+  <description value="Specifies the input parameters to the operation (such as a test case description or a data requirements or evaluate operation)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -37,7 +36,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,9 +44,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Name of the publisher/steward (organization or individual)"/>
-      <definition value="The name of the organization or individual responsible for the release and ongoing maintenance of the {{title}}."/>
-      <comment value="Usually an organization but may be an individual. The publisher (or steward) of the {{title}} is the organization or individual primarily responsible for the maintenance and upkeep of the {{title}}. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the {{title}}. This item SHOULD be populated unless the information is available from context."/>
+      <short value="What parameters"/>
+      <definition value="Specifies the input parameters to the operation (such as a test case description or a data requirements or evaluate operation)."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -57,13 +55,14 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-publisher"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/cqf-inputParameters"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="string"/>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
       </type>
     </element>
   </differential>

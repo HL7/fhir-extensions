@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-relatedArtifact"/>
+  <id value="artifact-status"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-status"/>
   <version value="5.0.0"/>
-  <name value="ArtifactRelatedArtifact"/>
-  <title value="Artifact related artifact"/>
+  <name value="ArtifactStatus"/>
+  <title value="Artifact Status"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Related artifacts such as additional documentation, justification, dependencies, bibliographic references, and predecessor and successor artifacts."/>
+  <description value="The status of this {{title}}. Enables tracking the life-cycle of the content."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,11 +45,12 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Additional documentation, citations, etc."/>
-      <definition value="Related artifacts such as additional documentation, justification, dependencies, bibliographic references, and predecessor and successor artifacts."/>
-      <comment value="Each related artifact is either an attachment, or a reference to another resource, but not both."/>
+      <short value="draft | active | retired | unknown"/>
+      <definition value="The status of this {{title}}. Enables tracking the life-cycle of the content."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
+      <isModifier value="true"/>
+      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not use a retired CodeSystem without due consideration"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -57,14 +58,25 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-status"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="RelatedArtifact"/>
+        <code value="code"/>
       </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PublicationStatus"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="required"/>
+        <description value="The lifecycle status of an artifact."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/publication-status"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

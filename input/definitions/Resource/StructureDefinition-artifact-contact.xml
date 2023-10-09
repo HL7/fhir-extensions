@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-topic"/>
+  <id value="artifact-contact"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-topic"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-contact"/>
   <version value="5.0.0"/>
-  <name value="ArtifactTopic"/>
-  <title value="Artifact Topic"/>
+  <name value="ArtifactContact"/>
+  <title value="Artifact Contact"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Descriptive topics related to the content of the artifact. Topics provide a high-level categorization of the artifact that can be useful for filtering and searching."/>
+  <description value="Contact details to assist a user in finding and communicating with the publisher."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,9 +45,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="E.g. Education, Treatment, Assessment, etc."/>
-      <definition value="Descriptive topics related to the content of the artifact. Topics provide a high-level categorization of the artifact that can be useful for filtering and searching."/>
-      <comment value="This element provides a topical categorization of the {{title}}, as opposed to the more structured context-of-use information provided in the useContext element."/>
+      <short value="Contact details for the publisher"/>
+      <definition value="Contact details to assist a user in finding and communicating with the publisher."/>
+      <comment value="May be a web site, an email address, a telephone number, etc."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -57,22 +57,14 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-topic"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-contact"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="CodeableConcept"/>
+        <code value="ContactDetail"/>
       </type>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DefinitionTopic"/>
-        </extension>
-        <strength value="example"/>
-        <description value="Topics associated with the artifact"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/definition-topic"/>
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

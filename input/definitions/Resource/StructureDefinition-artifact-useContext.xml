@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="artifact-endorser"/>
+  <id value="artifact-useContext"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="cds"/>
   </extension>
@@ -11,10 +11,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/artifact-endorser"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/artifact-useContext"/>
   <version value="5.0.0"/>
-  <name value="ArtifactEndorser"/>
-  <title value="Artifact Endorser"/>
+  <name value="ArtifactUseContext"/>
+  <title value="Artifact use context"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="An individual or organization responsible for officially endorsing the {{title}} for use in some setting."/>
+  <description value="The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate {{title}} instances."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -37,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -45,8 +45,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Who endorsed the {{title}}"/>
-      <definition value="An individual or organization responsible for officially endorsing the {{title}} for use in some setting."/>
+      <short value="The context that the content is intended to support"/>
+      <definition value="The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate {{title}} instances."/>
+      <comment value="When multiple useContexts are specified, there is no expectation that all or any of the contexts apply."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -56,13 +57,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-endorser"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-useContext"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="ContactDetail"/>
+        <code value="UsageContext"/>
       </type>
     </element>
   </differential>
