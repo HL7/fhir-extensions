@@ -65,7 +65,7 @@
         "path": "Extension",
         "short": "What expansion rules",
         "definition": "Specifies the expansion parameters that should be used to expand the ValueSet, or any ValueSets in the Library (or referenced by components of the Library).",
-        "comment": "For a complete description of how these expansion rules impact the behavior of the expansion operation, see the [Expansion Rules](measure-terminology-service.html#expansion-rules) topic.",
+        "comment": "For a complete description of how these expansion rules impact the behavior of the expansion operation, see the [Expansion Rules](artifact-terminology-service.html#expansion-rules) topic.",
         "min": 0,
         "max": "1"
       },
