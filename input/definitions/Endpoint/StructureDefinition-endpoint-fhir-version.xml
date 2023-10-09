@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="endpoint-fhir-version"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version"/>
+  <version value="5.0.0"/>
+  <name value="EndpointFhirVersion"/>
+  <title value="Endpoint FHIR Version"/>
+  <status value="active"/>
+  <date value="2023-10-02T15:38:12-05:00"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <name value="HL7 FHIR Infrastructure WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="The Patient Access Endpoint's FHIR Version. This Extension is a denormalization to help clients focus on supported endpoints."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Endpoint"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Endpoint FHIR Version"/>
+      <definition value="The Patient Access Endpoint's FHIR Version. This Extension is a denormalization to help clients focus on supported endpoints."/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/endpoint-fhir-version"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/FHIR-version"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
