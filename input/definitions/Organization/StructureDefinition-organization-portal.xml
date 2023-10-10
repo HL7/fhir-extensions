@@ -187,7 +187,7 @@
       <sliceName value="endpoint"/>
       <short value="Endpoint associated with this portal"/>
       <definition value="Reference to endpoints asociated with this portal. These endpoints will also appear in Organization.endpoint; inclusion here indicates that endpoint are associated specifically with this portal."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="*"/>
     </element>
     <element id="Extension.extension:endpoint.extension">
