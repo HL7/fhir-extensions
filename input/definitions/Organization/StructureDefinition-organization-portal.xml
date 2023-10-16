@@ -46,45 +46,45 @@
       <path value="Extension.extension"/>
       <min value="1"/>
     </element>
-    <element id="Extension.extension:name">
+    <element id="Extension.extension:portalName">
       <path value="Extension.extension"/>
-      <sliceName value="name"/>
+      <sliceName value="portalName"/>
       <short value="Portal Name"/>
       <definition value="Indicates the name by which patients know the portal - for example 'MyChildrens' or 'Patient Gateway'."/>
       <min value="0"/>
       <max value="1"/>
     </element>
-    <element id="Extension.extension:name.extension">
+    <element id="Extension.extension:portalName.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:name.url">
+    <element id="Extension.extension:portalName.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="name"/>
+      <fixedUri value="portalName"/>
     </element>
-    <element id="Extension.extension:name.value[x]">
+    <element id="Extension.extension:portalName.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="string"/>
       </type>
     </element>
-    <element id="Extension.extension:url">
+    <element id="Extension.extension:portalUrl">
       <path value="Extension.extension"/>
-      <sliceName value="url"/>
+      <sliceName value="portalUrl"/>
       <short value="Portal URL"/>
       <definition value="Indicates the location of the patient portal associated with this Brand - a URL where patients can go to see their data and manage access."/>
       <min value="0"/>
       <max value="1"/>
     </element>
-    <element id="Extension.extension:url.extension">
+    <element id="Extension.extension:portalUrl.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:url.url">
+    <element id="Extension.extension:portalUrl.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="url"/>
+      <fixedUri value="portalUrl"/>
     </element>
-    <element id="Extension.extension:url.value[x]">
+    <element id="Extension.extension:portalUrl.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="url"/>
@@ -112,45 +112,45 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="Extension.extension:logo">
+    <element id="Extension.extension:portalLogo">
       <path value="Extension.extension"/>
-      <sliceName value="logo"/>
+      <sliceName value="portalLogo"/>
       <short value="Portal Logo"/>
       <definition value="Portal logo image. Used if the portal has its own logo in addition to the Brand's logo. See the documentation for 'brand logo'."/>
       <min value="0"/>
       <max value="*"/>
     </element>
-    <element id="Extension.extension:logo.extension">
+    <element id="Extension.extension:portalLogo.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:logo.url">
+    <element id="Extension.extension:portalLogo.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="logo"/>
+      <fixedUri value="portalLogo"/>
     </element>
-    <element id="Extension.extension:logo.value[x]">
+    <element id="Extension.extension:portalLogo.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="url"/>
       </type>
     </element>
-    <element id="Extension.extension:logoLicenseType">
+    <element id="Extension.extension:portalLogoLicenseType">
       <path value="Extension.extension"/>
-      <sliceName value="logoLicenseType"/>
+      <sliceName value="portalLogoLicenseType"/>
       <short value="Portal Logo License Type"/>
       <definition value="The license type for the portal logo. Uses SPDX license identifier when available. See https://spdx.org/licenses/ for more information."/>
       <min value="0"/>
       <max value="*"/>
     </element>
-    <element id="Extension.extension:logoLicenseType.extension">
+    <element id="Extension.extension:portalLogoLicenseType.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:logoLicenseType.url">
+    <element id="Extension.extension:portalLogoLicenseType.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="logoLicenseType"/>
+      <fixedUri value="portalLogoLicenseType"/>
     </element>
-    <element id="Extension.extension:logoLicenseType.value[x]">
+    <element id="Extension.extension:portalLogoLicenseType.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="Coding"/>
@@ -160,45 +160,45 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/spdx-license"/>
       </binding>
     </element>
-    <element id="Extension.extension:logoLicense">
+    <element id="Extension.extension:portalLogoLicense">
       <path value="Extension.extension"/>
-      <sliceName value="logoLicense"/>
+      <sliceName value="portalLogoLicense"/>
       <short value="Portal Logo License"/>
       <definition value="The license for the portal logo. This is a URL to the license details."/>
       <min value="0"/>
       <max value="*"/>
     </element>
-    <element id="Extension.extension:logoLicense.extension">
+    <element id="Extension.extension:portalLogoLicense.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:logoLicense.url">
+    <element id="Extension.extension:portalLogoLicense.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="logoLicense"/>
+      <fixedUri value="portalLogoLicense"/>
     </element>
-    <element id="Extension.extension:logoLicense.value[x]">
+    <element id="Extension.extension:portalLogoLicense.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="url"/>
       </type>
     </element>
-    <element id="Extension.extension:endpoint">
+    <element id="Extension.extension:portalEndpoint">
       <path value="Extension.extension"/>
-      <sliceName value="endpoint"/>
+      <sliceName value="portalEndpoint"/>
       <short value="Endpoint associated with this portal"/>
       <definition value="Reference to endpoints asociated with this portal. These endpoints will also appear in Organization.endpoint; inclusion here indicates that endpoint are associated specifically with this portal."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="*"/>
     </element>
-    <element id="Extension.extension:endpoint.extension">
+    <element id="Extension.extension:portalEndpoint.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:endpoint.url">
+    <element id="Extension.extension:portalEndpoint.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="endpoint"/>
+      <fixedUri value="portalEndpoint"/>
     </element>
-    <element id="Extension.extension:endpoint.value[x]">
+    <element id="Extension.extension:portalEndpoint.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="Reference"/>
