@@ -46,23 +46,23 @@
       <path value="Extension.extension"/>
       <min value="1"/>
     </element>
-    <element id="Extension.extension:name">
+    <element id="Extension.extension:portalName">
       <path value="Extension.extension"/>
-      <sliceName value="name"/>
+      <sliceName value="portalName"/>
       <short value="Portal Name"/>
       <definition value="Indicates the name by which patients know the portal - for example 'MyChildrens' or 'Patient Gateway'."/>
       <min value="0"/>
       <max value="1"/>
     </element>
-    <element id="Extension.extension:name.extension">
+    <element id="Extension.extension:portalName.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:name.url">
+    <element id="Extension.extension:portalName.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="name"/>
+      <fixedUri value="portalName"/>
     </element>
-    <element id="Extension.extension:name.value[x]">
+    <element id="Extension.extension:portalName.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="string"/>
@@ -182,23 +182,23 @@
         <code value="url"/>
       </type>
     </element>
-    <element id="Extension.extension:endpoint">
+    <element id="Extension.extension:portalEndpoint">
       <path value="Extension.extension"/>
-      <sliceName value="endpoint"/>
+      <sliceName value="portalEndpoint"/>
       <short value="Endpoint associated with this portal"/>
       <definition value="Reference to endpoints asociated with this portal. These endpoints will also appear in Organization.endpoint; inclusion here indicates that endpoint are associated specifically with this portal."/>
       <min value="0"/>
       <max value="*"/>
     </element>
-    <element id="Extension.extension:endpoint.extension">
+    <element id="Extension.extension:portalEndpoint.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:endpoint.url">
+    <element id="Extension.extension:portalEndpoint.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="endpoint"/>
+      <fixedUri value="portalEndpoint"/>
     </element>
-    <element id="Extension.extension:endpoint.value[x]">
+    <element id="Extension.extension:portalEndpoint.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="Reference"/>
