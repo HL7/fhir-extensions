@@ -68,6 +68,28 @@
         <code value="string"/>
       </type>
     </element>
+    <element id="Extension.extension:portalDescription">
+      <path value="Extension.extension"/>
+      <sliceName value="portalDescription"/>
+      <short value="Portal Description"/>
+      <definition value="Describes the portal and its intended audience. May be used to help patients select the right portal if multiple options are available."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:portalDescription.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:portalDescription.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="portalDescription"/>
+    </element>
+    <element id="Extension.extension:portalDescription.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="markdown"/>
+      </type>
+    </element>
     <element id="Extension.extension:portalUrl">
       <path value="Extension.extension"/>
       <sliceName value="portalUrl"/>
