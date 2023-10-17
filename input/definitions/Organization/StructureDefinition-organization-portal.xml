@@ -138,7 +138,7 @@
       <path value="Extension.extension"/>
       <sliceName value="portalLogo"/>
       <short value="Portal Logo"/>
-      <definition value="Portal logo image. Used if the portal has its own logo in addition to the Brand's logo. See the documentation for 'brand logo'."/>
+      <definition value="Portal logo image. Used if the portal has its own logo in addition to the Brand's logo. See the documentation for 'brand' profile."/>
       <min value="0"/>
       <max value="*"/>
     </element>

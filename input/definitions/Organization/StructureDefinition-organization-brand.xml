@@ -46,7 +46,7 @@
       <path value="Extension.extension"/>
       <sliceName value="brandLogo"/>
       <short value="Brand Logo"/>
-      <definition value="Brand logo URL. SHOULD be optimized for display as a 1 in / 2.54 cm square and formatted as SVG or 1024x1024 pixel PNG with transparent background. Logo should be be legible at small sizes. Additional resolutions can be supplied with repeated 'brandLogo' extensions."/>
+      <definition value="Brand logo URL. SHOULD be optimized for display as a 1 in / 2.54 cm square and formatted as SVG or 1024x1024 pixel PNG with transparent background. Logo should be be legible at small sizes (e.g., as small as 50x50 pixels). Tips to achieve this: if the logo contains both a brandmark and a wordmark, separate them and use just the brandmark. If the logo is predominantly horizontal, consider creating a vertically-oriented logo that is still recognizable when scaled to smaller sizes. Multiple logos may be supplied. The URL can be an absolute URL with the https:// schema, or a Data URL with the data: schema that directly embeds content. Additional resolutions can be supplied with repeated 'brandLogo' extensions."/>
       <min value="0"/>
       <max value="*"/>
     </element>
