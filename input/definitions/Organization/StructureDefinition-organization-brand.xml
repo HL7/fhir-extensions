@@ -112,6 +112,28 @@
         <code value="url"/>
       </type>
     </element>
+    <element id="Extension.extension:brandBundle">
+      <path value="Extension.extension"/>
+      <sliceName value="brandBundle"/>
+      <short value="Brand Bundle URL"/>
+      <definition value="URL to an authoritative Brand Bundle where additional information about this Brand may be available"/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:brandBundle.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:brandBundle.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="brandBundle"/>
+    </element>
+    <element id="Extension.extension:brandBundle.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="url"/>
+      </type>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/organization-brand"/>
