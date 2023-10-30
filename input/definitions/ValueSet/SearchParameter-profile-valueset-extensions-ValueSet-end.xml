@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="vocab"/>
+    <valueCode value="ti"/>
   </extension>
   <url value="http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-end"/>
   <version value="5.0.0"/>

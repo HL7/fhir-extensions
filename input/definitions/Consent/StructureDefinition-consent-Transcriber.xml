@@ -26,7 +26,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/homehealth"/>
+      <value value="http://www.hl7.org/Special/committees/cbcc"/>
     </telecom>
   </contact>
   <description value="Any person/thing who transcribed the consent into the system."/>

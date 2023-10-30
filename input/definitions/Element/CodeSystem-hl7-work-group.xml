@@ -235,8 +235,8 @@
   </concept>
   <concept>
     <code value="ti"/>
-    <display value="Terminology Infrastructure Work Group"/>
-    <definition value="Terminology Infrastructure Work Group (http://www.hl7.org/Special/committees/Vocab/index.cfm)"/>
+    <display value="Terminology Infrastructure"/>
+    <definition value="Terminology Infrastructure (http://www.hl7.org/Special/committees/Vocab/index.cfm)"/>
   </concept>
   <concept>
     <code value="tsmg"/>
