@@ -47,6 +47,15 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="informative"/>
         </extension>
+        <sourceUrl value="toc.xml"/>
+        <name value="toc.html"/>
+        <title value="Place Holder ToC"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
         <sourceUrl value="extension-registry.html"/>
         <name value="extension-registry.html"/>
         <title value="Extension Registry"/>
