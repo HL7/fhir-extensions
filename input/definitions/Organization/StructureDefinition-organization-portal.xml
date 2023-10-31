@@ -22,7 +22,7 @@
     <name value="HL7 FHIR Infrastructure WG"/>
     <telecom>
       <system value="url"/>
-      <value value="https://hl7.org/Special/committees/fiwg"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Organization-level portal information."/>

@@ -22,7 +22,7 @@
     <name value="HL7 FHIR Infrastructure WG"/>
     <telecom>
       <system value="url"/>
-      <value value="https://hl7.org/Special/committees/fiwg"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="The Patient Access Endpoint's FHIR Version. This Extension is a denormalization to help clients focus on supported endpoints."/>
