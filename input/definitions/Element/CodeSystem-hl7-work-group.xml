@@ -76,7 +76,7 @@
   <concept>
     <code value="cds"/>
     <display value="Clinical Decision Support"/>
-    <definition value="Clinical Decision Support (http://www.hl7.org/Special/committees/dss/index.cfm)."/>
+    <definition value="Clinical Decision Support (http://www.hl7.org/Special/committees/dss)."/>
   </concept>
   <concept>
     <code value="cg"/>
