@@ -58,7 +58,7 @@
     </element>
     <element id="Extension.extension:meetGoal.extension">
       <path value="Extension.extension.extension"/>
-      <max value="0"/>
+      <min value="1"/>
     </element>
     <element id="Extension.extension:meetGoal.extension:offset">
       <path value="Extension.extension.extension"/>
@@ -144,7 +144,7 @@
     </element>
     <element id="Extension.extension:whenTrigger.extension">
       <path value="Extension.extension.extension"/>
-      <max value="0"/>
+      <min value="1"/>
     </element>
     <element id="Extension.extension:whenTrigger.extension:offset">
       <path value="Extension.extension.extension"/>
@@ -232,7 +232,7 @@
     </element>
     <element id="Extension.extension:precondition.extension">
       <path value="Extension.extension.extension"/>
-      <max value="0"/>
+      <min value="1"/>
     </element>
     <element id="Extension.extension:precondition.extension:doesNotOccur">
       <path value="Extension.extension.extension"/>

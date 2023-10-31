@@ -99,7 +99,8 @@
     </element>
     <element id="Extension.extension:revision.extension">
       <path value="Extension.extension.extension"/>
-      <max value="0"/>
+      <min value="3"/>
+      <max value="4"/>
     </element>
     <element id="Extension.extension:revision.extension:date">
       <path value="Extension.extension.extension"/>
