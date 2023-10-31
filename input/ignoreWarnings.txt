@@ -2,16 +2,36 @@
 
 # We expect several extensions that aren't in shareablevalueset.  So long as the extensions are valid in their location and defined, we're ok
 # (and the validator should catch that)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablecodesystem|5.0.0-draft-final
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablecodesystem|5.0.0
-This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0-draft-final
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0
 
 # can't validate for some value sets
 There was an error expanding the source value set, so this concept map can't be checked: 'There are 16777216 colors, so the full list of colors is not displayed'
 SM_TARGET_TRANSLATE_BINDING_VSE_TARGET
 
-Reference to draft item http://hl7.org/fhir/hl7-work-group|5.1.0-cibuild
+# known references to draft items
 Reference to draft item http://hl7.org/fhir/standards-status|5.1.0-cibuild
 Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
+# extensions that really can appear everywhere 
+Review the extension type for artifact-canonicalReference: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for artifact-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for artifact-reviewer: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for bodySite: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-calculatedValue: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-certainty: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-citation: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-expression: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-initialValue: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-qualityOfEvidence: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-relativeDateTime: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-strengthOfRecommendation: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for cqf-targetInvariant: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for data-absent-reason: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for derivation-reference: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for iso21090-nullFlavor: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for narrativeLink: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for originalText: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for rendering-style: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for rendering-styleSensitive: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+Review the extension type for satisfies-requirement: extensions should not have a context of Element unless it's really intended that they can be used anywhere
