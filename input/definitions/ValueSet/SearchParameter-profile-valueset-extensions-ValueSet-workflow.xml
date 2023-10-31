@@ -28,6 +28,6 @@
   <code value="workflow"/>
   <base value="ValueSet"/>
   <type value="token"/>
-  <expression value="CodeSystem.extension('http://hl7.org/fhir/StructureDefinition/valueset-workflowStatus').value"/>
+  <expression value="ValueSet.extension('http://hl7.org/fhir/StructureDefinition/valueset-workflowStatus').value"/>
   <processingMode value="normal"/>
 </SearchParameter>

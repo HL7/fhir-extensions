@@ -28,6 +28,6 @@
   <code value="keyword"/>
   <base value="ValueSet"/>
   <type value="string"/>
-  <expression value="CodeSystem.extension('http://hl7.org/fhir/StructureDefinition/valueset-keyWord').value"/>
+  <expression value="ValueSet.extension('http://hl7.org/fhir/StructureDefinition/valueset-keyWord').value"/>
   <processingMode value="normal"/>
 </SearchParameter>

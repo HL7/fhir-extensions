@@ -28,6 +28,6 @@
   <code value="effective"/>
   <base value="CodeSystem"/>
   <type value="date"/>
-  <expression value="CodeSystem.extension('http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate'.value)"/>
+  <expression value="CodeSystem.extension('http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate').value"/>
   <processingMode value="normal"/>
 </SearchParameter>
