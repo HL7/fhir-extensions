@@ -147,7 +147,7 @@
   <concept>
     <code value="in-narrative"/>
     <display value="include in narrative"/>
-    <definition value="Conformant applications SHALL/SHOULD/MAY ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
+    <definition value="Conformant applications SHALL/SHOULD/MAY ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -314,7 +314,7 @@
   <concept>
     <code value="process"/>
     <display value="process"/>
-    <definition value="Conformant applications SHALL/SHOULD/MAY consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <definition value="Conformant applications SHALL/SHOULD/MAY consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -451,7 +451,7 @@
   <concept>
     <code value="SHALL:in-narrative"/>
     <display value="SHALL include in narrative"/>
-    <definition value="Conformant applications SHALL ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
+    <definition value="Conformant applications SHALL ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
@@ -468,7 +468,7 @@
   <concept>
     <code value="SHOULD:in-narrative"/>
     <display value="SHOULD include in narrative"/>
-    <definition value="Conformant applications SHOULD ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
+    <definition value="Conformant applications SHOULD ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -485,7 +485,7 @@
   <concept>
     <code value="MAY:in-narrative"/>
     <display value="MAY include in narrative"/>
-    <definition value="Conformant applications MAY ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
+    <definition value="Conformant applications MAY ensure that this data element is represented in any human readable representation of a resource.&#xa;Notes: When no value for an element is known, the producer populates the narrative with the content of any nested [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions such as [DataAbsentReason](StructureDefinition-data-absent-reason.html). If no particular reason is known or reportable, the element can simply be indicated as 'unknown' in the narrative."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="MAY"/>
@@ -863,7 +863,7 @@
   <concept>
     <code value="SHALL:process"/>
     <display value="SHALL process"/>
-    <definition value="Conformant applications SHALL consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <definition value="Conformant applications SHALL consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
@@ -884,7 +884,7 @@
   <concept>
     <code value="SHOULD:process"/>
     <display value="SHOULD process"/>
-    <definition value="Conformant applications SHOULD consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <definition value="Conformant applications SHOULD consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -905,7 +905,7 @@
   <concept>
     <code value="MAY:process"/>
     <display value="MAY process"/>
-    <definition value="Conformant applications MAY consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <definition value="Conformant applications MAY consider the value of this element when processing the resource as specified by the IG.&#xa;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="MAY"/>
