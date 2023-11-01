@@ -76,7 +76,7 @@
   <concept>
     <code value="cds"/>
     <display value="Clinical Decision Support"/>
-    <definition value="Clinical Decision Support (http://www.hl7.org/Special/committees/dss/index.cfm)."/>
+    <definition value="Clinical Decision Support (http://www.hl7.org/Special/committees/dss)."/>
   </concept>
   <concept>
     <code value="cg"/>
@@ -235,8 +235,8 @@
   </concept>
   <concept>
     <code value="ti"/>
-    <display value="Terminology Infrastructure Work Group"/>
-    <definition value="Terminology Infrastructure Work Group (http://www.hl7.org/Special/committees/Vocab/index.cfm)"/>
+    <display value="Terminology Infrastructure"/>
+    <definition value="Terminology Infrastructure (http://www.hl7.org/Special/committees/Vocab/index.cfm)"/>
   </concept>
   <concept>
     <code value="tsmg"/>

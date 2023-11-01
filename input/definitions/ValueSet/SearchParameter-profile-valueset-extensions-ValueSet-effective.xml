@@ -6,7 +6,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="vocab"/>
+    <valueCode value="ti"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
@@ -28,6 +28,6 @@
   <code value="effective"/>
   <base value="ValueSet"/>
   <type value="date"/>
-  <expression value="CodeSystem.extension('http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate').value"/>
+  <expression value="ValueSet.extension('http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate').value"/>
   <processingMode value="normal"/>
 </SearchParameter>

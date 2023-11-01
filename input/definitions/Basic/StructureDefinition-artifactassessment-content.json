@@ -7,7 +7,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "cds"
+    "valueCode" : "cqi"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
@@ -20,7 +20,7 @@
   "status": "active",
   "experimental": false,
   "date": "2023-02-28",
-  "publisher": "Clinical Quality Information WG",
+  "publisher": "HL7 International / Clinical Quality Information",
   "contact": [
     {
       "telecom": [
@@ -362,6 +362,16 @@
         "id": "Extension.extension:component.value[x]",
         "path": "Extension.extension.value[x]",
         "contentReference": "#Extension.extension:component"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/artifactassessment-content"
       }
     ]
   }

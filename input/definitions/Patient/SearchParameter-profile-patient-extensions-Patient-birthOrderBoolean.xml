@@ -28,6 +28,6 @@
   <code value="birthOrderBoolean"/>
   <base value="Patient"/>
   <type value="token"/>
-  <expression value="Patient.multipleBirthBoolean | Patient.multipleBirthInteger"/>
+  <expression value="Patient.multipleBirth"/>
   <processingMode value="normal"/>
 </SearchParameter>

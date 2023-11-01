@@ -44,10 +44,6 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="Questionnaire.item.item"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="PlanDefinition"/>
   </context>
   <context>
@@ -56,19 +52,11 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="PlanDefinition.action.action"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="RequestOrchestration"/>
   </context>
   <context>
     <type value="element"/>
     <expression value="RequestOrchestration.action"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="RequestOrchestration.action.action"/>
   </context>
   <context>
     <type value="element"/>

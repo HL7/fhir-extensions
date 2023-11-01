@@ -19,13 +19,13 @@
   "status": "active",
   "experimental": false,
   "date": "2023-01-09T13:31:32-07:00",
-  "publisher": "Clinical Decision Support WG",
+  "publisher": "HL7 International / Clinical Decision Support",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss/index.cfm"
+          "value": "http://www.hl7.org/Special/committees/dss"
         }
       ]
     }

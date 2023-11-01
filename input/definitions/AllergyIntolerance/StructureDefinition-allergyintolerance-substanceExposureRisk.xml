@@ -50,6 +50,7 @@
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
+  <contextInvariant value="AllergyIntolerance.code.empty()"/>
   <differential>
     <element id="Extension">
       <path value="Extension"/>
@@ -58,12 +59,6 @@
       <comment value="This extension is available and is intended to be used as a more completely structured and flexible alternative to the 'code' element for representing positive and negative allergy and intolerance statements.  If this extension element is present, the AllergyIntolerance.code element SHALL be omitted (see invariant &quot;code or substanceExposureRisk&quot;)."/>
       <min value="0"/>
       <max value="1"/>
-      <constraint>
-        <key value="inv-1"/>
-        <severity value="error"/>
-        <human value="If the substanceExposureRisk extension element is present, the AllergyIntolerance.code element must be omitted."/>
-        <expression value="substanceExposureRisk.exists() and code.empty()"/>
-      </constraint>
     </element>
     <element id="Extension.extension:substance">
       <path value="Extension.extension"/>
