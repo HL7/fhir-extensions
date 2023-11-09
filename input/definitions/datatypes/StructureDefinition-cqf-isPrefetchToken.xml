@@ -15,7 +15,7 @@
   <version value="5.0.0"/>
   <name value="IsPrefetchToken"/>
   <title value="Is prefetch token"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
   <publisher value="HL7 International / Clinical Decision Support"/>

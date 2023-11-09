@@ -25,7 +25,8 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="An expression that determines an initial value. The expression may be simply the name of a expression in a referenced library, or it may be a complete inline expression."/>
+  <description value="An expression that determines an initial value for the element on which it appears. The expression may be simply the name of a expression in a referenced library, or it may be a complete inline expression."/>
+  <purpose value="This extension supports providing an expression that determines a calculated value for an element, but one that is only appropriate as the initial value (e.g. the calculated value that should be used when a form is first displayed to capture the information in the resource, as opposed to the cqf-calculatedValue extension, which provides the calculated value for an element whenever any change is made to the values of the resource)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

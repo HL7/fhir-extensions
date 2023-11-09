@@ -16,7 +16,7 @@
   "url" : "http://hl7.org/fhir/StructureDefinition/cqf-artifactComment",
   "name" : "ArtifactComment",
   "title": "Artifact Comment",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
   "date" : "2015-05-30",
   "publisher" : "HL7 International / Clinical Decision Support",
