@@ -7,26 +7,26 @@
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "cqi"
+    "valueCode" : "cds"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
+    "valueCode" : "draft"
   }],
   "url": "http://hl7.org/fhir/StructureDefinition/artifactassessment-content",
   "version": "1.0.0",
   "name": "ArtifactAssessmentContent",
   "title": "Artifact Assessment Content",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "date": "2023-02-28",
-  "publisher": "HL7 International / Clinical Quality Information",
+  "publisher": "HL7 International / Clinical Decision Support",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/cqi"
+          "value": "http://www.hl7.org/Special/committees/dss"
         }
       ]
     }

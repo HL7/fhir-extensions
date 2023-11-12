@@ -35,7 +35,7 @@
   <version value="5.0.0"/>
   <name value="KnowledgeCapability"/>
   <title value="Knowledge Capability Value Set"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2019-07-21"/>
   <publisher value="HL7 International / Clinical Decision Support"/>

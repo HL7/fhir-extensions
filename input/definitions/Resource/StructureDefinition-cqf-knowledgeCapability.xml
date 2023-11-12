@@ -15,7 +15,7 @@
   <version value="5.0.0"/>
   <name value="CQFKnowledgeCapability"/>
   <title value="CQF Knowledge capability"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
@@ -25,7 +25,8 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Defines a knowledge capability afforded by this knowledge artifact."/>
+  <description value="Defines a knowledge capability afforded by this knowledge artifact: Shareable, Publishable, Computable, and Executable, a scheme for organizing categories of functionality based on the content management lifecycle. See the Canonical Resource Management Infrastructure implementation guide for more information on these capability categories."/>
+  <purpose value="This extension supports specifying knowledge capabilities on resources that do not have a knowledgeCapability element."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -36,7 +37,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

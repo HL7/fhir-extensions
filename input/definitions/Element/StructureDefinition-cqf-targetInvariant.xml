@@ -15,7 +15,7 @@
   <version value="5.0.0"/>
   <name value="TargetInvariant"/>
   <title value="Target invariant"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
@@ -25,7 +25,8 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Specifies an invariant that is enforced in the context of an instantiated resource."/>
+  <description value="Specifies an invariant that is enforced on instantiated resources. This extension can be applied to any element of a definitional resource (such as ActivityDefinition or Measure) and indicates that the invariant should be enforced on resources that are instantiated from the definition. For example, this extension can be used to define a constraint such as `numerator count must be less than or equal to denominator count`."/>
+  <purpose value="This extension allows invariants to be specified as part of definitional resources as an alternative to having to define a profile to enforce the constraint."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

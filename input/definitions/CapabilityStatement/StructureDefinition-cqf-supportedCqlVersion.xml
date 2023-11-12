@@ -14,8 +14,8 @@
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-supportedCqlVersion"/>
   <version value="5.0.0"/>
   <name value="SupportedCqlVersion"/>
-  <title value="Supported cql version"/>
-  <status value="draft"/>
+  <title value="Supported CQL version"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
@@ -26,6 +26,7 @@
     </telecom>
   </contact>
   <description value="Indicates that the server supports the given version of Clinical Quality Language (CQL). Valid values are major.minor and optionally the patch version of any published version of the CQL specification."/>
+  <purpose value="This extension allows servers to indicate what version(s) of Clinical Quality Language (CQL) they support. Although this could potentially be indicated in the capability statement by declaring a reference to the CQL implementation guide, this would not provide the same level of granularity that is afforded by this extension (i.e. the ability to state major, minor, and/or patch version level support)"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

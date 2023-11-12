@@ -23,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="ArtifactCommentType"/>
   <title value="Artifact comment type codesystem"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2019-03-14T23:21:03-06:00"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
