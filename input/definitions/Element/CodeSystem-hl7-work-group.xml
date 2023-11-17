@@ -116,7 +116,7 @@
   <concept>
     <code value="ehr"/>
     <display value="Electronic Health Records"/>
-    <definition value="Electronic Health Records (http://www.hl7.org/special/committees/ehr/index.cfm)."/>
+    <definition value="Electronic Health Records (http://www.hl7.org/Special/committees/ehr/index.cfm)."/>
   </concept>
   <concept>
     <code value="ec"/>
@@ -166,12 +166,12 @@
   <concept>
     <code value="inm"/>
     <display value="Infrastructure And Messaging"/>
-    <definition value="Infrastructure And Messaging (http://www.hl7.org/special/committees/inm/index.cfm)."/>
+    <definition value="Infrastructure And Messaging (http://www.hl7.org/Special/committees/inm/index.cfm)."/>
   </concept>
   <concept>
     <code value="its"/>
     <display value="Implementable Technology Specifications"/>
-    <definition value="Implementable Technology Specifications (http://www.hl7.org/special/committees/xml/index.cfm)."/>
+    <definition value="Implementable Technology Specifications (http://www.hl7.org/Special/committees/xml/index.cfm)."/>
   </concept>
   <concept>
     <code value="lhs"/>
