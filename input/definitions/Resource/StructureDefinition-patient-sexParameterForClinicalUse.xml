@@ -121,8 +121,8 @@
     <element id="Extension.extension:comment">
       <path value="Extension.extension"/>
       <sliceName value="comment"/>
-      <short value="Context about the sex parameter for clinical use"/>
-      <definition value="Further explanation about the context for the sex parameter for clinical use"/>
+      <short value="Comments about the sex parameter for clinical use"/>
+      <definition value="Further explanation about the choice, intention, or context of use for the sex parameter for clinical use"/>
       <min value="0"/>
       <max value="1"/>
       <type>
