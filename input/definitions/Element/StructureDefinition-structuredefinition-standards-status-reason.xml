@@ -38,6 +38,10 @@
     <type value="element"/>
     <expression value="DomainResource"/>
   </context>
+  <context>
+    <type value="extension"/>
+    <expression value="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
