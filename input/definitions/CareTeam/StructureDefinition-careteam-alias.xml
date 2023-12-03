@@ -29,7 +29,6 @@
       <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  </contact>
   <description value="Alternate names by which the team is also known."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
