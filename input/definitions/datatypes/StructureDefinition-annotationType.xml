@@ -62,7 +62,7 @@
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="valueCodeableConcept"/>
+        <code value="CodeableConcept"/>
       </type>
       <binding>
         <strength value="example"/>
