@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."/>
+  <description value="The living/delivery status of the fetus (patient)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
