@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="observation-nature-of-abnormal-test"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/observation-nature-of-abnormal-test"/>
+  <identifier>
+    <system value=" "/>
+    <value value=" "/>
+  </identifier>
+  <version value="6.0.0"/>
+  <name value="ObsNatureAbnormal"/>
+  <title value="Observation Nature of Abnormal Test"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-08"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="This field contains the nature of the abnormal test. This is represented in v2 as OBX-10 Nature of abnormal test (ID) 00578."/>
+  <fhirVersion value="6.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Observation"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="The nature of the abnormal test."/>
+      <definition value="This field contains the nature of the abnormal test. This is represented in v2 as OBX-10 Nature of abnormal test (ID) 00578."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-nature-of-abnormal-test"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="AbnormalTest"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="Codes specifying the nature of an abnormal test."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/Hl7VSNatureOfAbnormalTesting"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
