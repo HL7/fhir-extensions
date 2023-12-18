@@ -73,7 +73,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Codes specifying the nature of an abnormal test."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/Hl7VSNatureOfAbnormalTesting"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0080"/>
       </binding>
     </element>
   </differential>

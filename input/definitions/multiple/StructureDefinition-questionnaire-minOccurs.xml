@@ -48,7 +48,7 @@
     <expression value="ElementDefinition"/>
   </context>
   -->
-  <contextInvariant value="type!='display' and (required=true or %extension.valueInteger=0)"/>
+  <contextInvariant value="type!='display' and (required=true or (required.value.empty() and required.extension.exists()))"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
