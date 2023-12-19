@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="observation-grouper"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+        <valueCode value="oo"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+        <valueInteger value="0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="trial-use"/>
+    </extension>
+    <url value="http://hl7.org/fhir/StructureDefinition/observation-grouper"/>
+    <version value="5.0.0"/>
+    <name value="ObsGrouper"/>
+    <title value="Observation Grouper"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2023-12-18"/>
+    <publisher value="HL7 International / Orders and Observations"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/orders"/>
+        </telecom>
+    </contact>
+    <description
+        value="A complex extension matching the structure of the V2 OG data type.  This is used in the v2-to-fhir mapping IG to capture and preserve the OBX-4 Sub-Id details."/>
+    <fhirVersion value="5.0.0"/>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Observation"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Observation Grouper"/>
+            <definition
+                value="A complex extension for capturing the components that can be used to define the structure of the V2 observation/result segments (OBX) within an observation report segment (OBR) (matches the V2 OG data type)."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.extension:original-sub-identifier">
+            <path value="Extension.extension"/>
+            <sliceName value="original-sub-identifier"/>
+            <short value="Original Sub-Identifier"/>
+            <definition
+                value="The Original Sub-Identifier component represents the original data type used in OBX4 to enable backwards compatibility to continue use of the original format to provide OBX segment grouping."/>
+            <comment value="Reflects OBX-4 data type pre V2.8.2"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mapping>
+                <identity value="v2"/>
+                <map value="OG.1"/>
+            </mapping>
+        </element>
+        <element id="Extension.extension:original-sub-identifier.extension">
+            <path value="Extension.extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.extension:original-sub-identifier.url">
+            <path value="Extension.extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="original-sub-identifier"/>
+        </element>
+        <element id="Extension.extension:original-sub-identifier.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Extension.extension:group">
+            <path value="Extension.extension"/>
+            <sliceName value="group"/>
+            <short value="Group"/>
+            <definition
+                value="The Group component indicates the group and its sequence within the OBR segment that the OBX segment is a part of."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mapping>
+                <identity value="v2"/>
+                <map value="OG.2"/>
+            </mapping>
+        </element>
+        <element id="Extension.extension:group.extension">
+            <path value="Extension.extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.extension:group.url">
+            <path value="Extension.extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="group"/>
+        </element>
+        <element id="Extension.extension:group.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="decimal"/>
+            </type>
+        </element>
+        <element id="Extension.extension:sequence">
+            <path value="Extension.extension"/>
+            <sliceName value="sequence"/>
+            <short value="Sequence"/>
+            <definition
+                value="The Sequence component indicates the sequence within the group as defined in OG-2."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mapping>
+                <identity value="v2"/>
+                <map value="OG.3"/>
+            </mapping>
+        </element>
+        <element id="Extension.extension:sequence.extension">
+            <path value="Extension.extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.extension:sequence.url">
+            <path value="Extension.extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="sequence"/>
+        </element>
+        <element id="Extension.extension:sequence.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="decimal"/>
+            </type>
+        </element>
+        <element id="Extension.extension:identifier">
+            <path value="Extension.extension"/>
+            <sliceName value="identifier"/>
+            <short value="Identifier"/>
+            <definition
+                value="The Identifier component enables assignment of an identifier to a result component, for example an isolate in a microbiology message."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mapping>
+                <identity value="v2"/>
+                <map value="OG.4"/>
+            </mapping>
+        </element>
+        <element id="Extension.extension:identifier.extension">
+            <path value="Extension.extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.extension:identifier.url">
+            <path value="Extension.extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="identifier"/>
+        </element>
+        <element id="Extension.extension:identifier.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-grouper"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
+    </differential>
+</StructureDefinition>
