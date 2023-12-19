@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="observation-grouper"/>
+    <id value="observation-v2-subid"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
         <valueCode value="oo"/>
     </extension>
@@ -10,10 +10,10 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="trial-use"/>
     </extension>
-    <url value="http://hl7.org/fhir/StructureDefinition/observation-grouper"/>
+    <url value="http://hl7.org/fhir/StructureDefinition/observation-v2-subid"/>
     <version value="5.0.0"/>
-    <name value="ObsGrouper"/>
-    <title value="Observation Grouper"/>
+    <name value="ObsV2SubId"/>
+    <title value="Observation V2 Sub-Id"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2023-12-18"/>
@@ -189,7 +189,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-grouper"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-v2-subid"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>
