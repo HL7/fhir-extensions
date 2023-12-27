@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "extension-criteriaReference",
+  "id": "criteriaReference",
   "url": "http://hl7.org/fhir/StructureDefinition/criteriaReference",
   "version": "1.0.0",
   "name": "CriteriaReferenceExtension",
@@ -46,7 +46,11 @@
   "context": [
     {
       "type": "element",
-      "expression": "Reference"
+      "expression": "MeasureReport.supplementalData"
+    },
+    {
+      "type": "element",
+      "expression": "MeasureReport.evaluatedResource"
     }
   ],
   "type": "Extension",
