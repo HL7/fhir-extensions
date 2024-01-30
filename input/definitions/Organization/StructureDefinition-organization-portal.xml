@@ -160,7 +160,7 @@
       <path value="Extension.extension"/>
       <sliceName value="portalLogoLicenseType"/>
       <short value="Portal Logo License Type"/>
-      <definition value="The license type for the portal logo. Uses SPDX license identifier when available. See https://spdx.org/licenses/ for more information."/>
+      <definition value="The license type for the portal logo."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -178,7 +178,7 @@
         <code value="Coding"/>
       </type>
       <binding>
-        <strength value="extensible"/>
+        <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/spdx-license"/>
       </binding>
     </element>
