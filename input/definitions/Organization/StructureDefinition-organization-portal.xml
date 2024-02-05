@@ -50,7 +50,7 @@
       <path value="Extension.extension"/>
       <sliceName value="portalName"/>
       <short value="Portal Name"/>
-      <definition value="Indicates the name by which patients know the portal - for example 'MyChildrens' or 'Patient Gateway'."/>
+      <definition value="Indicates the name by which users know the portal - for example 'MyChildrens' or 'Patient Gateway'."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -72,7 +72,7 @@
       <path value="Extension.extension"/>
       <sliceName value="portalDescription"/>
       <short value="Portal Description"/>
-      <definition value="Describes the portal and its intended audience. May be used to help patients select the right portal if multiple options are available."/>
+      <definition value="Describes the portal and its intended audience. May be used to help users select the right portal if multiple options are available."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -94,7 +94,7 @@
       <path value="Extension.extension"/>
       <sliceName value="portalUrl"/>
       <short value="Portal URL"/>
-      <definition value="Indicates the location of the patient portal associated with this Brand - a URL where patients can go to see their data and manage access."/>
+      <definition value="Indicates the location of the user portal associated with this Brand - a URL where users can go to see their data and manage access."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -116,7 +116,7 @@
       <path value="Extension.extension"/>
       <sliceName value="description"/>
       <short value="Portal Description"/>
-      <definition value="Patient-friendly language that explains the subset of patients eligible to connect and the data available. For example - 'a cancer center that uses one EHR for pediatric patients and another for adult patients'.."/>
+      <definition value="User-friendly language that explains the subset of users eligible to connect and the data available. For example - 'a cancer center that uses one EHR for pediatric patients and another for adult patients'.."/>
       <min value="0"/>
       <max value="1"/>
     </element>
