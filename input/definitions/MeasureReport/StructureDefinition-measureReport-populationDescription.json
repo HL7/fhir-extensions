@@ -1,0 +1,89 @@
+{
+    "resourceType" : "StructureDefinition",
+    "id" : "measurereport-populationDescription",
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+        "valueInteger" : 3
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+        "valueCode" : "cqi"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "trial-use"
+      }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/measurereport-populationDescription",
+    "name" : "measurereport-populationDescription",
+    "title" : "Measure Report Population Description",
+    "status" : "active",
+    "experimental" : false,
+    "date" : "2024-02-01",
+    "publisher" : "HL7 International / Clinical Quality Information WG",
+    "contact" : [{
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://www.hl7.org/Special/committees/cqi"
+      }]
+    }],
+    "description" : "The human readable description of population criteria.",
+    "jurisdiction" : [{
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "US"
+      }]
+    }],
+    "purpose" : "Provides a description of the population in which this appears.",
+    "fhirVersion" : "4.0.1",
+    "mapping" : [{
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }],
+    "kind" : "complex-type",
+    "abstract" : false,
+    "context" : [{
+      "type" : "element",
+      "expression" : "MeasureReport.group"
+    },
+    {
+      "type" : "element",
+      "expression" : "MeasureReport.group.population"
+    },
+    {
+      "type" : "element",
+      "expression" : "MeasureReport.stratifier"
+    },
+    {
+      "type" : "element",
+      "expression" : "MeasureReport.supplementalData"
+    }],
+    "type" : "Extension",
+    "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation" : "constraint",
+    "differential" : {
+      "element" : [{
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "Provides a description of the population in which it appears.",
+        "definition" : "Provides a description of the population in which it appears.",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "type" : [{
+          "code" : "uri"
+        }],
+        "fixedUri" : "http://hl7.org/fhir/extensions/StructureDefinition-measurereport-populationDescription"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "type" : [{
+          "code" : "markdown"
+        }]
+      }]
+    }
+  }
