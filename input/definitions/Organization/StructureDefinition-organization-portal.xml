@@ -112,28 +112,6 @@
         <code value="url"/>
       </type>
     </element>
-    <element id="Extension.extension:description">
-      <path value="Extension.extension"/>
-      <sliceName value="description"/>
-      <short value="Portal Description"/>
-      <definition value="User-friendly language that explains the subset of users eligible to connect and the data available. For example - 'a cancer center that uses one EHR for pediatric patients and another for adult patients'.."/>
-      <min value="0"/>
-      <max value="1"/>
-    </element>
-    <element id="Extension.extension:description.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:description.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="description"/>
-    </element>
-    <element id="Extension.extension:description.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
     <element id="Extension.extension:portalLogo">
       <path value="Extension.extension"/>
       <sliceName value="portalLogo"/>
