@@ -1,0 +1,17 @@
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml ../../schema/fhir-xhtml.xsd" xmlns="http://www.w3.org/1999/xhtml">
+
+<div>
+<p>The extension can be applied to Evidence.statistic.modelCharacteristic to describe when that modelCharacteristic is included in the statistical model, or can be applied to Evidence.statistic.modelCharacteristic.variable to describe when that variable is included in the adjusted analysis.<br/>This extension requires two elements, an <i>attribute</i> and a <i>value[x]</i>. The interpretation of the extension instance is that when the <i>attribute</i> value matches the <i>value[x]</i> value, then the corresponding model characteristic (or variable) element shall be included in the model.</p>
+</div>
+
+
+<!-- (optional):
+<div>
+<h2>Background and Context</h2>
+<p>
+Provides additional detail on exactly how the resource is to be used
+</p>
+</div>
+-->
+
+</div>

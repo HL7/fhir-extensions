@@ -24,7 +24,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="The condition under which the variable (or modelCharacteristic) will be included."/>
+  <description value="The condition under which the variable (or modelCharacteristic) will be included.&#xA;&#xA;The extension can be applied to Evidence.statistic.modelCharacteristic to describe when that modelCharacteristic is included in the statistical model, or can be applied to Evidence.statistic.modelCharacteristic.variable to describe when that variable is included in the adjusted analysis.&#xA;&#xA;This extension requires two elements, an attribute and a value[x]. The interpretation of the extension instance is that when the attribute VALUE matches the value[x] VALUE, then the corresponding model characteristic (or variable) element shall be included in the model."/>
   <fhirVersion value="6.0.0"/>
   <mapping>
     <identity value="rim"/>
