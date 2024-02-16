@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="statistic-model-include-if"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cds"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/statistic-model-include-if"/>
+  <name value="StatisticModelIncludeIf"/>
+  <title value="Statistic Model Include If"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-02-13"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="The condition under which the variable (or modelCharacteristic) will be included.&#xA;&#xA;The extension can be applied to Evidence.statistic.modelCharacteristic to describe when that modelCharacteristic is included in the statistical model, or can be applied to Evidence.statistic.modelCharacteristic.variable to describe when that variable is included in the adjusted analysis.&#xA;&#xA;This extension requires two elements, an attribute and a value[x]. The interpretation of the extension instance is that when the attribute VALUE matches the value[x] VALUE, then the corresponding model characteristic (or variable) element shall be included in the model."/>
+  <fhirVersion value="6.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Evidence.statistic.modelCharacteristic"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Evidence.statistic.modelCharacteristic.variable"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Condition upon which to include the variable or model characteristic in the analysis"/>
+      <definition value="The condition upon which to include the variable or model characteristic in the analysis."/>
+	  <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <min value="2"/>
+	  <max value="2"/>
+    </element>
+    <element id="Extension.extension:attribute">
+      <path value="Extension.extension"/>
+      <sliceName value="attribute"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:attribute.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:attribute.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="attribute"/>
+    </element>
+    <element id="Extension.extension:attribute.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <short value="Type of condition"/>
+      <definition value="Type of condition."/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="Extension.extension:value">
+      <path value="Extension.extension"/>
+      <sliceName value="value"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:value.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:value.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="value"/>
+    </element>
+    <element id="Extension.extension:value.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <short value="Value of condition"/>
+      <definition value="Value of condition."/>
+	  <min value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="Range"/>
+      </type>
+      <type>
+        <code value="Expression"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/statistic-model-include-if"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
