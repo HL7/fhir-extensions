@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"/>
   <identifier>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="CDVersionNumber"/>
   <title value="Composition Version Number"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-03-17"/>
   <publisher value="HL7 International / Structured Documents"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/structure"/>
     </telecom>
   </contact>
-  <description value="Version specific identifier for the composition, assigned when each version is created/updated."/>
+  <description value="Version specific identifier for the composition, assigned when each version is created/updated. Note: this extension is deprecated because since R5 Composition has a version element which should be used instead."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Version-specific identifier for composition"/>
-      <definition value="Version specific identifier for the composition, assigned when each version is created/updated."/>
+      <definition value="Version specific identifier for the composition, assigned when each version is created/updated. Note: this extension is deprecated because since R5 Composition has a version element which should be used instead."/>
       <comment value="While each resource, including the composition itself, has its own version identifier, this is a formal identifier for the logical version of the composition as a whole. It would remain constant if the resources were moved to a new server, and all got new individual resource versions, for example."/>
       <min value="0"/>
       <max value="1"/>
