@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cqf-improvementNotationGuidance",
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance",
+  "version": "4.0.0",
+  "name": "CQFImprovementNotationGuidance",
+  "title": "CQF Improvement Notation Guidance",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Clinical Quality Information WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Narrative text to explain the improvement notation and how to interpret it.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "purpose": "**Purpose**\n\nMeasure consumers and implementers must be able to determine how to interpret a measure score.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Measure"
+    },
+    {
+      "type": "element",
+      "expression": "Measure.group"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Explanation of improvement notation",
+        "definition": "Explanation of improvement notation and how to interpret it.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      }
+    ]
+  }
+}
