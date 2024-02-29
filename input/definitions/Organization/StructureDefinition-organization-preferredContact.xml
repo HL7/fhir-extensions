@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="This Contact is the preferred contact at this organization for the purpose of the contact&#xA;&#xA;There can be multiple contacts on an Organizations record with this value set to true, but these should all have different purpose values."/>
+  <description value="This Contact is the preferred contact at this organization for the purpose of the contact.&#xA;&#xA;There can be multiple contacts on an Organizations record with this value set to true, but these should all have different purpose values."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,7 +48,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <definition value="This Contact is the preferred contact at this organization for the purpose of the contact&#xA;&#xA;There can be multiple contacts on an Organizations record with this value set to true, but these should all have different purpose values."/>
+      <definition value="This Contact is the preferred contact at this organization for the purpose of the contact.&#xA;&#xA;There can be multiple contacts on an Organizations record with this value set to true, but these should all have different purpose values."/>
       <min value="0"/>
       <max value="1"/>
     </element>
