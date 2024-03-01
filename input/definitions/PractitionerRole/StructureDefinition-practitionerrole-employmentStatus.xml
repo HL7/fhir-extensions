@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="organization-preferredContact"/>
+  <id value="practitionerrole-employmentStatus"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="3"/>
+    <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/organization-preferredContact"/>
-  <identifier>
+  <url value="http://hl7.org/fhir/StructureDefinition/practitionerrole-employmentStatus"/>
+  <!-- <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.994"/>
-  </identifier>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1442"/>
+  </identifier> -->
   <version value="5.0.0"/>
-  <name value="OrgPreferredContact"/>
-  <title value="Organization Preferred Contact"/>
+  <name value="PREmploymentStatus"/>
+  <title value="PractitionerRole Employment Status"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2015-02-21"/>
+  <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 International / Patient Administration"/>
   <contact>
     <telecom>
@@ -29,18 +29,13 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="This Contact is the preferred contact at this organization for the purpose of the contact.&#xA;&#xA;There can be multiple contacts on an Organizations record with this value set to true, but these should all have different purpose values."/>
+  <description value="An indicator of what employment conditions/capacity/entitlements the practitioner is working under - e.g. Full-time, part-time, casual. This is typically a HR related attribute."/>
   <fhirVersion value="5.0.0"/>
-  <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
-  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Organization.contact"/>
+    <expression value="PractitionerRole"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -48,9 +43,11 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <definition value="This Contact is the preferred contact at this organization for the purpose of the contact.&#xA;&#xA;There can be multiple contacts on an Organizations record with this value set to true, but these should all have different purpose values."/>
+      <short value="Employment status"/>
+      <definition value="An indicator of what employment conditions/capacity/entitlements the practitioner is working under - e.g. Full-time, part-time, casual. This is typically a HR related attribute."/>
       <min value="0"/>
       <max value="1"/>
+      <isModifier value="false"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -58,14 +55,21 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/organization-preferredContact"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/practitionerrole-employmentStatus"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="boolean"/>
+        <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EmploymentStatus"/>
+        </extension>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/practitionerrole-employmentStatus"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
