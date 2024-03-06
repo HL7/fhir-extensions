@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="version-specific-value"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/version-specific-value"/>
+  <version value="5.0.0"/>
+  <name value="VersionSpecificValue"/>
+  <title value="Version Specific Value"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2013-07-04"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Provides an alternative value for the element carrying this extension that is the correct value for a particular range of FHIR versions other than the default value. This extension is found in contexts where a definition is applying to more than one version, usually defining extensions, and should only be used in context that clearly document how a cross-version definition is used. While there are no limitations to where this extension can be used, known uses are: StructureDefinition.context, ElementDefinition.type, ElementDefinition.additionalBinding and ... "/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Element"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Resource"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Value for other versions"/>
+      <definition value="Provides an alternative value for the element carrying this extension is the correct value for a particular range of FHIR versions."/>
+      <comment value="This extension is found in contexts where a definition is applying to more than one version, usually defining extensions, and should only be used in context that clearly document how a cross-version definition is used"/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:value">
+      <path value="Extension.extension"/>
+      <sliceName value="value"/>
+      <short value="Starting Version"/>
+      <definition value="Earliest FHIR version that the content is appropriate for."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:value.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:value.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="value"/>
+    </element>
+    <element id="Extension.extension:value.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="code"/>
+      </type>
+      <type>
+        <code value="integer"/>
+      </type>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <type>
+        <code value="url"/>
+      </type>
+      <type>
+        <code value="canonical"/>
+      </type>
+    </element>
+    <element id="Extension.extension:startFhirVersion">
+      <path value="Extension.extension"/>
+      <sliceName value="startFhirVersion"/>
+      <short value="Starting Version"/>
+      <definition value="Earliest FHIR version that the content is appropriate for."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:startFhirVersion.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:startFhirVersion.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="startFhirVersion"/>
+    </element>
+    <element id="Extension.extension:startFhirVersion.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="1.0, 3.0, 4.0, 4.3, or 5.0"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/major-fhir-version"/>
+      </binding>
+    </element>
+    <element id="Extension.extension:endFhirVersion">
+      <path value="Extension.extension"/>
+      <sliceName value="endFhirVersion"/>
+      <short value="Ending Version"/>
+      <definition value="Latest FHIR version that the content is appropriate for."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:endFhirVersion.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:endFhirVersion.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="endFhirVersion"/>
+    </element>
+    <element id="Extension.extension:endFhirVersion.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="1.0, 3.0, 4.0, 4.3, or 5.0"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/major-fhir-version"/>
+      </binding>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/version-specific-usage"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
