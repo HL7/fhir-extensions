@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  <description value="The date on which the clinician indicates that the condition has been reviewed"/>
+  <description value="The date on which the clinician indicates that the condition has been reviewed."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
