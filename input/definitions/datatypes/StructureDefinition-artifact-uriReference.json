@@ -1,0 +1,77 @@
+{
+    "resourceType" : "StructureDefinition",
+    "id" : "artifact-uriReference",
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+        "valueInteger" : 1
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+        "valueCode" : "cds"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "trial-use"
+      }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-uriReference",
+    "name" : "ArtifactUriReference",
+    "title" : "Artifact URI Reference",
+    "status" : "active",
+    "date" : "2023-12-15T12:33:57-07:00",
+    "publisher" : "HL7 International / Clinical Decision Support",
+    "contact" : [{
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://www.hl7.org/Special/committees/dss"
+      }]
+    }],
+    "description" : "Create a reference, following canonical reference semantics, to an artifact that uses the artifact-url and artifact-version extensions to provide a canonical identifier.",
+    "jurisdiction" : [{
+      "coding" : [{
+        "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "code" : "001",
+        "display" : "World"
+      }]
+    }],
+    "purpose" : "To allow resources to define a reference to a resource that is not canonical, but is being used as a knowledge artifact (e.g. a Substance or Medication resource that is modeling the definition of a substance or medication, rather than a specific instance). The resource referenced must be using the artifact-url and artifact-version extensions to provide a canonical reference for the resource.",
+    "fhirVersion" : "4.0.1",
+    "mapping" : [{
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }],
+    "kind" : "complex-type",
+    "abstract" : false,
+    "context" : [{
+      "type" : "element",
+      "expression" : "Reference"
+    }],
+    "type" : "Extension",
+    "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation" : "constraint",
+    "differential" : {
+      "element" : [{
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "The artifact",
+        "definition" : "Create a reference, following canonical reference semantics, to an artifact that uses the artifact-url and artifact-version extensions to provide a canonical identifier."
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/artifact-uriReference"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "type" : [{
+          "code" : "uri"
+        }]
+      }]
+    }
+  }
