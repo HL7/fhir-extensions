@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/specimen-processingTime"/>
   <identifier>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="SpecProcessingTime"/>
   <title value="Specimen Processing Time"/>
-  <status value="active"/>
+  <status value="deprecated"/>
   <experimental value="false"/>
   <date value="2015-02-19"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Period or duration of processing. This is no longer relevant for R6 due to a matching element in R6."/>
+  <description value="Period or duration of processing. This is no longer relevant for R6 due to a matching element in R6. This extension is deprecated."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
