@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Defines a code directly referenced by artifact logic, as opposed to a value set. Direct reference codes may be the target of data requirements."/>
+  <description value="Indicates that the given code is directly referenced by artifact logic (e.g. as a [direct-reference code](https://cql.hl7.org/02-authorsguide.html#code) in CQL). Terminology dependencies used in logic can be collected and reported, typically using the relatedArtifact element with a type of `depends-on`. However, direct-reference codes cannot be represented in the relatedArtifact element, so this extension provides a means to support communicating direct-reference code dependencies of knowledge artifacts. As with value set dependencies, direct-reference codes may be the terminology target of a data requirement."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -45,7 +45,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A code directly referenced by the artifact"/>
-      <definition value="Defines a code directly referenced by artifact logic, as opposed to a value set. Direct reference codes may be the target of data requirements."/>
+      <definition value="Indicates that the given code is directly referenced by artifact logic (e.g. as a [direct-reference code](https://cql.hl7.org/02-authorsguide.html#code) in CQL). Terminology dependencies used in logic can be collected and reported, typically using the relatedArtifact element with a type of `depends-on`. However, direct-reference codes cannot be represented in the relatedArtifact element, so this extension provides a means to support communicating direct-reference code dependencies of knowledge artifacts. As with value set dependencies, direct-reference codes may be the terminology target of a data requirement."/>
       <min value="0"/>
       <max value="*"/>
     </element>
