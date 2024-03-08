@@ -1,0 +1,96 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cqf-testArtifact",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-testArtifact",
+  "name": "TestArtifact",
+  "title": "Test Artifact",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-13",
+  "publisher": "HL7 International / Clinical Decision Support",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "description": "The artifact under test for this test content",
+  "purpose": "This extension allows test content (such as a Group of test case patients) to specify the artifact under test.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Group"
+    },
+    {
+      "type": "element",
+      "expression": "Library"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "What artifact the test is for",
+        "definition": "A reference to the artifact under test for this test content",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-testArtifact"
+      },
+      {
+        "id": "Extension.value[x]",
+        "extension": [{
+          "url": "http://hl7.org/fhir/StructureDefinition/cqf-shouldTraceDependency",
+          "valueBoolean": true
+        }],
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "uri"
+          }
+        ]
+      }
+    ]
+  }
+}
