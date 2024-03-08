@@ -9,13 +9,13 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/relative-date"/>
   <version value="5.0.0"/>
   <name value="RelativeDateCriteria"/>
   <title value="Relative Date Criteria"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2013-12-05"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
+  <description value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]. DEPRECATED: This extension has been deprecated in favor of the new relative-time extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,8 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Relative Date Criteria"/>
-      <definition value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
+      <short value="DEPRECATED Relative Date Criteria"/>
+      <definition value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]. DEPRECATED: This extension has been deprecated in favor of the new relative-time extension."/>
       <comment value="This extension is used when a precise date is not known, but rather, the date will be relative to some future event (e.g. Do this 2 weeks after an operation)."/>
       <min value="0"/>
       <max value="1"/>
