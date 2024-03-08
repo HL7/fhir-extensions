@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<!--StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="relative-time"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/relative-date"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/relative-time"/>
   <version value="5.0.0"/>
   <name value="RelativeTime"/>
   <title value="Relative Time"/>
@@ -70,4 +70,4 @@
       </type>
     </element>
   </differential>
-</StructureDefinition>
+</StructureDefinition-->
