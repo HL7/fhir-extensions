@@ -45,7 +45,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Who or what the contact is"/>
-      <definition value="A reference to a Person, Group, Device, or Organization that is the contact."/>
+      <definition value="A reference to a Group, Device, or Organization that is the contact."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -62,7 +62,6 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
