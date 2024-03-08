@@ -37,7 +37,107 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="ActivityDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.code"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.intent"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.priority"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.doNotPerform"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.timing[x]"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.asNeeded[x]"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.location"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.participant"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.product[x]"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.quantity"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.dosage"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.bodySite"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.dynamicValue"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.group"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.group.population"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.group.stratifier"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.supplementalData"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.goal"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.goal.target"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.actor"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.action"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Questionnaire"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Questionnaire.item"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
