@@ -9,13 +9,13 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-systemUserTaskContext"/>
   <version value="5.0.0"/>
   <name value="SystemUserTaskContext"/>
   <title value="System user task context"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-05-30"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="The task the system user is performing, e.g. laboratory results review, medication list review, etc. This information can be used to tailor decision support outputs, such as recommended information resources."/>
+  <description value="The task the system user is performing, e.g. laboratory results review, medication list review, etc. This information can be used to tailor decision support outputs, such as recommended information resources. DEPRECATED: This extension was initially used to model decision support context. This information is now handled as part of CDS Hooks and Clinical Reasoning."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -45,7 +45,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="The task the system user is performing"/>
-      <definition value="The task the system user is performing, e.g. laboratory results review, medication list review, etc. This information can be used to tailor decision support outputs, such as recommended information resources."/>
+      <definition value="The task the system user is performing, e.g. laboratory results review, medication list review, etc. This information can be used to tailor decision support outputs, such as recommended information resources. DEPRECATED: This extension was initially used to model decision support context. This information is now handled as part of CDS Hooks and Clinical Reasoning."/>
       <min value="0"/>
       <max value="1"/>
     </element>
