@@ -12,10 +12,10 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/practitionerrole-employmentStatus"/>
-  <!-- <identifier>
+  <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1442"/>
-  </identifier> -->
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1773"/>
+  </identifier>
   <version value="5.0.0"/>
   <name value="PREmploymentStatus"/>
   <title value="PractitionerRole Employment Status"/>

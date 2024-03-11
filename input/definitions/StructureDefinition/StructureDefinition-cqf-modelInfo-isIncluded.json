@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "cqf-modelInfo-isIncluded",
+  "resourceType" : "StructureDefinition",
+  "id" : "cqf-modelInfo-isIncluded",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
@@ -13,73 +13,63 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
-  "name": "ModelInfoIsIncluded",
-  "title": "ModelInfo Is Included",
-  "status": "active",
-  "experimental": false,
-  "date": "2021-11-27T13:31:32-07:00",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
+  "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1505"
+  }],
+  "name" : "ModelInfoIsIncluded",
+  "title" : "ModelInfo Is Included",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-11-27T13:31:32-07:00",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "Specifies whether the profile should be included in the model info constructed for an artifact collection such as an implementation guide. If this extension is not present, included is true by default for resources and profiles, but not data types (unless they are indirectly referenced by included resources or profiles). Note that even if isIncluded is false for a resource or profile, it will still be included in model info if it is a required dependency of some other included resource, profile, or data type.",
+  "purpose" : "An artifact author must be able to control which profiles are included in the model info for an artifact collection.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "StructureDefinition"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Include in model info",
+      "definition" : "Specifies whether the artifact should be included in the model info for an artifact collection such as an implementation guide",
+      "min" : 0,
+      "max" : "1"
+    },
     {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "Specifies whether the profile should be included in the model info constructed for an artifact collection such as an implementation guide. If this extension is not present, included is true by default for resources and profiles, but not data types (unless they are indirectly referenced by included resources or profiles). Note that even if isIncluded is false for a resource or profile, it will still be included in model info if it is a required dependency of some other included resource, profile, or data type.",
-  "purpose": "An artifact author must be able to control which profiles are included in the model info for an artifact collection.",
-  "fhirVersion": "4.0.1",
-  "mapping": [
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded"
+    },
     {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "StructureDefinition"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "Include in model info",
-        "definition": "Specifies whether the artifact should be included in the model info for an artifact collection such as an implementation guide",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      }
-    ]
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    }]
   }
 }

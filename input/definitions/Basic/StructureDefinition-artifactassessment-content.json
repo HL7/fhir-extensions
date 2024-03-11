@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "artifactassessment-content",
+  "resourceType" : "StructureDefinition",
+  "id" : "artifactassessment-content",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
@@ -13,366 +13,315 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "draft"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/artifactassessment-content",
-  "version": "1.0.0",
-  "name": "ArtifactAssessmentContent",
-  "title": "Artifact Assessment Content",
-  "status": "draft",
-  "experimental": false,
-  "date": "2023-02-28",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "A Content containing additional documentation, a review Content, usage guidance, or other relevant information from a particular user.",
-  "fhirVersion": "4.0.1",
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "Basic"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "Comment, classifier, or rating content",
-        "definition": "Content containing A component comment, classifier, or rating of the artifact.",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Extension.extension:informationType",
-        "path": "Extension.extension",
-        "sliceName": "informationType",
-        "short": "comment | classifier | rating | container | response | change-request",
-        "definition": "The type of information this component of the content represents.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:informationType.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "informationType"
-      },
-      {
-        "id": "Extension.extension:informationType.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "description": "The type of information contained in a component of an artifact assessment.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/artifactassessment-information-type"
-        }
-      },
-      {
-        "id": "Extension.extension:summary",
-        "path": "Extension.extension",
-        "sliceName": "summary",
-        "short": "Brief summary of the content",
-        "definition": "A brief summary of the content of this component..",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:summary.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "summary"
-      },
-      {
-        "id": "Extension.extension:summary.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "markdown"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension",
-        "sliceName": "type",
-        "short": "Indicates what type of content this component represents",
-        "definition": "Indicates what type of content this component represents.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:type.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "type"
-      },
-      {
-        "id": "Extension.extension:type.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "EvidenceCertaintyType"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/ValueSet/certainty-type"
-        }
+  "url" : "http://hl7.org/fhir/StructureDefinition/artifactassessment-content",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1706"
+  }],
+  "version" : "1.0.0",
+  "name" : "ArtifactAssessmentContent",
+  "title" : "Artifact Assessment Content",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-02-28",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "A Content containing additional documentation, a review Content, usage guidance, or other relevant information from a particular user.",
+  "fhirVersion" : "4.0.1",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Basic"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Comment, classifier, or rating content",
+      "definition" : "Content containing A component comment, classifier, or rating of the artifact.",
+      "min" : 0,
+      "max" : "*"
     },
-      {
-        "id": "Extension.extension:classifier",
-        "path": "Extension.extension",
-        "sliceName": "classifier",
-        "short": "Rating, classifier, or assessment",
-        "definition": "Represents a rating, classifier, or assessment of the artifact.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:classifier.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "classifier"
-      },
-      {
-        "id": "Extension.extension:classifier.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "EvidenceCertaintyRating"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/ValueSet/certainty-rating"
-        }
-      },
-      {
-        "id": "Extension.extension:quantity",
-        "path": "Extension.extension",
-        "sliceName": "quantity",
-        "short": "Quantitative rating",
-        "definition": "A quantitative rating of the artifact.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:quantity.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "quantity"
-      },
-      {
-        "id": "Extension.extension:quantity.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:author",
-        "path": "Extension.extension",
-        "sliceName": "author",
-        "short": "Who authored the content",
-        "definition": "Indicates who or what authored the content.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:author.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "author"
-      },
-      {
-        "id": "Extension.extension:author.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Device"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:path",
-        "path": "Extension.extension",
-        "sliceName": "path",
-
-        "short": "What the comment is directed to",
-        "definition": "A URI that points to what the comment is about, such as a line of text in the CQL, or a specific element in a resource.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:path.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "path"
-      },
-      {
-        "id": "Extension.extension:path.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:relatedArtifact",
-        "path": "Extension.extension",
-        "sliceName": "relatedArtifact",
-        "short": "Additional information",
-        "definition": "Additional related artifacts that provide supporting documentation, additional evidence, or further information related to the content.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:relatedArtifact.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "relatedArtifact"
-      },
-      {
-        "id": "Extension.extension:relatedArtifact.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "RelatedArtifact"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:freeToShare",
-        "path": "Extension.extension",
-        "sliceName": "freeToShare",
-        "short": "Acceptable to publicly share the resource content",
-        "definition": "Acceptable to publicly share the comment, classifier or rating.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:freeToShare.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "freeToShare"
-      },
-      {
-        "id": "Extension.extension:freeToShare.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:component",
-        "path": "Extension.extension",
-        "sliceName": "component",
-        "short": "Contained content",
-        "definition": "If the informationType is container, the components of the content.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:component.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "component"
-      },
-      {
-        "id": "Extension.extension:component.value[x]",
-        "path": "Extension.extension.value[x]",
-        "contentReference": "#Extension.extension:component"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/artifactassessment-content"
+    {
+      "id" : "Extension.extension:informationType",
+      "path" : "Extension.extension",
+      "sliceName" : "informationType",
+      "short" : "comment | classifier | rating | container | response | change-request",
+      "definition" : "The type of information this component of the content represents.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:informationType.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "informationType"
+    },
+    {
+      "id" : "Extension.extension:informationType.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "The type of information contained in a component of an artifact assessment.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/artifactassessment-information-type"
       }
-    ]
+    },
+    {
+      "id" : "Extension.extension:summary",
+      "path" : "Extension.extension",
+      "sliceName" : "summary",
+      "short" : "Brief summary of the content",
+      "definition" : "A brief summary of the content of this component..",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:summary.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "summary"
+    },
+    {
+      "id" : "Extension.extension:summary.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "markdown"
+      }]
+    },
+    {
+      "id" : "Extension.extension:type",
+      "path" : "Extension.extension",
+      "sliceName" : "type",
+      "short" : "Indicates what type of content this component represents",
+      "definition" : "Indicates what type of content this component represents.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:type.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "type"
+    },
+    {
+      "id" : "Extension.extension:type.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "EvidenceCertaintyType"
+        }],
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/certainty-type"
+      }
+    },
+    {
+      "id" : "Extension.extension:classifier",
+      "path" : "Extension.extension",
+      "sliceName" : "classifier",
+      "short" : "Rating, classifier, or assessment",
+      "definition" : "Represents a rating, classifier, or assessment of the artifact.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:classifier.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "classifier"
+    },
+    {
+      "id" : "Extension.extension:classifier.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "EvidenceCertaintyRating"
+        }],
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/certainty-rating"
+      }
+    },
+    {
+      "id" : "Extension.extension:quantity",
+      "path" : "Extension.extension",
+      "sliceName" : "quantity",
+      "short" : "Quantitative rating",
+      "definition" : "A quantitative rating of the artifact.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:quantity.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "quantity"
+    },
+    {
+      "id" : "Extension.extension:quantity.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Extension.extension:author",
+      "path" : "Extension.extension",
+      "sliceName" : "author",
+      "short" : "Who authored the content",
+      "definition" : "Indicates who or what authored the content.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:author.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "author"
+    },
+    {
+      "id" : "Extension.extension:author.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.org/fhir/StructureDefinition/Organization",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
+      }]
+    },
+    {
+      "id" : "Extension.extension:path",
+      "path" : "Extension.extension",
+      "sliceName" : "path",
+      "short" : "What the comment is directed to",
+      "definition" : "A URI that points to what the comment is about, such as a line of text in the CQL, or a specific element in a resource.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:path.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "path"
+    },
+    {
+      "id" : "Extension.extension:path.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "uri"
+      }]
+    },
+    {
+      "id" : "Extension.extension:relatedArtifact",
+      "path" : "Extension.extension",
+      "sliceName" : "relatedArtifact",
+      "short" : "Additional information",
+      "definition" : "Additional related artifacts that provide supporting documentation, additional evidence, or further information related to the content.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:relatedArtifact.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "relatedArtifact"
+    },
+    {
+      "id" : "Extension.extension:relatedArtifact.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "RelatedArtifact"
+      }]
+    },
+    {
+      "id" : "Extension.extension:freeToShare",
+      "path" : "Extension.extension",
+      "sliceName" : "freeToShare",
+      "short" : "Acceptable to publicly share the resource content",
+      "definition" : "Acceptable to publicly share the comment, classifier or rating.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:freeToShare.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "freeToShare"
+    },
+    {
+      "id" : "Extension.extension:freeToShare.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "Extension.extension:component",
+      "path" : "Extension.extension",
+      "sliceName" : "component",
+      "short" : "Contained content",
+      "definition" : "If the informationType is container, the components of the content.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:component.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "component"
+    },
+    {
+      "id" : "Extension.extension:component.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "contentReference" : "#Extension.extension:component"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/artifactassessment-content"
+    }]
   }
 }

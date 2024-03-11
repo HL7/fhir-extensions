@@ -12,6 +12,10 @@
     <valueCode value="ti"/>
   </extension>
   <url value="http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-end"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.31.10"/>
+  </identifier>
   <version value="5.0.0"/>
   <name value="End"/>
   <title value="CodeSystem end"/>

@@ -12,6 +12,10 @@
     <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1738"/>
+  </identifier>
   <version value="5.0.0"/>
   <name value="ArtifactVersionAlgorithm"/>
   <title value="Artifact Version Algorithm"/>
@@ -65,13 +69,13 @@
       <type>
         <code value="string"/>
       </type>
-			<type>
-				<code value="Coding"/>
-			</type>
-			<binding>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/version-algorithm"/>
-			</binding>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/version-algorithm"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "artifact-effectivePeriod",
+  "resourceType" : "StructureDefinition",
+  "id" : "artifact-effectivePeriod",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
@@ -13,75 +13,65 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod",
-  "name": "ArtifactEffectivePeriod",
-  "title": "Artifact Effective Period",
-  "status": "active",
-  "experimental": false,
-  "date": "2023-01-09T13:31:32-07:00",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
+  "url" : "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1737"
+  }],
+  "name" : "ArtifactEffectivePeriod",
+  "title" : "Artifact Effective Period",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-01-09T13:31:32-07:00",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "When the artifact is expected to be used.",
+  "purpose" : "To provide an effective period for an artifact when the artifact is represented using a FHIR resource that does not declare the effectivePeriod element.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Resource"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "When the artifact is expected to be used",
+      "definition" : "The period during which the artifact content was or is planned to be in active use.",
+      "comment" : "The effective period for an artifact determines when the content is applicable for usage and is independent of publication and review dates. For example, an artifact intended to be used for the year 2016 might be published in 2015.",
+      "min" : 0,
+      "max" : "1"
+    },
     {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "When the artifact is expected to be used.",
-  "purpose": "To provide an effective period for an artifact when the artifact is represented using a FHIR resource that does not declare the effectivePeriod element.",
-  "fhirVersion": "4.0.1",
-  "mapping": [
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod"
+    },
     {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "Resource"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "When the artifact is expected to be used",
-        "definition": "The period during which the artifact content was or is planned to be in active use.",
-        "comment": "The effective period for an artifact determines when the content is applicable for usage and is independent of publication and review dates. For example, an artifact intended to be used for the year 2016 might be published in 2015.",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "requirements": "Allows establishing a transition before an artifact comes into effect and also allows for a sunsetting process when new versions of the artifact are or are expected to be used instead.",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ]
-      }
-    ]
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "requirements" : "Allows establishing a transition before an artifact comes into effect and also allows for a sunsetting process when new versions of the artifact are or are expected to be used instead.",
+      "type" : [{
+        "code" : "Period"
+      }]
+    }]
   }
 }

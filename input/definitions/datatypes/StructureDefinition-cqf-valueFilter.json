@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "cqf-valueFilter",
+  "resourceType" : "StructureDefinition",
+  "id" : "cqf-valueFilter",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 3
@@ -13,191 +13,167 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/cqf-valueFilter",
-  "name": "ValueFilter",
-  "title": "Value Filter",
-  "status": "active",
-  "experimental": false,
-  "date": "2021-11-27T13:31:32-07:00",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
+  "url" : "http://hl7.org/fhir/StructureDefinition/cqf-valueFilter",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1588"
+  }],
+  "name" : "ValueFilter",
+  "title" : "Value Filter",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-11-27T13:31:32-07:00",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "Allows additional value-based filters to be specified as part of a data requirement.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "DataRequirement"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "definition" : "Allows additional value-based filters to be specified as part of a data requirement.",
+      "min" : 0,
+      "max" : "*"
+    },
     {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "Allows additional value-based filters to be specified as part of a data requirement.",
-  "fhirVersion": "4.0.1",
-  "mapping": [
+      "id" : "Extension.extension:path",
+      "path" : "Extension.extension",
+      "sliceName" : "path",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
     {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
+      "id" : "Extension.extension:path.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "path"
+    },
     {
-      "type": "element",
-      "expression": "DataRequirement"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "definition": "Allows additional value-based filters to be specified as part of a data requirement.",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Extension.extension:path",
-        "path": "Extension.extension",
-        "sliceName": "path",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:path.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "path"
-      },
-      {
-        "id": "Extension.extension:path.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:searchParam",
-        "path": "Extension.extension",
-        "sliceName": "searchParam",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:searchParam.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "searchParam"
-      },
-      {
-        "id": "Extension.extension:searchParam.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:comparator",
-        "path": "Extension.extension",
-        "sliceName": "comparator",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:comparator.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "comparator"
-      },
-      {
-        "id": "Extension.extension:comparator.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "description": "The comparator operator to use",
-          "valueSet": "http://hl7.org/fhir/ValueSet/value-filter-comparator"
-        }
-      },
-      {
-        "id": "Extension.extension:value",
-        "path": "Extension.extension",
-        "sliceName": "value",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:value.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "value"
-      },
-      {
-        "id": "Extension.extension:value.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "Range"
-          }
-        ]
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-valueFilter"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "max": "0"
+      "id" : "Extension.extension:path.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.extension:searchParam",
+      "path" : "Extension.extension",
+      "sliceName" : "searchParam",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:searchParam.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "searchParam"
+    },
+    {
+      "id" : "Extension.extension:searchParam.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.extension:comparator",
+      "path" : "Extension.extension",
+      "sliceName" : "comparator",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:comparator.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "comparator"
+    },
+    {
+      "id" : "Extension.extension:comparator.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "The comparator operator to use",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/value-filter-comparator"
       }
-    ]
+    },
+    {
+      "id" : "Extension.extension:value",
+      "path" : "Extension.extension",
+      "sliceName" : "value",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value"
+    },
+    {
+      "id" : "Extension.extension:value.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Range"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/cqf-valueFilter"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
   }
 }

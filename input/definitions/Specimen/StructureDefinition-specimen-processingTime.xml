@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="SpecProcessingTime"/>
   <title value="Specimen Processing Time"/>
-  <status value="deprecated"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-02-19"/>
   <publisher value="HL7 International / Orders and Observations"/>

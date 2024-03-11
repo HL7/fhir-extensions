@@ -13,10 +13,10 @@
     <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/ValueSet/patient-unknownIdentity"/>
-  <!-- <identifier>
+  <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.4.3323"/>
-  </identifier> -->
+    <value value="urn:oid:2.16.840.1.113883.4.642.3.3331"/>
+  </identifier>
   <version value="5.0.0"/>
   <name value="PatientUnknownIdentity"/>
   <title value="Patient's/person's identity is known/unknown"/>

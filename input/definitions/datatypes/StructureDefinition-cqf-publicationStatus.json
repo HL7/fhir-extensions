@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "cqf-publicationStatus",
+  "resourceType" : "StructureDefinition",
+  "id" : "cqf-publicationStatus",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 3
@@ -13,78 +13,68 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/cqf-publicationStatus",
-  "name": "PublicationStatus",
-  "title": "Publication Status",
-  "status": "active",
-  "experimental": false,
-  "date": "2021-11-27T13:31:32-07:00",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
+  "url" : "http://hl7.org/fhir/StructureDefinition/cqf-publicationStatus",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1581"
+  }],
+  "name" : "PublicationStatus",
+  "title" : "Publication Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-11-27T13:31:32-07:00",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "Specifies the publication status of the referenced artifacts.",
+  "purpose" : "A published measure should provide the publication status of the referenced artifacts.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "RelatedArtifact"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Publication status of referenced artifact",
+      "definition" : "Specifies the publication status of the referenced artifacts.",
+      "min" : 0,
+      "max" : "1"
+    },
     {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "Specifies the publication status of the referenced artifacts.",
-  "purpose": "A published measure should provide the publication status of the referenced artifacts.",
-  "fhirVersion": "4.0.1",
-  "mapping": [
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/cqf-publicationStatus"
+    },
     {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "RelatedArtifact"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "Publication status of referenced artifact",
-        "definition": "Specifies the publication status of the referenced artifacts.",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-publicationStatus"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "description": "The lifecycle status of a reference artifact",
-          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status"
-        }
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "The lifecycle status of a reference artifact",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/publication-status"
       }
-    ]
+    }]
   }
 }

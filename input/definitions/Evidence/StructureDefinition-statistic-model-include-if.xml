@@ -12,6 +12,10 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/statistic-model-include-if"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1509"/>
+  </identifier>
   <name value="StatisticModelIncludeIf"/>
   <title value="Statistic Model Include If"/>
   <status value="draft"/>
@@ -49,13 +53,13 @@
       <path value="Extension"/>
       <short value="Condition upon which to include the variable or model characteristic in the analysis"/>
       <definition value="The condition upon which to include the variable or model characteristic in the analysis."/>
-	  <min value="0"/>
+      <min value="0"/>
       <max value="1"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
       <min value="2"/>
-	  <max value="2"/>
+      <max value="2"/>
     </element>
     <element id="Extension.extension:attribute">
       <path value="Extension.extension"/>
@@ -97,7 +101,7 @@
       <path value="Extension.extension.value[x]"/>
       <short value="Value of condition"/>
       <definition value="Value of condition."/>
-	  <min value="1"/>
+      <min value="1"/>
       <type>
         <code value="boolean"/>
       </type>

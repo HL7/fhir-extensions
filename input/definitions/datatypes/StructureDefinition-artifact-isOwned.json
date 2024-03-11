@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "artifact-isOwned",
+  "resourceType" : "StructureDefinition",
+  "id" : "artifact-isOwned",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
@@ -13,77 +13,67 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/artifact-isOwned",
-  "name": "ArtifactIsOwned",
-  "title": "Artifact Is Owned",
-  "status": "active",
-  "experimental": false,
-  "date": "2023-05-19T13:31:32-07:00",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "Whether or not the referenced artifact is owned by the referencing artifact.",
-  "purpose": "To provide an indication of whether or not a referenced artifact is owned in context of the referencing artifact and therefore if it's lifecycle is managed in that context.",
-  "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "RelatedArtifact"
+  "url" : "http://hl7.org/fhir/StructureDefinition/artifact-isOwned",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1605"
+  }],
+  "name" : "ArtifactIsOwned",
+  "title" : "Artifact Is Owned",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-05-19T13:31:32-07:00",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "Whether or not the referenced artifact is owned by the referencing artifact.",
+  "purpose" : "To provide an indication of whether or not a referenced artifact is owned in context of the referencing artifact and therefore if it's lifecycle is managed in that context.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "RelatedArtifact"
+  },
+  {
+    "type" : "fhirpath",
+    "expression" : "type.exists() and type = 'composed-of'"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Whether or not the referenced artifact is owned by the referencing artifact.",
+      "definition" : "To provide an indication of whether or not a referenced artifact is owned in context of the referencing artifact and therefore if it's lifecycle is managed in that context.",
+      "min" : 0,
+      "max" : "1"
     },
     {
-      "type": "fhirpath",
-      "expression": "type.exists() and type = 'composed-of'"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "Whether or not the referenced artifact is owned by the referencing artifact.",
-        "definition": "To provide an indication of whether or not a referenced artifact is owned in context of the referencing artifact and therefore if it's lifecycle is managed in that context.",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/artifact-isOwned"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      }
-    ]
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/artifact-isOwned"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    }]
   }
 }

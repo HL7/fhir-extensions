@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "cqf-modelInfo-label",
+  "resourceType" : "StructureDefinition",
+  "id" : "cqf-modelInfo-label",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
@@ -13,73 +13,63 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
-  "name": "ModelInfoLabel",
-  "title": "ModelInfo Label",
-  "status": "active",
-  "experimental": false,
-  "date": "2021-11-27T13:31:32-07:00",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
+  "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1503"
+  }],
+  "name" : "ModelInfoLabel",
+  "title" : "ModelInfo Label",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-11-27T13:31:32-07:00",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "Specifies the label for the class constructed in the model info for the profile (i.e. an alternative, user-friendly name that can be used as the identifier for the class in CQL expressions).",
+  "purpose" : "An artifact author must be able to control the labels applied to classes in the model info.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "StructureDefinition"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "What label to use for the class",
+      "definition" : "Specifies the label to be used for the class constructed for the profile (i.e. an alternative user-friendly name that can be used to identify the class in CQL).",
+      "min" : 0,
+      "max" : "1"
+    },
     {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "Specifies the label for the class constructed in the model info for the profile (i.e. an alternative, user-friendly name that can be used as the identifier for the class in CQL expressions).",
-  "purpose": "An artifact author must be able to control the labels applied to classes in the model info.",
-  "fhirVersion": "4.0.1",
-  "mapping": [
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label"
+    },
     {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "StructureDefinition"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "What label to use for the class",
-        "definition": "Specifies the label to be used for the class constructed for the profile (i.e. an alternative user-friendly name that can be used to identify the class in CQL).",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      }
-    ]
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
   }
 }

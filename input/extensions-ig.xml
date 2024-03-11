@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.extensions"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -11,7 +12,10 @@
     <valueInteger value="1"/>
   </extension>
   <url value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
-  <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.30.1"/>
+  </identifier>
   <version value="5.1.0-cibuild"/>
   <name value="FHIRExtensionPack"/>
   <title value="FHIR Extensions Pack"/>
@@ -111,7 +115,7 @@
         <name value="terminology-registry.html"/>
         <title value="Terminology Registry"/>
         <generation value="markdown"/>
-      </page>     
+      </page>
       <page>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="informative"/>
@@ -179,7 +183,6 @@
         </page>
       </page>
     </page>
-    <!-- copyright year is a mandatory parameter -->
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -187,7 +190,6 @@
       </code>
       <value value="2022+"/>
     </parameter>
-    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -195,7 +197,6 @@
       </code>
       <value value="Working Copy"/>
     </parameter>
-
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -238,7 +239,6 @@
       </code>
       <value value="http://terminology.hl7.org/ValueSet/artifact-version-policy"/>
     </parameter>
-    
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/guide-parameter-code"/>
@@ -246,7 +246,6 @@
       </code>
       <value value="input/definitions/*"/>
     </parameter>
-
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/guide-parameter-code"/>
@@ -254,8 +253,6 @@
       </code>
       <value value="input/_data"/>
     </parameter>
-
-
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/guide-parameter-code"/>
@@ -263,7 +260,6 @@
       </code>
       <value value="input/r5-maps/*"/>
     </parameter>
-
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/guide-parameter-code"/>
@@ -271,7 +267,6 @@
       </code>
       <value value="true"/>
     </parameter>
-    
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/guide-parameter-code"/>
@@ -300,8 +295,6 @@
       </code>
       <value value="input/structuremap-resource-factory.json"/>
     </parameter>
-
-
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -322,36 +315,35 @@
         <code value="generate-version"/>
       </code>
       <value value="r5"/>
-    </parameter>    
-
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="noRootToc"/>
       </code>
       <value value="true"/>
-    </parameter>    
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="artifactsOnRoot"/>
       </code>
       <value value="true"/>
-    </parameter>    
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="conversion-version"/>
       </code>
       <value value="R4"/>
-    </parameter>    
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="conversion-version"/>
       </code>
       <value value="R4B"/>
-    </parameter>      
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -359,7 +351,6 @@
       </code>
       <value value="1.0.0"/>
     </parameter>
-  
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -402,6 +393,5 @@
       </code>
       <value value="true"/>
     </parameter>
-        
   </definition>
 </ImplementationGuide>
