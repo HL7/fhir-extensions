@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  <description value="A complex extension allowing structured capture of the exposure risk of the patient for an adverse reaction (allergy or intolerance) to the specified substance/product."/>
+  <description value="The 'substanceExposureRisk' extension is a structured and more flexible alternative to AllergyIntolerance.code for making positive or negative allergy or intolerance statements. This extension provides the capability to make &quot;no known allergy&quot; (or &quot;no risk of adverse reaction&quot;) statements regarding any coded substance/product (including cases when a pre-coordinated &quot;no allergy to x&quot; concept for that substance/product does not exist). If the 'substanceExposureRisk' extension is present, the AllergyIntolerance.code element SHALL be omitted."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
@@ -56,7 +56,7 @@
       <path value="Extension"/>
       <short value="Exposure risk of adverse reaction (allergy or intolerance) to the specified substance/product"/>
       <definition value="A complex extension allowing structured capture of the exposure risk of the patient for an adverse reaction (allergy or intolerance) to the specified substance/product."/>
-      <comment value="This extension is available and is intended to be used as a more completely structured and flexible alternative to the 'code' element for representing positive and negative allergy and intolerance statements.  If this extension element is present, the AllergyIntolerance.code element SHALL be omitted (see invariant &quot;code or substanceExposureRisk&quot;)."/>
+      <comment value="The 'substanceExposureRisk' extension is a structured and more flexible alternative to AllergyIntolerance.code for making positive or negative allergy or intolerance statements. This extension provides the capability to make &quot;no known allergy&quot; (or &quot;no risk of adverse reaction&quot;) statements regarding any coded substance/product (including cases when a pre-coordinated &quot;no allergy to x&quot; concept for that substance/product does not exist). If the 'substanceExposureRisk' extension is present, the AllergyIntolerance.code element SHALL be omitted."/>
       <min value="0"/>
       <max value="1"/>
     </element>
