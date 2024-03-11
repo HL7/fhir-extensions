@@ -325,6 +325,35 @@
         <code value="string"/>
       </type>
     </element>
+    <element id="Extension.extension:genderElementQualifier">
+      <path value="Extension.extension"/>
+      <sliceName value="genderElementQualifier"/>
+      <short value="Whether this recorded sex or gender value qualifies the .gender element."/>
+      <definition value="Instances of the individual-recordedSexOrGender extension with this value set to 'true' provides additional semantics or provenance of the data communicated in the relevant '.gender' property in the resource.  For example, if a system populates Patient.gender using a sex assigned at birth value, the individual-recordedSexOrGender extension with genderElementQualifier=true can provide that context."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:genderElementQualifier.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:genderElementQualifier.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="genderElementQualifier"/>
+    </element>
+    <element id="Extension.extension:genderElementQualifier.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender"/>
