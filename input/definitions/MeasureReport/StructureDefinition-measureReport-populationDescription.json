@@ -29,11 +29,12 @@
     "description" : "The human readable description of population criteria.",
     "jurisdiction" : [{
       "coding" : [{
-        "system" : "urn:iso:std:iso:3166",
-        "code" : "US"
+        "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "code" : "001",
+        "display" : "World"
       }]
     }],
-    "purpose" : "Provides a description of the population in which this appears.",
+    "purpose" : "Provides a description of the population on which this appears.",
     "fhirVersion" : "4.0.1",
     "mapping" : [{
       "identity" : "rim",
@@ -65,8 +66,8 @@
       "element" : [{
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Provides a description of the population in which it appears.",
-        "definition" : "Provides a description of the population in which it appears.",
+        "short" : "Provides a description of the population on which it appears.",
+        "definition" : "A description of the group, population, stratifier, or supplemental data definition on which it appears. This is typically a restatement of the description of the corresponding element in the Measure being reported, but may also include additional information gathered by the reporting process.",
         "min" : 0,
         "max" : "1"
       },
@@ -76,7 +77,7 @@
         "type" : [{
           "code" : "uri"
         }],
-        "fixedUri" : "http://hl7.org/fhir/extensions/StructureDefinition-measurereport-populationDescription"
+        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/measurereport-populationDescription"
       },
       {
         "id" : "Extension.value[x]",
