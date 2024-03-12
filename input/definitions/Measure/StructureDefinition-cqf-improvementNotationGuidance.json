@@ -1,35 +1,40 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cqf-improvementNotationGuidance",
+  "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "cqi"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use"
+    }],
   "url": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance",
   "version": "4.0.0",
   "name": "CQFImprovementNotationGuidance",
   "title": "CQF Improvement Notation Guidance",
   "status": "active",
   "experimental": false,
-  "publisher": "Clinical Quality Information WG",
+  "publisher": "HL7 International / Clinical Quality Information",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/cqi/index.cfm"
+          "value": "http://www.hl7.org/Special/committees/cqi"
         }
       ]
     }
   ],
   "description": "Narrative text to explain the improvement notation and how to interpret it.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
-  "purpose": "**Purpose**\n\nMeasure consumers and implementers must be able to determine how to interpret a measure score.",
+  "purpose": "In some cases, additional guidance is required to clearly communicate
+    measure intent around improvement notation. For example, a measure looking at
+    Ceasarean-section births may have an improvement notation of \"decrease\", but
+    it is critical to be able to communicate that a measure score of 0 is not the intent.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -48,6 +53,14 @@
     {
       "type": "element",
       "expression": "Measure.group"
+    },
+    {
+      "type": "element",
+      "expression": "MeasureReport"
+    },
+    {
+      "type": "element",
+      "expression": "MeasureReport.group"
     }
   ],
   "type": "Extension",
@@ -59,7 +72,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Explanation of improvement notation",
-        "definition": "Explanation of improvement notation and how to interpret it.",
+        "definition": "Additional guidance on how to interpret the improvement notation of the measure.",
         "min": 0,
         "max": "1"
       },
