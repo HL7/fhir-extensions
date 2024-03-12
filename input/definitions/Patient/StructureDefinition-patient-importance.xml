@@ -72,7 +72,7 @@
           <valueString value="Importance"/>
         </extension>
         <strength value="example"/>
-        <valueSet value="http://terminology.hl7.org/CodeSystem/v3-PatientImportance"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-PatientImportance"/>
       </binding>
     </element>
   </differential>

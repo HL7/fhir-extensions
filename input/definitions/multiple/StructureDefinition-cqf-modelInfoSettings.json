@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "cqf-modelInfoSettings",
+  "resourceType" : "StructureDefinition",
+  "id" : "cqf-modelInfoSettings",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
@@ -13,83 +13,71 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfoSettings",
-  "name": "ModelInfoSettings",
-  "title": "ModelInfo Settings",
-  "status": "active",
-  "experimental": false,
-  "date": "2021-11-27T13:31:32-07:00",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "Specifies the settings to be used for constructing modelinfo from profile definitions.",
-  "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "Library"
+  "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfoSettings",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1553"
+  }],
+  "name" : "ModelInfoSettings",
+  "title" : "ModelInfo Settings",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-11-27T13:31:32-07:00",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "Specifies the settings to be used for constructing modelinfo from profile definitions.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Library"
+  },
+  {
+    "type" : "element",
+    "expression" : "ImplementationGuide"
+  },
+  {
+    "type" : "element",
+    "expression" : "RelatedArtifact"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "What model info settings",
+      "definition" : "Specifies the settings to be used when constructing model info from profile definitions.",
+      "min" : 0,
+      "max" : "1"
     },
     {
-      "type": "element",
-      "expression": "ImplementationGuide"
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfoSettings"
     },
     {
-      "type": "element",
-      "expression": "RelatedArtifact"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "What model info settings",
-        "definition": "Specifies the settings to be used when constructing model info from profile definitions.",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfoSettings"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Parameters"
-            ]
-          }
-        ]
-      }
-    ]
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Parameters"]
+      }]
+    }]
   }
 }

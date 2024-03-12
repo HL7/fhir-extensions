@@ -12,6 +12,10 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1506"/>
+  </identifier>
   <version value="5.0.0"/>
   <name value="OAuthUris"/>
   <title value="OAuth URIs"/>

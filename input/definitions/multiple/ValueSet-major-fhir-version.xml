@@ -18,7 +18,7 @@
   <url value="http://hl7.org/fhir/ValueSet/major-fhir-version"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.3.1365"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.3.3330"/>
   </identifier>
   <version value="5.0.0"/>
   <name value="MajorFHIRVersions"/>

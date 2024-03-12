@@ -12,6 +12,10 @@
     <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/device-maintenanceresponsibility"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1730"/>
+  </identifier>
   <version value="0.1.0"/>
   <name value="DeviceMaintenanceResponsibility"/>
   <title value="Device Maintenance Responsibility"/>

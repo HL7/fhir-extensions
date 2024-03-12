@@ -1,6 +1,6 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "artifact-canonicalReference",
+  "resourceType" : "StructureDefinition",
+  "id" : "artifact-canonicalReference",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
     "valueInteger" : 1
@@ -13,65 +13,59 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
   }],
-  "url": "http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference",
-  "version": "1.0.0",
-  "name": "ArtifactCanonicalReference",
-  "title": "Artifact Canonical Reference",
-  "status": "active",
-  "experimental": false,
-  "date": "2023-02-28",
-  "publisher": "HL7 International / Clinical Decision Support",
-  "contact": [
+  "url" : "http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1692"
+  }],
+  "version" : "1.0.0",
+  "name" : "ArtifactCanonicalReference",
+  "title" : "Artifact Canonical Reference",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-28",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "A reference to a canonical resource",
+  "purpose" : "To allow resources to define a reference to a canonical resource.",
+  "fhirVersion" : "4.0.1",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Element"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "The artifact",
+      "definition" : "A reference to a canonical resource.",
+      "min" : 0,
+      "max" : "1"
+    },
     {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
-        }
-      ]
-    }
-  ],
-  "description": "A reference to a canonical resource",
-  "purpose": "To allow resources to define a reference to a canonical resource.",
-  "fhirVersion": "4.0.1",
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference"
+    },
     {
-      "type": "element",
-      "expression": "Element"
-    }
-  ],
-  "type": "Extension",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Extension",
-        "path": "Extension",
-        "short": "The artifact",
-        "definition" : "A reference to a canonical resource.",        
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference"
-      },
-      {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
-        "type": [{
-          "code" : "canonical"
-        }]
-      }
-    ]
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "canonical"
+      }]
+    }]
   }
 }

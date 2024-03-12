@@ -9,6 +9,10 @@
     <valueCode value="fhir"/>
   </extension>
   <url value="http://hl7.org/fhir/SearchParameter/workflow-barrierCode"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.31.2"/>
+  </identifier>
   <version value="5.0.0"/>
   <name value="BarrierCodeSearchParameter"/>
   <title value="Barrier Code SearchParameter"/>
