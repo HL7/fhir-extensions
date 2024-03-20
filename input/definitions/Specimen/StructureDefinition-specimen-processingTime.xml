@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Period or duration of processing. This is no longer relevant for R6 due to a matching element in R6. This extension is deprecated."/>
+  <description value="Period or duration of processing. This is no longer relevant for R6 due to a matching element in R6. This extension is now deprecated."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
