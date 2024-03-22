@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Extension for the collection procedure of a biologically dervied product"/>
+  <description value="Extension for the collection procedure of a biologically dervied product."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
