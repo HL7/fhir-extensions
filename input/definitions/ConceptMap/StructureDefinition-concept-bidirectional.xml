@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Set to true if the concept map can be safely intepreted in reversse."/>
+  <description value="Set to true if the concept map can be safely intepreted in reverse."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

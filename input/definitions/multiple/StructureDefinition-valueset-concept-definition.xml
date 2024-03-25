@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/valueset-concept-definition"/>
   <identifier>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="A definition that describes the meaning of this code when used as part of this value set."/>
+  <description value="A definition that describes the meaning of this code when used as part of this value set. Use of this extension should NEVER result in a definition for a concept that changes the meaning of the concept as described in the code system. This SHALL only be used to further clarify or provide additional nuances to the meaning."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
