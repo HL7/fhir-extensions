@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="valueset-keyWord"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="ti"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Word or words used in an information retrieval system to indicate the content of the value set. (deprecated)"/>
+  <description value="Word or words used in an information retrieval system to indicate the content of the value set."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
