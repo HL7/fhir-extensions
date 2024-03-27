@@ -1,0 +1,277 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cqf-isEmptyList",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-isEmptyList",
+  "name": "IsEmptyList",
+  "title": "Is Empty List",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-13",
+  "publisher": "HL7 International / Clinical Decision Support",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss/index.cfm"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates that the value of the parameter is an empty list. Because the parameter element of a Parameters resource must have a value, the value element must be present with either an actual value, or an extension, this extension supports the case when the actual parameter value being represented is an empty list. The type of the value element used should be appropriate to the element type of the list-valued expression.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "base64Binary"
+    },
+    {
+      "type": "element",
+      "expression": "boolean"
+    },
+    {
+      "type": "element",
+      "expression": "canonical"
+    },
+    {
+      "type": "element",
+      "expression": "code"
+    },
+    {
+      "type": "element",
+      "expression": "date"
+    },
+    {
+      "type": "element",
+      "expression": "dateTime"
+    },
+    {
+      "type": "element",
+      "expression": "decimal"
+    },
+    {
+      "type": "element",
+      "expression": "id"
+    },
+    {
+      "type": "element",
+      "expression": "instant"
+    },
+    {
+      "type": "element",
+      "expression": "integer"
+    },
+    {
+      "type": "element",
+      "expression": "markdown"
+    },
+    {
+      "type": "element",
+      "expression": "oid"
+    },
+    {
+      "type": "element",
+      "expression": "positiveInt"
+    },
+    {
+      "type": "element",
+      "expression": "string"
+    },
+    {
+      "type": "element",
+      "expression": "time"
+    },
+    {
+      "type": "element",
+      "expression": "unsignedInt"
+    },
+    {
+      "type": "element",
+      "expression": "uri"
+    },
+    {
+      "type": "element",
+      "expression": "url"
+    },
+    {
+      "type": "element",
+      "expression": "uuid"
+    },
+    {
+      "type": "element",
+      "expression": "Address"
+    },
+    {
+      "type": "element",
+      "expression": "Age"
+    },
+    {
+      "type": "element",
+      "expression": "Annotation"
+    },
+    {
+      "type": "element",
+      "expression": "Attachment"
+    },
+    {
+      "type": "element",
+      "expression": "CodeableConcept"
+    },
+    {
+      "type": "element",
+      "expression": "Coding"
+    },
+    {
+      "type": "element",
+      "expression": "ContactPoint"
+    },
+    {
+      "type": "element",
+      "expression": "Count"
+    },
+    {
+      "type": "element",
+      "expression": "Distance"
+    },
+    {
+      "type": "element",
+      "expression": "Duration"
+    },
+    {
+      "type": "element",
+      "expression": "HumanName"
+    },
+    {
+      "type": "element",
+      "expression": "Identifier"
+    },
+    {
+      "type": "element",
+      "expression": "Money"
+    },
+    {
+      "type": "element",
+      "expression": "Period"
+    },
+    {
+      "type": "element",
+      "expression": "Quantity"
+    },
+    {
+      "type": "element",
+      "expression": "Range"
+    },
+    {
+      "type": "element",
+      "expression": "Ratio"
+    },
+    {
+      "type": "element",
+      "expression": "Reference"
+    },
+    {
+      "type": "element",
+      "expression": "SampledData"
+    },
+    {
+      "type": "element",
+      "expression": "Signature"
+    },
+    {
+      "type": "element",
+      "expression": "Timing"
+    },
+    {
+      "type": "element",
+      "expression": "ContactDetail"
+    },
+    {
+      "type": "element",
+      "expression": "DataRequirement"
+    },
+    {
+      "type": "element",
+      "expression": "Expression"
+    },
+    {
+      "type": "element",
+      "expression": "ParameterDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "RelatedArtifact"
+    },
+    {
+      "type": "element",
+      "expression": "TriggerDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "UsageContext"
+    },
+    {
+      "type": "element",
+      "expression": "Dosage"
+    },
+    {
+      "type": "element",
+      "expression": "Meta"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Empty list",
+        "definition": "Indicates that the value of the parameter is an empty list. Because the parameter element of a Parameters resource must have a value, the value element must be present with either an actual value, or an extension, this extension supports the case when the actual parameter value being represented is an empty list. The type of the value element used should be appropriate to the element type of the list-valued expression.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-cqlAccessModifier"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "fixedBoolean": true
+      }
+    ]
+  }
+}

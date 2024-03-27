@@ -1,0 +1,89 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cqf-shouldTraceDependency",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-shouldTraceDependency",
+  "name": "ShouldTraceDependency",
+  "title": "Should Trace Dependency",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-13",
+  "publisher": "HL7 International / Clinical Decision Support",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates whether the extension or profile element on which it appears represents a dependency that should be traced for the purposes of artifact packaging and distribution",
+  "purpose": "This extension allows extension definitions and profile elements to indicate whether or not they represent a canonical or artifact resource dependency that should be followed as part of dependency tracing for the purposes of determining the set of artifacts to be included in a package for artifact packaging and distribution.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "StructureDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "ElementDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Whether to trace this dependency",
+        "definition": "Indicates whether or not to trace this reference as a dependency for the purposes of artifact packaging and distribution",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-shouldTraceDependency"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

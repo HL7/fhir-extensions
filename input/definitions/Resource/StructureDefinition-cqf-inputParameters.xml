@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Specifies the input parameters to the operation (such as a test case description or a data requirements or evaluate operation)."/>
+  <description value="Specifies the input parameters to the operation (such as a test case description or a data requirements or evaluate operation). This extension can be used as part of the result of an operation to indicate what the parameters were, but it can also be used as part of the definition of a test case to specify what the input parameters are expected to be for the test case."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -40,7 +40,23 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Resource"/>
+    <expression value="Library"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Group"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="MeasureReport"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="RequestOrchestration"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="GuidanceResponse"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -49,7 +65,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="What parameters"/>
-      <definition value="Specifies the input parameters to the operation (such as a test case description or a data requirements or evaluate operation)."/>
+      <definition value="Specifies the input parameters to the operation (such as a test case description or a data requirements or evaluate operation). This extension can be used as part of the result of an operation to indicate what the parameters were, but it can also be used as part of the definition of a test case to specify what the input parameters are expected to be for the test case."/>
       <min value="0"/>
       <max value="1"/>
     </element>
