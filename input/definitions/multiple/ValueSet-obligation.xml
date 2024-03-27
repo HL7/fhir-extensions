@@ -36,8 +36,8 @@
       <system value="http://hl7.org/fhir/CodeSystem/obligation"/>
       <filter>
         <property value="not-selectable"/>
-        <op value="="/>
-        <value value="false"/>
+        <op value="not-in"/>
+        <value value="true"/>
       </filter>
     </include>
   </compose>
