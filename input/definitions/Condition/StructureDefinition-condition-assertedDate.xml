@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  <description value="The date on which the existence of the Condition was first asserted or acknowledged."/>
+  <description value="When the asserter identified the allergy, intolerance, condition, problem, or diagnosis or other event, situation, issue, or clinical concept that may have risen to a level of or remains a concern.  For example, when the patient experiences chest pain, the asserted date represents when the clinician began following the chest pain - not when the patient experienced the chest pain.  Asserted date supports the recognition that information is not always entered in a system immediately.  Assertion and recording are different acts, so asserted date and recorded date are semantically different. However, they may be the same date and close in time.  If this difference is significant for your use case, assertion date may be useful."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -42,14 +42,18 @@
     <type value="element"/>
     <expression value="Condition"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="AllergyIntolerance"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Date the condition was first asserted"/>
-      <definition value="The date on which the existence of the Condition was first asserted or acknowledged."/>
+      <short value="Date the allergy, intolerance, condition, problem, or diagnosis or other event, situation, issue, or clinical concept was first asserted"/>
+      <definition value="When the asserter identified the allergy, intolerance, condition, problem, or diagnosis or other event, situation, issue, or clinical concept that may have risen to a level of or remains a concern.  For example, when the patient experiences chest pain, the asserted date represents when the clinician began following the chest pain - not when the patient experienced the chest pain.  Asserted date supports the recognition that information is not always entered in a system immediately.  Assertion and recording are different acts, so asserted date and recorded date are semantically different. However, they may be the same date and close in time.  If this difference is significant for your use case, assertion date may be useful."/>
       <comment value="The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate."/>
       <min value="0"/>
       <max value="1"/>
