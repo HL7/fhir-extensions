@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Focus of DiagnosticReport"/>
+  <description value="States what the diagnostic report is about if it is not the subject of the report"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,7 +48,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Focus of DiagnosticReport"/>
+      <short value="States what the diagnostic report is about if it is not the subject"/>                   
       <definition value="This is not the subject of the report, but the various focal components that make up the report (e.g., Procedure or process evaluated during a Quality inspection of a manufacturing facility)."/>
       <min value="0"/>
       <max value="*"/>
