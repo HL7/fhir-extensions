@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="DRLocationPerformed"/>
   <title value="DiagnosticReport Location Performed"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-02-21"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Facility location where this report was prepared."/>
+  <description value="This extension is deprecated. The DiagnosticReport Location Performed is same as  Event Location extension. Old description: Facility location where this report was prepared."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
