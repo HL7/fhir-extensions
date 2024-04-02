@@ -26,7 +26,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="References a resource or provides a code or text that specifies a substance that is added to a laboratory specimen (part of the container device or added to the specimen indenpendently)."/>
+  <description value="Provides a code for the rejection of a specimen."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -44,8 +44,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Specifies a substance that is added to a laboratory specimen"/>
-      <definition value="References a resource or provides a code or text that specifies a substance that is added to a laboratory specimen (part of the container device or added to the specimen indenpendently)."/>
+      <short value="Specime reject reason code"/>
+      <definition value="Provides a code for the rejection of a specimen."/>
       <min value="0"/>
       <max value="*"/>
     </element>
