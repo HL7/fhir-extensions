@@ -138,7 +138,7 @@
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="able-to-populate"/>
+      <valueCode value="ResourceProducerObligations"/>
     </property>
     <property>
       <code value="security-dependent"/>
