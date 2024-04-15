@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A categorization for the type of the list - helps for indexing and searching"/>
+  <description value="A categorization for the type of the list - helps for indexing and searching."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Base List for changes"/>
-      <definition value="A categorization for the type of the list - helps for indexing and searching"/>
+      <definition value="A categorization for the type of the list - helps for indexing and searching."/>
       <min value="0"/>
       <max value="1"/>
     </element>
