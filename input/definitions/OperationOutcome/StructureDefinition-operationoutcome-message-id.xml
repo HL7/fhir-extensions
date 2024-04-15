@@ -29,8 +29,8 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Identifies the id of the source message used to construct the actual error message"/>
-  <purpose value="This is typically used for sorting and filtering messages"/>
+  <description value="Identifies the id of the source message used to construct the actual error message."/>
+  <purpose value="This is typically used for sorting and filtering messages."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -50,7 +50,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Source of a validation message"/>
-      <definition value="Identifies the id of the source message used to construct the actual error message"/>
+      <definition value="Identifies the id of the source message used to construct the actual error message."/>
       <min value="0"/>
       <max value="1"/>
     </element>

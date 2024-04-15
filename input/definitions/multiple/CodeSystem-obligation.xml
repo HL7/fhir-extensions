@@ -428,10 +428,6 @@
     <display value="SHOULD populate"/>
     <definition value="Conformant applications producing resources SHOULD include this element if a value is known and allowed to be shared.&#xA;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it should populate it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared."/>
     <property>
-      <code value="not-selectable"/>
-      <valueBoolean value="true"/>
-    </property>
-    <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>

@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Identifies the source column for the issue"/>
+  <description value="Identifies the source column for the issue."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
