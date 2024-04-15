@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="An individiual or organization primarily involved in the creation and maintenance of the {{title}}."/>
+  <description value="An individual or organization primarily involved in the creation and maintenance of the {{title}}."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already metadata resources that have the author element, but that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -50,7 +50,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Who authored the {{title}}"/>
-      <definition value="An individiual or organization primarily involved in the creation and maintenance of the {{title}}."/>
+      <definition value="An individual or organization primarily involved in the creation and maintenance of the {{title}}."/>
       <min value="0"/>
       <max value="*"/>
     </element>
