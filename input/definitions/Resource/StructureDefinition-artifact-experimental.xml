@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="A Boolean value to indicate that this {{title}} is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage."/>
+  <description value="A Boolean value to indicate that this artifact is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -50,7 +50,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="For testing purposes, not real usage"/>
-      <definition value="A Boolean value to indicate that this {{title}} is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage."/>
+      <definition value="A Boolean value to indicate that this artifact is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage."/>
       <min value="0"/>
       <max value="1"/>
     </element>
