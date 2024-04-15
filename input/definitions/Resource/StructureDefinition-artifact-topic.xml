@@ -51,7 +51,7 @@
       <path value="Extension"/>
       <short value="E.g. Education, Treatment, Assessment, etc."/>
       <definition value="Descriptive topics related to the content of the artifact. Topics provide a high-level categorization of the artifact that can be useful for filtering and searching."/>
-      <comment value="This element provides a topical categorization of the {{title}}, as opposed to the more structured context-of-use information provided in the useContext element."/>
+      <comment value="This element provides a topical categorization of the artifact, as opposed to the more structured context-of-use information provided in the useContext element."/>
       <min value="0"/>
       <max value="*"/>
     </element>
