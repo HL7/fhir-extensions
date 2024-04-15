@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Which search modes the server supports: GET, POST, or both"/>
+  <description value="Which search modes the server supports: GET, POST, or both."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -44,7 +44,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Search mode Supported: GET, POST, or both"/>
-      <definition value="Which search modes the server supports: GET, POST, or both"/>
+      <definition value="Which search modes the server supports: GET, POST, or both."/>
       <comment value="Used for web-socket based subscriptions."/>
       <min value="0"/>
       <max value="1"/>
