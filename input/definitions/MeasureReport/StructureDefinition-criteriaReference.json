@@ -44,6 +44,14 @@
   "kind": "complex-type",
   "abstract": false,
   "context": [
+          {
+            "type": "element",
+            "expression": "Measure.group.population"
+          },
+          {
+            "type": "element",
+            "expression": "Measure.group.stratifier"
+          },  
     {
       "type": "element",
       "expression": "MeasureReport.supplementalData"
