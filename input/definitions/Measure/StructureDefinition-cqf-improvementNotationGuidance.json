@@ -1,0 +1,100 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cqf-improvementNotationGuidance",
+  "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "cqi"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use"
+    }],
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance",
+  "version": "4.0.0",
+  "name": "CQFImprovementNotationGuidance",
+  "title": "CQF Improvement Notation Guidance",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 International / Clinical Quality Information",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Narrative text to explain the improvement notation and how to interpret it.",
+  "purpose": "In some cases, additional guidance is required to clearly communicate
+    measure intent around improvement notation. For example, a measure looking at
+    Ceasarean-section births may have an improvement notation of \"decrease\", but
+    it is critical to be able to communicate that a measure score of 0 is not the intent.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Measure"
+    },
+    {
+      "type": "element",
+      "expression": "Measure.group"
+    },
+    {
+      "type": "element",
+      "expression": "MeasureReport"
+    },
+    {
+      "type": "element",
+      "expression": "MeasureReport.group"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Explanation of improvement notation",
+        "definition": "Additional guidance on how to interpret the improvement notation of the measure.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-improvementNotationGuidance"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      }
+    ]
+  }
+}

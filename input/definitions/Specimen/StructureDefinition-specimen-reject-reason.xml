@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="diagnosticReport-focus"/>
+  <id value="specimen-reject-reason"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="oo"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/>
+    <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-focus"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1731"/>
-  </identifier>
+  <url value="http://hl7.org/fhir/StructureDefinition/specimen-reject-reason"/>
+  
   <version value="5.0.0"/>
-  <name value="DRFocus"/>
-  <title value="DiagnosticReport Delta"/>
+  <name value="SpecimenRejectReason"/>
+  <title value="Specimen Reject Reason"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-02-02"/>
+  <date value="2017-12-06"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
@@ -29,18 +26,17 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="States what the diagnostic report is about if it is not the subject of the report"/>
+  <description value="References a resource or provides a code or text that specifies a substance that is added to a laboratory specimen (part of the container device or added to the specimen indenpendently)."/>
   <fhirVersion value="5.0.0"/>
-  <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
-  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="DiagnosticReport"/>
+    <expression value="Specimen"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Specimen.container"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -48,8 +44,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="States what the diagnostic report is about if it is not the subject"/>                   
-      <definition value="This is not the subject of the report, but the various focal components that make up the report (e.g., Procedure or process evaluated during a Quality inspection of a manufacturing facility)."/>
+      <short value="Specifies a substance that is added to a laboratory specimen"/>
+      <definition value="References a resource or provides a code or text that specifies a substance that is added to a laboratory specimen (part of the container device or added to the specimen indenpendently)."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -59,15 +55,22 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-focus"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/specimen-reject-reason"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+        <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="SpecimenRejectReason"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="Codes for specimen rejection."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/specimen-reject-reason"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

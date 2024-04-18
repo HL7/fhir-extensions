@@ -51,7 +51,7 @@
       <short value="Phone number for result reporting"/>
       <definition value="This extension contains the phone number for reporting a status or a result. This is represented in v2 as OBR-17 Order Callback Phone Number ID 00250"/>
       <min value="0"/>
-      <max value="2"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -60,13 +60,23 @@
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/servicerequest-order-callback-phone-number"/>
+                      
+
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
+      
       <type>
         <code value="ContactPoint"/>
       </type>
+      <constraint>
+        <key value="clb-1"/>
+        <severity value="error"/>
+        <human value="Callback phone number must be coded as a phone number"/>
+        <expression value="system = 'phone'"/>       
+      </constraint>
     </element>
+    
   </differential>
 </StructureDefinition>

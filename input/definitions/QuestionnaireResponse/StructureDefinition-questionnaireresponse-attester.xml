@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Allows capturing the individual(s) who attest to the accuracy of the information within the QuestionnaireResponse"/>
+  <description value="Allows capturing the individual(s) who attest to the accuracy of the information within the QuestionnaireResponse."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="Who attests to answers"/>
       <definition value="Allows capturing, on a specific question or group of questions, exactly who was responsible for providing the answer(s)."/>
-      <comment value="Multiple atttestations are possible - potentially of different types"/>
+      <comment value="Multiple atttestations are possible - potentially of different types."/>
       <min value="0"/>
       <max value="*"/>
     </element>

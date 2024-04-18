@@ -30,7 +30,7 @@
       "value" : "http://www.hl7.org/Special/committees/dss"
     }]
   }],
-  "description" : "Specifies the settings to be used for constructing modelinfo from profile definitions.",
+  "description" : "Specifies the settings to be used for constructing modelinfo from profile definitions. This extension is used on ImplementationGuide or asset-collection Library resources to provide a way for authors to configure additional information about the ModelInfo for profiles defined in the ImplementationGuide or Asset Collection. The extension is used in profiles in the Using CQL With FHIR IG. See the ModelInfo discussion there for additional information on how to use this extension.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -59,7 +59,7 @@
       "id" : "Extension",
       "path" : "Extension",
       "short" : "What model info settings",
-      "definition" : "Specifies the settings to be used when constructing model info from profile definitions.",
+      "definition" : "Specifies the settings to be used for constructing modelinfo from profile definitions. This extension is used on ImplementationGuide or asset-collection Library resources to provide a way for authors to configure additional information about the ModelInfo for profiles defined in the ImplementationGuide or Asset Collection. The extension is used in profiles in the Using CQL With FHIR IG. See the ModelInfo discussion there for additional information on how to use this extension.",
       "min" : 0,
       "max" : "1"
     },
