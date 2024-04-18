@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Specifies which criteria is the input for calculations.",
+  "description": "Specifies which criteria is the input for calculations. Specifies which criteria a resource was considered for.",
   "jurisdiction": [
     {
       "coding": [
