@@ -62,7 +62,7 @@
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="date"/>
+        <code value="dateTime"/>
       </type>
     </element>
   </differential>
