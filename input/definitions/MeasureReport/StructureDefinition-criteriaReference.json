@@ -72,7 +72,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/extension-criteriaReference"
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-criteriaReference"
       },
       {
         "id": "Extension.value[x]",
