@@ -62,6 +62,12 @@
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="deprecated"/> 
+        </extension>
+          <code value="date"/>
+      </type>
+      <type>
         <code value="dateTime"/>
       </type>
     </element>
