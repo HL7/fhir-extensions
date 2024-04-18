@@ -30,7 +30,7 @@
       ]
     }
   ],
-  "purpose": "The definition must be able to specify which criteria is the input used.",
+  "purpose": "In cases where multiple populations of a specific type exist (such as continuous variable and ratio measures), measures must be able to identify which specific criteria is intended as the input. In addition, evaluated resources and supplemental data included in the measure report should be able to identify which criteria were responsible for their inclusion in the report. For example, a MedicationRequest reference can point to the denominator criteria to indicate it was considered as part of the evaluation of that criteria.",
   "fhirVersion": "4.0.1",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
