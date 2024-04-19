@@ -50,7 +50,6 @@
         "path": "Extension",
         "short": "Size of the population as a quantity.",
         "definition": "A Quantity representing the size of the population. This is important to support the case when a population value may result in a decimal when reporting composite measures.",
-        "comment": "The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.",
         "min": 0,
         "max": "1"
       },
