@@ -61,7 +61,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/countQuantity"
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/measurereport-countQuantity"
       },
       {
         "id": "Extension.value[x]",
