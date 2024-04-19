@@ -31,12 +31,6 @@
     }]
   }],
   "description" : "What category is this measure report.",
-  "jurisdiction" : [{
-    "coding" : [{
-      "system" : "urn:iso:std:iso:3166",
-      "code" : "US"
-    }]
-  }],
   "purpose" : "Need to be able to distinguish different categories of measure report.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
