@@ -68,7 +68,7 @@
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "decimal"
+            "code": "Quantity"
           }
         ]
       }
