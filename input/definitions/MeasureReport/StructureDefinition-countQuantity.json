@@ -39,7 +39,7 @@
     },
     {
       "type": "element",
-      "expression": "MeasureReport.evaluatedResource"
+      "expression": "MeasureReport.group.stratifier.stratum.population.count"
     }
   ],
   "type": "Extension",
