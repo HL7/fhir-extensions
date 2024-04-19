@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "countQuantity",
-  "url": "http://hl7.org/fhir/StructureDefinition/countQuantity",
+  "url": "http://hl7.org/fhir/StructureDefinition/measurereport-countQuantity",
   "name": "CountQuantity",
   "title": "Count Quantity",
   "status": "active",
