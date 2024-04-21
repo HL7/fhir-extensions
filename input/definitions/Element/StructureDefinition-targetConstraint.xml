@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="questionnaire-constraint"/>
+  <id value="targetConstraint"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fhir"/>
+    <valueCode value="cds"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="3"/>
+    <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated"/>
+    <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1247"/>
-  </identifier>
+  <url value="http://hl7.org/fhir/StructureDefinition/targetConstraint"/>
   <version value="5.0.0"/>
-  <name value="QConstraint"/>
-  <title value="Questionnaire Constraint"/>
+  <name value="TargetConstraint"/>
+  <title value="Target Constraint"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2013-07-04"/>
-  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <date value="2015-05-30"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="DEPRECATED: Use the `targetConstraint` extension instead. An invariant that must be satisfied before responses to the questionnaire can be considered &quot;complete&quot;."/>
+  <description value="Specifies a constraint that is enforced on instantiated (or target) resources. This extension can be applied to definitional resources (such as ActivityDefinition or Measure) and indicates that the constraint should be enforced on resources that are instantiated from the definition. For example, this extension can be used to define a constraint such as `numerator count must be less than or equal to denominator count`."/>
+  <purpose value="This extension allows constraints to be specified as part of definitional resources as an alternative to having to define a profile to enforce the constraint."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -40,15 +37,63 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
+    <expression value="ActivityDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.participant"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ActivityDefinition.dosage"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.group"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.group.population"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.group.stratifier"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.supplementalData"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.goal"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.goal.target"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.actor"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PlanDefinition.action"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="Questionnaire"/>
   </context>
   <context>
     <type value="element"/>
     <expression value="Questionnaire.item"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="ElementDefinition"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -56,9 +101,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Constraint"/>
-      <definition value="An invariant that must be satisfied before responses to the questionnaire can be considered &quot;complete&quot;."/>
-      <comment value="This maps to the ElementDefinition.constraint element.  See additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#constraint)."/>
+      <short value="A constraint on the target resource"/>
+      <definition value="Specifies a constraint that is enforced on instantiated (or target) resources. This extension can be applied to definitional resources (such as ActivityDefinition or Measure) and indicates that the constraint should be enforced on resources that are instantiated from the definition."/>
+      <comment value="Can be used on any definitional artifact to define a constraint that is enforced in the context of an instantiated resource. The constraint expression will have access to `%target` and `%definition` variables, where target is the instantiated resource, and definition is the definition used to instantiate."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -66,7 +111,8 @@
       <path value="Extension.extension"/>
       <sliceName value="key"/>
       <short value="Unique identifier"/>
-      <definition value="Unique id for the constraint within the questionnaire."/>
+      <definition value="A unique identifier for the invariant (unique in the context of the resource)."/>
+      <comment value="Any error or outcome messages or warnings should include this id to allow the source of the message to be determined."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -94,8 +140,8 @@
     <element id="Extension.extension:requirements">
       <path value="Extension.extension"/>
       <sliceName value="requirements"/>
-      <short value="Why needed"/>
-      <definition value="An explanation of why this extension is required (for documentation purposes)."/>
+      <short value="Why the constraint is defined"/>
+      <definition value="A brief description of why the constraint is necessary or appropriate."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -123,8 +169,8 @@
     <element id="Extension.extension:severity">
       <path value="Extension.extension"/>
       <sliceName value="severity"/>
-      <short value="error|warning"/>
-      <definition value="Indicates how serious violating the invariant is."/>
+      <short value="error | warning"/>
+      <definition value="Whether the constraint indicates an error condition or a warning."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -149,19 +195,22 @@
         <code value="code"/>
       </type>
       <binding>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="SHALL applications comply with this constraint?"/>
+        </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ConstraintSeverity"/>
         </extension>
         <strength value="required"/>
-        <description value="How important the invariant is."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/constraint-severity"/>
       </binding>
     </element>
     <element id="Extension.extension:expression">
       <path value="Extension.extension"/>
       <sliceName value="expression"/>
-      <short value="Formal rule"/>
-      <definition value="The FHIRPath expression of the rule for computable interpretation."/>
+      <short value="The invariant expression"/>
+      <definition value="An expression providing a formal representation of the invariant condition."/>
+      <comment value="The expression will have access to `%target` (the resource that was instantiated) and `%definition` (the definition for the instantiated resource)."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -183,7 +232,7 @@
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="string"/>
+        <code value="Expression"/>
       </type>
     </element>
     <element id="Extension.extension:human">
@@ -219,7 +268,7 @@
       <path value="Extension.extension"/>
       <sliceName value="location"/>
       <short value="Relative path to elements"/>
-      <definition value="Relative paths to the questions this rule is enforced against."/>
+      <definition value="Relative paths to the elements this rule is enforced against."/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -246,7 +295,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/targetConstraint"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
