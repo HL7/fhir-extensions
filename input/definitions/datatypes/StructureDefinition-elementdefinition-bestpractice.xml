@@ -42,6 +42,10 @@
     <type value="element"/>
     <expression value="ElementDefinition.constraint"/>
   </context>
+  <context>
+    <type value="extension"/>
+    <expression value="http://hl7.org/fhir/StructureDefinition/targetConstraint"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
