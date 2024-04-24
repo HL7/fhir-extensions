@@ -129,12 +129,33 @@
     </property>
   </concept>
   <concept>
+    <code value="populate-if-known"/>
+    <display value="populate if known"/>
+    <definition value="Conformant applications producing resources SHALL/SHOULD correctly populate this element if they know a value for the element, but it is acceptable if the system is unable to ever know a value for the element.&#xA;Notes: This obligation does not impose a requirement to be able to know a value, unlike populate and able-to-populate which do.  'Knowing' an element means that a value for the element is available in memory, persistent store, or is otherwise available within the system claiming conformance."/>
+    <property>
+      <code value="not-selectable"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="ResourceProducerObligations"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
     <code value="populate"/>
     <display value="populate"/>
     <definition value="Conformant applications producing resources SHALL/SHOULD include this element if a value is known and allowed to be shared.&#xA;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it populates it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="populate-if-known"/>
     </property>
     <property>
       <code value="parent"/>
@@ -400,6 +421,40 @@
     <property>
       <code value="parent"/>
       <valueCode value="able-to-populate"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="SHALL:populate-if-known"/>
+    <display value="SHALL populate if known"/>
+    <definition value="Conformant applications producing resources SHALL correctly populate this element if they know a value for the element, but it is acceptable if the system is unable to ever know a value for the element.&#xA;Notes: This obligation does not impose a requirement to be able to know a value, unlike populate and able-to-populate which do.  'Knowing' an element means that a value for the element is available in memory, persistent store, or is otherwise available within the system claiming conformance."/>
+    <property>
+      <code value="qualifier"/>
+      <valueCode value="SHALL"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="populate-if-known"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="SHOULD:populate-if-known"/>
+    <display value="SHOULD populate if known"/>
+    <definition value="Conformant applications producing resources SHOULD correctly populate this element if they know a value for the element, but it is acceptable if the system is unable to ever know a value for the element.&#xA;Notes: This obligation does not impose a requirement to be able to know a value, unlike populate and able-to-populate which do.  'Knowing' an element means that a value for the element is available in memory, persistent store, or is otherwise available within the system claiming conformance."/>
+    <property>
+      <code value="qualifier"/>
+      <valueCode value="SHOULD"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="populate-if-known"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
     </property>
   </concept>
   <concept>
