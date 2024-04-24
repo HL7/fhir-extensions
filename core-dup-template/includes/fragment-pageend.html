@@ -52,44 +52,7 @@
 
 <script src="external/jquery/jquery.js"> </script>
 <script src="jquery-ui.min.js"> </script>
-<script>
-try {
-  var currentTabIndex = null;
-  if (window.location.hash == '#tt-tree') {
-    currentTabIndex = 0;
-  } else if (window.location.hash == '#tt-uml') {
-    currentTabIndex = 1;
-  } else if (window.location.hash == '#tt-xml') {
-    currentTabIndex = 2;
-  } else if (window.location.hash == '#tt-json') {
-    currentTabIndex = 3;
-  } else if (window.location.hash == '#tt-ttl') {
-    currentTabIndex = 4;
-  } else if (window.location.hash == '#tt-all') {
-    currentTabIndex = 5;
-  } else {
-    currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-  }
-} catch(exception) {
-}
-
-if (!currentTabIndex)
-  currentTabIndex = '0';
-
-$( '#tabs' ).tabs({
-         active: currentTabIndex,
-         activate: function( event, ui ) {
-             var active = $('.selector').tabs('option', 'active');
-             currentTabIndex = ui.newTab.index();
-             document.activeElement.blur();
-             try {
-               sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-             }
-             catch(exception){
-             }
-         }
-     });
-</script>
+<script src="{{site.data.info.assets}}/assets/js/tabHandling.js"> </script>
 
 {% else %}
         </div>  <!-- /inner-wrapper -->
@@ -100,36 +63,9 @@ $( '#tabs' ).tabs({
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/jquery-ui.min.js"> </script>
 {% if includetabscripts %}
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
+  <script type="text/javascript" src="{{site.data.info.assets}}assets/js/tabs.js"> </script>
 {% endif %}
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="{{site.data.info.assets}}assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
@@ -186,8 +122,7 @@ $( '#tabs' ).tabs({
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor-hover.js"> </script>
   
   <!-- Analytics Below
   ================================================== -->
