@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/structure"/>
     </telecom>
   </contact>
-  <description value="Specifies that the section has a different subject that the Composition, or it's container section."/>
+  <description value="Specifies that the section has a different subject than the Composition, or its container section."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,8 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Section has a different subject that it's container"/>
-      <definition value="Specifies that the section has a different subject that the Composition, or it's container section."/>
+      <short value="Section has a different subject than its container"/>
+      <definition value="Specifies that the section has a different subject than the Composition, or its container section."/>
       <comment value="This is used in various FHIR value sets to make comments on how particular codes are used when the formal definition is a little abstract or vague, but it's not clear whether it belongs in the actual value set resource."/>
       <min value="0"/>
       <max value="1"/>

@@ -260,11 +260,12 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-cqlAccessModifier"
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-isEmptyList"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "boolean"

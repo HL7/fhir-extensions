@@ -45,6 +45,22 @@
     "expression" : "RelatedArtifact"
   },
   {
+    "type" : "element",
+    "expression" : "ActivityDefinition.library"
+  },
+  {
+    "type" : "element",
+    "expression" : "PlanDefinition.library"
+  },
+  {
+    "type" : "element",
+    "expression" : "Measure.library"
+  },
+  {
+    "type" : "element",
+    "expression" : "DomainResource.extension"
+  },
+  {
     "type" : "fhirpath",
     "expression" : "type.exists() and type = 'composed-of'"
   }],
@@ -71,6 +87,7 @@
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "min": 1,
       "type" : [{
         "code" : "boolean"
       }]

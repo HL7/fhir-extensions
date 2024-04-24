@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A code that indicates that a particular type characteristic and it's associated element definition aspects apply to this type"/>
+  <description value="A code that indicates that a particular type characteristic and its associated element definition aspects apply to this type."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,8 +49,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Characteristic that applies to the type"/>
-      <definition value="A code that indicates that a particular characteristic applies to this type. The characteristics are associated with the use of particular element definition aspects such as length limitations"/>
-      <comment value="Not all possible definitional characteristics apply to all types; for instance, specifying min/max lengths is only sensible for some types, and min/max values for others"/>
+      <definition value="A code that indicates that a particular characteristic applies to this type. The characteristics are associated with the use of particular element definition aspects such as length limitations."/>
+      <comment value="Not all possible definitional characteristics apply to all types; for instance, specifying min/max lengths is only sensible for some types, and min/max values for others."/>
       <min value="0"/>
       <max value="1"/>
     </element>

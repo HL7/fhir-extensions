@@ -69,6 +69,7 @@
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
       "requirements" : "Gives a sense of how \"current\" the content is. Resources that have not been reviewed in a long time may have a risk of being less appropriate/relevant.",
+      "min": 1,
       "type" : [{
         "code" : "date"
       }]

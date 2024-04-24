@@ -31,7 +31,7 @@
       "value" : "http://www.hl7.org/Special/committees/dss"
     }]
   }],
-  "description" : "A reference to a resource, canonical resource, or non-FHIR resource",
+  "description" : "A reference to a resource, canonical resource, or non-FHIR resource.",
   "purpose" : "To allow resources to define a reference to a resource, canonical resource, or non-FHIR resource.",
   "fhirVersion" : "4.0.1",
   "kind" : "complex-type",
@@ -63,6 +63,7 @@
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "min": 1,
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
