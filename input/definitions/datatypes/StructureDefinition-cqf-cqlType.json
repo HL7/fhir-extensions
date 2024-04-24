@@ -45,6 +45,14 @@
     {
       "type": "element",
       "expression": "ParameterDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "Parameters.parameter"
+    },
+    {
+      "type": "element",
+      "expression": "Parameters.parameter.part"
     }
   ],
   "type": "Extension",
