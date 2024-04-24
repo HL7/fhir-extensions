@@ -82,6 +82,7 @@
           "valueBoolean": true
         }],
         "path": "Extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "canonical"

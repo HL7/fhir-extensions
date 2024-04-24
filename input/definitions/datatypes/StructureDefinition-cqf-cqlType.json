@@ -45,6 +45,14 @@
     {
       "type": "element",
       "expression": "ParameterDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "Parameters.parameter"
+    },
+    {
+      "type": "element",
+      "expression": "Parameters.parameter.part"
     }
   ],
   "type": "Extension",
@@ -73,6 +81,7 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "string"

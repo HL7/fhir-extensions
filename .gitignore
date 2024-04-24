@@ -11,3 +11,6 @@ output/
 /FHIR-extensions.xml
 
 .index.json
+
+.idea/
+

@@ -20,7 +20,7 @@
   <name value="CQFCQLOptions"/>
   <title value="CQF CQL Options"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
   <contact>
