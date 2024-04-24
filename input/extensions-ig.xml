@@ -16,7 +16,7 @@
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.30.1"/>
   </identifier>
-  <version value="5.1.0-cibuild"/>
+  <version value="5.1.0-snapshot1"/>
   <name value="FHIRExtensionPack"/>
   <title value="FHIR Extensions Pack"/>
   <status value="active"/>
@@ -195,7 +195,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="releaselabel"/>
       </code>
-      <value value="Working Copy"/>
+      <value value="Snapshot1"/>
     </parameter>
     <parameter>
       <code>
