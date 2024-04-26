@@ -51,6 +51,8 @@
     <li>The extensions all have the status of 'trial-use' but once they are active they are treated as normative. The FHIR
      Management Group has not yet decided how these extensions will be balloted in the future</li>
   </ul>
+    
+    <p>For more information, see <a href="https://confluence.hl7.org/display/FMG/FHIR+Extension+Pack+Policy">FHIR Extension Pack Policy</a>.</p>
 
 	<a name="policy-extensions"> </a>
 	<h4>Conversion Maps</h4>
