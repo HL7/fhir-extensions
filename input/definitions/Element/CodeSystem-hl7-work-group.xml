@@ -63,12 +63,6 @@
         <display value="Biomedical Research and Regulation" />
         <definition value="Biomedical Research and Regulation (http://www.hl7.org/Special/committees/rcrim/index.cfm)." />
     </concept>
-    <!-- WG has changed name and has a new url, this url doesn't -->
-    <!--<concept>
-        <code value="cbcc"/>
-        <display value="Community Based Collaborative Care"/>
-        <definition value="Community Based Collaborative Care (http://www.hl7.org/Special/committees/cbcc/index.cfm)."/>
-   </concept>-->
     <concept>
         <code value="cbcc" />
         <display value="Community-Based Care and Privacy" />
