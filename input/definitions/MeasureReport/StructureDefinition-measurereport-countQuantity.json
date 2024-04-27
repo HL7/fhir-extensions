@@ -1,7 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "countQuantity",
+  "id": "measurereport-countQuantity",
   "url": "http://hl7.org/fhir/StructureDefinition/measurereport-countQuantity",
+  "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "cqi"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use"
+    }],
   "name": "CountQuantity",
   "title": "Count Quantity",
   "status": "active",
