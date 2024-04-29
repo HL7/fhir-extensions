@@ -46,10 +46,6 @@
   {
     "type" : "element",
     "expression" : "ImplementationGuide"
-  },
-  {
-    "type" : "element",
-    "expression" : "RelatedArtifact"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -59,8 +55,8 @@
       "id" : "Extension",
       "path" : "Extension",
       "short" : "What expansion rules",
-      "definition" : "Specifies the expansion parameters that should be used to expand the ValueSet, or any ValueSets in the Library (or referenced by components of the Library).",
-      "comment" : "For a complete description of how these expansion rules impact the behavior of the expansion operation, see the [Expansion Rules](http://build.fhir.org/ig/HL7/crmi-ig/artifact-terminology-service.html#expansion-rules) topic.",
+      "definition" : "Specifies the expansion parameters that should be used to expand ValueSets in the Library or ImplementationGuide (or referenced by component artifacts of the Library or Implementation Guide).",
+      "comment" : "Expansion parameters specified in an ImplementationGuide override expansion parameters specified in dependency IGs, and can in turn be overridden by expansion parameters specified in downstream IGs. When this extension is used, it is intended to be binding (i.e. expansion SHALL take the expansion parameters into account, according to the Expansion Rules discussed in the CRMI Artifact Terminology Service [Expansion Rules](http://hl7.org/fhir/uv/crmi/1.0.0-snapshot/artifact-terminology-service.html#expansion-rules) topic.",
       "min" : 0,
       "max" : "1"
     },
