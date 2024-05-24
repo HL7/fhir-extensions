@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="feature-assertion"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/feature-assertion"/>
+  <version value="5.0.0"/>
+  <name value="FeatureAsssertion"/>
+  <title value="Feature Assertion"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2022-08-12"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="This extension asserts that the data in a resource was authored (collected/handled/created/transformed)
+by an application that claims conformance to the definition of a feature. &#10;&#10;
+
+For further information about features, see the [Application Features Implementation Guide](https://build.fhir.org/ig/HL7/capstmt/specification.html).&#10;&#10;
+
+This extension is a statement about the provenance of a particular version of the resource that it is describing; as 
+such, it should be made in a Provenance resource referring to that particular version. Alternatively, the extension 
+can be placed in the resource about which the assertion is made (in Resource.meta); in this case, the assertion 
+SHOULD be removed when the resource data is altered (it may be replaced by a new assertion).&#10;&#10;
+
+This assertion is often used to drive processing rules associated with the trustworthiness of the data in 
+the resource. Applications/specifications/workflows that make use of this assertion should carefully consider
+the integrity of the chain of handling from the source the processing before choosing to trust the assertion.&#10;&#10;
+
+A more complex alternative to this profile is to use the [[[http://hl7.org/fhir/StructureDefinition/obligations-profile]]]
+extension.
+  "/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Provenance.target"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Resource.meta"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Authored by an application conforming to a set of obligations"/>
+      <definition value="A declaration that the data in a resource was authored by an application that conformed to the set of element level obligations described in the referenced profile"/>
+      <comment value="This extension is a statement about the provenance of a particular version of the resource that it is describing; as such, it should be made in a Provenance resource referring to that particular version. Alternatively, the extension can be placed in the resource about which the declaration is made (in Resource.meta); in this case, the declaration SHOULD be removed when the resource data is altered (it may be replaced by a new declaration)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <isModifier value="false"/>
+    </element>
+
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/feature-assertion"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
