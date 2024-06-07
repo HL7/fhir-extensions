@@ -50,8 +50,7 @@ the resource. Applications/specifications/workflows that make use of this declar
 the integrity of the chain of handling from the source the processing before choosing to trust the declaration.&#10;&#10;
 
 A simpler alternative to this profile is to use the [[[http://hl7.org/fhir/StructureDefinition/feature-assertion]]]
-extension.
-  "/>
+extension."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
