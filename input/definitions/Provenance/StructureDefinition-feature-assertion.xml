@@ -26,9 +26,14 @@
     </telecom>
   </contact>
   <description value="This extension asserts that the data in a resource was authored (collected/handled/created/transformed)
-by an application that claims conformance to the definition of a feature. &#10;&#10;
+by an application that claims conformance to the definition of a feature. Note that 'authoring' is often a client function, but
+that is not always the case.&#10;&#10;
 
-For further information about features, see the [Application Features Implementation Guide](https://build.fhir.org/ig/HL7/capstmt/specification.html).&#10;&#10;
+For further information about features, see the [Application Feature Framework Implementation Guide](https://build.fhir.org/ig/HL7/capstmt/specification.html).&#10;&#10;
+
+As an example of the kind of use this extension might support, an application could choose to only use value set 
+expansions that are explicitly labeled as 'prepared under the conformance rules defined in the [CRMI implementation
+guide](https://build.fhir.org/ig/HL7/crmi-ig).
 
 This extension is a statement about the provenance of a particular version of the resource that it is describing; as 
 such, it should be made in a Provenance resource referring to that particular version. Alternatively, the extension 
@@ -78,10 +83,12 @@ extension."/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
+      <short value="A code that identifies a feature"/>
+      <definition value="A code that identifies a feature. CodeSystem as defined by the Application Feature Framework (tbd: how to reference that from here, or should we move the extension?)"/>
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="uri"/>
+        <code value="Coding"/>
       </type>
     </element>
   </differential>

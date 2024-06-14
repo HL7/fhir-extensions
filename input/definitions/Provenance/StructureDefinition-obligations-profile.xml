@@ -26,7 +26,8 @@
     </telecom>
   </contact>
   <description value="This extension declares that the data in a resource was authored (collected/handled/created/transformed)
-by an application that conformed to the set of element level obligations described in the referenced profile. The declaration
+by an application that conformed to the set of element level obligations described in the referenced profile.  Note that 
+'authoring' is often a client function, but that is not always the case. The declaration
 may optionally reference a particular ActorDefinition to select which set of obligations applied. Note that although
 the focus of this extension is declaring which obligations applied to the authoring of this resource, obligations are
 applied at the level of a data element, and the profile maps between the elements of the resource and the obligations 
@@ -34,6 +35,10 @@ at each data element. For this reason, it's better for profiles referenced by th
 [obligation profiles](https://hl7.org/fhir/tools/StructureDefinition-obligation-profile.html), or at least, profiles 
 that focus on applicaion obligations rather than data verification. Only the obligations pertaining to authoring the 
 data are considered to apply in this declaration.&#10;&#10;
+
+As an example of the kind of use this extension might support, an application could decide, while reading the contents
+of a resource, that an element was available for data entry and the fact that it is mising implies 'no value exists' 
+as opposed to 'creating system was unable to provide a value'. 
 
 This extension is a statement about the provenance of a particular version of the resource that it is describing; as 
 such, it should be made in a Provenance resource referring to that particular version. Alternatively, the extension 
