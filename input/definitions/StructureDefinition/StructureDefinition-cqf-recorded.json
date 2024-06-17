@@ -1,0 +1,86 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "cqf-recorded",
+  "text" : {
+    "status" : "extensions"
+  },
+  "url" : "http://hl7.org/fhir/StructureDefinition/cqf-recorded",
+  "version" : "5.0.0",
+  "name" : "CQFNotDoneRecorded",
+  "title" : "CQF Not Done Recorded",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2018-08-22",
+  "publisher" : "http://www.hl7.org/Special/committees/cqi/index.cfm",
+  "contact" : [
+    {
+      "name" : "Clinical Quality Information WG",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description" : "Captures the recorded date of the event.",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }
+      ]
+    }
+  ],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }
+  ],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "Resource"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension",
+        "definition" : "Captures the recorded date of the event.",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "type" : [
+          {
+            "code" : "uri"
+          }
+        ],
+        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/cqf-recorded"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "type" : [
+          {
+            "code" : "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}
