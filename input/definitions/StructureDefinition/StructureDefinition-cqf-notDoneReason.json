@@ -11,14 +11,14 @@
   "status" : "active",
   "experimental" : false,
   "date" : "2024-08-20",
-  "publisher" : "http://www.hl7.org/Special/committees/cqi/index.cfm",
-  "contact" : [
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact": [
     {
       "name" : "Clinical Quality Information WG",
-      "telecom" : [
+      "telecom": [
         {
-          "system" : "url",
-          "value" : "http://www.hl7.org/Special/committees/cqi"
+          "system": "url",
+          "value" : "http://www.hl7.org/Special/committees/fiwg"
         }
       ]
     }
