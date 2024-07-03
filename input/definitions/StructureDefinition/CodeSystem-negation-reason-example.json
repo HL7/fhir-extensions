@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "negation-reason-example",
+  "meta": {
+    "lastUpdated": "2024-07-01T07:07:38.434+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/CodeSystem/negation-reason-example",
+  "name": "NegationReasonExample",
+  "title": "Negation Reason Example",
+  "status": "active",
+  "experimental": false,
+  "description": "A temporary code system to avoid a qicore binding in StructureDefinition-cqf-doNotPerformReason.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "183932001",
+      "display": "Procedure contraindicated (situation)"
+    }
+  ]
+}

@@ -1,29 +1,29 @@
-
 {
-  "resourceType" : "StructureDefinition",
-  "id" : "cqf-doNotPerformReason",
+  "resourceType": "StructureDefinition",
+  "id": "cqf-doNotPerformReason",
   "text" : {
     "status" : "extensions"
   },
-  "url" : "http://hl7.org/fhir/StructureDefinition/cqf-doNotPerformReason",
-  "version" : "5.0.0",
-  "name" : "CQFDoNotPerformReason",
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-doNotPerformReason",
+  "version": "5.0.0",
+  "name": "CQFDoNotPerformReason",
   "title": "CQF Do Not Perform Reason",
-  "status" : "active",
-  "experimental" : false,
-  "date" : "2024-05-20",
-  "publisher": "Clinical Quality Information WG",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-05-20",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "contact": [
     {
+      "name" : "Clinical Quality Information WG",
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/cqi/index.cfm"
+          "value" : "http://www.hl7.org/Special/committees/fiwg"
         }
       ]
     }
   ],
-  "description" : "Indicates the reason the event was not performed.",
+  "description": "Indicates the reason the event was not performed.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -34,7 +34,7 @@
       ]
     }
   ],
-  "fhirVersion" : "4.0.1",
+  "fhirVersion": "4.0.1",
   "mapping" : [
     {
       "identity" : "rim",
@@ -42,30 +42,30 @@
       "name" : "RIM Mapping"
     }
   ],
-  "kind" : "complex-type",
-  "abstract" : false,
+  "kind": "complex-type",
+  "abstract": false,
   "context" : [
     {
       "type" : "element",
       "expression" : "Resource"
     }
   ],
-  "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation" : "constraint",
-  "snapshot" : {
-    "element" : [
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
       {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Extension",
-        "definition" : "Indicates the reason the event was not performed.",
-        "min" : 0,
-        "max" : "1",
-        "base" : {
-          "path" : "Extension",
-          "min" : 0,
-          "max" : "*"
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Extension",
+        "definition": "Indicates the reason the event was not performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
         },
         "condition" : [
           "ele-1"
@@ -76,7 +76,7 @@
             "severity" : "error",
             "human" : "All FHIR elements must have a @value or children",
             "expression" : "hasValue() or (children().count() > id.count())",
-            "xpath" : "@value|f:*|h:div",
+            "xpath": "@value|f:*|h:div",
             "source" : "http://hl7.org/fhir/StructureDefinition/Element"
           },
           {
@@ -247,7 +247,7 @@
         "binding" : {
           "strength" : "extensible",
           "description" : "The reason the event did not occur or was not performed",
-          "valueSet" : "http://hl7.org/fhir/us/qicore/ValueSet/qicore-negation-reason"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/negation-reason-example"
         },
         "mapping" : [
           {
@@ -288,8 +288,7 @@
         "binding" : {
           "strength" : "extensible",
           "description" : "The reason the event did not occur or was not performed",
-          "valueSet" : "http://hl7.org/fhir/us/qicore/ValueSet/qicore-negation-reason"
-        }
+          "valueSet" : "http://hl7.org/fhir/ValueSet/negation-reason-example"        }
       }
     ]
   }
