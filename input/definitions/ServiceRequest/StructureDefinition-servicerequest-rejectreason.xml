@@ -61,7 +61,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
-      <type>
+      <type> 
         <code value="CodeableConcept"/>
       </type>
     </element>
