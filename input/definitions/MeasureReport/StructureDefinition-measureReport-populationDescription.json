@@ -19,7 +19,7 @@
     "status" : "active",
     "experimental" : false,
     "date" : "2024-02-01",
-    "publisher" : "HL7 International / Clinical Quality Information WG",
+    "publisher" : "HL7 International / Clinical Quality Information",
     "contact" : [{
       "telecom" : [{
         "system" : "url",

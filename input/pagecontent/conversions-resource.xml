@@ -2,22 +2,11 @@
 
 <a name="conv-Resource"> </a>
 <a name="Resource"> </a>
-<h3>Resource</h3>
-<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
-<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
-<!--xlp:Resource-->See also <a no-external="true" href="{{site.data.fhir.path}}resource.html#Resource">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}resource-definitions.html#Resource">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}resource-profiles.html#Resource">Profiles</a>, <a no-external="true" href="extensions-resource.html#Resource">Extensions</a> and <a no-external="true" href="conversions-resource.html#Resource">R4 Conversions</a>
-</p>
-
-{% include maps-Resource.xhtml %}
-
 <a name="conv-Meta"> </a>
 <a name="Meta"> </a>
-<h3>Meta</h3>
-<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
-<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
-<!--xlp:Meta-->See also <a no-external="true" href="{{site.data.fhir.path}}resource.html#Meta">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}resource-definitions.html#Meta">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}resource-profiles.html#Meta">Profiles</a>, <a no-external="true" href="extensions-resource.html#Meta">Extensions</a> and <a no-external="true" href="conversions-resource.html#Meta">R4 Conversions</a>
-</p>
 
-{% include maps-Meta.xhtml %}
+<p>
+Transforms between R4 and R5 have been moved to the cross-version implementation guide, which is under development. 
+</p>
 
 </div>
