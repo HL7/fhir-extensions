@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="patient-bornstatus"/>
+  <id value="patient-fetalstatus"/>
   <meta>
     <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="pa"/>
+    <valueCode value="pc"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/patient-bornstatus"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.4.2117"/>
-  </identifier>
+  <url value="http://hl7.org/fhir/patient-fetalstatus"/>
   <version value="5.0.0"/>
-  <name value="BornStatus"/>
-  <title value="born status code system"/>
-  <status value="retired"/>
+  <name value="FetalStatus"/>
+  <title value="fetal status code system"/>
+  <status value="draft"/>
   <experimental value="true"/>
-  <publisher value="HL7 International / Patient Administration"/>
+  <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>
       <system value="url"/>
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="This birth status of a patient."/>
+  <description value="This fetal status of a patient."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -40,23 +36,18 @@
   <caseSensitive value="true"/>
   <content value="complete"/>
   <concept>
-    <code value="born"/>
-    <display value="Born"/>
-    <definition value="The patient (baby) has been born."/>
-  </concept>
-  <concept>
-    <code value="unborn"/>
-    <display value="Unborn"/>
-    <definition value="The patient (fetus) has not been born and is still in utero."/>
+    <code value="potential-for-live-birth"/>
+    <display value="Potential For Live Birth"/>
+    <definition value="The subject has the potential for live birth."/>
   </concept>
   <concept>
     <code value="fetal-demise"/>
     <display value="Fetal Demise"/>
-    <definition value="The patient (fetus) is deceased."/>
+    <definition value="The subject is deceased."/>
   </concept>
   <concept>
     <code value="unknown"/>
     <display value="Unknown"/>
-    <definition value="The birth status of the patient is unknown."/>
+    <definition value="The fetal status of the subject is unknown."/>
   </concept>
 </CodeSystem>
