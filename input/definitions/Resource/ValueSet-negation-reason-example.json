@@ -6,16 +6,12 @@
     "lastUpdated": "2024-07-01T07:07:38.434+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-      ]
+    ]
   },
-  "extension": [{
-    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode": "fhir"
-  }],
-  "identifier": [
+  "extension": [
     {
-      "system": "urn:ietf:rfc:3986",
-      "value": "urn:oid:2.16.840.1.113883.4.642.2.575"
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
     }
   ],
   "name": "NegationReasonExample",
@@ -23,11 +19,25 @@
   "status": "active",
   "experimental": false,
   "date": "2024-07-01",
-  "description": "Codes for the reason the event did not occur or was not performed.",
+  "description": "An example value set illustrating the kinds of codes that would be expected to be used to indicate the reason an event did not occur, or a request was not performed.",
   "compose": {
     "include": [
       {
-        "system": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.56"
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "183932001",
+            "display": "Procedure contraindicated (situation)"
+          },
+          {
+            "code": "183964008",
+            "display": "Treatment not indicated (situation)"
+          },
+          {
+            "code": "183966005",
+            "display": "Drug treatment not indicated (situation)"
+          }
+        ]
       }
     ]
   }

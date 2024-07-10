@@ -11,29 +11,19 @@
   "status": "active",
   "experimental": false,
   "date": "2024-05-20",
-  "publisher": "HL7 International / FHIR Infrastructure",
+  "publisher": "HL7 International / Clinical Quality Information",
   "contact": [
     {
       "name": "Clinical Quality Information WG",
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/fiwg"
+          "value": "http://www.hl7.org/Special/committees/cqi"
         }
       ]
     }
   ],
   "description": "Indicates the reason the event was not performed.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -81,7 +71,7 @@
           }
         ],
         "binding": {
-          "strength": "extensible",
+          "strength": "example",
           "description": "The reason the event did not occur or was not performed",
           "valueSet": "http://hl7.org/fhir/ValueSet/negation-reason-example"
         }
