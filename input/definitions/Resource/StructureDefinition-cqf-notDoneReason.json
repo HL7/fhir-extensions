@@ -18,22 +18,12 @@
       "telecom": [
         {
           "system": "url",
-          "value" : "http://www.hl7.org/Special/committees/fiwg"
+          "value" : "http://www.hl7.org/Special/committees/cqi"
         }
       ]
     }
   ],
   "description" : "Indicates the reason the event was not done.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }
-      ]
-    }
-  ],
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -47,7 +37,7 @@
   "context" : [
     {
       "type" : "element",
-      "expression" : "Resource"
+      "expression" : "Observation"
     }
   ],
   "type" : "Extension",
