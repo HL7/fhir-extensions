@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "negation-reason-example",
+  "url": "http://hl7.org/fhir/ValueSet/negation-reason-example",
+  "meta": {
+    "lastUpdated": "2024-07-01T07:07:38.434+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "name": "NegationReasonExample",
+  "title": "Negation Reason Example",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-07-01",
+  "description": "An example value set illustrating the kinds of codes that would be expected to be used to indicate the reason an event did not occur, or a request was not performed.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "183932001",
+            "display": "Procedure contraindicated (situation)"
+          },
+          {
+            "code": "183964008",
+            "display": "Treatment not indicated (situation)"
+          },
+          {
+            "code": "183966005",
+            "display": "Drug treatment not indicated (situation)"
+          }
+        ]
+      }
+    ]
+  }
+}

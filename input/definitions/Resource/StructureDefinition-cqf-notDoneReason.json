@@ -1,6 +1,10 @@
 {
   "resourceType" : "StructureDefinition",
   "id" : "cqf-notDoneReason",
+  "extension": [{
+    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode": "cqi"
+  }],
   "text" : {
     "status" : "extensions"
   },
@@ -11,7 +15,7 @@
   "status" : "active",
   "experimental" : false,
   "date" : "2024-08-20",
-  "publisher" : "HL7 International / FHIR Infrastructure",
+  "publisher" : "HL7 International / Clinical Quality Information",
   "contact": [
     {
       "name" : "Clinical Quality Information WG",
@@ -73,7 +77,7 @@
         "binding" : {
           "strength" : "extensible",
           "description" : "The reason the event did not occur or was not performed",
-          "valueSet" : "http://terminology.hl7.org/ValueSet/POAIndicators"
+          "valueSet" : "http://hl7.org/fhir/ValueSet/negation-reason-example"
         }
       }
     ]
