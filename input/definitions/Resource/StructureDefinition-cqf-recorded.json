@@ -1,7 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cqf-recorded",
-  "text": {
+  "extension": [{
+    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode": "cqi"
+  }],"text": {
     "status": "extensions"
   },
   "url": "http://hl7.org/fhir/StructureDefinition/cqf-recorded",
@@ -11,29 +14,18 @@
   "status": "active",
   "experimental": false,
   "date": "2018-08-22",
-  "publisher" : "HL7 International / FHIR Infrastructure",
+  "publisher" : "HL7 International / Clinical Quality Information",
   "contact": [
     {
       "name" : "Clinical Quality Information WG",
       "telecom": [
         {
           "system": "url",
-          "value" : "http://www.hl7.org/Special/committees/fiwg"
+          "value" : "http://www.hl7.org/Special/committees/cqi"
         }
       ]
     }
-  ],
-  "description": "Captures the recorded date of the event.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
+  ],  "description": "Captures the recorded date of the event.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -47,7 +39,19 @@
   "context": [
     {
       "type": "element",
-      "expression": "Resource"
+      "expression": "Communication"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationAdministration"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationDispense"
+    },
+    {
+      "type": "element",
+      "expression": "Procedure"
     }
   ],
   "type": "Extension",
