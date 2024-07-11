@@ -47,7 +47,7 @@
 	<differential>
 		<element id="Extension">
 			<path value="Extension"/>
-			<short value="A recorded sex or gender property for the individual"/>
+			<short value="Additional notes that apply to this resource or element."/>
 			<definition value="Additional notes that apply to this resource or element."/>
 			<comment value="This extension SHALL NOT be used if the resource already has standard 'note' element (or equivalent) of type Annotation on the same element"/>
 			<min value="0"/>
