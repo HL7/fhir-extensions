@@ -41,7 +41,10 @@
   "context": [
     {
       "type": "element",
-      "expression": "StructureDefinition"
+      "expression": "DeviceRequest"
+    }, {
+      "type": "element",
+      "expression": "ServiceRequest"
     }
   ],
   "type": "Extension",
