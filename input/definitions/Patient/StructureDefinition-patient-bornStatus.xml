@@ -9,7 +9,7 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/patient-bornStatus"/>
   <identifier>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="The living/delivery status of the fetus (patient)."/>
+  <description value="The living/delivery status of the fetus (patient). This extension is deprecated and replaced by patient-fetalStatus extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="born | unborn | fetal-demise | unknown"/>
-      <definition value="An indicator on the fetal status of a baby. Typically used in maternity where the patient record may be created before the birth of the baby."/>
+      <definition value="An indicator on the fetal status of a baby. Typically used in maternity where the patient record may be created before the birth of the baby. This extension is deprecated and replaced by patient-fetalStatus extension."/>
       <min value="0"/>
       <max value="1"/>
     </element>

@@ -43,7 +43,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="born | unborn | fetal-demise | unknown"/>
+      <short value="potential-for-live-birth | fetal-demise | unknown"/>
       <definition value="An indicator on the fetal status of a baby. Typically used in maternity where the patient record may be created before the birth of the baby."/>
       <min value="0"/>
       <max value="1"/>

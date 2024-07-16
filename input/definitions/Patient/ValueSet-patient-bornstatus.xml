@@ -10,7 +10,7 @@
     <valueCode value="pa"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/ValueSet/patient-bornstatus"/>
   <identifier>
@@ -35,7 +35,7 @@
       <value value="http://hl7.org/fhir"/>
     </telecom>
   </contact>
-  <description value="This birth status of a patient."/>
+  <description value="This birth status of a patient. This ValueSet is deprecated and replaced by patient-fetalstatus ValueSet."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
