@@ -195,7 +195,6 @@
         <code value="dateTime"/>
       </type>
     </element>
-    <!-- START -->
     <element id="Extension.extension:source">
       <path value="Extension.extension"/>
       <sliceName value="source"/>
@@ -242,7 +241,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </type>
     </element>
-    <!-- END -->
     <element id="Extension.extension:sourceDocument">
       <path value="Extension.extension"/>
       <sliceName value="sourceDocument"/>
