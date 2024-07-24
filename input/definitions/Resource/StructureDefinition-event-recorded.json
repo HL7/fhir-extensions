@@ -1,27 +1,27 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cqf-event-recorded",
+  "id": "event-recorded",
   "extension": [{
     "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode": "cqi"
+    "valueCode": "fhir"
   }],"text": {
     "status": "extensions"
   },
-  "url": "http://hl7.org/fhir/StructureDefinition/cqf-event-recorded",
+  "url": "http://hl7.org/fhir/StructureDefinition/event-recorded",
   "version": "5.0.0",
-  "name": "CQFNotDoneRecorded",
-  "title": "CQF Not Done Recorded",
+  "name": "EventRecorded",
+  "title": "Event Recorded",
   "status": "active",
   "experimental": false,
   "date": "2018-08-22",
-  "publisher" : "HL7 International / Clinical Quality Information",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "contact": [
     {
-      "name" : "Clinical Quality Information WG",
+      "name" : "FHIR Infrastructure WG",
       "telecom": [
         {
           "system": "url",
-          "value" : "http://www.hl7.org/Special/committees/cqi"
+          "value" : "http://www.hl7.org/Special/committees/fiwg"
         }
       ]
     }
@@ -62,7 +62,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-event-recorded"
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/event-recorded"
       },
       {
         "id": "Extension.value[x]",
