@@ -48,16 +48,19 @@
   </property>
   <property>
     <code value="qualifier"/>
+    <uri value="http://hl7.org/fhir/CodeSystem/obligation#qualifier"/>
     <description value="Indicates the level of adherence expected to the obligation concept"/>
     <type value="code"/>
   </property>
   <property>
     <code value="converse"/>
+    <uri value="http://hl7.org/fhir/CodeSystem/obligation#converse"/>
     <description value="Indicates another obligation code with an opposite meaning to this one.  A single obligation cannot list two converse codes and an application cannot satisfy both a code and its coverse (though if the obligation strength for both is SHOULD or MAY, an application could conform with both obligations by adhering to one and not the other)."/>
     <type value="code"/>
   </property>
   <property>
     <code value="security-dependent"/>
+    <uri value="http://hl7.org/fhir/CodeSystem/obligation#security-dependent"/>
     <description value="Obligation codes with this property set to true may be overridden by policies and regulations related to privacy and security, including patient consent.  Testing of such obligations will need to take such considerations into account."/>
     <type value="boolean"/>
   </property>

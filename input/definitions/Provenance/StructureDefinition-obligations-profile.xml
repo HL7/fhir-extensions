@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="obligations-profile"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/obligations-profile"/>
+  <version value="5.0.0"/>
+  <name value="ObligationsProfile"/>
+  <title value="Obligations Profile"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2022-08-12"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="This extension declares that the data in a resource was authored (collected/handled/created/transformed)
+by an application that conformed to the set of element level obligations described in the referenced profile.  Note that 
+'authoring' is often a client function, but that is not always the case. The declaration
+may optionally reference a particular ActorDefinition to select which set of obligations applied. Note that although
+the focus of this extension is declaring which obligations applied to the authoring of this resource, obligations are
+applied at the level of a data element, and the profile maps between the elements of the resource and the obligations 
+at each data element. For this reason, it's better for profiles referenced by this extension to be 
+[obligation profiles](https://hl7.org/fhir/tools/StructureDefinition-obligation-profile.html), or at least, profiles 
+that focus on applicaion obligations rather than data verification. Only the obligations pertaining to authoring the 
+data are considered to apply in this declaration.&#10;&#10;
+
+As an example of the kind of use this extension might support, an application could decide, while reading the contents
+of a resource, that an element was available for data entry and the fact that it is mising implies 'no value exists' 
+as opposed to 'creating system was unable to provide a value'. 
+
+This extension is a statement about the provenance of a particular version of the resource that it is describing; as 
+such, it should be made in a Provenance resource referring to that particular version. Alternatively, the extension 
+can be placed in the resource about which the declaration is made (in Resource.meta); in this case, the declaration 
+SHOULD be removed when the resource data is altered (it may be replaced by a new declaration).&#10;&#10;
+
+Unlike the claim of data conformance in Resource.meta.profile, the declaration contained in this extension 
+cannot be added simply because the data in the resource is observed to conform to a profile, since it pertains 
+to the rules that apply to the application that authored the resource. For the same reason, intermediaries processing
+resources SHOULD preserve this declaration unless they alter the data itself.&#10;&#10;
+
+This declaration is often used to drive processing rules associated with the trustworthiness of the data in 
+the resource. Applications/specifications/workflows that make use of this declaration should carefully consider
+the integrity of the chain of handling from the source the processing before choosing to trust the declaration.&#10;&#10;
+
+A simpler alternative to this profile is to use the [[[http://hl7.org/fhir/StructureDefinition/feature-assertion]]]
+extension."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Provenance.target"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Resource.meta"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Authored by an application conforming to a set of obligations"/>
+      <definition value="A declaration that the data in a resource was authored by an application that conformed to the set of element level obligations described in the referenced profile"/>
+      <comment value="This extension is a statement about the provenance of a particular version of the resource that it is describing; as such, it should be made in a Provenance resource referring to that particular version. Alternatively, the extension can be placed in the resource about which the declaration is made (in Resource.meta); in this case, the declaration SHOULD be removed when the resource data is altered (it may be replaced by a new declaration)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <isModifier value="false"/>
+    </element>
+
+    <element id="Extension.extension:profile">
+      <path value="Extension.extension"/>
+      <sliceName value="profile"/>
+      <short value="The profile linking elements to obligations"/>
+      <definition value="The profile that links the elements in the resource to the obligations that apply to the application."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension.extension:profile.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:profile.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="profile"/>
+    </element>
+    <element id="Extension.extension:profile.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+      </type>
+    </element>
+
+    <element id="Extension.extension:actor">
+      <path value="Extension.extension"/>
+      <sliceName value="actor"/>
+      <short value="Indicates which actor obligations apply."/>
+      <definition value="If provided, restricts the obligations to those declared for this particular actor."/>
+      <comment value="This is a reference to an ActorDefinition resource which was first defined in R5. In versions prior to R5, this is treated as a URI that identifies the actor but for which no formal declaration is available. In R5, this SHALL be treated as having the type canonical(ActorDefinition)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension.extension:actor.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:actor.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="actor"/>
+    </element>
+    <element id="Extension.extension:actor.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/obligations-profile"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

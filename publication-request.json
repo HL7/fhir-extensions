@@ -1,10 +1,10 @@
 {
   "package-id" : "hl7.fhir.uv.extensions",
-  "version" : "5.1.0-snapshot14",
-  "path" : "http://hl7.org/fhir/extensions/5.1.0-snapshot1",
-  "mode" : "working",
+  "version" : "5.1.0",
+  "path" : "http://hl7.org/fhir/extensions/5.1.0",
+  "mode" : "milestone",
   "status" : "trial-use",
   "sequence" : "Release 5.1",
-  "desc" : "Snapshot1 - Implementation Support prior to ballot completion",
+  "desc" : "Full release subsequent to ballot, and many other improvements",
   "first" : false
 }

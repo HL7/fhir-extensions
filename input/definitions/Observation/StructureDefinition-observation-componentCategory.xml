@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="observation-specimenCode"/>
+  <id value="observation-componentCategory"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="oo"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="3"/>
+    <valueInteger value="0"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/observation-specimenCode"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1478"/>
-  </identifier>
+  <url value="http://hl7.org/fhir/StructureDefinition/observation-componentCategory"/>
   <version value="5.0.0"/>
-  <name value="ObsSpecimenCode"/>
-  <title value="Observation Specimen Code"/>
-  <status value="retired"/>
+  <name value="ObsComponentCategory"/>
+  <title value="Observation Component Category Code"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2015-03-02"/>
+  <date value="2024-07-20"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
@@ -29,18 +24,13 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="A code representing the the type of specimen used for this observation.  Should only be used if not implicit in the code found in `Observation.code`."/>
+  <description value="A code that classifies the general type of observation being made in the component."/>
   <fhirVersion value="5.0.0"/>
-  <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
-  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Observation"/>
+    <expression value="Observation.component"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -48,10 +38,12 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="A code representing the the type of specimen used for this observation."/>
-      <definition value="Given the ability to use the referenced Specimen resource to represent just a code, this extension is deprecated. Old description: A code representing the the type of specimen used for this observation.  Should only be used if not implicit in the code found in `Observation.code`. "/>
+      <short value="Classification of type of observation component"/>
+      <definition value="A code that classifies the general type of observation being made in the component."/>
+      <comment value="In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set."/>
+      <requirements value="Used for filtering what observations are retrieved and displayed."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -59,7 +51,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-specimenCode"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-componentCategory"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
@@ -69,10 +61,11 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="SpecimenCode"/>
+          <valueString value="ObservationComponentCategory"/>
         </extension>
-        <strength value="example"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0487"/>
+        <strength value="preferred"/>
+        <description value="Codes for high level observation categories of the component."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-category"/>
       </binding>
     </element>
   </differential>

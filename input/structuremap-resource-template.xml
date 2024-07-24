@@ -3,8 +3,5 @@
 {% include tabstuff.html %}
 
 <p>
-Following are maps for converting between the equivalent R4B resource and this R5 resource.
+Transforms between R4 and R5 have been moved to the cross-version implementation guide, which is under development. 
 </p>
-
-{% include maps-%type%.xhtml %}
-

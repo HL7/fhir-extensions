@@ -1,14 +1,11 @@
 ﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
 
-
-<a name="ext-primitives"> </a>
 <a name="primitives"> </a>
 <h3>Primitive Datatypes</h3>
 
 
 {% include extension-list-primitives.xhtml %}
 
-<a name="ext-Attachment"> </a>
 <a name="Attachment"> </a>
 <h3>Attachment</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -18,7 +15,6 @@
 
 {% include extension-list-Attachment.xhtml %}
 
-<a name="ext-Coding"> </a>
 <a name="Coding"> </a>
 <h3>Coding</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -28,7 +24,6 @@
 
 {% include extension-list-Coding.xhtml %}
 
-<a name="ext-CodeableConcept"> </a>
 <a name="CodeableConcept"> </a>
 <h3>CodeableConcept</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -38,7 +33,6 @@
 
 {% include extension-list-CodeableConcept.xhtml %}
 
-<a name="ext-Quantity"> </a>
 <a name="Quantity"> </a>
 <h3>Quantity</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -48,7 +42,6 @@
 
 {% include extension-list-Quantity.xhtml %}
 
-<a name="ext-Money"> </a>
 <a name="Money"> </a>
 <h3>Money</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -58,7 +51,6 @@
 
 {% include extension-list-Money.xhtml %}
 
-<a name="ext-Range"> </a>
 <a name="Range"> </a>
 <h3>Range</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -68,7 +60,6 @@
 
 {% include extension-list-Range.xhtml %}
 
-<a name="ext-Ratio"> </a>
 <a name="Ratio"> </a>
 <h3>Ratio</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -78,7 +69,6 @@
 
 {% include extension-list-Ratio.xhtml %}
 
-<a name="ext-RatioRange"> </a>
 <a name="RatioRange"> </a>
 <h3>RatioRange</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -88,7 +78,6 @@
 
 {% include extension-list-RatioRange.xhtml %}
 
-<a name="ext-Period"> </a>
 <a name="Period"> </a>
 <h3>Period</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -98,7 +87,6 @@
 
 {% include extension-list-Period.xhtml %}
 
-<a name="ext-SampledData"> </a>
 <a name="SampledData"> </a>
 <h3>SampledData</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -108,7 +96,6 @@
 
 {% include extension-list-SampledData.xhtml %}
 
-<a name="ext-Identifier"> </a>
 <a name="Identifier"> </a>
 <h3>Identifier</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -118,7 +105,6 @@
 
 {% include extension-list-Identifier.xhtml %}
 
-<a name="ext-HumanName"> </a>
 <a name="HumanName"> </a>
 <h3>HumanName</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -128,7 +114,6 @@
 
 {% include extension-list-HumanName.xhtml %}
 
-<a name="ext-Address"> </a>
 <a name="Address"> </a>
 <h3>Address</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -138,7 +123,6 @@
 
 {% include extension-list-Address.xhtml %}
 
-<a name="ext-ContactPoint"> </a>
 <a name="ContactPoint"> </a>
 <h3>ContactPoint</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -148,7 +132,6 @@
 
 {% include extension-list-ContactPoint.xhtml %}
 
-<a name="ext-Timing"> </a>
 <a name="Timing"> </a>
 <h3>Timing</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -158,7 +141,6 @@
 
 {% include extension-list-Timing.xhtml %}
 
-<a name="ext-Signature"> </a>
 <a name="Signature"> </a>
 <h3>Signature</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -168,7 +150,6 @@
 
 {% include extension-list-Signature.xhtml %}
 
-<a name="ext-Annotation"> </a>
 <a name="Annotation"> </a>
 <h3>Annotation</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>

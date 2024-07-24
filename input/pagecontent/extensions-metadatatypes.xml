@@ -1,6 +1,5 @@
 ﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
 
-<a name="ext-ContactDetail"> </a>
 <a name="ContactDetail"> </a>
 <h3>ContactDetail</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -10,7 +9,6 @@
 
 {% include extension-list-ContactDetail.xhtml %}
 
-<a name="ext-DataRequirement"> </a>
 <a name="DataRequirement"> </a>
 <h3>DataRequirement</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -20,7 +18,6 @@
 
 {% include extension-list-DataRequirement.xhtml %}
 
-<a name="ext-ParameterDefinition"> </a>
 <a name="ParameterDefinition"> </a>
 <h3>ParameterDefinition</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -30,7 +27,6 @@
 
 {% include extension-list-ParameterDefinition.xhtml %}
 
-<a name="ext-RelatedArtifact"> </a>
 <a name="RelatedArtifact"> </a>
 <h3>RelatedArtifact</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -40,7 +36,6 @@
 
 {% include extension-list-RelatedArtifact.xhtml %}
 
-<a name="ext-TriggerDefinition"> </a>
 <a name="TriggerDefinition"> </a>
 <h3>TriggerDefinition</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -50,7 +45,6 @@
 
 {% include extension-list-TriggerDefinition.xhtml %}
 
-<a name="ext-Expression"> </a>
 <a name="Expression"> </a>
 <h3>Expression</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -60,7 +54,6 @@
 
 {% include extension-list-Expression.xhtml %}
 
-<a name="ext-UsageContext"> </a>
 <a name="UsageContext"> </a>
 <h3>UsageContext</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -70,7 +63,6 @@
 
 {% include extension-list-UsageContext.xhtml %}
 
-<a name="ext-ExtendedContactDetail"> </a>
 <a name="ExtendedContactDetail"> </a>
 <h3>ExtendedContactDetail</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -80,7 +72,6 @@
 
 {% include extension-list-ExtendedContactDetail.xhtml %}
 
-<a name="ext-VirtualServiceDetail"> </a>
 <a name="VirtualServiceDetail"> </a>
 <h3>VirtualServiceDetail</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -90,7 +81,6 @@
 
 {% include extension-list-VirtualServiceDetail.xhtml %}
 
-<a name="ext-Availability"> </a>
 <a name="Availability"> </a>
 <h3>Availability</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
@@ -100,7 +90,6 @@
 
 {% include extension-list-Availability.xhtml %}
 
-<a name="ext-MonetaryComponent"> </a>
 <a name="MonetaryComponent"> </a>
 <h3>MonetaryComponent</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
