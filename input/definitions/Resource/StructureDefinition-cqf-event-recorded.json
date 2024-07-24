@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "cqf-recorded",
+  "id": "cqf-event-recorded",
   "extension": [{
     "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
     "valueCode": "cqi"
   }],"text": {
     "status": "extensions"
   },
-  "url": "http://hl7.org/fhir/StructureDefinition/cqf-recorded",
+  "url": "http://hl7.org/fhir/StructureDefinition/cqf-event-recorded",
   "version": "5.0.0",
   "name": "CQFNotDoneRecorded",
   "title": "CQF Not Done Recorded",
@@ -40,18 +40,6 @@
     {
       "type": "element",
       "expression": "Communication"
-    },
-    {
-      "type": "element",
-      "expression": "MedicationAdministration"
-    },
-    {
-      "type": "element",
-      "expression": "MedicationDispense"
-    },
-    {
-      "type": "element",
-      "expression": "Procedure"
     }
   ],
   "type": "Extension",
@@ -74,7 +62,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-recorded"
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/cqf-event-recorded"
       },
       {
         "id": "Extension.value[x]",
