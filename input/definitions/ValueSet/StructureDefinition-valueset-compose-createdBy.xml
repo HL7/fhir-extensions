@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="User who created the compose for the ValueSet."/>
+  <description value="User who created the ValueSet.compose for the ValueSet version."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -65,7 +65,7 @@
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="string"/>
+        <code value="ContactDetail"/>
       </type>
     </element>
   </differential>

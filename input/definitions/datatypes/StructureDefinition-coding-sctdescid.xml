@@ -49,7 +49,15 @@
   </context>
   <context>
     <type value="element"/>
+    <expression value="CodeSystem.concept.display"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="CodeSystem.concept.designation"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.expansion.contains.display"/>
   </context>
   <context>
     <type value="element"/>
