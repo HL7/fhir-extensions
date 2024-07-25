@@ -1,6 +1,5 @@
 ﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
 
-<a name="ext-Reference"> </a>
 <a name="Reference"> </a>
 <h3>Reference</h3>
 <table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
@@ -10,7 +9,6 @@
 
 {% include extension-list-Reference.xhtml %}
 
-<a name="ext-CodeableReference"> </a>
 <a name="CodeableReference"> </a>
 <h3>CodeableReference</h3>
 <table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>

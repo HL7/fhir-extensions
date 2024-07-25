@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A code that controls how an extension is treated when snapshots are generated"/>
+  <description value="A code that controls how an extension is treated when snapshots are generated."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,8 +49,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Inheritance Control Code"/>
-      <definition value="A code that controls how extensions are treated when snapshots in derived profiles are generated"/>
-      <comment value="Some extensions should be inherited, while others are metadata that don't propagate into derived profiles (or shouldn't)"/>
+      <definition value="A code that controls how extensions are treated when snapshots in derived profiles are generated."/>
+      <comment value="Some extensions should be inherited, while others are metadata that don't propagate into derived profiles (or shouldn't)."/>
       <min value="0"/>
       <max value="1"/>
     </element>

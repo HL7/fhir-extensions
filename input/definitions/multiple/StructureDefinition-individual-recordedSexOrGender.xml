@@ -195,12 +195,49 @@
         <code value="dateTime"/>
       </type>
     </element>
+    <element id="Extension.extension:source">
+      <path value="Extension.extension"/>
+      <sliceName value="source"/>
+      <short value="The source of the Recorded Sex or Gender value."/>
+      <definition value="A reference to the source of the Recorded Sex or Gender value."/>
+      <comment value="Unlike the sourceDocument element, this element can reference non-document sources including applications, organisations or individuals. For example, if the Recored Sex or Gender value is recorded in a national patient identifier system this element may reference that system. This element can also be the source of the document referred to in the sourceDocument element. If values for sourceDocument and source are both present, then the sourceDocument may be assumed to have originated from the source e.g. a clinical document in an electronic health record system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:source.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:source.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="source"/>
+    </element>
+    <element id="Extension.extension:source.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+    </element>
     <element id="Extension.extension:sourceDocument">
       <path value="Extension.extension"/>
       <sliceName value="sourceDocument"/>
       <short value="The document the sex or gender property was acquired from."/>
       <definition value="The reference to the source document or the code representing the type of document where this sex or gender property is initially recorded."/>
-      <comment value="For example, if a driver's license is scanned, this property may reference that scanned document."/>
+      <comment value="For example, if a driver's license is scanned, this property may reference that scanned document. If values for sourceDocument and source are both present, then the sourceDocument may be assumed to have originated from the source e.g. a clinical document in an electronic health record system."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -263,7 +300,7 @@
       <path value="Extension.extension"/>
       <sliceName value="jurisdiction"/>
       <short value="Who issued the document where the sex or gender was aquired"/>
-      <definition value="The jurisdiction or organization that issued the document from which the sex or gender was aquired"/>
+      <definition value="Jurisdiction responsible for the source and/or the sourceDocument where the recored sex or gender value was acquired."/>
       <comment value="For example, a individual's driver's license or passport would be issued by a specific state or country."/>
       <min value="0"/>
       <max value="1"/>
@@ -293,7 +330,7 @@
           <valueString value="Jurisdiction ValueSet"/>
         </extension>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/jurisdiction"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/jurisdiction"/>
       </binding>
     </element>
     <element id="Extension.extension:comment">

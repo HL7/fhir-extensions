@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="A natural language name identifying the {{title}}. This name should be usable as an identifier for the module by machine processing applications such as code generation."/>
+  <description value="A natural language name identifying the artifact. This name should be usable as an identifier for the module by machine processing applications such as code generation."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -49,8 +49,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Name for this {{title}} (computer friendly)"/>
-      <definition value="A natural language name identifying the {{title}}. This name should be usable as an identifier for the module by machine processing applications such as code generation."/>
+      <short value="Name for this artifact (computer friendly)"/>
+      <definition value="A natural language name identifying the artifact. This name should be usable as an identifier for the module by machine processing applications such as code generation."/>
       <comment value="The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly."/>
       <min value="0"/>
       <max value="1"/>

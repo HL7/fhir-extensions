@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="This extension allows conveying the coded meaning of the extension in instances of the extension"/>
+  <description value="This extension allows conveying the coded meaning of the extension in instances of the extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -53,7 +53,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="The meaning of the extension"/>
-      <definition value="This extension allows conveying the coded meaning of the extension in instances of the extension"/>
+      <definition value="This extension allows conveying the coded meaning of the extension in instances of the extension."/>
       <comment value="This SHOULD be the same as the code that appears in the definition of the extension in StructureDefinition.snapshot.element[0].code."/>
       <min value="0"/>
       <max value="1"/>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="measurereport-category"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cqi"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/CodeSystem/measurereport-category"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.1.2122"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="MeasureReportCategory"/>
+  <title value="Measure Report Category"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Clinical Quality Information"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/cqi"/>
+    </telecom>
+  </contact>
+  <description value="Codes defining measure report categories"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="quality"/>
+    <display value="Quality"/>
+    <definition value="Indicates this is a quality measure report."/>
+  </concept>
+  <concept>
+    <code value="ra"/>
+    <display value="Risk Adjustment"/>
+    <definition value="Indicates this is a risk adjustment measure report focused on risk adjustment for revenue normalization."/>
+  </concept>  
+  <concept>
+    <code value="vbp"/>
+    <display value="Value-Based Performance"/>
+    <definition value="Indicates this is a value-based performance measure report."/>
+  </concept>
+</CodeSystem>

@@ -20,7 +20,7 @@
   <name value="Obligation"/>
   <title value="Obligation Extension"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
@@ -28,7 +28,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail"/>
+  <description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -57,7 +57,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Obligations for applications using element/in model"/>
-      <definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail"/>
+      <definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail."/>
       <min value="0"/>
       <max value="*"/>
     </element>

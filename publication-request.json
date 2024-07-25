@@ -1,10 +1,10 @@
 {
   "package-id" : "hl7.fhir.uv.extensions",
-  "version" : "1.0.0",
-  "path" : "http://hl7.org/fhir/extensions/1.0.0",
+  "version" : "5.1.0",
+  "path" : "http://hl7.org/fhir/extensions/5.1.0",
   "mode" : "milestone",
   "status" : "trial-use",
-  "sequence" : "Releases",
-  "desc" : "First release (With R5)",
+  "sequence" : "Release 5.1",
+  "desc" : "Full release subsequent to ballot, and many other improvements",
   "first" : false
 }

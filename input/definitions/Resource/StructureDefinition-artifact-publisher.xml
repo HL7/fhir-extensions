@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="The name of the organization or individual responsible for the release and ongoing maintenance of the {{title}}."/>
+  <description value="The name of the organization or individual responsible for the release and ongoing maintenance of the artifact."/>
   <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -50,8 +50,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Name of the publisher/steward (organization or individual)"/>
-      <definition value="The name of the organization or individual responsible for the release and ongoing maintenance of the {{title}}."/>
-      <comment value="Usually an organization but may be an individual. The publisher (or steward) of the {{title}} is the organization or individual primarily responsible for the maintenance and upkeep of the {{title}}. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the {{title}}. This item SHOULD be populated unless the information is available from context."/>
+      <definition value="The name of the organization or individual responsible for the release and ongoing maintenance of the artifact."/>
+      <comment value="Usually an organization but may be an individual. The publisher (or steward) of the artifact is the organization or individual primarily responsible for the maintenance and upkeep of the artifact. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the artifact. This item SHOULD be populated unless the information is available from context."/>
       <min value="0"/>
       <max value="1"/>
     </element>

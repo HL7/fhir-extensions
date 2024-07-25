@@ -9,7 +9,7 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/confidential"/>
   <identifier>
@@ -54,6 +54,7 @@
       <path value="Extension"/>
       <short value="Confidential"/>
       <definition value="Expresses the access policy or policies associated with the element."/>
+      <comment value="This extension is deprecated, use the Inline-sec-label extension instead. The Inline-sec-label extension is generic and useable anywhere and has significant guidance around its use in the defining DS4P Implementation Guide."/>      
       <min value="0"/>
       <max value="*"/>
     </element>

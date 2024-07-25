@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ObsSpecimenCode"/>
   <title value="Observation Specimen Code"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-03-02"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -48,8 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="A code representing the the type of specimen used for this observation.  Should only be used if not implicit in the code found in `Observation.code`"/>
-      <definition value="A code representing the the type of specimen used for this observation.  Should only be used if not implicit in the code found in `Observation.code`."/>
+      <short value="A code representing the the type of specimen used for this observation."/>
+      <definition value="Given the ability to use the referenced Specimen resource to represent just a code, this extension is deprecated. Old description: A code representing the the type of specimen used for this observation.  Should only be used if not implicit in the code found in `Observation.code`. "/>
       <min value="0"/>
       <max value="1"/>
     </element>
