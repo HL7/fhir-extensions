@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="A reference to a concept map that is relevant for the interpretation of this value set."/>
+  <description value="A concept map that may help with understanding the use of the value set. For example, the concept map may supply a set of translations used or intended to be used with this value set."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A concept map relevant to interpret this value set"/>
-      <definition value="A reference to a concept map that is relevant for the interpretation of this value set."/>
+      <definition value="A concept map that may help with understanding the use of the value set. For example, the concept map may supply a set of translations used or intended to be used with this value set."/>
       <comment value="One use of this extension is to use it to include a partial concept map inside an expansion, only containing maps for the concepts included in this particular expansion."/>
       <min value="0"/>
       <max value="1"/>
