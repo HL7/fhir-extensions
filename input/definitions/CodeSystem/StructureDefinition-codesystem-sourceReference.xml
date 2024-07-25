@@ -11,6 +11,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="deprecated"/>
+  </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
