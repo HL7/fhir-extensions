@@ -14,7 +14,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
-  <url value="http://hl7.org/fhir/tools/ValueSet/select-by-map-filter"/>
+  <url value="http://hl7.org/fhir/ValueSet/select-by-map-filter"/>
   <version value="5.0.0"/>
   <name value="SelectByMapFilterCodesVS"/>
   <title value="SelectByMap Filter Codes (VS)"/>

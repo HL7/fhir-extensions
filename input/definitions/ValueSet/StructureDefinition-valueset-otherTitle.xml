@@ -116,6 +116,19 @@
         <code value="boolean"/>
       </type>
     </element>
+	<element id="Extension.extension:language">
+      <path value="Extension.extension"/>
+      <sliceName value="language"/>
+      <short value="Which language this title is in"/>
+      <definition value="Flag that this Title is in this language"/>
+      <comment value="There may be multiple human readable titles in different languages, and this flag indicates which languages they are in."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="false"/>
+    </element>
     <element id="Extension.extension:language.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
@@ -125,7 +138,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="preferred"/>
+      <fixedUri value="language"/>
     </element>
     <element id="Extension.extension:language.value[x]">
       <path value="Extension.extension.value[x]"/>
