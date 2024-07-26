@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Natural language names identifying the value set. These names should be usable as an identifier for the module by machine processing applications such as code generation."/>
+  <description value="Natural language names identifying the value set. These names should be usable as an identifier for the module by machine processing applications such as code generation.  This extension is deprecated.  The valueset-otherTitle extension should be used to provide other titles instead of this extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

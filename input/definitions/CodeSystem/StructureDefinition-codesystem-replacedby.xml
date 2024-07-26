@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="A code that replaces this - use this code instead."/>
+  <description value="A code that replaces this - use this code instead.  This extension has been retired as it is unusable with it's current context and because identification of replacement codes should be captured using concept properties."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

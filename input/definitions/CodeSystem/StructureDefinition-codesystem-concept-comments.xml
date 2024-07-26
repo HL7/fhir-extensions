@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="A comment that explains how this code is used in this context (where the value set is expected to be used)."/>
+  <description value="A comment that explains how this code is used in this context (where the value set is expected to be used).  This extension is retired.  The comment codesystem property should be used instead."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

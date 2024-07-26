@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="A special note for implementers about the status of the resource."/>
+  <description value="A special note for implementers about the status of the resource.  This extension is deprecated as Terminology Infrastructure was unable to determine a use for it."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

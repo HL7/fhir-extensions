@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes."/>
+  <description value="Information on changes made to the Value Set Definition over time, and also has a contained audit trail of all such changes.  This extension is retired.  Recording history of a value set definition should be done using provenance bundles instead."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
