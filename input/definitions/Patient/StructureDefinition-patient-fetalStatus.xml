@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="patient-bornStatus"/>
+  <id value="patient-fetalStatus"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="pa"/>
+    <valueCode value="pc"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated"/>
+    <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/patient-bornStatus"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1493"/>
-  </identifier>
+  <url value="http://hl7.org/fhir/StructureDefinition/patient-fetalStatus"/>
   <version value="5.0.0"/>
-  <name value="PatBornStatus"/>
-  <title value="Patient Born Status"/>
-  <status value="retired"/>
+  <name value="PatFetalStatus"/>
+  <title value="Patient Fetal Status"/>
+  <status value="draft"/>
   <experimental value="true"/>
-  <date value="2020-12-28T16:55:11+11:00"/>
-  <publisher value="HL7 International / Patient Administration"/>
+  <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>
       <system value="url"/>
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="The living/delivery status of the fetus (patient). This extension is deprecated and replaced by patient-fetalStatus extension."/>
+  <description value="The fetal status of the subject when still in utero. This extension would not apply to Patients that have a birthDate."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,27 +43,28 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="born | unborn | fetal-demise | unknown"/>
-      <definition value="An indicator on the fetal status of a baby. Typically used in maternity where the patient record may be created before the birth of the baby. This extension is deprecated and replaced by patient-fetalStatus extension."/>
+      <short value="potential-for-live-birth | fetal-demise | unknown"/>
+      <definition value="An indicator on the fetal status of a baby. Typically used in maternity where the patient record may be created before the birth of the baby."/>
       <min value="0"/>
       <max value="1"/>
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/patient-bornStatus"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/patient-fetalStatus"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="code"/>
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PatientBornStatus"/>
+          <valueString value="PatientfetalStatus"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/patient-bornstatus"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/patient-fetalstatus"/>
       </binding>
     </element>
   </differential>
