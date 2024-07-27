@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="If true, the definitions of the concepts should be treated and rendered as markdown for improved presentation."/>
+  <description value="If true, the definitions of the concepts should be treated and rendered as markdown for improved presentation.  This extension is deprecated as the Terminology Infrastructure work group felt there wasn't a use case for the extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
