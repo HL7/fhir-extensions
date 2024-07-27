@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="An extra warning about the correct use of the value set."/>
+  <description value="A warning about how to interpret and/or correctly use the value set.  This is intended for anyone engaging with the value set definition or its expansion.  For example, a warning advising of licensing requirements for code systems the value set relies upon."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,8 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Extra warning about the correct use of the value set"/>
-      <definition value="An extra warning about the correct use of the value set."/>
+      <short value="A warning about how to interpret and/or correctly use the value set"/>
+      <definition value="A warning about how to interpret and/or correctly use the value set.  This is intended for anyone engaging with the value set definition or its expansion.  For example, a warning advising of licensing requirements for code systems the value set relies upon."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>

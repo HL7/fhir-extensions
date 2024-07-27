@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder"/>
   <identifier>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Identifies the relative order in which concepts within the value set should be presented to a user."/>
+  <description value="Identifies the relative order in which concepts within the value set should be presented to a user.  This extension has been deprecated and is not recommended for use as the purpose of this extension does not make sense for a code system."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

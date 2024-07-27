@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="select-by-map-filter"/>
+  <meta>
+    <lastUpdated value="2024-07-25T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ti"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/select-by-map-filter"/>
+  <version value="5.0.0"/>
+  <name value="SelectByMapFilterCodesVS"/>
+  <title value="SelectByMap Filter Codes (VS)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+    </telecom>
+  </contact>
+  <description value="select-by-map filter Codes - from either R4 (or previous) or R5"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>  
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/concept-map-relationship"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/tools/CodeSystem/r4-equivalence"/>
+    </include>
+  </compose>
+</ValueSet>

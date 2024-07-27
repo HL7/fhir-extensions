@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Indicates an authoritative source for performing value set expansions."/>
+  <description value="A trusted FHIR terminology server endpoint (the [base] url of the FHIR server) where an expansion of the valueset may be performed."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Reference to a trusted expansion"/>
-      <definition value="Indicates an authoritative source for performing value set expansions."/>
+      <definition value="A trusted FHIR terminology server endpoint (the [base] url of the FHIR server) where an expansion of the valueset may be performed."/>
       <comment value="If the designated &quot;authoritative source&quot; (as specified in the valueset-authoritativeSource extension, if present) is unable to provide a valid expansion, this extension indicates an alternate authoritative source where the value set expansion may be performed. The alternate authoritative source url must reference a FHIR terminology server endpoint (the [base] url of the FHIR server)."/>
       <min value="0"/>
       <max value="*"/>

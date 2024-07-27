@@ -9,7 +9,7 @@
     <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/codesystem-authoritativeSource"/>
   <identifier>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="A reference to the authoritative, human readable, source of truth for the code system information."/>
+  <description value="A reference to the authoritative, human readable, source of truth for the code system information.  This extension has been deprecated due to being poorly defined.  External code system information can be found in THO or the relevant HTA confluence pages."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

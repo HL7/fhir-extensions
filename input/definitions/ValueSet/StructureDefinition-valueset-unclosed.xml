@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Marks that the expansion is  incomplete, and values other than those listed may be valid. This may be used because post-coordinated codes are allowed, and no practical expansion can be produced."/>
+  <description value="Marks that the expansion is incomplete, and values other than those listed may be valid. This may be used when technical limitations prevent a full expansion, or when post-coordinated codes are allowed, and no complete expansion can be produced.  This extension SHALL only be used when the client specifies that it will recognize and process an incomplete expansion. If the client has not specified it will recognize and process an incomplete expansion, the server SHALL return an error."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="The expansion is incomplete (perhaps because of post-coordination)"/>
-      <definition value="Marks that the expansion is incomplete, and values other than those listed may be valid. This SHALL only be used when post-coordinated codes are allowed or codes with a grammar, and no practical expansion can be produced."/>
+      <definition value="Marks that the expansion is incomplete, and values other than those listed may be valid. This may be used when technical limitations prevent a full expansion, or when post-coordinated codes are allowed, and no complete expansion can be produced.  This extension SHALL only be used when the client specifies that it will recognize and process an incomplete expansion. If the client has not specified it will recognize and process an incomplete expansion, the server SHALL return an error."/>
       <comment value="This extension exists to allow for definition and use of value sets that are unbounded by definition, including those for which it may always be impractical to set bounds. This extension is not used to communicate value sets that are limited for practical reasons. The offset and total elements of the expansion support that use case."/>
       <min value="0"/>
       <max value="1"/>

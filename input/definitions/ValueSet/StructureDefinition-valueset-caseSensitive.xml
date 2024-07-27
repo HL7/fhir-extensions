@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="If this a case sensitive code."/>
+  <description value="An assertion of whether the code is case sensitive or not. This assertion SHALL be based on how the code system is defined. If the server generating the expansion does not know how the code system defined case sensitivity of codes, this extension SHALL NOT be used."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,8 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="If code is case sensitive"/>
-      <definition value="If this a case sensitive code."/>
+      <short value="As assertion of whether the code is case sensitive or not"/>
+      <definition value="As assertion of whether the code is case sensitive or not. This assertion SHALL be based on how the code system is defined. If the server generating the expansion does not know how the code system defined case sensitivity of codes, this extension SHALL NOT be used."/>
       <comment value="See comments on ValueSet.codeSystem.caseSensitive. Systems should generally assume case sensitivity when dealing with expansions, and only consider case sensitivity when matching existing codes."/>
       <min value="0"/>
       <max value="1"/>

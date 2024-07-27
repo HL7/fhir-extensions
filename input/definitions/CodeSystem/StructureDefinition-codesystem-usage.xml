@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Consumers of the value set and the implementations, projects or standards that the author has utilized the value set in."/>
+  <description value="Consumers of the code system and the implementations, projects or standards that the author has used the code system in. The use of this extension in no way restricts the use of the code system."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,8 +49,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Who has used and how?"/>
-      <definition value="Consumers of the value set and the implementations, projects or standards that the author has utilized the value set in."/>
-      <comment value="This is likely to be a ???point in time??? view and should not be considered an authoritative listing of all uses of the value set."/>
+      <definition value="Consumers of the code system and the implementations, projects or standards that the author has utilized the code system in."/>
+      <comment value="This is likely to be a ???point in time??? view and should not be considered an authoritative listing of all uses of the code system."/>
       <min value="0"/>
       <max value="*"/>
       <isModifier value="false"/>
@@ -58,7 +58,7 @@
     <element id="Extension.extension:user">
       <path value="Extension.extension"/>
       <sliceName value="user"/>
-      <short value="A consumer of or client for the value set"/>
+      <short value="A consumer of or client for the code system"/>
       <definition value="This is most likely to be an organization but can be an individual. It would not be a program, that information should be recorded in the usage.use."/>
       <min value="1"/>
       <max value="1"/>
@@ -88,8 +88,8 @@
     <element id="Extension.extension:use">
       <path value="Extension.extension"/>
       <sliceName value="use"/>
-      <short value="Implementation/project/standard that uses value set"/>
-      <definition value="A descriptive name of the project or standard in which the value set is used."/>
+      <short value="Implementation/project/standard that uses the code system"/>
+      <definition value="A descriptive name of the project or standard in which the code system is used."/>
       <min value="1"/>
       <max value="1"/>
       <type>

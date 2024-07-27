@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/valueset-toocostly"/>
   <identifier>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Marks that the expansion is  incomplete, because the full value set is too large to represent, and the client asked for an incomplete fragment."/>
+  <description value="Marks that the expansion is  incomplete, because the full value set is too large to represent, and the client asked for an incomplete fragment.  Used in STU3 and earlier terminology services. The information it provides should be communicated with operation outcome code = too-costly by a terminology server based on a more recent FHIR version. "/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="The expansion is incomplete because the full expansion is too large"/>
-      <definition value="Marks that the expansion is  incomplete, because the full value set is too large to represent, and the client asked for an incomplete fragment."/>
+      <definition value="Marks that the expansion is  incomplete, because the full value set is too large to represent, and the client asked for an incomplete fragment.  Used in STU3 and earlier terminology services. The information it provides should be communicated with operation outcome code = too-costly by a terminology server based on a more recent FHIR version. "/>
       <comment value="Typically, servers will limit expansion to a number like 10000 codes."/>
       <min value="0"/>
       <max value="1"/>

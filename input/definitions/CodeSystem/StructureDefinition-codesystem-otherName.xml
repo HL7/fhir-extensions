@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/codesystem-otherName"/>
   <identifier>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Human readable names for the codesystem."/>
+  <description value="Human readable names for the codesystem.  This codesystem has been deprecated.  The codesystem-otherTitle extension should be used for capturing other human readable names."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

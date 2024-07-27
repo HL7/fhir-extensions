@@ -9,7 +9,7 @@
     <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/codesystem-use-markdown"/>
   <identifier>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="If true, the definitions of the concepts can be treated and rendered as markdown for improved presentation."/>
+  <description value="If true, the definitions of the concepts should be treated and rendered as markdown for improved presentation.  This extension is deprecated as the Terminology Infrastructure work group felt there wasn't a use case for the extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,8 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Indicate that definitions can be processed as markdown"/>
-      <definition value="If true, the definitions of the concepts can be treated and rendered as markdown for improved presentation."/>
+      <short value="Indicate that definitions should be processed as markdown"/>
+      <definition value="If true, the definitions of the concepts should be treated and rendered as markdown for improved presentation."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>
