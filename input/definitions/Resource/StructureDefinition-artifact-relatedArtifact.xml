@@ -55,10 +55,6 @@
       <min value="0"/>
       <max value="*"/>
     </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension"/>
-      <max value="0"/>
-    </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"/>
