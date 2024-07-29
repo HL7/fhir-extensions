@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "event-recorded",
+  "extension": [{
+    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode": "fhir"
+  }],"text": {
+    "status": "extensions"
+  },
+  "url": "http://hl7.org/fhir/StructureDefinition/event-recorded",
+  "version": "5.0.0",
+  "name": "EventRecorded",
+  "title": "Event Recorded",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-08-22",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact": [
+    {
+      "name" : "FHIR Infrastructure WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value" : "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],  "description": "Captures the recorded date of the event.",
+  "purpose": "This extension is defined to allow resources that do not have a suitable recorded date element to capture the time the event is recorded. For example, Communication resources in not-done status do not have an element to capture when the event was recorded.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Communication"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Captures the recorded date of the event.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/event-recorded"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}
