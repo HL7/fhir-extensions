@@ -46,6 +46,6 @@
   <base value="SupplyDelivery"/>
   <base value="Task"/>
   <type value="reference"/>
-  <expression value="DomainResource.extension('http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value"/>
+  <expression value="Resource.extension('http://hl7.org/fhir/StructureDefinition/workflow-researchStudy').value"/>
   <processingMode value="normal"/>
 </SearchParameter>
