@@ -26,6 +26,7 @@
       ]
     }
   ],  "description": "Captures the recorded date of the event.",
+  "purpose": "This extension is defined to allow resources that do not have a suitable recorded date element to capture the time the event is recorded. For example, Communication resources in not-done status do not have an element to capture when the event was recorded.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
