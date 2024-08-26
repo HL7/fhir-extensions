@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="subject-locationClassification"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/subject-locationClassification"/>
+  <version value="5.0.0"/>
+  <name value="EncounterSubjectLocationClassification"/>
+  <title value="An example set of classifications of the location of the subject in an Encounter."/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
+  <description value="The classification of the location of the subject in an Encounter."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="assigned"/>
+    <display value="Assigned"/>
+    <definition value="The patient is administratively assigned to the location.  This usually means that the assigned location is responsible for the patient's overall care."/>
+  </concept>
+  <concept>
+    <code value="temporary"/>
+    <display value="Temporary"/>
+    <definition value="The patient is temporarily in a location.  For example, they may be assigned to an inpatient bed, but is temporarily in the dialysis department receiving dialysis."/>
+  </concept>
+  <concept>
+    <code value="transient"/>
+    <display value="Transient"/>
+    <definition value="The geospatial area where the patient is known to be physically present.  This area is not necessarily part of the administrative location structure.  For example, the patient is in a visiting room, or in the hallway near the vending machine."/>
+  </concept>
+</CodeSystem>
