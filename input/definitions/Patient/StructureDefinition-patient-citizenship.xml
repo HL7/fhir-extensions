@@ -81,6 +81,13 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Country"/>
+        </extension>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/country"/>
+      </binding>
     </element>
     <element id="Extension.extension:period">
       <path value="Extension.extension"/>
