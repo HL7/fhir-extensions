@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="The importance of the patient (e.g. VIP)."/>
+  <description value="The importance of the patient (e.g. VIP).&#xD;&#xD;When considering using this extension you should also consider if using any or all of the following is also appropriate:&#xD;* `Encounter.specialCourtesy` which provides a simple flag indicating additional `benefits` that the patient might be entitled to during a visit *(e.g. special room types)*.&#xD;* `Resource.meta.security` with codes such as `VIP`. These might be used by actual data level security controls within the system, potentially requiring specific user permissions to access the data." />
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
