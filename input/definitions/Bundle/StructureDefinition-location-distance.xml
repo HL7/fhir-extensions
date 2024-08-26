@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A calculated distance between the resource and a provided location."/>
+  <description value="This extension is only applicable to searchset Bundles. It is the result of a search on Location using the &quot;near&quot; parameter indicating the calculated distance between the geographic location of this Location resource and the geographic location provided in the search query.&#xD;&#xD;This distance does not consider a location boundary extension if it exists on the resource.&#xD;&#xD;If multiple near positions are included in the search query, the distance to the closest point provided may be included." />
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
