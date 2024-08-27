@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="A language that services are available in at this location."/>
+  <description value="Language(s) that services are available in at this location/organization."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -42,17 +42,29 @@
     <type value="element"/>
     <expression value="Location"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="ExtendedContactDetail"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Organization"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OrganizationAffiliation"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="A language that services are available in at this location"/>
+      <short value="Language(s) that services are available in at this location/organization"/>
       <definition value="Some locations specifically cater to multiple languages, this property permits a directory to declare the languages this is offered in. Typically this is only provided where a service operates in communities with mixed languages used."/>
-      <comment value="When using this property it indicates that the services at this location are generally available with this language. It is not derived from the practitioners, and not all are required to use this language, just that this language is generally available."/>
+      <comment value="When using this property it indicates that the services at this location are generally available with these languages. It is not derived from the practitioners, and not all are required to use this language, just that this language is generally available."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
