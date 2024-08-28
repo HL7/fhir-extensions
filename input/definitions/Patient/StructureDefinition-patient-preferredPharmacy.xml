@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="patient-preferredPharmacy"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/patient-preferredPharmacy"/>
+  <version value="6.0.0"/>
+  <name value="PatientPreferredPharmacy"/>
+  <title value="Patient preferred pharmacy"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-11"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
+  <description value="The pharmacies that are preferred for dispensing prescribed medications.  A patient might prefer their local pharmacy.  A provider in a given practice may prefer a pharmacy near their clinic.  Or facilities may have a preference to use an in-house pharmacy.  These preferences may be represented using this extension on several resource types, and are expected to be inputs into a process that determines which pharmacy is ultimately used to dispense a medication.  That process may include considering drug formularies, pharmacy operating hours, pharmacy inventory, practitioner preferences, patient preferences, etc."/>
+  <fhirVersion value="6.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Patient"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Encounter"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="PractitionerRole"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Organization"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Location"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Patient's preferred pharmacy"/>
+      <definition value="The pharmacies that are preferred for dispensing prescribed medications.  A patient might prefer their local pharmacy.  A provider in a given practice may prefer a pharmacy near their clinic.  Or facilities may have a preference to use an in-house pharmacy.  These preferences may be represented using this extension on several resource types, and are expected to be inputs into a process that determines which pharmacy is ultimately used to dispense a medication.  That process may include considering drug formularies, pharmacy operating hours, pharmacy inventory, practitioner preferences, patient preferences, etc."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+
+    <element id="Extension.extension:pharmacy">
+      <path value="Extension.extension"/>
+      <sliceName value="pharmacy"/>
+      <short value="Preferred pharmacy for dispensing prescribed medications"/>
+      <definition value="The pharmacy that is preferred for dispensing prescribed medications."/>
+      <comment value="There may be multiple preferred pharmacies for different types of drugs.  For example, they may have one pharmacy that is preferred for general outpatient medications, but another pharmacy that is preferred for specialty oncology medications."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:pharmacy.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:pharmacy.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="pharmacy"/>
+    </element>
+    <element id="Extension.extension:pharmacy.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+    </element>
+
+    <element id="Extension.extension:type">
+      <path value="Extension.extension"/>
+      <sliceName value="type"/>
+      <short value="Category of pharmacy"/>
+      <definition value="Identifies the categories of medications for which this pharmacy is preferred."/>
+      <comment value="For example, one pharmacy might be preferred oncology medications, while another pharmacy is preferred for general outpatient medications."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:type.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="type"/>
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <comment value="Example categories for this could be things like: outpatient, oncology, on-line"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationCategory"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Category of medications dispensed by the pharmacy."/>
+      </binding>
+    </element>
+
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/patient-preferredPharmacy"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
