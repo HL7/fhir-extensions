@@ -45,7 +45,15 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/practitionerrole-employmentStatus"/>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0066"/>
     </include>
+    <exclude>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0066"/>
+      <filter>
+        <property value="deprecated"/>
+        <op value="="/>
+        <value value="2.9"/>
+      </filter>
+    </exclude>
   </compose>
 </ValueSet>
