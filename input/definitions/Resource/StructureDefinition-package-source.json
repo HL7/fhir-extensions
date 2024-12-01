@@ -1,0 +1,146 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "package-source",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/package-source",
+  "version" : "1.0.0",
+  "name" : "PackageSource",
+  "title" : "Package Source",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-12-01",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    }]
+  }],
+  "description" : "Specifies the package in which an artifact is or was included.",
+  "purpose" : "To allow artifacts to declare the package in which they are defined. This typically corresponds to the implementation guide in which the artifact is packaged. However, to support the use of non-IG-packaged content, this extension allows artifacts to declare their intended scope so that evaluation environments can correctly resolve namespaces and dependencies.",
+  "fhirVersion" : "4.0.1",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Resource"
+  }, {
+    "type": "element",
+    "expression": "Meta"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "What package the artifact is defined in",
+      "definition" : "Specifies the package in which an artifact is or was included.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id": "Extension.extension:packageId",
+      "path": "Extension.extension",
+      "sliceName": "packageId",
+      "short": "NPM-style package id",
+      "definition": "The id of the package in which the artifact is defined",
+      "min": 1,
+      "max": "1",
+      "type": [{
+        "code": "Extension"
+      }]
+    },
+    {
+      "id": "Extension.extension:packageId.url",
+      "path": "Extension.extension.url",
+      "fixedUri": "packageId"
+    },
+    {
+      "id": "Extension.extension:packageId.value[x]",
+      "path": "Extension.extension.value[x]",
+      "min": 1,
+      "max": "1",
+      "type": [{
+        "code": "id"
+      }]
+    },
+    {
+      "id": "Extension.extension:version",
+      "path": "Extension.extension",
+      "sliceName": "version",
+      "short": "Package version",
+      "definition": "The version of the package in which the artifact is defined",
+      "comment": "Although not required, this is strongly encouraged and SHALL be semver",
+      "min": 0,
+      "max": "1",
+      "type": [{
+        "code": "Extension"
+      }]
+    },
+    {
+      "id": "Extension.extension:version.url",
+      "path": "Extension.extension.url",
+      "fixedUri": "version"
+    },
+    {
+      "id": "Extension.extension:version.value[x]",
+      "path": "Extension.extension.value[x]",
+      "min": 1,
+      "max": "1",
+      "type": [{
+        "code": "string"
+      }]
+    },
+    {
+      "id": "Extension.extension:uri",
+      "path": "Extension.extension",
+      "sliceName": "uri",
+      "short": "Package uri",
+      "definition": "The canonical root uri for the package",
+      "comment": "Use of this element may be required in certain contexts, e.g. if packages are not hosted in NPM-style package servers, CRMI-style library definitions, etc.",
+      "min": 0,
+      "max": "1",
+      "type": [{
+        "code": "Extension"
+      }]
+    },
+    {
+      "id": "Extension.extension:uri.url",
+      "path": "Extension.extension.url",
+      "fixedUri": "uri"
+    },
+    {
+      "id": "Extension.extension:version.value[x]",
+      "path": "Extension.extension.value[x]",
+      "min": 1,
+      "max": "1",
+      "type": [{
+        "code": "uri"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min": 0,
+      "max": "0"
+    }]
+  }
+}
