@@ -48,7 +48,7 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="DomainResource"/>
+    <expression value="Narrative"/>
   </context>
   <context>
     <type value="element"/>
