@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="Html style value"/>
       <definition value="Identifies how the specified element should be rendered when displayed."/>
-      <comment value="This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/rendering.html#rendering-style)."/>
+      <comment value="This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/rendering.html#rendering-style)."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

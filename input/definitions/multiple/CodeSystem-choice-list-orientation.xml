@@ -33,7 +33,7 @@
   <version value="5.0.0"/>
   <name value="ChoiceListOrientation"/>
   <title value="choice list orientation code system"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
