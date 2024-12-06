@@ -149,13 +149,16 @@
         <code value="Period"/>
       </type>
     </element>
-
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
         <code value="uri"/>
       </type>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/researchStudy-studyRegistration"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>
