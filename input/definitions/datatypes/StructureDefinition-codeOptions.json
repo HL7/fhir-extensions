@@ -1,0 +1,102 @@
+{
+    "resourceType" : "StructureDefinition",
+    "id" : "codeOptions",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "cds"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode" : "can-bind"
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/codeOptions",
+    "name" : "CodeOptions",
+    "title" : "Code Options",
+    "status" : "active",
+    "experimental" : false,
+    "date" : "2019-11-01T09:29:23+11:00",
+    "publisher" : "HL7 International / Clinical Decision Support",
+    "contact" : [{
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://www.hl7.org/Special/committees/dss"
+      }]
+    }],
+    "description" : "A logical reference (i.e. a reference to ValueSet.url) to a value set/version that identifies a set of possible coded values used to convey a higher level concept that encompasses a list of candidate specializations when there is no formal code defined for that purpose. For example, the concept of COVID preventative medications can be expressed as a value set because there is no specific code representing that concept.",
+    "jurisdiction" : [{
+      "coding" : [{
+        "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "code" : "001"
+      }]
+    }],
+    "purpose": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities.",
+    "fhirVersion" : "4.0.1",
+    "mapping" : [{
+      "identity" : "v2",
+      "uri" : "http://hl7.org/v2",
+      "name" : "HL7 v2 Mapping"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }],
+    "kind" : "complex-type",
+    "abstract" : false,
+    "context" : [{
+      "type" : "element",
+      "expression" : "CodeableConcept"
+    }],
+    "type" : "Extension",
+    "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation" : "constraint",
+    "differential" : {
+      "element" : [{
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "Url of a value set of activities",
+        "definition" : "A logical reference (i.e. a reference to ValueSet.url) to a value set/version that identifies a set of possible coded values used to convey a higher level concept that encompasses a list of candidate specializations when there is no formal code defined for that purpose. For example, the concept of COVID preventative medications can be expressed as a value set because there is no specific code representing that concept.",
+        "comment": "This extension SHALL NOT be used when an appropriate higher level concept code exists. When this extension is used on an element with a required binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set. When used with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review). When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHALL include the title of the referenced value set.",
+        "requirements": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities.",
+        "min" : 0,
+        "max" : "1",
+        "isModifier" : false,
+        "mapping" : [{
+          "identity" : "v2",
+          "map" : "CWE."
+        },
+        {
+          "identity" : "rim",
+          "map" : "CD.valueSet/CD.valueSetVersion"
+        }]
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/codeOptions"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "label" : "value set",
+        "min" : 1,
+        "type" : [{
+          "code" : "canonical",
+          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ValueSet"]
+        }]
+      }]
+    }
+  }
