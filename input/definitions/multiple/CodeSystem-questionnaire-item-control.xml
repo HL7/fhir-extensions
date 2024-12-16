@@ -112,7 +112,7 @@
     <concept>
       <code value="page"/>
       <display value="Page"/>
-      <definition value="Indicates that the content within the group should appear as a logical &quot;page&quot; when rendering the form, such that all enabled items        within the page are displayed at once, but items in subsequent groups are not displayed until the user indicates a desire to move to the 'next' group.        (Header and footer items may still be displayed.) This designation may also influence pagination when printing questionnaires. If there are items at the same        level as a 'page' group that are listed before the 'page' group, they will be treated as a separate page.  Header and footer groups for a questionnaire will be rendered on all pages."/>
+      <definition value="Indicates that the content within the group should appear as a logical &quot;page&quot; when rendering the form, such that all enabled items within the page are displayed at once, but items in subsequent groups are not displayed until the user indicates a desire to move to the 'next' group.  (Header and footer groups for a questionnaire will be rendered on all pages.) This designation may also influence pagination when printing questionnaires.&#x0a;&#x0a;If a group item has this itemControl value, then all sibling items **SHALL** also be of type group and also have an itemControl value of 'page', 'header', or 'footer'.  Form fillers **SHOULD** raise an error if a Questionnaire fails to adhere to this requirement."/>
     </concept>
     <concept>
       <code value="tab-container"/>
