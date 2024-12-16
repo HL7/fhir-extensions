@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="This indicates that the element containing this extension has content that makes reference to the specified contained resource.\r\n* Expression may contain CQL or FHIRPath that makes reference to ValueSets\r\n* string may contain FHIRPath referencing ValueSets or contain escaped XHTML referencing images (as Binaries)\r\n* Narrative contains 'text' which is xhtml (and can't have extensions itself) which can also refer to images\r\n* markdown can refer to images."/>
+  <description value="This indicates that the element containing this extension has content that makes reference to the specified contained resource.\r\n* Expression may contain CQL or FHIRPath that makes reference to ValueSets&#x0a;* string may contain FHIRPath referencing ValueSets or contain escaped XHTML referencing images (as Binaries)&#x0a;* Narrative contains 'text' which is xhtml (and can't have extensions itself) which can also refer to images&#x0a;* markdown can refer to images."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
