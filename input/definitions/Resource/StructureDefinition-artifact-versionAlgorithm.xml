@@ -72,6 +72,12 @@
       <type>
         <code value="Coding"/>
       </type>
+    </element>
+    <element id="Extension.value[x]:valueCoding">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Coding"/>
+      </type>
       <binding>
         <strength value="extensible"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/version-algorithm"/>
