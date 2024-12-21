@@ -46,7 +46,7 @@
     <type value="element"/>
     <expression value="ElementDefinition"/>
   </context>
-  <contextInvariant value="ofType(ElementDefinition).binding.where(strength='required').exists() or where(%resource.is(Questionnaire)).exists(answerValueSet | answerOption)"/>
+  <contextInvariant value="ofType(ElementDefinition).binding.where(strength='required').exists() or where(%resource.is(Questionnaire)).exists(answerValueSet.exists() or answerOption.exists())"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
