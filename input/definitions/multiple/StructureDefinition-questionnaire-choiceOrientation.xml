@@ -42,13 +42,11 @@
     <type value="element"/>
     <expression value="Questionnaire.item"/>
   </context>
-  <!--
   <context>
     <type value="element"/>
     <expression value="ElementDefinition"/>
   </context>
-  -->
-  <contextInvariant value="type='choice' or type='open-choice'"/>
+  <contextInvariant value="ofType(ElementDefinition).type.exists(code='Coding') or where(%resource.is(Questionnaire)).exists(type.first()='choice' or type.first()='open-choice')"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
