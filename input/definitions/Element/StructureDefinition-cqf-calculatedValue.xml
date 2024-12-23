@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="A calculated value"/>
       <definition value="An expression that determines a calculated value. The expression may be simply the name of a expression in a referenced library, or it may be a complete inline expression."/>
-      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#cqf-calculatedValue)."/>
+      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/behavior.html#cqf-calculatedValue)."/>
       <min value="0"/>
       <max value="*"/>
     </element>

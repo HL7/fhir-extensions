@@ -59,7 +59,7 @@
       <path value="Extension"/>
       <short value="Maximum digits after decimal"/>
       <definition value="Identifies the maximum number of decimal places that may be specified for the data element."/>
-      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#maxDecimalPlaces)."/>
+      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/behavior.html#maxDecimalPlaces)."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

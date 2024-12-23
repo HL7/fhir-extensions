@@ -1,0 +1,8 @@
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+	<p>
+This extension only defines 'ghost' or similar prompt text.  It does NOT enforce format rules, nor does it enable transformation from an entry format to the exchange format.  To enforce rules on entry format for strings, use the <a href="behavior.html#constraint">constraint</a> mechanism with a regular expression.  There is no standard extension to manage transformation between entry and exchange format.
+</p>
+<p>
+This extension is primarily intended for use with 'string' elements.  Its use is not prohibited for other types of elements (e.g. dates, decimals, etc.)  However, caution should be used when asserting 'ghost' text for such elements as the form filler may change the entry or display format for the item based on locale and, unlike strings, where the exchange format can be dictated by the questionnaire, for dates, numerics, and most other types, the exchange syntax is fixed, meaning that expecting an alternate entry or display format will require the form filler to perform a transformation.
+</p>
+</div>

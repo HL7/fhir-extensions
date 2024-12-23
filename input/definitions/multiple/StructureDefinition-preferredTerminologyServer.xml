@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="sdc-questionnaire-preferredTerminologyServer"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="4">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/preferredTerminologyServer"/>
+  <name value="PreferredTerminologyServer"/>
+  <title value="Preferred Terminology Server"/>
+  <status value="active"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <name value="HL7 International / FHIR Infrastructure"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Indicates the terminology server(s) that are known to be capable of returning and potentially expanding the value set(s) associated with the resource or a particular portion of the resource (depending on where the extension appears).  If a full URL is not provided AND the requested query is a terminology operation (e.g. $lookup or $expand) the client SHOULD execute the operation against (one of) the preferredTerminologyServer(s) rather than the local repository. Systems SHOULD evaluate value sets using terminology servers as follows:  First, try any terminology servers declared on the element in question.  If there are more then one, try them in the order they appear.  Then try any servers that appear on ancestor elements in order of closest ancestor up to any on the resource root  If there are no declared servers or none of the ones listed provide a useful response, the form filler may then try any of the typical servers it would normally use.  A 'useful response' means a response that provides a valid (though potentially empty) expansion.  Clients MAY wish to log/report errors returned by terminology servers."/>
+  <purpose value="Not all terminology servers will necessarily have access to the codes.  If a questionnaire points to value sets, the rendering engine needs to know where to get a current expansion."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Questionnaire"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Questionnaire.item"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Preferred terminology server"/>
+      <definition value="Indicates the terminology server(s) that are known to be capable of returning and potentially expanding the value set(s) associated with the resource or a particular portion of the resource (depending on where the extension appears).  If a full URL is not provided AND the requested query is a terminology operation (e.g. $lookup or $expand) the client SHOULD execute the operation against (one of) the preferredTerminologyServer(s) rather than the local repository. Systems SHOULD evaluate value sets using terminology servers as follows:  First, try any terminology servers declared on the element in question.  If there are more then one, try them in the order they appear.  Then try any servers that appear on ancestor elements in order of closest ancestor up to any on the resource root  If there are no declared servers or none of the ones listed provide a useful response, the form filler may then try any of the typical servers it would normally use.  A 'useful response' means a response that provides a valid (though potentially empty) expansion.  Clients MAY wish to log/report errors returned by terminology servers."/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/preferredTerminologyServer"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="url"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

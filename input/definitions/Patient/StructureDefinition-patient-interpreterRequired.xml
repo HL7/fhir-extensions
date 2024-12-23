@@ -17,8 +17,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1332"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="PatInterpreterRequired"/>
-  <title value="Patient Interpreter Required"/>
+  <name value="InterpreterRequired"/>
+  <title value="Interpreter Required"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="This Patient requires an interpreter to communicate healthcare information to the practitioner."/>
+  <description value="Indicates whether an interpreter is required to facilitate communication in a healthcare setting. While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, and Encounter."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -42,15 +42,27 @@
     <type value="element"/>
     <expression value="Patient"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="RelatedPerson"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Encounter"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Practitioner"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Whether the patient needs an interpreter"/>
-      <definition value="This Patient requires an interpreter to communicate healthcare information to the practitioner."/>
-      <comment value="The Patient does not speak the default language of the organization, and hence requires an interpreter. If the patient has other languages in the Communications list, then that would be the type of interpreter required."/>
+      <short value="Whether an interpreter is required"/>
+      <definition value="Indicates whether an interpreter is required to facilitate communication in a healthcare setting. While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, and Encounter."/>
+      <comment value="The individual does not speak the default language of the organization, and hence requires an interpreter. If other languages are in the Communications list, then that would be the type of interpreter required.&#xD;&#xD;*While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, and Encounter.*&#xD;&#xD;When used on Patient, RelatedPerson, or Practitioner, it indicates a default or assumed need for an interpreter.&#xD;When used on Encounter, it indicates that an interpreter is needed to facilitate communication between some participants in that Encounter.&#xD;The encounter-level evaluation of whether an interpreter is needed might involve evaluating the language proficiencies of the participants." />
       <min value="0"/>
       <max value="1"/>
     </element>

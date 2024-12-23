@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="String equivalent with html markup"/>
       <definition value="This is an equivalent of the string on which the extension is sent, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing [restrictions on XHTML content](narrative.html#security) apply. Note that using [markdown](StructureDefinition-rendering-markdown.html) allows for greater flexibility of display."/>
-      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/rendering.html#rendering-xhtml)."/>
+      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/rendering.html#rendering-xhtml)."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

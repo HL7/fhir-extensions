@@ -46,6 +46,14 @@
     <type value="element"/>
     <expression value="Questionnaire.item.answerOption"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="QuestionnaireResponse.item.answer"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="QuestionnaireResponse.item.answer.value"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
@@ -54,7 +62,7 @@
       <path value="Extension"/>
       <short value="Assigned Ordinal Value"/>
       <definition value="A numeric value that allows the comparison (less than, greater than) or other numerical manipulation of a concept (e.g. Adding up components of a score). Scores are usually a whole number, but occasionally decimals are encountered in scores. In the CodeSystem and ValueSet resources, the item weight is represented using the [itemWeight property](codesystem-concept-properties.html#concept-properties-itemWeight)"/>
-      <comment value="Scores are commonly encountered in various clinical assessment scales. Assigning a value to a concept should generally be done in a formal code system that defines the value, or in an applicable value set for the concept, but some concepts do not have a formal definition (or are not even represented as a concept formally, especially in [Questionnaires](questionnaire.html), &#xA;so this extension is allowed to appear ouside those preferred contexts.  Scores may even be assigned arbitrarily during use (hence, on Coding). The value may be constrained to an integer in some contexts of use. Todo: Scoring algorithms may also be defined directly, but how this is done is not yet defined&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#ordinalValue)."/>
+      <comment value="Scores are commonly encountered in various clinical assessment scales. Assigning a value to a concept should generally be done in a formal code system that defines the value, or in an applicable value set for the concept, but some concepts do not have a formal definition (or are not even represented as a concept formally, especially in [Questionnaires](questionnaire.html), &#xA;so this extension is allowed to appear ouside those preferred contexts.  Scores may even be assigned arbitrarily during use (hence, on Coding). The value may be constrained to an integer in some contexts of use. Todo: Scoring algorithms may also be defined directly, but how this is done is not yet defined&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/behavior.html#itemWeight)."/>
       <min value="0"/>
       <max value="1"/>
     </element>
