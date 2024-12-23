@@ -7,7 +7,7 @@ If more than one occurrence of this extension could describe the same alert and 
 * A specific alert code, over an absent alert code (which implies "all alerts");
 * A specific priority, over an absent priority (which implies "all priorities");
 * A current effective date, over a historical or absent effective date;
-* An occurrence of this extension on a DeviceMetric instance, over an occurrence on mid-leve Device, over an occurrence on a top-level Device.
+* An occurrence of this extension on a DeviceMetric instance, over an occurrence on mid-level Device, over an occurrence on a top-level Device.
 
 Note:
   There is potential for contradictory interpretation of "more specific" (such as whether an "all priorities" activation state specified at the DeviceMetric level is more specific than a particular priority activation state specified at the Device level); feedback is requested on whether additional guidance is needed when multiple occurrences could apply.

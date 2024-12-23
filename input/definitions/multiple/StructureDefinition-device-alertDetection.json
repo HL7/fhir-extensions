@@ -22,14 +22,14 @@
   "title" : "Device Alerting Detection Extension",
   "status" : "draft",
   "date" : "2024-11-07T15:33:47-08:00",
-  "publisher" : "HL7 International / Devices",
+  "publisher" : "HL7 International / Health Care Devices",
   "contact" : [{
     "telecom" : [{
       "system" : "url",
-      "value" : "http://www.hl7.org/Special/committees/dss"
+      "value" : "http://www.hl7.org/Special/committees/healthcaredevices"
     }]
   }],
-  "description" : "Alert detection activation state describes whether a device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code(s) and priority (priorities) at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert.",
+  "description" : "Alert detection activation state describes whether a device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code and priority at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert.",
   "fhirVersion" : "6.0.0",
   "mapping" : [{
     "identity" : "rim",
@@ -151,13 +151,13 @@
       "path" : "Extension.extension",
       "sliceName" : "alertCode",
       "short" : "The alert for which the alert detection activation state is described",
-      "definition" : "The alert(s) for which the alert detection activation state is described. If an alert priority, or priorities, are specified, then the activation state is for the specific priorities of those alerts. If no alert code is specified, the alert detection activation state applies to all alerts of the device. (See the extension description for additional details regarding multiple occurances of this extension.)",
+      "definition" : "The alert for which the alert detection activation state is described. If an alert priority, or priorities, are specified, then the activation state is for the specific priorities of that alert. If no alert code is specified, the alert detection activation state applies to all alerts of the device. (See the extension description for additional details regarding multiple occurrences of this extension.)",
       "min" : 0,
       "max" : "*",
       "base" : {
         "path" : "Element.extension",
         "min" : 0,
-        "max" : "*"
+        "max" : "1"
       },
       "type" : [{
         "code" : "Extension"
@@ -1118,7 +1118,7 @@
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Device Alerting Detection Extension",
-      "definition" : "Alert detection activation state describes whether a device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code(s) and priority (priorities) at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert.",
+      "definition" : "Alert detection activation state describes whether a device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code and priority (priorities) at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert.",
       "constraint" : [{
         "key" : "alrtdet-1",
         "severity" : "error",
@@ -1137,9 +1137,9 @@
       "path" : "Extension.extension",
       "sliceName" : "alertCode",
       "short" : "The alert for which the alert detection activation state is described",
-      "definition" : "The alert(s) for which the alert detection activation state is described. If an alert priority, or priorities, are specified, then the activation state is for the specific priorities of those alerts. If no alert code is specified, the alert detection activation state applies to all alerts of the device. (See the extension description for additional details regarding multiple occurances of this extension.)",
+      "definition" : "The alert for which the alert detection activation state is described. If an alert code is specified, then the activation state is for the specified alert. If no alert code is specified, the alert detection activation state applies to all alerts of the device. (See the extension description for additional details regarding multiple occurrences of this extension.)",
       "min" : 0,
-      "max" : "*"
+      "max" : "1"
     },
     {
       "id" : "Extension.extension:alertCode.extension",
@@ -1168,9 +1168,9 @@
       "path" : "Extension.extension",
       "sliceName" : "priority",
       "short" : "The alert priority for which the alert detection activation state is described",
-      "definition" : "The alert priority (or priorities) for which the alert detection activation state is described. If an alert priority, or priorities, are specified, then the activation state is for the specific priorities of those alerts. If no alert priority is specified, the alert detection activation state applies to all priorities of the specified alerts. (See the extension description for additional details regarding multiple occurances of this extension.)",
+      "definition" : "The alert priority for which the alert detection activation state is described. If an alert priority is specified, then the activation state is for the indicated priority of the specified alert. If no alert priority is specified, the alert detection activation state applies to all priorities of the specified alert. (See the extension description for additional details regarding multiple occurrences of this extension.)",
       "min" : 0,
-      "max" : "*"
+      "max" : "1"
     },
     {
       "id" : "Extension.extension:priority.extension",
@@ -1199,7 +1199,7 @@
       "path" : "Extension.extension",
       "sliceName" : "effective",
       "short" : "The point(s) in time this activation state was in effect",
-      "definition" : "When this activation state was in effect, which may be a statement about a single point-in-time or a time period (possibly on=going) covered.",
+      "definition" : "When this activation state was in effect, which may be a statement about a single point-in-time or a time period (possibly on-going) covered.",
       "min" : 0,
       "max" : "1"
     },
@@ -1232,7 +1232,7 @@
       "path" : "Extension.extension",
       "sliceName" : "activationState",
       "short" : "The activation state of the specified alert (or alerts)",
-      "definition" : "The reported activation state of the specified combination of alert (or alerts) and priority",
+      "definition" : "The reported activation state of the specified combination of alert and priority",
       "min" : 1,
       "max" : "1"
     },
@@ -1263,7 +1263,7 @@
       "path" : "Extension.extension",
       "sliceName" : "limitRange",
       "short" : "Limits applicable to the indicated alert priority.",
-      "definition" : "The range of values outside of which an alarm condition of the (single) specified priority would be trigged for the specified alert code(s), if the alert activation state were `active`. Limits may include upper or lower values, or both. If units are present, they should be the same as the DeviceMetric. If absent, units are assumed to be the same as the DeviceMetric.",
+      "definition" : "The range of values outside of which an alarm condition of the (single) specified priority would be triggered for the specified alert code, if the alert activation state were `active`. Limits may include upper or lower values, or both. If units are present, they should be the same as the DeviceMetric. If absent, units are assumed to be the same as the DeviceMetric.",
       "min" : 0,
       "max" : "1"
     },
