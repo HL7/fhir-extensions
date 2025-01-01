@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="The specific element to use in the referenced profile. This is used when a backbone element is being profiled, rather than an established type."/>
+  <description value="The specific element to use in the referenced profile, identified by the ElementDefinition.id. This is used when a backbone element is being profiled, rather than an established type."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,8 +49,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Specific element for profile (for backbone elements)"/>
-      <definition value="The specific element to use in the referenced profile. This is used when a backbone element is being profiled, rather than an established type."/>
-      <comment value="The backbone element cannot be the root of the struture definition, so the starting element must be specified separately."/>
+      <definition value="The specific element to use in the referenced profile, identified by the ElementDefinition.id. This is used when a backbone element is being profiled, rather than an established type."/>
+      <comment value="The backbone element cannot be the root of the structure definition, so the starting element must be specified separately."/>
       <min value="0"/>
       <max value="1"/>
     </element>
