@@ -32,9 +32,9 @@
   <caseSensitive value="true"/>
   <content value="complete"/>
   <concept>
-    <code value="quality"/>
-    <display value="Quality"/>
-    <definition value="Indicates this is a quality measure report."/>
+    <code value="deqm"/>
+    <display value="Data Exchange for Quality Measures"/>
+    <definition value="Indicates this is a Data Exchange for Quality Measures (DEQM) measure report."/>
   </concept>
   <concept>
     <code value="ra"/>
