@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value=" Indicates alternate codings and/or original text for the concept represented by the code."/>
+  <description value="Indicates alternate codings and/or original text for the concept represented by the code.  Codings or text provided SHALL convey equivalent meaning to the meaning of the code being extended (though with potential differences in level of detail conveyed)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
@@ -54,7 +54,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Alternate code/original text for this code"/>
-      <definition value="Indicates alternate codings and/or original text for the concept represented by the code."/>
+      <definition value="Indicates alternate codings and/or original text for the concept represented by the code.  Codings or text provided SHALL convey equivalent meaning to the meaning of the code being extended (though with potential differences in level of detail conveyed)."/>
       <comment value="Used when the FHIR specification requires a code, but the writing application wants or needs to preseve it's own underlying code, possibly for use for other applications reading the content"/>
       <min value="0"/>
       <max value="*"/>
