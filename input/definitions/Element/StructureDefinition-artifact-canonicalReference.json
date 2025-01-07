@@ -11,7 +11,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
+    "valueCode" : "deprecated"
   }],
   "url" : "http://hl7.org/fhir/StructureDefinition/artifact-canonicalReference",
   "identifier" : [{
@@ -31,7 +31,7 @@
       "value" : "http://www.hl7.org/Special/committees/dss"
     }]
   }],
-  "description" : "A reference to a canonical resource.",
+  "description" : "DEPRECATED: Use the artifact-reference extension insteand. A reference to a canonical resource.",
   "purpose" : "To allow resources to define a reference to a canonical resource.",
   "fhirVersion" : "4.0.1",
   "kind" : "complex-type",
