@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/iso21090-preferred"/>
   <identifier>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="Preferred"/>
   <title value="Preferred"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2012-06-24"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Flag denoting whether parent item is preferred - e.g., a preferred address or telephone number."/>
+  <description value="Flag denoting whether parent item is preferred - e.g., a preferred address or telephone number.  DEPRECATED: Use rank element or extension instead"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
