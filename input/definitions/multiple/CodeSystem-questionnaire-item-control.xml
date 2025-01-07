@@ -117,7 +117,7 @@
     <concept>
       <code value="tab-container"/>
       <display value="Tab Container"/>
-      <definition value="Indicates that the group represents a collection of tabs. All child items SHALL be of type 'group' and SHALL NOT declare any item controls themselves. Each child group represents one tab within the tab container, where the item.title is the label for the tab."/>
+      <definition value="Indicates that the group represents a collection of tabs. All child items SHALL be of type 'group' and SHALL NOT declare any item controls themselves. Each child group represents one tab within the tab container, where the item.text is the label for the tab."/>
     </concept>
   </concept>
   <concept>
