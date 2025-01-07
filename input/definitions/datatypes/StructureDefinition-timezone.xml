@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="An IANA timezone code for  the timezone offset per [BCP 175](https://www.iana.org/go/rfc6557). The offset is specified as part of a dateTime/instant (or using the tzOffset extension on a date if necessary). The timezone code may also be provided to allow for human display of the location associated with the offset."/>
+  <description value="An IANA timezone code for the timezone offset per BCP 175.&#xA;For data types allowing the offset (all except date and time), this extension SHALL agree with the offset if provided and cannot be used in place of the offset if the precision expressed requires an offset.  Where an offset is provided, this extension provides a more legible display of the zone associated with the offset.  Where an offset is not present, this extension can be used to provide zone information not otherwise available."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -65,7 +65,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="IANA Timezone Code per BCP 175"/>
-      <definition value="An IANA timezone code for  the timezone offset per [BCP 175](https://www.iana.org/go/rfc6557). The offset is specified as part of a dateTime/instant (or using the tzOffset extension on a date if necessary). The timezone code may also be provided to allow for human display of the location associated with the offset."/>
+      <definition value="An IANA timezone code for the timezone offset per BCP 175.&#xA;For data types allowing the offset (all except date and time), this extension SHALL agree with the offset if provided and cannot be used in place of the offset if the precision expressed requires an offset.  Where an offset is provided, this extension provides a more legible display of the zone associated with the offset.  Where an offset is not present, this extension can be used to provide zone information not otherwise available."/>
       <comment value="These are codes like &quot;America/New_York&quot; or &quot;America/Los_Angeles&quot;. See https://www.iana.org/time-zones for the official source, and https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for more information."/>
       <min value="0"/>
       <max value="1"/>
