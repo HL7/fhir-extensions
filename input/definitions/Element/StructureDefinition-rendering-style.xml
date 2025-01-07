@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Identifies how the specified element should be rendered when displayed."/>
+  <description value="Indicates an HTML style that should be applied when rendering this element."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,8 +49,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Html style value"/>
-      <definition value="Identifies how the specified element should be rendered when displayed."/>
-      <comment value="This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/rendering.html#rendering-style). This style applies to the base string.  If there is also a rendering-xhtml or rendering-markdown extension, they must declare any relevant styles within those extension values."/>
+      <definition value="Indicates an HTML style that should be applied when rendering this element."/>
+      <comment value="This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.&#xA;&#xA;NOTE: HTML styles can include references to external content (images, fonts, etc.), which may constitute a security issue, as resolving the link can allow tracking.  See [here for more detail](http://hl7.org/fhir/security.html#narrative).&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/rendering.html#rendering-style). This style applies to the base string.  If there is also a rendering-xhtml or rendering-markdown extension, they must declare any relevant styles within those extension values."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>
