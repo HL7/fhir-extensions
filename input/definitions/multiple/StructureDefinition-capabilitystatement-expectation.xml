@@ -45,6 +45,10 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
+    <expression value="CapabilityStatement.acceptLanguage"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="CapabilityStatement.document"/>
   </context>
   <context>
@@ -61,23 +65,11 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="CapabilityStatement.instantiates"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="CapabilityStatement.patchFormat"/>
   </context>
   <context>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.interaction"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CapabilityStatement.rest.interaction.code"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CapabilityStatement.rest.interaction.documentation"/>
   </context>
   <context>
     <type value="element"/>
@@ -118,10 +110,6 @@
   <context>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.resource.operation"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CapabilityStatement.rest.resource.profile"/>
   </context>
   <context>
     <type value="element"/>
@@ -170,6 +158,14 @@
   <context>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.security.service"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement.messaging.hasReliableCache"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement.messaging.supportedMessages"/>
   </context>
   <context>
     <type value="extension"/>
