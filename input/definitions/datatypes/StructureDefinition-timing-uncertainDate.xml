@@ -9,7 +9,7 @@
     <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/timing-uncertainDate"/>
   <identifier>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="UncertainDate"/>
   <title value="Uncertain date"/>
-  <status value="draft"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="When present, this extension indicates that the date of a period start or end is uncertain and falls within its own period."/>
+  <description value="When present, this extension indicates that the date of a period start or end is uncertain and falls within its own period.  DEPRECATED: use [StructureDefinition-uncertainPeriod.html](uncertainPeriod) instead."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
