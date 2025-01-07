@@ -40,6 +40,10 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
+    <expression value="OperationOutcome"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="OperationOutcome.issue"/>
   </context>
   <type value="Extension"/>
