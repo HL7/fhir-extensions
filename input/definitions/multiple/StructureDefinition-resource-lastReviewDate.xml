@@ -68,22 +68,6 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="CodeSystem"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="ValueSet"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="ConceptMap"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="NamingSystem"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="Group"/>
   </context>
   <type value="Extension"/>
