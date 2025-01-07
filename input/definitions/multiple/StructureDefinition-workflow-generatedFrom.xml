@@ -95,7 +95,7 @@
       <path value="Extension"/>
       <short value="Auto-created based on"/>
       <definition value="This artifact was algorithmically produced by applying the referenced artifact to the context relevant for this request."/>
-      <comment value="GeneratedFrom is a specialized type of 'derived from'.  The expectation is that the initial version of an artifact that was generatedFrom a definition will also complyWith that definition.  However, it is possible that subsequent revisions may invalidate 'compliesWith'.  Those revisions would not invalidate the 'generatedFrom' assertion.&#xA;&#xA;Also see the [notes](workflow-extensions.html#instantiation) in the workflow extensions area for more guidance on this element."/>
+      <comment value="GeneratedFrom is a specialized type of 'derived from'.  The expectation is that the initial version of an artifact that was generatedFrom a definition will also complyWith that definition.  However, it is possible that subsequent revisions may invalidate 'compliesWith'.  Those revisions would not invalidate the 'generatedFrom' assertion.&#xA;&#xA;While a Request generated from a Definition will typically adhere to the protocol, generatedFrom does not imply [adherence](StructureDefinition-workflow-adheresTo.html) because not all needed data will necessarily be populated and the request might be modified in such a way that it no longer adheres before it is made active.&#xA;&#xA;Also see the [notes](workflow-extensions.html#instantiation) in the workflow extensions area for more guidance on this element."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>
