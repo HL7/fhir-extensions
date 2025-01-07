@@ -62,6 +62,10 @@
   </context>
   <context>
     <type value="element"/>
+    <expression value="Flag"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="NutritionOrder"/>
   </context>
   <type value="Extension"/>
