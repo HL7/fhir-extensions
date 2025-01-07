@@ -39,10 +39,6 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
-    <type value="element"/>
-    <expression value="DomainResource"/>
-  </context>
-  <context>
     <type value="extension"/>
     <expression value="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"/>
   </context>
