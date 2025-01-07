@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="A bibliographic citation for the related resource. This text SHOULD be formatted according to an accepted citation format."/>
+  <description value="A bibliographic citation for the resource. This text SHOULD be formatted according to an accepted citation format."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -40,7 +40,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Resource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Bibliographic citation for the resource"/>
-      <definition value="A bibliographic citation for the related resource. This text SHOULD be formatted according to an accepted citation format."/>
+      <definition value="A bibliographic citation for the resource. This text SHOULD be formatted according to an accepted citation format."/>
       <comment value="Additional structured information about citations should be captured as extensions."/>
       <min value="0"/>
       <max value="1"/>
