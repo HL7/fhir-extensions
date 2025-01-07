@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Asserts that instances that are valid against this profile are also automatically valid against the StructureDefinition referenced by this extension."/>
+  <description value="Asserts that instances that are valid against the profile declaring this extension are also automatically valid against the StructureDefinition referenced by this extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Dependent Profiles - must be valid against these too"/>
-      <definition value="Asserts that instances that are valid against this profile are also automatically valid against the StructureDefinition referenced by this extension."/>
+      <definition value="Asserts that instances that are valid against the profile declaring this extension are also automatically valid against the StructureDefinition referenced by this extension."/>
       <comment value="This is a claim that instances that comply with the profile containing this extension also comply with the profile it refers to. Note that this claim may not be true if it is tested."/>
       <min value="0"/>
       <max value="*"/>
