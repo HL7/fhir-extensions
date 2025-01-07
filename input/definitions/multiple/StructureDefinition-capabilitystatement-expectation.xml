@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Defines the level of expectation associated with a given system capability."/>
+  <description value="Defines the level of expectation associated with a given system capability.  See the capabilitystatement-prohibited modifier extension to set expectations to *not* support a feature."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
