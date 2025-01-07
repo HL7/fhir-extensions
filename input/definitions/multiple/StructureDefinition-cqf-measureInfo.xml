@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="The measure criteria that resulted in the resource being included in a particular evaluatedResources bundle."/>
+  <description value="The measure criteria that resulted in the resource being included in the result of a measure evaluation. The extension can be used on the resource directly, or it can be used on a Reference element such as MeasureReport.evaluatedResource to identify the measure criteria in the reference (i.e. without requiring the referenced resource to be changed by adding an extension)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -53,7 +53,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Measure criteria for the resource"/>
-      <definition value="The measure criteria that resulted in the resource being included in a particular evaluatedResources bundle."/>
+      <definition value="The measure criteria that resulted in the resource being included in the result of a measure evaluation."/>
+      <comment value="The extension can be used on the resource directly, or it can be used on a Reference element such as MeasureReport.evaluatedResource to identify the measure criteria in the reference (i.e. without requiring the referenced resource to be changed by adding an extension)."/>
       <min value="0"/>
       <max value="*"/>
     </element>
