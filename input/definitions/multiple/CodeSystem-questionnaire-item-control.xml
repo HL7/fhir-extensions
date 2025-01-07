@@ -107,7 +107,7 @@
     <concept>
       <code value="footer"/>
       <display value="Footer"/>
-      <definition value="The group is to be continuously visible at the bottom of the questionnaire.  Fotter must be a top-level item and must not be marked as repeating, but need not be the last item in a Questionnaire.  There can be at most one group of type 'header' in a Questionnaire."/>
+      <definition value="The group is to be continuously visible at the bottom of the questionnaire.  Footer must be a top-level item and must not be marked as repeating, but need not be the last item in a Questionnaire.  There can be at most one group of type 'header' in a Questionnaire."/>
     </concept>
     <concept>
       <code value="page"/>
