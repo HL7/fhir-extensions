@@ -1,0 +1,102 @@
+{
+    "resourceType" : "StructureDefinition",
+    "id" : "codeOptions",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "fhir"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode" : "can-bind"
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/codeOptions",
+    "name" : "CodeOptions",
+    "title" : "Code Options",
+    "status" : "active",
+    "experimental" : false,
+    "date" : "2019-11-01T09:29:23+11:00",
+    "publisher" : "HL7 International / FHIR Infrastructure",
+    "contact" : [{
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://www.hl7.org/Special/committees/fiwg"
+      }]
+    }],
+    "description" : "A logical reference (i.e. a reference to ValueSet.url) to a value set (and optionally a version) that identifies a set of possible coded values for the element. This extension is used to convey a list of candidate codes when there is no formal code in the code system already defined that captures the intended set. For example, the concept of COVID preventative medications can be expressed as a value set because there is no specific code representing that concept.",
+    "jurisdiction" : [{
+      "coding" : [{
+        "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "code" : "001"
+      }]
+    }],
+    "purpose": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities. Note that using this extension as a mechanism to establish the extent of an activity is a placeholder and the extension is a candidate for deprecation after the solution for handling this requirement is revisited at a later time.",
+    "fhirVersion" : "4.0.1",
+    "mapping" : [{
+      "identity" : "v2",
+      "uri" : "http://hl7.org/v2",
+      "name" : "HL7 v2 Mapping"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }],
+    "kind" : "complex-type",
+    "abstract" : false,
+    "context" : [{
+      "type" : "element",
+      "expression" : "CodeableConcept"
+    }],
+    "type" : "Extension",
+    "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation" : "constraint",
+    "differential" : {
+      "element" : [{
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "Url of a value set of activities",
+        "definition" : "A logical reference (i.e. a reference to ValueSet.url) to a value set (and optionally a version) that identifies a set of possible coded values for the element. This extension is used to convey a list of candidate codes when there is no formal code in the code system already defined that captures the intended set. For example, the concept of COVID preventative medications can be expressed as a value set because there is no specific code representing that concept.",
+        "comment": "This extension SHALL NOT be used when an appropriate higher level concept code exists. This extension cannot be used on an element with a required binding. When this extension is used on an element with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review). When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHOULD include the title of the referenced value set.",
+        "requirements": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities.",
+        "min" : 0,
+        "max" : "1",
+        "isModifier" : false,
+        "mapping" : [{
+          "identity" : "v2",
+          "map" : "CWE."
+        },
+        {
+          "identity" : "rim",
+          "map" : "CD.valueSet/CD.valueSetVersion"
+        }]
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/codeOptions"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "label" : "value set",
+        "min" : 1,
+        "type" : [{
+          "code" : "canonical",
+          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ValueSet"]
+        }]
+      }]
+    }
+  }
