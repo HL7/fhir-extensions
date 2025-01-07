@@ -67,6 +67,10 @@
     {
       "type": "element",
       "expression": "MeasureReport.evaluatedResource"
+    },
+    {
+      "type": "element",
+      "expression": "Reference"
     }
   ],
   "type": "Extension",
@@ -77,6 +81,7 @@
         "path": "Extension",
         "short": "Criteria reference",
         "definition": "Reference a criteria by specifying that criteria's unique id",
+        "comment": "When used in a MeasureReport, this is a reference to the id of a criteria within the Measure referenced by the MeasureReport.",
         "min": 0,
         "max": "*"
       },
