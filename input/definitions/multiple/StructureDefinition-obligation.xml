@@ -113,7 +113,7 @@
 					<valueString value="ObligationCodes"/>
 				</extension>
 				<strength value="required"/>
-				<description value="Codes, potentially a combination code, that describe an obligation that applies to implementing applications"/>
+				<description value="Codes that describe an obligation that applies to implementing applications"/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/obligation"/>
 			</binding>
 		</element>
