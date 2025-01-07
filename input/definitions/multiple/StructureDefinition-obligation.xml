@@ -1,280 +1,304 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="obligation"/>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fhir"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
-  </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/obligation"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1531"/>
-  </identifier>
-  <version value="5.0.0"/>
-  <name value="Obligation"/>
-  <title value="Obligation Extension"/>
-  <status value="active"/>
-  <experimental value="false"/>
-  <publisher value="HL7 International / FHIR Infrastructure"/>
-  <contact>
-    <telecom>
-      <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/fiwg"/>
-    </telecom>
-  </contact>
-  <description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail."/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
-  <fhirVersion value="5.0.0"/>
-  <kind value="complex-type"/>
-  <abstract value="false"/>
-  <context>
-    <type value="element"/>
-    <expression value="ElementDefinition"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="StructureDefinition"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="ElementDefinition.type"/>
-  </context>
-  <type value="Extension"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-  <derivation value="constraint"/>
-  <differential>
-    <element id="Extension">
-      <path value="Extension"/>
-      <short value="Obligations for applications using element/in model"/>
-      <definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail."/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Extension.extension:code">
-      <path value="Extension.extension"/>
-      <sliceName value="code"/>
-      <short value="Composite code describing the nature of the obligation"/>
-      <definition value="A code that describes the obligation(s) that apply to implementing applications."/>
-      <comment value="The code must be a 'selectable' code.  If multiple codes are specified, all obligations apply to the associated element(s).  When multiple codes are selected, they SHOULD NOT include (directly or by inheritance) a code that is a converse obligation and SHALL NOT include codes that are converses where the strength of both codes is SHALL."/>
-      <min value="1"/>
-      <max value="*"/>
-    </element>
-    <element id="Extension.extension:code.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:code.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="code"/>
-    </element>
-    <element id="Extension.extension:code.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObligationCodes"/>
-        </extension>
-        <strength value="required"/>
-        <description value="Codes, potentially a combination code, that describe an obligation that applies to implementing applications"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/obligation"/>
-      </binding>
-    </element>
-    <element id="Extension.extension:elementId">
-      <path value="Extension.extension"/>
-      <sliceName value="elementId"/>
-      <short value="When the obligation is on the profile itself, not a particular element, a list of elements to which it applies"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    <element id="Extension.extension:elementId.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:elementId.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="elementId"/>
-    </element>
-    <element id="Extension.extension:elementId.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="Extension.extension:actor">
-      <path value="Extension.extension"/>
-      <sliceName value="actor"/>
-      <short value="Actor(s) this obligation applies to (all actors if none)"/>
-      <definition value="Actor(s) to which the obligation applies."/>
-      <comment value="If no actors are specified, then the obligation applies to all implementations.  (This should be done with caution as it may limit reuseability of the profile.)"/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Extension.extension:actor.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:actor.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="actor"/>
-    </element>
-    <element id="Extension.extension:actor.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActorDefinition"/>
-      </type>
-    </element>
-    <element id="Extension.extension:documentation">
-      <path value="Extension.extension"/>
-      <sliceName value="documentation"/>
-      <short value="Documentation of the purpose or application of the obligation"/>
-      <definition value="Human readable documentation of the purpose or application of the obligation."/>
-      <min value="0"/>
-      <max value="1"/>
-    </element>
-    <element id="Extension.extension:documentation.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:documentation.url">
-      <path value="Extension.extension.url"/>
-      <type>
-        <code value="uri"/>
-      </type>
-      <fixedUri value="documentation"/>
-    </element>
-    <element id="Extension.extension:documentation.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="markdown"/>
-      </type>
-    </element>
-    <element id="Extension.extension:usage">
-      <path value="Extension.extension"/>
-      <sliceName value="usage"/>
-      <short value="Qualifies the usage - jurisdiction, gender, workflow status etc"/>
-      <definition value="Qualifies the usage of the obligation. Typically obligations are qualified by jurisdiction, but they may also be qualified by gender, workflow status, clinical domain etc. The information to decide whether a usege context applies is usually outside the resource, determined by context, and this might present challenges for validation tooling. An expected use: limiting obligations to particular jurisdictions (e.g. in IPS)."/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Extension.extension:usage.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:usage.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="usage"/>
-    </element>
-    <element id="Extension.extension:usage.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="UsageContext"/>
-      </type>
-    </element>
-    <element id="Extension.extension:filter">
-      <path value="Extension.extension"/>
-      <sliceName value="filter"/>
-      <short value="Limits obligation to some repeats by FHIRPath"/>
-      <definition value="A FHIRPath expression that restricts to the obligation to only those occurrences of the element that fall into the collection defined by the expression."/>
-      <comment value="For example, this might be used to indicate obligations that apply to home phone numbers and not to other contact points."/>
-      <min value="0"/>
-      <max value="1"/>
-    </element>
-    <element id="Extension.extension:filter.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:filter.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="filter"/>
-    </element>
-    <element id="Extension.extension:filter.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="Extension.extension:filterDocumentation">
-      <path value="Extension.extension"/>
-      <sliceName value="filterDocumentation"/>
-      <short value="Describes the intent of the filter (short)"/>
-      <definition value="Documents the FHIRPath expression for the benefit of users who are not familiar with FHIRPath."/>
-      <min value="0"/>
-      <max value="1"/>
-    </element>
-    <element id="Extension.extension:filterDocumentation.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:filterDocumentation.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="filterDocumentation"/>
-    </element>
-    <element id="Extension.extension:filterDocumentation.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="Extension.extension:process">
-      <path value="Extension.extension"/>
-      <sliceName value="process"/>
-      <short value="The obligation only applies when performing the indicated process"/>
-      <definition value="A process that the obligation applies to. This might a canonical URL for an OperationDefinition, or a uri that refers to some externally defined process such as a section within an IG."/>
-      <min value="0"/>
-      <max value="*"/>
-    </element>
-    <element id="Extension.extension:process.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
-    </element>
-    <element id="Extension.extension:process.url">
-      <path value="Extension.extension.url"/>
-      <fixedUri value="process"/>
-    </element>
-    <element id="Extension.extension:process.value[x]">
-      <path value="Extension.extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
-      </type>
-      <type>
-        <code value="uri"/>
-      </type>
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/obligation"/>
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]"/>
-      <min value="0"/>
-      <max value="0"/>
-    </element>
-  </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../input-cache/schemas/R5/fhir-single.xsd">
+	<id value="obligation"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+		<valueCode value="fhir"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="1"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+		<valueCode value="trial-use"/>
+	</extension>
+	<url value="http://hl7.org/fhir/StructureDefinition/obligation"/>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="urn:oid:2.16.840.1.113883.4.642.5.1531"/>
+	</identifier>
+	<version value="5.0.0"/>
+	<name value="Obligation"/>
+	<title value="Obligation Extension"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International / FHIR Infrastructure"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.hl7.org/Special/committees/fiwg"/>
+		</telecom>
+	</contact>
+	<description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail."/>
+	<jurisdiction>
+		<coding>
+			<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+			<code value="001"/>
+		</coding>
+	</jurisdiction>
+	<fhirVersion value="5.0.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="ElementDefinition"/>
+	</context>
+	<context>
+		<type value="element"/>
+		<expression value="StructureDefinition"/>
+	</context>
+	<context>
+		<type value="element"/>
+		<expression value="ElementDefinition.type"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="Obligations for applications using element/in model"/>
+			<definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail."/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Extension.extension:name">
+			<path value="Extension.extension"/>
+			<sliceName value="name"/>
+			<short value="Short label for collection of obligations"/>
+			<definition value="A short label for the set of obligations that is unique within the element defining the obligation set that can be used to point to that set."/>
+			<comment value="In a derived profile, if no name is present or the name doesn't correspond to an obligation name found on that element in the base profile, the obligations will be considered additions to rather than replacements of the existing obligations"/>
+			<requirements value="Used for rendering collection sets, as well as when deriving profiles to distinguish whether a new obligation set is being defined or an existing one is being updated."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:name.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:name.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="name"/>
+		</element>
+		<element id="Extension.extension:name.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.extension:code">
+			<path value="Extension.extension"/>
+			<sliceName value="code"/>
+			<short value="Composite code describing the nature of the obligation"/>
+			<definition value="A code that describes the obligation(s) that apply to implementing applications."/>
+			<comment value="The code must be a 'selectable' code.  If multiple codes are specified, all obligations apply to the associated element(s).  When multiple codes are selected, they SHOULD NOT include (directly or by inheritance) a code that is a converse obligation and SHALL NOT include codes that are converses where the strength of both codes is SHALL."/>
+			<min value="1"/>
+			<max value="*"/>
+		</element>
+		<element id="Extension.extension:code.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:code.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="code"/>
+		</element>
+		<element id="Extension.extension:code.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObligationCodes"/>
+				</extension>
+				<strength value="required"/>
+				<description value="Codes, potentially a combination code, that describe an obligation that applies to implementing applications"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/obligation"/>
+			</binding>
+		</element>
+		<element id="Extension.extension:elementId">
+			<path value="Extension.extension"/>
+			<sliceName value="elementId"/>
+			<short value="When the obligation is on the profile itself, not a particular element, a list of elements to which it applies"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+			</type>
+		</element>
+		<element id="Extension.extension:elementId.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:elementId.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="elementId"/>
+		</element>
+		<element id="Extension.extension:elementId.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.extension:actor">
+			<path value="Extension.extension"/>
+			<sliceName value="actor"/>
+			<short value="Actor(s) this obligation applies to (all actors if none)"/>
+			<definition value="Actor(s) to which the obligation applies."/>
+			<comment value="If no actors are specified, then the obligation applies to all implementations.  (This should be done with caution as it may limit reuseability of the profile.)"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Extension.extension:actor.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:actor.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="actor"/>
+		</element>
+		<element id="Extension.extension:actor.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="canonical"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ActorDefinition"/>
+			</type>
+		</element>
+		<element id="Extension.extension:documentation">
+			<path value="Extension.extension"/>
+			<sliceName value="documentation"/>
+			<short value="Documentation of the purpose or application of the obligation"/>
+			<definition value="Human readable documentation of the purpose or application of the obligation."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:documentation.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:documentation.url">
+			<path value="Extension.extension.url"/>
+			<type>
+				<code value="uri"/>
+			</type>
+			<fixedUri value="documentation"/>
+		</element>
+		<element id="Extension.extension:documentation.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="markdown"/>
+			</type>
+		</element>
+		<element id="Extension.extension:usage">
+			<path value="Extension.extension"/>
+			<sliceName value="usage"/>
+			<short value="Qualifies the usage - jurisdiction, gender, workflow status etc"/>
+			<definition value="Qualifies the usage of the obligation. Typically obligations are qualified by jurisdiction, but they may also be qualified by gender, workflow status, clinical domain etc. The information to decide whether a usege context applies is usually outside the resource, determined by context, and this might present challenges for validation tooling. An expected use: limiting obligations to particular jurisdictions (e.g. in IPS)."/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Extension.extension:usage.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:usage.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="usage"/>
+		</element>
+		<element id="Extension.extension:usage.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="UsageContext"/>
+			</type>
+		</element>
+		<element id="Extension.extension:filter">
+			<path value="Extension.extension"/>
+			<sliceName value="filter"/>
+			<short value="Limits obligation to some repeats by FHIRPath"/>
+			<definition value="A FHIRPath expression that restricts to the obligation to only those occurrences of the element that fall into the collection defined by the expression."/>
+			<comment value="For example, this might be used to indicate obligations that apply to home phone numbers and not to other contact points."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:filter.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:filter.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="filter"/>
+		</element>
+		<element id="Extension.extension:filter.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.extension:filterDocumentation">
+			<path value="Extension.extension"/>
+			<sliceName value="filterDocumentation"/>
+			<short value="Describes the intent of the filter (short)"/>
+			<definition value="Documents the FHIRPath expression for the benefit of users who are not familiar with FHIRPath."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:filterDocumentation.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:filterDocumentation.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="filterDocumentation"/>
+		</element>
+		<element id="Extension.extension:filterDocumentation.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Extension.extension:process">
+			<path value="Extension.extension"/>
+			<sliceName value="process"/>
+			<short value="The obligation only applies when performing the indicated process"/>
+			<definition value="A process that the obligation applies to. This might a canonical URL for an OperationDefinition, or a uri that refers to some externally defined process such as a section within an IG."/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Extension.extension:process.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:process.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="process"/>
+		</element>
+		<element id="Extension.extension:process.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="canonical"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+			</type>
+			<type>
+				<code value="uri"/>
+			</type>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/StructureDefinition/obligation"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<min value="0"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>
