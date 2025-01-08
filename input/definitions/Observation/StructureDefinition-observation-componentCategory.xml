@@ -25,6 +25,7 @@
     </telecom>
   </contact>
   <description value="A code that classifies the general type of observation being made in the component."/>
+  <purpose value="Used for filtering what observations are retrieved and displayed."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -41,7 +42,6 @@
       <short value="Classification of type of observation component"/>
       <definition value="A code that classifies the general type of observation being made in the component."/>
       <comment value="In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set."/>
-      <requirements value="Used for filtering what observations are retrieved and displayed."/>
       <min value="0"/>
       <max value="*"/>
     </element>

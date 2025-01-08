@@ -65,7 +65,6 @@
         "short" : "Url of a value set of activities",
         "definition" : "A logical reference (i.e. a reference to ValueSet.url) to a value set (and optionally a version) that identifies a set of possible coded values for the element. This extension is used to convey a list of candidate codes when there is no formal code in the code system already defined that captures the intended set. For example, the concept of COVID preventative medications can be expressed as a value set because there is no specific code representing that concept.",
         "comment": "This extension SHALL NOT be used when an appropriate higher level concept code exists. This extension cannot be used on an element with a required binding. When this extension is used on an element with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review). When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHOULD include the title of the referenced value set.",
-        "requirements": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities.",
         "min" : 0,
         "max" : "1",
         "isModifier" : false,

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
-  <id value="select-by-map"/>
+  <id value="valueset-select-by-map"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="ti"/>
   </extension>
@@ -22,7 +22,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/vocab"/>
+      <value value="http://hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
   <description value="This extension indicates that in addition to the concepts directly selected (either included or excluded) in the include/exclude statement, any source codes that are mapped to target codes that are selected by the nominated ConceptMapare also selected. The filter property can be used to restrict which types of relationships are included."/>
@@ -113,7 +113,7 @@
 
     <element id="Extension.url">
       <path value="Extension.url"/> 
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/select-by-map"/> 
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/valueset-select-by-map"/> 
     </element> 
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/> 
