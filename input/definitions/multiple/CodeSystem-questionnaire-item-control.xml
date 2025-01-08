@@ -102,17 +102,17 @@
     <concept>
       <code value="header"/>
       <display value="Header"/>
-      <definition value="The group is to be continuously visible at the top of the questionnaire"/>
+      <definition value="The group is to be continuously visible at the top of the questionnaire.  Header must be a top-level item and must not be marked as repeating, but need not be the first item in the Questionnaire.  There can be at most one group of type 'header' in a Questionnaire."/>
     </concept>
     <concept>
       <code value="footer"/>
       <display value="Footer"/>
-      <definition value="The group is to be continuously visible at the bottom of the questionnaire"/>
+      <definition value="The group is to be continuously visible at the bottom of the questionnaire.  Footer must be a top-level item and must not be marked as repeating, but need not be the last item in a Questionnaire.  There can be at most one group of type 'header' in a Questionnaire."/>
     </concept>
     <concept>
       <code value="page"/>
       <display value="Page"/>
-      <definition value="Indicates that the content within the group should appear as a logical &quot;page&quot; when rendering the form, such that all enabled items within the page are displayed at once, but items in subsequent groups are not displayed until the user indicates a desire to move to the 'next' group.  (Header and footer groups for a questionnaire will be rendered on all pages.) This designation may also influence pagination when printing questionnaires.&#x0a;&#x0a;If a group item has this itemControl value, then all sibling items **SHALL** also be of type group and also have an itemControl value of 'page', 'header', or 'footer'.  Form fillers **SHOULD** raise an error if a Questionnaire fails to adhere to this requirement."/>
+      <definition value="Indicates that the content within the group should appear as a logical &quot;page&quot; when rendering the form, such that all enabled items within the page are displayed at once, but items in subsequent groups are not displayed until the user indicates a desire to move to the 'next' group.  (Header and footer groups for a questionnaire will be rendered on all pages.) This designation may also influence pagination when printing questionnaires.&#x0a;&#x0a;If a group item has this itemControl value, then all sibling items **SHALL** also be of type group and also have an itemControl value of 'page', 'header', or 'footer'.  Form fillers **SHOULD** raise an error if a Questionnaire fails to adhere to this requirement.  Page items SHOULD be a top-level item and generally should not nest (i.e. pages should not be descendants of a page group)."/>     
     </concept>
     <concept>
       <code value="tab-container"/>

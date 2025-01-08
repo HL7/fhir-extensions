@@ -10,7 +10,7 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/questionnaire-derivationType"/>
   <identifier>
