@@ -17,8 +17,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1428"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="SRPertainsToGoal"/>
-  <title value="ServiceRequest Pertains To Goal"/>
+  <name value="PertainsToGoal"/>
+  <title value="Resource Pertains To Goal"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>

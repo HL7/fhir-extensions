@@ -92,7 +92,7 @@
     </element>
     <element id="Extension.extension:location.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="file"/>
+      <fixedUri value="location"/>
     </element>
     <element id="Extension.extension:location.value[x]">
       <path value="Extension.extension.value[x]"/>
@@ -115,7 +115,7 @@
     </element>
     <element id="Extension.extension:keepAsResource.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="file"/>
+      <fixedUri value="keepAsResource"/>
     </element>
     <element id="Extension.extension:keepAsResource.value[x]">
       <path value="Extension.extension.value[x]"/>

@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="This extension identifies a profile the system will recognize if it is declared in [`meta.profile`](resource.html#profile-tags). If the system supports the [`_profile`](search.html#profile) search parameter, it will be capable of searching on the profile. The system may support validation against the profile."/>
+  <description value="This extension identifies a profile the system will recognize. If the system supports the _profile search parameter, it will be capable of searching on the profile. The system may support validation against the profile."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
@@ -54,7 +54,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Declarable profile"/>
-      <definition value="This extension identifies a profile the system will recognize if it is declared in [`meta.profile`](resource.html#profile-tags). If the system supports the [`_profile`](search.html#profile) search parameter, it will be capable of searching on the profile. The system may support validation against the profile."/>
+      <definition value="This extension identifies a profile the system will recognize. If the system supports the _profile search parameter, it will be capable of searching on the profile. The system may support validation against the profile."/>
       <comment value="For example, on the Patient Resource  you could use this to state support for searching by Patient.name and Patient.gender is required."/>
       <min value="0"/>
       <max value="*"/>

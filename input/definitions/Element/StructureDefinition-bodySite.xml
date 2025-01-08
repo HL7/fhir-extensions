@@ -40,7 +40,23 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="Condition.bodySite"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Observation.bodySite"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Procedure.bodySite"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="MedicationAdministration.dose"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Dosage.site"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

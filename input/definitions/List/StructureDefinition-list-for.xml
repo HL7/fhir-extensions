@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Reference to the entity that this *List* is for."/>
+  <description value="Indicates the entity for whose benefit the List is created and maintained.  This is used when the intended beneficiary of the List is distinct from whoever authored it.  For example, if a capitation List is maintained by a central organization of the patients for a particular provider, the List.source would be the central organization, while the 'List for' extension would point to the provider."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Who the list is for"/>
-      <definition value="Reference to the entity that this *List* is for."/>
+      <definition value="Indicates the entity for whose benefit the List is created and maintained.  This is used when the intended beneficiary of the List is distinct from whoever authored it.  For example, if a capitation List is maintained by a central organization of the patients for a particular provider, the List.source would be the central organization, while the 'List for' extension would point to the provider."/>
       <comment value="This extension answers questions like &quot;who is this allergy list or problem list for?&quot;"/>
       <min value="0"/>
       <max value="*"/>

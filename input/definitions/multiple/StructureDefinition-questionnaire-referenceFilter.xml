@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ReferenceFilter"/>
   <title value="ReferenceFilter"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2013-07-04"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Identifies a filter to apply when looking up candidate answers for the question."/>
+  <description value="Identifies a filter to apply when looking up candidate answers for the question.  DEPRECATED: This extension has been replaced by the Structured Data Capture candidateExpression extension."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

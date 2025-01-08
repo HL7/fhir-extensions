@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="Prompt for element phrased as question"/>
       <definition value="The default/suggested phrasing to use when prompting a human to capture the data element in question form (e.g. In a survey)."/>
-      <comment value="Question and label serve similar purposes in they both can be used to prompt for capturing a data element.  Whether the question form or label form should be used will depend on the type of instrument being used to capture the information.  The ordering is in order of preference.  I.e. Most preferred question form is listed first.  Note that this is for alternate phrasings of the question.  Language translations are handled using the ISO 21090 string translation extensions."/>
+      <comment value="Question and label serve similar purposes in they both can be used to prompt for capturing a data element.  Whether the question form or label form should be used will depend on the type of instrument being used to capture the information.  The ordering is in order of preference.  I.e. Most preferred question form is listed first.  Note that this is for alternate phrasings of the question.  Language translations are handled using the ISO 21090 string translation extensions.&#xA;&#xA;If present, the content of this extension should be used to prompt the user for the desired data element, and if not present that ElementDefinition.label should be used instead."/>
       <min value="0"/>
       <max value="*"/>
       <mapping>

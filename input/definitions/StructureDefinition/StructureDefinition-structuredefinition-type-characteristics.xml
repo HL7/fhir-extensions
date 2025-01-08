@@ -52,7 +52,7 @@
       <definition value="A code that indicates that a particular characteristic applies to this type. The characteristics are associated with the use of particular element definition aspects such as length limitations."/>
       <comment value="Not all possible definitional characteristics apply to all types; for instance, specifying min/max lengths is only sensible for some types, and min/max values for others."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
