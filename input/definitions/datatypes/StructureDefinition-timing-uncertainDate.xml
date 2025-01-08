@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="When present, this extension indicates that the date of a period start or end is uncertain and falls within its own period.  DEPRECATED: use [StructureDefinition-uncertainPeriod.html](uncertainPeriod) instead."/>
+  <description value="When present, this extension indicates that the date of a period start or end is uncertain and falls within its own period.  DEPRECATED: use [uncertainPeriod](StructureDefinition-uncertainPeriod.html) instead."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

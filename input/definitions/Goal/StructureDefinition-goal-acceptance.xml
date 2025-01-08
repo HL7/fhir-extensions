@@ -11,11 +11,13 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="deprecated"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/earliestAllowedFHIRVersion">
-    <valueCode value="1.0"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/latestAllowedFHIRVersion">
-    <valueCode value="5.0"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+    <extension url="startFhirVersion">
+      <valueCode value="1.0"/>
+    </extension>
+    <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/goal-acceptance"/>
   <identifier>
