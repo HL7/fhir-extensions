@@ -14,7 +14,7 @@
         "valueCode" : "trial-use"
       }],
         "url" : "http://hl7.org/fhir/StructureDefinition/measurereport-populationDescription",
-    "name" : "measurereport-populationDescription",
+    "name" : "MeasureReportPopulationDescription",
     "title" : "Measure Report Population Description",
     "status" : "active",
     "experimental" : false,

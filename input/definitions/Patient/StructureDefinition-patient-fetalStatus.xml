@@ -21,7 +21,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/pafm"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
   <description value="The fetal status of the subject when still in utero. This extension would not apply to Patients that have a birthDate."/>
