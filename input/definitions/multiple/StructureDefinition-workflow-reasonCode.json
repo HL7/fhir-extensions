@@ -1,0 +1,122 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "workflow-reasonCode",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-reason]]]"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/workflow-reasonCode",
+  "version" : "4.0.1",
+  "name" : "ReasonCode",
+  "title" : "Reason Code",
+  "status" : "retired",
+  "date" : "2017-12-06",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    }]
+  }],
+  "description" : "Describes why the event occurred in coded or textual form.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  },
+  {
+    "type" : "element",
+    "expression" : "DiagnosticReport"
+  },
+  {
+    "type" : "element",
+    "expression" : "Media"
+  },
+  {
+    "type" : "element",
+    "expression" : "NutritionOrder"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Why was event performed?",
+      "definition" : "Describes why the event occurred in coded or textual form.",
+      "comment" : "For free text (uncoded data) use reasonCode.text.",
+      "min" : 0,
+      "max" : "*",
+      "mapping" : [{
+        "identity" : "workflow",
+        "map" : "Event.reasonCode"
+      },
+      {
+        "identity" : "v2",
+        "map" : "EVN.4 or by domain"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".reasonCode"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/workflow-reasonCode"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "EventReason"
+        }],
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-cause"
+      }
+    }]
+  }
+}

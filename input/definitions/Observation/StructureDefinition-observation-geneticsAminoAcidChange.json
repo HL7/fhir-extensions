@@ -1,0 +1,175 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "observation-geneticsAminoAcidChange",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "This extension has been replaced by the profiles and extensions defined in the [Genomics Reporting Guide](https://hl7.org/fhir/uv/genomics-reporting/)"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/observation-geneticsAminoAcidChange",
+  "version" : "4.0.1",
+  "name" : "AminoAcidChange",
+  "title" : "Amino Acid Change",
+  "status" : "retired",
+  "date" : "2016-03-14",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  }],
+  "description" : "AminoAcidChange information.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "AminoAcidChange",
+      "definition" : "AminoAcidChange information.",
+      "min" : 0,
+      "max" : "1",
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.extension:Name",
+      "path" : "Extension.extension",
+      "sliceName" : "Name",
+      "short" : "HGVS nomenclature for observed Amino Acid Change",
+      "definition" : "Human Genome Variation Society (HGVS) nomenclature for an amino acid change. Reference sequence ID used for HGVS naming must be annotated. An amino acid is a sequence feature that corresponds to a single amino acid residue in a polypeptide ([SO:0001237](http://www.sequenceontology.org/browser/current_svn/term/SO:0001237)). LOINC Code: ([48005-3](http://loinc.org/48005-3)).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.extension:Name.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:Name.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "Name"
+    },
+    {
+      "id" : "Extension.extension:Name.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ClinVar-variant-database"
+        }],
+        "strength" : "example",
+        "description" : "NCBI central repository of potentially clinically relevant variants."
+      }
+    },
+    {
+      "id" : "Extension.extension:Type",
+      "path" : "Extension.extension",
+      "sliceName" : "Type",
+      "short" : "Amino Acid Change Type",
+      "definition" : "Codified type for associated Amino Acid Change.  LOINC Code: ([48006-1](http://loinc.org/48006-1)).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Extension.extension:Type.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:Type.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "Type"
+    },
+    {
+      "id" : "Extension.extension:Type.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/observation-geneticsAminoAcidChange"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 0,
+      "max" : "0"
+    }]
+  }
+}

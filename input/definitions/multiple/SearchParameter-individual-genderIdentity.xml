@@ -11,7 +11,7 @@
   <url value="http://hl7.org/fhir/SearchParameter/individual-genderIdentity"/>
   <version value="5.0.0"/>
   <name value="IndividualGenderIdentitySearchParameter"/>
-  <title value="Individual Gender Identity"/>
+  <title value="Individual Gender Identity Parameter"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="HL7 International / Patient Administration"/>

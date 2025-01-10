@@ -1,0 +1,124 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "workflow-reasonReference",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+          "valueMarkdown" : "Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-reason]]]"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/workflow-reasonReference",
+  "version" : "4.0.1",
+  "name" : "ReasonReference",
+  "title" : "Reason Reference",
+  "status" : "retired",
+  "date" : "2017-12-06",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    }]
+  }],
+  "description" : "Indicates another resource whose existence justifies this event.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  },
+  {
+    "type" : "element",
+    "expression" : "DiagnosticReport"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+      "extension" : [{
+        "url" : "endFhirVersion",
+        "valueCode" : "4.3"
+      }]
+    }],
+    "type" : "element",
+    "expression" : "Media"
+  },
+  {
+    "type" : "element",
+    "expression" : "NutritionOrder"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Why was event performed?",
+      "definition" : "Indicates another resource whose existence justifies this event.",
+      "min" : 0,
+      "max" : "*",
+      "mapping" : [{
+        "identity" : "workflow",
+        "map" : "Event.reasonReference"
+      },
+      {
+        "identity" : "v2",
+        "map" : "EVN.4 or by domain"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".outboundRelationship[typeCode=RSON].target"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/workflow-reasonReference"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
+        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+        "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+        "http://hl7.org/fhir/StructureDefinition/Observation"]
+      }]
+    }]
+  }
+}

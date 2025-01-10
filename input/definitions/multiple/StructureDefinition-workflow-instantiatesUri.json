@@ -1,0 +1,126 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "workflow-instantiatesUri",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-generatedFrom]]], [[[http://hl7.org/fhir/StructureDefinition/workflow-compliesWith]]] or [[[http://hl7.org/fhir/StructureDefinition/workflow-adheresTo]]]"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesUri",
+  "version" : "4.0.1",
+  "name" : "InstantiatesUri",
+  "title" : "Instantiates Uri",
+  "status" : "retired",
+  "date" : "2017-12-06",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    }]
+  }],
+  "description" : "The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by the event or request resource.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  },
+  {
+    "type" : "element",
+    "expression" : "DiagnosticReport"
+  },
+  {
+    "type" : "element",
+    "expression" : "Media"
+  },
+  {
+    "type" : "element",
+    "expression" : "Condition"
+  },
+  {
+    "type" : "element",
+    "expression" : "SupplyDelivery"
+  },
+  {
+    "type" : "element",
+    "expression" : "CommunicationRequest"
+  },
+  {
+    "type" : "element",
+    "expression" : "SupplyRequest"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "External protocol or definition",
+      "definition" : "The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by the event or request resource.",
+      "comment" : "This may be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier.",
+      "min" : 0,
+      "max" : "*",
+      "mapping" : [{
+        "identity" : "workflow",
+        "map" : "Event.instantiates"
+      },
+      {
+        "identity" : "v2",
+        "map" : "Varies by domain"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".outboundRelationship[typeCode=DEFN].target"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesUri"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "uri"
+      }]
+    }]
+  }
+}
