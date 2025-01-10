@@ -10,8 +10,11 @@
     "valueInteger" : 1
   },
   {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
+    "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+    "extension" : [{
+      "url" : "endFhirVersion",
+      "valueCode" : "4.3"
+    }]
   }],
   "url" : "http://hl7.org/fhir/StructureDefinition/task-candidateList",
   "version" : "4.0.1",
@@ -26,7 +29,7 @@
       "value" : "http://www.hl7.org/Special/committees/orders"
     }]
   }],
-  "description" : "Identifies the individuals who are candidates for being the owner of the task. The status of this extension is under review",
+  "description" : "Identifies the individuals who are candidates for being the owner of the task. Use Task.requestedPerformer in R5+",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "workflow",
