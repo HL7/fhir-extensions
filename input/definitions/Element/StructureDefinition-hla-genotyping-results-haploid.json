@@ -1,0 +1,171 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "hla-genotyping-results-haploid",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "This extension has been replaced by the profiles and extensions defined in the [Genomics Reporting Guide](https://hl7.org/fhir/uv/genomics-reporting/)"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/hla-genotyping-results-haploid",
+  "version" : "4.0.1",
+  "name" : "Haploid",
+  "title" : "Haploid",
+  "status" : "retired",
+  "date" : "2015-10-09",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  }],
+  "description" : "haploid.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "DiagnosticReport"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "haploid",
+      "definition" : "haploid.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Extension.extension:locus",
+      "path" : "Extension.extension",
+      "sliceName" : "locus",
+      "short" : "haploid-locus",
+      "definition" : "gene region.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:locus.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:locus.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "locus"
+    },
+    {
+      "id" : "Extension.extension:locus.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.extension:type",
+      "path" : "Extension.extension",
+      "sliceName" : "type",
+      "short" : "haploid-type",
+      "definition" : "haploid type.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:type.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:type.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "type"
+    },
+    {
+      "id" : "Extension.extension:type.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.extension:method",
+      "path" : "Extension.extension",
+      "sliceName" : "method",
+      "short" : "haploid-method",
+      "definition" : "haploid method.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:method.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:method.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "method"
+    },
+    {
+      "id" : "Extension.extension:method.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/hla-genotyping-results-haploid"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 0,
+      "max" : "0"
+    }]
+  }
+}

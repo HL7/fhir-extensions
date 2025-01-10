@@ -1,0 +1,87 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "valueset-expand-rules",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "vocab"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "This extension is deprecated because it was underspecified and experience showed it was not usable. No replacement is planned"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/valueset-expand-rules",
+  "version" : "4.0.1",
+  "name" : "ValueSetExpandRules",
+  "title" : "ValueSet Expand Rules",
+  "status" : "retired",
+  "date" : "2019-11-01T09:29:23+11:00",
+  "publisher" : "HL7 International / Terminology Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/Vocab"
+    }]
+  }],
+  "description" : "Defines how concepts are processed into the expansion when it's for UI presentation.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "ValueSet.compose.include"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "all-codes | ungrouped | groups-only",
+      "definition" : "Defines how concepts are processed into the expansion when it's for UI presentation.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/valueset-expand-rules"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ExpansionProcessingRule"
+        }],
+        "strength" : "example",
+        "description" : "Defines how concepts are processed into the expansion when it's for UI presentation."
+      }
+    }]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "observation-geneticsCopyNumberEvent",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "This extension has been replaced by the profiles and extensions defined in the [Genomics Reporting Guide](https://hl7.org/fhir/uv/genomics-reporting/)"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/observation-geneticsCopyNumberEvent",
+  "version" : "4.0.1",
+  "name" : "CopyNumberEvent",
+  "title" : "Copy Number Event",
+  "status" : "retired",
+  "date" : "2016-03-14",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  }],
+  "description" : "A variation that increases or decreases the copy number of a given region ([SO:0001019](http://www.sequenceontology.org/browser/current_svn/term/SO:0001019)). Values: amplification/deletion/LOH.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Copy number variation",
+      "definition" : "A variation that increases or decreases the copy number of a given region ([SO:0001019](http://www.sequenceontology.org/browser/current_svn/term/SO:0001019)). Values: amplification/deletion/LOH.",
+      "comment" : "Loss of heterozygosity (LOH) is a functional variant whereby the sequence alteration causes a loss of function of one allele of a gene ([SO:0001786](http://www.sequenceontology.org/browser/current_svn/term/SO:0001786)).",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/observation-geneticsCopyNumberEvent"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    }]
+  }
+}

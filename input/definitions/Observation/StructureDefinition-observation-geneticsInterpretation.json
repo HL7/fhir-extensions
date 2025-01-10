@@ -1,0 +1,80 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "observation-geneticsInterpretation",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "This extension has been replaced by the profiles and extensions defined in the [Genomics Reporting Guide](https://hl7.org/fhir/uv/genomics-reporting/)"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/observation-geneticsInterpretation",
+  "version" : "4.0.1",
+  "name" : "Interpretation",
+  "title" : "Interpretation",
+  "status" : "retired",
+  "date" : "2016-03-14",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  }],
+  "description" : "Clinical Interpretations for variant. It's a reference to an Observation resource.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Clinical interpretations for variant",
+      "definition" : "Clinical Interpretations for variant. It's a reference to an Observation resource.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/observation-geneticsInterpretation"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation"]
+      }]
+    }]
+  }
+}
