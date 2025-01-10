@@ -1,0 +1,171 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "observation-geneticsAncestry",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "This extension has been replaced by the profiles and extensions defined in the [Genomics Reporting Guide](https://hl7.org/fhir/uv/genomics-reporting/)"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/observation-geneticsAncestry",
+  "version" : "4.0.1",
+  "name" : "Ancestry",
+  "title" : "Ancestry",
+  "status" : "retired",
+  "date" : "2016-03-14",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  }],
+  "description" : "Ancestry information.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "Observation"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Ancestry",
+      "definition" : "Ancestry information.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:Name",
+      "path" : "Extension.extension",
+      "sliceName" : "Name",
+      "short" : "Ancestry name",
+      "definition" : "A definition that describes the geographical origin of a patient.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:Name.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:Name.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "Name"
+    },
+    {
+      "id" : "Extension.extension:Name.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.extension:Percentage",
+      "path" : "Extension.extension",
+      "sliceName" : "Percentage",
+      "short" : "Ancestry percentage",
+      "definition" : "The ratio of this ancestry to all of the patient's ancestry.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:Percentage.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:Percentage.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "Percentage"
+    },
+    {
+      "id" : "Extension.extension:Percentage.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "decimal"
+      }]
+    },
+    {
+      "id" : "Extension.extension:Source",
+      "path" : "Extension.extension",
+      "sliceName" : "Source",
+      "short" : "Source of ancestry report",
+      "definition" : "In what way the ancestry is reported (e.g. Patient reported, Genetic test, Other, Unknown).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:Source.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:Source.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "Source"
+    },
+    {
+      "id" : "Extension.extension:Source.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/observation-geneticsAncestry"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 0,
+      "max" : "0"
+    }]
+  }
+}

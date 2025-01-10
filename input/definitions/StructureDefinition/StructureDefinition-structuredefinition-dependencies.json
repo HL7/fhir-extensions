@@ -1,0 +1,81 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "structuredefinition-dependencies",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "Replaced by [[[http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile]]]"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-dependencies",
+  "version" : "4.0.1",
+  "name" : "DependentProfiles",
+  "title" : "Dependent Profiles",
+  "status" : "retired",
+  "date" : "2014-01-31",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    }]
+  }],
+  "description" : "Instances can only be valid against this StructureDefinition, if they also sucessfully validate against the dependent profile identified in this extension.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "StructureDefinition"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Dependent Profiles - must be valid against these too",
+      "definition" : "Instances can only be valid against this StructureDefinition, if they also sucessfully validate against the dependent profile identified in this extension.",
+      "comment" : "Ideally, a profile will restate the constraints of it's base profile and all it's dependent profiles, but this can get pretty complicated once slicing enters the picture. Tools SHOULD not assume that this profile includes all the constraints from the dependent profile.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-dependencies"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "canonical",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/StructureDefinition"]
+      }]
+    }]
+  }
+}

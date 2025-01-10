@@ -1,0 +1,91 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "iso21090-SC-coding",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "Replaced by [[[http://hl7.org/fhir/StructureDefinition/iso21090-codedString]]]"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+  "version" : "4.0.1",
+  "name" : "SCCoding",
+  "title" : "SC Coding",
+  "status" : "retired",
+  "date" : "2012-06-24",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    }]
+  }],
+  "description" : "Provides a coded expression for the content represented in a string.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "string"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "code for string",
+      "definition" : "Provides a coded expression for the content represented in a string.",
+      "min" : 0,
+      "max" : "*",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "SC.code"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "StringCoding"
+        }],
+        "strength" : "example",
+        "description" : "A coded representation for a string.  Could be codes for country in a country address part, codes for prefixes in a name part, etc."
+      }
+    }]
+  }
+}

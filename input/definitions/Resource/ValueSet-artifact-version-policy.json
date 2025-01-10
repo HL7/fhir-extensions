@@ -22,7 +22,7 @@
     "value" : "urn:oid:2.16.840.1.113883.4.642.3.3333"
   }],
   "name" : "ArtifactVersionPolicy",
-  "title" : "Artifact Version Policy",
+  "title" : "ValueSet Artifact Version Policy",
   "status" : "active",
   "experimental" : false,
   "date" : "2019-03-14T23:21:03-06:00",

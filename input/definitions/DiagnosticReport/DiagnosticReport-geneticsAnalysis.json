@@ -1,0 +1,138 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "DiagnosticReport-geneticsAnalysis",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "deprecated",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+        "valueMarkdown" : "This extension has been replaced by the profiles and extensions defined in the [Genomics Reporting Guide](https://hl7.org/fhir/uv/genomics-reporting/)"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport-geneticsAnalysis",
+  "version" : "4.0.1",
+  "name" : "Analysis",
+  "title" : "Analysis",
+  "status" : "retired",
+  "date" : "2015-10-09",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  }],
+  "description" : "Knowledge-based comments on the effect of the sequence on patient's condition/medication reaction.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "DiagnosticReport"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Analysis",
+      "definition" : "Knowledge-based comments on the effect of the sequence on patient's condition/medication reaction.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Extension.extension:type",
+      "path" : "Extension.extension",
+      "sliceName" : "type",
+      "short" : "Analysis type",
+      "definition" : "Type of the analysis. E.g. for a drug, what is being analyzed - efficacy, reaction, the drug's effect on the user's metabolism, etc.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:type.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:type.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "type"
+    },
+    {
+      "id" : "Extension.extension:type.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.extension:interpretation",
+      "path" : "Extension.extension",
+      "sliceName" : "interpretation",
+      "short" : "Analysis interpretation",
+      "definition" : "Interpretation of the sequence's effect on the patient's condition or reaction to a medication.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:interpretation.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:interpretation.url",
+      "path" : "Extension.extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "interpretation"
+    },
+    {
+      "id" : "Extension.extension:interpretation.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport-geneticsAnalysis"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 0,
+      "max" : "0"
+    }]
+  }
+}
