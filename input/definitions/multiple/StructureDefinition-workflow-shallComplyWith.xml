@@ -57,19 +57,11 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="Communication"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="CommunicationRequest"/>
   </context>
   <context>
     <type value="element"/>
     <expression value="DeviceRequest"/>
-  </context>
-   <context>
-    <type value="element"/>
-    <expression value="FamilyMemberHistory"/>
   </context>
   <context>
     <type value="element"/>
@@ -94,10 +86,6 @@
   <context>
     <type value="element"/>
     <expression value="PlanDefinition"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="Procedure"/>
   </context>
   <context>
     <type value="element"/>
