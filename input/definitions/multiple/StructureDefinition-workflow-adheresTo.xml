@@ -45,6 +45,10 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
+    <expression value="CarePlan"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="Condition"/>
   </context>
   <context>
@@ -78,6 +82,10 @@
   <context>
     <type value="element"/>
     <expression value="Observation"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Procedure"/>
   </context>
   <context>
     <type value="element"/>
