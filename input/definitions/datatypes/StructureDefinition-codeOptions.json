@@ -30,14 +30,14 @@
         "value" : "http://www.hl7.org/Special/committees/fiwg"
       }]
     }],
-    "description" : "A logical reference (i.e. a reference to ValueSet.url) to a value set (and optionally a version) that identifies a set of possible coded values for the element. This extension is used to convey a list of candidate codes when there is no formal code in the code system already defined that captures the intended set. For example, the concept of COVID preventative medications can be expressed as a value set because there is no specific code representing that concept.",
+    "description" : "A logical reference (i.e. a reference to ValueSet.url) to a value set (and optionally a version) that identifies a set of possible coded values for the element. This extension is used to convey a list of candidate codes when there is no formal code in the code system already defined that captures the intended set. For example, the concept of COVID preventative medications could be expressed as a value set because there is no specific code representing that concept.",
     "jurisdiction" : [{
       "coding" : [{
         "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
         "code" : "001"
       }]
     }],
-    "purpose": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities. Note that using this extension as a mechanism to establish the extent of an activity is a placeholder and the extension is a candidate for deprecation after the solution for handling this requirement is revisited at a later time.",
+    "purpose": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities.\n\n* This extension SHALL NOT be used when an appropriate higher level concept code exists.\n* This extension cannot be used to satisfy a required binding.\n* When this extension is used on an element with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review).\n* When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHOULD be present. For example, the text might mention the title of value set that describes the allowed content.\n\n**Note to implementers:** This extension may eventually be supplanted by a new methodological approach to solving the same underlying issue.",
     "fhirVersion" : "4.0.1",
     "mapping" : [{
       "identity" : "v2",
@@ -63,10 +63,22 @@
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Url of a value set of activities",
-        "definition" : "A logical reference (i.e. a reference to ValueSet.url) to a value set (and optionally a version) that identifies a set of possible coded values for the element. This extension is used to convey a list of candidate codes when there is no formal code in the code system already defined that captures the intended set. For example, the concept of COVID preventative medications can be expressed as a value set because there is no specific code representing that concept.",
-        "comment": "This extension SHALL NOT be used when an appropriate higher level concept code exists. This extension cannot be used on an element with a required binding. When this extension is used on an element with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review). When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHOULD include the title of the referenced value set.",
+        "definition" : "A logical reference (i.e. a reference to ValueSet.url) to a value set (and optionally a version) that identifies a set of possible coded values for the element. This extension is used to convey a list of candidate codes when there is no formal code in the code system already defined that captures the intended set. For example, the concept of COVID preventative medications could be expressed as a value set because there is no specific code representing that concept.",
+        "comment": "This extension SHALL NOT be used when an appropriate higher level concept code exists. This extension cannot be used to satisfy a required binding. When this extension is used on an element with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review). When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHOULD be present. For example, the text might mention the title of value set that describes the allowed content.",
         "min" : 0,
         "max" : "1",
+        "condition": [ "coe-1", "coe-2" ],
+        "constraint": [{
+          "key": "coe-1",
+          "severity": "error",
+          "human": "When the codeOptions extension is used on a CodeableConcept, the CodeableConcept SHALL NOT have any codings.",
+          "expression": "coding.exists().not()"
+        }, {
+          "key": "coe-2",
+          "severity": "warning",
+          "human": "When the codeOptions extension is used on a CodeableConcept, the CodeableConcept SHOULD have text. For example, the text might mention the title of value set that describes the allowed content.",
+          "expression": "text.exists()"
+        }],
         "isModifier" : false,
         "mapping" : [{
           "identity" : "v2",
