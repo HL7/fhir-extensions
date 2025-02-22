@@ -64,6 +64,11 @@
       }]
     },
     {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
       "id" : "Extension.extension:informationType.url",
       "path" : "Extension.extension.url",
       "fixedUri" : "informationType"
@@ -93,6 +98,11 @@
       }]
     },
     {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
       "id" : "Extension.extension:summary.url",
       "path" : "Extension.extension.url",
       "fixedUri" : "summary"
@@ -115,6 +125,11 @@
       "type" : [{
         "code" : "Extension"
       }]
+    },
+    {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "Extension.extension:type.url",
@@ -149,6 +164,11 @@
       }]
     },
     {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
       "id" : "Extension.extension:classifier.url",
       "path" : "Extension.extension.url",
       "fixedUri" : "classifier"
@@ -181,6 +201,11 @@
       }]
     },
     {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
       "id" : "Extension.extension:quantity.url",
       "path" : "Extension.extension.url",
       "fixedUri" : "quantity"
@@ -203,6 +228,11 @@
       "type" : [{
         "code" : "Extension"
       }]
+    },
+    {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "Extension.extension:author.url",
@@ -234,6 +264,11 @@
       }]
     },
     {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
       "id" : "Extension.extension:path.url",
       "path" : "Extension.extension.url",
       "fixedUri" : "path"
@@ -256,6 +291,11 @@
       "type" : [{
         "code" : "Extension"
       }]
+    },
+    {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "Extension.extension:relatedArtifact.url",
@@ -282,6 +322,11 @@
       }]
     },
     {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
       "id" : "Extension.extension:freeToShare.url",
       "path" : "Extension.extension.url",
       "fixedUri" : "freeToShare"
@@ -304,6 +349,11 @@
       "type" : [{
         "code" : "Extension"
       }]
+    },
+    {
+      "id" : "Extension.extension:informationType.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
     },
     {
       "id" : "Extension.extension:component.url",
