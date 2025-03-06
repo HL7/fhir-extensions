@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="elementdefinition-defaulttype"/>
+  <id value="synchronicity-control"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="2"/>
+    <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/synchronicity-control"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1633"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1046"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="DefaultType"/>
-  <title value="Default Type"/>
-  <status value="draft"/>
+  <name value="OperationSynchronicityControl"/>
+  <title value="Operation Synchronicity Control"/>
+  <status value="retired"/>
   <experimental value="false"/>
-  <date value="2015-02-28"/>
+  <date value="2014-04-12"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="The default type that applies if the instance doesn't specify a particular type, and there is a choice of types. This extension is only for use on logical models."/>
+  <description value="Indicates that an operation or interaction must always be handled as synchronous or asynchronous, or that the server must or does provide both, and clients can choose"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -40,7 +40,15 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="ElementDefinition"/>
+    <expression value="CapabilityStatement.rest.operation"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement.rest.resource.interaction"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement.rest.resource.operation"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -48,11 +56,11 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Default type is non is specified in the instance"/>
-      <definition value="The default type that applies if the instance doesn't specify a particular type, and there is a choice of types. This extension is only for use on logical models."/>
-      <comment value="This situation can't arise in the FHIR instances, but can, for instance, happen with CDA."/>
+      <short value="synchronous | asynchronous | either"/>
+      <definition value="Indicates that the server does or SHALL support this operation or interaction as synchronous or asynchronous, or that the server must provide both options, and clients can choose"/>
       <min value="0"/>
       <max value="1"/>
+      <isModifier value="false"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -60,15 +68,18 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/synchronicity-control"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+        <code value="uri"/>
       </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/synchronicity-control"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
