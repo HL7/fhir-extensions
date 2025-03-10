@@ -1,0 +1,38 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
+
+<a name="r4b"> </a>
+<h3>R4B Summary</h3>
+
+<p>
+Changes made for R4B (omitting all the resources that didn't change).
+</p>
+
+{% include version-r4b-summary-StructureDefinition.xhtml %}
+{% include version-r4b-summary-ValueSet.xhtml %}
+{% include version-r4b-summary-CodeSystem.xhtml %}
+{% include version-r4b-summary-SearchParameter.xhtml %}
+
+<a name="r4"> </a>
+<h3>R4 Summary</h3>
+<p>
+Changes made for R4 (omitting all the resources that didn't change).
+</p>
+
+{% include version-r4-summary-StructureDefinition.xhtml %}
+{% include version-r4-summary-ValueSet.xhtml %}
+{% include version-r4-summary-CodeSystem.xhtml %}
+{% include version-r4-summary-SearchParameter.xhtml %}
+
+<a name="r3"> </a>
+<h3>R3 Summary</h3>
+
+<p>
+Changes made for R3 (omitting all the resources that didn't change).
+</p>
+
+{% include version-r3-summary-StructureDefinition.xhtml %}
+{% include version-r3-summary-ValueSet.xhtml %}
+{% include version-r3-summary-CodeSystem.xhtml %}
+{% include version-r3-summary-SearchParameter.xhtml %}
+
+</div>

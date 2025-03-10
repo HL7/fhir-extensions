@@ -179,6 +179,12 @@
           <generation value="html"/>
         </page>
         <page>
+          <sourceUrl value="extensions-summary.xml"/>
+          <name value="extensions-summary.html"/>
+          <title value="Summary for other versions"/>
+          <generation value="html"/>
+        </page>
+        <page>
           <sourceUrl value="history.xml"/>
           <name value="history.html"/>
           <title value="IG Version History"/>
