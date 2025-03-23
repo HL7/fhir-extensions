@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="workflow-statusReason"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/workflow-statusReason"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1540"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="WorkflowStatusReason"/>
+  <title value="Workflow Status Reason"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2017-12-06"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="References a resource or provides a code or text that explains why this event occurred or request was created."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="workflow"/>
+    <uri value="http://hl7.org/fhir/workflow"/>
+    <name value="Workflow Pattern"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="DomainResource"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Why was the status changed?"/>
+      <definition value="Captures the reason for the current state of the resource. Note that any change to the state requires the removal of any existing statusReasons, and, if appropriate, populating new statusReasons."/>
+      <comment value="This is generally only used for 'exception' statuses such as 'suspended' or 'cancelled'. The reason why the resource was created at all is captured in reasonCode, not here. (Distinct reason codes for different statuses can be enforced using invariants if they are universal bindings).&#xa;&#xa;Must only be used on resources with a 'status' element that do not already have a statusReason."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mapping>
+        <identity value="workflow"/>
+        <map value="Event.statusReason&#xA;Request.statusReason"/>
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/workflow-statusReason"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EventStatusReason"/>
+        </extension>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/status-reason"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
