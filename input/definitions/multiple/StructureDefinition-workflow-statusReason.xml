@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="References a resource or provides a code or text that explains why this event occurred or request was created."/>
+  <description value="Captures the reason for the current state of the resource. Note that any change to the state requires the removal of any existing statusReasons, and, if appropriate, populating new statusReasons."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="workflow"/>
