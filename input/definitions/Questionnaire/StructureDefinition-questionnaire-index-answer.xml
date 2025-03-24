@@ -25,6 +25,7 @@
 		</telecom>
 	</contact>
 	<description value="If present, indicates a request for the server to index QuestionnaireResponses recorded against this Questionnaire by this particular answer value."/>
+	<purpose value="Servers typically won't want to index by every single answer in a QuestionnaireResponse, as that would quickly become very expensive.  This extension allows narrowing down exactly where indexing is required."/>
 	<fhirVersion value="5.0.0"/>
 	<mapping>
 		<identity value="rim"/>
@@ -46,7 +47,6 @@
 			<short value="Index answers for this question?"/>
 			<definition value="If present, indicates a request for the server to index QuestionnaireResponses recorded against this Questionnaire by this particular answer value."/>
 			<comment value="If set at the root of a Questionnaire, indicates all answers should be indexed.  If set on a group, indicates answers to descendant questions should be indexed.  If set on a question, indicates that answers for that specific question should be indexed.  Meaningless if declared on a 'display' item."/>
-			<requirements value="Servers typically won't want to index by every single answer in a QuestionnaireResponse, as that would quickly become very expensive.  This extension allows narrowing down exactly where indexing is required."/>
 			<min value="0"/>
 			<max value="1"/>
 			<isModifier value="false"/>
