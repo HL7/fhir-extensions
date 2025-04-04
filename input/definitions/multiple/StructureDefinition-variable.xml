@@ -86,7 +86,7 @@
       <path value="Extension"/>
       <short value="Variable for processing"/>
       <definition value="Variable specifying a logic to generate a variable for use in subsequent logic.  The name of the variable will be added to FHIRPath's context when processing descendants of the element that contains this extension as well as extensions within the same element."/>
-      <comment value="Ordering of variable extension declarations is significant as variables declared in one repetition of this extension might be used in subsequent extension repetitions&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/behavior.html#variable)."/>
+      <comment value="Ordering of variable extension declarations is significant as variables declared in one repetition of this extension might be used in subsequent extension repetitions&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#variable)."/>
       <min value="0"/>
       <max value="*"/>
       <constraint>

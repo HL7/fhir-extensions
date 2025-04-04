@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="An dynamic expression"/>
       <definition value="An expression that, when evaluated, provides the value for the element on which it appears."/>
-      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/behavior.html#cqf-expression)."/>
+      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#cqf-expression)."/>
       <min value="0"/>
       <max value="1"/>
     </element>
