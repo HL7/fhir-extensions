@@ -20,11 +20,12 @@ _Indicate the work group(s) that are responsible for the extension context(s) if
 
 ### Updated extension
 Please attest to one of the following:
-[ ] **-** This extension is marked as 'draft' and is not referenced in any known published specifications or used in any implementations.
 [ ] **-** This PR contains **no breaking changes** from the previous version of the extension
+[ ] **-** This extension is marked as 'draft' and is not referenced in any known published specifications or used in any implementations.
 [ ] **-** This PR does not meet ether of the above, but has received FMG approval as documented in their minutes here: _____
 
-If the extension revision adds or removes scopes, please indicate the approvals of the impacted work group(s) below:
+If the extension revision adds or removes scopes for content not owned by the work group requesting the change, 
+please indicate the approvals of the impacted work group(s) below:
 | Work Group | Extension context(s) | Approval Minutes Link | Overlap checked? |
 | ---------- | -------------------- | --------------------- |------------------|
 |            |                      |                       |                  |
