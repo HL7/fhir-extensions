@@ -59,7 +59,7 @@
       <path value="Extension"/>
       <short value="User prompt for format"/>
       <definition value="Additional instructions for the user to guide their input (i.e. a human readable version of a regular expression like &quot;nnn-nnn-nnn&quot;). In most UIs this is the placeholder (or 'ghost') text placed directly inside the edit controls and that disappear when the control gets the focus."/>
-      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/rendering.html#entryFormat)."/>
+      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/rendering.html#entryFormat)."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

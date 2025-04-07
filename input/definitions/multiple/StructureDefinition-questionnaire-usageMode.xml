@@ -54,7 +54,7 @@
       <path value="Extension"/>
       <short value="capture | display | display-non-empty | capture-display | capture-display-non-empty"/>
       <definition value="Identifies that the specified element should only appear in certain &quot;modes&quot; of operation."/>
-      <comment value="See additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/behavior.html#usageMode)."/>
+      <comment value="See additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#usageMode)."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>
