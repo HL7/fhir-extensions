@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="status-reason"/>
+  <meta>
+    <lastUpdated value="2023-01-31T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/status-reason"/>
+  <version value="5.0.0"/>
+  <name value="StatusReasonValueSet"/>
+  <title value="Status Reaaon"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="This example value set defines a set of codes that can be used to indicate the reason for a status change."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <concept>
+        <code value="HLEGAL"/>
+        <display value="legal"/>
+      </concept>
+      <concept>
+        <code value="PATSFTY"/>
+        <display value="patient safety"/>
+      </concept>
+      <concept>
+        <code value="EIE"/>
+        <display value="entered in error"/>
+      </concept>
+      <concept>
+        <code value="RR"/>
+        <display value="regulatory requirement"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

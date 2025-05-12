@@ -45,49 +45,61 @@
   <concept>
     <code value="primary-outcome-data-collection"/>
     <display value="Primary outcome data collection"/>
+    <definition value="The data has been obtained for the primary outcomes from all participants."/>
   </concept>
   <concept>
     <code value="registration-submission"/>
     <display value="Registration submission"/>
+    <definition value="The initial record has been submitted for registration."/>
   </concept>
   <concept>
     <code value="registration-submission-qc"/>
     <display value="Registration submission Quality Check"/>
+    <definition value="The initial record submission has been confirmed to meet acceptance criteria for registration."/>
   </concept>
   <concept>
     <code value="registration-posting"/>
     <display value="Registration posting"/>
+    <definition value="The initial record has been registered and published."/>
   </concept>
   <concept>
     <code value="results-submission"/>
     <display value="Results submission"/>
+    <definition value="Study results have been submitted."/>
   </concept>
   <concept>
     <code value="results-submission-qc"/>
     <display value="Results submission Quality Check"/>
+    <definition value="The submitted study results have been confirmed to meet acceptance criteria for publication."/>
   </concept>
   <concept>
     <code value="results-posting"/>
     <display value="Results posting"/>
+    <definition value="Study results have been published in the registry."/>
   </concept>
   <concept>
     <code value="disposition-submission"/>
     <display value="Disposition submission"/>
+    <definition value="A request for deferral of study submission requirements has been submitted."/>
   </concept>
   <concept>
     <code value="disposition-submission-qc"/>
     <display value="Disposition submission Quality Check"/>
+    <definition value="The submitted request for deferral of study submission requirements has been confirmed for acceptance for publication."/>
   </concept>
   <concept>
     <code value="disposition-posting"/>
     <display value="Disposition posting"/>
+    <definition value="The request for deferral of study submission requirements has been published in the registry."/>
   </concept>
   <concept>
     <code value="update-submission"/>
     <display value="Update submission"/>
+    <definition value="An update to the record has been submitted."/>
   </concept>
   <concept>
     <code value="update-posting"/>
     <display value="Update posting"/>
+    <definition value="An update to the record has been published in the registry."/>
   </concept>
 </CodeSystem>

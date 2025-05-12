@@ -55,7 +55,7 @@
       <path value="Extension"/>
       <short value="Must be &lt;= this value"/>
       <definition value="The inclusive upper bound on the range of allowed values for the data element."/>
-      <comment value="Data type specified must be the same as the data type for the data element.  For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/STU4-ballot/behavior.html#maxValue)."/>
+      <comment value="Data type specified must be the same as the data type for the data element.  For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#maxValue)."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

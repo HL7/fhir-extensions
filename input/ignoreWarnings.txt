@@ -29,3 +29,13 @@ VALUESET_INC_TOO_MANY_CODES
 # known references to draft items
 MSG_DEPRECATED
 MSG_DRAFT
+
+# These codes properties are intended to be internal codes
+INFORMATION: CodeSystem/obligation: CodeSystem.property[2]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
+INFORMATION: CodeSystem/obligation: CodeSystem.property[3]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
+
+# The version pinned is correct
+INFORMATION: StructureDefinition.differential.element[2].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/artifact-version-policy to 5.2.0-ballot from choices of 1.0.0 (hl7.terminology.r5#6.2.0), 5.2.0-ballot (hl7.fhir.uv.extensions#5.2.0-ballot)
+INFORMATION: StructureDefinition.differential.element[9].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/value-filter-comparator to 5.2.0-ballot from choices of 5.0.0 (hl7.fhir.r5.core#5.0.0), 5.2.0-ballot (hl7.fhir.uv.extensions#5.2.0-ballot)
+INFORMATION: StructureDefinition.snapshot.element[17].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/value-filter-comparator to 5.2.0-ballot from choices of 5.0.0 (hl7.fhir.r5.core#5.0.0), 5.2.0-ballot (hl7.fhir.uv.extensions#5.2.0-ballot)
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/artifact-version-policy to 5.2.0-ballot from choices of 1.0.0 (hl7.terminology.r5#6.2.0), 5.2.0-ballot (hl7.fhir.uv.extensions#5.2.0-ballot)

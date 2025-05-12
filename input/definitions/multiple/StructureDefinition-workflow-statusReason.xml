@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="questionnaire-displayCategory"/>
+  <id value="workflow-statusReason"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="3"/>
+    <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/workflow-statusReason"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1250"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1540"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="QDisplayCategory"/>
-  <title value="Questionnaire Display Category"/>
-  <status value="active"/>
+  <name value="WorkflowStatusReason"/>
+  <title value="Workflow Status Reason"/>
+  <status value="draft"/>
   <experimental value="false"/>
-  <date value="2013-07-04"/>
+  <date value="2017-12-06"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
@@ -29,8 +29,18 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Describes the intended purpose of the rendered text.  For example - instructions, guidance on access control, maintenance information, etc."/>
+  <description value="Captures the reason for the current state of the resource. Note that any change to the state requires the removal of any existing statusReasons, and, if appropriate, populating new statusReasons."/>
   <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="workflow"/>
+    <uri value="http://hl7.org/fhir/workflow"/>
+    <name value="Workflow Pattern"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
@@ -40,11 +50,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Questionnaire.item"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="ElementDefinition"/>
+    <expression value="DomainResource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -52,14 +58,14 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Purpose of rendered text"/>
-      <definition value="Describes the intended purpose of the rendered text.  For example - instructions, guidance on access control, maintenance information, etc."/>
-      <comment value="See additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/rendering.html#displayCategory)."/>
+      <short value="Why was the status changed?"/>
+      <definition value="Captures the reason for the current state of the resource. Note that any change to the state requires the removal of any existing statusReasons, and, if appropriate, populating new statusReasons."/>
+      <comment value="This is generally only used for 'exception' statuses such as 'suspended' or 'cancelled'. The reason why the resource was created at all is captured in reasonCode, not here. (Distinct reason codes for different statuses can be enforced using invariants if they are universal bindings).&#xa;&#xa;Must only be used on resources with a 'status' element that do not already have a statusReason."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <mapping>
-        <identity value="rim"/>
-        <map value="N/A - MIF rather than RIM level"/>
+        <identity value="workflow"/>
+        <map value="Event.statusReason&#xA;Request.statusReason"/>
       </mapping>
     </element>
     <element id="Extension.extension">
@@ -68,7 +74,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/workflow-statusReason"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
@@ -78,11 +84,10 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="QuestionnaireDisplayCategory"/>
+          <valueString value="EventStatusReason"/>
         </extension>
-        <strength value="extensible"/>
-        <description value="Identifies the purpose for a &quot;display&quot; item."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/questionnaire-display-category"/>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/status-reason"/>
       </binding>
     </element>
   </differential>
