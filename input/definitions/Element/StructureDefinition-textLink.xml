@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="textLink"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/textLink"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1691"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="Textink"/>
+  <title value="Text Link"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2013-12-05"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Used to denote which portions of the narrative are linked to (usually, generated from) structured data in resources. This information might be used in several different ways, including translating and regenerating narrative in applications that are using/presenting the narrative."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Narrative"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Text Link"/>
+      <definition value="Link between narrative elements and structured data items in resources"/>
+      <comment value="Used to denote which portions of the narrative are linked to (usually, generated from) structured data in resources. This information might be used in several different ways, including translating and regenerating narrative in applications that are using/presenting the narrative."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+
+    <element id="Extension.extension:html">
+      <path value="Extension.extension"/>
+      <sliceName value="html"/>
+      <short value="Unique identifier"/>
+      <definition value="The id attribute on an element in the xhtml narrative"/>
+      <comment value="The id attribute on an element in the xhtml narrative."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:html.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:html.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="html"/>
+    </element>
+    <element id="Extension.extension:html.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <definition value="The actual HTML element id"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+
+    <element id="Extension.extension:data">
+      <path value="Extension.extension"/>
+      <sliceName value="data"/>
+      <short value="Unique identifier"/>
+      <definition value="The id attribute on a resource element (#{id}, relative#{id} or https://absolute#{id})"/>
+      <comment value="The id attribute on an element in the xhtml narrative. The reference can be a fragment to a reference in the resource that contains the narrative, or a relative or absolute URL, optionally with a fragment that identifies an element in the other resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:data.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:data.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="data"/>
+    </element>
+    <element id="Extension.extension:data.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <short value="The actual data element in this resource, or another resource"/>
+      <min value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+
+    <element id="Extension.extension:selector">
+      <path value="Extension.extension"/>
+      <sliceName value="selector"/>
+      <short value="FHIRPath that selects a subset of the identified data"/>
+      <definition value="FHIRPath that selects a subset of the identified data. This sub-extension exists because in some circumstances, the specific data items are in resources where the constructor of the narrative can't introduce specific ids on the relevent elements"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:selector.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:selector.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="selector"/>
+    </element>
+    <element id="Extension.extension:selector.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <short value="Simple FHIRPath that can't use .resolve()"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/textLink"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
