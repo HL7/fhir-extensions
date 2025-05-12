@@ -50,9 +50,9 @@
       <max value="1"/>
     </element>
 
-    <element id="Extension.extension:html">
+    <element id="Extension.extension:htmlid">
       <path value="Extension.extension"/>
-      <sliceName value="html"/>
+      <sliceName value="htmlid"/>
       <short value="Unique identifier"/>
       <definition value="The id attribute on an element in the xhtml narrative"/>
       <comment value="The id attribute on an element in the xhtml narrative."/>
@@ -62,18 +62,18 @@
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:html.extension">
+    <element id="Extension.extension:htmlid.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:html.url">
+    <element id="Extension.extension:htmlid.url">
       <path value="Extension.extension.url"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="html"/>
+      <fixedUri value="htmlid"/>
     </element>
-    <element id="Extension.extension:html.value[x]">
+    <element id="Extension.extension:htmlid.value[x]">
       <path value="Extension.extension.value[x]"/>
       <definition value="The actual HTML element id"/>
       <min value="1"/>
