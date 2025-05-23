@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="time-precision"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/time-precision"/>
+  <version value="5.0.0"/>
+  <name value="TimePrecision"/>
+  <title value="Time Precision"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-23"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Specifies that the precision of the datetime or time value is less than what appears and indicates the actual level of precision. This extension is used when the precision of a datetime or time value is not conveyed by the value itself (e.g. the datetime value 2014 has a precision of 'min'; the datetime value 2014-02-01T10:00:00Z actually represents &quot;10:00&quot; and unknown seconds on Feb 1, 2014."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="instant"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="dateTime"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="time"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Explicit precision (h, min, s)"/>
+      <definition value="Specifies that the precision of the datetime or time value is less than what appears and indicates the actual level of precision. This extension is used when the precision of a datetime or time value is not conveyed by the value itself (e.g. the datetime value 2014 has a precision of 'min'; the datetime value 2014-02-01T10:00:00Z actually represents &quot;10:00&quot; and unknown seconds on Feb 1, 2014."/>
+      <comment value="There is no expectation that software comparing dates based on precisions will take this extension into account, though software is permitted to do so if it wishes."/>
+      <min value="0"/>
+      <max value="1"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/time-precision"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
+          <valueMarkdown value="Time duration units"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="TimeDuration"/>
+        </extension>
+        <strength value="required"/>
+        <description value="Time duration units"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/time-duration-units"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
