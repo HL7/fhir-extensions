@@ -1,6 +1,6 @@
-Alert detection activation state is whether the device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code(s) and priority (priorities) at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert. This extension may repeat, describing the activation states of different alerts (and priorities).
+Multiple repetitions of this extension may be applied to the target [[[Device]]] or [[[DeviceMetric]]], each describing the activation state of different alerts (and priorities).
 
-This extension is used to report, not set, alert detection activation state.
+This extension is used to report&mdash;not set&mdash;alert detection activation state.
 
 If more than one occurrence of this extension could describe the same alert and priority combination, the more specific occurrence should apply. For example, if this extension is used twice on a Device, once without an alertCode value, and once with; then, the activation state described in the occurrence with an alertCode applies to that alert, while the activation state of the occurrence without a code applies to other alerts. Broadly, "more specific" means:
 

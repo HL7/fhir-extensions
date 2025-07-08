@@ -18,8 +18,8 @@
     "valueCode" : "can-bind"
   }],
   "url" : "http://hl7.org/fhir/StructureDefinition/device-alertDetection",
-  "name" : "DeviceAlertingDetection",
-  "title" : "Device Alerting Detection Extension",
+  "name" : "DeviceAlertDetection",
+  "title" : "Device Alert Detection Extension",
   "status" : "draft",
   "date" : "2024-11-07T15:33:47-08:00",
   "publisher" : "HL7 International / Health Care Devices",
@@ -53,7 +53,7 @@
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Device Alerting Detection Extension",
+      "short" : "Device Alert Detection Extension",
       "definition" : "Alert detection activation state describes whether a device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code(s) and priority (priorities) at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert.",
       "min" : 0,
       "max" : "*",
@@ -81,7 +81,7 @@
         "severity" : "error",
         "human" : "Subextension `alertCode` may only be omitted on the Device resource.",
         "expression" : "extension('alertCode').exists().not() implies (%resource is Device)",
-        "source" : "http://hl7.org/fhir/StructureDefinition/DeviceAlertingDectection"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DeviceAlertDectection"
       }],
       "isModifier" : false
     },
@@ -289,7 +289,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-condition"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/devicealert-condition"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -301,7 +301,7 @@
       "path" : "Extension.extension",
       "sliceName" : "priority",
       "short" : "The alert priority for which the alert detection activation state is described",
-      "definition" : "The alert priority (or priorities) for which the alert detection activation state is described. If an alert priority, or priorities, are specified, then the activation state is for the specific priorities of those alerts. If no alert priority is specified, the alert detection activation state applies to all priorities of the specified alerts. (See the extension description for additional details regarding multiple occurances of this extension.)",
+      "definition" : "The alert priority (or priorities) for which the alert detection activation state is described. If an alert priority, or priorities, are specified, then the activation state is for the specific priorities of those alerts. If no alert priority is specified, the alert detection activation state applies to all priorities of the specified alerts. (See the extension description for additional details regarding multiple occurrences of this extension.)",
       "min" : 0,
       "max" : "*",
       "base" : {
@@ -439,7 +439,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-priority"
+        "valueSet" : "http://terminology.hl7.org/CodeSystem/devicealert-priority"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -753,7 +753,7 @@
       "path" : "Extension.extension",
       "sliceName" : "limitRange",
       "short" : "Limits applicable to the indicated alert priority.",
-      "definition" : "The range of values outside of which an alarm condition of the (single) specified priority would be trigged for the specified alert code(s), if the alert activation state were `active`. Limits may include upper or lower values, or both. If units are present, they should be the same as the DeviceMetric. If absent, units are assumed to be the same as the DeviceMetric.",
+      "definition" : "The range of values outside of which an alarm condition of the (single) specified priority would be triggered for the specified alert code(s), if the alert activation state were `active`. Limits may include upper or lower values, or both. If units are present, they should be the same as the DeviceMetric. If absent, units are assumed to be the same as the DeviceMetric.",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -1117,7 +1117,7 @@
     "element" : [{
       "id" : "Extension",
       "path" : "Extension",
-      "short" : "Device Alerting Detection Extension",
+      "short" : "Device Alert Detection Extension",
       "definition" : "Alert detection activation state describes whether a device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code and priority (priorities) at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert.",
       "constraint" : [{
         "key" : "alrtdet-1",
@@ -1160,7 +1160,7 @@
       }],
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-condition"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/devicealert-condition"
       }
     },
     {
@@ -1191,7 +1191,7 @@
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-priority"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/devicealert-priority"
       }
     },
     {
@@ -1255,7 +1255,7 @@
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-activationState"
+        "valueSet" : "http://terminology.hl7.org/ValueSet/devicealert-activationState"
       }
     },
     {
