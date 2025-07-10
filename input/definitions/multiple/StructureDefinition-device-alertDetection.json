@@ -96,7 +96,7 @@
       }],
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "http://terminology.hl7.org/ValueSet/devicealert-condition"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-condition"
       }
     },
     {
@@ -127,7 +127,7 @@
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://terminology.hl7.org/ValueSet/devicealert-priority"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-priority"
       }
     },
     {
@@ -191,7 +191,7 @@
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://terminology.hl7.org/ValueSet/devicealert-activationState"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-activationState"
       }
     },
     {
