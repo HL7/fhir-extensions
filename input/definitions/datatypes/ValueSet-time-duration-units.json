@@ -30,7 +30,7 @@
       "value" : "http://hl7.org/fhir"
     }]
   }],
-  "description" : "This value set includes all common UCUM codes used for Time Duration Units - 'h' (hours), 'min' (minutes), 's' (seconds), and 'ms' (milliseconds).",
+  "description" : "This value set includes all common UCUM codes used for Time Duration Units - 'a' (years), 'mo' (months), 'd' (days), 'h' (hours), 'min' (minutes), 's' (seconds), and 'ms' (milliseconds). NOTE: This value set is the same as the duration units value set, except that it does not include weeks, because weeks are not a valid precision for a datetime, time, or instant value.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -57,6 +57,18 @@
       {
         "code" : "h",
         "display" : "hours"
+      },
+      {
+        "code" : "d",
+        "display" : "days"
+      },
+      {
+        "code" : "mo",
+        "display" : "months"
+      },
+      {
+        "code" : "a",
+        "display" : "years"
       }]
     }]
   }

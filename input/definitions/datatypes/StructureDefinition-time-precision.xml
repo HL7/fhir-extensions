@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Specifies that the precision of the datetime or time value is less than what appears and indicates the actual level of precision. This extension is used when the precision of a datetime or time value is not conveyed by the value itself (e.g. the datetime value 2014 has a precision of 'min'; the datetime value 2014-02-01T10:00:00Z actually represents &quot;10:00&quot; and unknown seconds on Feb 1, 2014."/>
+  <description value="Specifies that the precision of the datetime, time, or instant value is less than what appears and indicates the actual level of precision. This extension is used when the precision of a datetime, time, or instant value is not conveyed by the value itself (e.g. the datetime value 2014-02-01T10:00:00Z has a precision of 'min' and actually represents &quot;10:00&quot; and unknown seconds on Feb 1, 2014."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
