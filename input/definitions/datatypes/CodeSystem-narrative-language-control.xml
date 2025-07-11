@@ -42,17 +42,17 @@
   <hierarchyMeaning value="is-a"/>
   <content value="complete"/>
   <concept>
-    <code value="#no"/>
+    <code value="_no"/>
     <display value="Language Sections Prohibited"/>
     <definition value="No Language Sections in the narrative."/>
   </concept>
   <concept>
-    <code value="#yes"/>
+    <code value="_yes"/>
     <display value="Language Sections Required"/>
     <definition value="The narrative must be divided into divs marked with language"/>
   </concept>
   <concept>
-    <code value="#resource"/>
+    <code value="_resource"/>
     <display value="Resource Language Requred"/>
     <definition value="The must be a section matching the Resource.language."/>
   </concept>

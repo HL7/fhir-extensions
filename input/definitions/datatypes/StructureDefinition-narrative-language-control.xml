@@ -15,8 +15,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1670"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="narrative-language-control"/>
-  <title value="Target path"/>
+  <name value="NarrativeLanguageControl"/>
+  <title value="Narrative Language Control"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
