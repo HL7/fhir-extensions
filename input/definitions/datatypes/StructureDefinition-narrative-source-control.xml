@@ -6,7 +6,7 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/>
+    <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="NarrativeSourceControl"/>
   <title value="Narrative Source Control"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Validators should check that elements in the narrative have source attribution"/>
-      <definition value="A value other than 'success' indicates that validators should check that elements in the narrative have source attribution in their class attributes (boilerplate, generated, and original), and level of issue associated with the check"/>
+      <definition value="A value other than 'success' indicates that validators should check that elements in the narrative have source attribution in their class attributes (boilerplate, generated, extension and additional), and level of issue associated with the check. See [narrative control](https://build.fhir.org/ig/FHIR/ig-guidance/narrative.html)"/>
       <min value="0"/>
       <max value="1"/>
     </element>
