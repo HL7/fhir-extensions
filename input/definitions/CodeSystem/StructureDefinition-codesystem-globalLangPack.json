@@ -1,0 +1,70 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "codesystem-globalLangPack",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "vocab"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/codesystem-globalLangPack",
+  "version" : "4.0.1",
+  "name" : "CodeSystemGlobalLangPack",
+  "title" : "CodeSystem Global LangPack",
+  "status" : "active",
+  "date" : "2019-11-01T09:29:23+11:00",
+  "publisher" : "HL7 International / Terminology Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/Vocab"
+    }]
+  }],
+  "description" : "Marks a supplement as a global language pack - that is, that the language designations provided in the supplement are intended for general use with that language for all valuesets and code systems.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "CodeSystem"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Marks that a supplement is intended to be used as a global language pack",
+      "definition" : "Marks a supplement as a global language pack - that is, that the language designations provided in the supplement are intended for general use with that language for all valuesets and code systems.",
+      "min" : 0,
+      "max" : "1",
+      "isModifier" : false
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/codesystem-globalLangPack"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "boolean"
+      }]
+    }]
+  }
+}
