@@ -18,7 +18,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="SDImposeProfile"/>
-  <title value="StructureDefinition Dependent Profiles"/>
+  <title value="StructureDefinition Imposes Profile"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2014-01-31"/>
