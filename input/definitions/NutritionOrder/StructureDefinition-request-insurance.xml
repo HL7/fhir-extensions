@@ -47,6 +47,9 @@
     <type value="element"/>
     <expression value="NutritionOrder"/>
   </context>
+    <type value="element"/>
+    <expression value="CarePlan"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
