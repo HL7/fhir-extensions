@@ -21,8 +21,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.3.3314"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="CodingPurposeVS"/>
-  <title value="Coding Purpose ValueSet"/>
+  <name value="NarrativeLanguageControlVS"/>
+  <title value="Narrative Language Control ValueSet"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2023-01-31T07:07:38+11:00"/>

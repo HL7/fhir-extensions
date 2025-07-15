@@ -72,7 +72,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/language-control"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/narrative-language-control"/>
       </binding>
     </element>
   </differential>
