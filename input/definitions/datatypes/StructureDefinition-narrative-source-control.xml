@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Indicates that validators should check that elements in the narrative have source attribution in their class attributes (boilerplate, generated, and original), and level of issue associated with the check"/>
+  <description value="Indicates that validators should check that elements in the narrative have source attribution in their class attributes (boilerplate, generated, extensions and additional), and level of issue associated with the check"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Validators should check that elements in the narrative have source attribution"/>
-      <definition value="A value other than 'success' indicates that validators should check that elements in the narrative have source attribution in their class attributes (boilerplate, generated, extension and additional), and level of issue associated with the check. See [narrative control](https://build.fhir.org/ig/FHIR/ig-guidance/narrative.html)"/>
+      <definition value="A value other than 'success' indicates that validators should check that elements in the narrative have source attribution in their class attributes (boilerplate, generated, extensions and additional), and level of issue associated with the check. See [narrative control](https://build.fhir.org/ig/FHIR/ig-guidance/narrative.html)"/>
       <min value="0"/>
       <max value="1"/>
     </element>
