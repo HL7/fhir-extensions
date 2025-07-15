@@ -365,7 +365,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="version-comparison-master"/>
       </code>
-      <value value="1.0.0"/>
+      <value value="5.2.0"/>
     </parameter>
     <parameter>
       <code>
