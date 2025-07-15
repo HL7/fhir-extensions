@@ -42,6 +42,11 @@
     <type value="element"/>
     <expression value="TriggerDefinition"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="($this is ParameterDefinition).not() or ($this.ofType(ParameterDefinition).type in 'BackboneElement' | 'Extension')"/>
+  </context>
+  <contextInvariant value="of"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
