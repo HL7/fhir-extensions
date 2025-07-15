@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="This indicates that the element containing this extension has content that makes reference to the specified contained resource.&#x0a;* Expression may contain CQL or FHIRPath that makes reference to ValueSets&#x0a;* string may contain FHIRPath referencing ValueSets or contain escaped XHTML referencing images (as Binaries)&#x0a;* Narrative contains 'text' which is xhtml (and can't have extensions itself) which can also refer to images&#x0a;* markdown can refer to images."/>
+  <description value="This indicates that the element containing this extension has an expression, xhtml, or some other content that makes reference to the specified contained resource in a way that is not detectable by the dom-3 constraint.  This extension is included to make the reference 'visible' to the dom-3 constraint."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -61,7 +61,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Contained resource referenced by expression"/>
-      <definition value="This indicates that the element containing this extension has an expression that makes reference to the specified contained resource."/>
+      <definition value="This indicates that the element containing this extension has an expression, xhtml, or some other content that makes reference to the specified contained resource in a way that is not detectable by the dom-3 constraint.  This extension is included to make the reference 'visible' to the dom-3 constraint."/>
       <min value="0"/>
       <max value="*"/>
     </element>
