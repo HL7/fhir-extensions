@@ -72,8 +72,8 @@
   <p>    
     This guide includes extensions making use of terminologies such
     as LOINC and SNOMED CT that have more restrictive licensing requirements.  Implementers should make themselves familiar with licensing and
-    any other constraints of terminologies used as part of their implementation process.  In some cases,
-    licensing requirements may limit the systems that data captured using certain codes may be shared with.
+    any other constraints of terminologies used as part of their implementation process.  
+    Licencing requirements may limit the systems to which data recorded using certain codes may be shared.
   </p>
   {% include ip-statements.xhtml %}
   
