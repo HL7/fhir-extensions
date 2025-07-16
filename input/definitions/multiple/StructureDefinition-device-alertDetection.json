@@ -3,7 +3,7 @@
   "id" : "device-alertDetection",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 0
+    "valueInteger" : 1
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -11,7 +11,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "draft"
+    "valueCode" : "trial-use"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
@@ -20,7 +20,7 @@
   "url" : "http://hl7.org/fhir/StructureDefinition/device-alertDetection",
   "name" : "DeviceAlertDetection",
   "title" : "Device Alert Detection Extension",
-  "status" : "draft",
+  "status" : "active",
   "date" : "2024-11-07T15:33:47-08:00",
   "publisher" : "HL7 International / Health Care Devices",
   "contact" : [{
