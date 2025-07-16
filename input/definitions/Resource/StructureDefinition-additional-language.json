@@ -31,7 +31,7 @@
     "name" : "HL7 International / FHIR Infrastructure",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://www.hl7.org/Special/committees/fhir-i"
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
     }]
   }],
   "description" : "The Resource contains content in a language additional to the one in the language element.",
