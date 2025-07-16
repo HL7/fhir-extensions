@@ -1,0 +1,13 @@
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+	
+<div style="border: 1px solid maroon; padding: 10px; background-color: #fffbf7; min-height: 160px;">
+<img src="assets/images/dragon.png" width="150" style="float:left; mix-blend-mode: multiply; margin-right: 10px;" title="Here Be Dragons!" height="150"/>
+
+<p class="warning">
+This extension is primarily to support functionality such as differing FHIRPaths between versions for SearchParameter definitions,
+SubscriptionTopics, and extension contexts.  Authors interested in using this extension for other purposes should check with FHIR
+Infrastructure about whether their intended use is safe/appropriate.
+</p>
+</div>
+
+</div>
