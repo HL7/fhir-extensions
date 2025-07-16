@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="canonicalresource-short-description"/>
+  <id value="datatype-short-string"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -9,22 +9,15 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-      <valueMarkdown value="Replaced by [[[http://hl7.org/fhir/StructureDefinition/datatype-short-string]]]"/>
-    </extension>
-    <valueCode value="deprecated"/>
+    <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/canonicalresource-short-description"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1679"/>
-  </identifier>
+  <url value="http://hl7.org/fhir/StructureDefinition/datatype-short-string"/>
   <version value="5.0.0"/>
-  <name value="CRShortDescription"/>
-  <title value="CanonicalResource Short Description"/>
-  <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2014-04-12"/>
+  <name value="DataTypeShortString"/>
+  <title value="DataType Short String"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-16"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
@@ -32,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A single paragraph plain string short description alternative to CanonicalResource.description for display in lists etc."/>
+  <description value="Defines a shorter version of the text content of the element on which the extension appears."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -43,7 +36,11 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="CanonicalResource"/>
+    <expression value="string"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="markdown"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -51,11 +48,12 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Short description - single paragraph, plain string"/>
-      <definition value="A single paragraph plain string short description alternative to CanonicalResource.description for display in lists etc."/>
+      <short value="Short string with equivalent content"/>
+      <definition value="Defines a shorter version of the text content of the element on which the extension appears."/>
+      <requirements value="Used to capture a shorter version of a string for use on mobile devices, list views, or other renderings that are space-limited."/>
+      <comments value="This extension is only appropriate to use on elements that contain arbitrary (non-computable) and non-controlled text for display. E.g., it is not appropriate to add a 'short' version of a `Questionnaire.item.linkId` since it is a computable value; nor is it appropriate to add a 'short' version of a `coding.display` since it is controlled by the defining CodeSystem. If you are unsure about an element context, please check with the FHIR Infrastructure WG."/>
       <min value="0"/>
-      <max value="*"/>
-      <isModifier value="false"/>
+      <max value="1"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -63,7 +61,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/canonicalresource-short-description"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/datatype-short-string"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
