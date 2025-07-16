@@ -32,7 +32,7 @@
   }],
   "description" : "Describes the versioning policy of the artifact.",
   "purpose" : "To provide versioning policy information for an artifact.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

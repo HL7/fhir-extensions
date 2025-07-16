@@ -32,7 +32,7 @@
   }],
   "description" : "A human-friendly release label assigned for the version.",
   "purpose" : "To provide a human-friendly label for an artifact version that might convey meaning beyond the version (e.g., \"2023Q2\" might indicate that a release artifact is relevant for or was released in the 2nd quarter of 2023).",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

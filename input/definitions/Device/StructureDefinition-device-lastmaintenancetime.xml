@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="DateTime of the last time the device was subject to maintenance."/>
-  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

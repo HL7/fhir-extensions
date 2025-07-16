@@ -32,7 +32,7 @@
   }],
   "description" : "Release notes for a release of an artifact.",
   "purpose" : "To specify a brief description of the contents and updates of a particular artifact release.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

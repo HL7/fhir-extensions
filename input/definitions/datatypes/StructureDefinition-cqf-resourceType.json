@@ -32,7 +32,7 @@
   }],
   "description" : "Specifies the type of resource the canonical references.",
   "purpose" : "When a canonical reference is not constrained by the definition to reference a particular type of resource, the reference must typically be resolved or otherwise looked up to determine what type of resource is being referenced. This extension allows the resource type to be specified as part of the reference, facilitating dependency processing applications.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",

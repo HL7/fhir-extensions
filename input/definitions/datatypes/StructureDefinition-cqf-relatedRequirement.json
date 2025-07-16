@@ -27,7 +27,7 @@
     }]
   }],
   "description" : "Allows relationships to be established between data requirements. For example, a Medication data requirement that depends on a MedicationRequest data requirement.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

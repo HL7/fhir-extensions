@@ -38,7 +38,7 @@
     }]
   }],
   "purpose" : "Need to be able to build manifests that are part of artifact collections such as quality programs.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

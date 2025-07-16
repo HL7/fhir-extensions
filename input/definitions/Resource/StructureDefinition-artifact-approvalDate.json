@@ -32,7 +32,7 @@
   }],
   "description" : "When the artifact was approved by publisher.",
   "purpose" : "To provide an approval date for an artifact when the artifact is represented using a FHIR resource that does not declare the approvalDate element.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

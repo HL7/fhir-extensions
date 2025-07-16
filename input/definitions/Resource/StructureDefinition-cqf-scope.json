@@ -39,7 +39,7 @@
     }]
   }],
   "purpose" : "To allow artifacts to declare the scope in which they are defined and intended to be evaluated. Scope typically corresponds to the implementation guide in which the artifact is packaged. However, to support the use of non-IG-packaged content, this extension allows artifacts to declare their intended scope so that evaluation environments can correctly resolve namespaces and dependencies.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "kind" : "complex-type",
   "abstract" : false,
   "context" : [{

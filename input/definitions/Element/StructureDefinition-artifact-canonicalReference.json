@@ -33,7 +33,7 @@
   }],
   "description" : "A reference to a canonical resource.",
   "purpose" : "To allow resources to define a reference to a canonical resource.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "kind" : "complex-type",
   "abstract" : false,
   "context" : [{

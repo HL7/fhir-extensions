@@ -35,7 +35,7 @@
       }]
     }],
     "purpose" : "Provides a description of the population on which this appears.",
-    "fhirVersion" : "4.0.1",
+    "fhirVersion" : "5.0.0",
     "mapping" : [{
       "identity" : "rim",
       "uri" : "http://hl7.org/v3",

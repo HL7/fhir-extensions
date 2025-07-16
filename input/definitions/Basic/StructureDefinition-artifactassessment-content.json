@@ -32,7 +32,7 @@
     }]
   }],
   "description" : "A Content containing additional documentation, a review Content, usage guidance, or other relevant information from a particular user.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "kind" : "complex-type",
   "abstract" : false,
   "context" : [{
