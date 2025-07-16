@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="intended-context"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/intended-context"/>
+  <version value="5.0.0"/>
+  <name value="IntendedContext"/>
+  <title value="Intended Context"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-16"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Indicates where the extension is intended to be used, like StructureDefinition.context, but is merely guidance. E.g An extension might be defined for use on any Element, but an author can use this indicate that the extension is intended to be used on a few particular DataTypes."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Indicates where the extension is intended to be used"/>
+      <definition value="Indicates where the extension is intended to be used, like StructureDefinition.context, but is merely guidance. E.g An extension might be defined for use on any Element, but an author can use this indicate that the extension is intended to be used on a few particular DataTypes."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension"/>
+      <sliceName value="type"/>
+      <short value="fhirpath | element | extension"/> 
+      <definition value="Defines how to interpret the expression that defines what the context of the extension is."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:type.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="type"/>
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding> 
+        <strength value="required"/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/extension-context-type"/> 
+      </binding> 
+    </element>
+    <element id="Extension.extension:expression">
+      <path value="Extension.extension"/>
+      <sliceName value="expression"/>
+      <short value="Where the extension can be used in instances"/> 
+      <definition value="An expression that defines where an extension can be used in resources."/> 
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:expression.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:expression.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="expression"/>
+    </element>
+    <element id="Extension.extension:expression.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/intended-context"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
