@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="valueset-expansion-parameter"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="4"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="ti"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/valueset-expansion-parameter"/>
+  <name value="ValueSetExpansionParameter"/>
+  <title value="ValueSet Expansion Parameter"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/fhir-i"/>
+    </telecom>
+  </contact>
+  <description value="A default parameter to use when expanding this value set. A client may also pass a parameter with the same parameter name; servers should either overwrite this default parameter, or add to the list of identically named parameters, depending on which parameter is named"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>  
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+   <element id="Extension">
+      <path value="Extension"/> 
+      <short value="valueset-expansion-parameter"/> 
+      <definition value="A default parameter to use when expanding this value set."/>
+      <min value="0"/> 
+      <max value="*"/> 
+    </element> 
+    <element id="Extension.extension:name">
+      <path value="Extension.extension"/> 
+      <sliceName value="name"/> 
+      <short value="The name of the parameter. The list of valid names is defined by the server, based on the list defined in the FHIR specification"/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+    </element> 
+    <element id="Extension.extension:name.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+    <element id="Extension.extension:name.url">
+      <path value="Extension.extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="name"/> 
+    </element> 
+    <element id="Extension.extension:name.value[x]">
+      <path value="Extension.extension.value[x]"/> 
+      <min value="0"/> 
+      <type> 
+        <code value="code"/> 
+      </type> 
+    </element> 
+
+    <element id="Extension.extension:value">
+      <path value="Extension.extension"/> 
+      <sliceName value="value"/> 
+      <short value="The value for the parameter"/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+    </element> 
+    <element id="Extension.extension:value.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+    <element id="Extension.extension:value.url">
+      <path value="Extension.extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="value"/> 
+    </element> 
+    <element id="Extension.extension:value.value[x]">
+      <path value="Extension.extension.value[x]"/> 
+      <min value="1"/> 
+      <type> 
+        <code value="string"/>
+      </type> 
+    </element> 
+    <element id="Extension.url">
+      <path value="Extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/valueset-expansion-parameter"/> 
+    </element> 
+
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/> 
+      <max value="0"/> 
+    </element> 
+
+  </differential>
+</StructureDefinition>
