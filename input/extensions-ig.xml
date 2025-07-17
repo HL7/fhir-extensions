@@ -185,6 +185,15 @@
           <generation value="html"/>
         </page>
         <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
+          <sourceUrl value="deprecated.xml"/>
+          <name value="deprecated.html"/>
+          <title value="Deprecated Extensions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
           <sourceUrl value="history.xml"/>
           <name value="history.html"/>
           <title value="IG Version History"/>

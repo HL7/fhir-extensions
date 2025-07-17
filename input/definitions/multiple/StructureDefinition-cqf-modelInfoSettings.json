@@ -31,7 +31,7 @@
     }]
   }],
   "description" : "Specifies the settings to be used for constructing modelinfo from profile definitions. This extension is used on ImplementationGuide or asset-collection Library resources to provide a way for authors to configure additional information about the ModelInfo for profiles defined in the ImplementationGuide or Asset Collection. The extension is used in profiles in the Using CQL With FHIR IG. See the ModelInfo discussion there for additional information on how to use this extension.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

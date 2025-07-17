@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medication-type"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="phx"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/medication-type"/>
+  <version value="5.0.0"/>
+  <name value="MedicationTypeVS"/>
+  <title value="Medication Type VS"/>
+  <status value="draft"/>
+  <date value="2025-07-16"/>
+  <publisher value="HL7 International / Pharmacy"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication"/>
+    </telecom>
+  </contact>
+  <description value="Example ValueSet for medication type."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="781405001"/>
+        <display value="Medicinal product package (product)"/>
+      </concept>
+      <concept>
+        <code value="763158003"/>
+        <display value="Medicinal product (product)"/>
+      </concept>
+      <concept>
+        <code value="1208954007"/>
+        <display value="Extemporaneous preparation (product)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

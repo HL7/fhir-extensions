@@ -32,7 +32,7 @@
       "value" : "http://www.hl7.org/Special/committees/Vocab"
     }]
   }],
-  "description" : "if ture, indicates that the concept is deprecated from the value set - that is, it should not be used, and is planned to be withdrawn.",
+  "description" : "If true, indicates that the concept is deprecated from the value set - that is, it should not be used, and is planned to be withdrawn.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
@@ -53,7 +53,7 @@
       "id" : "Extension",
       "path" : "Extension",
       "short" : "The concept should not be used",
-      "definition" : "if ture, indicates that the concept is deprecated from the value set - that is, it should not be used, and is planned to be withdrawn.",
+      "definition" : "If true, indicates that the concept is deprecated from the value set - that is, it should not be used, and is planned to be withdrawn.",
       "comment" : "Ths status relates to a concept's inclusion in the value set, and might be different to the underlying status of the concept itself.",
       "min" : 0,
       "max" : "1"

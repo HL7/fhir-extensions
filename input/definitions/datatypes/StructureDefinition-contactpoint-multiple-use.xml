@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="contactpoint-multiple-use"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/contactpoint-multiple-use"/>
+  <version value="5.0.0"/>
+  <name value="ContactPointMultipleUse"/>
+  <title value="ContactPoint Multiple Use"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-16"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Indicates that a ContactPoint has the intended use of the combination of the use and multiple use e.g. Mobile Business, or Temporary Home. Systems SHOULD populate a primary use in ContactPoint.use and then populate all applicable uses in this extension."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="ContactPoint"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Indicates that a ContactPoint has the intended use of the combination of the use and multiple use"/>
+      <definition value="Indicates that a ContactPoint has the intended use of the combination of the use and multiple use e.g. Mobile Business, or Temporary Home. Systems SHOULD populate a primary use in ContactPoint.use and then populate all applicable uses in this extension."/>
+      <isModifier value="true"/> 
+      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake
+       a temporary or old contact etc.for a current/permanent one"/> 
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/contactpoint-multiple-use"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="AD/@use[.='OR']"/>
+      </mapping>
+    </element>
+	  <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding> 
+        <strength value="required"/> 
+        <description value="Use of contact point."/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/contact-point-use"/> 
+      </binding> 
+    </element>
+  </differential>
+</StructureDefinition>

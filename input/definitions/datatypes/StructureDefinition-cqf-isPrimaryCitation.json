@@ -32,7 +32,7 @@
   }],
   "description" : "Specifies whether the related artifact is defining a primary citation for the artifact (i.e. one that should appear in the narrative for the artifact specification.",
   "purpose" : "An artifact author must be able to control which citations are the primary source material for the artifact specification.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

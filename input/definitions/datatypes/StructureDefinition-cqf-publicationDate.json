@@ -32,7 +32,7 @@
   }],
   "description" : "Specifies the publication date of the referenced artifacts.",
   "purpose" : "A published measure should provide the publication date of referenced artifacts.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

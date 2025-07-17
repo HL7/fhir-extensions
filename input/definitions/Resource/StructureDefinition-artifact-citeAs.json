@@ -33,7 +33,7 @@
   }],
   "description" : "How to cite the resource/artifact.",
   "purpose" : "Display of or reference to the bibliographic citation of the resource/artifact.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "kind" : "complex-type",
   "abstract" : false,
   "context" : [{

@@ -9,7 +9,11 @@
     <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="This extension is deprecated as the Terminology Infrastructure work group felt there wasn't a use case for the extension"/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/codesystem-use-markdown"/>
   <identifier>
@@ -19,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="CSUseMarkdown"/>
   <title value="CodeSystem Use Markdown"/>
-  <status value="draft"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 International / Terminology Infrastructure"/>

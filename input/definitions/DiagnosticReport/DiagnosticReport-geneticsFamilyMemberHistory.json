@@ -23,7 +23,7 @@
   "version" : "4.0.1",
   "name" : "FamilyMemberHistory",
   "title" : "Family Member History",
-  "status" : "draft",
+  "status" : "retired",
   "date" : "2015-10-09",
   "publisher" : "HL7 International / Orders and Observations",
   "contact" : [{

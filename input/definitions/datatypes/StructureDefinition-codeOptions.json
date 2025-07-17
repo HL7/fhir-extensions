@@ -38,7 +38,7 @@
       }]
     }],
     "purpose": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities.\n\n* This extension SHALL NOT be used when an appropriate higher level concept code exists.\n* This extension cannot be used to satisfy a required binding.\n* When this extension is used on an element with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review).\n* When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHOULD be present. For example, the text might mention the title of value set that describes the allowed content.\n\n**Note to implementers:** This extension may eventually be supplanted by a new methodological approach to solving the same underlying issue.",
-    "fhirVersion" : "4.0.1",
+    "fhirVersion" : "5.0.0",
     "mapping" : [{
       "identity" : "v2",
       "uri" : "http://hl7.org/v2",

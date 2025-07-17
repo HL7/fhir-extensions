@@ -27,7 +27,7 @@
     }]
   }],
   "description" : "Specifies the alias to be used for the library on which it appears. This is useful when multiple libraries have the same unqualified name, and allows in-line CQL expressions to refer to the libraries via their alias, rather than the default of the unqualified name of the library.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

@@ -32,7 +32,7 @@
   }],
   "description" : "Whether or not the referenced artifact is owned by the referencing artifact.",
   "purpose" : "To provide an indication of whether or not a referenced artifact is owned in context of the referencing artifact and therefore if it's lifecycle is managed in that context.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

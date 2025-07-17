@@ -32,7 +32,7 @@
   }],
   "description" : "Specifies a term and its associated definition.",
   "purpose" : "An artifact specification must be able to provide definitions for terms that are used to help communicate the artifact intent.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

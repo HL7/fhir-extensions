@@ -9,7 +9,11 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="This extension is deprecated because it's poorly defined and is also over-constrained to just 1 occurrence. If there is a need for an extension like this as a common extension, please submit a change request and we will create one that is better defined, clear about its purpose, and has an appropriate cardinality"/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/capabilitystatement-websocket"/>
   <identifier>
