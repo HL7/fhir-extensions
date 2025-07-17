@@ -77,6 +77,7 @@
      processing extensions from having to change</li>
     <li>The extensions all have the status of 'trial-use' but once they are active they are treated as normative. The FHIR
      Management Group has not yet decided how these extensions will be balloted in the future</li>
+     <li>If a breaking change needs to be introduced to an extension, the original extension will be marked as deprecated and a new one will be created.  If the scope of the extension has significantly changed, it may be given a completely new URL.  If the scope is largely the same, the url will remain the same, except that a version will be appended.  E.g. "[original url]-v2".  The deprecated extension will have a note added that points to the replacing extension.</li>
   </ul>
     
     <p>For more information, see <a href="https://confluence.hl7.org/display/FMG/FHIR+Extension+Pack+Policy">FHIR Extension Pack Policy</a>.</p>
