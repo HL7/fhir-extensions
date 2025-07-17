@@ -9,11 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This extension has been deprecated and is not recommended for use as the purpose of this extension does not make sense for a code system."/>
-      </extension>
-    </valueCode>
+    <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/codesystem-conceptOrder"/>
   <identifier>

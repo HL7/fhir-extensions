@@ -42,6 +42,14 @@
     <type value="element"/>
     <expression value="ValueSet"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.include"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.exclude"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
