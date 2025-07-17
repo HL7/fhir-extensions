@@ -47,9 +47,18 @@
     <li><a href="search-params.html">Search Parameters for the Extensions</a></li>
   </ul>
   
-
-
-
+  <a name="prior"> </a>
+	<h3>Using the extensions with older versions of FHIR</h3>
+  <p>
+  The Extensions Pack uses R5 internally, and the main definition of the Extensions 
+  is based on R5. Most of the extensions can be used as-is or with a little modification
+  with earlier versions of the specification. Notes for use with other versions:
+  </p>
+	<ul>
+    <li>There is information on each extension description describing the use of the extension with other FHIR Versions</li>
+    <li>A very few extensions can't be used in earlier versions</li>
+    <li>There are packages for use with older versions with tooling based packages: <code>hl7.fhir.uv.extensions.r4</code> and <code>hl7.fhir.uv.extensions.r3</code></li>
+  </ul>  
 
 	<a name="policy"> </a>
 	<h3>Update Policy</h3>
