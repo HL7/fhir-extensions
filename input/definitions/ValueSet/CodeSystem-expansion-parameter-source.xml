@@ -56,5 +56,14 @@
     <code value="codesystem"/>
     <display value="Code System"/>
     <definition value="The parameter was added from one the code systems used in the $expand operation."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="valueset"/>
+    <display value="ValueSet"/>
+    <definition value="The parameter was provided in the value set definition."/>
   </concept>
 </CodeSystem>
