@@ -24,8 +24,8 @@
   implementer's attention is drawn to the following matters:</p>
   <ul>
    <li>New Extensions:</li>
-   <li>Removed Extensions: No extensions have been removed</li>
-   <li>Deprecated Extensions: see <a ref="deprecated.html">the deprecated Extensions page</a>. Balloters might want to pay particular attention to this list - there has been some lack of clarity about whether extensions should be deprecated when elements </li>
+   <li>Removed Extensions: Commercial Brand</li>
+   <li>Deprecated Extensions: see <a href="deprecated.html">the deprecated Extensions page</a>. Balloters might want to pay particular attention to this list - there has been some lack of clarity about whether extensions should be deprecated when elements </li>
    <li>Changed Extensions: You can see which extensions have changed by looking in the <b>Δ v5.2.0</b> column on right of the <a href="extension-registry.html">Extension Summary Table</a></li>
    <li>The conversion maps have been removed from this release - they have moved to the cross-extensions publications</li>
   </ul>
