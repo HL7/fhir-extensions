@@ -16,14 +16,41 @@
     R5 and the prior versions R4 and R4B. These are located in the extension pack to allow 
     them to also be updated as they are tested and used in production and improvements are made.
   </p>
+
+  <a name="ballot"> </a>
+  <h3>Note to Balloters</h3>
+
+  <p>This is the ballot for release 5.3.0 of the Extension Pack. While comment is welcome on all extensions, 
+  implementer's attention is drawn to the following matters:</p>
+  <ul>
+   <li>New Extensions:</li>
+   <li>Removed Extensions: No extensions have been removed</li>
+   <li>Deprecated Extensions: see <a ref="deprecated.html">the deprecated Extensions page</a>. Balloters might want to pay particular attention to this list - there has been some lack of clarity about whether extensions should be deprecated when elements </li>
+   <li>Changed Extensions: You can see which extensions have changed by looking in the <b>Δ v5.2.0</b> column on right of the <a href="extension-registry.html">Extension Summary Table</a></li>
+   <li>The conversion maps have been removed from this release - they have moved to the cross-extensions publications</li>
+  </ul>
+  <p>
+   The FHIR Management Group recognizes the difficulty of balloting the extensions pack
+   for implementers, and balloters are advised that ballot cycles of the extensions pack
+   to not contribute towards extension maturity after the first ballot. There are several
+   structural enhancements aimed at addressing extension use tracking and useability:
+  </p>
+  <ul>
+   <li>Extensions now get a direct reference to their page in the FHIR IG Statistics (which itself will be enhanced)</li>
+   <li>The Deprecation summary table below</li>
+  </ul>
+
 	<a name="topics"> </a>
 	<h3>Content Registries</h3>
 	<ul>
     <li><a href="extension-registry.html">Extension Registry</a></li>
     <li><a href="search-params.html">Search Parameters for the Extensions</a></li>
-    <li><a href="conversion-registry.html">R5/R4(B) Conversion Registry</a></li>
   </ul>
   
+
+
+
+
 	<a name="policy"> </a>
 	<h3>Update Policy</h3>
   
@@ -53,15 +80,6 @@
   </ul>
     
     <p>For more information, see <a href="https://confluence.hl7.org/display/FMG/FHIR+Extension+Pack+Policy">FHIR Extension Pack Policy</a>.</p>
-
-	<a name="policy-conversions"> </a>
-	<h4>Conversion Maps</h4>
-  
-  <p>
-  The implementation scope of the conversion maps is fixed: implementing a proper transform from 
-  R4/R4B to R5 and vice versa. Ongoing changes may be made to the maps if they improve the mappings
-  within this scope, including catering for common extensions.
-  </p>
 
 	<a name="ip"> </a>
 	<h3>Intellectual Property Considerations</h3>

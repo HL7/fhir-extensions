@@ -9,7 +9,11 @@
     <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="This extension is deprecated, use the Inline-sec-label extension instead. The Inline-sec-label extension is generic and useable anywhere and has significant guidance around its use in the defining DS4P Implementation Guide"/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/confidential"/>
   <identifier>
@@ -19,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="Confidential"/>
   <title value="Confidential"/>
-  <status value="draft"/>
+  <status value="retired"/>
   <experimental value="true"/>
   <date value="2023-03-20"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
