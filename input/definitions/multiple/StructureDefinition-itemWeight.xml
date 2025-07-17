@@ -48,10 +48,6 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="QuestionnaireResponse.item.answer"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="QuestionnaireResponse.item.answer.value"/>
   </context>
   <type value="Extension"/>
