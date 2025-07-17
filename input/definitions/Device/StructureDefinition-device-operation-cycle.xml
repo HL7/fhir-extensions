@@ -1,0 +1,60 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="device-operation-cycle"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/device-operation-cycle"/>
+  <version value="5.0.0"/>
+  <name value="DeviceOperationCycle"/>
+  <title value="Device Operation Cycle"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-15"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="Count of operating cycles, e.g., the number of measurements taken by the device."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Device"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Device operation cycle count"/>
+      <definition value="Count of operating cycles, e.g., the number of measurements taken by the device."/>
+      <comment value="The definition of this extension is derived from a concept defined in the ISO/IEEE 11073-10207 standard. The 2019 edition of that standard does not provide further semantics, such as the starting point of the count (e.g., since first installation, factory reset or last power-up of the device). Such further semantics may be defined in later editions."/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/device-operation-cycle"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Count"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
