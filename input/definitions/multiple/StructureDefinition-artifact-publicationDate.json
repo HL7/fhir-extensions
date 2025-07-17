@@ -1,0 +1,92 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "artifact-publicationDate",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/artifact-publicationDate",
+  "name" : "PublicationDate",
+  "title" : "Publication Date",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2021-11-27T13:31:32-07:00",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "Specifies the publication date of the Resource.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    { "type" : "element",    "expression" : "Composition" },
+    { "type" : "element",    "expression" : "Group" },
+    { "type" : "element",    "expression" : "Medication" },
+    { "type" : "element",    "expression" : "Substance" },
+    { "type" : "element",    "expression" : "ResearchStudy" },
+    { "type" : "element",    "expression" : "ArtifactAssessment" },
+    { "type" : "element",    "expression" : "ActivityDefinition" },
+    { "type" : "element",    "expression" : "ChargeItemDefinition" },
+    { "type" : "element",    "expression" : "Citation" },
+    { "type" : "element",    "expression" : "CodeSystem" },
+    { "type" : "element",    "expression" : "ConceptMap" },
+    { "type" : "element",    "expression" : "ConditionDefinition" },
+    { "type" : "element",    "expression" : "EventDefinition" },
+    { "type" : "element",    "expression" : "Evidence" },
+    { "type" : "element",    "expression" : "EvidenceVariable" },
+    { "type" : "element",    "expression" : "Library" },
+    { "type" : "element",    "expression" : "Measure" },
+    { "type" : "element",    "expression" : "NamingSystem" },
+    { "type" : "element",    "expression" : "ObservationDefinition" },
+    { "type" : "element",    "expression" : "PlanDefinition" },
+    { "type" : "element",    "expression" : "Questionnaire" },
+    { "type" : "element",    "expression" : "SpecimenDefinition" },
+    { "type" : "element",    "expression" : "ValueSet" }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Publication date of Resource",
+      "definition" : "Specifies the publication date of the Resource.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/artifact-publicationDate"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "min": 1,
+      "type" : [{
+        "code" : "date"
+      }]
+    }]
+  }
+}
