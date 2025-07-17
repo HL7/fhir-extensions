@@ -39,7 +39,7 @@
       <valueSet value="http://hl7.org/fhir/ValueSet/concept-map-relationship"/>
     </include>
     <include>
-      <system value="http://hl7.org/fhir/tools/CodeSystem/r4-equivalence"/>
+      <system value="http://hl7.org/fhir/CodeSystem/r4-equivalence"/>
     </include>
   </compose>
 </ValueSet>

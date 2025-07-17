@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="select-by-map"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/select-by-map"/>
+  <name value="SelectByMap"/>
+  <title value="Select By Map"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/fhir-i"/>
+    </telecom>
+  </contact>
+  <description value="This extension indicates that in addition to the concepts directly selected (either included or excluded) in the include/exclude statement, any source codes that are mapped to target codes that are selected by the nominated ConceptMapare also selected. The filter property can be used to restrict which types of relationships are included. Todo: If this is useful, it will be moved to the core extensions pack"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>  
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.include"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.exclude"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+   <element id="Extension">
+      <path value="Extension"/> 
+      <short value="Add ConceptMap to selection"/> 
+      <definition value="This extension indicates that in addition to the concepts directly selected (either included or excluded) in the include/exclude statement, any source codes that are mapped to target codes that are selected by the nominated ConceptMapare also selected. The filter property can be used to restrict which types of relationships are included."/> 
+    </element> 
+
+    <element id="Extension.extension:map">
+      <path value="Extension.extension"/> 
+      <sliceName value="map"/> 
+      <short value="The canonical URL for the ConceptMap"/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+    </element> 
+    <element id="Extension.extension:map.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+    <element id="Extension.extension:map.url">
+      <path value="Extension.extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="map"/> 
+    </element> 
+    <element id="Extension.extension:map.value[x]">
+      <path value="Extension.extension.value[x]"/> 
+      <min value="1"/> 
+      <type> 
+        <code value="canonical"/> 
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ConceptMap"/> 
+      </type> 
+    </element> 
+
+    <element id="Extension.extension:filter">
+      <path value="Extension.extension"/> 
+      <sliceName value="filter"/> 
+      <short value="Include targets with this relationship in the selection"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+    </element> 
+    <element id="Extension.extension:filter.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+    <element id="Extension.extension:filter.url">
+      <path value="Extension.extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="filter"/> 
+    </element> 
+    <element id="Extension.extension:filter.value[x]">
+      <path value="Extension.extension.value[x]"/> 
+      <min value="1"/> 
+      <type> 
+        <code value="code"/> 
+      </type> 
+      <binding> 
+        <strength value="required"/> 
+        <description value="The relationship between concepts."/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/select-by-map-filter"/> 
+      </binding> 
+    </element>
+
+    <element id="Extension.url">
+      <path value="Extension.url"/> 
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/select-by-map"/> 
+    </element> 
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/> 
+      <min value="0"/> 
+      <max value="0"/>
+    </element> 
+  </differential>
+</StructureDefinition>
