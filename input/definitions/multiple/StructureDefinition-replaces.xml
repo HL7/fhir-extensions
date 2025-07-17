@@ -40,10 +40,6 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="ActivityDefinition"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="ActorDefinition"/>
   </context>
   <context>
@@ -56,39 +52,11 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="Citation"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CodeSystem"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="CompartmentDefinition"/>
   </context>
   <context>
     <type value="element"/>
-    <expression value="ConceptMap"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="ConditionDefinition"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="EventDefinition"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="Evidence"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="EvidenceReport"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="EvidenceVariable"/>
   </context>
   <context>
     <type value="element"/>
@@ -104,19 +72,7 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="Library"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="Measure"/>
-  </context>
-  <context>
-    <type value="element"/>
     <expression value="MessageDefinition"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="NamingSystem"/>
   </context>
   <context>
     <type value="element"/>
@@ -125,10 +81,6 @@
   <context>
     <type value="element"/>
     <expression value="OperationDefinition"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="PlanDefinition"/>
   </context>
   <context>
     <type value="element"/>
@@ -165,10 +117,6 @@
   <context>
     <type value="element"/>
     <expression value="TestScript"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="ValueSet"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

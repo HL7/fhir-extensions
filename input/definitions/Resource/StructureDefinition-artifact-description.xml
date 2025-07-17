@@ -7,7 +7,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
-  </extension>
+  </extension> 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="A free text natural language description of the artifact from a consumer's perspective."/>
-  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
+  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way, such as Medication. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan. Note that the apparently related [Resource Name extension](StructureDefinition-resource-instance-name.html) is only used as part of the IG publication tooling process, to populate the ImplementationGuide.definition.resource.name and description."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

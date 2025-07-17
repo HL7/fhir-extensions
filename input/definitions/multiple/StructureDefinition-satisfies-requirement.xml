@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="References a requirement that this element satisfies."/>
+  <description value="References a requirement that this element satisfies. This might be referenced at the resource level by a profile, operation definition, etc.  However, it could also point from a specific code in a value set, an interaction or search parameter in a CapabilityStatement, an action in a PlanDefinition, etc. to the requirement satisfied by that specific portion of the resource. Note that this extension is only used as part of the IG publication tooling process. Use the [Requirements extension](StructureDefinition-requirements.html) extension for use outside the IG publishing framework."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -53,7 +53,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A requirement that this element satisfies"/>
-      <definition value="References a requirement that this element satisfies."/>
+      <definition value="References a requirement that this element satisfies. This might be referenced at the resource level by a profile, operation definition, etc.  However, it could also point from a specific code in a value set, an interaction or search parameter in a CapabilityStatement, an action in a PlanDefinition, etc. to the requirement satisfied by that specific portion of the resource. Note that this extension is only used as part of the IG publication tooling process. Use the [Requirements extension](StructureDefinition-requirements.html) extension for use outside the IG publishing framework."/>
     </element>
     <element id="Extension.extension:reference">
       <path value="Extension.extension"/>

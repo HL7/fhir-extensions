@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Used to denote which portions of the narrative are linked to (usually, generated from) structured data in resources. This information might be used in several different ways, including translating and regenerating narrative in applications that are using/presenting the narrative."/>
+  <description value="Used to denote which portions of the narrative are linked to (usually, generated from) structured data in resources. This information might be used in several different ways, including translating and regenerating narrative in applications that are using/presenting the narrative. Note that there are two related extensions for linking data and narrative: [originalText](StructureDefinition-originalText.html) and [narrativeLink](StructureDefinition-narrativeLink.html)."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

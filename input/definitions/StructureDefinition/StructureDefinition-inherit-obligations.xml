@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="inherit-obligations"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/inherit-obligations"/>
+  <name value="InheritObligations"/>
+  <title value="Inherit Obligations"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/fhir-i"/>
+    </telecom>
+  </contact>
+  <description value="Inherit all the obligations from an Obligation Profile. The other profile must be a Obligation Profile (using [[[http://hl7.org/fhir/StructureDefinition/obligation-profile]]])"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>  
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+   <element id="Extension">
+      <path value="Extension"/> 
+      <short value="Marks that a profile inherits obligations from another profile"/> 
+      <definition value="Inherits Obligations from other profiles. The other profile must be a Obligation Profile (using [[[http://hl7.org/fhir/StructureDefinition/obligation-profile]]])"/> 
+      <min value="0"/> 
+      <max value="*"/> 
+    </element> 
+
+    <element id="Extension.extension">
+      <path value="Extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+
+    <element id="Extension.url">
+      <path value="Extension.url"/> 
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/inherit-obligations"/> 
+    </element> 
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/> 
+      <min value="1"/> 
+      <max value="1"/>
+      <type>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+      </type>
+    </element> 
+  </differential>
+</StructureDefinition>

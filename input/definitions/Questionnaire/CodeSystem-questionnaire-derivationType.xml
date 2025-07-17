@@ -48,6 +48,11 @@
     <code value="compliesWith"/>
     <display value="complies with"/>
     <definition value="Indicates this Questionnaire is derived in a manner that ensures that QuestionnaireResponses completed against this form will also be valid against the referenced questionnaire.  To be a valid constraint, linkId, item types, and item order must align and all required items and answers must be included. However, cardinality can be tightened and answers can be restricted. If a Questionnaire complies with a parent Questionnaire, that does not mean that the derived Questionnaire is considered to have the same validity as the parent Questionnaire."/>
+    <concept>
+      <code value="validAgainst"/>
+      <display value="valid against"/>
+      <definition value="The changes made are ones specifically contemplated in the design of the base Questionnaire such that it is still considered 'validated' for use.  E.g. questions removed were marked as 'optionalDisplay' in the original, or language translation performed has been confirmed to not change the interpretation of or likelihood of certain answers."/>
+    </concept>
   </concept>
   <concept>
     <code value="inspiredBy"/>

@@ -20,8 +20,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.4.2112"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="CodingPurposeCS"/>
-  <title value="Coding Purpose Code System"/>
+  <name value="NarrativeLanguageControlCS"/>
+  <title value="Narrative Language Control CodeSystem"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2023-01-31T07:07:38+11:00"/>
@@ -58,6 +58,5 @@
     <code value="_resource"/>
     <display value="Resource Language Requred"/>
     <definition value="The must be a section matching the Resource.language."/>
-  </concept>
   </concept>
 </CodeSystem>

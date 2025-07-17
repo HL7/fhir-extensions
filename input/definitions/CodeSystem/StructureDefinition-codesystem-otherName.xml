@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Human readable names for the codesystem.  This codesystem has been deprecated.  The codesystem-otherTitle extension should be used for capturing other human readable names."/>
+  <description value="This extension has been deprecated."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

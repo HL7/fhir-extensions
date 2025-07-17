@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A URL that resolves to additional supporting information or guidance related to the question."/>
+  <description value="A URL that resolves to additional supporting information or guidance related to the question. If there's more than one repetition of this extension, all a UI can do to help the user differentiate which to click on is displaying the URI (e.g. as a flyover).  If displaying the URI might not be appropriate or helpful, it may be more useful to use a nested 'display' item of type 'helpText' which can then specify multiple hyperlinks with appropriate labels and/or surrounding guidance text."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -53,7 +53,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Supporting information"/>
-      <definition value="A URL that resolves to additional supporting information or guidance related to the question.  See additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/rendering.html#supportLink)."/>
+      <definition value="A URL that resolves to additional supporting information or guidance related to the question.  See additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/rendering.html#supportLink). If there's more than one repetition of this extension, all a UI can do to help the user differentiate which to click on is displaying the URI (e.g. as a flyover).  If displaying the URI might not be appropriate or helpful, it may be more useful to use a nested 'display' item of type 'helpText' which can then specify multiple hyperlinks with appropriate labels and/or surrounding guidance text."/>
       <min value="0"/>
       <max value="*"/>
       <isModifier value="false"/>

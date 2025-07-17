@@ -42,6 +42,18 @@
     <type value="element"/>
     <expression value="Patient.communication.preferred"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="RelatedPerson.communication.preferred.communication.preferred"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Practitioner.communication.preferred.communication.preferred"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Person.communication.preferred.communication.preferred"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
