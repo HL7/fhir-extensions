@@ -11,7 +11,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
+    "valueCode" : "draft"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
