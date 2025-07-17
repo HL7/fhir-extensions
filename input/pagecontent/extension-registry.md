@@ -19,4 +19,4 @@ This table contains the following columns:
 * `Context`: Where the extension is [allowed to be used](http://hl7.org/fhir/R5/defining-extensions.html#context)
 * `WG`: The HL7 Work Group that is responsible for the definition of the extension 
 * `Status`: A summary of the [status](http://hl7.org/fhir/R5/versions.html#std-process) and maturity of the extension
-* `Δ v5.2.0`: Information about whether the definition of the extension has changed since the last publication
+* `Δ v5.2.0`: Information about whether the definition of the extension has changed since the last publication. Use the checkbox to only show changed extensions.
