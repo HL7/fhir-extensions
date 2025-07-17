@@ -44,9 +44,9 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="($this is ParameterDefinition).not() or ($this.ofType(ParameterDefinition).type in 'BackboneElement' | 'Extension')"/>
+    <expression value="ParameterDefinition"/>
   </context>
-  <contextInvariant value="of"/>
+  <contextInvariant value="($this is ParameterDefinition).not() or ($this.ofType(ParameterDefinition).type.exists(code in 'BackboneElement' | 'Extension'))"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
