@@ -39,12 +39,12 @@
   <concept>
     <code value="on"/>
     <display value="On"/>
-    <definition value="The signal will be announciated during an alert condition"/>
+    <definition value="The signal will be annunciated during an alert condition"/>
   </concept>
   <concept>
     <code value="off"/>
     <display value="Off"/>
-    <definition value="The signal will not be announciated during an alert condition"/>
+    <definition value="The signal will not be annunciated during an alert condition"/>
   </concept>
   <concept>
     <code value="paused"/>
