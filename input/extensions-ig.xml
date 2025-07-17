@@ -213,7 +213,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="releaselabel"/>
       </code>
-      <value value="(5.3.0 Ballot - September 2025)"/>
+      <value value="(September 2025 Ballot)"/>
     </parameter>
     <parameter>
       <code>

@@ -264,6 +264,31 @@
 				<code value="string"/>
 			</type>
 		</element>
+		<element id="Extension.extension:applicable-number">
+			<path value="Extension.extension"/>
+			<sliceName value="applicable-number"/>
+			<short value="# of repetitions obligation applies to"/>
+			<definition value="If present, limits the obligation to the specified number of repetitions.  I.e. systems are not obligated to store/display/capture/whatever ALL possible repetitions of the element, but only the specified number.  If more repetitions exist than the specified number and the system opts not to support them all, it's up to the systems which repetitions it chooses to support. Note that the applicable-number applies after any reduction in elements from applying the Obligation.filter"/>
+			<comment value="If this element is declared on a slicing element, the applicable-number applies across all slices, not to each individual slice.  If this element is present on an obligation declared on a specific slice, then the applicable number applies for that particular slice."/>
+			<min value="0"/>
+			<max value="1"/>
+			<meaningIfMissing value="If not specified, the implication is that the obligation applies to all repetitions"/>
+		</element>
+		<element id="Extension.extension:applicable-number.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:applicable-number.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="applicable-number"/>
+		</element>
+		<element id="Extension.extension:applicable-number.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="positiveInt"/>
+			</type>
+		</element>
 		<element id="Extension.extension:process">
 			<path value="Extension.extension"/>
 			<sliceName value="process"/>
