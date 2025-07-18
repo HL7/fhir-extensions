@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="researchStudy-siteRecruitment"/>
+  <id value="researchStudy-interventionalistRecruitment"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="brr"/>
   </extension>
@@ -11,14 +11,14 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/researchStudy-siteRecruitment"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/researchStudy-interventionalistRecruitment"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1098"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="RSSiteRecruitment"/>
-  <title value="ResearchStudy Site Recruitment"/>
+  <name value="RSInterventionalistRecruitment"/>
+  <title value="ResearchStudy Interventionalist Recruitment"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2021-03-31T00:00:00+00:00"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/rcrim"/>
     </telecom>
   </contact>
-  <description value="Target and actual numbers of sites for a study."/>
+  <description value="Target and actual numbers of interventionalists for a study."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,17 +48,17 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Target and actual numbers of sites for a study"/>
-      <definition value="Target and actual numbers of sites for a study."/>
-      <comment value="Using Group for sites in the same way as for subjects would be appropriate but would need to extend Group to allow this."/>
+      <short value="Target and actual numbers of interventionalists for a study"/>
+      <definition value="Target and actual numbers of interventionalists for a study."/>
+      <comment value="Using Group for interventionalists in the same way as for subjects would be appropriate but would need to extend Group to allow this."/>
       <min value="0"/>
       <max value="1"/>
     </element>
     <element id="Extension.extension:targetNumber">
       <path value="Extension.extension"/>
       <sliceName value="targetNumber"/>
-      <short value="The desired number of sites"/>
-      <definition value="The desired number of sites."/>
+      <short value="The desired number of interventionalists"/>
+      <definition value="The desired number of interventionalists."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -86,8 +86,8 @@
     <element id="Extension.extension:actualNumber">
       <path value="Extension.extension"/>
       <sliceName value="actualNumber"/>
-      <short value="The actual number of sites"/>
-      <definition value="The actual number of sites."/>
+      <short value="The actual number of interventionalists"/>
+      <definition value="The actual number of interventionalists."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -145,7 +145,7 @@
       <path value="Extension.extension"/>
       <sliceName value="eligibilityCriteria"/>
       <short value="Inclusion and exclusion criteria"/>
-      <definition value="Criteria for inclusion or exclusion of sites."/>
+      <definition value="Criteria for inclusion or exclusion of interventionalists."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -173,7 +173,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/researchStudy-siteRecruitment"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/researchStudy-interventionalistRecruitment"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
