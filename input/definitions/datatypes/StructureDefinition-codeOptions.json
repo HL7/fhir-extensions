@@ -55,7 +55,7 @@
       "type" : "element",
       "expression" : "CodeableConcept"
     }],
-    "contextInvariant" : "ofType(CodeableConcept).coding.exists().not()",
+    "contextInvariant" : ["ofType(CodeableConcept).coding.exists().not()"],
     "type" : "Extension",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
     "derivation" : "constraint",
