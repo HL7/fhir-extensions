@@ -17,7 +17,7 @@
   <title value="Artifact Extended Contact Detail"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-07-17"/>
+  <date value="2025-07-19"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
   <contact>
     <telecom>
@@ -25,9 +25,9 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Contact details to assist a user in finding and communicating with the publisher."/>
-  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
-  <fhirVersion value="6.0.0"/>
+  <description value="Contact details (including purpose and address) to assist a user in finding and communicating with the publisher."/>
+  <purpose value="This extension is defined to support representing artifact metadata on resources that do not already have an element using the ExtendedContactDetail type, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
+  <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
@@ -47,7 +47,7 @@
       <path value="Extension"/>
       <short value="Contact details for the publisher"/>
       <definition value="Contact details to assist a user in finding and communicating with the publisher."/>
-      <comment value="May be a web site, an email address, a telephone number, etc."/>
+      <comment value="May be a web site, an email address, a physical address, a telephone number, etc."/>
       <min value="0"/>
       <max value="*"/>
     </element>
