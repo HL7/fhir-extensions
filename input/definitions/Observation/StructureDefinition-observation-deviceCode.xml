@@ -23,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="ObsDeviceCode"/>
   <title value="Observation Device Code"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-03-02"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -33,7 +33,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="A code representing the the type of device used for this observation. This extension is deprecated, as there are alternate ways to represent this information through the use of Observation.device and the Device.type element."/>
+  <description value="A code representing the the type of device used for this observation. Note: there are alternate ways to represent this information through the use of Observation.device and the Device.type element."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
