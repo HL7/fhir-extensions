@@ -1,0 +1,66 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="quantity-accuracy"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/quantity-accuracy"/>
+  <version value="1.0.0"/>
+  <name value="QuantityAccuracy"/>
+  <title value="Quantity Accuracy"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2025-07-17"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <description value="The absolute of the maximum deviation of the actual value from the reported value.&#10;&#10;Accuracy is particularly applicable to measured or observed values, and represents the maximum deviation over the entire range of measurement. When applied to a DeviceMetric, it expresses the maximum deviation of values reported by the metric. The reported observed value should be precise enough to reflect this accuracy, for example an observed value of 3.2 kg with an accuracy of 0.04 kg would be nonsensical. On the other hand, an observed value of 3.02 kg with an accuracy of 0.04 kg would indicate that the actual value is in the range of 3.02±0.04 kg or [2.98, 3.06] kg.&#10;&#10;Accuracy is usually in the same units as the reported value. Accuracy valueQuantity units SHOULD be provided for clarity; if omitted, they are implied to be the same as the reported value&#39;s units (or the DeviceMetric units)."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+  <type value="element"/>
+  <expression value="Observation.valueQuantity"/>
+  </context>
+ <context>
+  <type value="element"/>
+  <expression value="Observation.component.valueQuantity"/>
+ </context>
+  <context>
+    <type value="element"/>
+    <expression value="DeviceMetric.measurementFrequency"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Absolute maximum deviation from actual value"/>
+      <definition value="Absolute maximum deviation of the actual value from the reported value, in the same unit as the reported value."/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/quantity-accuracy"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <short value="Absolute maximum deviation of the reported value from the actual value"/>
+    </element>
+    <element id="Extension.valueQuantity.value">
+      <path value="Extension.valueQuantity.value"/>
+      <min value="1"/>
+    </element>
+  </differential>
+</StructureDefinition>
