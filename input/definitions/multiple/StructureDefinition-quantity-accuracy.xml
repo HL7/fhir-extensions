@@ -13,12 +13,16 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
-    <type value="element"/>
-    <expression value="Quantity"/>
+  <type value="element"/>
+  <expression value="Observation.valueQuantity"/>
   </context>
+ <context>
+  <type value="element"/>
+  <expression value="Observation.component.valueQuantity"/>
+ </context>
   <context>
     <type value="element"/>
-    <expression value="DeviceMetric"/>
+    <expression value="DeviceMetric.measurementFrequency"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
