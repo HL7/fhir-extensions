@@ -10,7 +10,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/device-endpoint"/>
-  <version value="5.0.0"/>
+  <version value="1.0.0"/>
   <name value="DeviceEndpoint"/>
   <title value="Device Endpoint"/>
   <status value="draft"/>
@@ -24,7 +24,7 @@
     </telecom>
   </contact>
   <description value="Technical endpoints providing access to electronic services provided by the device."/>
-  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
