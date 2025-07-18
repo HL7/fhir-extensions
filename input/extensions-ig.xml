@@ -423,7 +423,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="pin-canonicals"/>
       </code>
-      <value value="pin-all"/>
+      <value value="pin-multiples"/>
     </parameter>
   </definition>
 </ImplementationGuide>

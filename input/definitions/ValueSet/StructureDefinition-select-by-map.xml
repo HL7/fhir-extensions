@@ -7,7 +7,7 @@
   <url value="http://hl7.org/fhir/StructureDefinition/select-by-map"/>
   <name value="SelectByMap"/>
   <title value="Select By Map"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="true"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
