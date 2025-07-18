@@ -44,6 +44,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.acceptLanguage"/>
   </context>
@@ -60,6 +65,11 @@
     <expression value="CapabilityStatement.implementationGuide"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.imports"/>
   </context>
@@ -100,6 +110,11 @@
     <expression value="CapabilityStatement.rest.resource.conditionalUpdate"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.resource.conditionalPatch"/>
   </context>
@@ -108,6 +123,11 @@
     <expression value="CapabilityStatement.rest.resource.interaction"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.resource.operation"/>
   </context>
@@ -132,6 +152,11 @@
     <expression value="CapabilityStatement.rest.resource.searchRevInclude"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.resource.supportedProfile"/>
   </context>
@@ -160,12 +185,22 @@
     <expression value="CapabilityStatement.rest.security.service"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
-    <expression value="CapabilityStatement.messaging.hasReliableCache"/>
+    <expression value="CapabilityStatement.messaging.reliableCache"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
-    <expression value="CapabilityStatement.messaging.supportedMessages"/>
+    <expression value="CapabilityStatement.messaging.supportedMessage"/>
   </context>
   <context>
     <type value="extension"/>

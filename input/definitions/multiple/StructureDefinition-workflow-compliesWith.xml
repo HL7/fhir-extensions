@@ -48,8 +48,13 @@
     <expression value="CarePlan"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension> 
     <type value="element"/>
-    <expression value="CarePlan.activity.plannedActivityDetail"/>
+    <expression value="CarePlan.activity.plannedActivityReference"/>
   </context>
   <context>
     <type value="element"/>
@@ -72,14 +77,33 @@
     <expression value="NutritionOrder"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="RequestOrchestration"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="RequestGroup"/>
   </context>
   <context>
     <type value="element"/>
     <expression value="SupplyRequest"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="ServiceRequest"/>
   </context>
