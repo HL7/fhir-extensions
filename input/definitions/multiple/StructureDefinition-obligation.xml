@@ -272,7 +272,7 @@
 			<comment value="If this element is declared on a slicing element, the applicable-number applies across all slices, not to each individual slice.  If this element is present on an obligation declared on a specific slice, then the applicable number applies for that particular slice."/>
 			<min value="0"/>
 			<max value="1"/>
-			<meaningIfMissing value="If not specified, the implication is that the obligation applies to all repetitions"/>
+			<meaningWhenMissing value="If not specified, the implication is that the obligation applies to all repetitions"/>
 		</element>
 		<element id="Extension.extension:applicable-number.extension">
 			<path value="Extension.extension.extension"/>

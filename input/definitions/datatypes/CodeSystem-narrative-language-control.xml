@@ -41,7 +41,6 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/ValueSet/narrative-language-control"/>
   <hierarchyMeaning value="is-a"/>
   <content value="complete"/>
   <concept>

@@ -72,12 +72,12 @@
           "key": "coe-1",
           "severity": "error",
           "human": "When the codeOptions extension is used on a CodeableConcept, the CodeableConcept SHALL NOT have any codings.",
-          "expression": "coding.exists().not()"
+          "expression": "value.ofType(CodeableConcept).coding.exists().not()"
         }, {
           "key": "coe-2",
           "severity": "warning",
           "human": "When the codeOptions extension is used on a CodeableConcept, the CodeableConcept SHOULD have text. For example, the text might mention the title of value set that describes the allowed content.",
-          "expression": "text.exists()"
+          "expression": "value.ofType(CodeableConcept).text.exists()"
         }],
         "isModifier" : false,
         "mapping" : [{

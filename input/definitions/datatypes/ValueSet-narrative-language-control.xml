@@ -44,7 +44,7 @@
   <immutable value="true"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/ValueSet/all-languages"/>
+      <system value="urn:ietf:bcp:47"/>
     </include>
     <include>
       <system value="http://hl7.org/fhir/narrative-language-control"/>

@@ -38,6 +38,7 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
   <content value="complete"/>
   <concept>
     <code value="extends"/>

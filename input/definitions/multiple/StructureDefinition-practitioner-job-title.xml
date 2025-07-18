@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="PRJobTitle"/>
   <title value="Practitioner Job title"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2021-01-02T08:58:31+11:00"/>
   <publisher value="HL7 International / Patient Administration"/>

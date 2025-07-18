@@ -23,11 +23,11 @@
   "status" : "active",
   "experimental" : false,
   "date" : "2025-05-23",
-  "publisher" : "FHIR Project team",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "contact" : [{
     "telecom" : [{
       "system" : "url",
-      "value" : "http://hl7.org/fhir"
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
     }]
   }],
   "description" : "This value set includes all common UCUM codes used for Time Duration Units - 'a' (years), 'mo' (months), 'd' (days), 'h' (hours), 'min' (minutes), 's' (seconds), and 'ms' (milliseconds). NOTE: This value set is the same as the duration units value set, except that it does not include weeks, because weeks are not a valid precision for a datetime, time, or instant value.",

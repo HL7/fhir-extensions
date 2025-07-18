@@ -45,7 +45,7 @@
       <path value="Extension"/>
       <short value="The name the individual is known by in this role"/>
       <definition value="The name the individual is known by in this role."/>
-      <comments value="For example, if a clinician starts their career providing care at Clinic A, and is well known using their maiden name, but then is married, and starts working at Clinic B, but wants to use their married name at Clinic B."/>
+      <comment value="For example, if a clinician starts their career providing care at Clinic A, and is well known using their maiden name, but then is married, and starts working at Clinic B, but wants to use their married name at Clinic B."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>

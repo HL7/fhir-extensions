@@ -52,7 +52,7 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="MedicationAdministration.dose"/>
+    <expression value="MedicationAdministration.dosage"/>
   </context>
   <context>
     <type value="element"/>
