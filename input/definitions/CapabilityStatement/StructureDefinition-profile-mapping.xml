@@ -19,7 +19,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.org/Special/committees/fhir-i"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
   <description value="Extension definition for Mapping between ```API``` and ```Profile```. CapabilityStatement.rest.resource.profile has two different profile statements:&#10;&#10;* profile - the overall system profile for a resource&#10;* supportedProfile 0..* - a particular profile that the system supports&#10;&#10;What is missing from this picture is defining which resources conform to&#10;which profile. Sometimes, of course, it's impossible to define this, but&#10;quite often, there's an algorithmic relationship that a server or client&#10;could use to know that resources with a particular set of values will or should&#10;conform to a given profile.&#10;&#10;This extension defines a relationship between a search string and a profile.&#10;Any resource that meets a given search string will be expected to conform to the particular profile. If more than one profile is nominated for a search string, resources SHALL conform to all the listed profiles. The last extension can be without a search matches and remaining resources&#10;&#10;This extension repeats, and order is important - once a match is found, this profile is the one that applies. Todo: If this extension is useful, it will be moved to the core extensions pack"/>

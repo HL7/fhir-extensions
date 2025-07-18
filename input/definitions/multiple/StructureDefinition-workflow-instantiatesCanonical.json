@@ -60,6 +60,13 @@
     "expression" : "DiagnosticReport"
   },
   {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+      "extension" : [{
+        "url" : "endFhirVersion",
+        "valueCode" : "4.3"
+      }]
+    }],
     "type" : "element",
     "expression" : "Media"
   },

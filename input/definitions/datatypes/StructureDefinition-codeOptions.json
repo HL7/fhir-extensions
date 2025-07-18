@@ -55,6 +55,7 @@
       "type" : "element",
       "expression" : "CodeableConcept"
     }],
+    "contextInvariant" : ["ofType(CodeableConcept).coding.exists().not()"],
     "type" : "Extension",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
     "derivation" : "constraint",
@@ -67,18 +68,6 @@
         "comment": "This extension SHALL NOT be used when an appropriate higher level concept code exists. This extension cannot be used to satisfy a required binding. When this extension is used on an element with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review). When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHOULD be present. For example, the text might mention the title of value set that describes the allowed content.",
         "min" : 0,
         "max" : "1",
-        "condition": [ "coe-1", "coe-2" ],
-        "constraint": [{
-          "key": "coe-1",
-          "severity": "error",
-          "human": "When the codeOptions extension is used on a CodeableConcept, the CodeableConcept SHALL NOT have any codings.",
-          "expression": "coding.exists().not()"
-        }, {
-          "key": "coe-2",
-          "severity": "warning",
-          "human": "When the codeOptions extension is used on a CodeableConcept, the CodeableConcept SHOULD have text. For example, the text might mention the title of value set that describes the allowed content.",
-          "expression": "text.exists()"
-        }],
         "isModifier" : false,
         "mapping" : [{
           "identity" : "v2",

@@ -55,12 +55,40 @@
     <expression value="PlanDefinition.action"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="RequestOrchestration"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="RequestOrchestration.action"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="RequestGroup"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="RequestGroup.action"/>
   </context>
   <context>
     <type value="element"/>

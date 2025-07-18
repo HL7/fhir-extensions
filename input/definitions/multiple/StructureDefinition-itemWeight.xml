@@ -43,12 +43,13 @@
     <expression value="Coding"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="Questionnaire.item.answerOption"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="QuestionnaireResponse.item.answer"/>
   </context>
   <context>
     <type value="element"/>

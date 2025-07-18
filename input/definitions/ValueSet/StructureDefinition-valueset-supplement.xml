@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="valueset-supplement"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="ti"/>
+    <valueCode value="vocab"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
@@ -41,6 +41,14 @@
   <context>
     <type value="element"/>
     <expression value="ValueSet"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.include"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.exclude"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

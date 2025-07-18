@@ -1,0 +1,24 @@
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+	
+<p>
+The extension valueset-supplement is a little bit ambiguous when used on the base of ValueSet. The ambiguity arises in two contexts: 
+</p>
+<ol>
+ <li>
+   Validating a code. When a server is validating a code against a value set with codes from two different systems, 
+   and the value set declares a dependency on a supplement it doesn't have, the server cannot be sure whether it is 
+   for the code system the code is in, or a different one. If the supplement is for a different code system, the
+   server could safely ignore it, but it can't know
+ </li> 
+ <li>
+   A similar situation arises when a ValueSet depends on different versions of a code system, which 
+   is valid and also a feature used in production value sets. That is, <code>ValueSet.compose.include</code> 
+   references different versions of the same code system. In this situation, it's ambiguous which version is
+   being supplemented, or needs to be, and it might not be all of them.</li>
+</ol>
+<p> 
+For both these reasons, the preferred location for supplement dependency is on <code>ValueSet.compose.include</code> or 
+<code>ValueSet.compose.exclude</code> as appropriate: this makes it clear which code system is being supplemented.
+</p>
+
+</div>

@@ -2,10 +2,6 @@
   <id value="synchronicity-control"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-    <tag>
-      <system value="http://hl7.org/fhir/uv/tools/CodeSystem/tooling-tags"/>
-      <code value="R6-sourced-tx"/>
-    </tag>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>

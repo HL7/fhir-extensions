@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="ti"/>
+    <valueCode value="vocab"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
@@ -39,7 +39,7 @@
       <valueSet value="http://hl7.org/fhir/ValueSet/concept-map-relationship"/>
     </include>
     <include>
-      <system value="http://hl7.org/fhir/tools/CodeSystem/r4-equivalence"/>
+      <system value="http://hl7.org/fhir/CodeSystem/r4-equivalence"/>
     </include>
   </compose>
 </ValueSet>

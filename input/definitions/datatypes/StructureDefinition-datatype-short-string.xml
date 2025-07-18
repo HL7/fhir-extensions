@@ -26,6 +26,7 @@
     </telecom>
   </contact>
   <description value="Defines a shorter version of the text content of the element on which the extension appears."/>
+  <purpose value="Used to capture a shorter version of a string for use on mobile devices, list views, or other renderings that are space-limited."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -50,8 +51,7 @@
       <path value="Extension"/>
       <short value="Short string with equivalent content"/>
       <definition value="Defines a shorter version of the text content of the element on which the extension appears."/>
-      <requirements value="Used to capture a shorter version of a string for use on mobile devices, list views, or other renderings that are space-limited."/>
-      <comments value="This extension is only appropriate to use on elements that contain arbitrary (non-computable) and non-controlled text for display. E.g., it is not appropriate to add a 'short' version of a `Questionnaire.item.linkId` since it is a computable value; nor is it appropriate to add a 'short' version of a `coding.display` since it is controlled by the defining CodeSystem. If you are unsure about an element context, please check with the FHIR Infrastructure WG."/>
+      <comment value="This extension is only appropriate to use on elements that contain arbitrary (non-computable) and non-controlled text for display. E.g., it is not appropriate to add a 'short' version of a `Questionnaire.item.linkId` since it is a computable value; nor is it appropriate to add a 'short' version of a `coding.display` since it is controlled by the defining CodeSystem. If you are unsure about an element context, please check with the FHIR Infrastructure WG."/>
       <min value="0"/>
       <max value="1"/>
     </element>

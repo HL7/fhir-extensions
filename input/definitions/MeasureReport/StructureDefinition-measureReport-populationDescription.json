@@ -53,9 +53,16 @@
     },
     {
       "type" : "element",
-      "expression" : "MeasureReport.stratifier"
+      "expression" : "MeasureReport.group.stratifier"
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
       "type" : "element",
       "expression" : "MeasureReport.supplementalData"
     }],

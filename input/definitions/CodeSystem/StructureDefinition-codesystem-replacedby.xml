@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="codesystem-replacedby"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="ti"/>
+    <valueCode value="vocab"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="CSReplacedby"/>
   <title value="CodeSystem Replacedby"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 International / Terminology Infrastructure"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="A code that replaces this - use this code instead.  This extension has been retired as it is unusable with it's current context and because identification of replacement codes should be captured using concept properties."/>
+  <description value="A code that replaces this - use this code instead.  This extension is not used in R6 because identification of replacement codes should be captured using concept properties."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -39,6 +39,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CodeSystem.concept"/>
   </context>

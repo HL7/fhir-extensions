@@ -12,6 +12,10 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/practitionerrole-doingBusinessAs"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1773"/>
+  </identifier>
   <version value="5.0.0"/>
   <name value="PRDoingBusinessAs"/>
   <title value="PractitionerRole Doing Business As"/>
@@ -25,13 +29,8 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="The name the individual is known by in this role.&#xD;&#xD;For example, if a clinician starts their career providing care at Clinic A, and is well known using their maiden name, but then is married, and starts working at Clinic B, but wants to use their married name at Clinic B." />
+  <description value="The name the individual is known by in this role.&#10;&#10;For example, if a clinician starts their career providing care at Clinic A, and is well known using their maiden name, but then is married, and starts working at Clinic B, but wants to use their married name at Clinic B."/>
   <fhirVersion value="5.0.0"/>
-  <mapping>
-    <identity value="rim"/>
-    <uri value="http://hl7.org/v3"/>
-    <name value="RIM Mapping"/>
-  </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
@@ -44,8 +43,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Doing business as"/>
+      <short value="The name the individual is known by in this role"/>
       <definition value="The name the individual is known by in this role."/>
+      <comment value="For example, if a clinician starts their career providing care at Clinic A, and is well known using their maiden name, but then is married, and starts working at Clinic B, but wants to use their married name at Clinic B."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>
