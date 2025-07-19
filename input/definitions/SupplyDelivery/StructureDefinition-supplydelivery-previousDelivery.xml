@@ -1,0 +1,60 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="supplydelivery-previousDelivery"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/supplydelivery-previousDelivery"/>
+  <version value="1.0.0"/>
+  <name value="PreviousDelivery"/>
+  <title value="Previous Delivery"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-15"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="References a previous SupplyDelivery that contains the items in the current SupplyDelivery."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="SupplyDelivery"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Reference to prior delivery"/>
+      <definition value="References a previous SupplyDelivery that contains the items in the current SupplyDelivery."/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/supplydelivery-previousDelivery"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/SupplyDelivery"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
