@@ -9,7 +9,11 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="Use Device Gateway (device-gateway) extension which allows codeableReference (Device) in R6 and requires cross version extension for codeable reference."/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"/>
   <identifier>
@@ -29,7 +33,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="To be used when the actual gateway used at the time of the observation, and the referenced device is also specified. The gateway device may be acting as a communication/data collector, translator or controller; This extension is useful when there is more than one gateway device, for example, where there are apps on a phone and each are a device, and more than one app is used to pass on the data to a FHIR Server. In that case you need to be able to say from the observation which specific app was used to act as gateway. Note that the Provenance/AuditEvent resources can represent the same information."/>
+  <description value="To be used when the actual gateway used at the time of the observation, and the referenced device is also specified. The gateway device may be acting as a communication/data collector, translator or controller; This extension is useful when there is more than one gateway device, for example, where there are apps on a phone and each are a device, and more than one app is used to pass on the data to a FHIR Server. In that case you need to be able to say from the observation which specific app was used to act as gateway. Note that the Provenance/AuditEvent resources can represent the same information. Use Device Gateway (device-gateway) extension which allows codeableReference (Device) in R6 and requires cross version extension for codeable reference."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +53,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Gateway Device"/>
-      <definition value="To be used when the actual gateway used at the time of the observation, and the referenced device is also specified. The gateway device may be acting as a communication/data collector, translator or controller; This extension is useful when there is more than one gateway device, for example, where there are apps on a phone and each are a device, and more than one app is used to pass on the data to a FHIR Server. In that case you need to be able to say from the observation which specific app was used to act as gateway. Note that the Provenance/AuditEvent resources can represent the same information."/>
+      <definition value="To be used when the actual gateway used at the time of the observation, and the referenced device is also specified. The gateway device may be acting as a communication/data collector, translator or controller; This extension is useful when there is more than one gateway device, for example, where there are apps on a phone and each are a device, and more than one app is used to pass on the data to a FHIR Server. In that case you need to be able to say from the observation which specific app was used to act as gateway. Note that the Provenance/AuditEvent resources can represent the same information. Use Device Gateway (device-gateway) extension which allows codeableReference (Device) in R6 and requires cross version extension for codeable reference."/>
       <min value="0"/>
       <max value="1"/>
     </element>

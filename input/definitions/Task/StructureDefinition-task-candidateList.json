@@ -15,7 +15,18 @@
       "url" : "endFhirVersion",
       "valueCode" : "4.3"
     }]
-  }],
+  },
+   {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "deprecated",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
+          "valueMarkdown": "The list of candidates that perform a task is now achieved by using Task.requestedPerformer and this element can be implemented using the cross version extension mechanism (i.e., the extension is no longer needed)."
+        }
+      ]
+    }
+],
   "url" : "http://hl7.org/fhir/StructureDefinition/task-candidateList",
   "version" : "4.0.1",
   "name" : "CandidateList",
@@ -29,7 +40,7 @@
       "value" : "http://www.hl7.org/Special/committees/orders"
     }]
   }],
-  "description" : "Identifies the individuals who are candidates for being the owner of the task. Use Task.requestedPerformer in R5+",
+  "description" : "Identifies the individuals who are candidates for being the owner of the task. The list of candidates that perform a task is now achieved by using Task.requestedPerformer and this element can be implemented using the cross version extension mechanism (i.e., the extension is no longer needed).",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "workflow",
