@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="The overall name of a collection of branded devices that an organization brings to market.  It is typically not the same as, although can be derived from, the organization name that owns the name."/>
+  <description value="The overall name of a collection of branded devices that an organization brings to market.  It is typically not the same as, although can be derived from, the organization name that owns the name. Use Commercial Brand Family value for Device.name.type or DeviceDefinition.deviceName.type in R6."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -39,6 +39,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+     <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
+  </extension>
     <type value="element"/>
     <expression value="Device"/>
   </context>
@@ -48,6 +53,11 @@
         <valueCode value="4.0"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+    <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
+  </extension>
     <type value="element"/>
     <expression value="DeviceDefinition"/>
   </context>
@@ -58,7 +68,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Commercial Brand"/>
-      <definition value="The overall name of a collection of branded devices that an organization brings to market.  It is typically not the same as, although can be derived from, the organization name that owns the name."/>
+      <definition value="The overall name of a collection of branded devices that an organization brings to market.  It is typically not the same as, although can be derived from, the organization name that owns the name. Use Commercial Brand Family value for Device.name.type or DeviceDefinition.deviceName.type in R6."/>
       <min value="0"/>
       <max value="1"/>
     </element>
