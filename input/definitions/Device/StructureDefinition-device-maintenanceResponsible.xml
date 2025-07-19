@@ -8,15 +8,8 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
-   <extension
-             url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated">
-      <extension
-                 url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown
-                       value="Replaced by the element DeviceAssociation.relationship in R6"/>
-      </extension>
-    </valueCode>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/device-maintenanceresponsibility"/>
   <identifier>
@@ -36,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Extension containing the information about the person and/or organization responsible for the maintenance of the device."/>
+  <description value="Extension containing the information about the person and/or organization responsible for the maintenance of the device. Use DeviceAssociation.relationship with a value of 'maintainer' after R5."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -52,6 +45,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+    <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
+  </extension>
     <type value="element"/>
     <expression value="Device"/>
   </context>
@@ -62,7 +60,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Device Maintenance Responsibility"/>
-      <definition value="The entity or entities that are responsible for maintenance for a given device."/>
+      <definition value="The entity or entities that are responsible for maintenance for a given device. Use DeviceAssociation.relationship with a value of 'maintainer' after R5."/>
     </element>
     <element id="Extension.extension:person">
       <path value="Extension.extension"/>
