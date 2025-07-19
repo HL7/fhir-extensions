@@ -39,7 +39,7 @@
     { "type" : "element",    "expression" : "RelatedArtifact" },
     { "type" : "element",    "expression" : "ArtifactAssessment.relatesTo" },
     { "type" : "element",    "expression" : "Citation.relatesTo" },
-    { "type" : "element",    "expression" : "Composition.relatesTo" }
+    { "type" : "element",    "expression" : "Composition.relatesTo" },
     { "type" : "element",    "expression" : "Evidence.relatesTo" },
     { "type" : "element",    "expression" : "EvidenceVariable.relatesTo" },
     { "type" : "element",    "expression" : "ResearchStudy.relatesTo" }
