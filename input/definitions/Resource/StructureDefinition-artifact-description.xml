@@ -30,7 +30,7 @@
     </telecom>
   </contact>
   <description value="A free text natural language description of the artifact from a consumer's perspective."/>
-  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way, such as Medication. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan. Note that the apparently related [Resource Name extension](StructureDefinition-resource-instance-name.html) is only used as part of the IG publication tooling process, to populate the ImplementationGuide.definition.resource.name and description."/>
+  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way, such as Medication. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan. Note that the apparently related [Resource Name extension](StructureDefinition-resource-instance-name.html) is only used as part of the IG publication tooling process, to populate the ImplementationGuide.definition.resource.name and description. For resources where this element was added in R5, the cross-version extension should be used rather than this extension (ConditionDefinition,DeviceDefinition,ExampleScenario,Group,ObservationDefinition,SpecimenDefinition,SubstanceDefinition,SubscriptionTopic)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -39,10 +39,17 @@
   </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  <context>
-    <type value="element"/>
-    <expression value="Resource"/>
-  </context>
+  <context><type value="element"/><expression value="ClinicalUseDefinition"/></context>
+  <context><type value="element"/><expression value="ConditionDefinition"/></context>
+  <context><type value="element"/><expression value="DeviceDefinition"/></context>
+  <context><type value="element"/><expression value="ExampleScenario"/></context>
+  <context><type value="element"/><expression value="Group"/></context>
+  <context><type value="element"/><expression value="Medication"/></context>
+  <context><type value="element"/><expression value="MedicationKnowledge"/></context>
+  <context><type value="element"/><expression value="ObservationDefinition"/></context>
+  <context><type value="element"/><expression value="SpecimenDefinition"/></context>
+  <context><type value="element"/><expression value="SubstanceDefinition"/></context>
+  <context><type value="element"/><expression value="SubscriptionTopic"/></context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
