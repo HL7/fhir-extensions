@@ -52,12 +52,10 @@
       <extension url="startFhirVersion">
         <valueCode value="4.0"/>
       </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
-    <extension url="endFhirVersion">
+      <extension url="endFhirVersion">
       <valueCode value="5.0"/>
     </extension>
-  </extension>
+    </extension>
     <type value="element"/>
     <expression value="DeviceDefinition"/>
   </context>
