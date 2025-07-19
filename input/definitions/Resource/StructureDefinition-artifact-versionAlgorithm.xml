@@ -29,7 +29,7 @@
 		</telecom>
 	</contact>
 	<description value="Indicates the mechanism used to compare versions to determine which is more current."/>
-	<purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
+	<purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan. For resources where this element was added in R5, the cross-version extension should be used rather than this extension (ActivityDefinition,CapabilityStatement,CodeSystem,CompartmentDefinition,ConditionDefinition,ConceptMap,ExampleScenario,GraphDefinition,ImplementationGuide,Library,Measure,MessageDefinition,NamingSystem,ObservationDefinition,OperationDefinition,PlanDefinition,Questionnaire,SearchParameter,SpecimenDefinition,SubscriptionTopic,StructureDefinition,StructureMap,TerminologyCapabilities,ValueSet)."/>
 	<fhirVersion value="5.0.0"/>
 	<mapping>
 		<identity value="rim"/>
@@ -38,10 +38,37 @@
 	</mapping>
 	<kind value="complex-type"/>
 	<abstract value="false"/>
-	<context>
-		<type value="element"/>
-		<expression value="Resource"/>
-	</context>
+	<context><type value="element"/><expression value="ActivityDefinition"/></context>
+	<context><type value="element"/><expression value="CapabilityStatement"/></context>
+	<context><type value="element"/><expression value="ClinicalUseDefinition"/></context>
+	<context><type value="element"/><expression value="CodeSystem"/></context>
+	<context><type value="element"/><expression value="CompartmentDefinition"/></context>
+	<context><type value="element"/><expression value="ConditionDefinition"/></context>
+	<context><type value="element"/><expression value="ConceptMap"/></context>
+	<context><type value="element"/><expression value="DeviceDefinition"/></context>
+	<context><type value="element"/><expression value="ExampleScenario"/></context>
+	<context><type value="element"/><expression value="GraphDefinition"/></context>
+	<context><type value="element"/><expression value="Group"/></context>
+	<context><type value="element"/><expression value="ImplementationGuide"/></context>
+	<context><type value="element"/><expression value="Library"/></context>
+	<context><type value="element"/><expression value="Measure"/></context>
+	<context><type value="element"/><expression value="Medication"/></context>
+	<context><type value="element"/><expression value="MedicationKnowledge"/></context>
+	<context><type value="element"/><expression value="MessageDefinition"/></context>
+	<context><type value="element"/><expression value="NamingSystem"/></context>
+	<context><type value="element"/><expression value="ObservationDefinition"/></context>
+	<context><type value="element"/><expression value="OperationDefinition"/></context>
+	<context><type value="element"/><expression value="PlanDefinition"/></context>
+	<context><type value="element"/><expression value="Questionnaire"/></context>
+	<context><type value="element"/><expression value="SearchParameter"/></context>
+	<context><type value="element"/><expression value="SpecimenDefinition"/></context>
+	<context><type value="element"/><expression value="Substance"/></context>
+	<context><type value="element"/><expression value="SubstanceDefinition"/></context>
+	<context><type value="element"/><expression value="SubscriptionTopic"/></context>
+	<context><type value="element"/><expression value="StructureDefinition"/></context>
+	<context><type value="element"/><expression value="StructureMap"/></context>
+	<context><type value="element"/><expression value="TerminologyCapabilities"/></context>
+	<context><type value="element"/><expression value="ValueSet"/></context>
 	<type value="Extension"/>
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
 	<derivation value="constraint"/>
