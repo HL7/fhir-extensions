@@ -19,12 +19,14 @@
    {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
       "valueCode": "deprecated",
+      "_valueCode": {
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason",
           "valueMarkdown": "The list of candidates that perform a task is now achieved by using Task.requestedPerformer and this element can be implemented using the cross version extension mechanism (i.e., the extension is no longer needed)."
         }
       ]
+    }
     }
 ],
   "url" : "http://hl7.org/fhir/StructureDefinition/task-candidateList",
