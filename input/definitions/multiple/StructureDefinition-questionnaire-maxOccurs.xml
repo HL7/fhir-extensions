@@ -41,7 +41,7 @@
 		<type value="element"/>
 		<expression value="Questionnaire.item"/>
 	</context>
-	<contextInvariant value="type!='display' and (required=true or (required.value.empty() and required.extension.exists()))"/>
+	<contextInvariant value="type!='display' and (repeats=true or (repeats.value.empty() and repeats.extension.exists()))"/>
 	<type value="Extension"/>
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
 	<derivation value="constraint"/>
