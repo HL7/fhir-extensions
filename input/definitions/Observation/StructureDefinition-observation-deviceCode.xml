@@ -8,12 +8,8 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This extension is deprecated, as there are alternate ways to represent this information through the use of Observation.device and the Device.type element"/>
-      </extension>
-    </valueCode>
+ <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/observation-deviceCode"/>
   <identifier>
