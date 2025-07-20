@@ -85,6 +85,9 @@
       <type>
         <code value="integer"/>
       </type>
+       <type>
+      <code value="Quantity"/>
+      </type>
     </element>
   </differential>
 </StructureDefinition>
