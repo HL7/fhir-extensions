@@ -9,7 +9,11 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="Shall be handled using a different mechanism.  See Observation Notes for more information."/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/observation-delta"/>
   <identifier>
@@ -29,7 +33,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="The qualitative change in the value relative to the previous measurement. Usually only recorded if the change is clinically significant."/>
+  <description value="The qualitative change in the value relative to the previous measurement. Usually only recorded if the change is clinically significant. Note: To perform a delta check one can instantiate a new observation (the comparison observation) with derivedFrom populated with references to the two prior Observations that triggered the delta check. Also, the Observation.interpretation of the comparison Observation has the code of the interpretation of the delta check."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
