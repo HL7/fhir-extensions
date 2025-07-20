@@ -9,7 +9,10 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+    <valueMarkdown value="This extension has been replaced by DiagnosticReport.relatesTo element in R6."/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-replaces"/>
   <identifier>
