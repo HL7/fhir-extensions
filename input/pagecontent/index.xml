@@ -33,8 +33,8 @@
   <p>This is the ballot for release 5.3.0 of the Extension Pack. While comment is welcome on all extensions, 
   implementer's attention is drawn to the following matters:</p>
   <ul>
-   <li>New Extensions: {!% include new-extensions.xhtml %!}</li>
-   <li>Removed Extensions: {!% include deleted-extensions.xhtml %!}</li>
+   <li>New Extensions: {% include new-extensions.xhtml %}</li>
+   <li>Removed Extensions: {% include deleted-extensions.xhtml %}</li>
    <li>Deprecated Extensions: There are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' and standardStatus = 'deprecated' %} deprecated extensions: see <a href="deprecated.html">the deprecated Extensions page</a>. Balloters might want to pay particular attention to this list - there has been some lack of clarity about whether extensions should be deprecated when elements are added to resources in R5/6 </li>
    <li>Changed Extensions: You can see which extensions have changed by looking in the <b>Δ v5.2.0</b> column on right of the <a href="extension-registry.html">Extension Summary Table</a></li>
    <li>The conversion maps have been removed from this release - they have moved to the cross-extensions publications</li>
