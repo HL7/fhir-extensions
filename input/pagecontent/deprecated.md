@@ -52,4 +52,4 @@ the definition for an extension that was elevated to an element in R5:
 
 ### Summary of Deprecated Resources
 
-{!% include deprecated-list.xhtml %!}
+{% include deprecated-list.xhtml %}
