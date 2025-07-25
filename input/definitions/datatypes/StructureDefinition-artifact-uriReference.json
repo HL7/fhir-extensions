@@ -45,6 +45,9 @@
     "context" : [{
       "type" : "element",
       "expression" : "Reference"
+    }, {
+      "type" : "element",
+      "expression" : "canonical"
     }],
     "type" : "Extension",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
