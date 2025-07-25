@@ -42,6 +42,7 @@
   "abstract" : false,
   "context" : [
     { "type": "element", "expression": "ActivityDefinition" },
+    { "type": "element", "expression": "ArtifactAssessment" },
     { "type": "element", "expression": "CapabilityStatement" },
     { "type": "element", "expression": "ClinicalUseDefinition" },
     { "type": "element", "expression": "CodeSystem" },

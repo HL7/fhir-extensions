@@ -39,6 +39,7 @@
   </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
+  <context><type value="element"/><expression value="ArtifactAssessment"/></context>
   <context><type value="element"/><expression value="ClinicalUseDefinition"/></context>
   <context><type value="element"/><expression value="ConditionDefinition"/></context>
   <context><type value="element"/><expression value="Group"/></context>
