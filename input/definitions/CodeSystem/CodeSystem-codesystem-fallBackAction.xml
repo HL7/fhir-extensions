@@ -1,0 +1,33 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="codesystem-fallBackAction"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/CodeSystem/codesystem-fallBackAction"/>
+  <version value="1.0.0"/>
+  <name value="FallBackAction"/>
+  <title value="Fallback Action Code System"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-25"/>
+   <publisher value="HL7 International / Orders and Observations"/>
+  <description value="Codes describing fallback actions when the preferred specimen cannot be used."/>
+  <content value="complete"/>
+  <caseSensitive value="true"/>
+  <concept>
+    <code value="new"/>
+    <display value="Draw new specimen"/>
+    <definition value="Draw a new specimen if the suggested specimen cannot be used."/>
+  </concept>
+  <concept>
+    <code value="cancel"/>
+    <display value="Cancel test"/>
+    <definition value="Do not perform the test if the suggested specimen cannot be used (would require communication from the lab when it ended up canceling)."/>
+  </concept>
+</CodeSystem>
