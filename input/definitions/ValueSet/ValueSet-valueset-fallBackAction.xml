@@ -23,14 +23,6 @@
   <compose>
     <include>
       <system value="http://hl7.org/fhir/CodeSystem/codesystem-fallBackAction"/>
-      <concept>
-        <code value="new"/>
-        <display value="Draw new specimen"/>
-      </concept>
-      <concept>
-        <code value="cancel"/>
-        <display value="Cancel test"/>
-      </concept>
     </include>
   </compose>
 </ValueSet>
