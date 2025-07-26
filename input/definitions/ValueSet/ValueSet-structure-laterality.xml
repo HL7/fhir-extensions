@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="structure-laterality-vs"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/structure-laterality-vs"/>
+  <version value="1.0.0"/>
+  <name value="StructureLateralityValueSet"/>
+  <title value="Structure Laterality Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-25"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <description value="Qualifiers to specify laterality."/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="51440002"/>
+        <display value="Right and left (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="399488007"/>
+        <display value="Midline (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="24028007"/>
+        <display value="Right (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="7771000"/>
+        <display value="Left (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
