@@ -117,5 +117,9 @@
       </type>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/servicerequest-specimenSuggestion"/>
     </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
   </differential>
 </StructureDefinition>
