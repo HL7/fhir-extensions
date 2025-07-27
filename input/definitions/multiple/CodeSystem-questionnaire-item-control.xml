@@ -149,15 +149,7 @@
 		<concept>
 			<code value="unit"/>
 			<display value="Unit"/>
-			<definition value="Display item is rendered adjacent (horizontally or vertically) to the answer space for the parent question, typically to indicate a unit of measure.  **Deprecation Note** - The display element of the [[[http://hl7.org/fhir/StructureDefinition/questionnaire-unit]]] should be used instead."/>
-			<property>
-				<code value="status"/>
-				<valueCode value="deprecated"/>
-			</property>
-			<property>
-				<code value="deprecationDate"/>
-				<valueDateTime value="2022-09-08"/>
-			</property>
+			<definition value="Display item is rendered adjacent (horizontally or vertically) to the answer space for the parent question, typically to indicate a unit of measure.  In most circumstances, the display for the unit can be taken from the [questionnaire-unit extension](StructureDefinition-questionnaire-unit.html) and this display type will not be needed.  However, if there's a reason why the 'display' for the unit Coding is not the desired label to render when displaying the form, this display item can be used instead."/>
 		</concept>
 		<concept>
 			<code value="lower"/>
