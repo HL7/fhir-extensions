@@ -66,6 +66,7 @@
     { "type": "element", "expression": "StructureDefinition" },
     { "type": "element", "expression": "StructureMap" },
     { "type": "element", "expression": "TerminologyCapabilities" },
+    { "type": "element", "expression": "TestScript" },
     { "type": "element", "expression": "ValueSet" }
   ],
   "type" : "Extension",
