@@ -17,6 +17,12 @@
   <experimental value="true"/>
   <date value="2025-07-17"/>
   <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
   <description value="The absolute of the maximum deviation of the actual value from the reported value.&#10;&#10;Accuracy is particularly applicable to measured or observed values, and represents the maximum deviation over the entire range of measurement. When applied to a DeviceMetric, it expresses the maximum deviation of values reported by the metric. The reported observed value should be precise enough to reflect this accuracy, for example an observed value of 3.2 kg with an accuracy of 0.04 kg would be nonsensical. On the other hand, an observed value of 3.02 kg with an accuracy of 0.04 kg would indicate that the actual value is in the range of 3.02±0.04 kg or [2.98, 3.06] kg.&#10;&#10;Accuracy is usually in the same units as the reported value. Accuracy valueQuantity units SHOULD be provided for clarity; if omitted, they are implied to be the same as the reported value&#39;s units (or the DeviceMetric units)."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>

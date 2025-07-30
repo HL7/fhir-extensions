@@ -18,6 +18,12 @@
   <experimental value="false"/>
   <date value="2025-07-25"/>
   <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
   <description value="Qualifiers to specify laterality."/>
   <immutable value="true"/>
   <compose>
