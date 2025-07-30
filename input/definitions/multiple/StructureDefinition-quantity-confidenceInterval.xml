@@ -30,12 +30,13 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Observation.value[x]:valueQuantity"/>
+    <expression value="Observation.value[x]"/>
   </context>
   <context>
     <type value="element"/>
-    <expression value="Observation.component.value[x]:valueQuantity"/>
+    <expression value="Observation.component.value[x]"/>
   </context>
+  <contextInvariant value="$this is Quantity"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <differential>
@@ -47,6 +48,7 @@
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
+      <min value="2"/>
       <slicing>
         <discriminator>
           <type value="value"/>

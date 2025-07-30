@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="MedRefillsRemaining"/>
   <title value="MedicationDispense Refills Remaining"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2019-03-23"/>
   <publisher value="HL7 International / Pharmacy"/>

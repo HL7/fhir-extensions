@@ -33,7 +33,7 @@
   <version value="5.0.0"/>
   <name value="GoalAcceptanceStatus"/>
   <title value="goal acceptance status code system"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / Patient Care"/>
   <contact>

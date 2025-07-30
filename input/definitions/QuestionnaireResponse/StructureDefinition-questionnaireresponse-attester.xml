@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="QRAttester"/>
   <title value="QuestionnaireResponse Attester"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2021-03-22"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>

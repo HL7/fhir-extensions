@@ -15,7 +15,7 @@
   <version value="6.0.0"/>
   <name value="EncounterSubjectLocationClassification"/>
   <title value="The classification of the location of the subject in an Encounter"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2023-12-11"/>
   <publisher value="HL7 International / Patient Administration"/>

@@ -32,7 +32,7 @@
       ]
     }
   ],
-  "description": "Provides additional classifiers of a related artifact.",
+  "description": "Provides additional classifiers of a related artifact. In R6, this can also be used on ArtifactAssessment.relatesTo, Citation.relatesTo, Evidence.relatesTo, EvidenceVariable.relatesTo, and ResearchStudy.relatesTo",
   "fhirVersion": "5.0.0",
   "mapping": [
     {
@@ -49,63 +49,8 @@
       "expression": "RelatedArtifact"
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
-        "extension" : [{
-          "url" : "startFhirVersion",
-          "valueCode" : "6.0"
-        }]
-      }],
-      "type": "element",
-      "expression": "ArtifactAssessment.relatesTo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
-        "extension" : [{
-          "url" : "startFhirVersion",
-          "valueCode" : "6.0"
-        }]
-      }],
-      "type": "element",
-      "expression": "Citation.relatesTo"
-    },
-    {
       "type": "element",
       "expression": "Composition.relatesTo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
-        "extension" : [{
-          "url" : "startFhirVersion",
-          "valueCode" : "6.0"
-        }]
-      }],
-      "type": "element",
-      "expression": "Evidence.relatesTo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
-        "extension" : [{
-          "url" : "startFhirVersion",
-          "valueCode" : "6.0"
-        }]
-      }],
-      "type": "element",
-      "expression": "EvidenceVariable.relatesTo"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
-        "extension" : [{
-          "url" : "startFhirVersion",
-          "valueCode" : "6.0"
-        }]
-      }],
-      "type": "element",
-      "expression": "ResearchStudy.relatesTo"
     }
   ],
   "type": "Extension",

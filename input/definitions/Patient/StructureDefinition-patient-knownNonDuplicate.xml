@@ -19,7 +19,7 @@
   <version value="6.0.0"/>
   <name value="PatientKnownNonDuplicate"/>
   <title value="Patient Known Non Duplicate"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2023-12-11"/>
   <publisher value="HL7 International / Patient Administration"/>

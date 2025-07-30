@@ -23,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="TypeCharacteristicCodes"/>
   <title value="Type Characteristic Codes System"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>

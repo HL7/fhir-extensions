@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="BDPManipulation"/>
   <title value="BiologicallyDerivedProduct Manipulation"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2022-03-07"/>
   <publisher value="HL7 International / Orders and Observations"/>
