@@ -16,6 +16,18 @@ due to the increase in quality requirements. Others extensions have been depreca
 This last is actually a problem - such extensions are still valid and required in earlier versions, and should not be deprecated.
 HL7 is reviewing the deprecated extensions as of the ballot for 5.3.0 and some of the extensions will be brought back to life, marked for use with the appropriate versions.
 
+### Cross Version Extensions
+
+It is possible that an extension defined for use in a particular FHIR release (e.g. R4) could be superseded by the introduction of that same functionality in a future version of FHIR (e.g. R5) and an automatic inter-version extension becoming available with the publication of that newer release.  There are some guidelines to follow in this situation:
+
+1. There is no requirement that the previously valid R4 extension be deprecated.  (In fact, if the extension was published as part of the R4 specification, there's no practical mechanism to mark the extension as deprecated if we wanted to.)
+2. R4 extensions published in an IG could be deprecated in a future version of the IG if the publishers of the IG decided it was advantageous for the community to move to the inter-version extension.   Switching from one extension to another would be a breaking change and would require justification.  For example:
+   * the inter-version extension provides better support for inter-version compatibility
+   * the inter-version extension provides additional functionality that is desirable in the newer version of the IG.
+   
+  Such an IG SHOULD allow both the old extension and the new inter-version extension to be transmitted for a period of time for compatibility reasons and to reduce the pain of the breaking change.
+3. if you're supporting a multi-version IG (of which the extensions IG is the only current example), it is possible to mark an extension as being deprecated "as of" a particular FHIR release, meaning it ceases to be an appropriate extension for that release or higher.
+
 ### Editor's Notes
 
 The following guidelines apply for managing extensions:

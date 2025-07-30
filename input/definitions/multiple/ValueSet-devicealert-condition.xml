@@ -18,7 +18,7 @@
   <version value="1.0.0"/>
   <name value="DeviceAlertConditionCodes"/>
   <title value="DeviceAlert Condition Codes"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
   <date value="2025-07-07T09:02:11-06:00"/>
   <publisher value="HL7 International / Health Care Devices"/>

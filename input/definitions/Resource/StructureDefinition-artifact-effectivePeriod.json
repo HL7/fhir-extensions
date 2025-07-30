@@ -1,104 +1,283 @@
 {
-  "resourceType" : "StructureDefinition",
-  "id" : "artifact-effectivePeriod",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 1
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "cds"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
-  }],
-  "url" : "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod",
-  "identifier" : [{
-    "system" : "urn:ietf:rfc:3986",
-    "value" : "urn:oid:2.16.840.1.113883.4.642.5.1737"
-  }],
-  "name" : "ArtifactEffectivePeriod",
-  "title" : "Artifact Effective Period",
-  "status" : "active",
-  "experimental" : false,
-  "date" : "2023-01-09T13:31:32-07:00",
-  "publisher" : "HL7 International / Clinical Decision Support",
-  "contact" : [{
-    "telecom" : [{
-      "system" : "url",
-      "value" : "http://www.hl7.org/Special/committees/dss"
-    }]
-  }],
-  "description" : "When the artifact is expected to be used.",
-  "purpose" : "To provide an effective period for an artifact when the artifact is represented using a FHIR resource that does not declare the effectivePeriod element. For resources where this element was added in R5, the cross-version extension should be used rather than this extension (CodeSystem,ConceptMap,NamingSystem,ObservationDefinition,SpecimenDefinition,SubscriptionTopic,ValueSet).",
-  "fhirVersion" : "5.0.0",
-  "mapping" : [{
-    "identity" : "rim",
-    "uri" : "http://hl7.org/v3",
-    "name" : "RIM Mapping"
-  }],
-  "kind" : "complex-type",
-  "abstract" : false,
-  "context" : [
-    { "type": "element", "expression": "ArtifactAssessment" },
-    { "type": "element", "expression": "CapabilityStatement" },
-    { "type": "element", "expression": "ClinicalUseDefinition" },
-    { "type": "element", "expression": "CodeSystem" },
-    { "type": "element", "expression": "CompartmentDefinition" },
-    { "type": "element", "expression": "ConditionDefinition" },
-    { "type": "element", "expression": "ConceptMap" },
-    { "type": "element", "expression": "DeviceDefinition" },
-    { "type": "element", "expression": "ExampleScenario" },
-    { "type": "element", "expression": "GraphDefinition" },
-    { "type": "element", "expression": "Group" },
-    { "type": "element", "expression": "ImplementationGuide" },
-    { "type": "element", "expression": "Medication" },
-    { "type": "element", "expression": "MedicationKnowledge" },
-    { "type": "element", "expression": "MessageDefinition" },
-    { "type": "element", "expression": "NamingSystem" },
-    { "type": "element", "expression": "ObservationDefinition" },
-    { "type": "element", "expression": "OperationDefinition" },
-    { "type": "element", "expression": "SearchParameter" },
-    { "type": "element", "expression": "SpecimenDefinition" },
-    { "type": "element", "expression": "Substance" },
-    { "type": "element", "expression": "SubstanceDefinition" },
-    { "type": "element", "expression": "SubscriptionTopic" },
-    { "type": "element", "expression": "StructureDefinition" },
-    { "type": "element", "expression": "StructureMap" },
-    { "type": "element", "expression": "TerminologyCapabilities" },
-    { "type": "element", "expression": "TestScript" },
-    { "type": "element", "expression": "ValueSet" }
+  "resourceType": "StructureDefinition",
+  "id": "artifact-effectivePeriod",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
   ],
-  "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation" : "constraint",
-  "differential" : {
-    "element" : [{
-      "id" : "Extension",
-      "path" : "Extension",
-      "short" : "When the artifact is expected to be used",
-      "definition" : "The period during which the artifact content was or is planned to be in active use.",
-      "comment" : "The effective period for an artifact determines when the content is applicable for usage and is independent of publication and review dates. For example, an artifact intended to be used for the year 2016 might be published in 2015.",
-      "min" : 0,
-      "max" : "1"
-    },
+  "url": "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod",
+  "identifier": [
     {
-      "id" : "Extension.url",
-      "path" : "Extension.url",
-      "type" : [{
-        "code" : "uri"
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.5.1737"
+    }
+  ],
+  "name": "ArtifactEffectivePeriod",
+  "title": "Artifact Effective Period",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-01-09T13:31:32-07:00",
+  "publisher": "HL7 International / Clinical Decision Support",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "description": "When the artifact is expected to be used.",
+  "purpose": "To provide an effective period for an artifact when the artifact is represented using a FHIR resource that does not declare the effectivePeriod element. For resources where this element was added in R5, the cross-version extension should be used rather than this extension (CodeSystem,ConceptMap,NamingSystem,ObservationDefinition,SpecimenDefinition,SubscriptionTopic,ValueSet).",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
       }],
-      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod"
+      "type": "element",
+      "expression": "ArtifactAssessment"
     },
     {
-      "id" : "Extension.value[x]",
-      "path" : "Extension.value[x]",
-      "requirements" : "Allows establishing a transition before an artifact comes into effect and also allows for a sunsetting process when new versions of the artifact are or are expected to be used instead.",
-      "min": 1,
-      "type" : [{
-        "code" : "Period"
-      }]
-    }]
+      "type": "element",
+      "expression": "CapabilityStatement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.3"
+        }]
+      }],
+      "type": "element",
+      "expression": "ClinicalUseDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "CodeSystem"
+    },
+    {
+      "type": "element",
+      "expression": "CompartmentDefinition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
+
+
+      "type": "element",
+      "expression": "ConditionDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "ConceptMap"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "DeviceDefinition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "ExampleScenario"
+    },
+    {
+      "type": "element",
+      "expression": "GraphDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "Group"
+    },
+    {
+      "type": "element",
+      "expression": "ImplementationGuide"
+    },
+    {
+      "type": "element",
+      "expression": "Medication"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    },
+    {
+      "type": "element",
+      "expression": "MessageDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "NamingSystem"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "ObservationDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "OperationDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "SearchParameter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "SpecimenDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "Substance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.3"
+        }]
+      }],
+      "type": "element",
+      "expression": "SubstanceDefinition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.3"
+        }]
+      }],
+      "type": "element",
+      "expression": "SubscriptionTopic"
+    },
+    {
+      "type": "element",
+      "expression": "StructureDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "StructureMap"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "TerminologyCapabilities"
+    },
+    {
+      "type": "element",
+      "expression": "TestScript"
+    },
+    {
+      "type": "element",
+      "expression": "ValueSet"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "When the artifact is expected to be used",
+        "definition": "The period during which the artifact content was or is planned to be in active use.",
+        "comment": "The effective period for an artifact determines when the content is applicable for usage and is independent of publication and review dates. For example, an artifact intended to be used for the year 2016 might be published in 2015.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "requirements": "Allows establishing a transition before an artifact comes into effect and also allows for a sunsetting process when new versions of the artifact are or are expected to be used instead.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      }
+    ]
   }
 }

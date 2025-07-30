@@ -1,5 +1,8 @@
 == Suppressed Messages ==
 
+# Yep checked
+PIN_VERSION
+
 # We expect several extensions that aren't in shareablevalueset.  So long as the extensions are valid in their location and defined, we're ok
 # (and the validator should catch that)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablecodesystem|5.0.0
@@ -7,6 +10,7 @@ This element does not match any known slice defined in the profile http://hl7.or
 
 # These extensions really should have a context of 'element' (checked with FMG)
 SD_CONTEXT_SHOULD_NOT_BE_ELEMENT
+http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-24
 
 # FMG has decided to address these issues in a future release
 SD_ED_EXPERIMENTAL_BINDING

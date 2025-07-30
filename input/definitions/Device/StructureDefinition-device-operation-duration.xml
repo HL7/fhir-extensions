@@ -17,6 +17,12 @@
   <experimental value="false"/>
   <date value="2025-07-15"/>
   <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
   <description value="Length of time of the device's operation (e.g., days, hours, mins, etc.)."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>

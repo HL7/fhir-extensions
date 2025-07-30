@@ -23,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="SRPrecondition"/>
   <title value="ServiceRequest Precondition"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-02-12"/>
   <publisher value="HL7 International / Orders and Observations"/>
