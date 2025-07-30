@@ -1,27 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="quantity-confidenceInterval"/>
-  <url value="http://hl7.org/fhir/StructureDefinition/quantity-confidenceInterval"/>
-  <version value="1.0.0"/>
-  <name value="QuantityConfidenceInterval"/>
-  <title value="Quantity Confidence Interval"/>
-  <status value="active"/>
-  <experimental value="true"/>
-  <date value="2025-07-17"/>
-  <publisher value="HL7 International / Orders and Observations"/>
-  <description value="The range within which, at the given level of confidence, the actual value resides. For example, a nominal value (from the context Observation.value) of 4.3 may be reported, but this extension may be used to indicate that the reporting device is only 95% confident that the actual value is in the range of 3.1 to 5.5.&#10;&#10;The reported value, if present, should be precise enough to reflect the confidence interval. For example, a nominal quantity of 3.2 kg with a confidence interval of [3.21, 3.27] kg would be nonsensical. On the other hand, a reported value of 3.24 kg with a 95% confidence interval of [3.21, 3.27] kg would indicate a 95% confidence that the actual value is in that range.&#10;&#10;The reported value need not be at the center of the confidence interval; for example, if the values don't follow a normal distribution. The context Observation.value SHOULD be present when this extension is used, due to the risk that systems unfamiliar with (or ignoring) this extension may be unable to process a valueless quantity.&#10;&#10;The interval range low and high units are usually the same as the reported value's units. Confidence interval range low and high units SHOULD be provided for clarity; if omitted, they are implied to be the same as the reported value's units."/>
-  <fhirVersion value="5.0.0"/>
-  <kind value="complex-type"/>
-  <abstract value="false"/>
-  <context>
-  <type value="element"/>
-  <expression value="Observation.valueQuantity"/>
-  </context>
-  <context>
-  <type value="element"/>
-  <expression value="Observation.component.valueQuantity"/>
-  </context>
-  <type value="Extension"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="oo"/>
@@ -32,6 +10,35 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/quantity-confidenceInterval"/>
+  <version value="1.0.0"/>
+  <name value="QuantityConfidenceInterval"/>
+  <title value="Quantity Confidence Interval"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-07-17"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="The range within which, at the given level of confidence, the actual value resides. For example, a nominal value (from the context Observation.value) of 4.3 may be reported, but this extension may be used to indicate that the reporting device is only 95% confident that the actual value is in the range of 3.1 to 5.5.&#10;&#10;The reported value, if present, should be precise enough to reflect the confidence interval. For example, a nominal quantity of 3.2 kg with a confidence interval of [3.21, 3.27] kg would be nonsensical. On the other hand, a reported value of 3.24 kg with a 95% confidence interval of [3.21, 3.27] kg would indicate a 95% confidence that the actual value is in that range.&#10;&#10;The reported value need not be at the center of the confidence interval; for example, if the values don't follow a normal distribution. The context Observation.value SHOULD be present when this extension is used, due to the risk that systems unfamiliar with (or ignoring) this extension may be unable to process a valueless quantity.&#10;&#10;The interval range low and high units are usually the same as the reported value's units. Confidence interval range low and high units SHOULD be provided for clarity; if omitted, they are implied to be the same as the reported value's units."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Observation.value[x]"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Observation.component.value[x]"/>
+  </context>
+  <contextInvariant value="$this is Quantity"/>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <differential>
     <element id="Extension">
       <path value="Extension"/>
@@ -41,6 +48,7 @@
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
+      <min value="2"/>
       <slicing>
         <discriminator>
           <type value="value"/>

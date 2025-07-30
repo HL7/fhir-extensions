@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="DefaultType"/>
   <title value="Default Type"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>

@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="RelativeDateCriteria"/>
   <title value="Relative Date Criteria"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2013-12-05"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>

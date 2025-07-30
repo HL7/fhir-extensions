@@ -34,6 +34,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="ServiceRequest"/>
   </context>
@@ -41,8 +46,7 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
-    <element>
-      <id value="Extension"/>
+    <element id="Extension">
       <path value="Extension"/>
       <short value="Suggested specimen to be used"/>
       <definition value="This attribute enables the requester of this service to indicate they would like a certain specimen to be used, but if that is not available/appropriate to be used whether to have another specimen drawn, or that this test is not performed. When a specimen is referenced it is expected to be used. If it cannot be used, the decision to collect another specimen or not perform the test must be based on established policies or determined in some other agreed to way with the requester."/>
@@ -50,8 +54,7 @@
       <max value="*"/>
     </element>
     <!-- reference: CodeableReference(Specimen|ServiceRequest) -->
-    <element>
-      <id value="Extension.extension:reference"/>
+    <element id="Extension.extension:reference">
       <path value="Extension.extension"/>
       <sliceName value="reference"/>
       <min value="1"/>
@@ -61,16 +64,14 @@
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element>
-      <id value="Extension.extension:reference.url"/>
+    <element id="Extension.extension:reference.url">
       <path value="Extension.extension.url"/>
       <type>
         <code value="uri"/>
       </type>
       <fixedUri value="reference"/>
     </element>
-    <element>
-      <id value="Extension.extension:reference.value[x]"/>
+    <element id="Extension.extension:reference.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="CodeableReference"/>
@@ -80,8 +81,7 @@
     </element>
 
     <!-- fallBackAction: code with binding -->
-    <element>
-      <id value="Extension.extension:fallBackAction"/>
+    <element id="Extension.extension:fallBackAction">
       <path value="Extension.extension"/>
       <sliceName value="fallBackAction"/>
       <min value="0"/>
@@ -91,16 +91,14 @@
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element>
-      <id value="Extension.extension:fallBackAction.url"/>
+    <element id="Extension.extension:fallBackAction.url">
       <path value="Extension.extension.url"/>
       <type>
         <code value="uri"/>
       </type>
       <fixedUri value="fallBackAction"/>
     </element>
-    <element>
-      <id value="Extension.extension:fallBackAction.value[x]"/>
+    <element id="Extension.extension:fallBackAction.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="code"/>

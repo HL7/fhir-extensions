@@ -1,10 +1,20 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="supplydelivery-previousDelivery"/>
+  <derivation value="constraint"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/supplydelivery-previousDelivery"/>
   <version value="1.0.0"/>
   <name value="PreviousDelivery"/>
   <title value="Previous Delivery"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
   <date value="2025-07-15"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -24,16 +34,6 @@
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-  <derivation value="constraint"/>
-<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="oo"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
-  </extension>
   <differential>
     <element id="Extension">
       <path value="Extension"/>

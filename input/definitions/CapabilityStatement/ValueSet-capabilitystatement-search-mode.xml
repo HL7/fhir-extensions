@@ -21,7 +21,7 @@
   <name value="CSSearchModeVS"/>
   <title value="CapabilityStatement Search Mode ValueSet"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / Terminology Infrastructure"/>
   <contact>
     <telecom>

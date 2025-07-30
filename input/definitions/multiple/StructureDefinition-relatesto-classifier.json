@@ -1,81 +1,96 @@
 {
-  "resourceType" : "StructureDefinition",
-  "id" : "relatesto-classifier",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 2
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "cds"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
-  }],
-  "url" : "http://hl7.org/fhir/StructureDefinition/relatesto-classifier",
-  "name" : "RelatesToClassifier",
-  "title" : "RelatesTo Classifier",
-  "status" : "active",
-  "experimental" : false,
-  "date" : "2025-07-19",
-  "publisher" : "HL7 International / Clinical Decision Support",
-  "contact" : [{
-    "telecom" : [{
-      "system" : "url",
-      "value" : "http://www.hl7.org/Special/committees/dss"
-    }]
-  }],
-  "description" : "Provides additional classifiers of a related artifact.",
-  "fhirVersion" : "5.0.0",
-  "mapping" : [{
-    "identity" : "rim",
-    "uri" : "http://hl7.org/v3",
-    "name" : "RIM Mapping"
-  }],
-  "kind" : "complex-type",
-  "abstract" : false,
-  "context" : [
-    { "type" : "element",    "expression" : "RelatedArtifact" },
-    { "type" : "element",    "expression" : "ArtifactAssessment.relatesTo" },
-    { "type" : "element",    "expression" : "Citation.relatesTo" },
-    { "type" : "element",    "expression" : "Composition.relatesTo" },
-    { "type" : "element",    "expression" : "Evidence.relatesTo" },
-    { "type" : "element",    "expression" : "EvidenceVariable.relatesTo" },
-    { "type" : "element",    "expression" : "ResearchStudy.relatesTo" }
+  "resourceType": "StructureDefinition",
+  "id": "relatesto-classifier",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
   ],
-  "type" : "Extension",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
-  "derivation" : "constraint",
-  "differential" : {
-    "element" : [{
-      "id" : "Extension",
-      "path" : "Extension",
-      "short" : "Additional classifiers for RelatedArtifacts",
-      "definition" : "Provides additional classifiers of the related artifact.",
-      "min" : 0,
-      "max" : "1"
+  "url": "http://hl7.org/fhir/StructureDefinition/relatesto-classifier",
+  "name": "RelatesToClassifier",
+  "title": "RelatesTo Classifier",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-07-19",
+  "publisher": "HL7 International / Clinical Decision Support",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "description": "Provides additional classifiers of a related artifact. In R6, this can also be used on ArtifactAssessment.relatesTo, Citation.relatesTo, Evidence.relatesTo, EvidenceVariable.relatesTo, and ResearchStudy.relatesTo",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "RelatedArtifact"
     },
     {
-      "id" : "Extension.url",
-      "path" : "Extension.url",
-      "type" : [{
-        "code" : "uri"
-      }],
-      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/relatesto-classifier"
-    },
-    {
-      "id" : "Extension.value[x]",
-      "path" : "Extension.value[x]",
-      "min": 1,
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "strength" : "example",
-        "description" : "Additional classifiers for the related artifact.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/citation-artifact-classifier"
+      "type": "element",
+      "expression": "Composition.relatesTo"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Additional classifiers for RelatedArtifacts",
+        "definition": "Provides additional classifiers of the related artifact.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/relatesto-classifier"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Additional classifiers for the related artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-artifact-classifier"
+        }
       }
-    }]
+    ]
   }
 }

@@ -23,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="CodeSystemPropertiesMode"/>
   <title value="code system properties mode value set"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / Terminology Infrastructure"/>
   <contact>

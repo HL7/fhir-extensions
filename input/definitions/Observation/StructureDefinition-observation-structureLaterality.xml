@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
   </extension>
- <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/observation-structureLaterality"/>
@@ -15,10 +15,10 @@
   <name value="StructureLaterality"/>
   <title value="Observation Structure Laterality"/>
   <status value="active"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2025-07-25"/>
   <publisher value="HL7 International / Orders and Observations"/>
-   <contact>
+  <contact>
     <telecom>
       <system value="url"/>
       <value value="http://www.hl7.org/Special/committees/orders"/>
@@ -36,8 +36,7 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
-    <element>
-      <id value="Extension"/>
+    <element id="Extension">
       <path value="Extension"/>
       <short value="Laterality of the body structure"/>
       <definition value="Indicates the laterality of the body structure. Only for use when laterality is needed to augment the Observation.bodySite in cases where the laterality is not expressed in the Observation.code and/or the use of  BodyStructure will duplicate information for the anatomical structure.  We are seeking feedback from implementers regarding the use of this extension. "/>
@@ -50,7 +49,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="hhttp://hl7.org/fhir/StructureDefinition/observation-structureLaterality"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-structureLaterality"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

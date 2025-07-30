@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="CSDeclaredProfile"/>
   <title value="CapabilityStatement Declared Profile"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2022-08-19"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>

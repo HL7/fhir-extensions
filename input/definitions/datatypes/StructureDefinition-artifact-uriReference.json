@@ -46,6 +46,13 @@
       "type" : "element",
       "expression" : "Reference"
     }, {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
       "type" : "element",
       "expression" : "canonical"
     }],

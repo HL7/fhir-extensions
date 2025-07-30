@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ArtifactEditor"/>
   <title value="Artifact Editor"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2022-02-07"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
@@ -39,34 +39,173 @@
   </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
-  <context><type value="element"/><expression value="ArtifactAssessment"/></context>
-  <context><type value="element"/><expression value="CapabilityStatement"/></context>
-  <context><type value="element"/><expression value="ClinicalUseDefinition"/></context>
-  <context><type value="element"/><expression value="CodeSystem"/></context>
-  <context><type value="element"/><expression value="CompartmentDefinition"/></context>
-  <context><type value="element"/><expression value="ConditionDefinition"/></context>
-  <context><type value="element"/><expression value="ConceptMap"/></context>
-  <context><type value="element"/><expression value="DeviceDefinition"/></context>
-  <context><type value="element"/><expression value="ExampleScenario"/></context>
-  <context><type value="element"/><expression value="GraphDefinition"/></context>
-  <context><type value="element"/><expression value="Group"/></context>
-  <context><type value="element"/><expression value="ImplementationGuide"/></context>
-  <context><type value="element"/><expression value="Medication"/></context>
-  <context><type value="element"/><expression value="MedicationKnowledge"/></context>
-  <context><type value="element"/><expression value="MessageDefinition"/></context>
-  <context><type value="element"/><expression value="NamingSystem"/></context>
-  <context><type value="element"/><expression value="ObservationDefinition"/></context>
-  <context><type value="element"/><expression value="OperationDefinition"/></context>
-  <context><type value="element"/><expression value="Questionnaire"/></context>
-  <context><type value="element"/><expression value="SearchParameter"/></context>
-  <context><type value="element"/><expression value="SpecimenDefinition"/></context>
-  <context><type value="element"/><expression value="Substance"/></context>
-  <context><type value="element"/><expression value="SubstanceDefinition"/></context>
-  <context><type value="element"/><expression value="SubscriptionTopic"/></context>
-  <context><type value="element"/><expression value="StructureDefinition"/></context>
-  <context><type value="element"/><expression value="StructureMap"/></context>
-  <context><type value="element"/><expression value="TerminologyCapabilities"/></context>
-  <context><type value="element"/><expression value="ValueSet"/></context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="ArtifactAssessment"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="ClinicalUseDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CodeSystem"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CompartmentDefinition"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="ConditionDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ConceptMap"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="DeviceDefinition"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="ExampleScenario"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="GraphDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Group"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ImplementationGuide"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Medication"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="MedicationKnowledge"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="MessageDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="NamingSystem"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="ObservationDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Questionnaire"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="SearchParameter"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="SpecimenDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Substance"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="SubstanceDefinition"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="SubscriptionTopic"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="StructureDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="StructureMap"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="TerminologyCapabilities"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>

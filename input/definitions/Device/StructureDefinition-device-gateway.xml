@@ -13,7 +13,7 @@
   <version value="1.0.0"/>
   <name value="DeviceGateway"/>
   <title value="Device Gateway"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2025-07-15"/>
   <publisher value="HL7 International / Orders and Observations"/>

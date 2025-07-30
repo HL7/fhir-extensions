@@ -37,10 +37,20 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="EvidenceVariable"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="Evidence.statistic.modelCharacteristic.variable"/>
   </context>
@@ -68,9 +78,11 @@
         <code value="CodeableConcept"/>
       </type>
 			<binding>
+        <!-- I have no idea what this is, or what it's trying to do. GDG July 2025
 				<extension url="https://fevir.net/resources/ValueSet/383075">
 					<valueString value="EvidenceVariableHandling"/>
 				</extension>
+        -->
 				<strength value="example"/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/variable-handling"/>
 			</binding>

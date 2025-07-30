@@ -21,7 +21,7 @@
   "version" : "1.0.0",
   "name" : "ArtifactCanonicalReference",
   "title" : "Artifact Canonical Reference",
-  "status" : "active",
+  "status" : "retired",
   "experimental" : false,
   "date" : "2023-02-28",
   "publisher" : "HL7 International / Clinical Decision Support",
