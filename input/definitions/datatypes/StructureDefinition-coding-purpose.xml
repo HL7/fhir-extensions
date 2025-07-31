@@ -20,7 +20,7 @@
   <name value="CodingPurpose"/>
   <title value="Coding Purpose"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2015-02-28"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>

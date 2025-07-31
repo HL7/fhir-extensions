@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="CodedString"/>
   <title value="Coded string"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2012-06-24"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>

@@ -14,7 +14,7 @@
   <version value="1.0.0"/>
   <name value="QuestionnaireSupportHyperlink"/>
   <title value="Questionnaire Support Hyperlink"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
   <date value="2025-07-19"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -102,6 +102,10 @@
       </type>
     </element>
 
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/questionnaire-supportHyperlink"/>
+    </element>
     <!-- Root extension children cannot have value[x] directly -->
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

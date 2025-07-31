@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="PatNoFixedAddress"/>
   <title value="Patient No Fixed Address"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2021-07-05"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>

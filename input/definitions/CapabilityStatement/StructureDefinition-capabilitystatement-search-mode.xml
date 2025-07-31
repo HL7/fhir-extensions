@@ -20,7 +20,7 @@
   <name value="CSSearchMode"/>
   <title value="CapabilityStatement Search Mode"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2014-04-12"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>

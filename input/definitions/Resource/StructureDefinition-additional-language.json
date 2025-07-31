@@ -24,7 +24,7 @@
   }],
   "name" : "AdditionalLanguage",
   "title" : "Additional Language",
-  "status" : "draft",
+  "status" : "active",
   "date" : "2025-07-15T18:55:12+00:00",
   "publisher" : "HL7 International / FHIR Infrastructure",
   "contact" : [{

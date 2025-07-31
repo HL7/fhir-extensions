@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="evidence-variable-handling-detail"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-bind"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cds"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/evidence-variable-handling-detail"/>
+  <version value="1.0.0-ballot2"/>
+  <name value="EvidenceVariableHandlingDetail"/>
+  <status value="active"/>
+  <date value="2025-03-11T09:27:28+00:00"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <name value="HL7 International / Clinical Decision Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="This extension is used when EvidenceVariable.handling has a value of ‘extension’ because the handling element has a required binding and an extension is needed when the handling cannot be described with any of the other values in the limited value set."/>
+  <fhirVersion value="6.0.0-ballot2"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="EvidenceVariable"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="Evidence.statistic.modelCharacteristic.variable"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="How the variable is handled"/>
+      <definition value="Handling of the variable that is not boolean, continuous, dichotomous, ordinal, or polychotomous."/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/evidence-variable-handling-detail"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+			<binding>
+        <!-- I have no idea what this is, or what it's trying to do. GDG July 2025
+				<extension url="https://fevir.net/resources/ValueSet/383075">
+					<valueString value="EvidenceVariableHandling"/>
+				</extension>
+        -->
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/variable-handling"/>
+			</binding>
+    </element>
+  </differential>
+</StructureDefinition>
