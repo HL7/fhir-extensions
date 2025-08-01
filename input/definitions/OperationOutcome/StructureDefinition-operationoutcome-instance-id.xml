@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="operationoutcome-message-id"/>
+  <id value="operationoutcome-instance-id"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-instance-id"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1489"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="OOIssueMessageId"/>
-  <title value="OperationOutcome Message ID"/>
+  <name value="OOIssueInstanceId"/>
+  <title value="OperationOutcome Instance ID"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
@@ -29,8 +29,8 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Identifies the id of the source message used to construct the actual error message."/>
-  <purpose value="This is typically used for sorting and filtering messages."/>
+  <description value="A unique identifier for this particular occurrence of the issue in the source system. This may allow tying a reported issue to a record in the source system's audit log.  Included for traceability issues."/>
+  <purpose value="This may allow tying a reported issue to a record in the source system's audit log.  Included for traceability issues."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,8 +49,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Source of a validation message"/>
-      <definition value="Identifies the id of the source message used to construct the actual error message."/>
+      <short value="Unique id for issue occurrence"/>
+      <definition value="A unique identifier for this particular occurrence of the issue in the source system."/>
+      <requirements value="This may allow tying a reported issue to a record in the source system's audit log.  Included for traceability issues."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -60,7 +61,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/operationoutcome-instance-id"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

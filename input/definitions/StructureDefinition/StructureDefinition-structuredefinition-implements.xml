@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="operationoutcome-message-id"/>
+  <id value="structuredefinition-implements"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/structuredefinition-implements"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1489"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1011"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="OOIssueMessageId"/>
-  <title value="OperationOutcome Message ID"/>
+  <name value="SDImplements"/>
+  <title value="StructureDefinition Implements"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
@@ -29,8 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Identifies the id of the source message used to construct the actual error message."/>
-  <purpose value="This is typically used for sorting and filtering messages."/>
+  <description value="Marks that the resource definition implements an [interface](uml.html#interface) in its definition."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -41,7 +40,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="OperationOutcome.issue"/>
+    <expression value="StructureDefinition"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -49,8 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Source of a validation message"/>
-      <definition value="Identifies the id of the source message used to construct the actual error message."/>
+      <short value="Marks a resource interface that this definition implements"/>
+      <definition value="Marks that the resource definition implements an [interface](uml.html#interface) in its definition."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -60,13 +59,14 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/structuredefinition-implements"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="string"/>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
       </type>
     </element>
   </differential>
