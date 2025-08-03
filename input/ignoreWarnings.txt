@@ -1,7 +1,7 @@
 == Suppressed Messages ==
 
-# Yep checked
-PIN_VERSION
+# This code sytstem is wrongly labelled experimental in R5 - will be fixed in R6
+Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 
 # We expect several extensions that aren't in shareablevalueset.  So long as the extensions are valid in their location and defined, we're ok
 # (and the validator should catch that)
@@ -14,16 +14,13 @@ http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-24
 
 # FMG has decided to address these issues in a future release
 SD_ED_EXPERIMENTAL_BINDING
+HL7 Defined CodeSystems should ensure that every concept has a definition
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
 # This is actually caused by an error in the definition of the CodeSystem in THO. We've created a task to fix that
 VALUESET_BAD_FILTER_VALUE_VALID_CODE
 
-# We'll review these next time
-MSG_DEPENDS_ON_DEPRECATED
-
 # can't validate for some value sets
-There was an error expanding the source value set, so this concept map can't be checked: 'There are 16777216 colors, so the full list of colors is not displayed'
-SM_TARGET_TRANSLATE_BINDING_VSE_TARGET
 VALUESET_INC_TOO_MANY_CODES
 
 # known references to draft items
@@ -34,8 +31,7 @@ MSG_DRAFT
 INFORMATION: CodeSystem/obligation: CodeSystem.property[2]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
 INFORMATION: CodeSystem/obligation: CodeSystem.property[3]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
 
-# The version pinned is correct
-INFORMATION: StructureDefinition.differential.element[2].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/artifact-version-policy to 5.2.0-ballot from choices of 1.0.0 (hl7.terminology.r5#6.2.0), 5.2.0-ballot (hl7.fhir.uv.extensions#5.2.0-ballot)
-INFORMATION: StructureDefinition.differential.element[9].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/value-filter-comparator to 5.2.0-ballot from choices of 5.0.0 (hl7.fhir.r5.core#5.0.0), 5.2.0-ballot (hl7.fhir.uv.extensions#5.2.0-ballot)
-INFORMATION: StructureDefinition.snapshot.element[17].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/value-filter-comparator to 5.2.0-ballot from choices of 5.0.0 (hl7.fhir.r5.core#5.0.0), 5.2.0-ballot (hl7.fhir.uv.extensions#5.2.0-ballot)
-INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of http://terminology.hl7.org/ValueSet/artifact-version-policy to 5.2.0-ballot from choices of 1.0.0 (hl7.terminology.r5#6.2.0), 5.2.0-ballot (hl7.fhir.uv.extensions#5.2.0-ballot)
+# This is OK by a recent decision of the TI workgroup, but the validator hasn't yet been updated for the decision
+The property 'status' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
+
+Pinned the version of http://hl7.org/fhir/ValueSet/value-filter-comparator to 5.3.0-ballot from choices of 5.0.0 (hl7.fhir.r5.core#5.0.0), 5.3.0-ballot (hl7.fhir.uv.extensions#5.3.0-ballot)

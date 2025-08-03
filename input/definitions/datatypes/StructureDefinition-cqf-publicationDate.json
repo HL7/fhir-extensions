@@ -19,7 +19,7 @@
     "value" : "urn:oid:2.16.840.1.113883.4.642.5.1610"
   }],
   "name" : "PublicationDate",
-  "title" : "Publication Date",
+  "title" : "CQF Publication Date",
   "status" : "active",
   "experimental" : false,
   "date" : "2021-11-27T13:31:32-07:00",
