@@ -73,7 +73,7 @@
       <binding> 
         <strength value="required"/> 
         <description value="IETF language tag for a human language"/> 
-        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages|5.0.0"/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages"/> 
         <additional> 
           <purpose value="starter"/> 
           <valueSet value="http://hl7.org/fhir/ValueSet/languages"/> 
