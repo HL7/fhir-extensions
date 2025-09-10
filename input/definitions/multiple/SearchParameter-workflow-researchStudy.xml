@@ -41,6 +41,7 @@
   <base value="Observation"/>
   <base value="Procedure"/>
   <base value="QuestionnaireResponse"/>
+  <base value="ObservationDefinition"/>
   <base value="RiskAssessment"/>
   <base value="ServiceRequest"/>
   <base value="SupplyDelivery"/>

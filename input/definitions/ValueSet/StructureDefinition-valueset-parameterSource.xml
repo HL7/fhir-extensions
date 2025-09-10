@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="valueset-parameterSource"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="ti"/>
+    <valueCode value="vocab"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Declares what the source of this parameter is."/>
+  <description value="Allows a server to assert the source of a parameter used in the $expand. "/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Declares the source of the parameter"/>
-      <definition value="Declares what the source of this parameter is."/>
+      <definition value="Allows a server to assert the source of a parameter used in the $expand. "/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>

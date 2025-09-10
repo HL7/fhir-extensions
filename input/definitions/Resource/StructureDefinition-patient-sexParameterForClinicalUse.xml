@@ -173,7 +173,47 @@
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="CodeableReference"/>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+      </type>
+    </element>
+    <element id="Extension.extension:intendedClinicalUse">
+      <path value="Extension.extension"/>
+      <sliceName value="intendedClinicalUse"/>
+      <short value="The intended clinical uses for this sex parameter"/>
+      <definition value="The clinical context of uses which the provided SPCU value is intended for."/>
+      <comment value="When present, this attribute clarifies which clinical uses the provided sex parameter value is appropriate or intended for."/>
+      <min value="0"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:intendedClinicalUse.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:intendedClinicalUse.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="intendedClinicalUse"/>
+    </element>
+    <element id="Extension.extension:intendedClinicalUse.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+        <binding>
+           <strength value="example"/>
+           <valueSet value="http://hl7.org/fhir/ValueSet/therapy"/>
+       </binding>
+      <type>
+        <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
     </element>

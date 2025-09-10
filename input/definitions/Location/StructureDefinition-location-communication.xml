@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="LocCommunication"/>
   <title value="Location Communication"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 International / Patient Administration"/>
@@ -43,6 +43,11 @@
     <expression value="Location"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="ExtendedContactDetail"/>
   </context>
@@ -51,6 +56,11 @@
     <expression value="Organization"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="OrganizationAffiliation"/>
   </context>
@@ -81,15 +91,13 @@
         <code value="CodeableConcept"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/build/StructureDefinition/definition">
-          <valueString value="A human language."/>
-        </extension>
-        <strength value="preferred"/>
-        <description value="IETF language tag"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+        <strength value="required"/> 
+        <description value="IETF language tag for a human language"/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages"/> 
+        <additional> 
+          <purpose value="starter"/> 
+          <valueSet value="http://hl7.org/fhir/ValueSet/languages"/> 
+        </additional> 
       </binding>
     </element>
   </differential>

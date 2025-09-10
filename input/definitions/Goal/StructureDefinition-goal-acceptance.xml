@@ -9,7 +9,19 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="This acceptance extension was elevated to the base Goal resource."/>
+      </extension>
+    </valueCode>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+    <extension url="startFhirVersion">
+      <valueCode value="1.0"/>
+    </extension>
+    <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/goal-acceptance"/>
   <identifier>
@@ -19,7 +31,7 @@
   <version value="5.0.0"/>
   <name value="GoalAcceptance"/>
   <title value="Goal acceptance"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2014-12-07"/>
   <publisher value="HL7 International / Patient Care"/>
@@ -29,7 +41,7 @@
       <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  <description value="Information about the acceptance and relative priority assigned to the goal by the patient, practitioners and other stake-holders."/>
+  <description value="Information about the acceptance and relative priority assigned to the goal by the patient, practitioners and other stake-holders. This acceptance extension was elevated to the base Goal resource."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

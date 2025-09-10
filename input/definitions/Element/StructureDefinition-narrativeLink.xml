@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A human language representation of the concept (resource/element), as a url that is a reference to a portion of the narrative of a resource ([DomainResource.text](narrative.html) or [Composition.section.text](composition-definitions.html#Composition.section.text))."/>
+  <description value="A human language representation of the concept (resource/element), as a url that is a reference to a portion of the narrative of a resource ([DomainResource.text](narrative.html) or [Composition.section.text](composition-definitions.html#Composition.section.text)).  To provide human language maintained separately from the narrative, use [originalText](StructureDefinition-originalText.html). To cross-link narrative and data, use the [textLink extension](StructureDefinition-textLink.html)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Narrative Link"/>
-      <definition value="A human language representation of the concept (resource/element), as a url that is a reference to a portion of the narrative of a resource ([DomainResource.text](narrative.html) or [Composition.section.text](composition-definitions.html#Composition.section.text))."/>
+      <definition value="A human language representation of the concept (resource/element), as a url that is a reference to a portion of the narrative of a resource ([DomainResource.text](narrative.html) or [Composition.section.text](composition-definitions.html#Composition.section.text)).  To provide human language maintained separately from the narrative, use [originalText](StructureDefinition-originalText.html)."/>
       <comment value="It's also possible to link to the resource narrative using the [originalText extension](StructureDefinition-originalText.html) which claims that the data is derived from the text provided or linked to."/>
       <min value="0"/>
       <max value="1"/>

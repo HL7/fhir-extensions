@@ -9,7 +9,11 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="This is now handled with the .well-known/smart-configuration JSON file."/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"/>
   <identifier>
@@ -19,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="OAuthUris"/>
   <title value="OAuth URIs"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2018-02-15"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -134,6 +138,64 @@
       <fixedUri value="register"/>
     </element>
     <element id="Extension.extension:register.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="Extension.extension:introspect">
+      <path value="Extension.extension"/>
+      <sliceName value="introspect"/>
+      <short value="User-facing introspection end point"/>
+      <definition value="The introspection end point for this FHIR server."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:introspect.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:introspect.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="introspect"/>
+    </element>
+    <element id="Extension.extension:introspect.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="Extension.extension:revoke">
+      <path value="Extension.extension"/>
+      <sliceName value="revoke"/>
+      <short value="User-facing revocation end point"/>
+      <definition value="The revocation end point for this FHIR server."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:revoke.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:revoke.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="revoke"/>
+    </element>
+    <element id="Extension.extension:revoke.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>

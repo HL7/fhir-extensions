@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Identifies how the specified element should be rendered when displayed."/>
+  <description value="Indicates an HTML style that should be applied when rendering this element."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,8 +49,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Html style value"/>
-      <definition value="Identifies how the specified element should be rendered when displayed."/>
-      <comment value="This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/rendering.html#rendering-style)."/>
+      <definition value="Indicates an HTML style that should be applied when rendering this element."/>
+      <comment value="This extension would be equivalent to setting the HTML &quot;style&quot; attribute on the root element for the element containing the extension.&#xA;&#xA;NOTE: HTML styles can include references to external content (images, fonts, etc.), which may constitute a security issue, as resolving the link can allow tracking.  See [here for more detail](http://hl7.org/fhir/security.html#narrative).&#xA;&#xA;For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/rendering.html#rendering-style). This style applies to the base string.  If there is also a rendering-xhtml or rendering-markdown extension, they must declare any relevant styles within those extension values.&#xA;&#xA;Setting styles on elements can be risky.  It presumes knowledge of how elements are rendered &quot;by default&quot;.  For example, setting the color of an element to 'blue' to highlight it might be fine - unless the default background color for a particular renderer is already blue.  As well, it's not a given that all elements will be represented by a single HTML element.  One element might be referenced by a collection of table cells that span rows and columns.  Setting a border style on all of those cells wouldn't give the desired results and auto-tweaking the border style on each cell (deciding whether the border is top,left, right, etc.) would require complex coding.  Finally, systems might not be using HTML for their UI at all and will need to map the specified styles to their own UI mechanism.  For this reason, this element is best used when:&#xA;a) the default UI characteristics are already well understood (because the specification applies to a single system or to a set of systems that are already required to comply with specific UI expectations&#xA;b) the set of allowed style values is tightly controlled to only those that are necessary and sensible in that context"/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

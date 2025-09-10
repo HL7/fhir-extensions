@@ -151,7 +151,7 @@
   <concept>
     <code value="populate"/>
     <display value="populate"/>
-    <definition value="Conformant applications producing resources SHALL/SHOULD include this element if a value is known and allowed to be shared.&#xA;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it populates it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared."/>
+    <definition value="Conformant applications producing resources SHALL/SHOULD include this element if a value is known and allowed to be shared.&#xA;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it populates it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared.&#xA;Organizations might be required to formally document their rules for determining when they are 'able to share' as part of conformance testing processes.  (e.g. regulatory, consent, etc.)"/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -256,7 +256,7 @@
     </property>
     <property>
       <code value="converse"/>
-      <valueCode value="may-alter"/>
+      <valueCode value="MAY:alter"/>
     </property>
   </concept>
   <concept>
@@ -463,7 +463,7 @@
   <concept>
     <code value="SHALL:populate"/>
     <display value="SHALL populate"/>
-    <definition value="Conformant applications producing resources SHALL include this element if a value is known and allowed to be shared.&#xA;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it populates it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared."/>
+    <definition value="Conformant applications producing resources SHALL include this element if a value is known and allowed to be shared.&#xA;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it populates it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared.&#xA;Organizations might be required to formally document their rules for determining when they are 'able to share' as part of conformance testing processes.  (e.g. regulatory, consent, etc.)"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
@@ -484,7 +484,7 @@
   <concept>
     <code value="SHOULD:populate"/>
     <display value="SHOULD populate"/>
-    <definition value="Conformant applications producing resources SHOULD include this element if a value is known and allowed to be shared.&#xA;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it should populate it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared."/>
+    <definition value="Conformant applications producing resources SHOULD include this element if a value is known and allowed to be shared.&#xA;Notes: This implementation obligation means that whenever the producer knows the correct value for an element, it should populate it.  This is NOT the same as cardinality, as a 'populate' element can be omitted if no data exists or the data that exists is prohibited from being shared.&#xA;Organizations might be required to formally document their rules for determining when they are 'able to share' as part of conformance testing processes.  (e.g. regulatory, consent, etc.)"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -697,7 +697,7 @@
     </property>
     <property>
       <code value="converse"/>
-      <valueCode value="may-alter"/>
+      <valueCode value="MAY:alter"/>
     </property>
   </concept>
   <concept>
@@ -714,7 +714,7 @@
     </property>
     <property>
       <code value="converse"/>
-      <valueCode value="may-alter"/>
+      <valueCode value="MAY:alter"/>
     </property>
   </concept>
   <concept>

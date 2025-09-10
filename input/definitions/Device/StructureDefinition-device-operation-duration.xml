@@ -1,0 +1,60 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="device-operation-duration"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/device-operation-duration"/>
+  <version value="5.0.0"/>
+  <name value="DeviceOperationDuration"/>
+  <title value="Device Operation Duration"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-15"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="Length of time of the device's operation (e.g., days, hours, mins, etc.)."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Device"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Device operation duration"/>
+      <definition value="Length of time of the device's operation (e.g., days, hours, mins, etc.)."/>
+       <comment value="The current definition of this extension does not provide further semantics, such as the starting point of time of device operation (e.g., since first installation, factory reset or last power-up of the device)."/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/device-operation-duration"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <type>
+        <code value="Duration"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

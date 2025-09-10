@@ -23,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="ProtectiveFactor"/>
   <title value="Protective Factor"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2023-01-31T07:07:38+11:00"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>

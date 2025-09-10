@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated"/>
+    <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/relative-date"/>
   <identifier>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="RelativeDateCriteria"/>
   <title value="Relative Date Criteria"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2013-12-05"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,7 +29,8 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]. DEPRECATED: This extension has been deprecated in favor of the new relative-time extension."/>
+  <description value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
+  <purpose value="NOTE: This extension will be deprecated in favor of the new relative-time extension once the RelativeTime data type on which it is based is generally available."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -52,8 +53,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="DEPRECATED Relative Date Criteria"/>
-      <definition value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]. DEPRECATED: This extension has been deprecated in favor of the new relative-time extension."/>
+      <short value="Relative Date Criteria"/>
+      <definition value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
       <comment value="This extension is used when a precise date is not known, but rather, the date will be relative to some future event (e.g. Do this 2 weeks after an operation)."/>
       <min value="0"/>
       <max value="1"/>
@@ -122,7 +123,7 @@
       <sliceName value="targetPath"/>
       <short value="Relative to which element on the event"/>
       <definition value="The path to the element of the target that specifies the anchoring date or timeframe for the relative date."/>
-      <comment value="The specified path SHALL be a FHIRPath resolveable on the specified type of the DataRequirement, and SHALL consist only of identifiers, constant indexers, and .resolve(). The path is allowed to contain qualifiers (.) to traverse sub-elements, as well as indexers ([x]) to traverse multiple-cardinality sub-elements (see the [Simple FHIRPath Profile](fhirpath.html#simple) for full details). Note that the index must be an integer constant. The path must resolve to an element of type date, dateTime, Period, Schedule, or Timing."/>
+      <comment value="The specified path SHALL be a FHIRPath resolveable on the specified type of the DataRequirement. The path must resolve to an element of type date, dateTime, Period, Schedule, or Timing. The `reference` plus the `targetPath` provides a fully computable anchor (e.g. `Patient.birthDate` or `ResearchSubject.progress.where(milestone.coding.where(system=x and code=y).exists()).startDate)`, while `targetCode` gives something that is more meaningful to a user (e.g. 'age', 'startOfTreatment').  Often there might be utility in having both."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -148,11 +149,18 @@
       </type>
     </element>
     <element id="Extension.extension:relationship">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="deprecated">
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+            <valueMarkdown value="This element is deprecated, the relationship of the event to the target is captured by offset."/>
+          </extension>
+        </valueCode>
+      </extension>
       <path value="Extension.extension"/>
       <sliceName value="relationship"/>
       <short value="before-start | before | before-end | concurrent-with-start | concurrent | concurrent-with-end | after-start | after | after-end"/>
-      <definition value="Defines the relationship between the event and the date."/>
-      <min value="1"/>
+      <definition value="[Deprecated] Defines the relationship between the event and the date."/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
@@ -189,8 +197,9 @@
     <element id="Extension.extension:offset">
       <path value="Extension.extension"/>
       <sliceName value="offset"/>
-      <short value="Duration after the event"/>
-      <definition value="The duration or range of durations relative to the event that the date(time) will happen."/>
+      <short value="Duration before or after the event"/>
+      <definition value="The duration before or after the event that the element on which this extension appears is asserted to be."/>
+      <comment value="a negative offset indicates a duration 'prior' to the event.  E.g. &quot;3 days prior to patient death&quot;.  A positive offset indicates a duration 'after' the event.  E.g. &quot;27 years after birth - i.e. Age 27&quot;.  An offset of 0 indicates occurrence simultaneous with the referenced event.  E.g. &quot;Started therapy immediately on admission&quot;."/>
       <min value="1"/>
       <max value="1"/>
       <type>

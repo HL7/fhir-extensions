@@ -59,7 +59,7 @@
       <path value="Extension"/>
       <short value="Maximum digits after decimal"/>
       <definition value="Identifies the maximum number of decimal places that may be specified for the data element."/>
-      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#maxDecimalPlaces)."/>
+      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#maxDecimalPlaces).&#x0a;This specifies the maximum number of digits that can appear after the decimal point in a number. It counts all the digits to the right of the decimal point when the number is written out in full, standard decimal form (without 'e' or 'E').&#xa;For example, a number in scientific notation like 1.23e-4 equals 0.000123 when expanded; it would be consistent with a maximum number of decimal places of 6 or more."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>
@@ -84,6 +84,9 @@
       <min value="1"/>
       <type>
         <code value="integer"/>
+      </type>
+       <type>
+      <code value="Quantity"/>
       </type>
     </element>
   </differential>

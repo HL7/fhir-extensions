@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="profile-mapping"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="4"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/profile-mapping"/>
+  <name value="ProfileMapping"/>
+  <title value="Profile Mapping Extension"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Extension definition for Mapping between ```API``` and ```Profile```. CapabilityStatement.rest.resource.profile has two different profile statements:&#10;&#10;* profile - the overall system profile for a resource&#10;* supportedProfile 0..* - a particular profile that the system supports&#10;&#10;What is missing from this picture is defining which resources conform to&#10;which profile. Sometimes, of course, it's impossible to define this, but&#10;quite often, there's an algorithmic relationship that a server or client&#10;could use to know that resources with a particular set of values will or should&#10;conform to a given profile.&#10;&#10;This extension defines a relationship between a search string and a profile.&#10;Any resource that meets a given search string will be expected to conform to the particular profile. If more than one profile is nominated for a search string, resources SHALL conform to all the listed profiles. The last extension can be without a search matches and remaining resources&#10;&#10;This extension repeats, and order is important - once a match is found, this profile is the one that applies. Todo: If this extension is useful, it will be moved to the core extensions pack"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>  
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement.rest.resource"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+   <element id="Extension">
+      <path value="Extension"/> 
+      <short value="profile-mapping"/> 
+      <definition value="Extension definition for Mapping between API and Profile. CapabilityStatement.rest.reosurce.profile has two different profile statements:&#10;&#10;* profile - the overall system profile for a resource&#10;* supportedProfile 0..* - a particular profile that the system supports&#10;&#10;What is missing from this picture is defining which resources conform to&#10;which profile. Sometimes, of course, it's impossible to define this, but&#10;quite often, there's an algorithmic relationship that a server or client&#10;could use to know that resources with a particular set of values will or should&#10;conform to a given profile.&#10;&#10;This extension defines a relationship between a search string and a profile.&#10;Any resource that meets a given search string will be expected to conform to the&#10;particular profile.&#10;&#10;&#10;This extension repeats, and order is important - once a match is found, this profile is the one that applies."/>
+      <min value="0"/> 
+      <max value="*"/> 
+    </element> 
+    <element id="Extension.extension:search">
+      <path value="Extension.extension"/> 
+      <sliceName value="search"/> 
+      <short value="The search string for this mapping"/> 
+      <min value="1"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+    </element> 
+    <element id="Extension.extension:search.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+    <element id="Extension.extension:search.url">
+      <path value="Extension.extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="search"/> 
+    </element> 
+    <element id="Extension.extension:search.value[x]">
+      <path value="Extension.extension.value[x]"/> 
+      <min value="0"/> 
+      <type> 
+        <code value="string"/> 
+      </type> 
+    </element> 
+
+    <element id="Extension.extension:profile">
+      <path value="Extension.extension"/> 
+      <sliceName value="profile"/> 
+      <short value="The profile that must match this search string"/> 
+      <min value="1"/> 
+      <max value="*"/> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+    </element> 
+    <element id="Extension.extension:profile.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+    <element id="Extension.extension:profile.url">
+      <path value="Extension.extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="profile"/> 
+    </element> 
+    <element id="Extension.extension:profile.value[x]">
+      <path value="Extension.extension.value[x]"/> 
+      <min value="1"/> 
+      <type> 
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/> 
+      </type> 
+    </element> 
+
+    <element id="Extension.extension:documentation">
+      <path value="Extension.extension"/> 
+      <sliceName value="documentation"/> 
+      <short value="Documentation about this particular profile-mapping"/> 
+      <min value="0"/> 
+      <max value="1"/> 
+      <type> 
+        <code value="Extension"/> 
+      </type> 
+    </element> 
+    <element id="Extension.extension:documentation.extension">
+      <path value="Extension.extension.extension"/> 
+      <max value="0"/> 
+    </element> 
+    <element id="Extension.extension:documentation.url">
+      <path value="Extension.extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="documentation"/> 
+    </element> 
+    <element id="Extension.extension:documentation.value[x]">
+      <path value="Extension.extension.value[x]"/> 
+      <min value="1"/> 
+      <type> 
+        <code value="markdown"/> 
+      </type> 
+    </element> 
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/profile-mapping"/>
+    </element>
+  </differential>
+</StructureDefinition>

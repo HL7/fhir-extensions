@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="GeneratedFrom"/>
   <title value="Generated from"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -48,8 +48,17 @@
     <expression value="CarePlan"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension> 
     <type value="element"/>
-    <expression value="CarePlan.activity.plannedActivityDetail"/>
+    <expression value="CarePlan.activity.plannedActivityReference"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Communication"/>
   </context>
   <context>
     <type value="element"/>
@@ -61,6 +70,15 @@
   </context>
   <context>
     <type value="element"/>
+    <expression value="FamilyMemberHistory"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
     <expression value="ImmunizationEvaluation"/>
   </context>
   <context>
@@ -69,17 +87,44 @@
   </context>
   <context>
     <type value="element"/>
+    <expression value="MedicationRequest"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="NutritionOrder"/>
   </context>
   <context>
     <type value="element"/>
+    <expression value="Procedure"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
     <expression value="RequestOrchestration"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="RequestGroup"/>
   </context>
   <context>
     <type value="element"/>
     <expression value="SupplyRequest"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="ServiceRequest"/>
   </context>
@@ -99,7 +144,7 @@
       <path value="Extension"/>
       <short value="Auto-created based on"/>
       <definition value="This artifact was algorithmically produced by applying the referenced artifact to the context relevant for this request."/>
-      <comment value="GeneratedFrom is a specialized type of 'derived from'.  The expectation is that the initial version of an artifact that was generatedFrom a definition will also complyWith that definition.  However, it is possible that subsequent revisions may invalidate 'compliesWith'.  Those revisions would not invalidate the 'generatedFrom' assertion.&#xA;&#xA;Also see the [notes](workflow-extensions.html#instantiation) in the workflow extensions area for more guidance on this element."/>
+      <comment value="GeneratedFrom is a specialized type of 'derived from'.  The expectation is that the initial version of an artifact that was generatedFrom a definition will also complyWith that definition.  However, it is possible that subsequent revisions may invalidate 'compliesWith'.  Those revisions would not invalidate the 'generatedFrom' assertion.&#xA;&#xA;While a Request generated from a Definition will typically adhere to the protocol, generatedFrom does not imply [adherence](StructureDefinition-workflow-adheresTo.html) because not all needed data will necessarily be populated and the request might be modified in such a way that it no longer adheres before it is made active.&#xA;&#xA;Also see the [notes](workflow-extensions.html#instantiation) in the workflow extensions area for more guidance on this element."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

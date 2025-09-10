@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="RSStudyRegistration"/>
   <title value="ResearchStudy Study Registration"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2022-07-25T00:00:00+00:00"/>
   <publisher value="HL7 International / Biomedical Research and Regulation"/>
@@ -149,13 +149,16 @@
         <code value="Period"/>
       </type>
     </element>
-
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
         <code value="uri"/>
       </type>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/researchStudy-studyRegistration"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

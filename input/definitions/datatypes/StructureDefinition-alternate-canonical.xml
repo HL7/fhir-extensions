@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="AlternateCanonical"/>
   <title value="Alternate Canonical"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2014-04-27"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -39,6 +39,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="canonical"/>
   </context>
@@ -65,8 +70,7 @@
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CanonicalResource"/>
+        <code value="url"/>
       </type>
     </element>
   </differential>

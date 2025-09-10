@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="detectedissue-doseType"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cds"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/detectedissue-doseType"/>
+  <name value="DetectedIssueDoseTypeVS"/>
+  <title value="DetectedIssue Dose Type VS"/>
+  <status value="active"/>  
+  <experimental value="false"/>
+  <date value="2025-07-16"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="Indicates whether a dose alert refers to a single dose, or the cumulative daily dosage."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/detectedissue-doseType"/>
+    </include>
+  </compose>
+</ValueSet>

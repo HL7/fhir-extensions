@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="SDTypeCharacteristics"/>
   <title value="Structure Type Characterstics (Constraint Control)"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2014-01-31"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -52,7 +52,7 @@
       <definition value="A code that indicates that a particular characteristic applies to this type. The characteristics are associated with the use of particular element definition aspects such as length limitations."/>
       <comment value="Not all possible definitional characteristics apply to all types; for instance, specifying min/max lengths is only sensible for some types, and min/max values for others."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>

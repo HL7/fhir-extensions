@@ -20,7 +20,7 @@
   <name value="OOIssueLine"/>
   <title value="OperationOutcome Line of Issue"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2014-01-31"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
@@ -65,7 +65,7 @@
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="string"/>
+        <code value="integer"/>
       </type>
     </element>
   </differential>

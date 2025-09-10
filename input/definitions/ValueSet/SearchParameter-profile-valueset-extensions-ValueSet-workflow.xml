@@ -3,13 +3,17 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="valueset-extensions-ValueSet-workflow"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="The extension this search parameter refers to is also deprecated"/>
+      </extension>
+    </valueCode>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="ti"/>
+    <valueCode value="vocab"/>
   </extension>
   <url value="http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-workflow"/>
   <identifier>
@@ -19,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="Workflow"/>
   <title value="ValueSet workflow"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <publisher value="HL7 International / Terminology Infrastructure"/>
   <contact>
@@ -31,7 +35,7 @@
   <description value="Optional Extensions Element"/>
   <code value="workflow"/>
   <base value="ValueSet"/>
-  <type value="token"/>
+  <type value="string"/>
   <expression value="ValueSet.extension('http://hl7.org/fhir/StructureDefinition/valueset-workflowStatus').value"/>
   <processingMode value="normal"/>
 </SearchParameter>

@@ -11,7 +11,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
+    "valueCode" : "deprecated"
   }],
   "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reference",
   "identifier" : [{
@@ -21,7 +21,7 @@
   "version" : "1.0.0",
   "name" : "ArtifactReference",
   "title" : "Artifact Reference",
-  "status" : "active",
+  "status" : "retired",
   "experimental" : false,
   "date" : "2023-02-28",
   "publisher" : "HL7 International / Clinical Decision Support",
@@ -31,9 +31,9 @@
       "value" : "http://www.hl7.org/Special/committees/dss"
     }]
   }],
-  "description" : "A reference to a resource, canonical resource, or non-FHIR resource.",
-  "purpose" : "To allow resources to define a reference to a resource, canonical resource, or non-FHIR resource.",
-  "fhirVersion" : "4.0.1",
+  "description" : "DEPRECATED: A reference to a resource, canonical resource, or non-FHIR resource.",
+  "purpose" : "NOTE: This extension has been deprecated because it is too general. If needed, extensions should be created that are more specific to the particular use case being addressed.\n\nTo allow resources to define a reference to a resource, canonical resource, or non-FHIR resource.",
+  "fhirVersion" : "5.0.0",
   "kind" : "complex-type",
   "abstract" : false,
   "context" : [{

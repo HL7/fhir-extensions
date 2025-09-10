@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ResourceInstanceDescription"/>
   <title value="Resource instance description"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2022-05-13T16:10:11-04:00"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A natural language description for non-conformance and non-terminology resource instances that is represented in the resource for publication use."/>
+  <description value="A natural language description for non-conformance and non-terminology resource instances that is represented in the resource for publication use. Note that this extension only used as part of the IG publication tooling process. Use the [Artifact Title extension](StructureDefinition-artifact-description.html) extension for use outside the IG publishing framework."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

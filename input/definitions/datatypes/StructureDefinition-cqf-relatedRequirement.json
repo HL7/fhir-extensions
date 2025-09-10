@@ -1,0 +1,142 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "cqf-relatedRequirement",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/cqf-relatedRequirement",
+  "name" : "RelatedRequirement",
+  "title" : "Related Requirement",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-27",
+  "publisher" : "HL7 International / Clinical Decision Support",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss"
+    }]
+  }],
+  "description" : "Allows relationships to be established between data requirements. For example, a Medication data requirement that depends on a MedicationRequest data requirement.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "DataRequirement"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "definition" : "Allows relationships to be established between data requirements. For example, a Medication data requirement that depends on a MedicationRequest data requirement.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Extension.extension:targetId",
+      "path" : "Extension.extension",
+      "sliceName" : "targetId",
+      "short": "What data requirement",
+      "definition": "The id of a related data requirement (i.e. a data requirement that establishes context for this data requirement)",
+      "comment": "As an example, consider a query for MedicationRequest with all related Medication resources (an include query). In this case the Medication data requirement will specify a relatedDataRequirement of MedicationRequest, with a path of medication.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:targetId.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "targetId"
+    },
+    {
+      "id" : "Extension.extension:targetId.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.extension:targetPath",
+      "path" : "Extension.extension",
+      "sliceName" : "targetPath",
+      "short": "What element establishes the relationship",
+      "definition": "The path to an element in the related data requirement that establishes the relationship. The element is typically of type Reference (or in some cases canonical).",
+      "comment": "This element is exclusive with the targetSearchParam element; either the relationship is established by the path to an element, or by a search parameter defining the reference relationship to be followed.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:targetPath.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "targetPath"
+    },
+    {
+      "id" : "Extension.extension:targetPath.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.extension:targetSearchParam",
+      "path" : "Extension.extension",
+      "sliceName" : "targetSearchParam",
+      "short": "What search parameter establishes the relationship",
+      "definition": "The name of a search parameter that establishes the relationship to the related data element.",
+      "comment": "This element is exclusive with the targetPath element; either the relationship is established by the path to an element, or by a search parameter defining the reference relationship to be followed.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Extension.extension:targetSearchParam.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "targetSearchParam"
+    },
+    {
+      "id" : "Extension.extension:targetSearchParam.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/cqf-relatedRequirement"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
+  }
+}

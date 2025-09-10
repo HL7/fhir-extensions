@@ -20,7 +20,7 @@
   <name value="OOSourceFile"/>
   <title value="OperationOutcome Source File"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2014-01-31"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
@@ -38,6 +38,10 @@
   </mapping>
   <kind value="complex-type"/>
   <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="OperationOutcome"/>
+  </context>
   <context>
     <type value="element"/>
     <expression value="OperationOutcome.issue"/>

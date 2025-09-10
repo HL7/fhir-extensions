@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="RSSiteRecruitment"/>
   <title value="ResearchStudy Site Recruitment"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2021-03-31T00:00:00+00:00"/>
   <publisher value="HL7 International / Biomedical Research and Regulation"/>
@@ -112,9 +112,38 @@
         <code value="unsignedInt"/>
       </type>
     </element>
-    <element id="Extension.extension:eligibility">
+    <element id="Extension.extension:description">
       <path value="Extension.extension"/>
-      <sliceName value="eligibility"/>
+      <sliceName value="description"/>
+      <short value="A human readable description"/>
+      <definition value="A human readable description."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:description.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:description.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="description"/>
+    </element>
+    <element id="Extension.extension:description.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="markdown"/>
+      </type>
+    </element>
+    <element id="Extension.extension:eligibilityCriteria">
+      <path value="Extension.extension"/>
+      <sliceName value="eligibilityCriteria"/>
       <short value="Inclusion and exclusion criteria"/>
       <definition value="Criteria for inclusion or exclusion of sites."/>
       <min value="0"/>
@@ -123,22 +152,23 @@
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:eligibility.extension">
+    <element id="Extension.extension:eligibilityCriteria.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:eligibility.url">
+    <element id="Extension.extension:eligibilityCriteria.url">
       <path value="Extension.extension.url"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="eligibility"/>
+      <fixedUri value="eligibilityCriteria"/>
     </element>
-    <element id="Extension.extension:eligibility.value[x]">
+    <element id="Extension.extension:eligibilityCriteria.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="markdown"/>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
       </type>
     </element>
     <element id="Extension.url">

@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Whether translations might be expected for this element in resource instances."/>
+  <description value="If true, it is reasonable for this element to have language translations, and this extension is a prompt for the tooling to recognize it."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Whether translations apply to this element"/>
-      <definition value="Whether translations might be expected for this element in resource instances."/>
+      <definition value="If true, it is reasonable for this element to have language translations, and this extension is a prompt for the tooling to recognize it."/>
       <comment value="This is a hint to design tools (e.g. profile editors,  UI builders) that translations are likely to be appropriate for this element in countries that are multi-lingual."/>
       <min value="0"/>
       <max value="1"/>

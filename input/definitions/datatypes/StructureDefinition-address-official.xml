@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="address-official"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/address-official"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1657"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="OfficialAddress"/>
+  <title value="Official Address"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-04-18"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Indicate that this address is meant to be the 'official' address for that person. What an 'official' address is depends on the country. This extension allows to specify if this address is or it is not the official address, or to indicate that this is the official address for that country."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Address"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Official Address"/>
+      <definition value="This extension allows to specify if this address is or it is not the official address, or to indicate that this is the official address for that country (true assumed).  Note: It does not make sense to repeat this extension without the valueCodeableConcept to specify jurisdictions."/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/address-official"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="AD/@use[.='OR']"/>
+      </mapping>
+    </element>
+	<element id="Extension.value[x]:valueBoolean">
+      <path value="Extension.valueBoolean"/>
+      <sliceName value="valueBoolean"/>
+      <short value="Official address true/false"/>
+      <definition value="It specifies if this address is or it is not the official address."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
+      <sliceName value="valueCodeableConcept"/>
+      <short value="Official address for country X"/>
+      <definition value="It specifies that this address is the official address for the indicated country."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/jurisdiction"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

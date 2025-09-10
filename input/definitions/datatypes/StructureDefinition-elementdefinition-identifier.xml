@@ -9,7 +9,11 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="Use either ElementDefinition.code or ElementDefinition.mapping to provide the mapping instead"/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"/>
   <identifier>
@@ -19,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="Identifier"/>
   <title value="Identifier"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,7 +33,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="External Identifiers associated with this element - these are identifiers that are associated with the concept this element represents."/>
+  <description value="External Identifiers associated with this element - these are identifiers that are associated with the concept this element represents. DEPRECATED: Use either ElementDefinition.code or ElementDefinition.mapping to provide the mapping instead"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>

@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="If set to true, indicates that support for the specified behavior would make a system non-conformant with the specification."/>
+  <description value="If set to true, indicates that support for the specified behavior would make a system non-conformant with the specification.  See the capabilitystatement-expectation extension to set non-prohibited expectations."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>

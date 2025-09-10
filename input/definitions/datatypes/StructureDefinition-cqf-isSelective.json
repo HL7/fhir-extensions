@@ -32,7 +32,7 @@
   }],
   "description" : "Allows a given data requirement to be identified as \"selective\", meaning that it can be used as an additive criteria to filter a population. A selective data requirement is guaranteed to define a subset (not necessarily proper) of the initial population of an artifact. If multiple data requirements are marked selective, they all apply (i.e. AND semantics).",
   "purpose": "This extension is useful for helping implementing systems determine which data requirements are expected to be most selective of the target population. A common use case is to identify a subset of the data requirements for an artifact as \"selective\", meaning that they can be used as an initial filter to establish the overall set of data. For example, the selective requirements can be used to construct an initial query or queries for data, with the non-selective requirements used for subsequent filtering on the resulting data. Although this extension may be used by artifact authors as a way to indicate expected selectivity of a data requirement, it will more typically be used by implementers and downstream packaging repositories to indicate selectivity of a data requirement given known data heuristics in particular datasets.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

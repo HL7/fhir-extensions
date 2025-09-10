@@ -58,7 +58,7 @@
       <sliceName value="startFhirVersion"/>
       <short value="Starting Version"/>
       <definition value="Earliest FHIR version that the content is appropriate for."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
@@ -92,7 +92,7 @@
       <sliceName value="endFhirVersion"/>
       <short value="Ending Version"/>
       <definition value="Latest FHIR version that the content is appropriate for."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>

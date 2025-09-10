@@ -3,25 +3,69 @@
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
-    This IG defines the extensions that are globally defined and available in 
-    all FHIR implementation contexts. Prior to <a href="http://hl7.org/fhir/R5">R5</a>
-    these extensions were defined in the  core specification, but starting from R5
+    The Extension Pack defines the FHIR extensions that are globally defined and available in 
+    all implementation contexts. Prior to <a href="http://hl7.org/fhir/R5">R5</a>
+    these extensions were defined in the core specification, but starting from R5
     they have been moved out of the specification into a separate extensions pack
     so that the extensions can be updated more often than the base specification.
     This extension pack also defines some search parameters for the extensions.
   </p>
+  <a name="prior"> </a>
   <p>
-    In addition, the extension pack also contains a series of <a href="{{site.data.fhir.path}}mapping-language.html">mapping language</a>
-    scripts that provide a formal executable definition of the relationship between 
-    R5 and the prior versions R4 and R4B. These are located in the extension pack to allow 
-    them to also be updated as they are tested and used in production and improvements are made.
+  The FHIR Extension Pack is intended for use with 
+  <a href="http://hl7.org/fhir/support">all supported versions of FHIR</a>. 
+  While the Extension Pack definitions are based on R5, most of the extensions can 
+  be used as-is or with a little modification with earlier versions of the 
+  specification:
   </p>
+	<ul>
+    <li>There is information on each extension description describing the use of the extension with other FHIR Versions</li>
+    <li>A very few extensions can't be used in earlier versions</li>
+    <li>There are packages for use with older versions with tooling based packages: <code>hl7.fhir.uv.extensions.r4</code> and <code>hl7.fhir.uv.extensions.r3</code></li>
+    <li>The version of the Extensions Pack (5.3.0-ballot) is not the same as the FHIR version, since it applies equally to 
+      FHIR versions R5, R4, R4B, and R3</li>
+  </ul>  
+
+
+  <a name="ballot"> </a>
+  <h3>Note to Balloters</h3>
+
+  <p>This is the ballot for release 5.3.0 of the Extension Pack. While comment is welcome on all extensions, 
+  please pay particular consideration to the following matters:</p>
+  <ul>
+   <li>New Extensions: {% include new-extensions.xhtml %}</li>
+   <li>Removed Extensions: {% include deleted-extensions.xhtml %}</li>
+   <li>Changed Extensions: You can see which extensions have changed by looking in the <b>Δ v5.2.0</b> column on right of the <a href="extension-registry.html">Extension Summary Table</a>. Unfortunately, the change list has grown to include most extension courtesy of addressing QA issues in the extension pack in this ballot</li>
+   <li>Deprecated Extensions: There are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' and standardStatus = 'deprecated' %} deprecated extensions: see <a href="deprecated.html">the deprecated Extensions page</a>. Balloters might want to pay particular attention to this list - there has been some lack of clarity about whether extensions should be deprecated when elements are added to resources in R5/6 </li>
+   <li>The conversion maps have been removed from this release - they have moved to the cross-extensions publications</li>
+   <li>A significant new feature in this release is that extensions are transformed to R4 and R3 versions, so that the 
+     extension definitions found in the .r4 and .r3 packages fully valid. This involve: making sure that appropriate 
+     CodeSystem and ValueSet resources are included, and using sets of extensions in place of data types defined in
+     later versions. A <a href="extension-summary.html">summary of this work</a> is provided.</li>
+  </ul>
+  <p>
+   The FHIR Management Group recognizes the difficulty of balloting the extensions pack
+   for the community. The Extensions Pack ballot serves as a checkpoint for the continuous 
+   development of the Extension pack content prior to publishing the normal formal milestone,
+   and is an opportunity for the community to review and comment on Extensions of interest. 
+   Given that there are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' %}
+   extensions that span the entire span of the FHIR implementation
+   space, there is no expectation that ballot reviewers will be able to review all the 
+   resources. For this reason, ballot cycles of the extensions pack do not contribute towards
+   extension maturity after the first ballot. There are, however, several structural
+   enhancements aimed at addressing extension use tracking and useability:
+  </p>
+  <ul>
+   <li>Extensions now get a direct reference to their page in the FHIR IG Statistics (which itself has been enhanced)</li>
+   <li>The <a href="deprecated.html">Deprecation summary table</a></li>
+   <li>The filter added to the <a href="extension-registry.html">Extension Registry</a></li>
+  </ul>
+
 	<a name="topics"> </a>
 	<h3>Content Registries</h3>
 	<ul>
     <li><a href="extension-registry.html">Extension Registry</a></li>
     <li><a href="search-params.html">Search Parameters for the Extensions</a></li>
-    <li><a href="conversion-registry.html">R5/R4(B) Conversion Registry</a></li>
   </ul>
   
 	<a name="policy"> </a>
@@ -50,18 +94,10 @@
      processing extensions from having to change</li>
     <li>The extensions all have the status of 'trial-use' but once they are active they are treated as normative. The FHIR
      Management Group has not yet decided how these extensions will be balloted in the future</li>
+     <li>If a breaking change needs to be introduced to an extension, the original extension will be marked as deprecated and a new one will be created.  If the scope of the extension has significantly changed, it may be given a completely new URL.  If the scope is largely the same, the url will remain the same, except that a version will be appended.  E.g. "[original url]-v2".  The deprecated extension will have a note added that points to the replacing extension.</li>
   </ul>
     
     <p>For more information, see <a href="https://confluence.hl7.org/display/FMG/FHIR+Extension+Pack+Policy">FHIR Extension Pack Policy</a>.</p>
-
-	<a name="policy-conversions"> </a>
-	<h4>Conversion Maps</h4>
-  
-  <p>
-  The implementation scope of the conversion maps is fixed: implementing a proper transform from 
-  R4/R4B to R5 and vice versa. Ongoing changes may be made to the maps if they improve the mappings
-  within this scope, including catering for common extensions.
-  </p>
 
 	<a name="ip"> </a>
 	<h3>Intellectual Property Considerations</h3>
@@ -72,8 +108,8 @@
   <p>    
     This guide includes extensions making use of terminologies such
     as LOINC and SNOMED CT that have more restrictive licensing requirements.  Implementers should make themselves familiar with licensing and
-    any other constraints of terminologies used as part of their implementation process.  In some cases,
-    licensing requirements may limit the systems that data captured using certain codes may be shared with.
+    any other constraints of terminologies used as part of their implementation process.  
+    Licencing requirements may limit the systems to which data recorded using certain codes may be shared.
   </p>
   {% include ip-statements.xhtml %}
   

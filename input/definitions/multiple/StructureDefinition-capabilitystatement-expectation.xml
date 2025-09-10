@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Defines the level of expectation associated with a given system capability."/>
+  <description value="Defines the level of expectation associated with a given system capability.  See the capabilitystatement-prohibited modifier extension to set expectations to *not* support a feature."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
@@ -44,6 +44,15 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="CapabilityStatement.acceptLanguage"/>
+  </context>
+  <context>
     <type value="element"/>
     <expression value="CapabilityStatement.document"/>
   </context>
@@ -56,12 +65,13 @@
     <expression value="CapabilityStatement.implementationGuide"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.imports"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CapabilityStatement.instantiates"/>
   </context>
   <context>
     <type value="element"/>
@@ -70,14 +80,6 @@
   <context>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.interaction"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CapabilityStatement.rest.interaction.code"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CapabilityStatement.rest.interaction.documentation"/>
   </context>
   <context>
     <type value="element"/>
@@ -108,6 +110,11 @@
     <expression value="CapabilityStatement.rest.resource.conditionalUpdate"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.resource.conditionalPatch"/>
   </context>
@@ -116,12 +123,13 @@
     <expression value="CapabilityStatement.rest.resource.interaction"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.resource.operation"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CapabilityStatement.rest.resource.profile"/>
   </context>
   <context>
     <type value="element"/>
@@ -144,6 +152,11 @@
     <expression value="CapabilityStatement.rest.resource.searchRevInclude"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.resource.supportedProfile"/>
   </context>
@@ -170,6 +183,24 @@
   <context>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.security.service"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="CapabilityStatement.messaging.reliableCache"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="CapabilityStatement.messaging.supportedMessage"/>
   </context>
   <context>
     <type value="extension"/>

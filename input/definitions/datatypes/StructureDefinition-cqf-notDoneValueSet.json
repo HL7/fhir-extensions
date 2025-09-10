@@ -31,7 +31,7 @@
     }]
   }],
   "description" : "A logical reference (e.g. a reference to ValueSet.url) to a value set/version that identifies a set of possible coded values representing activities that were not requested, ordered, or performed.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",

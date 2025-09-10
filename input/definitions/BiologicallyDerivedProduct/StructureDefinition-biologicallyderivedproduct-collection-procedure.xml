@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="BDPCollectionProcedure"/>
   <title value="BiologicallyDerivedProduct Collection Procedure"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2022-03-07"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Extension for the collection procedure of a biologically derived product."/>
+  <description value="Extension for the collection procedure of a biologically derived product. Use biologicallyderivedproduct.collection.procedure in R6 or later"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -39,6 +39,14 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+      <extension url="endFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="BiologicallyDerivedProduct.collection"/>
   </context>

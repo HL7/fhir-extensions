@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ConditionDiseaseCourse"/>
   <title value="Condition Disease Course"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-21"/>
   <publisher value="HL7 International / Patient Care"/>

@@ -28,7 +28,7 @@
   <version value="5.0.0"/>
   <name value="AllergyIntoleranceSubstanceExposureRisk"/>
   <title value="AllergyIntolerance substance exposure risk codesystem"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / Patient Care"/>
   <contact>

@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Assessment of resource match outcome - how likely this resource is to be a match."/>
+  <description value="Assessment of resource match outcome - how likely this resource is to be a match.&#10;&#10;This extension is intended to supplement the search score with a coded value that can provide more discrete values than a numeric 'ordering' style score.&#10;&#10;A score is not required to use the grade.&#10;&#10;This is returned by the Patient $match operation (though could be used by similar operations on other resource types).&#10;&#10;The codes 'probable' and 'possible' although similar, indicate the level of confidence the matching engine has that the result is a match. This could be through the number of matching fields, or other similar levels of certainty. Probable indicates that the match is likely, however  possible indicates it had some partial matching data."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="How likely this resource is to be a match"/>
-      <definition value="Assessment of resource match outcome - how likely this resource is to be a match."/>
+      <definition value="Assessment of resource match outcome - how likely this resource is to be a match. This extension is intended to supplement the search score with a coded value that can provide more discrete values than a numeric 'ordering' style score."/>
+      <comment value="A score is not required to use the grade.&#10;&#10;This is returned by the Patient $match operation (though could be used by similar operations on other resource types).&#10;&#10;The codes 'probable' and 'possible' although similar, indicate the level of confidence the matching engine has that the result is a match. This could be through the number of matching fields, or other similar levels of certainty. Probable indicates that the match is likely, however  possible indicates it had some partial matching data."/>
       <min value="0"/>
       <max value="1"/>
     </element>

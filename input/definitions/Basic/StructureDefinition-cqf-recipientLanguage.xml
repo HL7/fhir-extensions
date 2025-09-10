@@ -9,7 +9,11 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="This extension was initially used to model decision support context. This information is now handled as part of CDS Hooks and Clinical Reasoning."/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-recipientLanguage"/>
   <identifier>
@@ -66,23 +70,15 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <binding>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueMarkdown value="A human language."/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
-        <strength value="preferred"/>
-        <description value="IETF language tag"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
-      </binding>
+      <binding> 
+        <strength value="required"/> 
+        <description value="IETF language tag for a human language"/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages"/> 
+        <additional> 
+          <purpose value="starter"/> 
+          <valueSet value="http://hl7.org/fhir/ValueSet/languages"/> 
+        </additional> 
+      </binding> 
     </element>
   </differential>
 </StructureDefinition>

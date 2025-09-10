@@ -1,0 +1,235 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "device-alertDetection",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "dev"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-bind"
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/device-alertDetection",
+  "name" : "DeviceAlertDetection",
+  "title" : "Device Alert Detection Extension",
+  "status" : "draft",
+  "date" : "2024-11-07T15:33:47-08:00",
+  "publisher" : "HL7 International / Health Care Devices",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/healthcaredevices"
+    }]
+  }],
+  "description" : "Alert detection activation state describes whether a device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code and priority at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert.",
+  "fhirVersion" : "6.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "DeviceMetric"
+  },
+  {
+    "type" : "element",
+    "expression" : "Device"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Device Alert Detection Extension",
+      "definition" : "Alert detection activation state describes whether a device is set to annunciate when a [DeviceAlert](http://hl7.org/fhir/StructureDefinition/DeviceAlert) condition occurs. This extension describes the reported alert detection activation state for the indicated combination of alert code and priority (priorities) at the indicated point in time. The extension may be used on a [Device](http://hl7.org/fhir/StructureDefinition/Device), or on the specific [DeviceMetric](http://hl7.org/fhir/StructureDefinition/DeviceMetric) that could detect the condition or annunciate the alert.",
+      "constraint" : [{
+        "key" : "alrtdet-1",
+        "severity" : "error",
+        "human" : "Subextension `alertCode` may only be omitted on the Device resource.",
+        "expression" : "extension('alertCode').exists().not() implies (%resource is Device)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/device-alertDetection"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "min" : 1
+    },
+    {
+      "id" : "Extension.extension:alertCode",
+      "path" : "Extension.extension",
+      "sliceName" : "alertCode",
+      "short" : "The alert for which the alert detection activation state is described",
+      "definition" : "The alert for which the alert detection activation state is described. If an alert code is specified, then the activation state is for the specified alert. If no alert code is specified, the alert detection activation state applies to all alerts of the device. (See the extension description for additional details regarding multiple occurrences of this extension.)",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:alertCode.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:alertCode.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "alertCode"
+    },
+    {
+      "id" : "Extension.extension:alertCode.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-condition"
+      }
+    },
+    {
+      "id" : "Extension.extension:priority",
+      "path" : "Extension.extension",
+      "sliceName" : "priority",
+      "short" : "The alert priority for which the alert detection activation state is described",
+      "definition" : "The alert priority for which the alert detection activation state is described. If an alert priority is specified, then the activation state is for the indicated priority of the specified alert. If no alert priority is specified, the alert detection activation state applies to all priorities of the specified alert. (See the extension description for additional details regarding multiple occurrences of this extension.)",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:priority.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:priority.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "priority"
+    },
+    {
+      "id" : "Extension.extension:priority.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-priority"
+      }
+    },
+    {
+      "id" : "Extension.extension:effective",
+      "path" : "Extension.extension",
+      "sliceName" : "effective",
+      "short" : "The point(s) in time this activation state was in effect",
+      "definition" : "When this activation state was in effect, which may be a statement about a single point-in-time or a time period (possibly on-going) covered.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:effective.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:effective.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "effective"
+    },
+    {
+      "id" : "Extension.extension:effective.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "dateTime"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "Extension.extension:activationState",
+      "path" : "Extension.extension",
+      "sliceName" : "activationState",
+      "short" : "The activation state of the specified alert (or alerts)",
+      "definition" : "The reported activation state of the specified combination of alert and priority",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:activationState.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:activationState.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "activationState"
+    },
+    {
+      "id" : "Extension.extension:activationState.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-activationState"
+      }
+    },
+    {
+      "id" : "Extension.extension:limitRange",
+      "path" : "Extension.extension",
+      "sliceName" : "limitRange",
+      "short" : "Limits applicable to the indicated alert priority.",
+      "definition" : "The range of values outside of which an alarm condition of the (single) specified priority would be triggered for the specified alert code, if the alert activation state were `active`. Limits may include upper or lower values, or both. If units are present, they should be the same as the DeviceMetric. If absent, units are assumed to be the same as the DeviceMetric.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:limitRange.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:limitRange.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "limitRange"
+    },
+    {
+      "id" : "Extension.extension:limitRange.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "Range"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/device-alertDetection"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
+  }
+}

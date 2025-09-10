@@ -41,6 +41,10 @@
 		<type value="element"/>
 		<expression value="Composition.section"/>
 	</context>
+	<context>
+		<type value="element"/>
+		<expression value="Observation.component"/>
+	</context>
 	<type value="Extension"/>
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
 	<derivation value="constraint"/>

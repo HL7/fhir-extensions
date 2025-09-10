@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="QDefinitionBased"/>
   <title value="Questionnaire is Definition Based"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2021-03-23"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>

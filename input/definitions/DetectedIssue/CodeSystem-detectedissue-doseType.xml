@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="detectedissue-doseType"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cds"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/detectedissue-doseType"/>
+  <name value="DetectedIssueDoseTypeCS"/>
+  <title value="DetectedIssue Dose Type CS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-16"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="Indicates whether a dose alert refers to a single dose, or the cumulative daily dosage."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/detectedissue-doseType"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <concept>
+    <code value="single"/>
+    <display value="Single"/>
+    <definition value="A dosing error with a single dose."/>
+  </concept>
+  <concept>
+    <code value="daily"/>
+    <display value="Daily"/>
+    <definition value="A dosing error with a daily dosage."/>
+  </concept>
+</CodeSystem>

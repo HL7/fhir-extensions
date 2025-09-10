@@ -42,7 +42,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/ValueSet/FHIR-version"/>
+      <system value="http://hl7.org/fhir/FHIR-version"/>
       <version value="5.0.0"/>
       <concept>
         <code value="1.0"/>

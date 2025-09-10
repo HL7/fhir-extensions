@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="DefaultType"/>
   <title value="Default Type"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="The default type that applies if the instance doesn't specify a particular type, and there is a choice of types."/>
+  <description value="The default type that applies if the instance doesn't specify a particular type, and there is a choice of types. This extension is only for use on logical models."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Default type is non is specified in the instance"/>
-      <definition value="The default type that applies if the instance doesn't specify a particular type, and there is a choice of types."/>
+      <definition value="The default type that applies if the instance doesn't specify a particular type, and there is a choice of types. This extension is only for use on logical models."/>
       <comment value="This situation can't arise in the FHIR instances, but can, for instance, happen with CDA."/>
       <min value="0"/>
       <max value="1"/>

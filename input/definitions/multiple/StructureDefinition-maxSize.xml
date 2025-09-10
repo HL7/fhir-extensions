@@ -59,7 +59,7 @@
       <path value="Extension"/>
       <short value="Max size in bytes"/>
       <definition value="For attachment answers, indicates the maximum size in bytes an attachment can be."/>
-      <comment value="This extension only has meaning if the element has a type of Attachment.  For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#maxSize)."/>
+      <comment value="This extension only has meaning if the element has a type of Attachment.  For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#maxSize)."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

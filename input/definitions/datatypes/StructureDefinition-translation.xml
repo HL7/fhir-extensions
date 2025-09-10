@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Language translation from base language of resource to another language."/>
+  <description value="Language translation from base language of resource to another language, used to provide translations for strings, including markdown. Generally, the type of the translation extension SHOULD match that of the element being extended.&#10;&#10;It is also allowed to provide translations of elements of type `code`, which may be appropriate to use for rendering when the code itself is a natural language word (usually in English). In such cases, the translation is not provided as an alternative code, and is not intended for machine interpretation. This extension should never appear on a code that is part of a Coding, as placing the translation on Coding.display is more appropriate."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -44,11 +44,11 @@
   </context>
   <context>
     <type value="element"/>
-    <expression value="code"/>
+    <expression value="markdown"/>
   </context>
   <context>
     <type value="element"/>
-    <expression value="markdown"/>
+    <expression value="code"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -57,7 +57,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Language Translation (Localization)"/>
-      <definition value="Language translation from base language of resource to another language."/>
+      <definition value="Language translation from base language of resource to another language, used to provide translations for strings, including markdown. Generally, the type of the translation extension SHOULD match that of the element being extended."/>
       <min value="0"/>
       <max value="*"/>
       <mapping>
@@ -94,21 +94,13 @@
         <code value="code"/>
       </type>
       <binding>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueMarkdown value="A human language."/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
-        <strength value="preferred"/>
-        <description value="IETF language tag"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+        <strength value="required"/> 
+        <description value="IETF language tag for a human language"/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/all-languages"/> 
+        <additional> 
+          <purpose value="starter"/> 
+          <valueSet value="http://hl7.org/fhir/ValueSet/languages"/> 
+        </additional> 
       </binding>
     </element>
     <element id="Extension.extension:content">

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="complies-with-canonical"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/complies-with-canonical"/>
+  <version value="5.0.0"/>
+  <name value="CompliesWithCanonical"/>
+  <title value="Complies With Canonical"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-16"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Indicates that a resource or element complies with another formally defined canonical resource. This extension allows systems to declare that their implementation satisfies multiple canonical definitions beyond the primary one referenced in corresponding 'definition' elements.&#10;&#10;Compliance means that an implementation of a canonical resource (e.g., a search parameter or operation) satisfies all the normative requirements of the referenced canonical resource definition. When an implementation states that it complies with multiple canonical definitions, it means that it simultaneously satisfies all mandatory requirements from each referenced definition. This enables a single implementation to declare conformance to multiple sources without having to duplicate capability statement entries."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="SearchParameter"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement.rest.searchParam"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement.rest.resource.searchParam"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="OperationDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CapabilityStatement.rest.operation"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="CapabilityStatement.rest.resource.operation"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Indicates that a resource or element complies with another formally defined canonical resource"/>
+      <definition value="Indicates that a resource or element complies with another formally defined canonical resource. This extension allows systems to declare that their implementation satisfies multiple canonical definitions beyond the primary one referenced in corresponding 'definition' elements."/>
+      <comment value="Compliance means that an implementation of a canonical resource (e.g., a search parameter or operation) satisfies all the normative requirements of the referenced canonical resource definition. When an implementation states that it complies with multiple canonical definitions, it means that it simultaneously satisfies all mandatory requirements from each referenced definition. This enables a single implementation to declare conformance to multiple sources without having to duplicate capability statement entries."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/complies-with-canonical"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="canonical"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

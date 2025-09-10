@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="BDPManipulation"/>
   <title value="BiologicallyDerivedProduct Manipulation"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2022-03-07"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -39,6 +39,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="BiologicallyDerivedProduct"/>
   </context>

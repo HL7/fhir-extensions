@@ -18,7 +18,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="MeasureReportCategory"/>
-  <title value="Measure Report Category"/>
+  <title value="Measure Report Category CS"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / Clinical Quality Information"/>
@@ -32,9 +32,9 @@
   <caseSensitive value="true"/>
   <content value="complete"/>
   <concept>
-    <code value="quality"/>
-    <display value="Quality"/>
-    <definition value="Indicates this is a quality measure report."/>
+    <code value="deqm"/>
+    <display value="Data Exchange for Quality Measures"/>
+    <definition value="Indicates this is a Data Exchange for Quality Measures (DEQM) measure report."/>
   </concept>
   <concept>
     <code value="ra"/>

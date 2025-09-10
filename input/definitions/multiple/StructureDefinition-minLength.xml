@@ -59,7 +59,7 @@
       <path value="Extension"/>
       <short value="At least this many characters"/>
       <definition value="The minimum number of characters that must be present in the simple data type to be considered a &quot;valid&quot; instance."/>
-      <comment value="For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data.  For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#minLength)."/>
+      <comment value="For base64binary, reflects the number of characters representing the encoded data, not the number of bytes of the binary data.  For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#minLength)."/>
       <min value="0"/>
       <max value="1"/>
       <mapping>

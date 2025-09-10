@@ -59,7 +59,7 @@
       <path value="Extension"/>
       <short value="Type of attachment"/>
       <definition value="Identifies the kind(s) of attachment allowed to be sent for an element."/>
-      <comment value="This extension only has meaning if the element has a type of Attachment.  For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#mimeType)."/>
+      <comment value="This extension only has meaning if the element has a type of Attachment.  For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#mimeType)."/>
       <min value="0"/>
       <max value="*"/>
       <mapping>

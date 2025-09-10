@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ShallComplyWith"/>
   <title value="Shall comply with"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2017-12-06"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -49,7 +49,35 @@
   </context>
   <context>
     <type value="element"/>
+    <expression value="Appointment"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CarePlan"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="CommunicationRequest"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="DeviceRequest"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ImmunizationRecommendation"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="Measure"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="MedicationRequest"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="NutritionOrder"/>
   </context>
   <context>
     <type value="element"/>
@@ -60,28 +88,31 @@
     <expression value="PlanDefinition"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
-    <expression value="Observation"/>
+    <expression value="RequestOrchestration"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
     <type value="element"/>
-    <expression value="DiagnosticReport"/>
+    <expression value="RequestGroup"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
-    <expression value="DocumentReference"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="Condition"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="SupplyDelivery"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="CommunicationRequest"/>
+    <expression value="ServiceRequest"/>
   </context>
   <context>
     <type value="element"/>
@@ -98,6 +129,14 @@
   <context>
     <type value="element"/>
     <expression value="SpecimenDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Task"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="VisionPrescription"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -134,7 +173,7 @@
         <code value="canonical"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Measure"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
       </type>
@@ -142,7 +181,7 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Measure"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Questionnaire"/>
       </type>

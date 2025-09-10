@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="device-conformsTo"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/device-conformsTo"/>
+  <version value="0.1.0"/>
+  <name value="DeviceConformsTo"/>
+  <title value="Device ConformsTo"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-16"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="Identifies the standards, specifications, or formal guidances for the capabilities supported by the device. The device may be certified as conformant to these specifications e.g., communication, performance, process, measurement, or specialization standards."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Device"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Identifies the standards, specifications, or formal guidances for the capabilities supported by the device"/>
+      <definition value="Identifies the standards, specifications, or formal guidances for the capabilities supported by the device. The device may be certified as conformant to these specifications e.g., communication, performance, process, measurement, or specialization standards."/>
+    </element>
+    <element id="Extension.extension:category">
+      <path value="Extension.extension"/>
+      <sliceName value="category"/>
+      <short value="Describes the common type of the standard, specification, or formal guidance"/>
+      <definition value="Describes the type of the standard, specification, or formal guidance."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:category.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:category.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="category"/>
+    </element>
+    <element id="Extension.extension:category.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding> 
+        <strength value="example"/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/device-specification-category"/> 
+      </binding> 
+    </element>
+    <element id="Extension.extension:specification">
+      <path value="Extension.extension"/>
+      <sliceName value="specification"/>
+      <short value="Identifies the standard, specification, or formal guidance that the device adheres
+       to the Device Specification type"/>
+      <definition value="Code that identifies the specific standard, specification, protocol, formal guidance,
+       regulation, legislation, or certification scheme to which the device adheres."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:specification.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:specification.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="specification"/>
+    </element>
+    <element id="Extension.extension:specification.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding> 
+        <strength value="example"/> 
+        <valueSet value="http://hl7.org/fhir/ValueSet/device-specification-type"/> 
+      </binding> 
+    </element>
+    <element id="Extension.extension:version">
+      <path value="Extension.extension"/>
+      <sliceName value="version"/>
+      <short value="The specific form or variant of the standard, specification or formal guidance"/>
+      <definition value="Identifies the specific form or variant of the standard, specification, or formal
+       guidance. This may be a 'version number', release, document edition, publication
+       year, or other label."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:version.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:version.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="version"/>
+    </element>
+    <element id="Extension.extension:version.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Extension.extension:source">
+      <path value="Extension.extension"/>
+      <sliceName value="source"/>
+      <short value="Standard, regulation, certification, or guidance website, document, or other publication,
+       or similar, supporting the conformance"/>
+      <definition value="Standard, regulation, certification, or guidance website, document, or other publication,
+       or similar, supporting the conformance."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:source.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:source.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="source"/>
+    </element>
+    <element id="Extension.extension:source.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="RelatedArtifact"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/device-conformsTo"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

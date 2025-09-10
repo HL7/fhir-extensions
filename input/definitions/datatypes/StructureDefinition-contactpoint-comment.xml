@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ContactPointComment"/>
   <title value="ContactPoint Comment"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-28"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -43,6 +43,11 @@
     <expression value="ContactPoint"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="ExtendedContactDetail"/>
   </context>

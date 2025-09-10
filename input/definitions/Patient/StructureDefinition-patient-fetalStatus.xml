@@ -21,10 +21,10 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/pafm"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  <description value="The fetal status of the subject when still in utero. This extension would not apply to Patients that have a birthDate."/>
+  <description value="An indicator on the status of a fetal subject. Typically used in maternity where the patient record may be created before birth. This extension would not apply to Patients that have a birthDate.  A Patient.deceased flag cannot be used for fetal subjects because the fetus is not yet born. The status is used to express the vitality of the fetal subject."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -44,7 +44,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="potential-for-live-birth | fetal-demise | unknown"/>
-      <definition value="An indicator on the fetal status of a baby. Typically used in maternity where the patient record may be created before the birth of the baby."/>
+      <definition value="An indicator on the status of a fetal subject. Typically used in maternity where the patient record may be created before birth. This extension would not apply to Patients that have a birthDate.  A Patient.deceased flag cannot be used for fetal subjects because the fetus is not yet born. The status is used to express the vitality of the fetal subject."/>
       <min value="0"/>
       <max value="1"/>
     </element>

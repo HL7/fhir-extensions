@@ -31,7 +31,7 @@
     }]
   }],
   "description" : "Specifies the expansion parameters that should be used to expand ValueSets referenced from artifacts in the Library or ImplementationGuide.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

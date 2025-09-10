@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="PatMultipleBirthTotal"/>
   <title value="Patient Multiple Birth Total"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 International / Patient Administration"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="Where a patient is a part of a multiple birth, this is the total number of births that occurred in this pregnancy. This includes all live births and all fetal losses.&#xD;&#xD;This value is the 4 in '3 of *4*', and the 3 would be the Patient.multipleBirth value." />
+  <description value="Where a patient is a part of a multiple birth, this is the total number of births that occurred in this pregnancy. This includes all live births and all fetal losses.&#xD;&#xD;When the patients have not been born yet, this is the total number of fetuses that are known to be present.&#xD;&#xD;This value is the 4 in '3 of *4*', and the 3 would be the Patient.multipleBirth value." />
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

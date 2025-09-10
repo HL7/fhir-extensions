@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="ConsentResearchStudyContext"/>
   <title value="Consent Research Study Context"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 International / Community Based Collaborative Care"/>
@@ -39,6 +39,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="Consent.provision"/>
   </context>

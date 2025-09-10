@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="IGSourceFile"/>
   <title value="ImplementationGuide Source File"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-03-02"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -39,6 +39,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="ImplementationGuide.definition"/>
   </context>
@@ -92,7 +97,7 @@
     </element>
     <element id="Extension.extension:location.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="file"/>
+      <fixedUri value="location"/>
     </element>
     <element id="Extension.extension:location.value[x]">
       <path value="Extension.extension.value[x]"/>
@@ -115,7 +120,7 @@
     </element>
     <element id="Extension.extension:keepAsResource.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="file"/>
+      <fixedUri value="keepAsResource"/>
     </element>
     <element id="Extension.extension:keepAsResource.value[x]">
       <path value="Extension.extension.value[x]"/>

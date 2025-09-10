@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-supportHyperlink"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/questionnaire-supportHyperlink"/>
+  <version value="1.0.0"/>
+  <name value="QuestionnaireSupportHyperlink"/>
+  <title value="Questionnaire Support Hyperlink"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-07-19"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="A labeled hyperlink for display alongside a questionnaire item, providing supporting guidance to the user."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Questionnaire.item"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="A labeled hyperlink for user guidance"/>
+      <definition value="A labeled hyperlink for display alongside a questionnaire item, providing supporting guidance to the user."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+
+    <!-- Child extension: label -->
+    <element id="Extension.extension:label">
+      <path value="Extension.extension"/>
+      <sliceName value="label"/>
+      <short value="The hyperlink display text"/>
+      <definition value="The text to display for the user to click on to go to the link."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+     <element id="Extension.extension:label.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:label.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="label"/>
+    </element>
+    <element id="Extension.extension:label.valueString">
+      <path value="Extension.extension.valueString"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+
+    <!-- Child extension: link -->
+    <element id="Extension.extension:link">
+      <path value="Extension.extension"/>
+      <sliceName value="link"/>
+      <short value="The hyperlink URL"/>
+      <definition value="The link to navigate to."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+     <element id="Extension.extension:link.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:link.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="link"/>
+    </element>
+    <element id="Extension.extension:link.valueUri">
+      <path value="Extension.extension.valueUri"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/questionnaire-supportHyperlink"/>
+    </element>
+    <!-- Root extension children cannot have value[x] directly -->
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

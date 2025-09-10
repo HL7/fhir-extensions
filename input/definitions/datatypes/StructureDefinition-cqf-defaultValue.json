@@ -31,7 +31,7 @@
     }]
   }],
   "description" : "Provides a default value for a parameter definition.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

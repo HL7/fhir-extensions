@@ -29,8 +29,9 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="A legal or geographic region in which the artifact is intended to be used."/>
-  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan."/>
+  <description value="A legal or geographic region in which the authority that maintains the resource is operating.
+    In general, the jurisdiction is also found in the [[[http://hl7.org/fhir/StructureDefinition/artifact-useContext]]] for the resource. The useContext may reference additional jurisdictions because the defining jurisdiction does not necessarily limit the jurisdictions of use. This extension SHALL not be used on any resource that has a defined `jurisdiction` element."/>
+  <purpose value="This extension is defined to support representing artifact metadata on resources that are not already canonical resources that have the corresponding element, and that behave in a definitional way. For example, it would not be appropriate to use this extension on a patient-specific resource such as MedicationRequest or CarePlan. For resources where this element was added in R5, the cross-version extension should be used rather than this extension (ConditionDefinition,NamingSystem,ObservationDefinition,SpecimenDefinition,SubscriptionTopic)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -50,8 +51,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Intended jurisdiction for artifact (if applicable)"/>
-      <definition value="A legal or geographic region in which the artifact is intended to be used."/>
-      <comment value="It may be possible for the artifact to be used in jurisdictions other than those for which it was originally designed or intended."/>
+      <definition value="A legal or geographic region in which the authority that maintains the resource is operating."/>
+      <comment value="It may be possible for the artifact to be used in jurisdictions other than those for which it was originally designed or intended - that would be in [[[http://hl7.org/fhir/StructureDefinition/artifact-useContext]]]."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -78,7 +79,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="Countries and regions within which this artifact is targeted for use."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/jurisdiction"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/jurisdiction"/>
       </binding>
     </element>
   </differential>

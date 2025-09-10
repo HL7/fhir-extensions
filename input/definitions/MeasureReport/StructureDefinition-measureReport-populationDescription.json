@@ -14,7 +14,7 @@
         "valueCode" : "trial-use"
       }],
         "url" : "http://hl7.org/fhir/StructureDefinition/measurereport-populationDescription",
-    "name" : "measurereport-populationDescription",
+    "name" : "MeasureReportPopulationDescription",
     "title" : "Measure Report Population Description",
     "status" : "active",
     "experimental" : false,
@@ -35,7 +35,7 @@
       }]
     }],
     "purpose" : "Provides a description of the population on which this appears.",
-    "fhirVersion" : "4.0.1",
+    "fhirVersion" : "5.0.0",
     "mapping" : [{
       "identity" : "rim",
       "uri" : "http://hl7.org/v3",
@@ -53,9 +53,16 @@
     },
     {
       "type" : "element",
-      "expression" : "MeasureReport.stratifier"
+      "expression" : "MeasureReport.group.stratifier"
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
       "type" : "element",
       "expression" : "MeasureReport.supplementalData"
     }],

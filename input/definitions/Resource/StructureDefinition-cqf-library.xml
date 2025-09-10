@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="A library containing logic used by the artifact"/>
       <definition value="A reference to a Library containing the formal logic used by the artifact."/>
-      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html#cqf-library)."/>
+      <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#cqf-library)."/>
       <min value="0"/>
       <max value="*"/>
     </element>
