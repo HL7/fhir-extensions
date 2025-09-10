@@ -87,6 +87,18 @@
     <type value="element"/>
     <expression value="SupplyRequest"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="ObservationDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="DeviceDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="SpecimenDefinition"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
