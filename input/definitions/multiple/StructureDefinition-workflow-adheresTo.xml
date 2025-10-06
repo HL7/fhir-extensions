@@ -100,6 +100,30 @@
     <type value="element"/>
     <expression value="SupplyDelivery"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="Task"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="BiologicallyDerivedProductDispense"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="DeviceDispense"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="DeviceUsage"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="NutritionIntake"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Transport"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
