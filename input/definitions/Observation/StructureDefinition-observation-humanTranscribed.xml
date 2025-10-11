@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+ <id value="observation-human-transcribed"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+
+<url value="http://hl7.org/fhir/StructureDefinition/observation-human-transcribed"/>
+  <version value="6.0.0"/>
+  <name value="HumanTranscribed"/>
+  <title value="Human-Transcribed"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-10-10"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="Indicates that the data from the device was displayed, printed or otherwise rendered for human consumption and subsequently entered into the record, typically through manual intervention."/>
+  <fhirVersion value="6.0.0"/>
+
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+
+  <!-- Scope of use -->
+  <context>
+    <type value="element"/>
+    <expression value="Observation"/>
+  </context>
+
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Flag indicating the observation value was human-transcribed"/>
+      <definition value="Indicates that the data from the device was displayed, printed or otherwise rendered for human consumption and subsequently entered into the record, typically through manual intervention."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-human-transcribed"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
