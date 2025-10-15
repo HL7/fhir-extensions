@@ -14,7 +14,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="2"/>
   </extension>
-  <url value="http://hl7.org/fhir/CodeSystem/devicealert-priority"/>
+  <url value="http://hl7.org/fhir/devicealert-priority"/>
   <version value="1.0.0"/>
   <name value="DeviceAlertPriority"/>
   <title value="Device Alert Priority"/>
