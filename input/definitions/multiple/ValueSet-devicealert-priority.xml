@@ -31,7 +31,7 @@
   <description value="DeviceAlert Priority Codes"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/CodeSystem/devicealert-priority"/>
+      <system value="http://hl7.org/fhir/devicealert-priority"/>
     </include>
   </compose>
 </ValueSet>
