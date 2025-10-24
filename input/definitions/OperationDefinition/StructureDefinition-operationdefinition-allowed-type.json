@@ -45,6 +45,9 @@
   "context" : [{
     "type" : "element",
     "expression" : "OperationDefinition.parameter"
+  },{
+    "type" : "element",
+    "expression" : "OperationDefinition.resource"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
