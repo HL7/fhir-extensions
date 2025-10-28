@@ -147,7 +147,7 @@
           <valueString value="CertaintyType"/>
         </extension>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/certainty-type"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/certainty-type"/>
       </binding>
     </element>
     <element id="Extension.extension:rating">
@@ -186,7 +186,7 @@
           <valueString value="CertaintyRating"/>
         </extension>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/certainty-rating"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/certainty-rating"/>
       </binding>
     </element>
     <element id="Extension.extension:rater">
