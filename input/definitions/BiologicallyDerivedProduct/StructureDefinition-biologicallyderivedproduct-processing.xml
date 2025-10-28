@@ -95,7 +95,7 @@
     <element id="Extension.extension:procedure">
       <path value="Extension.extension"/>
       <sliceName value="procedure"/>
-      <short value="Procesing procedure"/>
+      <short value="Processing procedure"/>
       <definition value="The procedure used for processing."/>
       <min value="0"/>
       <max value="1"/>
