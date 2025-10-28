@@ -26,7 +26,7 @@
 		</telecom>
 	</contact>
   
-	<description value="The biologicallyderivedproduct-intendedRecipient extension may be used to record the intended recipient of the BiologicallyDerivedProduct to satisfy product traceability requirements, and does not represent administration, nor does it prevent administration to a different recipient at a future date. Further detail on the traceability requirements can be found on the BiologicallyDerivedProduct resource [Intended Recipient](http://hl7.org/fhir/biologicallyderivedproduct.html#intendedrecipient) section."/>
+	<description value="The biologicallyderivedproduct-intendedRecipient extension can be used to record the intended recipient of the BiologicallyDerivedProduct to satisfy product traceability requirements, and does not represent administration, nor does it prevent administration to a different recipient at a future date. Further detail on the traceability requirements can be found in the BiologicallyDerivedProduct resource [Intended Recipients](http://hl7.org/fhir/biologicallyderivedproduct.html#intendedrecipient)."/>
   
 	<fhirVersion value="6.0.0"/>
 	<kind value="complex-type"/>
@@ -49,8 +49,8 @@
 		<element id="Extension">
 			<path value="Extension"/>
 			<short value="The intended recipient of a directed or designated biologically derived product"/>
-			<definition value="The biologicallyderivedproduct-intendedRecipient extension may be used to record the intended recipient of the BiologicallyDerivedProduct to satisfy product traceability requirements, and does not represent administration, nor does it prevent administration to a different recipient at a future date. Further detail on the traceability requirements can be found on the BiologicallyDerivedProduct resource [Intended Recipient](http://hl7.org/fhir/biologicallyderivedproduct.html#intendedrecipient) section."/>
-			<comment value="The biologicallyderivedproduct-intendedRecipient extension and BiologicallyDerivedProduct.collection.sourcePatient may contain references to identifiable patients. Implementers shall ensure the appropriate data access controls are established."/>
+			<definition value="The biologicallyderivedproduct-intendedRecipient extension can be used to record the intended recipient of the BiologicallyDerivedProduct to satisfy product traceability requirements, and does not represent administration, nor does it prevent administration to a different recipient at a future date. Further detail on the traceability requirements can be found in the BiologicallyDerivedProduct resource [Intended Recipients](http://hl7.org/fhir/biologicallyderivedproduct.html#intendedrecipient)."/>
+			<comment value="The biologicallyderivedproduct-intendedRecipient extension and BiologicallyDerivedProduct.collection.sourcePatient can contain references to identifiable patients. Implementers shall ensure the appropriate data access controls are established."/>
 			<min value="0"/>
 			<max value="1"/>
 		</element>
