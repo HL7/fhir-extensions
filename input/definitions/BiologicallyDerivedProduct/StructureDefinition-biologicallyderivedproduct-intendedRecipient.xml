@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="biologicallyderivedproduct-intendedRecipient"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+		<valueCode value="oo"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="0"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+		<valueCode value="trial-use"/>
+	</extension>
+	<url value="http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient"/>
+	<version value="6.0.0"/>
+	<name value="BDPIntendedRecipient"/>
+	<title value="BiologicallyDerivedProduct Intended Recipient"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<date value="2025-10-27"/>
+	<publisher value="HL7 International / Orders and Observations"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.hl7.org/Special/committees/orders"/>
+		</telecom>
+	</contact>
+  
+	<description value="The biologicallyderivedproduct-intendedRecipient extension can be used to record the intended recipient of the BiologicallyDerivedProduct to satisfy product traceability requirements, and does not represent administration, nor does it prevent administration to a different recipient at a future date. Further detail on the traceability requirements can be found in the BiologicallyDerivedProduct resource [Intended Recipients](http://hl7.org/fhir/biologicallyderivedproduct.html#intendedrecipient)."/>
+  
+	<fhirVersion value="6.0.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+			<extension url="startFhirVersion">
+				<valueCode value="4.0"/>
+			</extension>
+		</extension>
+		<type value="element"/>
+		<expression value="BiologicallyDerivedProduct"/>
+	</context>
+  
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+  
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="The intended recipient of a directed or designated biologically derived product"/>
+			<definition value="The biologicallyderivedproduct-intendedRecipient extension can be used to record the intended recipient of the BiologicallyDerivedProduct to satisfy product traceability requirements, and does not represent administration, nor does it prevent administration to a different recipient at a future date. Further detail on the traceability requirements can be found in the BiologicallyDerivedProduct resource [Intended Recipients](http://hl7.org/fhir/biologicallyderivedproduct.html#intendedrecipient)."/>
+			<comment value="The biologicallyderivedproduct-intendedRecipient extension and BiologicallyDerivedProduct.collection.sourcePatient can contain references to identifiable patients. Implementers shall ensure the appropriate data access controls are established."/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension">
+			<path value="Extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/StructureDefinition/biologicallyderivedproduct-intendedRecipient"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>
