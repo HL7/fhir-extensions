@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Extension for manipulation of a biologically dervied product."/>
+  <description value="Extension for manipulation of a biologically derived product."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -95,7 +95,7 @@
     <element id="Extension.extension:procedure">
       <path value="Extension.extension"/>
       <sliceName value="procedure"/>
-      <short value="Procesing procedure"/>
+      <short value="Processing procedure"/>
       <definition value="The procedure used for manipulation."/>
       <min value="0"/>
       <max value="*"/>
