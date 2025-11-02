@@ -39,7 +39,7 @@
    <li>Deprecated Extensions: There are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' and standardStatus = 'deprecated' %} deprecated extensions: see <a href="deprecated.html">the deprecated Extensions page</a>. Balloters might want to pay particular attention to this list - there has been some lack of clarity about whether extensions should be deprecated when elements are added to resources in R5/6 </li>
    <li>The conversion maps have been removed from this release - they have moved to the cross-extensions publications</li>
    <li>A significant new feature in this release is that extensions are transformed to R4 and R3 versions, so that the 
-     extension definitions found in the .r4 and .r3 packages fully valid. This involve: making sure that appropriate 
+     extension definitions found in the .r4 and .r3 packages fully valid. This involves: making sure that appropriate 
      CodeSystem and ValueSet resources are included, and using sets of extensions in place of data types defined in
      later versions. A <a href="extension-summary.html">summary of this work</a> is provided.</li>
   </ul>

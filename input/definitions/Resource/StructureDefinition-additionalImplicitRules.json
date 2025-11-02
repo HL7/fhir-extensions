@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "additionalImplicitRules",
+  "extension": [{
+    "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode": "fhir"
+  }],
+  "url": "http://hl7.org/fhir/StructureDefinition/additionalImplicitRules",
+  "version": "5.0.0",
+  "name": "AdditionalImplicitRules",
+  "title": "Additional Implicit Rules",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-08-22",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact": [
+    {
+      "name" : "FHIR Infrastructure WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value" : "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],  
+  "description": "Additional implicit rules beyond the single policy that can be pointed to by Resource.implicitRules.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DomainResource"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Additional implicit rules beyond the single policy that can be pointed to by Resource.implicitRules",
+        "definition": "Additional implicit rules beyond the single policy that can be pointed to by Resource.implicitRules.",
+        "comment" : "There is no ordering implied within the list of multiple rules, nor prioritization between which rule appears as 'implicitRules' and which appear in this extension.  It is possible to use this extension even if no implicitRules element is present (e.g. because the author doesn't want to pick one of the rules to be sent elsewhere)",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/additionalImplicitRules"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      }
+    ]
+  }
+}
