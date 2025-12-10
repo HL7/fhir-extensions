@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="cqf-supportingEvidenceDefinition"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cds"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/cqf-supportingEvidenceDefinition"/>
+  <version value="5.0.0"/>
+  <name value="SupportingEvidenceDefinition"/>
+  <title value="Supporting Evidence Definition"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-12-09"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="Specifies an expression that when evaluated, returns supporting evidence. The expression may be the name of an expression defined in a measure library. If qualified it may be the name of an expression defined in any library referenced by a measure library. The expression is allowed to be a definition, or a function that takes a single argument of the same type as the population basis of the population in which it appears, in the same way that continuous variable measure observations function. The expression may return any type. The name element of the expression is required, and is used to provide a link from the MeasureReport back to the supporting evidence definition. The description element of the expression is optional, but if specified, is expected to be populated in the resulting supporting evidence in the measure report. Note also that the cqf-expressionCode extension may be used to provide a code on the expression if desired, and if specified is expected to be populated in the resulting supporting evidence."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Measure.group.population"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Supporting evidence"/>
+      <definition value="Specifies an expression that when evaluated, returns supporting evidence. The expression may be the name of an expression defined in a measure library. If qualified it may be the name of an expression defined in any library referenced by a measure library. The expression is allowed to be a definition, or a function that takes a single argument of the same type as the population basis of the population in which it appears, in the same way that continuous variable measure observations function. The expression may return any type. The name element of the expression is required, and is used to provide a link from the MeasureReport back to the supporting evidence definition. The description element of the expression is optional, but if specified, is expected to be populated in the resulting supporting evidence in the measure report. Note also that the cqf-expressionCode extension may be used to provide a code on the expression if desired, and if specified is expected to be populated in the resulting supporting evidence."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/cqf-supportingEvidenceDefinition"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Expression"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
