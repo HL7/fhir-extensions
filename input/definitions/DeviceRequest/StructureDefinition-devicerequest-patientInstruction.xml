@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Simple concise instructions to be read by the patient.  For example  “twice a day” rather than “BID.”."/>
+  <description value="Simple concise instructions to be read by the patient.  For example  &quot;twice a day&quot; rather than &quot;BID.&quot;."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Patient Friendly Instructions"/>
-      <definition value="Simple concise instructions to be read by the patient.  For example  “twice a day” rather than “BID.”."/>
+      <definition value="Simple concise instructions to be read by the patient.  For example  &quot;twice a day&quot; rather than &quot;BID.&quot;."/>
       <comment value="Should use only common terms and sentences.  Use of unfamiliar words and jargon should be avoided."/>
       <min value="0"/>
       <max value="*"/>

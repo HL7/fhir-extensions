@@ -56,6 +56,15 @@
     <type value="element"/>
     <expression value="Task.requestedPerformer"/>
   </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="6.0"/>
+      </extension>
+    </extension> 
+    <type value="element"/>
+    <expression value="SupplyRequest.requestedPerformer"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>

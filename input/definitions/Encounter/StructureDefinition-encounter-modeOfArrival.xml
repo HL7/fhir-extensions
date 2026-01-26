@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="Identifies whether a patient arrives at the reporting facility via ambulance and the type of ambulance that was used."/>
+  <description value="Identifies how the patient arrives at the reporting facility, for example via an ambulance or other mode of transport."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="The method of arrival of the patient into the facility"/>
-      <definition value="Identifies whether a patient arrives at the reporting facility via ambulance and the type of ambulance that was used."/>
+      <definition value="Identifies how the patient arrives at the reporting facility, for example via an ambulance or other mode of transport."/>
       <min value="0"/>
       <max value="1"/>
     </element>

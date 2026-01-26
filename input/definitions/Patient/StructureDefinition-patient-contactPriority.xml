@@ -18,7 +18,7 @@
   </identifier>
   <version value="5.0.0"/>
   <name value="PatContactPriority"/>
-  <title value="Patient Contact Priority"/>
+  <title value="Contact Priority"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="The order in which contacts for a patient should be used.  For example, if a patient has multiple people listed as an emergency contact, which of those should be called first in an emergency."/>
+  <description value="The order in which contacts would be used for the purpose of the contact.  For example, if a patient has multiple people listed as an emergency contact, which of those should be called first in an emergency. Or an Organization might have multiple contacts, one for press inquiries and two for patient inquires (one for scheduling, and one for billing questions).  All three of those contacts may have a rank=1, since they all have different purposes."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -42,14 +42,22 @@
     <type value="element"/>
     <expression value="Patient.contact"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="Organization.contact"/>
+  </context>
+  <context>
+    <type value="fhirpath"/>
+    <expression value="ofType(ExtendedContactDetail)"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Order in which contacts should be used"/>
-      <definition value="The order in which contacts for a patient should be used.  For example, if a patient has multiple people listed as an emergency contact, which of those should be called first in an emergency."/>
+      <short value="Order in which contacts would be used for the purpose of the contact"/>
+      <definition value="The order in which contacts would be used for the purpose of the contact.  For example, if a patient has multiple people listed as an emergency contact, which of those should be called first in an emergency. Or an Organization might have multiple contacts, one for press inquiries and two for patient inquires (one for scheduling, and one for billing questions).  All three of those contacts may have a rank=1, since they all have different purposes."/>
       <min value="0"/>
       <max value="1"/>
     </element>

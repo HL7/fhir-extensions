@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="encounter-link-type"/>
+  <meta>
+    <lastUpdated value="2025-11-06T00:00:00+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/encounter-link-type"/>
+  <version value="5.0.0"/>
+  <name value="EncounterLinkType"/>
+  <title value="Encounter Link Type CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
+  <description value="The type of link between two encounters."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="replaces"/>
+    <display value="Replaces"/>
+    <definition value="The encounter referenced by the link is being replaced by this encounter. This encounter may be replacing a draft or terminated encounter. Note that this is not the reverse of 'replaced-by'."/>
+  </concept>
+  <concept>
+    <code value="replaced-by"/>
+    <display value="Replaced By"/>
+    <definition value="The encounter referenced by the link has been replaced by this encounter. This encounter may have been replaced by a draft or terminated encounter. Note that this is not the reverse of 'replaces'."/>
+  </concept>
+</CodeSystem>

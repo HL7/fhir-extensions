@@ -122,11 +122,13 @@
       "id" : "Extension.extension:priority.value[x]",
       "path" : "Extension.extension.value[x]",
       "min" : 1,
+      "definition" : "The alert priority for which the alert detection activation state is described.",
+      "comment" : "Both this element and the corresponding element in DeviceAlert are of type CodeableConcept, which allows alternate expressions of the same concept. If the same single priority is given in this element and in `DeviceAlert.priority`, they are considered matching priorities; however, no particular rules are expressed here for when either element contains multiple repetitions, and what \"equivalent\" priorities are.",
       "type" : [{
-        "code" : "code"
+        "code" : "CodeableConcept"
       }],
       "binding" : {
-        "strength" : "required",
+        "strength" : "extensible",
         "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-priority"
       }
     },
@@ -186,11 +188,12 @@
       "id" : "Extension.extension:activationState.value[x]",
       "path" : "Extension.extension.value[x]",
       "min" : 1,
+      "comment" : "Both this element and the corresponding element in DeviceAlert are of type CodeableConcept, which allows alternate expressions of the same concept. If the same single activation state is given in this element and in `DeviceAlert.signal.activationState`, they are considered matching activation states; however, no particular rules are expressed here for when either element contains multiple repetitions, and what \"equivalent\" activation states are.",
       "type" : [{
-        "code" : "code"
+        "code" : "CodeableConcept"
       }],
       "binding" : {
-        "strength" : "required",
+        "strength" : "extensible",
         "valueSet" : "http://hl7.org/fhir/ValueSet/devicealert-activationState"
       }
     },

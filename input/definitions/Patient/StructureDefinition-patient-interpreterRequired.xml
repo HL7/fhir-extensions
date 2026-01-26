@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/pafm"/>
     </telecom>
   </contact>
-  <description value="Indicates whether an interpreter is required to facilitate communication in a healthcare setting. While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, and Encounter."/>
+  <description value="Indicates whether an interpreter is required to facilitate communication in a healthcare setting. While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, Encounter, Appointment and ServiceRequest."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -54,6 +54,14 @@
     <type value="element"/>
     <expression value="Practitioner"/>
   </context>
+  <context>
+    <type value="element"/>
+    <expression value="Appointment"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ServiceRequest"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
@@ -61,8 +69,8 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Whether an interpreter is required"/>
-      <definition value="Indicates whether an interpreter is required to facilitate communication in a healthcare setting. While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, and Encounter."/>
-      <comment value="The individual does not speak the default language of the organization, and hence requires an interpreter. If other languages are in the Communications list, then that would be the type of interpreter required.&#xD;&#xD;*While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, and Encounter.*&#xD;&#xD;When used on Patient, RelatedPerson, or Practitioner, it indicates a default or assumed need for an interpreter.&#xD;When used on Encounter, it indicates that an interpreter is needed to facilitate communication between some participants in that Encounter.&#xD;The encounter-level evaluation of whether an interpreter is needed might involve evaluating the language proficiencies of the participants." />
+      <definition value="Indicates whether an interpreter is required to facilitate communication in a healthcare setting. While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, Encounter, Appointment and ServiceRequest."/>
+      <comment value="The individual does not speak the default language of the organization, and hence requires an interpreter. If other languages are in the Communications list, then that would be the type of interpreter required.&#xD;&#xD;*While this extension is named patient-interpreterRequired for backwards compatibility, it may also be used on RelatedPerson, Practitioner, Encounter, Appointment and ServiceRequest.*&#xD;&#xD;When used on Patient, RelatedPerson, or Practitioner, it indicates a default or assumed need for an interpreter.&#xD;When used on Encounter, Appointment or ServiceRequest, it indicates that an interpreter is needed to facilitate communication between some participants in the service.&#xD;The encounter-level evaluation of whether an interpreter is needed might involve evaluating the language proficiencies of the participants." />
       <min value="0"/>
       <max value="1"/>
     </element>

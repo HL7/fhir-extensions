@@ -67,6 +67,10 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-reasonCancelled"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

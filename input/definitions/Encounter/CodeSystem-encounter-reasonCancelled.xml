@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="encounter-reasonCancelled"/>
+  <meta>
+    <lastUpdated value="2025-11-03T07:07:38.434+11:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pa"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/encounter-reasonCancelled"/>
+  <version value="5.0.0"/>
+  <name value="EncounterReasonCancelled"/>
+  <title value="Reasons an Encounter was Cancelled CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Patient Administration"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/pafm"/>
+    </telecom>
+  </contact>
+  <description value="Codes indicating the reason an encounter was cancelled."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="patient-requested"/>
+    <display value="Patient Requested"/>
+    <definition value="The patient (or caregiver) requested the visit be canceled, but did not provide a more specific reason."/>
+  </concept>
+  <concept>
+    <code value="provider-requested"/>
+    <display value="Provider Requested"/>
+    <definition value="The provider's office requested the cancellation, for example, if the provider is going on vacation."/>
+  </concept>
+  <concept>
+    <code value="patient-deceased"/>
+    <display value="Patient Deceased"/>
+    <definition value="The patient has died."/>
+  </concept>
+  <concept>
+    <code value="weather"/>
+    <display value="Weather"/>
+    <definition value="Inclement weather or natural event."/>
+  </concept>
+  <concept>
+    <code value="lack-of-transportation"/>
+    <display value="Lack of Transportation"/>
+    <definition value="The patient was unable to arrange for transportation to the appointment."/>
+  </concept>
+  <concept>
+    <code value="hospitalized"/>
+    <display value="Hospitalized"/>
+    <definition value="The patient was hospitalized."/>
+  </concept>
+  <concept>
+    <code value="no-interpreter-available"/>
+    <display value="No Interpreter Available"/>
+    <definition value="An interpreter was unavailable."/>
+  </concept>
+  <concept>
+    <code value="patient-feeling-better"/>
+    <display value="Patient Feeling Better"/>
+    <definition value="The patient's condition has improved and no longer needs attention."/>
+  </concept>
+  <concept>
+    <code value="patient-moved"/>
+    <display value="Patient Moved"/>
+    <definition value="The patient has moved out of the area."/>
+  </concept>
+</CodeSystem>

@@ -31,7 +31,7 @@
   <description value="DeviceAlert Activation State Codes"/>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/CodeSystem/devicealert-activationState"/>
+      <system value="http://hl7.org/fhir/devicealert-activationState"/>
     </include>
   </compose>
 </ValueSet>

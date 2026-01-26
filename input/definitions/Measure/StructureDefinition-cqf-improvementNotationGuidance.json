@@ -31,10 +31,7 @@
     }
   ],
   "description": "Narrative text to explain the improvement notation and how to interpret it.",
-  "purpose": "In some cases, additional guidance is required to clearly communicate
-    measure intent around improvement notation. For example, a measure looking at
-    Ceasarean-section births may have an improvement notation of \"decrease\", but
-    it is critical to be able to communicate that a measure score of 0 is not the intent.",
+  "purpose": "In some cases, additional guidance is required to clearly communicate measure intent around improvement notation. For example, a measure looking at Ceasarean-section births may have an improvement notation of \"decrease\", but it is critical to be able to communicate that a measure score of 0 is not the intent.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -9,7 +9,11 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="The `Encounter.partOf` property should be used."/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter"/>
   <identifier>
@@ -19,7 +23,7 @@
   <version value="5.0.0"/>
   <name value="EncAssociatedEncounter"/>
   <title value="Encounter Associated Encounter"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2015-02-21"/>
   <publisher value="HL7 International / Patient Administration"/>
