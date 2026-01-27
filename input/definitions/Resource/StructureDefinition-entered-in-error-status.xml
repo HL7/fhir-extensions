@@ -22,7 +22,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="This extension is for canonical resources to indicate where a human readable web page describing the resource can be found, if it's at a different location to the canonical URL itself."/>
+  <description value="This extension is for canonical resources to indicate how a erroneous resource is recorded. In many cases, erroneous records are simply deleted, but in some circumstances in clinical records, once an erroneous record has been created, it must be retained but marked as an having been created in error."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -43,7 +43,8 @@
    <element id="Extension">
       <path value="Extension"/> 
       <short value="entered-in-error-status"/> 
-      <definition value="Where a human readable web page describing the resource can be found, if it's at a different location to the canonical URL itself."/> 
+      <definition value="This extension is for canonical resources to indicate how a erroneous resource is recorded."/> 
+      <comment value="In many cases, erroneous records are simply deleted, but in some circumstances in clinical records, once an erroneous record has been created, it must be retained but marked as an having been created in error. How this is handled in resources depends on the resource, and it's context of use."/> 
       <min value="0"/> 
       <max value="1"/> 
     </element> 

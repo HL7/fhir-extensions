@@ -167,7 +167,8 @@
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="uri"/>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/SearchParameter"/>
       </type>
     </element>
 
@@ -197,7 +198,8 @@
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="uri"/>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/SearchParameter"/>
       </type>
     </element>
 

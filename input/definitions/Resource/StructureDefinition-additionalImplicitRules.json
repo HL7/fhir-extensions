@@ -44,7 +44,7 @@
         "path": "Extension",
         "short": "Additional implicit rules beyond the single policy that can be pointed to by Resource.implicitRules",
         "definition": "Additional implicit rules beyond the single policy that can be pointed to by Resource.implicitRules.",
-        "comment" : "There is no ordering implied within the list of multiple rules, nor prioritization between which rule appears as 'implicitRules' and which appear in this extension.  It is possible to use this extension even if no implicitRules element is present (e.g. because the author doesn't want to pick one of the rules to be sent elsewhere)",
+        "comment" : "There is no ordering implied within the list of multiple rules, nor prioritization between which rule appears as 'implicitRules' and which appear in this extension.  It is possible to use this extension even if no implicitRules element is present (e.g. because the author doesn't want to pick one of the rules to be sent elsewhere). Note that this is defined on DomainResource rather than Resource, because Resources can't have extensions.",
         "min": 0,
         "max": "*"
       },
