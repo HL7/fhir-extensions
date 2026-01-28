@@ -141,6 +141,68 @@
       </type>
     </element>
 
+    <element id="Extension.extension:startParam">
+      <path value="Extension.extension"/>
+      <sliceName value="startParam"/>
+      <short value="Search Parameter for interpreting $everything.start"/>
+      <definition value="Search Parameter for interpreting $everything.start"./>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:startParam.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:startParam.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="startParam"/>
+    </element>
+    <element id="Extension.extension:startParam.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/SearchParameter"/>
+      </type>
+    </element>
+
+    <element id="Extension.extension:endParam">
+      <path value="Extension.extension"/>
+      <sliceName value="endParam"/>
+      <short value="Search Parameter for interpreting $everything.end"/>
+      <definition value="Search Parameter for interpreting $everything.end"./>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:endParam.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:endParam.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="endParam"/>
+    </element>
+    <element id="Extension.extension:endParam.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="canonical"/>
+        <targetProfile value="http://hl7.org/fhir/SearchParameter"/>
+      </type>
+    </element>
+
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/additional-resource-compartment"/>

@@ -49,7 +49,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Marks a resource interface that this definition implements"/>
-      <definition value="Marks that the resource definition implements an [interface](uml.html#interface) in its definition."/>
+      <definition value="Marks that the resource definition implements an [interface](uml.html#interface) in its definition. The type should be canonical, but URI is allowed for supporting older versions of FHIR"/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -67,6 +67,9 @@
       <type>
         <code value="canonical"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+      </type>
+      <type>
+        <code value="uri"/>
       </type>
     </element>
   </differential>

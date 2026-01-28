@@ -52,9 +52,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Suggested Name for code generation"/>
-      <definition value="A name that can be used for code generation when generating named enumerations for the binding."/>
-      <comment value="There is no need to use this name for conformance to the specification, but implementers may prefer to match e.g. the schema enumeration name."/>
+      <short value="A name used when rendering the binding and summarizing bindings in tables"/>
+      <definition value="A name used when rendering the binding and summarizing bindings in tables."/>
+      <comment value="If the same binding name appears multiple times within the same StructureDefinition, it SHALL have the same description or value set. There is no need to use this name for conformance to the specification, but implementers may prefer to match e.g. the schema enumeration name."/>
       <min value="0"/>
       <max value="1"/>
     </element>
