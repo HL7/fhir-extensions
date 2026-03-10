@@ -62,27 +62,30 @@
       <short value="Device Maintenance Responsibility"/>
       <definition value="The entity or entities that are responsible for maintenance for a given device. Use DeviceAssociation.relationship with a value of 'maintainer' after R5."/>
     </element>
-    <element id="Extension.extension:person">
+    <element id="Extension.extension:participant">
       <path value="Extension.extension"/>
-      <sliceName value="person"/>
+      <sliceName value="participant"/>
       <short value="Responsible individual"/>
       <definition value="A person that is individually responsible for the device maintenance."/>
       <min value="0"/>
       <max value="1"/>
     </element>
-    <element id="Extension.extension:person.extension">
+    <element id="Extension.extension:participant.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:person.url">
+    <element id="Extension.extension:participant.url">
       <path value="Extension.extension.url"/>
-      <fixedUri value="person"/>
+      <fixedUri value="participant"/>
     </element>
-    <element id="Extension.extension:person.value[x]">
+    <element id="Extension.extension:participant.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
       </type>
     </element>
     <element id="Extension.extension:organization">
