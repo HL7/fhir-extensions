@@ -145,7 +145,7 @@
       <path value="Extension.extension"/>
       <sliceName value="startParam"/>
       <short value="Search Parameter for interpreting $everything.start"/>
-      <definition value="Search Parameter for interpreting $everything.start"./>
+      <definition value="Search Parameter for interpreting $everything.start" />
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -176,7 +176,7 @@
       <path value="Extension.extension"/>
       <sliceName value="endParam"/>
       <short value="Search Parameter for interpreting $everything.end"/>
-      <definition value="Search Parameter for interpreting $everything.end"./>
+      <definition value="Search Parameter for interpreting $everything.end"/>
       <min value="0"/>
       <max value="1"/>
       <type>
