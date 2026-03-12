@@ -43,7 +43,15 @@
   "context": [
     {
       "type": "element",
+      "expression": "MeasureReport.group.population"
+    },
+    {
+      "type": "element",
       "expression": "MeasureReport.group.population.count"
+    },
+    {
+      "type": "element",
+      "expression": "MeasureReport.group.stratifier.stratum.population"
     },
     {
       "type": "element",
