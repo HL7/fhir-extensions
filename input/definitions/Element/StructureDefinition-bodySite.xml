@@ -9,7 +9,7 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/bodySite"/>
   <identifier>
@@ -19,7 +19,7 @@
   <version value="5.0.0"/>
   <name value="BodyStructureReference"/>
   <title value="BodyStructure Reference"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2013-12-05"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -29,7 +29,8 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Record details about the anatomical location of a specimen or body part. This resource may be used when a coded concept does not provide the necessary detail needed for the use case."/>
+  <description value="DEPRECATED: Record details about the anatomical location of a specimen or body part. This resource may be used when a coded concept does not provide the necessary detail needed for the use case."/>
+  <purpose value="We will deprecate this extension and add text guidance that for versions prior to R5, the implementer must use the pre-adoption extension referencing the R5 element."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -69,7 +70,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Target anatomic location or structure"/>
-      <definition value="Record details about the anatomical location of a specimen or body part. This resource may be used when a coded concept does not provide the necessary detail needed for the use case."/>
+      <definition value="DEPRECATED: Record details about the anatomical location of a specimen or body part. This resource may be used when a coded concept does not provide the necessary detail needed for the use case."/>
       <min value="0"/>
       <max value="1"/>
     </element>
