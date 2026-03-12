@@ -78,6 +78,8 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
       </type>
+      <short value="Reference to suggested specimen or ServiceRequest that yielded the specimen"/>
+      <definition value="References the specific specimen or the service request that yielded the specimen that is preferred to be used."/>
     </element>
 
     <!-- fallBackAction: code with binding -->
