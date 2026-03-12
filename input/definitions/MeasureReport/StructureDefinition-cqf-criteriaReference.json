@@ -27,7 +27,7 @@
       ]
     }
   ],
-  "description": "Specifies which criteria is the input for calculations. Specifies which criteria a resource was considered for.",
+  "description": "Specifies which criteria is used as the input for calculations when there are multiple populations of the same type (such as continuous variable and ratio measures). The extension can also appear on evaluated resources and supplemental data to indicate which criteria the resource is associated with (i.e. which criteria was responsible for the reference to the resource). The reference SHALL be to the linkId of a criteria within the referenced measure. For backwards-compatibility, systems MAY support references to the id element of the criteria.",
   "jurisdiction": [
     {
       "coding": [
@@ -94,7 +94,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Criteria reference",
-        "definition": "Reference a criteria by specifying that criteria's unique id",
+        "definition": "Reference a criteria by specifying that criteria's unique id. The reference SHALL be to the linkId of a criteria within the referenced measure. For backwards-compatibility, systems MAY support references to the id element of the criteria.",
         "comment": "When used in a MeasureReport, this is a reference to the id of a criteria within the Measure referenced by the MeasureReport.",
         "min": 0,
         "max": "*"
