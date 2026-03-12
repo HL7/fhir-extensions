@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="external-communication"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="fhir"/>
+    <valueCode value="oo"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1"/>
@@ -18,11 +18,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2026-03-11"/>
-  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <publisher value="HL7 International / Orders and Observations"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
   <description value="Documentation of out-of-band communication (verbal, etc.)"/>
