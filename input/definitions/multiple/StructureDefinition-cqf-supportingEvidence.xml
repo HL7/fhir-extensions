@@ -36,7 +36,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="MeasureRepor.group.population"/>
+    <expression value="MeasureReport.group.population"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
