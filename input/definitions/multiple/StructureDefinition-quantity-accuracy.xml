@@ -44,7 +44,7 @@
     <type value="element"/>
     <expression value="DeviceMetric"/>
   </context>
-  <contextInvariant value="$this is Quantity"/>
+  <contextInvariant value="(%resource is Observation) implies ($this is Quantity)"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
