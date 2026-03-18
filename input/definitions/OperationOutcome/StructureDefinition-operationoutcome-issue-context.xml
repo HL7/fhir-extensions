@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="operationoutcome-message-context"/>
+  <id value="operationoutcome-issue-context"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-context"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1489"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Provides additional detail about the context in which this issue was created."/>
+  <description value="Indicates the structure definition, operation, or other contextual information in which the system behavior was being performed that resulted in the issue."/>
   <purpose value="This is typically used to explain what was happening when the issue was detected/created. The validator uses this to explain what profile is being validated when the issue was created."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -50,9 +50,9 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="The context of the issue"/>
-      <definition value="Provides additional detail about the context in which this issue was created."/>
+      <definition value="Indicates the structure definition, operation, or other contextual information in which the system behavior was being performed that resulted in the issue."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -60,7 +60,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
