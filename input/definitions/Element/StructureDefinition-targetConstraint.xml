@@ -215,7 +215,7 @@
       <sliceName value="expression"/>
       <short value="The invariant expression"/>
       <definition value="An expression providing a formal representation of the invariant condition."/>
-      <comment value="The expression will have access to `%target` (the resource that was instantiated) and `%definition` (the definition for the instantiated resource)."/>
+      <comment value="The expression will have access to `%target` (the resource that was instantiated) and `%definition` (the definition for the instantiated resource).  This expression is expected to evaluate to a boolean.  If it evaluates to an empty collection, it is treated as false.  Any other non-boolean value is considered an error in the profile including the extension."/>
       <min value="1"/>
       <max value="1"/>
       <type>
