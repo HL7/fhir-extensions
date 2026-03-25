@@ -30,7 +30,7 @@
       ]
     }
   ],
-  "description": "Surfaces the CQL type of the parameter definition on which it appears.",
+  "description": "Surfaces the CQL type of the extension, parameter, or parameter definition on which it appears.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -53,6 +53,10 @@
     {
       "type": "element",
       "expression": "Parameters.parameter.part"
+    },
+    {
+      "type": "element",
+      "expression": "Extension"
     }
   ],
   "type": "Extension",
@@ -64,7 +68,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "What CQL type",
-        "definition": "Surfaces the CQL type of the parameter definition on which it appears. The value of this extension is a string that is the CQL type specifier for the type of the parameter.",
+        "definition": "Surfaces the CQL type of the extension, parameter, or parameter definition on which it appears. The value of this extension is a string that is the CQL type specifier for the type of the value or parameter.",
         "min": 0,
         "max": "1"
       },
