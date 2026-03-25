@@ -1,14 +1,40 @@
 {
   "resourceType" : "StructureDefinition",
   "id" : "DeviceDefinition-partVariableCount",
-  "url" : "http://example.org/ig/test/StructureDefinition/DeviceDefinition-partVariableCount",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "oo"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/DeviceDefinition-partVariableCount",
   "name" : "DeviceDefinitionPartVariableCount",
   "title" : "DeviceDefinition Part Variable Count",
   "status" : "draft",
+  "publisher" : "HL7 International / Orders and Observations",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders"
+    }]
+  }],
   "description" : "Indicates the minimum and maximum permissible quantity of the part in the defined device, without regard for how the presence of other parts impact those values.\n\nFor example, a device may have connectors for up to three sensors of different types. Each sensor type definition would be referenced in `hasPart.reference`; it would have no `hasPart.count` value, but instead use this extension on `hasPart.count` and setting a minimum count of zero, and maximum of one.",
   "kind" : "complex-type",
   "abstract" : false,
   "context" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+      "extension" : [{
+        "url" : "startFhirVersion",
+        "valueCode" : "5.0"
+      }]
+    }],
     "type" : "element",
     "expression" : "DeviceDefinition.hasPart.count"
   }],
@@ -28,7 +54,7 @@
         "severity" : "error",
         "human" : "Minimum count must be less than or equal to maximum count of part.",
         "expression" : "$this.extension('minimum').value.ofType(unsignedInt) <= $this.extension('maximum').value.ofType(unsignedInt)",
-        "source" : "http://example.org/ig/test/StructureDefinition/DeviceDefinition-partVariableCount"
+        "source" : "http://hl7.org/fhir/StructureDefinition/DeviceDefinition-partVariableCount"
       }]
     },
     {
@@ -91,7 +117,7 @@
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://example.org/ig/test/StructureDefinition/DeviceDefinition-partVariableCount"
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/DeviceDefinition-partVariableCount"
     },
     {
       "id" : "Extension.value[x]",

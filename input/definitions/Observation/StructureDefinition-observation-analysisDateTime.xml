@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="Analytical result date/time stamp"/>
       <definition value="The date/time stamp associated with the generation of the analytical result by an instrument."/>
-      <comment value="Compared to https://hl7.org/fhir/R5/observation-definitions.html#Observation.issued, this date/time is created by an instrument used to obtain the observation and has not been reviewed and released."/>
+      <comment value="Compared to [[[https://hl7.org/fhir/R5/observation-definitions.html#Observation.issued]]], this date/time is created by an instrument used to obtain the observation and has not been reviewed and released."/>
 	  <min value="0"/>
       <max value="1"/>
     </element>
