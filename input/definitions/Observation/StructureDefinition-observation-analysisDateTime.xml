@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="The time stamp associated with the generation of the analytical result."/>
+  <description value="The date/time stamp associated with the generation of the analytical result by an instrument. This extension represents when the analysis of the specimen occurred, while the Observation.effective[x] is when the specimen was collected. "/>
   <fhirVersion value="6.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,9 +48,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Analytical result time stamp"/>
-      <definition value="The time stamp associated with the generation of the analytical result."/>
-      <min value="0"/>
+      <short value="Analytical result date/time stamp"/>
+      <definition value="The date/time stamp associated with the generation of the analytical result by an instrument."/>
+      <comment value="Compared to https://hl7.org/fhir/R5/observation-definitions.html#Observation.issued, this date/time is created by an instrument used to obtain the observation and has not been reviewed and released."/>
+	  <min value="0"/>
       <max value="1"/>
     </element>
     <element id="Extension.extension">

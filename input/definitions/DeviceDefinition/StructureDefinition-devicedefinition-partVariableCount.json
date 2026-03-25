@@ -1,0 +1,102 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "DeviceDefinition-partVariableCount",
+  "url" : "http://example.org/ig/test/StructureDefinition/DeviceDefinition-partVariableCount",
+  "name" : "DeviceDefinitionPartVariableCount",
+  "title" : "DeviceDefinition Part Variable Count",
+  "status" : "draft",
+  "description" : "Indicates the minimum and maximum permissible quantity of the part in the defined device, without regard for how the presence of other parts impact those values.\n\nFor example, a device may have connectors for up to three sensors of different types. Each sensor type definition would be referenced in `hasPart.reference`; it would have no `hasPart.count` value, but instead use this extension on `hasPart.count` and setting a minimum count of zero, and maximum of one.",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "DeviceDefinition.hasPart.count"
+  }],
+  "contextInvariant" : ["$this.hasValue().not()"],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "DeviceDefinition Part Variable Count",
+      "definition" : "Indicates the minimum and maximum permissible quantity of the part in the defined device, without regard for how the presence of other parts impact those values.\n\nFor example, a device may have connectors for up to three sensors of different types. Each sensor type definition would be referenced in `hasPart.reference`; it would have no `hasPart.count` value, but instead use this extension on `hasPart.count` and setting a minimum count of zero, and maximum of one.",
+      "max" : "1",
+      "constraint" : [{
+        "key" : "pvc2",
+        "severity" : "error",
+        "human" : "Minimum count must be less than or equal to maximum count of part.",
+        "expression" : "$this.extension('minimum').value.ofType(unsignedInt) <= $this.extension('maximum').value.ofType(unsignedInt)",
+        "source" : "http://example.org/ig/test/StructureDefinition/DeviceDefinition-partVariableCount"
+      }]
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "min" : 2
+    },
+    {
+      "id" : "Extension.extension:minimum",
+      "path" : "Extension.extension",
+      "sliceName" : "minimum",
+      "short" : "The minimum count of the part in the device",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:minimum.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:minimum.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "minimum"
+    },
+    {
+      "id" : "Extension.extension:minimum.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "Extension.extension:maximum",
+      "path" : "Extension.extension",
+      "sliceName" : "maximum",
+      "short" : "The maximum count of the part in the device",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:maximum.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:maximum.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "maximum"
+    },
+    {
+      "id" : "Extension.extension:maximum.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "unsignedInt"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://example.org/ig/test/StructureDefinition/DeviceDefinition-partVariableCount"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
+  }
+}
