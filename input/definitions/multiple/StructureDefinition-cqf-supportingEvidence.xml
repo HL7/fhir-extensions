@@ -111,7 +111,7 @@
       <path value="Extension.extension"/>
       <sliceName value="code"/>
       <short value="The code of the supporting evidence definition, if provided"/>
-      <definition value="This corresponds to the cqf-expressionCode extension of the supporting evidence definition."/>
+      <definition value="This corresponds to the expression-coding extension of the supporting evidence definition."/>
       <min value="0"/>
       <max value="1"/>
       <type>
