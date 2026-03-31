@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Reference to reagents used to generate this observation.  This is intended for this for in-lab transactions between instruments and Laboratory Information Systems (LIS)."/>
+  <description value="Reference to reagents used to generate this observation.  This is intended for in-lab transactions between instruments and Laboratory Information Systems (LIS)."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
