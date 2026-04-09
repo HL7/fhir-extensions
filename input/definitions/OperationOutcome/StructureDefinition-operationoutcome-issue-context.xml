@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="codesystem-replacedby"/>
+  <id value="operationoutcome-issue-context"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="vocab"/>
+    <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="3"/>
+    <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/codesystem-replacedby"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1139"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1489"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="CSReplacedby"/>
-  <title value="CodeSystem Replacedby"/>
-  <status value="active"/>
+  <name value="OOIssueMessageContext"/>
+  <title value="OperationOutcome Message Context"/>
+  <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-12-28T16:55:11+11:00"/>
-  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <date value="2014-01-31"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A code that replaces this - use this code instead.  This extension is not used in R6 because identification of replacement codes should be captured using the concept properties replacedByCode and replacedByCoding."/>
+  <description value="Indicates the structure definition, operation, or other contextual information in which the system behavior was being performed that resulted in the issue."/>
+  <purpose value="This is typically used to explain what was happening when the issue was detected/created. The validator uses this to explain what profile is being validated when the issue was created."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -39,13 +40,8 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
-    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
-      <extension url="endFhirVersion">
-        <valueCode value="5.0"/>
-      </extension>
-    </extension>
     <type value="element"/>
-    <expression value="CodeSystem.concept"/>
+    <expression value="OperationOutcome.issue"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -53,12 +49,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="A code that replaces this"/>
-      <definition value="A code that replaces this - use this code instead."/>
-      <comment value="Usually such codes are deprecated (retired)."/>
+      <short value="The context of the issue"/>
+      <definition value="Indicates the structure definition, operation, or other contextual information in which the system behavior was being performed that resulted in the issue."/>
       <min value="0"/>
-      <max value="1"/>
-      <isModifier value="false"/>
+      <max value="*"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -66,13 +60,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/codesystem-replacedby"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="Coding"/>
+        <code value="string"/>
       </type>
     </element>
   </differential>
