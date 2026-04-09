@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="perform-condition"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/perform-condition"/>
+  <version value="5.0.0"/>
+  <name value="PerformCondition"/>
+  <title value="Perform Condition"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-03-17"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="A condition on whether to perform the ServiceRequest, which applies when .doNotPerform is false or absent."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="ServiceRequest"/>
+  </context>
+  <contextInvariant value="(%resource is ServiceRequest) implies (%resource.doNotPerform.empty() or %resource.doNotPerform = false)"/>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="A condition on whether to perform the ServiceRequest, which applies when .doNotPerform is false or absent"/>
+      <min value="0"/>
+      <max value="1"/>
+	  <isModifier value="true"/>
+	  <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because the expression can apply when the .doNotPerform is false or absent, and conveys a condition on whether to perform the ServiceRequest."/> 
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/perform-condition"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Expression"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
