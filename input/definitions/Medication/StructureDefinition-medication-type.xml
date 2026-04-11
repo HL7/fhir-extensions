@@ -17,7 +17,7 @@
   <title value="Medication Type"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-07-16"/>
+  <date value="2026-04-11"/>
   <publisher value="HL7 International / Pharmacy"/>
   <contact>
     <telecom>
@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/medication"/>
     </telecom>
   </contact>
-  <description value="This extension indicates what kind of medicine is being represented. Generally, medications can refer to Generic Medications/Formulations, Commercial Medications, and Compounded Medication/Preparations, though other categories are used. TODO: see task FHIR-46901."/>
+  <description value="Identifies the type or classification of a medication entry. When used on the&#xA;Medication resource, it indicates the overall nature of the medication record&#xA;(e.g., whether it represents a branded product, a generic product, or an&#xA;extemporaneous preparation). When used on Medication.code.coding, it classifies&#xA;the specific coding within the codeable concept, distinguishing whether that&#xA;particular code refers to a medicinal product, a medicinal product package, or&#xA;an extemporaneous preparation."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -48,10 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="What kind of medicine is being represented."/>
-      <definition value="This extension indicates what kind of medicine is being represented. Generally, medications can refer to Generic Medications/Formulations, Commercial Medications, and Compounded Medication/Preparations, though other categories are used. TODO: see task FHIR-46901."/>
-      <min value="0"/>
-      <max value="1"/>
+      <short value="What kind of medicine is being represented"/>
+      <definition value="Identifies the type or classification of a medication entry. When used on the&#xA;Medication resource, it indicates the overall nature of the medication record&#xA;(e.g., whether it represents a branded product, a generic product, or an&#xA;extemporaneous preparation). When used on Medication.code.coding, it classifies&#xA;the specific coding within the codeable concept, distinguishing whether that&#xA;particular code refers to a medicinal product, a medicinal product package, or&#xA;an extemporaneous preparation."/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -69,7 +67,7 @@
       </type>
       <binding>
         <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/medication-type"/>
+        <valueSet value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions/ValueSet/medication-type-vs"/>
       </binding>
     </element>
   </differential>
