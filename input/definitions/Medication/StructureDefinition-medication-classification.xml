@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/medication"/>
     </telecom>
   </contact>
-  <description value="Provides a classification for a medication, mirroring the structure of&#xA;MedicationKnowledge.classification. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;the same structured way as MedicationKnowledge, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference."/>
+  <description value="Provides a classification for a medication, mirroring the structure of&#xA;MedicationKnowledge.classification. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -45,7 +45,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Medication Classification"/>
-      <definition value="Provides a classification for a medication, mirroring the structure of&#xA;MedicationKnowledge.classification. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;the same structured way as MedicationKnowledge, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference."/>
+      <definition value="Provides a classification for a medication. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference."/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
