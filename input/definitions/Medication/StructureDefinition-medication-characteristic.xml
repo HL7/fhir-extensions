@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="medication-characteristic"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="phx"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/medication-characteristic"/>
+  <version value="5.0.0"/>
+  <name value="MedicationCharacteristic"/>
+  <title value="Medication Characteristic"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-11"/>
+  <publisher value="HL7 International / Pharmacy"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication"/>
+    </telecom>
+  </contact>
+  <description value="Provides additional characteristics of a medication, such as physical properties,&#xA;storage requirements, or other distinguishing attributes. This extension mirrors&#xA;the pattern of characteristic backbone elements found in other definitional&#xA;resources, allowing a Medication resource to carry typed key-value pairs that&#xA;describe observable or defining haracteristics of the medication."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Medication"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="A named observable or defining characteristic of the medication"/>
+      <definition value="Provides additional characteristics of a medication, such as physical properties,&#xA;storage requirements, or other distinguishing attributes. This extension mirrors&#xA;the pattern of characteristic backbone elements found in other definitional&#xA;resources, allowing a Medication resource to carry typed key-value pairs that&#xA;describe observable or defining characteristics of the medication."/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <min value="2"/>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension"/>
+      <sliceName value="type"/>
+      <short value="The characteristic (e.g., colour, shape, storage temperature)"/>
+      <definition value="Identifies which observable or defining characteristic of the medication is being described (for example colour, shape, size, imprint, coating, storage temperature). The characteristic itself is named here; the actual value is carried in the value component of the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:type.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="type"/>
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-characteristic-type"/>
+      </binding>
+    </element>
+    <element id="Extension.extension:value">
+      <path value="Extension.extension"/>
+      <sliceName value="value"/>
+      <short value="The value of the characteristic"/>
+      <definition value="The value corresponding to the characteristic named in type. The chosen datatype should match the characteristic — e.g., CodeableConcept for colour or shape, Quantity for storage temperature or size, string for free-text imprint, Ratio for concentration-like characteristics, or boolean for yes/no characteristics."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:value.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:value.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="value"/>
+    </element>
+    <element id="Extension.extension:value.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <type>
+        <code value="integer"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="Ratio"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/medication-characteristic"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

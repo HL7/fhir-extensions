@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medication-characteristic-type"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="phx"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/medication-characteristic-type"/>
+  <version value="5.0.0"/>
+  <name value="MedicationCharacteristicType"/>
+  <title value="Medication Characteristic Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-13"/>
+  <publisher value="HL7 International / Pharmacy"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication"/>
+    </telecom>
+  </contact>
+  <description value="Example codes for the kind of characteristic being described about a medication (physical properties, storage requirements, other observable or defining traits). Adapted from concepts previously carried by MedicationKnowledge.drugCharacteristic.type; provided as an illustrative set."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="imprint"/>
+    <display value="Imprint"/>
+    <definition value="Identifying marks on the product (e.g., letters or numbers stamped on a tablet)."/>
+  </concept>
+  <concept>
+    <code value="size"/>
+    <display value="Size"/>
+    <definition value="Description of the size of the product (e.g., diameter or length of a tablet or capsule)."/>
+  </concept>
+  <concept>
+    <code value="shape"/>
+    <display value="Shape"/>
+    <definition value="Description of the shape of the product (e.g., round, oval, triangular)."/>
+  </concept>
+  <concept>
+    <code value="color"/>
+    <display value="Colour"/>
+    <definition value="Description of the colour of the product."/>
+  </concept>
+  <concept>
+    <code value="coating"/>
+    <display value="Coating"/>
+    <definition value="Description of the coating of the product (e.g., sugar-coated, film-coated, enteric-coated)."/>
+  </concept>
+  <concept>
+    <code value="scoring"/>
+    <display value="Scoring"/>
+    <definition value="Description of the scoring of the product (e.g., single score, cross score, unscored)."/>
+  </concept>
+  <concept>
+    <code value="logo"/>
+    <display value="Logo"/>
+    <definition value="Description of the logo appearing on the product."/>
+  </concept>
+  <concept>
+    <code value="image"/>
+    <display value="Image"/>
+    <definition value="A visual image of the product."/>
+  </concept>
+  <concept>
+    <code value="storage-temperature"/>
+    <display value="Storage Temperature"/>
+    <definition value="Recommended or required storage temperature for the medication."/>
+  </concept>
+  <concept>
+    <code value="storage-humidity"/>
+    <display value="Storage Humidity"/>
+    <definition value="Recommended or required storage humidity conditions for the medication."/>
+  </concept>
+</CodeSystem>
