@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medication-classification-type"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="phx"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/medication-classification-type"/>
+  <version value="5.0.0"/>
+  <name value="MedicationClassificationType"/>
+  <title value="Medication Classification Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-13"/>
+  <publisher value="HL7 International / Pharmacy"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication"/>
+    </telecom>
+  </contact>
+  <description value="Example codes for the kind of classification scheme used to classify a medication (therapeutic, pharmacologic, regulatory, etc.). Provided as an illustrative set; implementers may use any appropriate code system."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="anatomical"/>
+    <display value="Anatomical Class"/>
+    <definition value="Classification by anatomical main group or body system on which the medication acts (e.g., cardiovascular system, alimentary tract). Codes may be drawn from any suitable coding system, such as the anatomical levels of WHO ATC."/>
+  </concept>
+  <concept>
+    <code value="therapeutic"/>
+    <display value="Therapeutic Class"/>
+    <definition value="Classification based on the therapeutic use of the medication (e.g., antihypertensive, analgesic)."/>
+  </concept>
+  <concept>
+    <code value="pharmacologic"/>
+    <display value="Pharmacologic Class"/>
+    <definition value="Classification based on the pharmacologic action of the medication (e.g., beta-blocker, ACE inhibitor)."/>
+  </concept>
+  <concept>
+    <code value="moa"/>
+    <display value="Mechanism of Action"/>
+    <definition value="Classification based on the mechanism by which the medication exerts its effect."/>
+  </concept>
+  <concept>
+    <code value="chemical"/>
+    <display value="Chemical Structure Class"/>
+    <definition value="Classification based on the chemical structure of the medication (e.g., benzodiazepine, statin)."/>
+  </concept>
+  <concept>
+    <code value="regulatory"/>
+    <display value="Regulatory Classification"/>
+    <definition value="Classification assigned by a regulatory authority (e.g., prescription-only, orphan drug designation, biosimilar status)."/>
+  </concept>
+  <concept>
+    <code value="controlled-substance"/>
+    <display value="Controlled Substance Schedule"/>
+    <definition value="Classification under a controlled-substance scheduling scheme (e.g., DEA schedules, narcotic/psychotropic classification)."/>
+  </concept>
+  <concept>
+    <code value="legal-status"/>
+    <display value="Legal/Marketing Status"/>
+    <definition value="Classification by legal or marketing status (e.g., prescription-only, over-the-counter, behind-the-counter)."/>
+  </concept>
+  <concept>
+    <code value="reimbursement"/>
+    <display value="Reimbursement/Formulary Class"/>
+    <definition value="Classification used for reimbursement or formulary management (e.g., tier, formulary group)."/>
+  </concept>
+  <concept>
+    <code value="essential-medicines"/>
+    <display value="Essential Medicines List"/>
+    <definition value="Inclusion on a public-health essential-medicines list (e.g., the WHO Model List of Essential Medicines)."/>
+  </concept>
+</CodeSystem>

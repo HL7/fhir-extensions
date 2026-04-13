@@ -54,7 +54,8 @@
     <element id="Extension.extension:type">
       <path value="Extension.extension"/>
       <sliceName value="type"/>
-      <short value="The type of category or classification system (e.g., ATC, therapeutic class)"/>
+      <short value="The kind of classification (e.g., anatomical, therapeutic, pharmacologic, regulatory)"/>
+      <definition value="Identifies the kind of classification being expressed — that is, the conceptual dimension along which the medication is being grouped. Examples include anatomical class, therapeutic class, pharmacologic class, mechanism of action, chemical-structure class, regulatory classification, controlled-substance schedule, legal or marketing status, reimbursement or formulary class, and public-health lists such as the WHO Essential Medicines List. Note that coding systems such as WHO ATC are not themselves a 'type'; an ATC code expresses an anatomical, therapeutic, pharmacologic, or chemical classification depending on the hierarchy level used. The specific code(s) from such a system are carried in the classification sub-extension."/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -71,11 +72,16 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-classification-type"/>
+      </binding>
     </element>
     <element id="Extension.extension:classification">
       <path value="Extension.extension"/>
       <sliceName value="classification"/>
-      <short value="A specific classification code within the given system"/>
+      <short value="The specific classification code within the scheme declared in type (e.g., an ATC code, a therapeutic-class code)"/>
+      <definition value="A specific classification concept drawn from the scheme declared in the type sub-extension. For example, if type is 'therapeutic', this carries a therapeutic-class code; if type is 'anatomical', an anatomical-group code (such as an ATC level-1 code). Multiple codes may be provided when a medication belongs to more than one class within the same scheme."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -97,6 +103,7 @@
       <path value="Extension.extension"/>
       <sliceName value="source"/>
       <short value="The source or reference for the classification (as a string or URI)"/>
+      <definition value="The authority, publication, or system that supplied this classification (free text or URI). Useful when the classification is not directly resolvable from the type coding system, or to record a specific edition/jurisdictional publisher."/>
       <min value="0"/>
       <max value="1"/>
     </element>
