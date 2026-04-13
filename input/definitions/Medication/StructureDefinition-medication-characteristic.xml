@@ -44,7 +44,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Medication Characteristic"/>
+      <short value="A named observable or defining characteristic of the medication"/>
       <definition value="Provides additional characteristics of a medication, such as physical properties,&#xA;storage requirements, or other distinguishing attributes. This extension mirrors&#xA;the pattern of characteristic backbone elements found in other definitional&#xA;resources, allowing a Medication resource to carry typed key-value pairs that&#xA;describe observable or defining traits of the medication."/>
     </element>
     <element id="Extension.extension">
@@ -54,7 +54,8 @@
     <element id="Extension.extension:type">
       <path value="Extension.extension"/>
       <sliceName value="type"/>
-      <short value="The type of characteristic (e.g., colour, shape, storage temperature)"/>
+      <short value="The characteristic (e.g., colour, shape, storage temperature)"/>
+      <definition value="Identifies which observable or defining characteristic of the medication is being described (for example colour, shape, size, imprint, coating, storage temperature). The characteristic itself is named here; the actual value is carried in the value component of the extension."/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -71,11 +72,16 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-characteristic-type"/>
+      </binding>
     </element>
     <element id="Extension.extension:value">
       <path value="Extension.extension"/>
       <sliceName value="value"/>
       <short value="The value of the characteristic"/>
+      <definition value="The value corresponding to the characteristic named in type. The chosen datatype should match the trait — e.g., CodeableConcept for colour or shape, Quantity for storage temperature or size, string for free-text imprint, Ratio for concentration-like traits, or boolean for yes/no traits."/>
       <min value="1"/>
       <max value="1"/>
     </element>
