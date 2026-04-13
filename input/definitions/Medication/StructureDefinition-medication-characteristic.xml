@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/medication"/>
     </telecom>
   </contact>
-  <description value="Provides additional characteristics of a medication, such as physical properties,&#xA;storage requirements, or other distinguishing attributes. This extension mirrors&#xA;the pattern of characteristic backbone elements found in other definitional&#xA;resources, allowing a Medication resource to carry typed key-value pairs that&#xA;describe observable or defining traits of the medication."/>
+  <description value="Provides additional characteristics of a medication, such as physical properties,&#xA;storage requirements, or other distinguishing attributes. This extension mirrors&#xA;the pattern of characteristic backbone elements found in other definitional&#xA;resources, allowing a Medication resource to carry typed key-value pairs that&#xA;describe observable or defining haracteristics of the medication."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -45,7 +45,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A named observable or defining characteristic of the medication"/>
-      <definition value="Provides additional characteristics of a medication, such as physical properties,&#xA;storage requirements, or other distinguishing attributes. This extension mirrors&#xA;the pattern of characteristic backbone elements found in other definitional&#xA;resources, allowing a Medication resource to carry typed key-value pairs that&#xA;describe observable or defining traits of the medication."/>
+      <definition value="Provides additional characteristics of a medication, such as physical properties,&#xA;storage requirements, or other distinguishing attributes. This extension mirrors&#xA;the pattern of characteristic backbone elements found in other definitional&#xA;resources, allowing a Medication resource to carry typed key-value pairs that&#xA;describe observable or defining characteristics of the medication."/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -81,7 +81,7 @@
       <path value="Extension.extension"/>
       <sliceName value="value"/>
       <short value="The value of the characteristic"/>
-      <definition value="The value corresponding to the characteristic named in type. The chosen datatype should match the trait — e.g., CodeableConcept for colour or shape, Quantity for storage temperature or size, string for free-text imprint, Ratio for concentration-like traits, or boolean for yes/no traits."/>
+      <definition value="The value corresponding to the characteristic named in type. The chosen datatype should match the characteristic — e.g., CodeableConcept for colour or shape, Quantity for storage temperature or size, string for free-text imprint, Ratio for concentration-like characteristics, or boolean for yes/no characteristics."/>
       <min value="1"/>
       <max value="1"/>
     </element>
