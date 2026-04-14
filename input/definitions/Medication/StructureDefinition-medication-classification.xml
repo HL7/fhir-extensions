@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="medication-classification"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="phx"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/medication-classification"/>
+  <version value="5.0.0"/>
+  <name value="MedicationClassification"/>
+  <title value="Medication Classification"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-04-11"/>
+  <publisher value="HL7 International / Pharmacy"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication"/>
+    </telecom>
+  </contact>
+  <description value="Provides a classification for a medication, mirroring the structure of&#xA;MedicationKnowledge.classification. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Medication"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Medication Classification"/>
+      <definition value="Provides a classification for a medication. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference."/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <min value="1"/>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension"/>
+      <sliceName value="type"/>
+      <short value="The kind of classification (e.g., anatomical, therapeutic, pharmacologic, regulatory)"/>
+      <definition value="Identifies the kind of classification being expressed — that is, the conceptual dimension along which the medication is being grouped. Examples include anatomical class, therapeutic class, pharmacologic class, mechanism of action, chemical-structure class, regulatory classification, controlled-substance schedule, legal or marketing status, reimbursement or formulary class, and public-health lists such as the WHO Essential Medicines List. Note that coding systems such as WHO ATC are not themselves a 'type'; an ATC code expresses an anatomical, therapeutic, pharmacologic, or chemical classification depending on the hierarchy level used. The specific code(s) from such a system are carried in the classification sub-extension."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:type.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="type"/>
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-classification-type"/>
+      </binding>
+    </element>
+    <element id="Extension.extension:classification">
+      <path value="Extension.extension"/>
+      <sliceName value="classification"/>
+      <short value="The specific classification code within the scheme declared in type (e.g., an ATC code, a therapeutic-class code)"/>
+      <definition value="A specific classification concept drawn from the scheme declared in the type sub-extension. For example, if type is 'therapeutic', this carries a therapeutic-class code; if type is 'anatomical', an anatomical-group code (such as an ATC level-1 code). Multiple codes may be provided when a medication belongs to more than one class within the same scheme."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:classification.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:classification.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="classification"/>
+    </element>
+    <element id="Extension.extension:classification.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="Extension.extension:source">
+      <path value="Extension.extension"/>
+      <sliceName value="source"/>
+      <short value="The source or reference for the classification (as a string or URI)"/>
+      <definition value="The authority, publication, or system that supplied this classification (free text or URI). Useful when the classification is not directly resolvable from the type coding system, or to record a specific edition/jurisdictional publisher."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:source.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:source.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="source"/>
+    </element>
+    <element id="Extension.extension:source.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/medication-classification"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
