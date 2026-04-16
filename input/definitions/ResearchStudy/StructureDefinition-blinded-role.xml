@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="blinded-role"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-bind"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="brr"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/blinded-role"/>
+  <version value="1.0.0"/>
+  <name value="BlindedRole"/>
+  <status value="active"/>
+  <date value="2026-04-16T11:27:28+00:00"/>
+  <publisher value="HL7 International / Biomedical Research and Regulation"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/rcrim"/>
+    </telecom>
+  </contact>
+  <description value="The type of actor in the research study that is masked to study group assignment."/>
+  <fhirVersion value="6.0.0-ballot4"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="ResearchStudy"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Evidence"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="The type of actor in the research study that is masked to study group assignment"/>
+      <definition value="The type of actor in the research study that is masked to study group assignment."/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/blinded-role"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/blinded-role"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
