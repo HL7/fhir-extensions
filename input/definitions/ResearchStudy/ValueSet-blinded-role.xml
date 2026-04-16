@@ -30,7 +30,6 @@
     </telecom>
   </contact>
   <description value="The type of actor in the research study that is masked to study group assignment."/>
-  <immutable value="true"/>
   <compose>
     <include>
       <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
