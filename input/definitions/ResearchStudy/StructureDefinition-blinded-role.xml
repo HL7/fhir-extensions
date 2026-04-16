@@ -15,7 +15,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/blinded-role"/>
-  <version value="5.0.0"/>
+  <version value="1.0.0"/>
   <name value="BlindedRole"/>
   <status value="active"/>
   <date value="2026-04-16T11:27:28+00:00"/>
