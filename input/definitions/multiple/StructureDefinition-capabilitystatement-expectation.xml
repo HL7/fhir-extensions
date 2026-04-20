@@ -203,6 +203,26 @@
     <expression value="CapabilityStatement.messaging.supportedMessage"/>
   </context>
   <context>
+    <type value="element"/>
+    <expression value="SearchParameter.multipleOr"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="SearchParameter.multipleAnd"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="SearchParameter.comparator"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="SearchParameter.modifier"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="SearchParameter.chain"/>
+  </context>
+  <context>
     <type value="extension"/>
     <expression value="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"/>
   </context>
