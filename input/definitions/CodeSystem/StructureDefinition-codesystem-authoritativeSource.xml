@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="deprecated">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This extension has been deprecated due to being poorly defined."/>
+        <valueMarkdown value="This extension has been deprecated in favor of the more general artifact-authoritativeSource resource."/>
       </extension>
     </valueCode>
   </extension>
@@ -33,7 +33,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="A reference to the authoritative, human readable, source of truth for the code system information.  This extension has been deprecated due to being poorly defined.  External code system information can be found in THO or the relevant HTA confluence pages."/>
+  <description value="DEPRECATED: Use artifact-authoritativeSource instead. A reference to the authoritative, human readable, source of truth for the code system information. External code system information can be found in THO or the relevant HTA confluence pages."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -53,7 +53,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Reference to the current trusted source of the CodeSystem resource"/>
-      <definition value="A reference to the authoritative, human readable, source of truth for the code system information."/>
+      <definition value="DEPRECATED: Use artifact-authoritativeSource instead. A reference to the authoritative, human readable, source of truth for the code system information."/>
       <comment value="If this extension is not present, then the canonical URL (CodeSystem.url) also serves the purpose of specifying the authoritative source.  A difference between the canonical URL and the authoritiative source might arise in some cases due to ongoing organization restructuring, etc., and in those cases this extension may be used.  The URL of the authoritative source is intended to be resolvable but that cannot be guaranteed."/>
       <min value="0"/>
       <max value="1"/>
