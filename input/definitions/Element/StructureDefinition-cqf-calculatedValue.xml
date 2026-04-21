@@ -9,7 +9,11 @@
     <valueInteger value="3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="deprecated">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+        <valueMarkdown value="This extension is deprecated in favor of the more general cqf-expression extension"/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/cqf-calculatedValue"/>
   <identifier>
@@ -29,7 +33,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="An expression that determines a calculated value. The expression may be simply the name of a expression in a referenced library, or it may be a complete inline expression."/>
+  <description value="DEPRECATED: Use cqf-expression instead. An expression that determines a calculated value. The expression may be simply the name of a expression in a referenced library, or it may be a complete inline expression."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -49,7 +53,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A calculated value"/>
-      <definition value="An expression that determines a calculated value. The expression may be simply the name of a expression in a referenced library, or it may be a complete inline expression."/>
+      <definition value="DEPRECATED: Use cqf-expression instead. An expression that determines a calculated value. The expression may be simply the name of a expression in a referenced library, or it may be a complete inline expression."/>
       <comment value="For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/2025Jan/behavior.html#cqf-calculatedValue)."/>
       <min value="0"/>
       <max value="*"/>
