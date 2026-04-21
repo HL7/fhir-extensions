@@ -1,0 +1,89 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "artifact-authoritativeSource",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "url": "http://hl7.org/fhir/StructureDefinition/artifact-authoritativeSource",
+  "name": "ArtifactAuthoritativeSource",
+  "title": "Artifact Authoritative Source",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-04-20T11:44:32-06:00",
+  "publisher": "HL7 International / Clinical Decision Support",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "description": "A reference to the offical/source of truth definition of the content, typically outside the FHIR ecosystem. For example, the authoritativeSource for a ValueSet might be a spreadsheet published on an agency website.",
+  "purpose": "To provide the official source of truth for the definition of an artifact, typically when that source of truth definition is not represented in FHIR.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DomainResource"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Original definitions",
+        "definition": "A reference to the offical/source of truth definition of the content, typically outside the FHIR ecosystem. For example, the authoritativeSource for a ValueSet might be a spreadsheet published on an agency website.",
+        "comment": "Note that this concept is different from web-source (where the page for the content can be found it is different from the canonical), and package-source (what package the resource came from). This is an abbreviated way of saying something that could be expressed with Provenance. This extensions points to the content, not the authority for the content.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/artifact-authoritativeSource"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      }
+    ]
+  }
+}
