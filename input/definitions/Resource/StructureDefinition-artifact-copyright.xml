@@ -53,6 +53,10 @@
     <expression value="CompartmentDefinition"/>
   </context>
   <context>
+    <type value="element"/>
+    <expression value="Composition"/>
+  </context>
+  <context>
     <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
       <extension url="startFhirVersion">
         <valueCode value="5.0"/>
@@ -107,6 +111,10 @@
   <context>
     <type value="element"/>
     <expression value="OperationDefinition"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ResearchStudy"/>
   </context>
   <context>
     <type value="element"/>

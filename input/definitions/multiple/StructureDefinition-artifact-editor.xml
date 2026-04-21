@@ -46,11 +46,24 @@
       </extension>
     </extension>
     <type value="element"/>
+    <expression value="ActorDefinition"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
     <expression value="ArtifactAssessment"/>
   </context>
   <context>
     <type value="element"/>
     <expression value="CapabilityStatement"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Composition"/>
   </context>
   <context>
     <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
@@ -151,6 +164,19 @@
     <expression value="Questionnaire"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="Requirements"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ResearchStudy"/>
+  </context>
+  <context>
     <type value="element"/>
     <expression value="SearchParameter"/>
   </context>
@@ -201,6 +227,19 @@
     </extension>
     <type value="element"/>
     <expression value="TerminologyCapabilities"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="TestPlan"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="TestScript"/>
   </context>
   <context>
     <type value="element"/>
