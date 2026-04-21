@@ -240,6 +240,19 @@
         <code value="Expression"/>
       </type>
     </element>
+    <element id="Extension.extension:expression.value[x].language">
+      <path value="Extension.extension.value[x].language"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <condition value="tcn-1"/>
+      <constraint>
+        <key value="tcn-1"/>
+        <severity value="error"/>
+        <human value="Constraint language must be FHIRPath"/>
+        <expression value="startsWith('text/fhirpath')"/>
+      </constraint>
+    </element>
     <element id="Extension.extension:human">
       <path value="Extension.extension"/>
       <sliceName value="human"/>
