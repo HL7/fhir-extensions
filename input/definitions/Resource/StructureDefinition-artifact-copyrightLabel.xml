@@ -74,6 +74,10 @@
     <expression value="CompartmentDefinition"/>
   </context>
   <context>
+    <type value="element"/>
+    <expression value="Composition"/>
+  </context>
+  <context>
     <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
       <extension url="startFhirVersion">
         <valueCode value="5.0"/>
@@ -94,6 +98,33 @@
     </extension>
     <type value="element"/>
     <expression value="DeviceDefinition"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="EventDefinition"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="Evidence"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="EvidenceVariable"/>
   </context>
   <context>
     <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
@@ -168,6 +199,10 @@
   </context>
   <context>
     <type value="element"/>
+    <expression value="ResearchStudy"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="SearchParameter"/>
   </context>
   <context>
@@ -217,6 +252,15 @@
     </extension>
     <type value="element"/>
     <expression value="TerminologyCapabilities"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="TestScript"/>
   </context>
   <context>
     <type value="element"/>

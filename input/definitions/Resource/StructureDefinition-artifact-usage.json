@@ -60,6 +60,17 @@
         }]
       }],
       "type": "element",
+      "expression": "ActorDefinition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
+      "type": "element",
       "expression": "ArtifactAssessment"
     },
     {
@@ -84,6 +95,10 @@
     {
       "type": "element",
       "expression": "CompartmentDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "Composition"
     },
     {
       "extension" : [{
@@ -112,6 +127,14 @@
       }],
       "type": "element",
       "expression": "DeviceDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "Evidence"
+    },
+    {
+      "type": "element",
+      "expression": "EvidenceVariable"
     },
     {
       "extension" : [{
@@ -175,6 +198,21 @@
       "expression": "Questionnaire"
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "Requirements"
+    },
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    },
+    {
       "type": "element",
       "expression": "SearchParameter"
     },
@@ -186,7 +224,6 @@
           "valueCode" : "4.0"
         }]
       }],
-
       "type": "element",
       "expression": "SpecimenDefinition"
     },
@@ -234,6 +271,21 @@
       }],
       "type": "element",
       "expression": "TerminologyCapabilities"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "TestPlan"
+    },
+    {
+      "type": "element",
+      "expression": "TestScript"
     },
     {
       "type": "element",

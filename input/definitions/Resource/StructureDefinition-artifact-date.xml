@@ -94,6 +94,15 @@
   </context>
   <context>
     <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="ResearchStudy"/>
+  </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
       <extension url="startFhirVersion">
         <valueCode value="4.0"/>
       </extension>

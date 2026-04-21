@@ -52,6 +52,17 @@
   "abstract": false,
   "context": [
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "ActorDefinition"
+    },
+    {
       "type": "element",
       "expression": "CapabilityStatement"
     },
@@ -73,6 +84,10 @@
     {
       "type": "element",
       "expression": "CompartmentDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "Composition"
     },
     {
       "extension" : [{
@@ -164,6 +179,21 @@
       "expression": "OperationDefinition"
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "Requirements"
+    },
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    },
+    {
       "type": "element",
       "expression": "SearchParameter"
     },
@@ -222,6 +252,21 @@
       }],
       "type": "element",
       "expression": "TerminologyCapabilities"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "5.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "TestPlan"
+    },
+    {
+      "type": "element",
+      "expression": "TestScript"
     },
     {
       "type": "element",
