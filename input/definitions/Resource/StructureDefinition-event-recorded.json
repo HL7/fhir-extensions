@@ -25,7 +25,7 @@
         }
       ]
     }
-  ],  "description": "Captures the recorded date of the event.",
+  ],  "description": "The date the occurrence of the event was first captured in the record - potentially significantly after the occurrence of the event.",
   "purpose": "This extension is defined to allow resources that do not have a suitable recorded date element to capture the time the event is recorded. For example, Communication resources in not-done status do not have an element to capture when the event was recorded.",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -51,7 +51,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "Captures the recorded date of the event.",
+        "definition": "The date the occurrence of the event was first captured in the record - potentially significantly after the occurrence of the event.",
         "min": 0,
         "max": "1"
       },
