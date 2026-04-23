@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="Specifies a constraint that is enforced on instantiated (or target) resources. This extension can be applied to definitional resources (such as ActivityDefinition or Measure) and indicates that the constraint should be enforced on resources that are instantiated from the definition. For example, this extension can be used to define a constraint such as `numerator count must be less than or equal to denominator count`."/>
+  <description value="Specifies a constraint that is enforced on instantiated (or target) resources. This extension can be applied to definitional resources (such as ActivityDefinition or Measure) and indicates that the constraint should be enforced on resources that are instantiated from the definition. Instantiation typically happens as part of an operation, for example, the instantiation of a Measure is the MeasureReport that results from evaluating the Measure using the $evaluate operation; the instantiation of a Library.parameter is the actual argument passed to the $evaluate operation; and the instantiation of an ActivityDefinition is the Request resource that results from applying the definition to a specific context using the $apply operation. As an example use case, this extension can be used to define a constraint such as `numerator count must be less than or equal to denominator count`."/>
   <purpose value="This extension allows constraints to be specified as part of definitional resources as an alternative to having to define a profile to enforce the constraint."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
@@ -46,6 +46,10 @@
   <context>
     <type value="element"/>
     <expression value="ActivityDefinition.dosage"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Library.parameter"/>
   </context>
   <context>
     <type value="element"/>
