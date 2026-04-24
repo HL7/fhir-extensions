@@ -24,10 +24,14 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A labeled hyperlink for display alongside a questionnaire item, providing supporting guidance to the user."/>
+  <description value="A labeled hyperlink for display with a questionnaire or questionnaire item, providing supporting guidance to the user."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Questionnaire"/>
+  </context>
   <context>
     <type value="element"/>
     <expression value="Questionnaire.item"/>
@@ -39,7 +43,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A labeled hyperlink for user guidance"/>
-      <definition value="A labeled hyperlink for display alongside a questionnaire item, providing supporting guidance to the user."/>
+      <definition value="A labeled hyperlink for display with a questionnaire or questionnaire item, providing supporting guidance to the user."/>
       <min value="0"/>
       <max value="*"/>
     </element>
