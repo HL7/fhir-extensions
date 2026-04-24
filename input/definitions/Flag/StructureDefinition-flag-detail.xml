@@ -42,6 +42,15 @@
     <type value="element"/>
     <expression value="Flag"/>
   </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="Media"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
