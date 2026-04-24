@@ -105,7 +105,6 @@
         <code value="uri"/>
       </type>
     </element>
-
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/StructureDefinition/questionnaire-supportHyperlink"/>
