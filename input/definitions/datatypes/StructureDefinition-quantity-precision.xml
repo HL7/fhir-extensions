@@ -45,6 +45,10 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
+    <expression value="Quantity"/>
+  </context>
+  <context>
+    <type value="element"/>
     <expression value="decimal"/>
   </context>
   <type value="Extension"/>
