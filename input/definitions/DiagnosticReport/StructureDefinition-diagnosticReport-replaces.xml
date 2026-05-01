@@ -8,12 +8,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This extension has been replaced by DiagnosticReport.relatesTo element in R6."/>
-      </extension>
-    </valueCode>
+  <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+    <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/diagnosticReport-replaces"/>
   <identifier>
@@ -23,7 +21,7 @@
   <version value="5.0.0"/>
   <name value="DRReplaces"/>
   <title value="DiagnosticReport Replaces"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-21"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -33,7 +31,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="The report replaces the target resource.  For example, when a final anatomic pathology report replaces a preliminary anatomic pathology report replaces  where the subsequent observation of case and report  may be on more or different material (specimen).  Note that  this is not same concept as` DiagnosticReport.status`  = preliminary of final, but industry definition of preliminary and final."/>
+  <description value="The report replaces the target resource.  For example, when a final anatomic pathology report replaces a preliminary anatomic pathology report replaces  where the subsequent observation of case and report  may be on more or different material (specimen).  Note that  this is not same concept as` DiagnosticReport.status`  = preliminary of final, but industry definition of preliminary and final. This extension has been replaced by DiagnosticReport.relatesTo element in R6."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -53,7 +51,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Replacement for another report"/>
-      <definition value="The report replaces the target resource.  For example, when a final anatomic pathology report replaces a preliminary anatomic pathology report replaces  where the subsequent observation of case and report  may be on more or different material (specimen).  Note that  this is not same concept as` DiagnosticReport.status`  = preliminary of final, but industry definition of preliminary and final."/>
+      <definition value="The report replaces the target resource.  For example, when a final anatomic pathology report replaces a preliminary anatomic pathology report replaces  where the subsequent observation of case and report  may be on more or different material (specimen).  Note that  this is not same concept as` DiagnosticReport.status`  = preliminary of final, but industry definition of preliminary and final. This extension has been replaced by DiagnosticReport.relatesTo element in R6."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>
