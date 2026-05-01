@@ -24,7 +24,7 @@
   <name value="CRShortDescription"/>
   <title value="CanonicalResource Short Description"/>
   <status value="retired"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2014-04-12"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>

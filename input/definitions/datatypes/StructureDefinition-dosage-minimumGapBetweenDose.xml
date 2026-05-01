@@ -20,7 +20,7 @@
   <name value="DosageMinimumGapBetweenDose"/>
   <title value="Dosage - Minimum Gap Between Doses"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2019-01-25"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>

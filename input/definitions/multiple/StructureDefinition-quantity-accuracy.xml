@@ -14,7 +14,7 @@
   <name value="QuantityAccuracy"/>
   <title value="Quantity Accuracy"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2025-07-17"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>

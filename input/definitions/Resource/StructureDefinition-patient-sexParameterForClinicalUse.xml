@@ -20,7 +20,7 @@
   <name value="PatSexParameterForClinicalUse"/>
   <title value="Patient Sex Parameter For Clinical Use"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2022-01-24T16:55:11+11:00"/>
   <publisher value="HL7 International / Patient Administration"/>
   <contact>

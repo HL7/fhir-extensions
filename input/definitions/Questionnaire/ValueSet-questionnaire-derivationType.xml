@@ -21,7 +21,7 @@
   <name value="QuestionnaireDerivationType"/>
   <title value="Questionnaire Derivation Type Valueset"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>

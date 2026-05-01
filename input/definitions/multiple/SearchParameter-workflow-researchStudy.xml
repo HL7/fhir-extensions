@@ -17,7 +17,7 @@
   <name value="ResearchStudySearchParameter"/>
   <title value="Research Study SearchParameter"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / Biomedical Research and Regulation"/>
   <contact>
     <telecom>
