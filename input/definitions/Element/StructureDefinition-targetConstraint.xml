@@ -240,6 +240,10 @@
         <code value="Expression"/>
       </type>
     </element>
+    <element id="Extension.extension:expression.value[x].language">
+      <path value="Extension.extension.value[x].language"/>
+      <fixedCode value="text/fhirpath"/>
+    </element>
     <element id="Extension.extension:human">
       <path value="Extension.extension"/>
       <sliceName value="human"/>
