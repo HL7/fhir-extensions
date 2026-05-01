@@ -65,6 +65,15 @@
     <expression value="DeviceUsage"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="DeviceUseStatement"/>
+  </context>
+  <context>
     <type value="element"/>
     <expression value="Specimen.collection"/>
   </context>
