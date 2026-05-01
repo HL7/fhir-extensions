@@ -87,7 +87,7 @@
   <ul>
    <li>Extensions that are active are not subject to breaking changes. New extensions will be introduced if necessary</li>
    <li>Extensions labelled 'draft' may have breaking changes if the FHIR Management Group is satisfied that they are not in 
-     use in production, or if all the existing users are agree to making the change. The exact rules and processes still 
+     use in production, or if all the existing users agree to making the change. The exact rules and processes are still 
      being discussed, but not all 'draft' extensions are subject to change</li>
    <li>In this regard, the definitions for <a href="{{site.data.fhir.path}}versions.html#change">breaking change to Normative artifacts</a> 
      apply. Note that the focus of these rules is preserving the validity and meaning of existing extensions, not preventing applications 
