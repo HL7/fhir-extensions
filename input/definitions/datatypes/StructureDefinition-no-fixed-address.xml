@@ -17,8 +17,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1349"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="PatNoFixedAddress"/>
-  <title value="Patient No Fixed Address"/>
+  <name value="NoFixedAddress"/>
+  <title value="No Fixed Address"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2021-07-05"/>
