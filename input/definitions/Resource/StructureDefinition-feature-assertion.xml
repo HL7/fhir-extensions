@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="feature-assertion"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/feature-assertion"/>
+  <version value="5.0.0"/>
+  <name value="FeatureAsssertion"/>
+  <title value="Feature Assertion"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-08-12"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="This extension asserts that the data in a resource was authored (collected/handled/created/transformed)
+by an application that claims conformance to the definition of a feature. Note that 'authoring' is often a client function, but
+that is not always the case.&#10;&#10;
+
+For further information about features, see the [Application Feature Framework Implementation Guide](https://build.fhir.org/ig/HL7/capstmt/specification.html).&#10;&#10;
+
+As an example of the kind of use this extension might support, an application could choose to only use value set 
+expansions that are explicitly labeled as 'prepared under the conformance rules defined in the [CRMI implementation
+guide](https://build.fhir.org/ig/HL7/crmi-ig).
+
+This extension is a statement about the provenance of a resource and is placed in the resource about which the
+assertion is made. The assertion SHOULD be removed when the resource data is altered (it may be replaced by
+a new assertion). See the related extension for [declaring feature conformance in the Provenance](StructureDefinition-target-feature-assertion.html).&#10;&#10;
+
+This assertion is often used to drive processing rules associated with the trustworthiness of the data in 
+the resource. Applications/specifications/workflows that make use of this assertion should carefully consider
+the integrity of the chain of handling from the source the processing before choosing to trust the assertion.&#10;&#10;
+
+A more complex alternative to this profile is to use the [[[http://hl7.org/fhir/StructureDefinition/obligations-profile]]]
+extension."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Resource"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Authored by an application conforming to a set of obligations"/>
+      <definition value="A declaration that the data in a resource was authored by an application that conformed to the set of element level obligations described in the referenced profile"/>
+      <comment value="This extension is a statement about the provenance of a particular version of the resource that it is describing; as such, it should be made in a Provenance resource referring to that particular version. Alternatively, the extension can be placed in the resource about which the declaration is made (in Resource.meta); in this case, the declaration SHOULD be removed when the resource data is altered (it may be replaced by a new declaration)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <isModifier value="false"/>
+    </element>
+
+
+    <element id="Extension.extension:definition">
+      <path value="Extension.extension"/>
+      <sliceName value="definition"/>
+      <short value="Identifies the feature definition"/>
+      <definition value="A reference to the definition of the feature by it's canonical URL"/>
+      <comment value="The type is `uri` not `canonical` because FeatureDefinition isn't a defined resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:definition.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:definition.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="definition"/>
+    </element>
+    <element id="Extension.extension:definition.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+
+    <element id="Extension.extension:value">
+      <path value="Extension.extension"/>
+      <sliceName value="value"/>
+      <short value="The value of the feature"/>
+      <definition value="The value of the feature (as defined in the definition of the feature)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:value.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:value.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="value"/>
+    </element>
+    <element id="Extension.extension:value.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+    </element>
+
+    
+    <element id="Extension.extension:property">
+      <path value="Extension.extension"/>
+      <sliceName value="property"/>
+      <short value="Provides a value for a qualifier of the feature"/>
+      <definition value="Provides a value for a qualifier of the feature"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:property.extension">
+      <path value="Extension.extension.extension"/>
+      <min value="2"/>
+      <max value="2"/>
+    </element>
+
+    <element id="Extension.extension:property.extension:name">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="name"/>
+      <short value="Identifies the feature qualifier"/>
+      <definition value="A reference to the qualifier of the feature by it's name"/>
+      <comment value="The type is `uri` not `canonical` because FeatureDefinition isn't a defined resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:property.extension:name.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:property.extension:name.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="name"/>
+    </element>
+    <element id="Extension.extension:property.extension:name.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+
+    <element id="Extension.extension:property.extension:value">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="value"/>
+      <short value="The value of the feature qualifier"/>
+      <definition value="The value of the feature qualifier (as defined in the definition of the feature)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:property.extension:value.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:property.extension:value.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="value"/>
+    </element>
+    <element id="Extension.extension:property.extension:value.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+    </element>
+
+    
+    <element id="Extension.extension:property.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="property"/>
+    </element>
+    <element id="Extension.extension:property.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <max value="0"/>
+    </element>
+
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/feature-assertion"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
