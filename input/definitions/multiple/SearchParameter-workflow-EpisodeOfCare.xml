@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="workflow-EpisodeOfCare"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <url value="http://hl7.org/fhir/SearchParameter/workflow-EpisodeOfCare"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.31.3"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="EpisodeOfCareSearchParameter"/>
+  <title value="EpisodeOfCare SearchParameter"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="SearchParameter for Barrier Extension with Reference value"/>
+  <code value="workflow-EpisodeOfCare"/>
+  <base value="AdverseEvent"/>
+  <base value="Appointment"/>
+  <base value="Basic"/>
+  <base value="CarePlan"/>
+  <base value="ChargeItem"/>
+  <base value="ClinicalImpression"/>
+  <base value="Communication"/>
+  <base value="CommunicationRequest"/>
+  <base value="Composition"/>
+  <base value="Condition"/>
+  <base value="Consent"/>
+  <base value="DetectedIssue"/>
+  <base value="DeviceRequest"/>
+  <base value="DeviceUsage"/>
+  <base value="DeviceUseStatement"/>
+  <base value="DiagnosticReport"/>
+  <base value="DocumentReference"/>
+  <base value="EnrollmentRequest"/>
+  <base value="EnrollmentResponse"/>
+  <base value="FamilyMemberHistory"/>
+  <base value="Flag"/>
+  <base value="Goal"/>
+  <base value="ImagingStudy"/>
+  <base value="Immunization"/>
+  <base value="ImmunizationEvaluation"/>
+  <base value="ImmunizationRecommendation"/>
+  <base value="Invoice"/>
+  <base value="List"/>
+  <base value="MeasureReport"/>
+  <base value="MedicationAdministration"/>
+  <base value="MedicationDispense"/>
+  <base value="MedicationRequest"/>
+  <base value="MedicationStatement"/>
+  <base value="MolecularSequence"/>
+  <base value="NutritionIntake"/>
+  <base value="NutritionOrder"/>
+  <base value="Observation"/>
+  <base value="Procedure"/>
+  <base value="QuestionnaireResponse"/>
+  <base value="RequestGroup"/>
+  <base value="RequestOrchestration"/>
+  <base value="ResearchSubject"/>
+  <base value="RiskAssessment"/>
+  <base value="ServiceRequest"/>
+  <base value="SupplyDelivery"/>
+  <base value="SupplyRequest"/>
+  <base value="VisionPrescription"/>
+  <type value="reference"/>
+  <expression value="Resource.extension('http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare).value"/>
+  <processingMode value="normal"/>
+</SearchParameter>
+
