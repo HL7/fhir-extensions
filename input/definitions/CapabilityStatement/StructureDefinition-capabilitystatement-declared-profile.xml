@@ -9,9 +9,6 @@
     <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="deprecated">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
         <valueMarkdown value="This extension is deprecated due to poor definition and lack of use. Use CapabilityStatement.rest.resource.supportedProfile"/>

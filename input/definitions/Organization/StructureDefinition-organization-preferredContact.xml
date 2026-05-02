@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="deprecated">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="The `http://hl7.org/fhir/StructureDefinition/patient-contactPriority` extension should be used instead."/>
+        <valueMarkdown value="The `http://hl7.org/fhir/StructureDefinition/patient-contactPriority` extension or the [rank extension](StructureDefinition-rank.html) should be used instead."/>
       </extension>
     </valueCode>
   </extension>

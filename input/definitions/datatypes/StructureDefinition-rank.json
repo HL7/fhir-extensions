@@ -1,0 +1,94 @@
+{
+    "resourceType" : "StructureDefinition",
+    "id" : "rank",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "fhir"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use"
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/rank",
+    "name" : "Rank",
+    "title" : "Rank",
+    "status" : "active",
+    "experimental" : false,
+    "date" : "2019-11-01T09:29:23+11:00",
+    "publisher" : "HL7 International / FHIR Infrastructure",
+    "contact" : [{
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://www.hl7.org/Special/committees/fiwg"
+      }]
+    }],
+    "description" : "Indicates the relative preference of an element within a collection of repeating elements.  Lower numbers indicate a stronger degree of preference.  Equal number indicate equal preference.",
+    "jurisdiction" : [{
+      "coding" : [{
+        "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "code" : "001"
+      }]
+    }],
+    "purpose": "This extension supports specifying the focus of an activity as a set of possible codes when there is no specific code available that captures the candidate activities.\n\n* This extension SHALL NOT be used when an appropriate higher level concept code exists.\n* This extension cannot be used to satisfy a required binding.\n* When this extension is used on an element with an extensible binding, the set of possible coded values in the referenced value set SHALL be present in the bound value set unless none of the codes in the bound value set apply to the concept being communicated (based on human review).\n* When this extension appears on a CodeableConcept, the CodeableConcept SHALL have no codings, and the text of the CodeableConcept SHOULD be present. For example, the text might mention the title of value set that describes the allowed content.\n\n**Note to implementers:** This extension may eventually be supplanted by a new methodological approach to solving the same underlying issue.",
+    "fhirVersion" : "5.0.0",
+    "mapping" : [{
+      "identity" : "v2",
+      "uri" : "http://hl7.org/v2",
+      "name" : "HL7 v2 Mapping"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    }],
+    "kind" : "complex-type",
+    "abstract" : false,
+    "context" : [{
+      "type" : "element",
+      "expression" : "Address"
+    },{
+      "type" : "element",
+      "expression" : "Patient.contact"
+    },{
+      "type" : "element",
+      "expression" : "Organization.contact"
+    }],
+    "type" : "Extension",
+    "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation" : "constraint",
+    "differential" : {
+      "element" : [{
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "Relative preference of an element in repeating elements",
+        "definition" : "Indicates the relative preference of an element within a collection of repeating elements.  Lower numbers indicate a stronger degree of preference.  Equal number indicate equal preference.",
+        "min" : 0,
+        "max" : "1",
+        "isModifier" : false
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/rank"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "label" : "value set",
+        "min" : 1,
+        "type" : [{
+          "code" : "canonical",
+          "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ValueSet"]
+        }]
+      }]
+    }
+  }
