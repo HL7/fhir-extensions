@@ -161,7 +161,7 @@
         </extension>
         <strength value="example"/>
         <description value="Codes indicating the relative priority assigned to a goal by a stakeholder."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/goal-priority"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/goal-priority"/>
       </binding>
     </element>
     <element id="Extension.url">

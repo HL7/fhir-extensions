@@ -50,7 +50,7 @@
       <path value="Extension"/>
       <short value="When the allergy or intolerance resolved"/>
       <definition value="The date or estimated date that the allergy or intolerance resolved. This is called abatement because of the many overloaded connotations associated with resolution."/>
-      <comment value="Age is generally used when the patient reports an age at which the allergy or intolerance abated. If there is no abatement element, the clinicalStatus can be used to convey whether allergy or intolerance has resolved or not. When abatementString exists, it conveys that the allergy or intolerance is abated."/>
+      <comment value="Age is generally used when the patient reports an age at which the AllergyIntolerance was abated. Period is generally used to convey an imprecise abatement date that occurred within the time period. Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old). If there is no abatement element, the clinicalStatus can be used to convey whether allergy or intolerance has resolved or not. When abatementString exists, it conveys that the allergy or intolerance is abated."/>
       <min value="0"/>
       <max value="1"/>
     </element>
