@@ -58,7 +58,7 @@
       <path value="Extension.extension"/>
       <sliceName value="latitude"/>
       <short value="Latitude with WGS84 datum"/>
-      <definition value="Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML (see notes below)."/>
+      <definition value="Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -87,7 +87,7 @@
       <path value="Extension.extension"/>
       <sliceName value="longitude"/>
       <short value="Longitude with WGS84 datum"/>
-      <definition value="Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML (see notes below)."/>
+      <definition value="Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML."/>
       <min value="1"/>
       <max value="1"/>
       <type>
