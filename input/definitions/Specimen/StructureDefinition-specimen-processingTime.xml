@@ -8,12 +8,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This is no longer relevant for R6 due to a matching element in R6"/>
-      </extension>
-    </valueCode>
+  <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+    <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/specimen-processingTime"/>
   <identifier>
@@ -23,7 +21,7 @@
   <version value="5.0.0"/>
   <name value="SpecProcessingTime"/>
   <title value="Specimen Processing Time"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2015-02-19"/>
   <publisher value="HL7 International / Orders and Observations"/>
@@ -33,7 +31,7 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Period or duration of processing. This is no longer relevant for R6 due to a matching element in R6. This extension is now deprecated."/>
+  <description value="Period or duration of processing. In R6, this extension is replaced by Specimen.processing.time[x]."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -53,7 +51,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Time of processing"/>
-      <definition value="Period or duration of processing. This is no longer relevant for R6 due to a matching element in R6."/>
+      <definition value="Period or duration of processing. In R6, this extension is replaced by Specimen.processing.time[x]."/>
       <min value="0"/>
       <max value="1"/>
     </element>

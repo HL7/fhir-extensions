@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="geolocation"/>
+  <id value="alternate-hash"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="3"/>
+    <valueInteger value="2"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/geolocation"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/alternate-hash"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1658"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1598"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="Geolocation"/>
-  <title value="Geolocation"/>
+  <name value="AlternateHash"/>
+  <title value="Alternate Hash"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2013-12-05"/>
@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="An absolute geographic location for the address, expressed using the WGS84 datum (This is the same co-ordinate system used in KML)."/>
+  <description value="An attachment hash using a different integrity check algorithm from Attachment.hash which uses SHA-1"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -40,7 +40,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Address"/>
+    <expression value="Attachment"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -48,73 +48,78 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="The absolute geographic location"/>
-      <definition value="An absolute geographic location for the address, expressed using the WGS84 datum (This is the same co-ordinate system used in KML)."/>
-      <comment value="The extension can be further extended to include unique geolocation identifiers, confidence, altitude, etc."/>
+      <short value="An attachment hash using a different integrity check algorithm (not SHA-1)"/>
+      <definition value="An attachment hash using a different integrity check algorithm from Attachment.hash which uses SHA-1."/>
       <min value="0"/>
       <max value="1"/>
     </element>
-    <element id="Extension.extension:latitude">
+    <element id="Extension.extension:algorithm">
       <path value="Extension.extension"/>
-      <sliceName value="latitude"/>
-      <short value="Latitude with WGS84 datum"/>
-      <definition value="Latitude. The value domain and the interpretation are the same as for the text of the latitude element in KML."/>
+      <sliceName value="algorithm"/>
+      <short value="The algorthm"/>
+      <definition value="The algorthm."/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:latitude.extension">
+    <element id="Extension.extension:algorithm.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:latitude.url">
+    <element id="Extension.extension:algorithm.url">
       <path value="Extension.extension.url"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="latitude"/>
+      <fixedUri value="algorithm"/>
     </element>
-    <element id="Extension.extension:latitude.value[x]">
+    <element id="Extension.extension:algorithm.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="decimal"/>
+        <code value="Coding"/>
       </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/integrity-check-algorithms"/>
+      </binding>
     </element>
-    <element id="Extension.extension:longitude">
+
+    <element id="Extension.extension:hash">
       <path value="Extension.extension"/>
-      <sliceName value="longitude"/>
-      <short value="Longitude with WGS84 datum"/>
-      <definition value="Longitude. The value domain and the interpretation are the same as for the text of the longitude element in KML."/>
+      <sliceName value="hash"/>
+      <short value="The value of the hash"/>
+      <definition value="The algorithm of the hash."/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:longitude.extension">
+    <element id="Extension.extension:hash.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:longitude.url">
+    <element id="Extension.extension:hash.url">
       <path value="Extension.extension.url"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="longitude"/>
+      <fixedUri value="hash"/>
     </element>
-    <element id="Extension.extension:longitude.value[x]">
+    <element id="Extension.extension:hash.value[x]">
       <path value="Extension.extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="decimal"/>
+        <code value="string"/>
       </type>
     </element>
+    
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/geolocation"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/alternate-hash"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

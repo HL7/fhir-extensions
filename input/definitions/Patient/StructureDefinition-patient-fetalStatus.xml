@@ -16,7 +16,7 @@
   <name value="PatFetalStatus"/>
   <title value="Patient Fetal Status"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>

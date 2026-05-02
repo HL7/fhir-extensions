@@ -20,7 +20,7 @@
   <name value="CitationSocietyAffiliation"/>
   <title value="Citation Society Affiliation"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2023-02-06T12:00:00+11:00"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
   <contact>

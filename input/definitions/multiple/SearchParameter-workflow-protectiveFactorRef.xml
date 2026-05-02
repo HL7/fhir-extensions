@@ -17,7 +17,7 @@
   <name value="ProtectiveFactorRefSearchParameter"/>
   <title value="Protective Factor Reference SearchParameter"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>

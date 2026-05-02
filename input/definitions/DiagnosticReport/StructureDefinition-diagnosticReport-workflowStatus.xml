@@ -20,7 +20,7 @@
   <name value="DRWorkflowStatus"/>
   <title value="DiagnosticReport Workflow Status"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2015-02-21"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>

@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be relevant in delivering the requested service."/>
+  <description value="The relevant insurance Coverage for this request to perform Eligibility checking, authorization, pre-determination or claiming for goods and/or services renderable or rendered, etc..\n\nResponses from insurers (ClaimResponse) containing responses to prior authorization or pre-determination requests to guide in the choosing of goods and services informed by reimbursement guidance, and to provide authorization numbers which may need to be quoted on future claims for reimbursement."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="v2"/>
@@ -58,7 +58,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Associated insurance coverage"/>
-      <definition value="Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be relevant in delivering the requested service."/>
+      <definition value="The relevant insurance Coverage for this request to perform Eligibility checking, authorization, pre-determination or claiming for goods and/or services renderable or rendered, etc..\n\nResponses from insurers (ClaimResponse) containing responses to prior authorization or pre-determination requests to guide in the choosing of goods and services informed by reimbursement guidance, and to provide authorization numbers which may need to be quoted on future claims for reimbursement."/>
       <min value="0"/>
       <max value="*"/>
       <mapping>

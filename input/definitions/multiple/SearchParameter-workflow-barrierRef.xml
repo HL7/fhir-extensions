@@ -17,7 +17,7 @@
   <name value="BarrierRefSearchParameter"/>
   <title value="Barrier Reference SearchParameter"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>
     <telecom>

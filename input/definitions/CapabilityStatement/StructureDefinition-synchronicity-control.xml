@@ -8,12 +8,13 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This is no longer relevant for R6 due to a matching element in R6"/>
-      </extension>
-    </valueCode>
+  <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+    <extension url="startFhirVersion">
+      <valueCode value="4.0"/>
+    </extension>
+    <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/synchronicity-control"/>
   <identifier>
@@ -23,7 +24,7 @@
   <version value="5.0.0"/>
   <name value="OperationSynchronicityControl"/>
   <title value="Operation Synchronicity Control"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2014-04-12"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
@@ -33,7 +34,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Indicates that an operation or interaction must always be handled as synchronous or asynchronous, or that the server must or does provide both, and clients can choose"/>
+  <description value="Indicates that an operation or interaction must always be handled as synchronous or asynchronous, or that the server must or does provide both, and clients can choose. In R6, use OperationDefinition.synchronicity"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -43,11 +44,6 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
-    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
-      <extension url="startFhirVersion">
-        <valueCode value="4.0"/>
-      </extension>
-    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.operation"/>
   </context>
@@ -56,11 +52,6 @@
     <expression value="CapabilityStatement.rest.resource.interaction"/>
   </context>
   <context>
-    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
-      <extension url="startFhirVersion">
-        <valueCode value="4.0"/>
-      </extension>
-    </extension>
     <type value="element"/>
     <expression value="CapabilityStatement.rest.resource.operation"/>
   </context>
@@ -71,7 +62,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="synchronous | asynchronous | either"/>
-      <definition value="Indicates that the server does or SHALL support this operation or interaction as synchronous or asynchronous, or that the server must provide both options, and clients can choose"/>
+      <definition value="Indicates that the server does or SHALL support this operation or interaction as synchronous or asynchronous, or that the server must provide both options, and clients can choose. In R6, use OperationDefinition.synchronicity"/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>

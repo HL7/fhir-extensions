@@ -8,13 +8,6 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="deprecated">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="This acceptance extension was elevated to the base Goal resource."/>
-      </extension>
-    </valueCode>
-  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
     <extension url="startFhirVersion">
       <valueCode value="1.0"/>
@@ -31,7 +24,7 @@
   <version value="5.0.0"/>
   <name value="GoalAcceptance"/>
   <title value="Goal acceptance"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2014-12-07"/>
   <publisher value="HL7 International / Patient Care"/>
@@ -41,7 +34,7 @@
       <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  <description value="Information about the acceptance and relative priority assigned to the goal by the patient, practitioners and other stake-holders. This acceptance extension was elevated to the base Goal resource."/>
+  <description value="Information about the acceptance and relative priority assigned to the goal by the patient, practitioners and other stake-holders. In R6, this acceptance extension was elevated to the base Goal resource."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -61,7 +54,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Individual acceptance of goal"/>
-      <definition value="Information about the acceptance and relative priority assigned to the goal by the patient, practitioners and other stake-holders."/>
+      <definition value="Information about the acceptance and relative priority assigned to the goal by the patient, practitioners and other stake-holders. In R6, this acceptance extension was elevated to the base Goal resource."/>
       <min value="0"/>
       <max value="*"/>
     </element>

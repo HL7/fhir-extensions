@@ -41,6 +41,10 @@
     {
       "type": "element",
       "expression": "Communication"
+    },
+    {
+      "type": "element",
+      "expression": "DiagnosticReport"
     }
   ],
   "type": "Extension",

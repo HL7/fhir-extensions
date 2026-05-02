@@ -20,7 +20,7 @@
   <name value="UncertainPeriod"/>
   <title value="Uncertain period"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2014-04-27"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>

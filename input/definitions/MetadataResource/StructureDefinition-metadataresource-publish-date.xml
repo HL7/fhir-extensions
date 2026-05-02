@@ -20,7 +20,7 @@
   <name value="CRPublishDate"/>
   <title value="MetadataResource Publish Date"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2023-03-17"/>
   <publisher value="HL7 International / FHIR Infrastructure"/>
   <contact>

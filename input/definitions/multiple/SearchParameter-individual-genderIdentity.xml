@@ -13,7 +13,7 @@
   <name value="IndividualGenderIdentitySearchParameter"/>
   <title value="Individual Gender Identity Parameter"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / Patient Administration"/>
   <contact>
     <telecom>

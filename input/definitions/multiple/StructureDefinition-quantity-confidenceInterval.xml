@@ -15,7 +15,7 @@
   <name value="QuantityConfidenceInterval"/>
   <title value="Quantity Confidence Interval"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2025-07-17"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>
@@ -30,13 +30,8 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Observation.value[x]"/>
+    <expression value="Quantity"/>
   </context>
-  <context>
-    <type value="element"/>
-    <expression value="Observation.component.value[x]"/>
-  </context>
-  <contextInvariant value="$this is Quantity"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <differential>

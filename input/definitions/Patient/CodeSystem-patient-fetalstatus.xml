@@ -17,7 +17,7 @@
   <name value="FetalStatus"/>
   <title value="fetal status code system"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <publisher value="HL7 International / Patient Care"/>
   <contact>
     <telecom>

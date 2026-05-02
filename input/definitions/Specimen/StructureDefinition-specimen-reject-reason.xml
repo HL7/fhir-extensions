@@ -17,7 +17,7 @@
   <name value="SpecimenRejectReason"/>
   <title value="Specimen Reject Reason"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2017-12-06"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>

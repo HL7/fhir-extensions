@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "integrity-check-algorithms",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 2
+  }],
+  "url" : "http://hl7.org/fhir/CodeSystem/integrity-check-algorithms",
+  "version" : "0.1.0",
+  "name" : "integrity_check_algorithms",
+  "title" : "Integrity check algorithms",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-11",
+  "publisher" : "openEHR + HL7",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.openehr.org"
+    }]
+  }],
+  "description" : "Integrity check algorithms",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "valueSet" : "https://specifications.openehr.org/fhir/valueset-integrity-check-algorithms",
+  "content" : "complete",
+  "concept" : [{
+    "code" : "SHA-1",
+    "display" : "SHA-1"
+  },
+  {
+    "code" : "SHA-224",
+    "display" : "SHA-224"
+  },
+  {
+    "code" : "SHA-256",
+    "display" : "SHA-256"
+  },
+  {
+    "code" : "SHA-384",
+    "display" : "SHA-384"
+  },
+  {
+    "code" : "SHA-512",
+    "display" : "SHA-512"
+  },
+  {
+    "code" : "SHA-512/224",
+    "display" : "SHA-512/224"
+  },
+  {
+    "code" : "SHA-512/256",
+    "display" : "SHA-512/256"
+  }]
+}

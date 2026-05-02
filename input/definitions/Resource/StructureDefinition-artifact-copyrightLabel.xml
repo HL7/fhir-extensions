@@ -20,7 +20,7 @@
   <name value="ArtifactCopyrightLabel"/>
   <title value="Artifact Copyright Label"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2022-02-07"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
   <contact>

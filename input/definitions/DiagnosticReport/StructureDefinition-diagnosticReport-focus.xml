@@ -20,7 +20,7 @@
   <name value="DRFocus"/>
   <title value="DiagnosticReport Focus"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2023-02-02"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>

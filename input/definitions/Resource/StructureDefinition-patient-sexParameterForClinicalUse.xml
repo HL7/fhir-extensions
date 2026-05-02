@@ -20,7 +20,7 @@
   <name value="PatSexParameterForClinicalUse"/>
   <title value="Patient Sex Parameter For Clinical Use"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2022-01-24T16:55:11+11:00"/>
   <publisher value="HL7 International / Patient Administration"/>
   <contact>
@@ -49,14 +49,14 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A context-specific sex parameter for clinical use"/>
-      <definition value="A parameter that provides guidance on how a recipient should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.."/>
+      <definition value="A parameter that provides guidance on how a recipient should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc."/>
       <min value="0"/>
     </element>
     <element id="Extension.extension:value">
       <path value="Extension.extension"/>
       <sliceName value="value"/>
       <short value="A context-specific sex parameter for clinical use"/>
-      <definition value="A parameter that provides guidance on how a recipient should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.."/>
+      <definition value="A parameter that provides guidance on how a recipient should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc."/>
       <comment value="Sex parameters for clinical use may be contexual. For example, the sex parameter for clinical use for mammogram health maintenance may by different than the sex parameter for clinical use for the purpose of selecting a reference range for a lab test."/>
       <min value="1"/>
       <max value="1"/>

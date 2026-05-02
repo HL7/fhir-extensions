@@ -15,8 +15,8 @@
   <version value="5.0.0"/>
   <name value="MedicationClassificationTypeVS"/>
   <title value="Medication Classification Type VS"/>
-  <status value="active"/>
-  <experimental value="true"/>
+  <status value="draft"/>
+  <experimental value="false"/>
   <date value="2026-04-13"/>
   <publisher value="HL7 International / Pharmacy"/>
   <contact>

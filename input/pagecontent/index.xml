@@ -39,7 +39,7 @@
    <li>Deprecated Extensions: There are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' and standardStatus = 'deprecated' %} deprecated extensions: see <a href="deprecated.html">the deprecated Extensions page</a>. Balloters might want to pay particular attention to this list - there has been some lack of clarity about whether extensions should be deprecated when elements are added to resources in R5/6 </li>
    <li>The conversion maps have been removed from this release - they have moved to the cross-extensions publications</li>
    <li>A significant new feature in this release is that extensions are transformed to R4 and R3 versions, so that the 
-     extension definitions found in the .r4 and .r3 packages fully valid. This involves: making sure that appropriate 
+     extension definitions found in the .r4 and .r3 packages are fully valid. This involves: making sure that appropriate 
      CodeSystem and ValueSet resources are included, and using sets of extensions in place of data types defined in
      later versions. A <a href="extension-summary.html">summary of this work</a> is provided.</li>
   </ul>
@@ -87,7 +87,7 @@
   <ul>
    <li>Extensions that are active are not subject to breaking changes. New extensions will be introduced if necessary</li>
    <li>Extensions labelled 'draft' may have breaking changes if the FHIR Management Group is satisfied that they are not in 
-     use in production, or if all the existing users are agree to making the change. The exact rules and processes still 
+     use in production, or if all the existing users agree to making the change. The exact rules and processes are still 
      being discussed, but not all 'draft' extensions are subject to change</li>
    <li>In this regard, the definitions for <a href="{{site.data.fhir.path}}versions.html#change">breaking change to Normative artifacts</a> 
      apply. Note that the focus of these rules is preserving the validity and meaning of existing extensions, not preventing applications 

@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "integrity-check-algorithms",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet integrity-check-algorithms</b></p><a name=\"integrity-check-algorithms\"> </a><a name=\"hcintegrity-check-algorithms\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-integrity-check-algorithms.html\"><code>https://specifications.openehr.org/fhir/codesystem-integrity_check_algorithms</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  }],
+  "url" : "http://hl7.org/fhir/ValueSet/integrity-check-algorithms",
+  "version" : "0.1.0",
+  "name" : "integrity_check_algorithms",
+  "title" : "Integrity check algorithms",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-04-11",
+  "publisher" : "openEHR + HL7",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.openehr.org"
+    }]
+  }],
+  "description" : "Integrity check algorithms",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/CodeSystem/integrity-check-algorithms"
+    }]
+  }
+}
