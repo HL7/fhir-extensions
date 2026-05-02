@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="alternate-hash"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/alternate-hash"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1598"/>
+  </identifier>
+  <version value="5.0.0"/>
+  <name value="RelativeDateCriteria"/>
+  <title value="Relative Date Criteria"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2013-12-05"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
+  <purpose value="NOTE: This extension will be deprecated in favor of the new relative-time extension once the RelativeTime data type on which it is based is generally available."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="date"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="dateTime"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Relative Date Criteria"/>
+      <definition value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
+      <comment value="This extension is used when a precise date is not known, but rather, the date will be relative to some future event (e.g. Do this 2 weeks after an operation)."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:algorithm">
+      <path value="Extension.extension"/>
+      <sliceName value="targetRefealgorithmrence"/>
+      <short value="Specific event that the date is relative to"/>
+      <definition value="The specific event that the date(time) is relative to - e.g. an Encounter, an Observation, a Procedure, etc."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:algorithm.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:algorithm.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="algorithm"/>
+    </element>
+    <element id="Extension.extension:algorithm.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/integrity-check-algorithms"/>
+      </binding>
+    </element>
+
+    <element id="Extension.extension:hash">
+      <path value="Extension.extension"/>
+      <sliceName value="hash"/>
+      <short value="Kind of event that the date is relative to"/>
+      <definition value="The generic type of event that the date(time) is relative to."/>
+      <comment value="If present alongside targetReference, the kind of event is within the specified event - e.g. admission or discharge in an encounter, enrollment or start of therapy in a study, etc."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:hash.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:hash.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="hash"/>
+    </element>
+    <element id="Extension.extension:hash.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/alternate-hash"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
