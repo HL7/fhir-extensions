@@ -46,6 +46,7 @@
     <type value="element"/>
     <expression value="ElementDefinition"/>
   </context>
+  <contextInvariant value="type.exists(code='Coding') or (type.exists() and type!='group' and type!='display')"/>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
