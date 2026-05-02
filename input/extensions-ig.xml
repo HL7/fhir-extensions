@@ -132,73 +132,28 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="informative"/>
         </extension>
-        <sourceUrl value="conversion-registry.xml"/>
-        <name value="conversion-registry.html"/>
-        <title value="R4/R5 Conversion Registry"/>
+        <sourceUrl value="extension-summary.xml"/>
+        <name value="extension-summary.html"/>
+        <title value="Summary for other versions"/>
         <generation value="html"/>
-        <page>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-            <valueCode value="informative"/>
-          </extension>
-          <sourceUrl value="conversions-types.xml"/>
-          <name value="conversions-types.html"/>
-          <title value="R4/R5 Conversions for the Types Framework"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-            <valueCode value="informative"/>
-          </extension>
-          <sourceUrl value="conversions-datatypes.xml"/>
-          <name value="conversions-datatypes.html"/>
-          <title value="R4/R5 Conversions for Datatypes"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-            <valueCode value="informative"/>
-          </extension>
-          <sourceUrl value="conversions-metadatatypes.xml"/>
-          <name value="conversions-metadatatypes.html"/>
-          <title value="R4/R5 Conversion for Metadata Types"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-            <valueCode value="informative"/>
-          </extension>
-          <sourceUrl value="conversions-references.xml"/>
-          <name value="conversions-references.html"/>
-          <title value="R4/R5 Conversion for Reference Types"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <sourceUrl value="conversions-resource.xml"/>
-          <name value="conversions-resource.html"/>
-          <title value="R4/R5 Conversion for Resource"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <sourceUrl value="extension-summary.xml"/>
-          <name value="extension-summary.html"/>
-          <title value="Summary for other versions"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-            <valueCode value="informative"/>
-          </extension>
-          <sourceUrl value="deprecated.xml"/>
-          <name value="deprecated.html"/>
-          <title value="Deprecated Extensions"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <sourceUrl value="history.xml"/>
-          <name value="history.html"/>
-          <title value="IG Version History"/>
-          <generation value="html"/>
-        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="deprecated.xml"/>
+        <name value="deprecated.html"/>
+        <title value="Deprecated Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <sourceUrl value="history.xml"/>
+        <name value="history.html"/>
+        <title value="IG Version History"/>
+        <generation value="html"/>
       </page>
     </page>
     <parameter>
@@ -298,20 +253,6 @@
         <code value="page-factory"/>
       </code>
       <value value="input/extension-resource-factory.json"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="page-factory"/>
-      </code>
-      <value value="input/structuremap-type-factory.json"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="page-factory"/>
-      </code>
-      <value value="input/structuremap-resource-factory.json"/>
     </parameter>
     <parameter>
       <code>
