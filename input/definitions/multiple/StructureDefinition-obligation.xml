@@ -27,7 +27,19 @@
 			<value value="http://www.hl7.org/Special/committees/fiwg"/>
 		</telecom>
 	</contact>
-	<description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail."/>
+	<description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type.&#10;&#10;
+
+The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail.&#10;&#10;
+
+Obligations apply to only data that 'fits' the semantics of the element and the overall instance. For example, a Composition, List, or other grouper may inherently filter what instances are 'in scope' and, in some cases, might even indicate the included instances themselves should be subsetted (i.e. filtering out elements or certain element repetitions)&#10;&#10;
+
+Once the data that is semantically appropriate to share has been identified, it's subsequently filtered by 'what's allowed to be shared' based on regulation, consent, etc.&#10;&#10;
+	
+Obligations might apply to only a subset of the remaining elements based on any specified obligation 'filter'.&#10;&#10;
+	
+Of those, there may only be an obligation for a limited number of matching occurrences. Which occurrences are chosen is selected by the system adhering to the obligation.&#10;&#10;
+	
+Note that the result of this on elements with repetitions is that a variable number of results will be included based on all of the above rules, which may be zero or more in any given instance."/>
 	<jurisdiction>
 		<coding>
 			<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -56,7 +68,19 @@
 		<element id="Extension">
 			<path value="Extension"/>
 			<short value="Obligations for applications using element/in model"/>
-			<definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type. The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See [Obligation Extension](obligations.html) for further detail."/>
+			<definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type.&#10;&#10;
+
+The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail.&#10;&#10;
+
+Obligations apply to only data that 'fits' the semantics of the element and the overall instance. For example, a Composition, List, or other grouper may inherently filter what instances are 'in scope' and, in some cases, might even indicate the included instances themselves should be subsetted (i.e. filtering out elements or certain element repetitions)&#10;&#10;
+
+Once the data that is semantically appropriate to share has been identified, it's subsequently filtered by 'what's allowed to be shared' based on regulation, consent, etc.&#10;&#10;
+	
+Obligations might apply to only a subset of the remaining elements based on any specified obligation 'filter'.&#10;&#10;
+	
+Of those, there may only be an obligation for a limited number of matching occurrences. Which occurrences are chosen is selected by the system adhering to the obligation.&#10;&#10;
+	
+Note that the result of this on elements with repetitions is that a variable number of results will be included based on all of the above rules, which may be zero or more in any given instance."/>
 			<min value="0"/>
 			<max value="*"/>
 		</element>
