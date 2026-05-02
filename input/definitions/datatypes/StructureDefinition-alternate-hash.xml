@@ -17,8 +17,8 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.5.1598"/>
   </identifier>
   <version value="5.0.0"/>
-  <name value="RelativeDateCriteria"/>
-  <title value="Relative Date Criteria"/>
+  <name value="AlternateHash"/>
+  <title value="Alternate Hash"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2013-12-05"/>
@@ -29,8 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
-  <purpose value="NOTE: This extension will be deprecated in favor of the new relative-time extension once the RelativeTime data type on which it is based is generally available."/>
+  <description value="An attachment hash using a different integrity check algorithm from Attachment.hash which uses SHA-1"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -41,11 +40,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="date"/>
-  </context>
-  <context>
-    <type value="element"/>
-    <expression value="dateTime"/>
+    <expression value="Attachment"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -53,17 +48,16 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Relative Date Criteria"/>
-      <definition value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
-      <comment value="This extension is used when a precise date is not known, but rather, the date will be relative to some future event (e.g. Do this 2 weeks after an operation)."/>
+      <short value="An attachment hash using a different integrity check algorithm (not SHA-1)"/>
+      <definition value="An attachment hash using a different integrity check algorithm from Attachment.hash which uses SHA-1."/>
       <min value="0"/>
       <max value="1"/>
     </element>
     <element id="Extension.extension:algorithm">
       <path value="Extension.extension"/>
-      <sliceName value="targetRefealgorithmrence"/>
-      <short value="Specific event that the date is relative to"/>
-      <definition value="The specific event that the date(time) is relative to - e.g. an Encounter, an Observation, a Procedure, etc."/>
+      <sliceName value="algorithm"/>
+      <short value="The algorthm"/>
+      <definition value="The algorthm."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -96,9 +90,8 @@
     <element id="Extension.extension:hash">
       <path value="Extension.extension"/>
       <sliceName value="hash"/>
-      <short value="Kind of event that the date is relative to"/>
-      <definition value="The generic type of event that the date(time) is relative to."/>
-      <comment value="If present alongside targetReference, the kind of event is within the specified event - e.g. admission or discharge in an encounter, enrollment or start of therapy in a study, etc."/>
+      <short value="The value of the hash"/>
+      <definition value="The algorithm of the hash."/>
       <min value="1"/>
       <max value="1"/>
       <type>

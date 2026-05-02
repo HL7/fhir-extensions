@@ -33,7 +33,7 @@ For further information about features, see the [Application Feature Framework I
 
 As an example of the kind of use this extension might support, an application could choose to only use value set 
 expansions that are explicitly labeled as 'prepared under the conformance rules defined in the [CRMI implementation
-guide](https://build.fhir.org/ig/HL7/crmi-ig).
+guide](https://build.fhir.org/ig/HL7/crmi-ig)'.&#10;&#10;
 
 This extension is a statement about the content of resources referred to from Provenance.target and is placed on the
 Provenance resource. See the related extension for [declaring feature conformance in the resource itself](StructureDefinition-feature-assertion.html).&#10;&#10;
@@ -70,7 +70,7 @@ extension."/>
       <path value="Extension.extension"/>
       <sliceName value="definition"/>
       <short value="Identifies the feature definition"/>
-      <definition value="A reference to the definition of the feature by it's canonical URL"/>
+      <definition value="A reference to the definition of the feature by its canonical URL"/>
       <comment value="The type is `uri` not `canonical` because FeatureDefinition isn't a defined resource"/>
       <min value="1"/>
       <max value="1"/>
@@ -146,7 +146,7 @@ extension."/>
       <path value="Extension.extension.extension"/>
       <sliceName value="name"/>
       <short value="Identifies the feature qualifier"/>
-      <definition value="A reference to the qualifier of the feature by it's name"/>
+      <definition value="A reference to the qualifier of the feature by its name"/>
       <comment value="The type is `uri` not `canonical` because FeatureDefinition isn't a defined resource"/>
       <min value="1"/>
       <max value="1"/>
