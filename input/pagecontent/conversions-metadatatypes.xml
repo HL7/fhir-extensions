@@ -1,0 +1,113 @@
+﻿<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd"> 
+
+<a name="conv-ContactDetail"> </a>
+<a name="ContactDetail"> </a>
+<h3>ContactDetail</h3>
+<table style="margin-bottom: 0px" class="colsn"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Normative</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:ContactDetail-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#ContactDetail">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#ContactDetail">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#ContactDetail">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#ContactDetail">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#ContactDetail">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#ContactDetail">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#ContactDetail">R4 Conversions</a>
+</p>
+
+{% include maps-ContactDetail.xhtml %}
+
+<a name="conv-DataRequirement"> </a>
+<a name="DataRequirement"> </a>
+<h3>DataRequirement</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:DataRequirement-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#DataRequirement">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#DataRequirement">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#DataRequirement">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#DataRequirement">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#DataRequirement">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#DataRequirement">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#DataRequirement">R4 Conversions</a>
+</p>
+
+{% include maps-DataRequirement.xhtml %}
+
+<a name="conv-ParameterDefinition"> </a>
+<a name="ParameterDefinition"> </a>
+<h3>ParameterDefinition</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:ParameterDefinition-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#ParameterDefinition">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#ParameterDefinition">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#ParameterDefinition">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#ParameterDefinition">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#ParameterDefinition">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#ParameterDefinition">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#ParameterDefinition">R4 Conversions</a>
+</p>
+
+{% include maps-ParameterDefinition.xhtml %}
+
+<a name="conv-RelatedArtifact"> </a>
+<a name="RelatedArtifact"> </a>
+<h3>RelatedArtifact</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:RelatedArtifact-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#RelatedArtifact">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#RelatedArtifact">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#RelatedArtifact">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#RelatedArtifact">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#RelatedArtifact">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#RelatedArtifact">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#RelatedArtifact">R4 Conversions</a>
+</p>
+
+{% include maps-RelatedArtifact.xhtml %}
+
+<a name="conv-TriggerDefinition"> </a>
+<a name="TriggerDefinition"> </a>
+<h3>TriggerDefinition</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:TriggerDefinition-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#TriggerDefinition">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#TriggerDefinition">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#TriggerDefinition">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#TriggerDefinition">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#TriggerDefinition">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#TriggerDefinition">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#TriggerDefinition">R4 Conversions</a>
+</p>
+
+{% include maps-TriggerDefinition.xhtml %}
+
+<a name="conv-Expression"> </a>
+<a name="Expression"> </a>
+<h3>Expression</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Expression-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#Expression">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#Expression">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#Expression">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#Expression">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#Expression">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#Expression">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#Expression">R4 Conversions</a>
+</p>
+
+{% include maps-Expression.xhtml %}
+
+<a name="conv-UsageContext"> </a>
+<a name="UsageContext"> </a>
+<h3>UsageContext</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:UsageContext-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#UsageContext">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#UsageContext">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#UsageContext">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#UsageContext">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#UsageContext">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#UsageContext">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#UsageContext">R4 Conversions</a>
+</p>
+
+{% include maps-UsageContext.xhtml %}
+
+<a name="conv-ExtendedContactDetail"> </a>
+<a name="ExtendedContactDetail"> </a>
+<h3>ExtendedContactDetail</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:ExtendedContactDetail-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#ExtendedContactDetail">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#ExtendedContactDetail">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#ExtendedContactDetail">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#ExtendedContactDetail">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#ExtendedContactDetail">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#ExtendedContactDetail">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#ExtendedContactDetail">R4 Conversions</a>
+</p>
+
+{% include maps-ExtendedContactDetail.xhtml %}
+
+<a name="conv-VirtualServiceDetail"> </a>
+<a name="VirtualServiceDetail"> </a>
+<h3>VirtualServiceDetail</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:VirtualServiceDetail-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#VirtualServiceDetail">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#VirtualServiceDetail">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#VirtualServiceDetail">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#VirtualServiceDetail">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#VirtualServiceDetail">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#VirtualServiceDetail">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#VirtualServiceDetail">R4 Conversions</a>
+</p>
+
+{% include maps-VirtualServiceDetail.xhtml %}
+
+<a name="conv-Availability"> </a>
+<a name="Availability"> </a>
+<h3>Availability</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:Availability-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#Availability">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#Availability">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#Availability">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#Availability">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#Availability">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#Availability">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#Availability">R4 Conversions</a>
+</p>
+
+{% include maps-Availability.xhtml %}
+
+<a name="conv-MonetaryComponent"> </a>
+<a name="MonetaryComponent"> </a>
+<h3>MonetaryComponent</h3>
+<table style="margin-bottom: 0px" class="colstu"><tr><td><a href="http://www.hl7.org/Special/committees/fiwg/index.cfm">FHIR Infrastructure</a> Work Group</td><td><a href="{{site.data.fhir.path}}versions.html#maturity">Maturity Level</a>: 5</td><td><a href="{{site.data.fhir.path}}versions.html#std-process">Standards Status</a>: <a href="{{site.data.fhir.path}}versions.html#std-process" title="Standard Status">Trial Use</a></td></tr></table>
+<p style="background-color: gainsboro; padding: 4px; margin-top: 0px">
+<!--xlp:MonetaryComponent-->See also <a no-external="true" href="{{site.data.fhir.path}}metadatatypes.html#MonetaryComponent">Base Definition</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-examples.html#MonetaryComponent">Examples</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-definitions.html#MonetaryComponent">Detailed Descriptions</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-mappings.html#MonetaryComponent">Mappings</a>, <a no-external="true" href="{{site.data.fhir.path}}metadatatypes-profiles.html#MonetaryComponent">Profiles</a>, <a no-external="true" href="extensions-metadatatypes.html#MonetaryComponent">Extensions</a> and <a no-external="true" href="conversions-metadatatypes.html#MonetaryComponent">R4 Conversions</a>
+</p>
+
+{% include maps-MonetaryComponent.xhtml %}
+
+</div>
