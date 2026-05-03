@@ -99,6 +99,21 @@
     
     <p>For more information, see <a href="https://confluence.hl7.org/display/FMG/FHIR+Extension+Pack+Policy">FHIR Extension Pack Policy</a>.</p>
 
+	<a name="policy-extensions"> </a>
+	<h4>Support for multiple versions</h4>
+  
+  <p>
+  These extensions are defined for use across multiple versions - all versions from R3 forwards.
+  The base definitions are based on R5. Where the extensions use R5 features, notes about how the 
+  extensions work in previous versions can be found as part of the extension definition. 
+  </p>
+
+  <p>Some extensions are not appropriate for use with some versions of FHIR. This typically 
+  arises where an extension is defined for use in R4, but in a later version (R5 or R6), a 
+  specific element is introduced to carry the data the extension is defined for. In such cases,
+  the extensions are labelled with which versions of FHIR they are appropriate for use with.
+  </p>
+
 	<a name="ip"> </a>
 	<h3>Intellectual Property Considerations</h3>
 	<p>
