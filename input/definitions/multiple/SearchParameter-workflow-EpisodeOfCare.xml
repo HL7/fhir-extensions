@@ -25,7 +25,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="SearchParameter for Barrier Extension with Reference value"/>
+  <description value="SearchParameter for [EpisodeOfCare extension](StructureDefinition-workflow-episodeOfCare.html)"/>
   <code value="workflow-EpisodeOfCare"/>
   <base value="AdverseEvent"/>
   <base value="Appointment"/>
@@ -75,7 +75,7 @@
   <base value="SupplyRequest"/>
   <base value="VisionPrescription"/>
   <type value="reference"/>
-  <expression value="Resource.extension('http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare).value"/>
+  <expression value="Resource.extension('http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare').value"/>
   <processingMode value="normal"/>
 </SearchParameter>
 

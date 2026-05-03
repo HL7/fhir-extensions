@@ -26,7 +26,7 @@
         "value" : "http://www.hl7.org/Special/committees/fiwg"
       }]
     }],
-    "description" : "Provides further classification of the patient's address beyond the information in Address.use.",
+    "description" : "Provides further classification of a Postal address beyond the information in Address.use.",
     "jurisdiction" : [{
       "coding" : [{
         "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -49,12 +49,6 @@
     "context" : [{
       "type" : "element",
       "expression" : "Address"
-    },{
-      "type" : "element",
-      "expression" : "Patient.contact"
-    },{
-      "type" : "element",
-      "expression" : "Organization.contact"
     }],
     "type" : "Extension",
     "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -63,8 +57,9 @@
       "element" : [{
         "id" : "Extension",
         "path" : "Extension",
-        "short" : "Further classification of the patient's address",
-        "definition" : "Provides further classification of the patient's address beyond the information in Address.use.",
+        "short" : "Further classification of a postal address",
+        "definition" : "Provides further classification of a postal address beyond the information in Address.use.",
+        "comments" : "This is primarily used to classify the place of residence for a person.",
         "min" : 0,
         "max" : "1",
         "isModifier" : false
