@@ -59,7 +59,7 @@
         "path" : "Extension",
         "short" : "Further classification of a postal address",
         "definition" : "Provides further classification of a postal address beyond the information in Address.use.",
-        "comments" : "This is primarily used to classify the place of residence for a person.",
+        "comment" : "This is primarily used to classify the place of residence for a person.",
         "min" : 0,
         "max" : "1",
         "isModifier" : false
