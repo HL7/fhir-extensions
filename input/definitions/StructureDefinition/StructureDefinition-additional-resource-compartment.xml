@@ -168,7 +168,7 @@
       <min value="1"/>
       <type>
         <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/SearchParameter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/SearchParameter"/>
       </type>
     </element>
 
@@ -199,7 +199,7 @@
       <min value="1"/>
       <type>
         <code value="canonical"/>
-        <targetProfile value="http://hl7.org/fhir/SearchParameter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/SearchParameter"/>
       </type>
     </element>
 

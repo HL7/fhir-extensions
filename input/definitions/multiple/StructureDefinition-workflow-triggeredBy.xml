@@ -156,14 +156,29 @@
     <expression value="VisionPrescription"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="BiologicallyDerivedProductDispense"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="DeviceDispense"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="DeviceUsage"/>
   </context>
@@ -177,10 +192,20 @@
     <expression value="DeviceUseStatement"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="NutritionIntake"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="Transport"/>
   </context>

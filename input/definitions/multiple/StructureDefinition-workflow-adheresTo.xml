@@ -105,10 +105,20 @@
     <expression value="Task"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="BiologicallyDerivedProductDispense"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="DeviceDispense"/>
   </context>
@@ -140,10 +150,20 @@
     <expression value="DeviceUseStatement"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="NutritionIntake"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="Transport"/>
   </context>

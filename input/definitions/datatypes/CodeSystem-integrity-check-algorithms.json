@@ -11,16 +11,16 @@
   }],
   "url" : "http://hl7.org/fhir/CodeSystem/integrity-check-algorithms",
   "version" : "0.1.0",
-  "name" : "integrity_check_algorithms",
+  "name" : "IntegrityCheckAlgorithms",
   "title" : "Integrity check algorithms",
   "status" : "active",
   "experimental" : false,
   "date" : "2024-04-11",
-  "publisher" : "openEHR + HL7",
+  "publisher" : "HL7 International / FHIR Infrastructure",
   "contact" : [{
     "telecom" : [{
       "system" : "url",
-      "value" : "http://www.openehr.org"
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
     }]
   }],
   "description" : "Integrity check algorithms",
@@ -31,7 +31,7 @@
     }]
   }],
   "caseSensitive" : true,
-  "valueSet" : "https://specifications.openehr.org/fhir/valueset-integrity-check-algorithms",
+  "valueSet" : "http://hl7.org/fhir/ValueSet/integrity-check-algorithms",
   "content" : "complete",
   "concept" : [{
     "code" : "SHA-1",

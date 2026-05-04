@@ -80,10 +80,23 @@
     <expression value="DeviceDefinition"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+       <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="Evidence"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="EvidenceVariable"/>
   </context>

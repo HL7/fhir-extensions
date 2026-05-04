@@ -26,39 +26,42 @@
       FHIR versions R5, R4, R4B, and R3</li>
   </ul>  
 
-
-  <a name="ballot"> </a>
-  <h3>Note to Balloters</h3>
+  <a name="changes"> </a>
+  <h3>Changes in this version</h3>
 
   <p>This is the ballot for release 5.3.0 of the Extension Pack. While comment is welcome on all extensions, 
   please pay particular consideration to the following matters:</p>
   <ul>
    <li>New Extensions: {% include new-extensions.xhtml %}</li>
    <li>Removed Extensions: {% include deleted-extensions.xhtml %}</li>
-   <li>Changed Extensions: You can see which extensions have changed by looking in the <b>Δ v5.2.0</b> column on right of the <a href="extension-registry.html">Extension Summary Table</a>. Unfortunately, the change list has grown to include most extension courtesy of addressing QA issues in the extension pack in this ballot</li>
-   <li>Deprecated Extensions: There are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' and standardStatus = 'deprecated' %} deprecated extensions: see <a href="deprecated.html">the deprecated Extensions page</a>. Balloters might want to pay particular attention to this list - there has been some lack of clarity about whether extensions should be deprecated when elements are added to resources in R5/6 </li>
+   <li>Extensions that have breaking changes: 
+    <ul>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/researchStudy-siteRecruitment]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/relative-date]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/feature-assertion]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/device-maintenanceresponsibility]]]</li>
+    </ul>
+   </li>
+   <li>Extensions that have new sub-extensions: 
+    <ul>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/obligation]]]</li>
+    </ul>
+   </li>
+   <li>Other changes: 
+    <ul>
+      <li>The language and jurisdiction bindings found in several extensions have been updated to the R5/6 pattern.</li>
+      <li>The status, maturity and experimental properties have been update for many resources.</li>
+      <li>The context of use has been update for many extensions, including make the context version dependent where appropriate.</li>
+    </ul>
+   </li>
+   <li>Deprecated Extensions: There are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' and standardStatus = 'deprecated' %} deprecated extensions: see <a href="deprecated.html">the deprecated Extensions page</a></li>
    <li>The conversion maps have been removed from this release - they have moved to the cross-extensions publications</li>
    <li>A significant new feature in this release is that extensions are transformed to R4 and R3 versions, so that the 
      extension definitions found in the .r4 and .r3 packages are fully valid. This involves: making sure that appropriate 
      CodeSystem and ValueSet resources are included, and using sets of extensions in place of data types defined in
      later versions. A <a href="extension-summary.html">summary of this work</a> is provided.</li>
-  </ul>
-  <p>
-   The FHIR Management Group recognizes the difficulty of balloting the extensions pack
-   for the community. The Extensions Pack ballot serves as a checkpoint for the continuous 
-   development of the Extension pack content prior to publishing the normal formal milestone,
-   and is an opportunity for the community to review and comment on Extensions of interest. 
-   Given that there are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' %}
-   extensions that span the entire span of the FHIR implementation
-   space, there is no expectation that ballot reviewers will be able to review all the 
-   resources. For this reason, ballot cycles of the extensions pack do not contribute towards
-   extension maturity after the first ballot. There are, however, several structural
-   enhancements aimed at addressing extension use tracking and useability:
-  </p>
-  <ul>
-   <li>Extensions now get a direct reference to their page in the FHIR IG Statistics (which itself has been enhanced)</li>
-   <li>The <a href="deprecated.html">Deprecation summary table</a></li>
-   <li>The filter added to the <a href="extension-registry.html">Extension Registry</a></li>
   </ul>
 
 	<a name="topics"> </a>

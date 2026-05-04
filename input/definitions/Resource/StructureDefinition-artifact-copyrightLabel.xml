@@ -101,6 +101,9 @@
   </context>
   <context>
     <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
       <extension url="endFhirVersion">
         <valueCode value="4.3"/>
       </extension>
@@ -110,6 +113,9 @@
   </context>
   <context>
     <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+       <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
       <extension url="endFhirVersion">
         <valueCode value="4.3"/>
       </extension>
