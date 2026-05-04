@@ -125,10 +125,24 @@
       "expression": "ExampleScenario"
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
       "type": "element",
       "expression": "EventDefinition"
     },
     {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension" : [{
+          "url" : "startFhirVersion",
+          "valueCode" : "4.0"
+        }]
+      }],
       "type": "element",
       "expression": "EvidenceVariable"
     },

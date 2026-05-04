@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/tools/StructureDefinition/entered-in-error-status"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/entered-in-error-status"/>
   <name value="EnteredInErrorStatus"/>
   <title value="Entered In Error Status"/>
   <status value="active"/>
@@ -54,7 +54,7 @@
     </element> 
     <element id="Extension.url">
       <path value="Extension.url"/> 
-      <fixedUri value="http://hl7.org/fhir/tools/StructureDefinition/entered-in-error-status"/> 
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/entered-in-error-status"/> 
     </element> 
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/> 

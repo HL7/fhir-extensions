@@ -11,12 +11,11 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
-
-<url value="http://hl7.org/fhir/StructureDefinition/observation-human-transcribed"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/observation-human-transcribed"/>
   <version value="6.0.0"/>
   <name value="HumanTranscribed"/>
   <title value="Human-Transcribed"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
   <date value="2025-10-10"/>
   <publisher value="HL7 International / Orders and Observations"/>

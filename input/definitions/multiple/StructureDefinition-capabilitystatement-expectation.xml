@@ -203,10 +203,20 @@
     <expression value="CapabilityStatement.messaging.supportedMessage"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="SearchParameter.multipleOr"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="SearchParameter.multipleAnd"/>
   </context>
