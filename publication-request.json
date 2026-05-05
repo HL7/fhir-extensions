@@ -1,10 +1,11 @@
 {
   "package-id" : "hl7.fhir.uv.extensions",
-  "version" : "5.3.0-ballot-tc1",
-  "path" : "http://hl7.org/fhir/extensions/5.3.0-ballot-tc1",
-  "mode" : "working",
+  "version" : "5.3.0",
+  "path" : "http://hl7.org/fhir/extensions/5.3.0",
+  "mode" : "milestone",
   "status" : "trial-use",
   "sequence" : "Release 5.3",
-  "desc" : "Ballot for release 5.3, with an actual technical correction for broken r4 package generation",
+  "desc" : "Release 5.3",
+  "changes" : "index.html#changes",
   "first" : false
 }
