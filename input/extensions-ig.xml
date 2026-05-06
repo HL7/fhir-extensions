@@ -9,7 +9,10 @@
     <valueCode value="fhir"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="4"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm-support">
+    <valueMarkdown value="Although individual extensions in the IG communicate their own maturity, the extensions pack overall is stable."/>
   </extension>
   <url value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
   <identifier>
