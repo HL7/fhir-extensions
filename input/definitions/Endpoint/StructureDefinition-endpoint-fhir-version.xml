@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="The Patient Access Endpoint's FHIR Version. This Extension is a denormalization to help clients focus on supported endpoints."/>
+  <description value="The Endpoint's FHIR Version. This Extension is a denormalization to help clients focus on supported endpoints."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -44,7 +44,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Endpoint FHIR Version"/>
-      <definition value="The Patient Access Endpoint's FHIR Version. This Extension is a denormalization to help clients focus on supported endpoints."/>
+      <definition value="The Endpoint's FHIR Version. This Extension is a denormalization to help clients focus on supported endpoints."/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
