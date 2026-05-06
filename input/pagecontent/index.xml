@@ -22,15 +22,14 @@
     <li>There is information on each extension description describing the use of the extension with other FHIR Versions</li>
     <li>A very few extensions can't be used in earlier versions</li>
     <li>There are packages for use with older versions with tooling based packages: <code>hl7.fhir.uv.extensions.r4</code> and <code>hl7.fhir.uv.extensions.r3</code></li>
-    <li>The version of the Extensions Pack (5.3.0-ballot) is not the same as the FHIR version, since it applies equally to 
+    <li>The version of the Extensions Pack (5.3.0) is not the same as the FHIR version, since it applies equally to 
       FHIR versions R5, R4, R4B, and R3</li>
   </ul>  
 
   <a name="changes"> </a>
   <h3>Changes in this version</h3>
 
-  <p>This is the ballot for release 5.3.0 of the Extension Pack. While comment is welcome on all extensions, 
-  please pay particular consideration to the following matters:</p>
+  <p>This is the May 2026 release (5.3.0) of the Extension Pack. The following is a summary of major changes since the last release:</p>
   <ul>
    <li>New Extensions: {% include new-extensions.xhtml %}</li>
    <li>Removed Extensions: {% include deleted-extensions.xhtml %}</li>
