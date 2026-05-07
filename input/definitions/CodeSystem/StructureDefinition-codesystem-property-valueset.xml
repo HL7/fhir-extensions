@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="Where CodeSystem properties are of type code or Coding, this ValueSet defines the permitted set of concepts to be used in CodeSystem.concept.property."/>
+  <description value="Where CodeSystem properties are of type code, Coding or string, this ValueSet defines the permitted set of codes or string values to be used in CodeSystem.concept.property."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
