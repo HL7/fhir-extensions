@@ -12,7 +12,7 @@
   "url" : "http://hl7.org/fhir/CodeSystem/integrity-check-algorithms",
   "version" : "0.1.0",
   "name" : "IntegrityCheckAlgorithms",
-  "title" : "Integrity check algorithms",
+  "title" : "Integrity check algorithms CodeSystem",
   "status" : "active",
   "experimental" : false,
   "date" : "2024-04-11",
@@ -23,7 +23,7 @@
       "value" : "http://www.hl7.org/Special/committees/fiwg"
     }]
   }],
-  "description" : "Integrity check algorithms",
+  "description" : "Integrity check algorithms CodeSystem",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
