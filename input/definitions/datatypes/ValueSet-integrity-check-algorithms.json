@@ -12,7 +12,7 @@
   "url" : "http://hl7.org/fhir/ValueSet/integrity-check-algorithms",
   "version" : "0.1.0",
   "name" : "IntegrityCheckAlgorithms",
-  "title" : "Integrity check algorithms",
+  "title" : "Integrity check algorithms ValueSet",
   "status" : "active",
   "experimental" : false,
   "date" : "2024-04-11",
@@ -32,7 +32,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://hl7.org/fhir/CodeSystem/integrity-check-algorithms"
+      "system" : "http://hl7.org/fhir/CodeSystem/integrity-check-algorithms ValueSet"
     }]
   }
 }
