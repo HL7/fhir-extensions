@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="additional-resource-reference-target"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/additional-resource-reference-target"/>
+  <version value="5.0.0"/>
+  <name value="AdditionalResourceReferenceTarget"/>
+  <title value="Additional Resource Reference Target"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-06-08"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="When defining additional resources, this extension allows the relevant work group to indicate and approve that a core element (or another additional resource) may refer to the resource. This enables normal Reference.reference in deployments where both the core and additional resource definitions are in scope."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="StructureDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Allowed reference targets for an additional resource"/>
+      <definition value="Allows the relevant work group to indicate and approve which core and additional-resource reference elements may use this additional resource as a target."/>
+      <comment value="This enables use of normal Reference.reference in deployments where both the core and additional resource definitions are in scope. Each declared target should be approved by the work group responsible for the referenced element."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+
+    <element id="Extension.extension:target">
+      <path value="Extension.extension"/>
+      <sliceName value="target"/>
+      <short value="A reference element that may target this additional resource"/>
+      <definition value="Declares a core or additional-resource reference element that may use this additional resource as a target, as indicated and approved by the relevant work group."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:target.extension">
+      <path value="Extension.extension.extension"/>
+      <min value="2"/>
+      <max value="2"/>
+    </element>
+
+    <element id="Extension.extension:target.extension:profile">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="profile"/>
+      <short value="Name of the approved resource that contains the reference element"/>
+      <definition value="Name of the approved FHIR resource (including additional and historical resource names) that contains the declared reference element."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:target.extension:profile.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:target.extension:profile.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="profile"/>
+    </element>
+    <element id="Extension.extension:target.extension:profile.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="Current and past FHIR resource types (deleted or renamed), and additional resource types (FHIR v6.0.0-ballot4)."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/extended-resource-types"/>
+      </binding>
+    </element>
+
+    <element id="Extension.extension:target.extension:elementId">
+      <path value="Extension.extension.extension"/>
+      <sliceName value="elementId"/>
+      <short value="ElementDefinition id/path of the reference element"/>
+      <definition value="ElementDefinition id or path that identifies the reference element approved to target this additional resource."/>
+      <comment value="This value should identify an element of type Reference in the declared resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:target.extension:elementId.extension">
+      <path value="Extension.extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:target.extension:elementId.url">
+      <path value="Extension.extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="elementId"/>
+    </element>
+    <element id="Extension.extension:target.extension:elementId.value[x]">
+      <path value="Extension.extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+
+    <element id="Extension.extension:target.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="target"/>
+    </element>
+    <element id="Extension.extension:target.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <max value="0"/>
+    </element>
+
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/additional-resource-reference-target"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
