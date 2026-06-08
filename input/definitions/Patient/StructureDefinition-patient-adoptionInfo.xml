@@ -13,7 +13,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
         <valueMarkdown value="This extension is deprecated due to lack of use and issues with the definition"/>
       </extension>
-    </valueCode">
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/patient-adoptionInfo"/>
   <identifier>
