@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="observation-supportingDevice"/>
+  <id value="observationdefinition-supportingDevice"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="oo"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="1"/>
+    <valueInteger value="0"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/observation-supportingDevice"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/observationdefinition-supportingDevice"/>
   <version value="1.0.0"/>
-  <name value="ObservationSupportingDevice"/>
-  <title value="Observation Supporting Device"/>
-  <status value="active"/>
-  <experimental value="false"/>
+  <name value="ObservationDefinitionSupportingDevice"/>
+  <title value="Observation Definition Supporting Device"/>
+  <status value="draft"/>
+  <experimental value="true"/>
   <date value="2026-06-15"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>
@@ -31,12 +31,15 @@
   <abstract value="false"/>
   <context>
     <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
       <extension url="endFhirVersion">
         <valueCode value="5.0"/>
       </extension>
     </extension>
     <type value="element"/>
-    <expression value="Observation"/>
+    <expression value="ObservationDefinition"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -55,22 +58,15 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/observation-supportingDevice"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/observationdefinition-supportingDevice"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
         <code value="CodeableReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition"/>
       </type>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DeviceType"/>
-        </extension>
-        <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/device-type"/>
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
