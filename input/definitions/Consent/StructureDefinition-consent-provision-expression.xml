@@ -11,17 +11,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/consent-location"/>
-  <identifier>
-    <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.X"/>
-  </identifier>
+  <url value="http://hl7.org/fhir/StructureDefinition/consent-provision-expression"/>
   <version value="5.0.0"/>
   <name value="ConsentProvisionExpression"/>
-  <title value="A computable expression for matching the provision"/>
+  <title value="A computable expression for what is controlled by the provision"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-12-28T16:55:11+11:00"/>
   <publisher value="HL7 International / Security"/>
   <contact>
     <telecom>
@@ -29,8 +24,8 @@
       <value value="http://www.hl7.org/Special/committees/cbcc"/>
     </telecom>
   </contact>
-  <description value="Restricts this exception to only apply a specific location as defined."/>
-  <fhirVersion value="5.0.0"/>
+  <description value="A computable definition of what is controlled by this provision."/>
+  <fhirVersion value="6.0.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
@@ -53,8 +48,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="A location specific constraint"/>
-      <definition value="Restricts this exception to only apply a specific location as defined."/>
+      <short value="A computable expression for what is controlled by the provision"/>
+      <definition value="Restricts this provision to only apply to what matches the expression."/>
       <min value="0"/>
       <max value="*"/>
     </element>
