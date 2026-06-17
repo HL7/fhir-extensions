@@ -46,7 +46,7 @@
       <short value="A computable expression for what is controlled by the provision"/>
       <definition value="Restricts this provision to only apply to what matches the expression."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
