@@ -24,7 +24,7 @@
       <value value="http://www.hl7.org/Special/committees/secure"/>
     </telecom>
   </contact>
-  <description value="A computable definition of what is controlled by this provision."/>
+  <description value="Restricts this provision to only apply when the expression evaluates to true. This enables narrowing down the scope of the provision based on nuanced and fine-grained criteria expressed through a FHIRPath or CQL expression."/>
   <fhirVersion value="6.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -43,8 +43,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="A computable expression for what is controlled by the provision"/>
-      <definition value="Restricts this provision to only apply to what matches the expression."/>
+      <short value="A computable expression to narrow down the scope of the provision"/>
+      <definition value="Restricts this provision to only apply when the expression evaluates to true."/>
       <min value="0"/>
       <max value="1"/>
     </element>
