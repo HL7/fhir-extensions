@@ -28,6 +28,7 @@ on:
 
 jobs:
   triage:
+    if: ${{ github.event_name != 'pull_request_target' || contains(fromJson('["OWNER","MEMBER","COLLABORATOR"]'), github.event.pull_request.author_association) }}
     uses: HL7/fhir/.github/workflows/_pr-triage.yml@master
     with:
       label: "Extension pack"
