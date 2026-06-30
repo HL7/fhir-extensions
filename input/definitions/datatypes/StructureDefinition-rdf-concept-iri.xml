@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="rdf-concept-iri"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="its"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/rdf-concept-iri"/>
+  <version value="6.0.0"/>
+  <name value="RDFConceptIri"/>
+  <title value="RDF Concept IRI"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-06-23"/>
+  <publisher value="HL7 International / Implementable Technology Specifications"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.org/Special/committees/xml"/>
+    </telecom>
+  </contact>
+  <description value="Concept IRI representing the RDF-equivalent of a Coding, as specified by the IRI stem registered in the NamingSystem that corresponds to the Coding.system."/>
+  <purpose value="This extension supports the RDF concept IRI representation described in [FHIR RDF](https://www.hl7.org/fhir/rdf.html), allowing the RDF identifier for a coded concept to be carried alongside the Coding even in XML or JSON."/>
+  <fhirVersion value="6.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Coding"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="RDF Concept IRI"/>
+      <definition value="The RDF concept IRI corresponding to this Coding's system and code, determined using the IRI stem registered in the NamingSystem for the Coding.system."/>
+      <comment value="See also the [FHIR RDF page](rdf.html)"/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/rdf-concept-iri"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <example>
+        <label value="Example SNOMED CT concept IRI"/>
+        <valueUri value="http://snomed.info/id/27113001"/>
+      </example>
+      <example>
+        <label value="Example LOINC concept IRI"/>
+        <valueUri value="http://loinc.org/rdf/29463-7"/>
+      </example>
+    </element>
+  </differential>
+</StructureDefinition>
