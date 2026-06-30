@@ -110,7 +110,7 @@
     </concept>
     <concept>
         <code value="dev" />
-        <display value="Health Care Devices" />
+        <display value="Devices" />
         <definition value="Health Care Devices (http://www.hl7.org/Special/committees/healthcaredevices/index.cfm)." />
     </concept>
     <concept>
