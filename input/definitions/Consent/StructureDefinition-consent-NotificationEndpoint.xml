@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="consent-NotificationEndpoint"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="cbcc"/>
+    <valueCode value="sec"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
@@ -22,11 +22,11 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-12-28T16:55:11+11:00"/>
-  <publisher value="HL7 International / Community Based Collaborative Care"/>
+  <publisher value="HL7 International / Security"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/cbcc"/>
+      <value value="http://www.hl7.org/Special/committees/secure"/>
     </telecom>
   </contact>
   <description value="Endpoint for sending Disclosure notifications in the form of FHIR AuditEvent records."/>
