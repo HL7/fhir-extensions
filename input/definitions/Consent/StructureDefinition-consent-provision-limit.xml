@@ -14,7 +14,7 @@
   <url value="http://hl7.org/fhir/StructureDefinition/consent-provision-limit"/>
   <version value="5.0.0"/>
   <name value="ConsentProvisionLimit"/>
-  <title value="Consent Provision Limit"/>
+  <title value="Limits placed on permitted activities by a consent provision"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7 International / Security"/>
@@ -24,7 +24,7 @@
       <value value="http://www.hl7.org/Special/committees/secure"/>
     </telecom>
   </contact>
-  <description value="Extension to express limits on the permitted use of data. This extension expresses limits to be placed on the release of data authorized by the provision in which it exists. The limits are restrictions on the permitted use. Limits may be expressed by: &#xD;&#xA; - <code>control</code>: refrain or obligation codes applied to the activity, &#xD;&#xA; - <code>tag</code>: meta.security tags to be applied to Resources, &#xD;&#xA; - <code>element</code>: elements to be removed from Resources used in this activity, or &#xD;&#xA; - <code>path</code>: data paths to be removed from Resources used in this activity. &#xD;&#xA;&#xD;&#xA;This extension should be used as a ModifierExtension as it is critical to the proper understanding of the consent. If the provision limit is not observed, then the consent is effectively not valid and should not be applied."/>
+  <description value="Extension to express limits on the permitted use of data. This extension expresses limits to be placed on the release of data authorized by the provision in which it exists. The limits are restrictions on the permitted use. Limits may be expressed by refrain or obligation codes applied to the activity, meta.security tags to be applied to Resources, identified elements to be removed from Resources used in this activity, or data paths to be removed from Resources used in this activity. &#xD;&#xA;&#xD;&#xA;This extension should be used as a ModifierExtension as it is critical to the proper understanding of the consent. If the provision limit is not observed, then the consent is effectively not valid and should not be applied."/>
   <fhirVersion value="6.0.0"/>
 
   <mapping>
@@ -41,6 +41,7 @@
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
+<!--
   <snapshot>
     <element id="Extension">
       <path value="Extension"/>
@@ -917,6 +918,7 @@
       </mapping>
     </element>
   </snapshot>
+  -->
   <differential>
     <element id="Extension">
       <path value="Extension"/>
@@ -929,6 +931,7 @@
       <path value="Extension.extension"/>
       <sliceName value="control"/>
       <short value="Coded restriction such as a refrain or obligation."/>
+      <definition value="Control is used when the authorized activity must include a control vocabulary such as a refrain or obligation."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -954,6 +957,7 @@
       <path value="Extension.extension"/>
       <sliceName value="tag"/>
       <short value="Meta.security tags to be applied to data that is used under this provision."/>
+      <definition value="Tag is used when the authorized activity must apply a given meta.security tag(s) to all data used/released under this provision."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -1023,7 +1027,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/consentProvisionLimit"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/consent-provision-limit"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
