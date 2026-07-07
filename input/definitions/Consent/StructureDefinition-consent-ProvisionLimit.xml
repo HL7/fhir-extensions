@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/consentProvisionLimit"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/consent-provision-limit"/>
   <version value="5.0.0"/>
   <name value="ConsentProvisionLimit"/>
   <title value="Consent Provision Limit"/>
@@ -24,7 +24,7 @@
       <value value="http://www.hl7.org/Special/committees/secure"/>
     </telecom>
   </contact>
-  <description value="Extension to express limits on the permitted use of data. This extension expresses limits to be placed on the release of data authorized by the provision in which it exists. The limits are restrictions on the permitted use. Limits may be expressed by: refrain or obligation codes, tags to be applied, elements to be removed, or data paths to be removed. &#xD;&#xA;&#xD;&#xA;This extension should be used as a ModifierExtension as it is critical to the proper understanding of the consent. If the provision limit is not observed, then the consent is effectively not valid and should not be applied."/>
+  <description value="Extension to express limits on the permitted use of data. This extension expresses limits to be placed on the release of data authorized by the provision in which it exists. The limits are restrictions on the permitted use. Limits may be expressed by: &#xD;&#xA; - <code>control</code>: refrain or obligation codes applied to the activity, &#xD;&#xA; - <code>tag</code>: meta.security tags to be applied to Resources, &#xD;&#xA; - <code>element</code>: elements to be removed from Resources used in this activity, or &#xD;&#xA; - <code>path</code>: data paths to be removed from Resources used in this activity. &#xD;&#xA;&#xD;&#xA;This extension should be used as a ModifierExtension as it is critical to the proper understanding of the consent. If the provision limit is not observed, then the consent is effectively not valid and should not be applied."/>
   <fhirVersion value="6.0.0"/>
 
   <mapping>
@@ -139,7 +139,7 @@
       <path value="Extension.extension"/>
       <sliceName value="control"/>
       <short value="Coded restriction such as a refrain or obligation."/>
-      <definition value="An Extension"/>
+      <definition value="Control is used when the authorized activity must include a control vocabulary such as a refrain or obligation."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -248,7 +248,7 @@
     <element id="Extension.extension:control.value[x]">
       <path value="Extension.extension.value[x]"/>
       <short value="Value of extension"/>
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list)."/>
+      <definition value="Value of extension is the control codes to apply to the permitted activity."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -282,7 +282,7 @@
       <path value="Extension.extension"/>
       <sliceName value="tag"/>
       <short value="Meta.security tags to be applied to data that is used under this provision."/>
-      <definition value="An Extension"/>
+      <definition value="Tag is used when the authorized activity must apply a given meta.security tag(s) to all data used/released under this provision."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -391,7 +391,7 @@
     <element id="Extension.extension:tag.value[x]">
       <path value="Extension.extension.value[x]"/>
       <short value="Value of extension"/>
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list)."/>
+      <definition value="The meta.security tags to be applied to the Resources."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -535,7 +535,7 @@
     <element id="Extension.extension:element.value[x]">
       <path value="Extension.extension.value[x]"/>
       <short value="Value of extension"/>
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list)."/>
+      <definition value="The elements to be removed from the Resources."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -544,7 +544,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="string"/>
+        <code value="id"/>
       </type>
       <condition value="ext-1"/>
       <constraint>
@@ -675,7 +675,7 @@
     <element id="Extension.extension:path.value[x]">
       <path value="Extension.extension.value[x]"/>
       <short value="Value of extension"/>
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list)."/>
+      <definition value="The path expressions targeting the elements to be removed from the Resources."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -921,7 +921,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Consent Provision Limit"/>
-      <definition value="Extension to express the limit on the permitted use of data..&#xD;&#xA;&#xD;&#xA;This extension should be used as a ModifierExtension as it is critical to the proper understanding of the consent. If the provision limit is not observed, then the consent is effectively not valid and should not be applied."/>
+      <definition value="Extension to express the limit on the permitted use of data.&#xD;&#xA;&#xD;&#xA;This extension should be used as a ModifierExtension as it is critical to the proper understanding of the consent. If the provision limit is not observed, then the consent is effectively not valid and should not be applied."/>
       <isModifier value="true"/>
       <isModifierReason value="Indicates limits on a permit."/>
     </element>
@@ -995,7 +995,7 @@
     <element id="Extension.extension:element.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
-        <code value="string"/>
+        <code value="id"/>
       </type>
     </element>
     <element id="Extension.extension:path">
@@ -1003,7 +1003,7 @@
       <sliceName value="path"/>
       <short value="What data elements, by FHIRPath, must be removed from the data"/>
       <definition value="When this provision authorizes data use, the data identified by the FHIRPath, must be redacted from the authorized data provided for that authorized use."/>
-      <comment value="The FHIRPath expression is limited to a the [simple subset](http://hl7.org/fhir/fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed. This is a more sophisticated mechanism of referring to an element than .element but does require the system resolving the item to be able to use at least FHIRPath. If the author of the limit has the ability to ensure an id will be present then .element might be more widely useable."/>
+      <comment value="The FHIRPath expression is limited to the [simple subset](http://hl7.org/fhir/fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed. This is a more sophisticated mechanism of referring to an element than .element but does require the system resolving the item to be able to use at least FHIRPath. If the author of the limit has the ability to ensure an id will be present then .element might be more widely useable."/>
       <min value="0"/>
       <max value="*"/>
     </element>
