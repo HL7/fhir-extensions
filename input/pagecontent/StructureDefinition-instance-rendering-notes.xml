@@ -1,0 +1,105 @@
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <a name="security"> </a>
+  <h3>Security considerations</h3>
+  <p>
+    There are two classes of risk associated with the use of this extension:
+  </p>
+  <ul>
+    <li>The risks incurred by executing the code found in the template</li>
+    <li>The risks produced by displaying or processing the generated rendering</li>
+  </ul>
+  <p>
+    In both cases, the risk can be mitigated but not entirely eliminated.  As a result, it is important that systems using
+    this extension have a level of trust in the Library being executed.
+  </p>
+  <p>
+    Details about the risks associated with different languages are covered in the section <a href="#language">below</a>.
+    In terms of the generated content, the risks vary.  An obvious risk is that the renderer could generate content that is
+    incorrect or misleading.  (This can be a risk even if there is no malicious intent, due to improper design or incomplete testing).  
+  </p>
+  <ul>
+    <li><b>text</b> - This has minimal risk.  It is possible, with the use of complex UTF directional codes to produce text that
+      is misleading.  It is also possible to produce text that looks like HTML, which may in turn cause certain consuming systems
+      to treat it as such, in which case the risks listed below for unfiltered HTML also apply</li>
+    <li><b>FHIR XHTML</b> - FHIR XHTML is XHTML that has been validated to ensure that it complies with the
+      <a href="{{site.data.fhir.path}}narrative.html#xhtml">FHIR XHTML rules</a>.  This means that no active content is present.
+      However, <a href="{{site.data.fhir.path}}security.html#narrative">some security risks</a> still exist.  Also, FHIR-XHTML is
+      only (relatively) safe if the system consuming actually verifies that the XHTML meets the FHIR rules before displaying it.</li>
+    <li><b>HTML</b> - In addition to the risks present in the sanitized FHIR XHTML, regular HTML can contain embedded scripts that
+      could result in a range of malicious behavior, including exfiltrating data and/or modifying the system rendering the content</li>
+    <li><b>PDF and other syntaxes</b> - PDFs, MS Office files, and many other formats carry the risk of malicious behavior.  Even
+      if received from a trusted source, running the content through anti-virus software before opening is advisable. </li>
+  </ul>
+
+  <a name="output"> </a>
+  <p>
+  </p>  
+  
+  <a name="language"> </a>
+  <h3>Choosing a language</h3>
+  <p>
+    This extension puts no constraints on the languages used, however there are a few that serve as good candiates:
+  </p>
+  <a name="liquid"> </a>
+  <h4>Liquid</h4>
+  <p>
+    HL7 defines a <a href="https://confluence.hl7.org/spaces/FHIR/pages/66938964/FHIR+Liquid+Profile">FHIRPath-aware form of Liquid</a>.
+    The base <a href="https://shopify.github.io/liquid">Liquid language</a> is open source and was developed by Shopify as a simple mechanism to help construct 
+    static websites (i.e. HTML content).  The <a href="http://hl7.org/fhirpath">FHIRPath</a>-enabled syntax has slight variations that allow embedding 
+    FHIRPath expressions as part of the value content, assignments, and conditional and looping expressions.  This allows significant flexibility and
+    complexity in creating a rendered version of a resource.  This approach is already used to support producing 
+    <a href="https://build.fhir.org/ig/FHIR/ig-guidance/template.html#liquid">generic rules</a> for rendering narrative as part of the HL7 IG publishing tool.
+  </p>
+  <p>
+    This approach has a few benefits:
+  </p>
+  <ul>
+    <li>It naturally intermixes HTML and the expressions that drive custom content.  This makes authored content resemble the layout of the page
+      the Liquid is describing.</li>
+    <li>It is syntax agnostic.  The FHIRPath Liquid engine can consume any FHIR syntax (JSON, XML, RDF, or even in-memory objects).</li>
+    <li>It cannot make external calls, making it safe to execute (though the <a href="#security">risks</a> of malicious rendered content
+      still hold.</li>
+  </ul>
+  <p>
+    The primary drawback is that while there a a number of publicly available Liquid engines, the number of engines that support FHIRPath Liquid is 
+    currently quite limited.  It is supported in the HAPI Java reference implementation and there is work underway on a Javascript equivalent.
+  </p>
+
+  <a name="xslt"> </a>
+  <h4>XSLT</h4>
+  <p>
+    XSLT has long been used as a language for generating HTML content.  That was one of its original purposes.  There are a wide range of XSLT
+    engines available, though most of these are for the limited XSLT 1.0 version, not the more expressive newer versions.  Similar to Liquid,
+    the organization of the content can mirror the layout of the target HTML document, making the content easier to interpret and maintain.
+    It has a different feature set than Liquid.  In some ways, it XSLT is more sophisticated as it can support recursion and defining custom
+    functions.  However, it is missing useful features such as 'markdownify'.
+  </p>
+  <p>
+    The most significant downside of XSLT is that it only funcitons on an XML representation of the resource, which may require serializing
+    and re-parsing the instance.  XSLT also has the ability to read data, both locally and from the network, which can create security issues.
+    Newer versions and extensions can introduce further security concerns through support for file writing as well.
+  </p>
+
+  <a name="cql"> </a>
+  <h4>CQL</h4>
+  <p>
+    <a href="https://cql.hl7.org/">CQL</a> is a language commonly used in FHIR that can manipulate FHIR objects irresepective of what syntax they are
+    received in.  It provides full computable expressivity and supports sophisticated navigation of FHIR structures with relatively simple syntax.
+    Without leveraging additional modules, native CQL has no ability to access or changes to the local file system, which can reduce security concerns.
+    It is widely used in decision support, but it can be used in a variety of contexts.
+  </p>
+  <p>
+    With CQL, the narrative is assembled using string concatenation, often using functions to manage the appropriate wrapping of data in HTML tags or
+    whatever other syntax is needed. 
+  </p>
+  
+  <a name="other"> </a>
+  <h4>Other languages</h4>
+  <p>
+    There are a range of other langaguages that could be used.  Languages such as Javascript can have the ability to manipulate file systems, access
+    data, and perform a range of other functions.  While sandboxed execution is possible, sharing content in languages like this generally deemed
+    to be more prone to security issues because the software capabilities are higher and the behavior of the code can be harder to analyze.
+  </p>
+  
+  
+</div>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../input-cache/schemas/R5/fhir-single.xsd">
+	<id value="instance-rendering"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+		<valueCode value="fhir"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="1"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+		<valueCode value="draft"/>
+	</extension>
+	<url value="http://hl7.org/fhir/StructureDefinition/instance-rendering"/>
+	<version value="5.0.0"/>
+	<name value="InstanceRendering"/>
+	<title value="Instance Rendering"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<date value="2026-05-14"/>
+	<publisher value="HL7 International / FHIR Infrastructure"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.hl7.org/Special/committees/fiwg"/>
+		</telecom>
+	</contact>
+	<description value="A reference to a Library containing an executable process (Liquid, CQL, XSLT, etc.) that can produce a rendered view of instances of this resource"/>
+	<purpose value="Allows defining rendered views such as narrative, patient summaries, etc. that are specific to the expectations of the Questionnaire, Measure or other definitional artifact that sets the rules for the allowed content of the instance."/>
+	<fhirVersion value="5.0.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="ActivityDefinition"/>
+	</context>
+	<context>
+		<type value="element"/>
+		<expression value="Measure"/>
+	</context>
+	<context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+		<type value="element"/>
+		<expression value="ObservationDefinition"/>
+	</context>
+	<context>
+		<type value="element"/>
+		<expression value="PlanDefinition"/>
+	</context>
+	<context>
+		<type value="element"/>
+		<expression value="Questionnaire"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+			<short value="Reference to instance rendering library"/>
+			<definition value="A reference to a Library containing an executable process (Liquid, CQL, XSLT, etc.) that can produce a rendered view of instances of this resource"/>
+			<min value="0"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension">
+			<path value="Extension.extension"/>
+			<min value="2"/>
+		</element>
+		<element id="Extension.extension:purpose">
+			<path value="Extension.extension"/>
+			<sliceName value="purpose"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:purpose.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:purpose.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="purpose"/>
+		</element>
+		<element id="Extension.extension:purpose.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="Coding"/>
+			</type>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://terminology.hl7.org/ValueSet/rendering-purpose"/>
+			</binding>
+		</element>
+		<element id="Extension.extension:template">
+			<path value="Extension.extension"/>
+			<sliceName value="template"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:template.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:template.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="template"/>
+		</element>
+		<element id="Extension.extension:template.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="canonical"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Library"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Library"/>
+			</type>
+		</element>
+		<element id="Extension.extension:format">
+			<path value="Extension.extension"/>
+			<sliceName value="format"/>
+			<definition value="In most cases, the rendering produced by this extension will be FHIR XHTML.  However, it could be markdown, plain text, or even more sophisticated
+    syntaxes such as PDF if the Library happens to be capable of doing so."/>
+			<requirements value="The output syntax is determined by the Library used, however the Library has no mechanism of communicating the output format it will produce"/>
+			<min value="0"/>
+			<max value="1"/>
+			<meaningWhenMissing value="If not specified, XHTML is presumed"/>
+		</element>
+		<element id="Extension.extension:format.extension">
+			<path value="Extension.extension.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension.extension:format.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="format"/>
+		</element>
+		<element id="Extension.extension:format.value[x]">
+			<path value="Extension.extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="code"/>
+			</type>
+			<binding>
+				<strength value="required"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/mimetypes"/>
+				<additional>
+					<purpose value="starter"/>
+					<valueSet value="http://hl7.org/fhir/ValueSet/instance-rendering-format-starter"/>
+				</additional>
+			</binding>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.org/fhir/StructureDefinition/instance-rendering"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="canonical"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Library"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Library"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>
