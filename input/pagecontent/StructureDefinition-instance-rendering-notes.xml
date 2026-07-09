@@ -1,4 +1,23 @@
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <a name="notes"> </a>
+  <h3>Additional Notes</h3>
+  <ul>
+    <li>
+      The Library pointed to by this extension could be stand-alone or contained.  If it is specific to a single definition,
+      contained is often simpler as it ensures that the rendering algorithm is maintained at the same time the definitional resource
+      is, though separate maintenance could make sense if the maintainers of the artifacts will be distinct.
+    </li>
+    <li>
+      The Library <b>SHOULD</b> have a <code>type</code> of 
+      <a href="https://terminology.hl7.org/en/CodeSystem-library-type.html#library-type-logic-library">logic-library</a> code to 
+      confirm its purpose.  
+    </li>
+    <li>
+      If producing narrative, the resulting content <b>MAY</b> need to be wrapped in a
+      <code>&lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;...&lt;/div&gt;</code> element before inserting as the text.div value.  
+    </li>
+  </ul>
+
   <a name="security"> </a>
   <h3>Security considerations</h3>
   <p>
