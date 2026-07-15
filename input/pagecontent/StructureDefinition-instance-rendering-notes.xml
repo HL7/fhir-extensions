@@ -57,11 +57,12 @@
   <a name="language"> </a>
   <h3>Choosing a language</h3>
   <p>
-    This extension puts no constraints on the languages used, however there are a few that serve as good candiates:
+    This extension puts no constraints on the languages used, however there are a few that serve as good candidates:
   </p>
   <a name="liquid"> </a>
   <h4>Liquid</h4>
   <p>
+    (mime type = <code>application/liquid</code>)<br/>
     HL7 defines a <a href="https://confluence.hl7.org/spaces/FHIR/pages/66938964/FHIR+Liquid+Profile">FHIRPath-aware form of Liquid</a>.
     The base <a href="https://shopify.github.io/liquid">Liquid language</a> is open source and was developed by Shopify as a simple mechanism to help construct 
     static websites (i.e. HTML content).  The <a href="http://hl7.org/fhirpath">FHIRPath</a>-enabled syntax has slight variations that allow embedding 
@@ -87,6 +88,7 @@
   <a name="xslt"> </a>
   <h4>XSLT</h4>
   <p>
+    (mime type = <code>application/xslt+xml</code>)<br/>
     XSLT has long been used as a language for generating HTML content.  That was one of its original purposes.  There are a wide range of XSLT
     engines available, though most of these are for the limited XSLT 1.0 version, not the more expressive newer versions.  Similar to Liquid,
     the organization of the content can mirror the layout of the target HTML document, making the content easier to interpret and maintain.
@@ -102,6 +104,7 @@
   <a name="cql"> </a>
   <h4>CQL</h4>
   <p>
+    (mime type = <code>text/cql</code>)<br/>
     <a href="https://cql.hl7.org/">CQL</a> is a language commonly used in FHIR that can manipulate FHIR objects irresepective of what syntax they are
     received in.  It provides full computable expressivity and supports sophisticated navigation of FHIR structures with relatively simple syntax.
     Without leveraging additional modules, native CQL has no ability to access or changes to the local file system, which can reduce security concerns.

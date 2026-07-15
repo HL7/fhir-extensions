@@ -140,18 +140,7 @@
 		</element>
 		<element id="Extension.extension:format.value[x]">
 			<path value="Extension.extension.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="code"/>
-			</type>
-			<binding>
-				<strength value="required"/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/mimetypes"/>
-				<additional>
-					<purpose value="starter"/>
-					<valueSet value="http://hl7.org/fhir/ValueSet/instance-rendering-format-starter"/>
-				</additional>
-			</binding>
+			<max value="0"/>
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
