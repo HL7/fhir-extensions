@@ -148,15 +148,7 @@
 		</element>
 		<element id="Extension.value[x]">
 			<path value="Extension.value[x]"/>
-			<min value="1"/>
-			<type>
-				<code value="canonical"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Library"/>
-			</type>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Library"/>
-			</type>
+			<max value="0"/>
 		</element>
 	</differential>
 </StructureDefinition>
