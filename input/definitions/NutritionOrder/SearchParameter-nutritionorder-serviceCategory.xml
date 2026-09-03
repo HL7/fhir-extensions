@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="nutritionorder-serviceCategory"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="oo"/>
+  </extension>
+  <url value="http://hl7.org/fhir/SearchParameter/nutritionorder-serviceCategory"/>
+  <version value="6.0.0"/>
+  <name value="NutritionOrderServiceCategory"/>
+  <title value="NutritionOrder Service Category SearchParameter"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Orders and Observations"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/orders"/>
+    </telecom>
+  </contact>
+  <description value="Search by the service category extension on NutritionOrder."/>
+  <code value="service-category"/>
+  <base value="NutritionOrder"/>
+  <type value="token"/>
+  <expression value="NutritionOrder.extension('http://hl7.org/fhir/StructureDefinition/nutritionorder-serviceCategory').value"/>
+  <processingMode value="normal"/>
+</SearchParameter>
