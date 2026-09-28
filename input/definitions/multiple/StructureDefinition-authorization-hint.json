@@ -1,0 +1,214 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "authorization-hint",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url": "http://hl7.org/fhir/StructureDefinition/authorization-hint",
+  "name": "AuthorizationHint",
+  "title": "Authorization Hint",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-09-28",
+  "publisher": "HL7 International / FHIR Infrastructure",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "A hint for authorization requirements used to access content or services.",
+  "purpose": "This extension is a mechanism to annotate a resource with hinting for authorization requirements used to access content or services. E.g., indicating the preferred authorization mechanism to access an Endpoint; providing additional tokens for resolving notifications; etc.. Note that the context for this extension for the `Reference` type is restricted to `Reference(Endpoint)`.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Endpoint"
+    },
+    {
+      "type": "element",
+      "expression": "Organization"
+    },
+    {
+      "extension": [{
+        "url": "http://hl7.org/fhir/StructureDefinition/version-specific-use",
+        "extension": [{
+          "url": "startFhirVersion",
+          "valueCode": "4.3.0"
+        }]
+      }],
+      "type": "element",
+      "expression": "SubscriptionStatus.notificationEvent"
+    },
+    {
+        "type": "element",
+        "expression": "Reference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A hint for authorization requirements",
+        "definition": "A hint for authorization requirements used to access content or services",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 1,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Authorization Type",
+        "definition": "Used by clients to determine what kind of authorization is appropriate in this context.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Authorization Type",
+        "definition": "Used by clients to determine what kind of authorization is appropriate in this context.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AuthorizationHintCodes"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Binding to the Authorization Hint Codes starter value set.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/authorization-hint"
+        }
+      },
+      {
+        "id": "Extension.extension:value",
+        "path": "Extension.extension",
+        "sliceName": "value",
+        "short": "Authorization Value",
+        "definition": "A value related to the declared authorization type (e.g., a token).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:value.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:value.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Authorization Value",
+        "definition": "A value related to the declared authorization type (e.g., a token).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/authorization-hint"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 0,
+        "max": "0"
+      }
+    ]
+  }
+}
