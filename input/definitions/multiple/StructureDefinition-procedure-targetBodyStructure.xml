@@ -28,7 +28,7 @@
       <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  <description value="The target body site used for this procedure.  Multiple locations are allowed."/>
+  <description value="The target body site used for this procedure.  Multiple locations are allowed.  This extension is no longer required in FHIR R6 or later because the context resources have core references to BodyStructure."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -65,7 +65,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="The target point for this procedure"/>
-      <definition value="The target body site used for this procedure.  Multiple locations are allowed."/>
+      <definition value="The target body site used for this procedure.  Multiple locations are allowed.  This extension is no longer required in FHIR R6 or later because the context resources have core references to BodyStructure."/>
       <min value="0"/>
       <max value="*"/>
     </element>
