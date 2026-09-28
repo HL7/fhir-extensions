@@ -16,22 +16,22 @@
   "url": "http://hl7.org/fhir/StructureDefinition/authorization-hint",
   "name": "AuthorizationHint",
   "title": "Authorization Hint",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
-  "date": "2019-02-13",
-  "publisher": "HL7 International / Clinical Decision Support",
+  "date": "2026-09-28",
+  "publisher": "HL7 International / FHIR Infrastructure",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/dss"
+          "value": "http://www.hl7.org/Special/committees/fhir"
         }
       ]
     }
   ],
   "description": "A hint for authorization requirements used to access content or services.",
-  "purpose": "This extension provides a hint for authorization requirements used to access content or services.",
+  "purpose": "This extension is a mechanism to annotate a resource with hinting for authorization requirements used to access content or services. E.g., indicating the preferred authorization mechanism to access an Endpoint; providing additional tokens for resolving notifications; etc.. Note that the context for this extension for the `Reference` type is restricted to `Reference(Endpoint)`.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -134,9 +134,20 @@
         },
         "type": [
           {
-            "code": "Coding"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AuthorizationHintCodes"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Binding to the Authorization Hint Codes starter value set.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/authorization-hint"
+        }
       },
       {
         "id": "Extension.extension:value",
