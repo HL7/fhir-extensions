@@ -1,0 +1,85 @@
+{
+  "profiles" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+      "tests" : [
+        {
+          "source" : "choiceOrientation-q-valid-coding.json",
+          "description" : "choiceOrientation is allowed on a coding item",
+          "valid" : true
+        },
+        {
+          "source" : "choiceOrientation-q-valid-string.json",
+          "description" : "choiceOrientation is allowed on any item that isn't a group or display (string)",
+          "valid" : true
+        },
+        {
+          "source" : "choiceOrientation-q-invalid-group.json",
+          "description" : "choiceOrientation is not allowed on a group item",
+          "valid" : false,
+          "outcome" : {
+            "resourceType" : "OperationOutcome",
+            "issue" : [
+              {
+                "severity" : "error",
+                "code" : "structure"
+              }
+            ]
+          }
+        },
+        {
+          "source" : "choiceOrientation-q-invalid-display.json",
+          "description" : "choiceOrientation is not allowed on a display item",
+          "valid" : false,
+          "outcome" : {
+            "resourceType" : "OperationOutcome",
+            "issue" : [
+              {
+                "severity" : "error",
+                "code" : "structure"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
+      "tests" : [
+        {
+          "source" : "choiceOrientation-ed-valid-coding.json",
+          "description" : "choiceOrientation is allowed on an element with a Coding type",
+          "valid" : true
+        },
+        {
+          "source" : "choiceOrientation-ed-invalid-string.json",
+          "description" : "choiceOrientation is not allowed on an element whose only type is string",
+          "valid" : false,
+          "outcome" : {
+            "resourceType" : "OperationOutcome",
+            "issue" : [
+              {
+                "severity" : "error",
+                "code" : "structure"
+              }
+            ]
+          }
+        },
+        {
+          "source" : "choiceOrientation-ed-invalid-no-type.json",
+          "description" : "choiceOrientation is not allowed on an element with no type",
+          "valid" : false,
+          "outcome" : {
+            "resourceType" : "OperationOutcome",
+            "issue" : [
+              {
+                "severity" : "error",
+                "code" : "structure"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
