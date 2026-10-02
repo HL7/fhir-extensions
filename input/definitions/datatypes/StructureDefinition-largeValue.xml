@@ -74,6 +74,9 @@
       <type>
         <code value="decimal"/>
       </type>
+      <type>
+        <code value="integer64"/>
+      </type>
     </element>
   </differential>
 </StructureDefinition>
