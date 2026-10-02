@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="authorization-hint"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/CodeSystem/authorization-hint"/>
+  <version value="5.0.0"/>
+  <name value="AuthorizationHint"/>
+  <title value="Authorization Hint"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-28"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="This code system defines a starter set of codes that can be used to indicate authorization hints."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="smart-app-launch"/>
+    <display value="SMART-on-FHIR Application Launch"/>
+    <definition value="Indicates that authorization should be performed as a SMART Application Launch. If a value is provided, it is an additional challenge token."/>
+  </concept>
+  <concept>
+    <code value="smart-backend"/>
+    <display value="SMART-on-FHIR Backend Services"/>
+    <definition value="Indicates that authorization should be performed as SMART Backend Services. If a value is provided, it is an additional challenge token."/>
+  </concept>
+  <concept>
+    <code value="challenge-token"/>
+    <display value="Challenge Token"/>
+    <definition value="Indicates that an additional challenge token is required for authorization."/>
+  </concept>
+  <concept>
+    <code value="mutual-tls"/>
+    <display value="Mutual TLS"/>
+    <definition value="Indicates that authorization should be performed using Mutual TLS certificates."/>
+  </concept>
+</CodeSystem>
