@@ -1,0 +1,171 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "additional-operation-parameter-allowedType",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "http://hl7.org/fhir/StructureDefinition/additional-operation-parameter-allowedType",
+  "name": "AdditionalOperationParameterAllowedType",
+  "title": "Additional Operation Parameter Allowed Type",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-10-02",
+  "publisher": "HL7 International / FHIR Infrastructure",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Identifies an operation parameter with a type of Resource for which this resource is to be considered an additional permitted allowedType.",
+  "purpose": "Additional resources are not known to the base specification, so the operations defined there don't list them in OperationDefinition.resource, or as permitted types for their parameters. These extensions allow an existing operation definition to be supplemented for an additional resource.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "StructureDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Operation parameter this resource is an additional allowedType for",
+        "definition": "Identifies an operation parameter with a type of Resource for which this resource is to be considered an additional permitted allowedType.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 3
+      },
+      {
+        "id": "Extension.extension:url",
+        "path": "Extension.extension",
+        "sliceName": "url",
+        "short": "Operation whose parameter is supplemented",
+        "definition": "Canonical URL of the operation whose parameter this resource should be permitted as an additional type for.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:url.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:url.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:url.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "Name of the parameter that is supplemented",
+        "definition": "Parameter name with a type of Resource that this additional resource is to be considered an additional permitted allowedType for.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:use",
+        "path": "Extension.extension",
+        "sliceName": "use",
+        "short": "in | out",
+        "definition": "The 'use' value that corresponds to the parameter being supplemented.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:use.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:use.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "use"
+      },
+      {
+        "id": "Extension.extension:use.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/operation-parameter-use",
+          "description": "Whether an operation parameter is an input or an output parameter."
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/additional-operation-parameter-allowedType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

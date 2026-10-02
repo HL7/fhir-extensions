@@ -1,0 +1,84 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "additional-operation-context",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "http://hl7.org/fhir/StructureDefinition/additional-operation-context",
+  "name": "AdditionalOperationContext",
+  "title": "Additional Operation Context",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-10-02",
+  "publisher": "HL7 International / FHIR Infrastructure",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "The canonical URL of an operation whose context (i.e. OperationDefinition.resource) is supplemented to include this resource.",
+  "purpose": "Additional resources are not known to the base specification, so the operations defined there don't list them in OperationDefinition.resource, or as permitted types for their parameters. These extensions allow an existing operation definition to be supplemented for an additional resource.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "StructureDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Operation that can also be invoked on this resource",
+        "definition": "Canonical URL of the operation whose context (i.e. OperationDefinition.resource) is being supplemented to include this resource.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/additional-operation-context"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/OperationDefinition"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
