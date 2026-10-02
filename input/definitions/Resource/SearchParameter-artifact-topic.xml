@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="artifact-topic"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cds"/>
+  </extension>
+  <url value="http://hl7.org/fhir/SearchParameter/artifact-topic"/>
+  <name value="ArtifactTopicSearchParameter"/>
+  <title value="Artifact Topic SearchParameter"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-02"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="Search by the topics of an artifact, as given by the [artifact-topic extension](StructureDefinition-artifact-topic.html)"/>
+  <code value="topic"/>
+  <base value="ArtifactAssessment">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="CapabilityStatement"/>
+  <base value="ClinicalUseDefinition">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="CodeSystem"/>
+  <base value="CompartmentDefinition"/>
+  <base value="ConditionDefinition">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="ConceptMap"/>
+  <base value="DeviceDefinition">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="ExampleScenario">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="GraphDefinition"/>
+  <base value="Group"/>
+  <base value="ImplementationGuide"/>
+  <base value="Medication"/>
+  <base value="MedicationKnowledge">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="MessageDefinition"/>
+  <base value="NamingSystem"/>
+  <base value="ObservationDefinition">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="OperationDefinition"/>
+  <base value="Questionnaire"/>
+  <base value="SearchParameter"/>
+  <base value="SpecimenDefinition">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="Substance"/>
+  <base value="SubstanceDefinition">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="SubscriptionTopic">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="StructureDefinition"/>
+  <base value="StructureMap"/>
+  <base value="TerminologyCapabilities">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="ValueSet"/>
+  <type value="token"/>
+  <expression value="Resource.extension('http://hl7.org/fhir/StructureDefinition/artifact-topic').value"/>
+  <processingMode value="normal"/>
+</SearchParameter>
