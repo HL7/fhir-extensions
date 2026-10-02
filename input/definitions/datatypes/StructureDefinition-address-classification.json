@@ -16,7 +16,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/address-classification",
     "name" : "AddressClassification",
     "title" : "Address Classification",
-    "status" : "draft",
+    "status" : "active",
     "experimental" : false,
     "date" : "2019-11-01T09:29:23+11:00",
     "publisher" : "HL7 International / FHIR Infrastructure",

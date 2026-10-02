@@ -27,7 +27,7 @@
   <version value="5.0.0"/>
   <name value="GeneticObservationSecondaryFindings"/>
   <title value="Genetic Observation Secondary Findings Value Set"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <publisher value="HL7 International / Orders and Observations"/>
   <contact>
