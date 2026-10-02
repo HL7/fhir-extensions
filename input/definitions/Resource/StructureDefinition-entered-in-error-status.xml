@@ -60,7 +60,10 @@
       <path value="Extension.value[x]"/> 
       <min value="1"/> 
       <type> 
-        <code value="url"/> 
+        <code value="string"/> 
+      </type> 
+      <type> 
+        <code value="code"/> 
       </type> 
     </element> 
   </differential>

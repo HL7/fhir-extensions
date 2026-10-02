@@ -207,6 +207,13 @@
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="profile-test-cases"/>
+      </code>
+      <value value="tests/profiles/largeValue-tests.json"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="copyrightyear"/>
       </code>
       <value value="2022+"/>

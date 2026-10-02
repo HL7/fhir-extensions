@@ -1,0 +1,61 @@
+{
+  "profiles": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/Observation",
+      "tests": [
+        {
+          "source": "largeValue-valid-positive.json",
+          "description": "A whole number larger than the int bounds is valid",
+          "valid": true
+        },
+        {
+          "source": "largeValue-valid-negative.json",
+          "description": "A negative whole number larger than the int bounds is valid",
+          "valid": true
+        },
+        {
+          "source": "largeValue-invalid-fraction.json",
+          "description": "A value with a fractional part fails lv-1",
+          "valid": false,
+          "outcome": {
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "severity": "error",
+                "code": "invariant"
+              }
+            ]
+          }
+        },
+        {
+          "source": "largeValue-invalid-trailing-zero.json",
+          "description": "A value with a decimal point fails lv-1, even if the fractional part is zero",
+          "valid": false,
+          "outcome": {
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "severity": "error",
+                "code": "invariant"
+              }
+            ]
+          }
+        },
+        {
+          "source": "largeValue-invalid-exponent.json",
+          "description": "A value in exponent form fails lv-1",
+          "valid": false,
+          "outcome": {
+            "resourceType": "OperationOutcome",
+            "issue": [
+              {
+                "severity": "error",
+                "code": "invariant"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

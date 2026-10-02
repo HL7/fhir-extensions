@@ -63,6 +63,10 @@
         <code value="Extension"/>
       </type>
     </element>
+    <element id="Extension.extension:confidence.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="confidence"/>
+    </element>
     <element id="Extension.extension:confidence.value[x]">
       <path value="Extension.extension.value[x]"/>
       <type>
@@ -80,6 +84,10 @@
       <type>
         <code value="Extension"/>
       </type>
+    </element>
+    <element id="Extension.extension:interval.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="interval"/>
     </element>
     <element id="Extension.extension:interval.value[x]">
       <path value="Extension.extension.value[x]"/>

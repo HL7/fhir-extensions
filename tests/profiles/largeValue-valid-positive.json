@@ -1,0 +1,14 @@
+{
+  "resourceType" : "Observation",
+  "id" : "largeValue-valid-positive",
+  "status" : "final",
+  "code" : {
+    "text" : "Count of something very large"
+  },
+  "_valueInteger" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/largeValue",
+      "valueDecimal" : 123456789012345678901234567890
+    }]
+  }
+}
