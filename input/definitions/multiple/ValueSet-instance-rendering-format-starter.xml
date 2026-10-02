@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../input-cache/schemas/R5/fhir-single.xsd">
+	<id value="instance-rendering-format-starter"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+		<valueCode value="fhir"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+		<valueCode value="draft"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="1"/>
+	</extension>
+	<url value="http://hl7.org/fhir/ValueSet/instance-rendering-format-starter"/>
+	<version value="1.0.0"/>
+	<name value="InstanceRenderingFormatStarterCodes"/>
+	<title value="Instance Rendering Format Starter Codes"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<date value="2026-07-02"/>
+	<publisher value="HL7 International / FHIR Infrastructure"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.hl7.org/Special/committees/fiwg"/>
+		</telecom>
+	</contact>
+	<description value="An initial set of mime types appropriate for use when specifying the format that will be produced when rendering resource instances"/>
+	<compose>
+		<include>
+			<system value="urn:ietf:bcp:13"/>
+      <concept>
+        <code value="application/xhtml+xml"/>
+      </concept>
+			<concept>
+        <code value="text/html"/>
+      </concept>
+			<concept>
+        <code value="text/markdown"/>
+      </concept>
+			<concept>
+        <code value="text/plain"/>
+      </concept>
+		</include>
+	</compose>
+</ValueSet>
