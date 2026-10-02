@@ -5,7 +5,7 @@
     <valueCode value="oo"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/>
+    <valueCode value="trial-use"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
@@ -14,7 +14,7 @@
   <version value="1.0.0"/>
   <name value="QuantityConfidenceInterval"/>
   <title value="Quantity Confidence Interval"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2025-07-17"/>
   <publisher value="HL7 International / Orders and Observations"/>
