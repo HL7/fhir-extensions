@@ -58,6 +58,7 @@
       <path value="Extension"/>
       <short value="Any obstacle that limits or prevents obtaining care"/>
       <definition value="Any obstacle that limits or prevents obtaining care.  Barriers in health and social care include, but are not limited to, physical barriers, psychological barriers, physiological barriers, financial barriers, geographical barriers, cultural/language barriers and resource barriers."/>
+      <comment value="The &quot;workflow-&quot; prefix in the name of this extension reflects how it came to be proposed; the extension is not particularly workflow-related. (The name has not been changed because that would be a breaking change. The same applies to the [workflow-protectiveFactor](StructureDefinition-workflow-protectiveFactor.html) extension.)"/>
       <min value="0"/>
       <max value="*"/>
     </element>
