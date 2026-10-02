@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="consent-provision-limit"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="sec"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/consent-provision-limit"/>
+  <version value="5.0.0"/>
+  <name value="ConsentProvisionLimit"/>
+  <title value="Limits placed on permitted activities by a consent provision"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Security"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/secure"/>
+    </telecom>
+  </contact>
+  <description value="Extension to express limits on the permitted use of data. This extension expresses limits to be placed on the release of data authorized by the provision in which it exists. The limits are restrictions on the permitted use. Limits may be expressed by refrain or obligation codes applied to the activity, meta.security tags to be applied to Resources, identified elements to be removed from Resources used in this activity, or data paths to be removed from Resources used in this activity. &#xD;&#xA;&#xD;&#xA;This extension should be used as a ModifierExtension as it is critical to the proper understanding of the consent. If the provision limit is not observed, then the consent is effectively not valid and should not be applied."/>
+  <fhirVersion value="6.0.0"/>
+
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Consent.provision"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Consent Provision Limit"/>
+      <definition value="Extension to express the limit on the permitted use of data.&#xD;&#xA;&#xD;&#xA;This extension should be used as a ModifierExtension as it is critical to the proper understanding of the consent. If the provision limit is not observed, then the consent is effectively not valid and should not be applied."/>
+      <isModifier value="true"/>
+      <isModifierReason value="Indicates limits on a permit."/>
+    </element>
+    <element id="Extension.extension:control">
+      <path value="Extension.extension"/>
+      <sliceName value="control"/>
+      <short value="Coded restriction such as a refrain or obligation."/>
+      <definition value="Control is used when the authorized activity must include a control vocabulary such as a refrain or obligation."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:control.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:control.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="control"/>
+    </element>
+    <element id="Extension.extension:control.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-SecurityControlObservationValue"/>
+      </binding>
+    </element>
+    <element id="Extension.extension:tag">
+      <path value="Extension.extension"/>
+      <sliceName value="tag"/>
+      <short value="Meta.security tags to be applied to data that is used under this provision."/>
+      <definition value="Tag is used when the authorized activity must apply a given meta.security tag(s) to all data used/released under this provision."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:tag.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:tag.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="tag"/>
+    </element>
+    <element id="Extension.extension:tag.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-InformationSensitivityPolicy"/>
+      </binding>
+    </element>
+    <element id="Extension.extension:element">
+      <path value="Extension.extension"/>
+      <sliceName value="element"/>
+      <short value="What data elements, by id, must be removed from the data"/>
+      <definition value="When this provision authorizes data use, the data identified by its element id, must be redacted from the authorized data provided for that authorized use."/>
+      <comment value="The .element requires that an `id` be present on the element to be redacted, but does not require the use of FHIRPath. The .element mechanism can target elements in a list."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:element.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:element.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="element"/>
+    </element>
+    <element id="Extension.extension:element.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="id"/>
+      </type>
+    </element>
+    <element id="Extension.extension:path">
+      <path value="Extension.extension"/>
+      <sliceName value="path"/>
+      <short value="What data elements, by FHIRPath, must be removed from the data"/>
+      <definition value="When this provision authorizes data use, the data identified by the FHIRPath, must be redacted from the authorized data provided for that authorized use."/>
+      <comment value="The FHIRPath expression is limited to the [simple subset](http://hl7.org/fhir/fhirpath.html#simple) with the additional limitation that .resolve() that is not allowed. This is a more sophisticated mechanism of referring to an element than .element but does require the system resolving the item to be able to use at least FHIRPath. If the author of the limit has the ability to ensure an id will be present then .element might be more widely useable."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:path.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:path.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="path"/>
+    </element>
+    <element id="Extension.extension:path.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/consent-provision-limit"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
