@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="thumbnail"/>
+  <id value="canonicalresource-alternateTitle"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -11,9 +11,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/thumbnail"/>
-  <name value="Thumbnail"/>
-  <title value="Attachment Thumbnail"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/canonicalresource-alternateTitle"/>
+  <name value="AlternateTitle"/>
+  <title value="Alternate Title"/>
   <status value="draft"/>
   <experimental value="false"/>
   <date value="2026-10-02"/>
@@ -24,13 +24,14 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="A smaller version of the content expressed in the parent Attachment, typically used for preview purposes."/>
+  <description value="Alternative human label for the artifact."/>
+  <purpose value="Artifacts such as standardized questionnaires are frequently known by acronyms, short titles and other alternative names, as well as by their title. Translated titles are represented using the translation extension on the title, and keywords using useContext or the artifact-topic extension."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Attachment"/>
+    <expression value="CanonicalResource"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -38,10 +39,9 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Smaller version of the content (e.g. for preview)"/>
-      <definition value="A smaller version of the content expressed in the parent Attachment, typically used for preview purposes."/>
-      <comment value="This might be a smaller image, an abstract of a document, a clip of audio or video content, etc."/>
-      <requirements value="In most cases, there would be a maximum of 1 thumbnail for an attachment. Multiple repetitions allow for different sizes and/or formats of low-resolution versions."/>
+      <short value="Alternative human label for the artifact"/>
+      <definition value="Alternative human label for the artifact."/>
+      <comment value="E.g. an acronym or short title by which the artifact is commonly known. The any-title search parameter searches both the title and these alternate titles."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -51,13 +51,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/thumbnail"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/canonicalresource-alternateTitle"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
       <type>
-        <code value="Attachment"/>
+        <code value="string"/>
       </type>
     </element>
   </differential>

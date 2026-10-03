@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="deprecated">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-        <valueMarkdown value="Use the [isThumbnail](StructureDefinition-isThumbnail.html) extension on the Attachment instead (and see also the [thumbnail](StructureDefinition-thumbnail.html) extension)."/>
+        <valueMarkdown value="Use the [attachment-isThumbnail](StructureDefinition-attachment-isThumbnail.html) extension on the Attachment instead (and see also the [attachment-thumbnail](StructureDefinition-attachment-thumbnail.html) extension)."/>
       </extension>
     </valueCode>
   </extension>

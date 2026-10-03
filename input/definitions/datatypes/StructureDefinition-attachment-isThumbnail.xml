@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="isThumbnail"/>
+  <id value="attachment-isThumbnail"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/isThumbnail"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/attachment-isThumbnail"/>
   <name value="IsThumbnail"/>
   <title value="Attachment Is Thumbnail"/>
   <status value="draft"/>
@@ -40,7 +40,7 @@
       <path value="Extension"/>
       <short value="Whether this attachment is a thumbnail"/>
       <definition value="Indicates that this Attachment within a repeating element is a low-resolution/reduced bandwidth form of the content being expressed by the element."/>
-      <comment value="When an element allows multiple attachment representations, it is generally not necessary to have a distinct thumbnail for each representation. This allows the thumbnail(s) to be sent as siblings of the larger representations. See the [thumbnail](StructureDefinition-thumbnail.html) extension for the ability to convey a thumbnail of a single attachment.&#xA;&#xA;NOTE: In some cases, the only repetition present might be a thumbnail."/>
+      <comment value="When an element allows multiple attachment representations, it is generally not necessary to have a distinct thumbnail for each representation. This allows the thumbnail(s) to be sent as siblings of the larger representations. See the [attachment-thumbnail](StructureDefinition-attachment-thumbnail.html) extension for the ability to convey a thumbnail of a single attachment.&#xA;&#xA;NOTE: In some cases, the only repetition present might be a thumbnail."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -50,7 +50,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/isThumbnail"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/attachment-isThumbnail"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

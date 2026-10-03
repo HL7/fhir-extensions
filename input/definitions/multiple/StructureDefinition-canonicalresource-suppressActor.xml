@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="suppress-actor"/>
+  <id value="canonicalresource-suppressActor"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -14,7 +14,7 @@
   <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-behavior">
     <valueCode value="ignore"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/suppress-actor"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/canonicalresource-suppressActor"/>
   <name value="SuppressActor"/>
   <title value="Suppress Actor"/>
   <status value="draft"/>
@@ -58,7 +58,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/suppress-actor"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/canonicalresource-suppressActor"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

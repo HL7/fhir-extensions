@@ -21,10 +21,10 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Search by the title of a canonical resource, or any of its alternate titles (the [alternate-title extension](StructureDefinition-alternate-title.html))"/>
+  <description value="Search by the title of a canonical resource, or any of its alternate titles (the [canonicalresource-alternateTitle extension](StructureDefinition-canonicalresource-alternateTitle.html))"/>
   <code value="any-title"/>
   <base value="CanonicalResource"/>
   <type value="string"/>
-  <expression value="CanonicalResource.title | CanonicalResource.extension('http://hl7.org/fhir/StructureDefinition/alternate-title').value"/>
+  <expression value="CanonicalResource.title | CanonicalResource.extension('http://hl7.org/fhir/StructureDefinition/canonicalresource-alternateTitle').value"/>
   <processingMode value="normal"/>
 </SearchParameter>

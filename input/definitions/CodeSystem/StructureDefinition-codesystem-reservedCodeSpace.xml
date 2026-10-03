@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="reserved-code-space"/>
+  <id value="codesystem-reservedCodeSpace"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="fhir"/>
   </extension>
@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="draft"/>
   </extension>
-  <url value="http://hl7.org/fhir/StructureDefinition/reserved-code-space"/>
+  <url value="http://hl7.org/fhir/StructureDefinition/codesystem-reservedCodeSpace"/>
   <name value="ReservedCodeSpace"/>
   <title value="Reserved Code Space"/>
   <status value="draft"/>
@@ -98,7 +98,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/reserved-code-space"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/codesystem-reservedCodeSpace"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
