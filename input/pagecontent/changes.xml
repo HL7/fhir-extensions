@@ -28,6 +28,9 @@
    <li><a href="https://jira.hl7.org/browse/FHIR-39327">FHIR-39327</a>: In the <a href="StructureDefinition-relative-date.html">relative-date</a> extension, targetReference and targetCode are each optional, with an invariant that at least one is present, and documentation of how they combine</li>
    <li><a href="https://jira.hl7.org/browse/FHIR-55397">FHIR-55397</a>: Clarified the <a href="StructureDefinition-obligation.html">obligation</a> extension's applicable-number - it sets the minimum number of repetitions a system must support for that obligation - and documented how obligations apply to repeating elements</li>
    <li><a href="https://jira.hl7.org/browse/FHIR-55398">FHIR-55398</a>: Documented how obligations can depend on context (clinical context, relevance, business rules) - via the usage property, slicing, profile scope, and implementation context</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-52992">FHIR-52992</a>: Removed CodeSystem.concept as a context for the <a href="StructureDefinition-structuredefinition-standards-status.html">standards-status</a> extension - the status of a concept is represented using a concept property</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-50851">FHIR-50851</a>: New extension <a href="StructureDefinition-reserved-code-space.html">reserved-code-space</a> - describes a set of codes (by regular expression) that the code system steward has allocated for users to create their own codes</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-53122">FHIR-53122</a>: New extension <a href="StructureDefinition-valueset-scope.html">valueset-scope</a> - replaces the R5 ValueSet.scope element (inclusionCriteria, exclusionCriteria), which has been removed in R6</li>
   </ul>
   <p>Reassigned OIDs. All these OIDs have been reassigned due to duplicate assignments in the past</p>
   <table class="grid">
