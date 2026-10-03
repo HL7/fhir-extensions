@@ -32,6 +32,7 @@
    <li><a href="https://jira.hl7.org/browse/FHIR-50851">FHIR-50851</a>: New extension <a href="StructureDefinition-reserved-code-space.html">reserved-code-space</a> - describes a set of codes (by regular expression) that the code system steward has allocated for users to create their own codes</li>
    <li><a href="https://jira.hl7.org/browse/FHIR-53122">FHIR-53122</a>: New extension <a href="StructureDefinition-valueset-scope.html">valueset-scope</a> - replaces the R5 ValueSet.scope element (inclusionCriteria, exclusionCriteria), which has been removed in R6</li>
    <li><a href="https://jira.hl7.org/browse/FHIR-40703">FHIR-40703</a>: The <a href="StructureDefinition-valueset-compose-createdBy.html">valueset-compose-createdBy</a> extension is now only for use up to R4B (4.3); from R5 on, use ValueSet.author</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-40735">FHIR-40735</a>: Clarified the descriptions of the <a href="StructureDefinition-codesystem-label.html">codesystem-label</a> and <a href="StructureDefinition-valueset-label.html">valueset-label</a> extensions, including when to use each</li>
   </ul>
   <p>Reassigned OIDs. All these OIDs have been reassigned due to duplicate assignments in the past</p>
   <table class="grid">
