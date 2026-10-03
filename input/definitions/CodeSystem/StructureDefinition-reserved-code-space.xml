@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="reserved-code-space"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/reserved-code-space"/>
+  <name value="ReservedCodeSpace"/>
+  <title value="Reserved Code Space"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-03"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="This extension is used to describe a set of concept codes that has been allocated by the code system steward for users to create their own codes."/>
+  <purpose value="Some code systems reserve part of their code space for private codes that anyone can create and use. Without a way to describe this, validators report such codes as invalid. Validators that check codes against a code system with a reserved code space do not flag codes in that space as invalid because of the code system definition (though they might because of value set considerations), nor do they validate the display or provide definitions for such codes."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="CodeSystem"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Set of codes reserved for users to create their own codes"/>
+      <definition value="This extension is used to describe a set of concept codes that has been allocated by the code system steward for users to create their own codes."/>
+      <comment value="A code system might have more than one reserved code space, if there are different kinds of reserved private space."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <min value="1"/>
+    </element>
+    <element id="Extension.extension:reservedCodeSpace">
+      <path value="Extension.extension"/>
+      <sliceName value="reservedCodeSpace"/>
+      <short value="Regular expression for the reserved codes"/>
+      <definition value="Regular expression to identify the set of concept codes allocated for users of the code system to create their own codes. This value must be a regular expression."/>
+      <comment value="The regular expression is matched against the whole code."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:reservedCodeSpace.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:reservedCodeSpace.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="reservedCodeSpace"/>
+    </element>
+    <element id="Extension.extension:reservedCodeSpace.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Extension.extension:description">
+      <path value="Extension.extension"/>
+      <sliceName value="description"/>
+      <short value="Narrative explaining the set of codes"/>
+      <definition value="Narrative explaining the set of concept codes."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:description.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:description.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="description"/>
+    </element>
+    <element id="Extension.extension:description.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="markdown"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/reserved-code-space"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
