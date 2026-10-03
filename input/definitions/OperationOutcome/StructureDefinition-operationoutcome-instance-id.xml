@@ -14,7 +14,7 @@
   <url value="http://hl7.org/fhir/StructureDefinition/operationoutcome-instance-id"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1489"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1785"/>
   </identifier>
   <version value="5.0.0"/>
   <name value="OOIssueInstanceId"/>
@@ -51,7 +51,6 @@
       <path value="Extension"/>
       <short value="Unique id for issue occurrence"/>
       <definition value="A unique identifier for this particular occurrence of the issue in the source system."/>
-      <requirements value="This may allow tying a reported issue to a record in the source system's audit log.  Included for traceability issues."/>
       <min value="0"/>
       <max value="1"/>
     </element>

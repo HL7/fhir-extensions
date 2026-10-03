@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="mediaRepresentation"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/mediaRepresentation"/>
+  <name value="MediaRepresentation"/>
+  <title value="Media Representation"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-02"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="A media representation of the target resource of a reference or canonical."/>
+  <purpose value="There are some situations where the system does not have (and cannot have) a formal resource representation of a concept, but do have a media representation such as a scanned fax, an audio clip, etc.  This allows referring to that media structure."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="canonical"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="Reference"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Media representation of the target of the reference"/>
+      <definition value="A media representation of the target resource of a reference or canonical."/>
+      <comment value="It is better practice to have an actual resource with the minimum discrete data present.  The media can be referenced in that resource's narrative.  However, not all systems will be able (technically or by policy) to create such a resource instance.  This extension provides a solution in those circumstances."/>
+      <requirements value="There are some situations where the system does not have (and cannot have) a formal resource representation of a concept, but do have a media representation such as a scanned fax, an audio clip, etc.  This allows referring to that media structure."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/mediaRepresentation"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Media">
+          <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+            <extension url="endFhirVersion">
+              <valueCode value="4.3"/>
+            </extension>
+          </extension>
+        </targetProfile>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

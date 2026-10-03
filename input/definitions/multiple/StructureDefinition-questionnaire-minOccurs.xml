@@ -72,7 +72,7 @@
 			<type>
 				<code value="integer"/>
 			</type>
-			<minValueInteger value="0"/>
+			<minValueInteger value="1"/>
 		</element>
 	</differential>
 </StructureDefinition>

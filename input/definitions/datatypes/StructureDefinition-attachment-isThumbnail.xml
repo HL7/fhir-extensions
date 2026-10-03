@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="attachment-isThumbnail"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/attachment-isThumbnail"/>
+  <name value="IsThumbnail"/>
+  <title value="Attachment Is Thumbnail"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-02"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Indicates that this Attachment within a repeating element is a low-resolution/reduced bandwidth form of the content being expressed by the element."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Attachment"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Whether this attachment is a thumbnail"/>
+      <definition value="Indicates that this Attachment within a repeating element is a low-resolution/reduced bandwidth form of the content being expressed by the element."/>
+      <comment value="When an element allows multiple attachment representations, it is generally not necessary to have a distinct thumbnail for each representation. This allows the thumbnail(s) to be sent as siblings of the larger representations. See the [attachment-thumbnail](StructureDefinition-attachment-thumbnail.html) extension for the ability to convey a thumbnail of a single attachment.&#xA;&#xA;NOTE: In some cases, the only repetition present might be a thumbnail."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/attachment-isThumbnail"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

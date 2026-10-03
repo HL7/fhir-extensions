@@ -16,7 +16,7 @@
   "url": "http://hl7.org/fhir/StructureDefinition/authorization-hint",
   "name": "AuthorizationHint",
   "title": "Authorization Hint",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "date": "2026-09-28",
   "publisher": "HL7 International / FHIR Infrastructure",
@@ -25,7 +25,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "http://www.hl7.org/Special/committees/fhir"
+          "value": "http://www.hl7.org/Special/committees/fiwg"
         }
       ]
     }
@@ -49,7 +49,7 @@
         "url": "http://hl7.org/fhir/StructureDefinition/version-specific-use",
         "extension": [{
           "url": "startFhirVersion",
-          "valueCode": "4.3.0"
+          "valueCode": "4.3"
         }]
       }],
       "type": "element",
@@ -86,11 +86,11 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 0,
+        "min": 1,
         "max": "*",
         "base": {
           "path": "Extension.extension",
-          "min": 1,
+          "min": 0,
           "max": "*"
         }
       },

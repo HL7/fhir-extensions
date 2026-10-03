@@ -27,21 +27,7 @@
 			<value value="http://www.hl7.org/Special/committees/fiwg"/>
 		</telecom>
 	</contact>
-	<description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type.&#10;&#10;
-
-The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail.&#10;&#10;
-
-The usage sub-extension allows for specific context dependent rules that link clinical, workflow or implementation context to obligations e.g. this is support for female patients.&#10;&#10;
-
-Obligations apply to only data that 'fits' the semantics of the element and the overall instance. For example, a Composition, List, or other grouper may inherently filter what instances are 'in scope' and, in some cases, might even indicate the included instances themselves should be subsetted (i.e. filtering out elements or certain element repetitions)&#10;&#10;
-
-Once the data that is semantically appropriate to share has been identified, it's subsequently filtered by 'what's allowed to be shared' based on regulation, consent, etc.&#10;&#10;
-	
-Obligations might apply to only a subset of the remaining elements based on any specified obligation 'filter'.&#10;&#10;
-	
-Of those, there may only be an obligation for a limited number of matching occurrences. Which occurrences are chosen is selected by the system adhering to the obligation.&#10;&#10;
-	
-Note that the result of this on elements with repetitions is that a variable number of results will be included based on all of the above rules, which may be zero or more in any given instance."/>
+	<description value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type."/>
 	<jurisdiction>
 		<coding>
 			<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -70,21 +56,7 @@ Note that the result of this on elements with repetitions is that a variable num
 		<element id="Extension">
 			<path value="Extension"/>
 			<short value="Obligations for applications using element/in model"/>
-			<definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type.&#10;&#10;
-
-The obligations relate to application behaviour, not the content of the element itself in the resource instances that contain this element. See the [Obligation](obligations.html) page in the core specification for further detail.&#10;&#10;
-
-The usage sub-extension allows for specific context dependent rules that link clinical, workflow or implementation context to obligations e.g. this is support for female patients.&#10;&#10;
-
-Obligations apply to only data that 'fits' the semantics of the element and the overall instance. For example, a Composition, List, or other grouper may inherently filter what instances are 'in scope' and, in some cases, might even indicate the included instances themselves should be subsetted (i.e. filtering out elements or certain element repetitions)&#10;&#10;
-
-Once the data that is semantically appropriate to share has been identified, it's subsequently filtered by 'what's allowed to be shared' based on regulation, consent, etc.&#10;&#10;
-	
-Obligations might apply to only a subset of the remaining elements based on any specified obligation 'filter'.&#10;&#10;
-	
-Of those, there may only be an obligation for a limited number of matching occurrences. Which occurrences are chosen is selected by the system adhering to the obligation.&#10;&#10;
-	
-Note that the result of this on elements with repetitions is that a variable number of results will be included based on all of the above rules, which may be zero or more in any given instance."/>
+			<definition value="When appearing on an element, documents obligations that apply to applications implementing that element.  When appearing at the root of a StructureDefinition, indicates obligations that apply to all listed elements within the extension.  When appearing on a type, indicates obligations that apply to the use of that specific type."/>
 			<min value="0"/>
 			<max value="*"/>
 		</element>
@@ -226,7 +198,8 @@ Note that the result of this on elements with repetitions is that a variable num
 			<path value="Extension.extension"/>
 			<sliceName value="usage"/>
 			<short value="Qualifies the usage - jurisdiction, gender, workflow status etc"/>
-			<definition value="Qualifies the usage of the obligation. Typically obligations are qualified by jurisdiction, but they may also be qualified by gender, workflow status, clinical domain etc. The information to decide whether a usege context applies is usually outside the resource, determined by context, and this might present challenges for validation tooling. An expected use: limiting obligations to particular jurisdictions (e.g. in IPS)."/>
+			<definition value="Qualifies the usage of the obligation. Typically obligations are qualified by jurisdiction, but they may also be qualified by gender, workflow status, clinical domain etc. The information to decide whether a usage context applies is usually outside the resource, determined by context, and this might present challenges for validation tooling. An expected use: limiting obligations to particular jurisdictions (e.g. in IPS)."/>
+			<comment value="This is where specific context rules within an obligation are specified - e.g. clinical context, relevance, or other business rules that limit what data the obligation applies to. See [Context Dependent Obligations](StructureDefinition-obligation.html#context-dependent-obligations) for further discussion."/>
 			<min value="0"/>
 			<max value="*"/>
 		</element>
@@ -295,12 +268,12 @@ Note that the result of this on elements with repetitions is that a variable num
 		<element id="Extension.extension:applicable-number">
 			<path value="Extension.extension"/>
 			<sliceName value="applicable-number"/>
-			<short value="# of repetitions obligation applies to"/>
-			<definition value="If present, limits the obligation to the specified number of repetitions.  I.e. systems are not obligated to store/display/capture/whatever ALL possible repetitions of the element, but only the specified number.  If more repetitions exist than the specified number and the system opts not to support them all, it's up to the systems which repetitions it chooses to support. Note that the applicable-number applies after any reduction in elements from applying the Obligation.filter"/>
-			<comment value="If this element is declared on a slicing element, the applicable-number applies across all slices, not to each individual slice.  If this element is present on an obligation declared on a specific slice, then the applicable number applies for that particular slice."/>
+			<short value="Minimum # of repetitions the obligation applies to"/>
+			<definition value="If present, overrides the default interpretation of 'what is the minimum number of repetitions systems must support' with respect to this obligation.  If more repetitions exist than the specified number and the system opts not to support them all, it's up to the systems which repetitions it chooses to support. Note that the applicable-number applies after any reduction in elements from applying the Obligation.filter"/>
+			<comment value="If the upper cardinality of the element is '*', that means that the upper limit is unspecified, but in practice all systems will have some limit around what is technically feasible.  These assumptions/capabilities may vary.  Specifying the applicable-number allows setting a 'floor' on what system capabilities must be.  Absent this declaration, the floor is unclear.&#xA;&#xA;If the upper cardinality of the element is other than '*', there may be circumstances where, while instances are permitted to have up to maxOccurs elements present, the expectation for certain obligations (e.g. how many must be captured, how many must be displayed, etc.) could be less.  This element supports capturing that difference.&#xA;&#xA;When constraining a profile element, applicable-number SHALL be less than or equal to maxOccurs and SHALL be greater than or equal to the minimum of current maxOccurs and applicable-number of the element in the parent profile, if one is present.&#xA;&#xA;If this element is declared on a slicing element, the applicable-number applies across all slices, not to each individual slice.  If this element is present on an obligation declared on a specific slice, then the applicable number applies for that particular slice.&#xA;&#xA;See [Obligations on Repeating Elements](StructureDefinition-obligation.html#obligations-on-repeating-elements) for further discussion."/>
 			<min value="0"/>
 			<max value="1"/>
-			<meaningWhenMissing value="If not specified, the implication is that the obligation applies to all repetitions"/>
+			<meaningWhenMissing value="If not specified, the obligation applies to all repetitions allowed by the profile (or, if the element has no upper cardinality, as many as the system can technically manage)"/>
 		</element>
 		<element id="Extension.extension:applicable-number.extension">
 			<path value="Extension.extension.extension"/>

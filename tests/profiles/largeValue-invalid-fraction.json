@@ -1,0 +1,14 @@
+{
+  "resourceType" : "Observation",
+  "id" : "largeValue-invalid-fraction",
+  "status" : "final",
+  "code" : {
+    "text" : "Count of something very large"
+  },
+  "_valueInteger" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/largeValue",
+      "valueDecimal" : 12345678901.5
+    }]
+  }
+}
