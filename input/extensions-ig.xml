@@ -199,7 +199,7 @@
         <page>
           <sourceUrl value="changes.xml"/>
           <name value="changes.html"/>
-          <title value="IG Version Chnage History"/>
+          <title value="IG Version Change History"/>
           <generation value="html"/>
         </page>
       </page>
