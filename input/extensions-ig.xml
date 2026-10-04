@@ -199,11 +199,25 @@
         <page>
           <sourceUrl value="changes.xml"/>
           <name value="changes.html"/>
-          <title value="IG Version History"/>
+          <title value="IG Version Change History"/>
           <generation value="html"/>
         </page>
       </page>
     </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="profile-test-cases"/>
+      </code>
+      <value value="tests/profiles/largeValue-tests.json"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="profile-test-cases"/>
+      </code>
+      <value value="tests/profiles/choiceOrientation-tests.json"/>
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
@@ -231,6 +245,13 @@
         <code value="special-url"/>
       </code>
       <value value="http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="auto-oid-root"/>
+      </code>
+      <value value="2.16.840.1.113883.4.642.40.97"/>
     </parameter>
     <parameter>
       <code>
@@ -377,7 +398,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="version-comparison-master"/>
       </code>
-      <value value="5.2.0"/>
+      <value value="5.3.0"/>
     </parameter>
     <parameter>
       <code>

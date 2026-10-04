@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "choiceOrientation-q-invalid-display",
+  "status" : "draft",
+  "item" : [
+    {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+          "valueCode" : "vertical"
+        }
+      ],
+      "linkId" : "d1",
+      "text" : "Please answer the following",
+      "type" : "display"
+    }
+  ]
+}

@@ -10,10 +10,11 @@
         <valueCode value="fhir" />
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
-            <valueMarkdown value="This code system has been withdrawn and replaced by the [HL7 International Organizational Entities](http://terminology.hl7.org/CodeSystem/hl7-work-group) code system in HL7 Terminology (THO)."/>
-        </extension>
-        <valueCode value="withdrawn"/>
+        <valueCode value="withdrawn">
+            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+                <valueMarkdown value="This code system has been withdrawn and replaced by the [HL7 International Organizational Entities](http://terminology.hl7.org/CodeSystem/hl7-work-group) code system in HL7 Terminology (THO)."/>
+            </extension>
+        </valueCode>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
         <valueInteger value="3" />

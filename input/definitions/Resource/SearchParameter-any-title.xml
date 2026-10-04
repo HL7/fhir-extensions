@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="any-title"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <url value="http://hl7.org/fhir/SearchParameter/any-title"/>
+  <name value="AnyTitleSearchParameter"/>
+  <title value="Any Title SearchParameter"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-02"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Search by the title of a canonical resource, or any of its alternate titles (the [canonicalresource-alternateTitle extension](StructureDefinition-canonicalresource-alternateTitle.html))"/>
+  <code value="any-title"/>
+  <base value="CanonicalResource"/>
+  <type value="string"/>
+  <expression value="CanonicalResource.title | CanonicalResource.extension('http://hl7.org/fhir/StructureDefinition/canonicalresource-alternateTitle').value"/>
+  <processingMode value="normal"/>
+</SearchParameter>

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "choiceOrientation-ed-valid-coding",
+  "url" : "http://example.org/fhir/StructureDefinition/choiceOrientation-ed-valid-coding",
+  "name" : "ChoiceorientationEdValidCoding",
+  "status" : "draft",
+  "fhirVersion" : "5.0.0",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "Patient"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension"
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "http://example.org/fhir/StructureDefinition/choiceOrientation-ed-valid-coding"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+            "valueCode" : "vertical"
+          }
+        ],
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ]
+      }
+    ]
+  }
+}

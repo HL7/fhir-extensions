@@ -56,7 +56,7 @@
       <system value="http://snomed.info/sct"/>
       <concept>
         <code value="83418008"/>
-        <display value="Fetus"/>
+        <display value="Entire fetus"/>
       </concept>
     </include>
     <include>

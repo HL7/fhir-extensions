@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="valueset-scope"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/valueset-scope"/>
+  <name value="ValueSetScope"/>
+  <title value="ValueSet Scope"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-03"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Description of the semantic space the Value Set Expansion is intended to cover and should further clarify the text in ValueSet.description."/>
+  <purpose value="This extension replaces the ValueSet.scope element (and its sub-elements) that was trial use in R5 and has been removed in R6. It has the same structure and meaning."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Description of the semantic space the Value Set Expansion is intended to cover"/>
+      <definition value="Description of the semantic space the Value Set Expansion is intended to cover and should further clarify the text in ValueSet.description."/>
+      <comment value="Equivalent to ValueSet.scope in R5."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <min value="1"/>
+    </element>
+    <element id="Extension.extension:inclusionCriteria">
+      <path value="Extension.extension"/>
+      <sliceName value="inclusionCriteria"/>
+      <short value="Criteria describing which concepts or codes should be included and why"/>
+      <definition value="Criteria describing which concepts or codes should be included and why."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:inclusionCriteria.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:inclusionCriteria.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="inclusionCriteria"/>
+    </element>
+    <element id="Extension.extension:inclusionCriteria.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Extension.extension:exclusionCriteria">
+      <path value="Extension.extension"/>
+      <sliceName value="exclusionCriteria"/>
+      <short value="Criteria describing which concepts or codes should be excluded and why"/>
+      <definition value="Criteria describing which concepts or codes should be excluded and why."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:exclusionCriteria.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:exclusionCriteria.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="exclusionCriteria"/>
+    </element>
+    <element id="Extension.extension:exclusionCriteria.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/valueset-scope"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

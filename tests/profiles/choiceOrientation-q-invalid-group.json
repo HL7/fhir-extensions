@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "choiceOrientation-q-invalid-group",
+  "status" : "draft",
+  "item" : [
+    {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+          "valueCode" : "vertical"
+        }
+      ],
+      "linkId" : "g1",
+      "text" : "Colours",
+      "type" : "group",
+      "item" : [
+        {
+          "linkId" : "g1.1",
+          "text" : "Favourite colour",
+          "type" : "string"
+        }
+      ]
+    }
+  ]
+}

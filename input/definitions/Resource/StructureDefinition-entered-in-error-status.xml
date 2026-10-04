@@ -58,9 +58,20 @@
     </element> 
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/> 
+      <comment value="The value should be a string. The code type is deprecated: it is provided only because all existing versions of FHIR erroneously use a code for this extension. Future versions of FHIR will use string."/>
       <min value="1"/> 
       <type> 
-        <code value="url"/> 
+        <code value="string"/> 
+      </type> 
+      <type> 
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="deprecated">
+            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status-reason">
+              <valueMarkdown value="The code type is provided only because all existing versions of FHIR erroneously use a code for this extension. Future versions of FHIR will use string, and new uses should use string."/>
+            </extension>
+          </valueCode>
+        </extension>
+        <code value="code"/> 
       </type> 
     </element> 
   </differential>
