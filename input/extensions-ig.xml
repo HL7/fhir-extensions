@@ -197,8 +197,8 @@
           <generation value="markdown"/>
         </page>
         <page>
-          <sourceUrl value="history.xml"/>
-          <name value="history.html"/>
+          <sourceUrl value="changes.xml"/>
+          <name value="changes.html"/>
           <title value="IG Version History"/>
           <generation value="html"/>
         </page>

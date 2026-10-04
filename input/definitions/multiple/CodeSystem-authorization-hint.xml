@@ -17,7 +17,7 @@
   <url value="http://hl7.org/fhir/CodeSystem/authorization-hint"/>
   <version value="5.0.0"/>
   <name value="AuthorizationHint"/>
-  <title value="Authorization Hint"/>
+  <title value="Authorization Hint Codes"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2026-09-28"/>
