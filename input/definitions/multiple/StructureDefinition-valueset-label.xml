@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/Vocab"/>
     </telecom>
   </contact>
-  <description value="The label to list in front of a code when presenting a list of possible values in a questionnaire-like fashion."/>
+  <description value="This extension is for use when a value set is to be used to render a list of code choices for human selection (typically in Questionnaires). It allows specifying a prefix to put in front of the display name of the code display value. For example &quot;a)&quot;, or &quot;iii.&quot; or &quot;1]&quot;. This only works if the value set is defined extensionally (i.e. enumerating the codes). If defining an intensional value set with the definition &quot;all codes from code system [some code system]&quot;, then use the [codesystem-label](StructureDefinition-codesystem-label.html) extension instead.&#xA;&#xA;Prefixes are particularly relevant if there are textual instructions that accompany the question. E.g. 'Do not select more than one of options a, b, or c' on a multi-select question."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>

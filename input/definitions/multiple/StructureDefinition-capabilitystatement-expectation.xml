@@ -74,6 +74,15 @@
     <expression value="CapabilityStatement.imports"/>
   </context>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="CapabilityStatement.instantiates"/>
+  </context>
+  <context>
     <type value="element"/>
     <expression value="CapabilityStatement.patchFormat"/>
   </context>

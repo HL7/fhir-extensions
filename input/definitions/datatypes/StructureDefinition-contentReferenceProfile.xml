@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="contentReferenceProfile"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/contentReferenceProfile"/>
+  <name value="ContentReferenceProfile"/>
+  <title value="ContentReference Profile"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-03"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="A profile on the element identified by the contentReference that also applies to this element."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="ElementDefinition"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Profile (element) that also applies to this element"/>
+      <definition value="A profile on the element identified by the contentReference that also applies to this element."/>
+      <comment value="This extension is used to reuse existing constraints. The most common reason is to apply a profile recursively - e.g. so that the constraints a profile makes on Questionnaire.item also apply to Questionnaire.item.item. This is similar to ElementDefinition.type.profile, but it applies to the contentReference: the profile is applied on the target of the contentReference, not on the source of the reference (this is due to the way contentReference works). The value refers to an element definition in a profile, not to the profile itself, using the same format as the contentReference (a canonical URL for the profile, followed by '#' and the element id). The reference would usually be to the element's parent, so that the constraints are applied recursively, but other patterns are possible."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/contentReferenceProfile"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

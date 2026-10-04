@@ -1,0 +1,629 @@
+{
+  "profiles" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "tests" : [{
+      "source" : "largeValue-valid-positive.json",
+      "description" : "A whole number larger than the int bounds is valid",
+      "valid" : true,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/ImplementationGuide|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_performer"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_subject"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a subject"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have an effective[x] ()"
+          },
+          "expression" : ["Observation"]
+        }]
+      }
+    },
+    {
+      "source" : "largeValue-valid-negative.json",
+      "description" : "A negative whole number larger than the int bounds is valid",
+      "valid" : true,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_performer"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_subject"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a subject"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have an effective[x] ()"
+          },
+          "expression" : ["Observation"]
+        }]
+      }
+    },
+    {
+      "source" : "largeValue-invalid-fraction.json",
+      "description" : "A value with a fractional part fails lv-1",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 9
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 6
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "http://hl7.org/fhir/StructureDefinition/largeValue#lv-1"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          }],
+          "severity" : "error",
+          "code" : "invariant",
+          "details" : {
+            "text" : "Constraint failed: lv-1: 'The value must be a whole number (no decimal point or exponent) (value.toString().matches('^-?[0-9]+$'))'"
+          },
+          "expression" : ["Observation.value.ofType(integer).extension[0]"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_performer"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_subject"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a subject"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have an effective[x] ()"
+          },
+          "expression" : ["Observation"]
+        }]
+      }
+    },
+    {
+      "source" : "largeValue-invalid-trailing-zero.json",
+      "description" : "A value with a decimal point fails lv-1, even if the fractional part is zero",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 9
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 6
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "http://hl7.org/fhir/StructureDefinition/largeValue#lv-1"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          }],
+          "severity" : "error",
+          "code" : "invariant",
+          "details" : {
+            "text" : "Constraint failed: lv-1: 'The value must be a whole number (no decimal point or exponent) (value.toString().matches('^-?[0-9]+$'))'"
+          },
+          "expression" : ["Observation.value.ofType(integer).extension[0]"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_performer"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_subject"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a subject"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have an effective[x] ()"
+          },
+          "expression" : ["Observation"]
+        }]
+      }
+    },
+    {
+      "source" : "largeValue-invalid-exponent.json",
+      "description" : "A value in exponent form fails lv-1",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 9
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 6
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "http://hl7.org/fhir/StructureDefinition/largeValue#lv-1"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          }],
+          "severity" : "error",
+          "code" : "invariant",
+          "details" : {
+            "text" : "Constraint failed: lv-1: 'The value must be a whole number (no decimal point or exponent) (value.toString().matches('^-?[0-9]+$'))'"
+          },
+          "expression" : ["Observation.value.ofType(integer).extension[0]"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_performer"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a performer"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_a_subject"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have a subject"
+          },
+          "expression" : ["Observation"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"
+          }],
+          "severity" : "warning",
+          "code" : "invalid",
+          "details" : {
+            "text" : "Best Practice Recommendation: In general, all observations should have an effective[x] ()"
+          },
+          "expression" : ["Observation"]
+        }]
+      }
+    }]
+  }]
+}

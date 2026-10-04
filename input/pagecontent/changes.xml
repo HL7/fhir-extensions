@@ -1,0 +1,318 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+  <!-- The spaces between the open and close "a" tag are mandatory.  (Cuz HTML renderers are dumb...) -->
+  <a name="5.4"> </a>
+  <a name="5.4.0"> </a>
+  <h3>Release 5.4.0</h3>
+  <ul>
+   <li><a href="https://jira.hl7.org/browse/FHIR-43595">FHIR-43595</a>: Improve change tracking in the extension registry</li>
+   <li>The DocumentReference extensions <a href="StructureDefinition-documentreference-sourcepatient.html">documentreference-sourcepatient</a> and <a href="StructureDefinition-documentreference-thumbnail.html">documentreference-thumbnail</a> are now owned by FHIR Infrastructure (previously Orders and Observations)</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-59432">FHIR-59432</a>: Mark artifact-versionAlgorithm, elementdefinition-suppress, patient-sexParameterForClinicalUse, quantity-confidenceInterval, questionnaire-derivationType, rdf-concept-iri and structuredefinition-imposeProfile as active</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57719">FHIR-57719</a>: Add CapabilityStatement.instantiates as a context for the <a href="StructureDefinition-capabilitystatement-expectation.html">Conformance expectation</a> extension</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57837">FHIR-57837</a>: The minimum value of the <a href="StructureDefinition-questionnaire-maxOccurs.html">maxOccurs</a> extension is now 2 (a repeating item must allow at least 2 repetitions)</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57839">FHIR-57839</a>: The minimum value of the <a href="StructureDefinition-questionnaire-minOccurs.html">minOccurs</a> extension is now 1 (it only applies to required items)</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57563">FHIR-57563</a>: New extension <a href="StructureDefinition-mediaRepresentation.html">mediaRepresentation</a> - a media representation (e.g. a scanned fax, an audio clip) of the target of a Reference or canonical. Media is a target for the versions where it exists (R4B and earlier), using version-specific-use on the target profile</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-56001">FHIR-56001</a>: Add Ratio as a context for the <a href="StructureDefinition-rendered-value.html">rendered-value</a> extension, for ratios with a preferred rendering (e.g. 33/99 shown as 1/3)</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-53267">FHIR-53267</a>: Add RelatedArtifact as a context for the <a href="StructureDefinition-package-source.html">package-source</a> extension, so the source package of a dependency can be recorded during a dependency walk</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-58610">FHIR-58610</a>: New extensions <a href="StructureDefinition-additional-operation-context.html">additional-operation-context</a>, <a href="StructureDefinition-additional-operation-parameter-allowedType.html">additional-operation-parameter-allowedType</a> and <a href="StructureDefinition-additional-operation-parameter-targetProfile.html">additional-operation-parameter-targetProfile</a>, so an additional resource can supplement existing operation definitions</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57235">FHIR-57235</a>: Add ValueSet.compose.include.concept as a context for the <a href="StructureDefinition-structuredefinition-standards-status.html">standards-status</a> extension, so it can replace the deprecated valueset-deprecated extension there</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-59372">FHIR-59372</a>: The <a href="StructureDefinition-originalText.html">originalText</a> extension notes that it can accompany a value or components, but can also be sent in place of a primitive value or components</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-58619">FHIR-58619</a>: New search parameter <a href="SearchParameter-artifact-topic.html">topic</a> for the <a href="StructureDefinition-artifact-topic.html">artifact-topic</a> extension</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-58616">FHIR-58616</a>: New extension <a href="StructureDefinition-canonicalresource-alternateTitle.html">canonicalresource-alternateTitle</a> (alternative human labels for an artifact, e.g. acronyms and short titles), and search parameter <a href="SearchParameter-any-title.html">any-title</a> that searches the title and alternate titles</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57615">FHIR-57615</a>: New extension <a href="StructureDefinition-operationoutcome-resource.html">operationoutcome-resource</a> - identifies the source resource related to an OperationOutcome or one of its issues (e.g. the resource that an issue.expression is rooted in)</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-56002">FHIR-56002</a>: New extensions <a href="StructureDefinition-attachment-thumbnail.html">attachment-thumbnail</a> (a smaller version of the content of an Attachment, e.g. for preview) and <a href="StructureDefinition-attachment-isThumbnail.html">attachment-isThumbnail</a> (marks an Attachment in a repeating element as a low-resolution form of the content). The <a href="StructureDefinition-documentreference-thumbnail.html">documentreference-thumbnail</a> extension is deprecated in favour of attachment-isThumbnail</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-44354">FHIR-44354</a>: The <a href="StructureDefinition-workflow-protectiveFactor.html">workflow-protectiveFactor</a> and <a href="StructureDefinition-workflow-barrier.html">workflow-barrier</a> extensions note that they are not workflow-related despite their names, and protectiveFactor explains why its contexts are limited to prospective care</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57265">FHIR-57265</a>: New extension <a href="StructureDefinition-contentReferenceProfile.html">contentReferenceProfile</a> - a profile (element) that applies to an element defined by a contentReference, so that profile constraints on recursive elements such as Questionnaire.item can be applied at nested levels</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-56953">FHIR-56953</a>: The <a href="StructureDefinition-largeValue.html">largeValue</a> extension allows integer64 as well as decimal for its value</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-56447">FHIR-56447</a>: The <a href="StructureDefinition-package-source.html">package-source</a> extension is marked (snapshot-behavior = ignore) so that it is not copied into derived profiles</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-56412">FHIR-56412</a>: New extension <a href="StructureDefinition-canonicalresource-suppressActor.html">canonicalresource-suppressActor</a> - identifies an actor that is not relevant for the current publication, so its obligations are not prominently shown in profile tables or used to determine key elements</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-39327">FHIR-39327</a>: In the <a href="StructureDefinition-relative-date.html">relative-date</a> extension, targetReference and targetCode are each optional, with an invariant that at least one is present, and documentation of how they combine</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-55397">FHIR-55397</a>: Clarified the <a href="StructureDefinition-obligation.html">obligation</a> extension's applicable-number - it sets the minimum number of repetitions a system must support for that obligation - and documented how obligations apply to repeating elements</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-55398">FHIR-55398</a>: Documented how obligations can depend on context (clinical context, relevance, business rules) - via the usage property, slicing, profile scope, and implementation context</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-52992">FHIR-52992</a>: Removed CodeSystem.concept as a context for the <a href="StructureDefinition-structuredefinition-standards-status.html">standards-status</a> extension - the status of a concept is represented using a concept property</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-50851">FHIR-50851</a>: New extension <a href="StructureDefinition-codesystem-reservedCodeSpace.html">codesystem-reservedCodeSpace</a> - describes a set of codes (by regular expression) that the code system steward has allocated for users to create their own codes</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-53122">FHIR-53122</a>: New extension <a href="StructureDefinition-valueset-scope.html">valueset-scope</a> - replaces the R5 ValueSet.scope element (inclusionCriteria, exclusionCriteria), which has been removed in R6</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-40703">FHIR-40703</a>: The <a href="StructureDefinition-valueset-compose-createdBy.html">valueset-compose-createdBy</a> extension is now only for use up to R4B (4.3); from R5 on, use ValueSet.author</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-40735">FHIR-40735</a>: Clarified the descriptions of the <a href="StructureDefinition-codesystem-label.html">codesystem-label</a> and <a href="StructureDefinition-valueset-label.html">valueset-label</a> extensions, including when to use each</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-43081">FHIR-43081</a>: New extension <a href="StructureDefinition-authorization-hint.html">authorization-hint</a>, with its code system and value set - a hint about the kind of authorization that applies</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-54661">FHIR-54661</a>: New extension <a href="StructureDefinition-nutritionorder-serviceCategory.html">nutritionorder-serviceCategory</a> and search parameter <a href="SearchParameter-nutritionorder-serviceCategory.html">serviceCategory</a> - partitions a NutritionOrder into service categories for searching, access control and system behavior</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-54631">FHIR-54631</a>: New extension <a href="StructureDefinition-consent-provision-limit.html">consent-provision-limit</a> - limits on the permitted use of data released under a Consent provision</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-54637">FHIR-54637</a>: New extension <a href="StructureDefinition-consent-provision-expression.html">consent-provision-expression</a> - restricts a Consent provision to apply only when a FHIRPath or CQL expression evaluates to true</li>
+   <li>The Consent extensions (consent-NotificationEndpoint, consent-ResearchStudyContext, consent-Transcriber, consent-Witness, consent-location) are now owned by Security (previously Community Based Collaborative Care)</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57496">FHIR-57496</a>: New extension <a href="StructureDefinition-rdf-concept-iri.html">rdf-concept-iri</a> - the RDF concept IRI for a Coding</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-54614">FHIR-54614</a>: The Condition.bodySite and Procedure.bodySite contexts of the <a href="StructureDefinition-bodySite.html">bodySite</a> extension, and the Procedure context of the <a href="StructureDefinition-procedure-targetBodyStructure.html">procedure-targetBodyStructure</a> extension, are limited to R5 and earlier (R6 has the elements)</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-53036">FHIR-53036</a>: The <a href="StructureDefinition-device-alertDetection.html">device-alertDetection</a> extension uses the device alert terminology in HL7 Terminology (THO); the devicealert-activationState, devicealert-priority and devicealert-condition code systems and value sets have been removed from this package</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-56683">FHIR-56683</a>: New extension <a href="StructureDefinition-device-conformsTo-source.html">device-conformsTo-source</a> - the standard, regulation, certification, guidance or other publication that supports a Device.conformsTo claim</li>
+   <li>New extensions <a href="StructureDefinition-observation-supportingDevice.html">observation-supportingDevice</a> and <a href="StructureDefinition-observationdefinition-supportingDevice.html">observationdefinition-supportingDevice</a> - additional devices, kits or reagents (e.g. test kits, calibration kits, QC materials) used to generate a measurement. The Observation and DiagnosticReport contexts of <a href="StructureDefinition-event-statusReason.html">event-statusReason</a> are limited to R5 and earlier</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-55462">FHIR-55462</a>: New extension <a href="StructureDefinition-additional-resource-reference-target.html">additional-resource-reference-target</a> - allows a work group to indicate that a core element (or another additional resource) may refer to an additional resource using a normal Reference</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-57039">FHIR-57039</a> and <a href="https://jira.hl7.org/browse/FHIR-57040">FHIR-57040</a>: Corrected the context constraints for the <a href="StructureDefinition-questionnaire-minOccurs.html">questionnaire-minOccurs</a> and <a href="StructureDefinition-questionnaire-maxOccurs.html">questionnaire-maxOccurs</a> extensions</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-50924">FHIR-50924</a>: The hl7-work-group code system and value set in this package are withdrawn and replaced by the HL7 International Organizational Entities code system and value set in HL7 Terminology (THO)</li>
+   <li>The <a href="StructureDefinition-largeValue.html">largeValue</a> extension has a constraint (lv-1) that the value is a whole number</li>
+   <li>The value of the <a href="StructureDefinition-entered-in-error-status.html">entered-in-error-status</a> extension is a string (was url). A code is also allowed but is deprecated: it is provided only because all existing versions of FHIR erroneously use a code, and future versions will use string</li>
+   <li>Fixed the missing sub-extension urls for the <a href="StructureDefinition-quantity-confidenceInterval.html">quantity-confidenceInterval</a> extension</li>
+   <li>Corrected the FHIRPath constraint on the <a href="StructureDefinition-questionnaire-choiceOrientation.html">questionnaire-choiceOrientation</a> extension, and added test cases for it and for <a href="StructureDefinition-largeValue.html">largeValue</a></li>
+   <li>Version ranges (version-specific-use) added or corrected for the contexts of <a href="StructureDefinition-artifact-copyrightLabel.html">artifact-copyrightLabel</a>, <a href="StructureDefinition-consent-provision-expression.html">consent-provision-expression</a> and <a href="StructureDefinition-consent-provision-limit.html">consent-provision-limit</a>, and for the bases of the <a href="SearchParameter-workflow-EpisodeOfCare.html">workflow-EpisodeOfCare</a> search parameter</li>
+   <li>The value-filter-comparator value set is no longer defined in this package</li>
+   <li>Corrected the cardinality of the <a href="StructureDefinition-authorization-hint.html">authorization-hint</a> extension, the status of a number of code systems, value sets and extensions, and duplicate OIDs (see the table below)</li>
+  </ul>
+  <p>Reassigned OIDs. All these OIDs have been reassigned due to duplicate assignments in the past</p>
+  <table class="grid">
+    <tr>
+	  <th>Resource</th>
+	  <th>Old OID</th>
+	  <th>New OID</th>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-structuredefinition-implements.html">StructureDefinition/structuredefinition-implements</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1011</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1780</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-structuredefinition-interface.html">StructureDefinition/structuredefinition-interface</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1011</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1781</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-capabilitystatement-websocket.html">StructureDefinition/capabilitystatement-websocket</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1046</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1778</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-synchronicity-control.html">StructureDefinition/synchronicity-control</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1046</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1779</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-researchStudy-interventionalistRecruitment.html">StructureDefinition/researchStudy-interventionalistRecruitment</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1098</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1782</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-researchStudy-investigatorRecruitment.html">StructureDefinition/researchStudy-investigatorRecruitment</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1098</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1783</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-researchStudy-siteRecruitment.html">StructureDefinition/researchStudy-siteRecruitment</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1098</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1784</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-operationoutcome-instance-id.html">StructureDefinition/operationoutcome-instance-id</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1489</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1785</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-operationoutcome-issue-context.html">StructureDefinition/operationoutcome-issue-context</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1489</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1786</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-operationoutcome-message-id.html">StructureDefinition/operationoutcome-message-id</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1489</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1787</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-workflow-reason.html">StructureDefinition/workflow-reason</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1540</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1788</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-workflow-statusReason.html">StructureDefinition/workflow-statusReason</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1540</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1789</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-alternate-hash.html">StructureDefinition/alternate-hash</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1598</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1790</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-relative-date.html">StructureDefinition/relative-date</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1598</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1791</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-additionalIdentifier.html">StructureDefinition/additionalIdentifier</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1657</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1792</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-address-official.html">StructureDefinition/address-official</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1657</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1793</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-narrative-language-control.html">StructureDefinition/narrative-language-control</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1670</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1794</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-narrative-source-control.html">StructureDefinition/narrative-source-control</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1670</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1795</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-targetPath.html">StructureDefinition/targetPath</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1670</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1796</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-narrativeLink.html">StructureDefinition/narrativeLink</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1691</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1797</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-textLink.html">StructureDefinition/textLink</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1691</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1798</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-cqf-partOf.html">StructureDefinition/cqf-partOf</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1713</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1799</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-measurereport-category.html">StructureDefinition/measurereport-category</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1713</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1800</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-practitionerrole-doingBusinessAs.html">StructureDefinition/practitionerrole-doingBusinessAs</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1773</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1801</td>
+	</tr>
+    <tr>
+	  <td><a href="StructureDefinition-practitionerrole-employmentStatus.html">StructureDefinition/practitionerrole-employmentStatus</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1773</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.5.1802</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-measurereport-category.html">CodeSystem/measurereport-category</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.1.2122</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.1.2123</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-questionnaire-derivationType.html">CodeSystem/questionnaire-derivationType</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.1.2122</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.1.2124</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-coding-purpose.html">ValueSet/coding-purpose</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.3.3314</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.3.3335</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-narrative-language-control.html">ValueSet/narrative-language-control</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.3.3314</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.3.3336</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-concept-map-equivalence.html">CodeSystem/concept-map-equivalence</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.4.18</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.4.3324</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-r4-equivalence.html">CodeSystem/r4-equivalence</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.4.18</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.4.3325</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-coding-purpose.html">CodeSystem/coding-purpose</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.4.2112</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.4.3326</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-narrative-language-control.html">CodeSystem/narrative-language-control</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.4.2112</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.4.3327</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-reaction-event-certainty.html">CodeSystem/reaction-event-certainty</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.54</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.434</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-reaction-event-certainty.html">ValueSet/reaction-event-certainty</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.54</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.435</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-animal-genderstatus.html">CodeSystem/animal-genderstatus</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.230</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.436</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-animal-genderstatus.html">ValueSet/animal-genderstatus</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.230</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.437</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-goal-relationship-type.html">CodeSystem/goal-relationship-type</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.390</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.438</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-goal-relationship-type.html">ValueSet/goal-relationship-type</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.390</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.439</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-choice-list-orientation.html">CodeSystem/choice-list-orientation</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.429</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.440</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-choice-list-orientation.html">ValueSet/choice-list-orientation</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.429</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.441</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-procedure-progress-status-code.html">CodeSystem/procedure-progress-status-code</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.430</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.442</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-procedure-progress-status-codes.html">ValueSet/procedure-progress-status-codes</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.430</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.443</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-goal-acceptance-status.html">CodeSystem/goal-acceptance-status</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.431</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.444</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-goal-acceptance-status.html">ValueSet/goal-acceptance-status</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.431</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.445</td>
+	</tr>
+    <tr>
+	  <td><a href="CodeSystem-flag-priority-code.html">CodeSystem/flag-priority-code</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.433</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.446</td>
+	</tr>
+    <tr>
+	  <td><a href="ValueSet-flag-priority.html">ValueSet/flag-priority</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.433</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.2.447</td>
+	</tr>
+    <tr>
+	  <td><a href="SearchParameter-workflow-EpisodeOfCare.html">SearchParameter/workflow-EpisodeOfCare</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.31.3</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.31.20</td>
+	</tr>
+    <tr>
+	  <td><a href="SearchParameter-workflow-barrierRef.html">SearchParameter/workflow-barrierRef</a></td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.31.3</td>
+	  <td>urn:oid:2.16.840.1.113883.4.642.31.21</td>
+	</tr>
+  </table>
+  <a name="1.0"> </a>
+  <h3>Release 1.0</h3>
+	<p>
+	  This represents the initial release of the 'core' extensions as a separate specification.  It includes
+	  a large number of changes from the set of extensions that were published as part of R4B, but no
+	  specific changes were tracked.  Consult <a href="http://jira.hl7.org">HL7's tracker website</a> to
+	  see all changes and their rationale.
+  </p>
+</div>

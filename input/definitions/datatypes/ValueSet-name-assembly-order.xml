@@ -50,7 +50,7 @@
       <system value="http://terminology.hl7.org/CodeSystem/v2-0444"/>
       <concept>
         <code value="F"/>
-        <display value="Prefix Family Given Suffix"/>
+        <display value="Prefix Family Middle Given Suffix"/>
       </concept>
       <concept>
         <code value="G"/>

@@ -1,4 +1,4 @@
-## Deprecation Information
+### Deprecation Information
 
 Many of the extensions in this Extension Pack are deprecated. 
 Deprecating an extension means two things for implementers:
