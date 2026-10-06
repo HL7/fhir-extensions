@@ -73,7 +73,7 @@
       <definition value="Indicates who or what is being asked to perform (or not perform) the request."/>
       <comment value="Note that the performer specified in this request is an overall performer; individual actions will generally identify roles, not specific individuals. However, for the overall order, if it's a directed order, this element represents the organization or healthcare service (or sometimes individual practitioner) who will have responsibility for the whole order. Even in the case that it is not a directed authorization, there'll still be a fulfillment request task sent for the overall request and that will typically be directed to a single performer."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>

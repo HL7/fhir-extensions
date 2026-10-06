@@ -72,7 +72,7 @@
       <short value="When service should (not) occur."/>
       <definition value="The date or time(s) at which the activity or service is desired to occur or not occur."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -80,7 +80,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://hl7.org/fhir/StructureDefinition/request-location"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/request-occurrence"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
