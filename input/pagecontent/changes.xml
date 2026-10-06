@@ -54,6 +54,7 @@
    <li>The value-filter-comparator value set is no longer defined in this package</li>
    <li>Corrected the cardinality of the <a href="StructureDefinition-authorization-hint.html">authorization-hint</a> extension, the status of a number of code systems, value sets and extensions, and duplicate OIDs (see the table below)</li>
    <li><a href="https://jira.hl7.org/browse/FHIR-54534">FHIR-54534</a>: New extension <a href="StructureDefinition-attachment-hostingEndpoint.html">attachment-hostingEndpoint</a> - the Endpoint that hosts the content referenced by the url of an Attachment</li>
+   <li><a href="https://jira.hl7.org/browse/FHIR-56413">FHIR-56413</a>: Aligned the definitions of the <a href="StructureDefinition-obligation-profile-flag.html">obligation-profile-flag</a> and <a href="StructureDefinition-inherit-obligations.html">inherit-obligations</a> extensions: obligation profiles can add non-conformance strength additional bindings and obligations (not cardinality changes), and both are what is inherited</li>
   </ul>
   <p>Reassigned OIDs. All these OIDs have been reassigned due to duplicate assignments in the past</p>
   <table class="grid">
