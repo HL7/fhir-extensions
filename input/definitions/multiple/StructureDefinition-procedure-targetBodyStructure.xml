@@ -28,7 +28,7 @@
       <value value="http://www.hl7.org/Special/committees/patientcare"/>
     </telecom>
   </contact>
-  <description value="The target body site used for this procedure.  Multiple locations are allowed.  This extension is no longer required in FHIR R6 or later because the context resources have core references to BodyStructure."/>
+  <description value="The target body site used for this procedure.  Multiple locations are allowed.  For Procedure, this extension is no longer required in FHIR R6 or later because Procedure has a core reference to BodyStructure.  For ServiceRequest, this extension is only needed before R5 because ServiceRequest.bodyStructure is available in FHIR R5 and later."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -52,7 +52,7 @@
         <valueCode value="4.0"/>
       </extension>
       <extension url="endFhirVersion">
-        <valueCode value="5.0"/>
+        <valueCode value="4.3"/>
       </extension>
     </extension>
     <type value="element"/>
@@ -65,7 +65,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="The target point for this procedure"/>
-      <definition value="The target body site used for this procedure.  Multiple locations are allowed.  This extension is no longer required in FHIR R6 or later because the context resources have core references to BodyStructure."/>
+      <definition value="The target body site used for this procedure.  Multiple locations are allowed.  For Procedure, this extension is no longer required in FHIR R6 or later because Procedure has a core reference to BodyStructure.  For ServiceRequest, this extension is only needed before R5 because ServiceRequest.bodyStructure is available in FHIR R5 and later."/>
       <min value="0"/>
       <max value="*"/>
     </element>

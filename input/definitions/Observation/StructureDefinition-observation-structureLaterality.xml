@@ -10,11 +10,6 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
-    <extension url="endFhirVersion">
-      <valueCode value="5.0"/>
-    </extension>
-  </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/observation-structureLaterality"/>
   <version value="1.0.0"/>
   <name value="StructureLaterality"/>
@@ -29,11 +24,16 @@
       <value value="http://www.hl7.org/Special/committees/orders"/>
     </telecom>
   </contact>
-  <description value="Indicates the laterality of the body structure. Only for use when laterality is needed to augment the Observation.bodySite in cases where the laterality is not expressed in the Observation.code and/or the use of  BodyStructure will duplicate information for the anatomical structure.  We are seeking feedback from implementers regarding the use of this extension."/>
+  <description value="Indicates the laterality of the body structure. Only for use when laterality is needed to augment the Observation.bodySite in cases where the laterality is not expressed in the Observation.code and/or the use of BodyStructure will duplicate information for the anatomical structure. This extension is used with Observation.bodySite through FHIR R5. In FHIR R6 and later, the bodySite element is deprecated and replaced with the bodyStructure element with reference to BodyStructure, so this extension is no longer required."/>
   <fhirVersion value="5.0.0"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="Observation.bodySite"/>
   </context>
@@ -44,7 +44,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Laterality of the body structure"/>
-      <definition value="Indicates the laterality of the body structure. Only for use when laterality is needed to augment the Observation.bodySite in cases where the laterality is not expressed in the Observation.code and/or the use of  BodyStructure will duplicate information for the anatomical structure.  We are seeking feedback from implementers regarding the use of this extension. "/>
+      <definition value="Indicates the laterality of the body structure. Only for use when laterality is needed to augment the Observation.bodySite in cases where the laterality is not expressed in the Observation.code and/or the use of BodyStructure will duplicate information for the anatomical structure. This extension is available for use with Observation.bodySite through FHIR R5. In FHIR R6 and later, Observation.bodySite is deprecated; use Observation.bodyStructure instead, which supports a CodeableReference to BodyStructure."/>
       <min value="0"/>
       <max value="1"/>
     </element>
