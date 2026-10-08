@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="action-applicability-behavior"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cds"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://hl7.org/fhir/CodeSystem/action-applicability-behavior"/>
+  <name value="ActionApplicabilityBehavior"/>
+  <title value="Action Applicability Behavior"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-07"/>
+  <publisher value="HL7 International / Clinical Decision Support"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/dss"/>
+    </telecom>
+  </contact>
+  <description value="Codes that determine the applicability behavior when evaluating child actions of a given action, all or any."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/action-applicability-behavior"/>
+  <content value="complete"/>
+  <concept>
+    <code value="all"/>
+    <display value="All"/>
+    <definition value="The applicability of each action is evaluated independently; if the applicability criteria for an action evaluates to true, it is applied."/>
+  </concept>
+  <concept>
+    <code value="any"/>
+    <display value="Any"/>
+    <definition value="	The applicability of each action is evaluated in order; the first action for which the applicability criteria evaluates to true is applied, and processing of the parent action stops."/>
+  </concept>
+</CodeSystem>
