@@ -14,7 +14,7 @@
   <url value="http://hl7.org/fhir/CodeSystem/action-applicability-behavior"/>
   <name value="ActionApplicabilityBehavior"/>
   <title value="Action Applicability Behavior"/>
-  <status value="active"/>
+  <status value="draft"/>
   <experimental value="false"/>
   <date value="2026-10-07"/>
   <publisher value="HL7 International / Clinical Decision Support"/>
@@ -42,6 +42,6 @@
   <concept>
     <code value="any"/>
     <display value="Any"/>
-    <definition value="	The applicability of each action is evaluated in order; the first action for which the applicability criteria evaluates to true is applied, and processing of the parent action stops."/>
+    <definition value="The applicability of each action is evaluated in order; the first action for which the applicability criteria evaluates to true is applied, and processing of the parent action stops."/>
   </concept>
 </CodeSystem>

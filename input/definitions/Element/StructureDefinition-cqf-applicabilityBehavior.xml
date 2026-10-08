@@ -60,7 +60,7 @@
         <valueCode value="4.0"/>
       </extension>
       <extension url="endFhirVersion">
-        <valueCode value="4.0"/>
+        <valueCode value="4.3"/>
       </extension>
     </extension>
     <type value="element"/>
@@ -72,7 +72,7 @@
         <valueCode value="4.0"/>
       </extension>
       <extension url="endFhirVersion">
-        <valueCode value="4.0"/>
+        <valueCode value="4.3"/>
       </extension>
     </extension>
     <type value="element"/>
@@ -129,7 +129,7 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/binding-definition">
-          <valueMarkdown value="Indicates whether all child actions are evaluated independently, or the first action that is applicability (any)"/>
+          <valueMarkdown value="Indicates whether all child actions are evaluated independently, or the first action that is applicable (any)"/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ApplicabilityBehavior"/>
