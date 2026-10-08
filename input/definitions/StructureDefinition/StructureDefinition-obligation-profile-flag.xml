@@ -22,7 +22,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Profiles marked to be 'Obligation Profiles' cannot introduce new structural elements or slicing, but they can change the cardinality, add additional bindings, and additional obligations on the elements that are already defined"/>
+  <description value="Profiles marked to be 'Obligation Profiles' cannot introduce new structural elements or slicing, but they can add non-conformance strength additional bindings (not required, extensible, current, current-extensible) and additional obligations on the elements that are already defined"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -43,7 +43,7 @@
    <element id="Extension">
       <path value="Extension"/> 
       <short value="Marks that a profile is an obligation only profile"/> 
-      <definition value="Marks that a profiles is an 'Obligation Profile', which cannot introduce new structural elements or slicing, but it can change the cardinality, add additional bindings, and additional obligations on the elements that are already defined"/> 
+      <definition value="Marks that a profile is an 'Obligation Profile', which cannot introduce new structural elements or slicing, but it can add non-conformance strength additional bindings (not required, extensible, current, current-extensible) and additional obligations on the elements that are already defined"/> 
       <min value="0"/> 
       <max value="*"/> 
     </element> 
