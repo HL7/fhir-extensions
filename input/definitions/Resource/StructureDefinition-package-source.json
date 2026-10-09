@@ -12,6 +12,10 @@
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
     "valueCode" : "trial-use"
+  },
+  {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-behavior",
+    "valueCode" : "ignore"
   }],
   "url" : "http://hl7.org/fhir/StructureDefinition/package-source",
   "version" : "1.0.0",
@@ -27,7 +31,7 @@
       "value" : "http://www.hl7.org/Special/committees/fiwg"
     }]
   }],
-  "description" : "Specifies the package in which an artifact is or was included.",
+  "description" : "Specifies the package (and preferably, package version) in which an artifact (or referenced artifact) is defined.",
   "purpose" : "To allow artifacts to declare the package in which they are defined. This typically corresponds to the implementation guide in which the artifact is packaged. However, to support the use of non-IG-packaged content, this extension allows artifacts to declare their intended scope so that evaluation environments can correctly resolve namespaces and dependencies.",
   "fhirVersion" : "5.0.0",
   "kind" : "complex-type",
@@ -38,6 +42,9 @@
   }, {
     "type": "element",
     "expression": "Meta"
+  }, {
+    "type" : "element",
+    "expression" : "RelatedArtifact"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
@@ -47,7 +54,7 @@
       "id" : "Extension",
       "path" : "Extension",
       "short" : "What package the artifact is defined in",
-      "definition" : "Specifies the package in which an artifact is or was included.",
+      "definition" : "Specifies the package (and preferably, package version) in which an artifact (or referenced artifact) is defined.",
       "min" : 0,
       "max" : "*"
     },

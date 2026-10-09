@@ -112,7 +112,7 @@
           <valueString value="Callme is used to indicate which of the various name parts is used when interacting with the person"/>
         </extension>
         <code value="CL"/>
-        <display value="Call me"/>
+        <display value="callme"/>
       </concept>
       <concept>
         <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-definition">

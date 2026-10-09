@@ -30,6 +30,7 @@
     </telecom>
   </contact>
   <description value="User who created the ValueSet.compose for the ValueSet version."/>
+  <purpose value="This extension is for use with FHIR versions up to R4B (4.3). From R5 onwards, use ValueSet.author instead."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -39,6 +40,11 @@
   <kind value="complex-type"/>
   <abstract value="false"/>
   <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
     <type value="element"/>
     <expression value="ValueSet.compose"/>
   </context>
@@ -49,6 +55,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <definition value="User who created the compose for the ValueSet."/>
+      <comment value="This extension is only for use with FHIR versions up to R4B (4.3), which have no ValueSet.author element. From R5 onwards, the author(s) of the value set, including whoever defined the content logical definition (compose), are represented using ValueSet.author, which is a ContactDetail and so can carry contact details as well as a name."/>
       <min value="0"/>
       <max value="1"/>
       <isModifier value="false"/>

@@ -22,7 +22,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Inherit all the obligations from an Obligation Profile. The other profile must be a Obligation Profile (using [[[http://hl7.org/fhir/StructureDefinition/obligation-profile]]])"/>
+  <description value="Inherit all the obligations and non-conformance additional bindings from an Obligation Profile. The other profile must be a Obligation Profile (using [[[http://hl7.org/fhir/StructureDefinition/obligation-profile-flag]]])"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -43,7 +43,7 @@
    <element id="Extension">
       <path value="Extension"/> 
       <short value="Marks that a profile inherits obligations from another profile"/> 
-      <definition value="Inherits Obligations from other profiles. The other profile must be a Obligation Profile (using [[[http://hl7.org/fhir/StructureDefinition/obligation-profile]]])"/> 
+      <definition value="Inherits obligations and non-conformance additional bindings from other profiles. The other profile must be a Obligation Profile (using [[[http://hl7.org/fhir/StructureDefinition/obligation-profile-flag]]])"/> 
       <min value="0"/> 
       <max value="*"/> 
     </element> 

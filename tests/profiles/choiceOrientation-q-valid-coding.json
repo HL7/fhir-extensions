@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "choiceOrientation-q-valid-coding",
+  "status" : "draft",
+  "item" : [
+    {
+      "extension" : [
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+          "valueCode" : "vertical"
+        }
+      ],
+      "linkId" : "q1",
+      "text" : "Favourite colour",
+      "type" : "coding"
+    }
+  ]
+}

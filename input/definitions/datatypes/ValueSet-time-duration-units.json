@@ -43,32 +43,25 @@
     "include" : [{
       "system" : "http://unitsofmeasure.org",
       "concept" : [{
-        "code" : "ms",
-        "display" : "milliseconds"
+        "code" : "ms"
       },
       {
-        "code" : "s",
-        "display" : "seconds"
+        "code" : "s"
       },
       {
-        "code" : "min",
-        "display" : "minutes"
+        "code" : "min"
       },
       {
-        "code" : "h",
-        "display" : "hours"
+        "code" : "h"
       },
       {
-        "code" : "d",
-        "display" : "days"
+        "code" : "d"
       },
       {
-        "code" : "mo",
-        "display" : "months"
+        "code" : "mo"
       },
       {
-        "code" : "a",
-        "display" : "years"
+        "code" : "a"
       }]
     }]
   }

@@ -52,6 +52,12 @@
       <definition value="The value of an integer that exceeds the bounds of the base int type."/>
       <min value="0"/>
       <max value="1"/>
+      <constraint>
+        <key value="lv-1"/>
+        <severity value="error"/>
+        <human value="The value must be a whole number (no decimal point or exponent)"/>
+        <expression value="value.toString().matches('^-?[0-9]+$')"/>
+      </constraint>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -64,8 +70,12 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="1"/>
+      <condition value="lv-1"/>
       <type>
         <code value="decimal"/>
+      </type>
+      <type>
+        <code value="integer64"/>
       </type>
     </element>
   </differential>

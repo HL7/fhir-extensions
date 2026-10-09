@@ -11,7 +11,7 @@
   <url value="http://hl7.org/fhir/SearchParameter/workflow-EpisodeOfCare"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.31.3"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.31.20"/>
   </identifier>
   <version value="5.0.0"/>
   <name value="EpisodeOfCareSearchParameter"/>
@@ -40,8 +40,20 @@
   <base value="Consent"/>
   <base value="DetectedIssue"/>
   <base value="DeviceRequest"/>
-  <base value="DeviceUsage"/>
-  <base value="DeviceUseStatement"/>
+  <base value="DeviceUsage">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="5.0"/>
+      </extension>
+    </extension>
+  </base>
+  <base value="DeviceUseStatement">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+  </base>
   <base value="DiagnosticReport"/>
   <base value="DocumentReference"/>
   <base value="EnrollmentRequest"/>
@@ -66,7 +78,13 @@
   <base value="Observation"/>
   <base value="Procedure"/>
   <base value="QuestionnaireResponse"/>
-  <base value="RequestGroup"/>
+  <base value="RequestGroup">
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="endFhirVersion">
+        <valueCode value="4.3"/>
+      </extension>
+    </extension>
+  </base>
   <base value="RequestOrchestration"/>
   <base value="ResearchSubject"/>
   <base value="RiskAssessment"/>

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "choiceOrientation-ed-invalid-no-type",
+  "url" : "http://example.org/fhir/StructureDefinition/choiceOrientation-ed-invalid-no-type",
+  "name" : "ChoiceorientationEdInvalidNoType",
+  "status" : "draft",
+  "fhirVersion" : "5.0.0",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "Patient"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension"
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+            "valueCode" : "vertical"
+          }
+        ],
+        "fixedUri" : "http://example.org/fhir/StructureDefinition/choiceOrientation-ed-invalid-no-type"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ]
+      }
+    ]
+  }
+}

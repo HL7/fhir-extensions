@@ -14,7 +14,7 @@
   <url value="http://hl7.org/fhir/StructureDefinition/relative-date"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
-    <value value="urn:oid:2.16.840.1.113883.4.642.5.1598"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.5.1791"/>
   </identifier>
   <version value="5.0.0"/>
   <name value="RelativeDateCriteria"/>
@@ -55,20 +55,28 @@
       <path value="Extension"/>
       <short value="Relative Date Criteria"/>
       <definition value="Specifies that a date is relative to some event. The event happens [Duration] after [Event]."/>
-      <comment value="This extension is used when a precise date is not known, but rather, the date will be relative to some future event (e.g. Do this 2 weeks after an operation)."/>
+      <comment value="This extension is used when a precise date is not known, but rather, the date will be relative to some future event (e.g. Do this 2 weeks after an operation). The event is identified by targetReference (a specific event), targetCode (a kind of event), or both. If both are present, the targetCode indicates an event that occurs within the context of the targetReference - e.g. discharge from a specific Encounter."/>
       <min value="0"/>
       <max value="1"/>
+      <constraint>
+        <key value="rdt-1"/>
+        <severity value="error"/>
+        <human value="At least one of targetReference or targetCode SHALL be present"/>
+        <expression value="extension('targetReference').exists() or extension('targetCode').exists()"/>
+      </constraint>
     </element>
     <element id="Extension.extension:targetReference">
       <path value="Extension.extension"/>
       <sliceName value="targetReference"/>
       <short value="Specific event that the date is relative to"/>
       <definition value="The specific event that the date(time) is relative to - e.g. an Encounter, an Observation, a Procedure, etc."/>
-      <min value="1"/>
+      <comment value="Either or both of targetReference and targetCode can be present (at least one SHALL be). If targetCode is also present, it indicates an event that occurs within the context of this event."/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
+      <condition value="rdt-1"/>
     </element>
     <element id="Extension.extension:targetReference.extension">
       <path value="Extension.extension.extension"/>
@@ -93,12 +101,13 @@
       <sliceName value="targetCode"/>
       <short value="Kind of event that the date is relative to"/>
       <definition value="The generic type of event that the date(time) is relative to."/>
-      <comment value="If present alongside targetReference, the kind of event is within the specified event - e.g. admission or discharge in an encounter, enrollment or start of therapy in a study, etc."/>
-      <min value="1"/>
+      <comment value="Either or both of targetReference and targetCode can be present (at least one SHALL be). If present alongside targetReference, the kind of event is within the specified event - e.g. admission or discharge in an encounter, enrollment or start of therapy in a study, etc."/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
+      <condition value="rdt-1"/>
     </element>
     <element id="Extension.extension:targetCode.extension">
       <path value="Extension.extension.extension"/>

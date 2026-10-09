@@ -56,7 +56,7 @@
       <system value="http://snomed.info/sct"/>
       <concept>
         <code value="125097000"/>
-        <display value="goat"/>
+        <display value="Capra hircus"/>
       </concept>
       <concept>
         <code value="125099002"/>
@@ -64,11 +64,11 @@
       </concept>
       <concept>
         <code value="34618005"/>
-        <display value="cow"/>
+        <display value="Bos taurus"/>
       </concept>
       <concept>
         <code value="425134008"/>
-        <display value="turkey"/>
+        <display value="Meleagridinae - turkeys"/>
       </concept>
       <concept>
         <code value="47290002"/>
@@ -76,7 +76,7 @@
       </concept>
       <concept>
         <code value="15778005"/>
-        <display value="goose"/>
+        <display value="Gray goose"/>
       </concept>
       <concept>
         <code value="396620009"/>
@@ -84,7 +84,7 @@
       </concept>
       <concept>
         <code value="388445009"/>
-        <display value="horse"/>
+        <display value="Horses"/>
       </concept>
       <concept>
         <code value="85626006"/>

@@ -1,0 +1,372 @@
+{
+  "profiles" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+    "tests" : [{
+      "source" : "choiceOrientation-q-valid-coding.json",
+      "description" : "choiceOrientation is allowed on a coding item",
+      "valid" : true,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Observation|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          },
+          "expression" : ["Questionnaire"]
+        }]
+      }
+    },
+    {
+      "source" : "choiceOrientation-q-valid-string.json",
+      "description" : "choiceOrientation is allowed on any item that isn't a group or display (string)",
+      "valid" : true,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          },
+          "expression" : ["Questionnaire"]
+        }]
+      }
+    },
+    {
+      "source" : "choiceOrientation-q-invalid-group.json",
+      "description" : "choiceOrientation is not allowed on a group item",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 6
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 6
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "Profile_EXT_Not_Here"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          }],
+          "severity" : "error",
+          "code" : "structure",
+          "details" : {
+            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.3.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
+          },
+          "expression" : ["Questionnaire.item[0]"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          },
+          "expression" : ["Questionnaire"]
+        }]
+      }
+    },
+    {
+      "source" : "choiceOrientation-q-invalid-display.json",
+      "description" : "choiceOrientation is not allowed on a display item",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 6
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 6
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "Profile_EXT_Not_Here"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          }],
+          "severity" : "error",
+          "code" : "structure",
+          "details" : {
+            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.3.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
+          },
+          "expression" : ["Questionnaire.item[0]"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          },
+          "expression" : ["Questionnaire"]
+        }]
+      }
+    }]
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
+    "tests" : [{
+      "source" : "choiceOrientation-ed-valid-coding.json",
+      "description" : "choiceOrientation is allowed on an element with a Coding type",
+      "valid" : true,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/Questionnaire|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
+          },
+          "expression" : ["StructureDefinition"]
+        }]
+      }
+    },
+    {
+      "source" : "choiceOrientation-ed-invalid-string.json",
+      "description" : "choiceOrientation is not allowed on an element whose only type is string",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 35
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 8
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "Profile_EXT_Not_Here"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
+          }],
+          "severity" : "error",
+          "code" : "structure",
+          "details" : {
+            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.3.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
+          },
+          "expression" : ["StructureDefinition.differential.element[3]"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
+          },
+          "expression" : ["StructureDefinition"]
+        }]
+      }
+    },
+    {
+      "source" : "choiceOrientation-ed-invalid-no-type.json",
+      "description" : "choiceOrientation is not allowed on an element with no type",
+      "valid" : false,
+      "outcome" : {
+        "resourceType" : "OperationOutcome",
+        "issue" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 30
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 8
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "Profile_EXT_Not_Here"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
+          }],
+          "severity" : "error",
+          "code" : "structure",
+          "details" : {
+            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.3.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
+          },
+          "expression" : ["StructureDefinition.differential.element[2]"]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger" : 1
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger" : 2
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+            "valueString" : "InstanceValidator"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueCode" : "VALIDATION_VAL_PROFILE_SIGNPOST"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-context",
+            "valueString" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
+          }],
+          "severity" : "information",
+          "code" : "informational",
+          "details" : {
+            "text" : "Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0"
+          },
+          "expression" : ["StructureDefinition"]
+        }]
+      }
+    }]
+  }]
+}
