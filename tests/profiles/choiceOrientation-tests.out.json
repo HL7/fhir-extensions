@@ -103,7 +103,7 @@
           "severity" : "error",
           "code" : "structure",
           "details" : {
-            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.3.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
+            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.4.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
           },
           "expression" : ["Questionnaire.item[0]"]
         },
@@ -167,7 +167,7 @@
           "severity" : "error",
           "code" : "structure",
           "details" : {
-            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.3.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
+            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.4.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
           },
           "expression" : ["Questionnaire.item[0]"]
         },
@@ -270,7 +270,7 @@
           "severity" : "error",
           "code" : "structure",
           "details" : {
-            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.3.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
+            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.4.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
           },
           "expression" : ["StructureDefinition.differential.element[3]"]
         },
@@ -334,7 +334,7 @@
           "severity" : "error",
           "code" : "structure",
           "details" : {
-            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.3.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
+            "text" : "The extension http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation v5.4.0 is not allowed to be used at this point (based on context invariant 'type.exists(code = 'Coding' or (hasValue() and $this != 'group' and $this != 'display'))')"
           },
           "expression" : ["StructureDefinition.differential.element[2]"]
         },
