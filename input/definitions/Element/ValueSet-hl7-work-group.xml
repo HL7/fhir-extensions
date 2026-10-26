@@ -55,5 +55,8 @@
     <include>
       <system value="http://terminology.hl7.org/CodeSystem/hl7-affiliate"/>
     </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/hl7-staff-role"/>
+    </include>
   </compose>
 </ValueSet>
