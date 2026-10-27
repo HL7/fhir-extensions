@@ -355,7 +355,7 @@
      later versions. A <a href="extension-summary.html">summary of this work</a> is provided.</li>
   </ul>
 
-  <p>This as a full list compiled from the source history; it covers the changes that reference tracker items, plus the extensions added and removed in the release.</p>
+  <p>This is a full list compiled from the source history; it covers the changes that reference tracker items, plus the extensions added and removed in the release.</p>
   <ul>
    <li><a href="https://jira.hl7.org/browse/FHIR-4563">FHIR-4563</a>: Deprecate BiologicallyDerivedProduct collection procedure extension (<a href="StructureDefinition-biologicallyderivedproduct-collection-procedure.html">biologicallyderivedproduct-collection-procedure</a>)</li>
    <li><a href="https://jira.hl7.org/browse/FHIR-17574">FHIR-17574</a>: Add classification (<a href="StructureDefinition-address-classification.html">address-classification</a>)</li>
