@@ -63,6 +63,7 @@
    <li><a href="https://jira.hl7.org/browse/FHIR-54631">FHIR-54631</a>: The <a href="StructureDefinition-consent-provision-limit.html">consent-provision-limit</a> extension can also be used on nested provisions (Consent.provision.provision)</li>
    <li><a href="https://jira.hl7.org/browse/FHIR-53022">FHIR-53022</a> and <a href="https://jira.hl7.org/browse/FHIR-52986">FHIR-52986</a>: The binding on the <a href="StructureDefinition-observation-structureLaterality.html">observation-structureLaterality</a> extension is now extensible (was required) and the extension is limited to R5 and earlier; the ServiceRequest context of <a href="StructureDefinition-procedure-targetBodyStructure.html">procedure-targetBodyStructure</a> is limited to R4B and earlier (R5 ServiceRequest has bodyStructure), with a note that it is not needed for Procedure in R6</li>
    <li>The <a href="StructureDefinition-dosage-minimumGapBetweenDose.html">dosage-minimumGapBetweenDose</a> extension is corrected to a simple Duration value - it was erroneously published with the content of the dosage-conditions extension</li>
+   <li>Deprecated Extensions: There are {% sql Select count(*) from Resources where type = 'StructureDefinition' and sdType = 'Extension' and standardStatus = 'deprecated' %} deprecated extensions: see <a href="deprecated.html">the deprecated Extensions page</a></li>
   </ul>
   <p>Reassigned OIDs. All these OIDs have been reassigned due to duplicate assignments in the past</p>
   <table class="grid">
@@ -320,7 +321,41 @@
   <a name="5.3"> </a>
   <a name="5.3.0"> </a>
   <h3>Release 5.3.0 (2026-05-16)</h3>
-  <p>This list was compiled from the source history; it covers the changes that reference tracker items, plus the extensions added and removed in the release.</p>
+   <p>This is the May 2026 release (5.3.0) of the Extension Pack. The following is a summary of major changes since the last release:</p>
+  <ul>
+   <li>New Extensions: {% include new-extensions.xhtml %}</li>
+   <li>Removed Extensions: {% include deleted-extensions.xhtml %}</li>
+   <li>Extensions that have breaking changes: 
+    <ul>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/researchStudy-siteRecruitment]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/relative-date]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/feature-assertion]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/device-maintenanceresponsibility]]]</li>
+    </ul>
+   </li>
+   <li>Extensions that have new sub-extensions: 
+    <ul>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/maxDecimalPlaces]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse]]]</li>
+      <li>[[[http://hl7.org/fhir/StructureDefinition/obligation]]]</li>
+    </ul>
+   </li>
+   <li>Other changes: 
+    <ul>
+      <li>The language and jurisdiction bindings found in several extensions have been updated to the R5/6 pattern.</li>
+      <li>The status, maturity and experimental properties have been update for many resources.</li>
+      <li>The context of use has been update for many extensions, including make the context version dependent where appropriate.</li>
+    </ul>
+   </li>
+   <li>Deprecated Extensions: There are 104 deprecated extensions: see <a href="deprecated.html">the deprecated Extensions page</a></li>
+   <li>The conversion maps have been removed from this release - they have moved to the cross-extensions publications</li>
+   <li>A significant new feature in this release is that extensions are transformed to R4 and R3 versions, so that the 
+     extension definitions found in the .r4 and .r3 packages are fully valid. This involves: making sure that appropriate 
+     CodeSystem and ValueSet resources are included, and using sets of extensions in place of data types defined in
+     later versions. A <a href="extension-summary.html">summary of this work</a> is provided.</li>
+  </ul>
+
+  <p>This is a full list compiled from the source history; it covers the changes that reference tracker items, plus the extensions added and removed in the release.</p>
   <ul>
    <li><a href="https://jira.hl7.org/browse/FHIR-4563">FHIR-4563</a>: Deprecate BiologicallyDerivedProduct collection procedure extension (<a href="StructureDefinition-biologicallyderivedproduct-collection-procedure.html">biologicallyderivedproduct-collection-procedure</a>)</li>
    <li><a href="https://jira.hl7.org/browse/FHIR-17574">FHIR-17574</a>: Add classification (<a href="StructureDefinition-address-classification.html">address-classification</a>)</li>
