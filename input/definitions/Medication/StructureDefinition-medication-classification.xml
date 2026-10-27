@@ -11,6 +11,11 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="trial-use"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+    <extension url="endFhirVersion">
+      <valueCode value="5.0"/>
+    </extension>
+  </extension>
   <url value="http://hl7.org/fhir/StructureDefinition/medication-classification"/>
   <version value="5.0.0"/>
   <name value="MedicationClassification"/>
@@ -25,7 +30,7 @@
       <value value="http://www.hl7.org/Special/committees/medication"/>
     </telecom>
   </contact>
-  <description value="Provides a classification for a medication, mirroring the structure of&#xA;MedicationKnowledge.classification. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference."/>
+  <description value="Provides a classification for a medication, mirroring the structure of&#xA;MedicationKnowledge.classification. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference. From R6, this extension has been replaced by Medication.classification."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -45,7 +50,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Medication Classification"/>
-      <definition value="Provides a classification for a medication. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference."/>
+      <definition value="Provides a classification for a medication. This allows a Medication resource to carry&#xA;classification information (e.g., therapeutic class, pharmacologic class) in&#xA;, including the type of&#xA;classification system used, one or more classification codes, and an optional&#xA;source reference. From R6, this extension has been replaced by Medication.classification."/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
