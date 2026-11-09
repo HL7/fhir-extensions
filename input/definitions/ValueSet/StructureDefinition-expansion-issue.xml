@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="expansion-issue"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="vocab"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/expansion-issue"/>
+  <name value="ExpansionIssue"/>
+  <title value="Expansion Issue"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-11-09"/>
+  <publisher value="HL7 International / Terminology Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/Vocab"/>
+    </telecom>
+  </contact>
+  <description value="An issue that arose while the expansion was being produced, that users of the expansion should know about - for example, that the expansion does not list all the codes that were asked for, and why. The issue is an OperationOutcome contained in the ValueSet, with a single issue, that this extension refers to."/>
+  <purpose value="Servers sometimes can't return the expansion that was asked for: a code system's licence may limit how many of its codes an expansion can list, or some codes may not be available. The total and the valueset-unclosed extension say that the expansion is not all the codes, but not why; this extension carries the explanation, in the same form as other errors and warnings servers return (OperationOutcome.issue), so that it can be coded (issue type, details) and displayed to users."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.expansion"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="An issue users of the expansion should know about"/>
+      <definition value="An issue that arose while the expansion was being produced, that users of the expansion should know about - for example, that the expansion does not list all the codes that were asked for, and why. The issue is an OperationOutcome contained in the ValueSet, with a single issue, that this extension refers to."/>
+      <comment value="Each issue is a separate contained OperationOutcome, with a single issue, and a separate repeat of this extension. The issue should have a details.coding from http://hl7.org/fhir/tools/CodeSystem/tx-issue-type, and details.text that can be shown to users; it may have a message id (http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id). Issues that prevent the expansion being produced at all are returned as an OperationOutcome in place of the expansion, not with this extension."/>
+      <min value="0"/>
+      <max value="*"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/expansion-issue"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <short value="The contained OperationOutcome with the issue"/>
+      <min value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationOutcome"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
