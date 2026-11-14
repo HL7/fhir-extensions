@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="version-resolution-method"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/StructureDefinition/version-resolution-method"/>
+  <version value="5.0.0"/>
+  <name value="VersionResolutionMethod"/>
+  <title value="Version Resolution Method"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-11-13"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Indicates how a canonical reference that does not specify a version should be resolved to a specific version of the referenced resource."/>
+  <purpose value="When a canonical reference is not pinned to a specific version, the appropriate version depends on the context of use. Most references are resolved using the package dependencies of the package that contains the reference, but some references are intended to be resolved using a manifest provided at implementation time, or always to the latest available version. This extension allows authors to state which approach applies."/>
+  <fhirVersion value="5.0.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="canonical"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.include.system"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ValueSet.compose.exclude.system"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ConceptMap.group.source"/>
+  </context>
+  <context>
+    <type value="element"/>
+    <expression value="ConceptMap.group.target"/>
+  </context>
+  <contextInvariant value="$this.hasValue() implies $this.toString().contains('|').not()"/>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="How to resolve an unversioned canonical reference"/>
+      <definition value="Indicates how a canonical reference that does not specify a version should be resolved to a specific version of the referenced resource."/>
+      <comment value="If this extension is absent, the reference is resolved through package dependencies (the 'package' method). This extension SHALL NOT be present on a canonical reference that specifies a version (that is, one that contains '|')."/>
+      <min value="0"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/version-resolution-method"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/version-resolution-method"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
