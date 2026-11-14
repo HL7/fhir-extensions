@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="version-resolution-method"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="fhir"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="draft"/>
+  </extension>
+  <url value="http://hl7.org/fhir/version-resolution-method"/>
+  <version value="5.0.0"/>
+  <name value="VersionResolutionMethodCS"/>
+  <title value="Version Resolution Method CodeSystem"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-11-13"/>
+  <publisher value="HL7 International / FHIR Infrastructure"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="Methods for determining which version of a resource a canonical reference that does not specify a version should resolve to."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/ValueSet/version-resolution-method"/>
+  <content value="complete"/>
+  <concept>
+    <code value="package"/>
+    <display value="Package"/>
+    <definition value="Resolve the reference using the package dependencies of the package that contains the referencing resource: select the most recent version of the referenced resource found within that package and its transitive dependencies. This is the default behavior when no resolution method is specified."/>
+  </concept>
+  <concept>
+    <code value="manifest"/>
+    <display value="Manifest"/>
+    <definition value="Resolve the reference using a manifest that is expected to be provided by the context of use. Resolving the reference in the absence of a manifest is an error. This code does not define the manifest itself."/>
+  </concept>
+  <concept>
+    <code value="latest"/>
+    <display value="Latest"/>
+    <definition value="Resolve the reference to the latest version that is available, independent of package dependencies or manifests, however resources are made available (for example, through terminology services)."/>
+  </concept>
+</CodeSystem>
