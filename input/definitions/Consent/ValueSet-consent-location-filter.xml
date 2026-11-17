@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="consent-location-filter"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="sec"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://hl7.org/fhir/ValueSet/consent-location-filter"/>
+  <version value="5.0.0"/>
+  <name value="ConsentLocationFilter"/>
+  <title value="Consent Location Filter"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International / Security"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/secure"/>
+    </telecom>
+  </contact>
+  <description value="Value set for the filter specific constraint in consent location extension."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/filter-operator"/>
+      <concept>
+        <code value="in" />
+      </concept>
+      <concept>
+        <code value="not-in" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

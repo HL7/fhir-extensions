@@ -21,7 +21,7 @@
   <title value="Consent Location of Access restriction"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2020-12-28T16:55:11+11:00"/>
+  <date value="2026-11-17T16:55:11+11:00"/>
   <publisher value="HL7 International / Security"/>
   <contact>
     <telecom>
@@ -47,6 +47,15 @@
     <type value="element"/>
     <expression value="Consent.provision"/>
   </context>
+  <context>
+    <extension url="http://hl7.org/fhir/StructureDefinition/version-specific-use">
+      <extension url="startFhirVersion">
+        <valueCode value="4.0"/>
+      </extension>
+    </extension>
+    <type value="element"/>
+    <expression value="Consent.provision.provision"/>
+  </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
@@ -54,13 +63,60 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A location specific constraint"/>
-      <definition value="Restricts this exception to only apply a specific location as defined."/>
-      <min value="0"/>
-      <max value="*"/>
+      <definition value="Restricts this provision to only apply a specific location as defined."/>
     </element>
-    <element id="Extension.extension">
+    <element id="Extension.extension:location">
       <path value="Extension.extension"/>
+      <sliceName value="location"/>
+      <short value="Location specific constraint"/>
+      <definition value="Restricts this provision to only apply a specific location as defined."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:location.extension">
+      <path value="Extension.extension.extension"/>
       <max value="0"/>
+    </element>
+    <element id="Extension.extension:location.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="location"/>
+    </element>
+    <element id="Extension.extension:location.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+      </type>
+    </element>
+    <element id="Extension.extension:filter">
+      <path value="Extension.extension"/>
+      <sliceName value="filter"/>
+      <short value="Filter specific constraint"/>
+      <definition value="Restricts this provision to only apply a specific filter as defined."/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Extension.extension:filter.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:filter.url">
+      <path value="Extension.extension.url"/>
+      <fixedUri value="filter"/>
+    </element>
+    <element id="Extension.extension:filter.value[x]">
+      <path value="Extension.extension.value[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/consent-location-filter"/>
+      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
@@ -68,11 +124,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
-      <min value="1"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
-      </type>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>
