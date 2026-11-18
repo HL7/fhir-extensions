@@ -29,7 +29,7 @@
       <value value="http://www.hl7.org/Special/committees/secure"/>
     </telecom>
   </contact>
-  <description value="Restricts this exception to only apply a specific location as defined."/>
+  <description value="Restricts this provision to only apply a specific location as defined."/>
   <fhirVersion value="5.0.0"/>
   <mapping>
     <identity value="rim"/>
@@ -54,7 +54,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="A location specific constraint"/>
-      <definition value="Restricts this exception to only apply a specific location as defined."/>
+      <definition value="Restricts this provision to only apply a specific location as defined."/>
       <min value="0"/>
       <max value="*"/>
     </element>
