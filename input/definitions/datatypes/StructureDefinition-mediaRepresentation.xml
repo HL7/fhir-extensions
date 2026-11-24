@@ -46,7 +46,6 @@
       <short value="Media representation of the target of the reference"/>
       <definition value="A media representation of the target resource of a reference or canonical."/>
       <comment value="It is better practice to have an actual resource with the minimum discrete data present.  The media can be referenced in that resource's narrative.  However, not all systems will be able (technically or by policy) to create such a resource instance.  This extension provides a solution in those circumstances."/>
-      <requirements value="There are some situations where the system does not have (and cannot have) a formal resource representation of a concept, but do have a media representation such as a scanned fax, an audio clip, etc.  This allows referring to that media structure."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -60,6 +59,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
+      <requirements value="There are some situations where the system does not have (and cannot have) a formal resource representation of a concept, but do have a media representation such as a scanned fax, an audio clip, etc.  This allows referring to that media structure."/>
       <min value="1"/>
       <type>
         <code value="Reference"/>

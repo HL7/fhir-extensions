@@ -99,7 +99,7 @@
       <binding>
         <strength value="required"/>
         <description value="Current and past FHIR resource types (deleted or renamed), and additional resource types (FHIR v6.0.0-ballot4)."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/extended-resource-types"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/version-independent-all-resource-types"/>
       </binding>
     </element>
 

@@ -46,7 +46,6 @@
       <short value="Identifies the source resource related to this outcome or issue."/>
       <definition value="Identifies the source resource related to this outcome or issue."/>
       <comment value="Note that if the resource context of the outcome and issue is unambiguous (e.g., a single resource (even a Bundle) that was provided to the request), this extension is likely not necessary."/>
-      <requirements value="The resource related to this outcome or issue - e.g., a reference to the resource that an `issue.expression` is rooted in."/>
       <min value="0"/>
       <max value="1"/>
     </element>
@@ -60,6 +59,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
+      <requirements value="The resource related to this outcome or issue - e.g., a reference to the resource that an `issue.expression` is rooted in."/>
       <min value="1"/>
       <type>
         <code value="Reference"/>

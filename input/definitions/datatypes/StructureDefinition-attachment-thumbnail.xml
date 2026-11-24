@@ -41,7 +41,6 @@
       <short value="Smaller version of the content (e.g. for preview)"/>
       <definition value="A smaller version of the content expressed in the parent Attachment, typically used for preview purposes."/>
       <comment value="This might be a smaller image, an abstract of a document, a clip of audio or video content, etc."/>
-      <requirements value="In most cases, there would be a maximum of 1 thumbnail for an attachment. Multiple repetitions allow for different sizes and/or formats of low-resolution versions."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -55,6 +54,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
+      <requirements value="In most cases, there would be a maximum of 1 thumbnail for an attachment. Multiple repetitions allow for different sizes and/or formats of low-resolution versions."/>
       <min value="1"/>
       <type>
         <code value="Attachment"/>
