@@ -24,7 +24,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Codes that describe application obligations for handling FHIR content. There are five kinds of codes in this code system:&#xA; * Categorizer codes: ResourceProducerObligations, ResourcesExchangerObligations, and ResourceConsumerObligations which are used to construct value sets and indicate the contexts in which the obligations apply.  Note that many applications will be producers, consumers, and potentially exchangers simultaneously, so there is no need to limit obligations to only one category.  These are abstract and cannot be declared as obligations.&#xA; * Qualifier codes: SHALL/SHOULD/MAY which convey the 'strength' of an obligation.  These are also abstract and cannot be declared as obligations.&#xA; * Generic codes - these describe abstract functional obligation behaviors applications may implement, but do not specify a specific strength.  They may be organized in a hierarchy where one generic code specializes another.  These are also abstract cannot be declared as obligations.&#xA; * Leaf obligation codes - these are specific qualified obligations that can be declared by a data element and represent leaf-level obligations.  They always inherit from a qualification concept and usually inherit from a functional code concept.  These codes *can* be declared as obligations.&#xA; * Composite codes - these specialise Leaf obligation codes, inheriting the expectations of multiple concrete obligations.  They represent common or externally defined combinations of obligations for ease of reference.  These codes can also be declared as obligations."/>
+  <description value="Codes that describe application obligations for handling FHIR content. There are five kinds of codes in this code system:&#xA; * Categorizer codes: ResourceProducerObligations, ResourcesExchangerObligations, and ResourceConsumerObligations which are used to construct value sets and indicate the contexts in which the obligations apply.  Note that many applications will be producers, consumers, and potentially exchangers simultaneously, so there is no need to limit obligations to only one category.  These are abstract and cannot be declared as obligations.&#xA; * Qualifier codes: SHALL/SHOULD/MAY which convey the 'strength' of an obligation.  These are also abstract and cannot be declared as obligations.&#xA; * Generic codes - these describe abstract functional obligation behaviors applications may implement, but do not specify a specific strength.  They may be organized in a hierarchy where one generic code specializes another.  These are also abstract and cannot be declared as obligations.&#xA; * Leaf obligation codes - these are specific qualified obligations that can be declared by a data element and represent leaf-level obligations.  They always identify a qualification concept using the 'qualifier' property and usually inherit from a generic code concept.  These codes *can* be declared as obligations.&#xA; * Composite codes - these specialise Leaf obligation codes, inheriting the expectations of multiple concrete obligations.  They represent common or externally defined combinations of obligations for ease of reference.  These codes can also be declared as obligations."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -55,7 +55,7 @@
   <property>
     <code value="converse"/>
     <uri value="http://hl7.org/fhir/CodeSystem/obligation#converse"/>
-    <description value="Indicates another obligation code with an opposite meaning to this one.  A single obligation cannot list two converse codes and an application cannot satisfy both a code and its coverse (though if the obligation strength for both is SHOULD or MAY, an application could conform with both obligations by adhering to one and not the other)."/>
+    <description value="Indicates another obligation code with an opposite meaning to this one.  A single obligation cannot list two converse codes and an application cannot satisfy both a code and its converse (though if the obligation strength for both is SHOULD or MAY, an application could conform with both obligations by adhering to one and not the other)."/>
     <type value="code"/>
   </property>
   <property>
@@ -94,7 +94,7 @@
   <concept>
     <code value="ResourceProducerObligations"/>
     <display value="ResourceProducerObligations"/>
-    <definition value="Resource producers are applications that assembles resources in the first place. Resource producers may be a server, client, sender, receiver or some middleware device, and they may store the resource, or merely hand it on."/>
+    <definition value="Resource producers are applications that assemble resources in the first place. Resource producers may be a server, client, sender, receiver or some middleware device, and they may store the resource, or merely hand it on."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -112,7 +112,7 @@
   <concept>
     <code value="ResourceConsumerObligations"/>
     <display value="ResourceConsumerObligations"/>
-    <definition value="Resource Consumers are applications that consume resources and do something with them, either displaying them to humans, transferring them to some other format for further re-use, or using them to drive some kind of application logic process AKA decision support. Resource Consumers often store resources, but do not need to, and whether resources are stored or not between receiving them and using them doesn't make any difference to the obligations"/>
+    <definition value="Resource Consumers are applications that consume resources and do something with them, either displaying them to humans, transferring them to some other format for further re-use, or using them to drive some kind of application logic process AKA decision support. Resource Consumers often store resources, but do not need to, and whether resources are stored or not between receiving them and using them doesn't make any difference to the obligations."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -228,7 +228,7 @@
   <concept>
     <code value="persist"/>
     <display value="persist"/>
-    <definition value="Conformant applications SHALL/SHOULD/MAY ensure that the value for this element is stored in a persistent data store.&#xA;Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
+    <definition value="Conformant applications SHALL/SHOULD/MAY ensure that the value for this element is stored in a persistent data store.&#xA;Notes: Exactly what the data store is, is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -262,7 +262,7 @@
   <concept>
     <code value="no-error"/>
     <display value="not error if present"/>
-    <definition value="Conformant applications SHALL/SHOULD accept resources containing any valid value for the element without error.&#xA;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value where  (or equivalent), should either of these be allowed on the consumer obligations"/>
+    <definition value="Conformant applications SHALL/SHOULD accept resources containing any valid value for the element without error.&#xA;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value (e.g. [DataAbsentReason](StructureDefinition-data-absent-reason.html) or equivalent), should such extensions be allowed"/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -292,7 +292,7 @@
   <concept>
     <code value="accept-invalid"/>
     <display value="accept invalid"/>
-    <definition value="Conformant applications SHALL/SHOULD accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xA;This applies to non-valid constraints, not to non-valid syntax or failure to meet base resource validity expectations.  Typically used when a system needs to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
+    <definition value="Conformant applications SHALL/SHOULD accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xA;Notes: This applies to violations of profile constraints, not to invalid syntax or failure to meet base resource validity expectations.  Typically used when a system needs to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -309,7 +309,7 @@
   <concept>
     <code value="handle"/>
     <display value="correctly handle"/>
-    <definition value="Conformant applications SHALL/SHOULD handle the meaning of this element correctly.&#xA;Notes: this rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
+    <definition value="Conformant applications SHALL/SHOULD handle the meaning of this element correctly.&#xA;Notes: this rule is vague in that it doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -339,7 +339,7 @@
   <concept>
     <code value="process"/>
     <display value="process"/>
-    <definition value="Conformant applications SHALL/SHOULD/MAY consider the value of this element when processing the resource as specified by the IG.&#xA;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <definition value="Conformant applications SHALL/SHOULD/MAY consider the value of this element when processing the resource as specified by the IG.&#xA;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifically relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation).  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -403,7 +403,7 @@
   <concept>
     <code value="SHOULD:able-to-populate"/>
     <display value="SHOULD be able to populate"/>
-    <definition value="Conformant applications producing resources SHOULD be able to correctly populate this element.&#xA;Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value.  (i.e. not a data-absent-reason or equivalent.)  This obligation does not impose expectations on the circumstances in which the element will be sent, only that it shold be in at least some situations."/>
+    <definition value="Conformant applications producing resources SHOULD be able to correctly populate this element.&#xA;Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value.  (i.e. not a data-absent-reason or equivalent.)  This obligation does not impose expectations on the circumstances in which the element will be sent, only that it should be in at least some situations."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -474,6 +474,10 @@
     </property>
     <property>
       <code value="parent"/>
+      <valueCode value="SHALL:populate-if-known"/>
+    </property>
+    <property>
+      <code value="parent"/>
       <valueCode value="populate"/>
     </property>
     <property>
@@ -492,6 +496,10 @@
     <property>
       <code value="parent"/>
       <valueCode value="SHOULD:able-to-populate"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="SHOULD:populate-if-known"/>
     </property>
     <property>
       <code value="parent"/>
@@ -647,7 +655,7 @@
   <concept>
     <code value="SHALL:persist"/>
     <display value="SHALL persist"/>
-    <definition value="Conformant applications SHALL ensure that the value for this element is stored in a persistent data store.&#xA;Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
+    <definition value="Conformant applications SHALL ensure that the value for this element is stored in a persistent data store.&#xA;Notes: Exactly what the data store is, is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
@@ -660,7 +668,7 @@
   <concept>
     <code value="SHOULD:persist"/>
     <display value="SHOULD persist"/>
-    <definition value="Conformant applications SHOULD ensure that the value for this element is stored in a persistent data store.&#xA;Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
+    <definition value="Conformant applications SHOULD ensure that the value for this element is stored in a persistent data store.&#xA;Notes: Exactly what the data store is, is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -673,7 +681,7 @@
   <concept>
     <code value="MAY:persist"/>
     <display value="MAY persist"/>
-    <definition value="Conformant applications MAY ensure that the value for this element is stored in a persistent data store.&#xA;Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
+    <definition value="Conformant applications MAY ensure that the value for this element is stored in a persistent data store.&#xA;Notes: Exactly what the data store is, is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="MAY"/>
@@ -720,7 +728,7 @@
   <concept>
     <code value="MAY:alter"/>
     <display value="MAY alter"/>
-    <definition value="Conformant applications MAY choose to alter this element value.&#xA;Notes: this is really a null-statement - it's the default rule for an application. It's defined here to allow a specification to be explicit that it isn't conveying obligations for resource producers"/>
+    <definition value="Conformant applications MAY choose to alter this element value.&#xA;Notes: this is really a null-statement - it's the default rule for an application. It's defined here to allow a specification to be explicit that it isn't conveying obligations for resource exchangers"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="MAY"/>
@@ -737,7 +745,7 @@
   <concept>
     <code value="SHALL:no-error"/>
     <display value="SHALL not error if present"/>
-    <definition value="Conformant applications SHALL accept resources containing any valid value for the element without error.&#xA;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value where  (or equivalent), should either of these be allowed on the consumer obligations"/>
+    <definition value="Conformant applications SHALL accept resources containing any valid value for the element without error.&#xA;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value (e.g. [DataAbsentReason](StructureDefinition-data-absent-reason.html) or equivalent), should such extensions be allowed"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
@@ -750,7 +758,7 @@
   <concept>
     <code value="SHOULD:no-error"/>
     <display value="SHOULD not error if present"/>
-    <definition value="Conformant applications SHOULD accept resources containing any valid value for the element without error.&#xA;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value where  (or equivalent), should either of these be allowed on the consumer obligations"/>
+    <definition value="Conformant applications SHOULD accept resources containing any valid value for the element without error.&#xA;Notes: Applications are still able to inform the user that a value cannot be processed correctly and may ignore the data, but applications aren't able to reject an instance merely because the element is present (which would be allowed for elements that do not have this obligation).  A system MAY raise an error if the value provided is not valid or violates specific business rules. This obligation also applies to elements that only contain an extension in place of a value (e.g. [DataAbsentReason](StructureDefinition-data-absent-reason.html) or equivalent), should such extensions be allowed"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -797,7 +805,7 @@
   <concept>
     <code value="SHALL:accept-invalid"/>
     <display value="SHALL accept invalid"/>
-    <definition value="Conformant applications SHALL accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xA;This applies to non-valid constraints, not to non-valid syntax or failure to meet base resource validity expectations.  Typically used when a system needs to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
+    <definition value="Conformant applications SHALL accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xA;Notes: This applies to violations of profile constraints, not to invalid syntax or failure to meet base resource validity expectations.  Typically used when a system needs to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
@@ -814,7 +822,7 @@
   <concept>
     <code value="SHOULD:accept-invalid"/>
     <display value="SHOULD accept invalid"/>
-    <definition value="Conformant applications SHOULD accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xA;This applies to non-valid constraints, not to non-valid syntax or failure to meet base resource validity expectations.  Typically used when a system ought to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
+    <definition value="Conformant applications SHOULD accept data that does not meet all data constraints asserted within the profile declaring this obligation.&#xA;Notes: This applies to violations of profile constraints, not to invalid syntax or failure to meet base resource validity expectations.  Typically used when a system ought to be able to handle data that does not adhere to desired expectations (legacy data, test data, data undergoing authorship that is not yet complete, etc.)"/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -831,7 +839,7 @@
   <concept>
     <code value="SHALL:handle"/>
     <display value="SHALL correctly handle"/>
-    <definition value="Conformant applications SHALL handle the meaning of this element correctly.&#xA;Notes: this rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
+    <definition value="Conformant applications SHALL handle the meaning of this element correctly.&#xA;Notes: this rule is vague in that it doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
@@ -844,7 +852,7 @@
   <concept>
     <code value="SHOULD:handle"/>
     <display value="SHOULD correctly handle"/>
-    <definition value="Conformant applications SHOULD handle the meaning of this element correctly.&#xA;Notes: this rule is vague in that doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
+    <definition value="Conformant applications SHOULD handle the meaning of this element correctly.&#xA;Notes: this rule is vague in that it doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -916,7 +924,7 @@
   <concept>
     <code value="SHALL:process"/>
     <display value="SHALL process"/>
-    <definition value="Conformant applications SHALL consider the value of this element when processing the resource as specified by the IG.&#xA;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <definition value="Conformant applications SHALL consider the value of this element when processing the resource as specified by the IG.&#xA;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifically relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation).  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
@@ -937,7 +945,7 @@
   <concept>
     <code value="SHOULD:process"/>
     <display value="SHOULD process"/>
-    <definition value="Conformant applications SHOULD consider the value of this element when processing the resource as specified by the IG.&#xA;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <definition value="Conformant applications SHOULD consider the value of this element when processing the resource as specified by the IG.&#xA;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifically relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation).  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
@@ -958,7 +966,7 @@
   <concept>
     <code value="MAY:process"/>
     <display value="MAY process"/>
-    <definition value="Conformant applications MAY consider the value of this element when processing the resource as specified by the IG.&#xA;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation.  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
+    <definition value="Conformant applications MAY consider the value of this element when processing the resource as specified by the IG.&#xA;Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifically relates to the processing specified in the IG of any [ElementDefinition.valueAlternatives](http://hl7.org/fhir/R5/elementdefinition-definitions.html#ElementDefinition.valueAlternatives) extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation).  Examples might include consideration in decision support, consideration in claims evaluation, etc."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="MAY"/>
@@ -1068,7 +1076,7 @@
   <concept>
     <code value="MAY:ignore"/>
     <display value="MAY ignore"/>
-    <definition value="Conformant applications MAY not make any use of the value of this element if received.  This is a null statement and is the default behavior or consuming systems if other obligations are not specified."/>
+    <definition value="Conformant applications MAY choose not to make any use of the value of this element if received.  This is a null statement and is the default behavior for consuming systems if other obligations are not specified."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="MAY"/>
@@ -1127,7 +1135,7 @@
   <concept>
     <code value="std"/>
     <display value="Standard obligations"/>
-    <definition value="The standard recommended set of obligations for IGs to use unless they know they want something different. Note that the standard codes don't include use-dar, use-dar-nf, use-dar-if-allowed / use-reason - that gets put on specific elements that justify this handling"/>
+    <definition value="The standard recommended set of obligations for IGs to use unless they know they want something different. Note that the standard set doesn't include obligations relating to the use of data absent reasons; such obligations are applied to the specific elements that justify that handling"/>
     <property>
       <code value="parent"/>
       <valueCode value="SHALL:populate"/>
