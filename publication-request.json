@@ -1,11 +1,11 @@
 {
   "package-id" : "hl7.fhir.uv.extensions",
-  "version" : "5.4.0",
-  "path" : "http://hl7.org/fhir/extensions/5.4.0",
-  "mode" : "milestone",
+  "version" : "5.4.1",
+  "path" : "http://hl7.org/fhir/extensions/5.4.1",
+  "mode" : "technical-correction",
   "status" : "trial-use",
   "sequence" : "Release 5.4",
   "desc" : "Release 5.4",
-  "changes" : "changes.html#5.4.0",
+  "changes" : "changes.html#5.4.1",
   "first" : false
 }
