@@ -217,7 +217,7 @@
   <concept>
     <code value="exclude-narrative"/>
     <display value="exclude from narrative"/>
-    <definition value="Conformant applications MAY ensure that this data element is NOT represented in any human readable representation of a resource.&#xA;Notes: This may be useful for profiles related to de-identified records.  The SHALL and SHOULD forms of this obligation are deprecated in favor of SHALLNOT:in-narrative and SHOULDNOT:in-narrative."/>
+    <definition value="Conformant applications MAY ensure that this data element is NOT represented in any human readable representation of a resource.&#xA;Notes: This may be useful for profiles related to de-identified records."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -269,6 +269,10 @@
       <code value="parent"/>
       <valueCode value="ResourceProducerObligations"/>
     </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
   </concept>
   <concept>
     <code value="no-alter"/>
@@ -294,7 +298,7 @@
   <concept>
     <code value="alter"/>
     <display value="alter"/>
-    <definition value="Conformant applications MAY/SHALL NOT/SHOULD NOT change the value of this element between receiving and transfer.&#xA;Notes: For the SHALL NOT and SHOULD NOT forms, this does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply.  For the MAY form, an application that changes the element value remains an exchanger"/>
+    <definition value="Conformant applications MAY/SHALL NOT/SHOULD NOT change the value of this element between receiving and transfer."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -302,6 +306,10 @@
     <property>
       <code value="parent"/>
       <valueCode value="ResourceExchangerObligations"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
     </property>
   </concept>
   <concept>
@@ -362,6 +370,10 @@
     <property>
       <code value="parent"/>
       <valueCode value="ResourceConsumerObligations"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
     </property>
   </concept>
   <concept>
@@ -882,6 +894,10 @@
       <code value="parent"/>
       <valueCode value="SHOULD:persist"/>
     </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
   </concept>
   <concept>
     <code value="SHOULD:persist"/>
@@ -895,6 +911,10 @@
       <code value="parent"/>
       <valueCode value="MAY:persist"/>
     </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
   </concept>
   <concept>
     <code value="MAY:persist"/>
@@ -907,6 +927,10 @@
     <property>
       <code value="parent"/>
       <valueCode value="persist"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
     </property>
   </concept>
   <concept>
@@ -1013,7 +1037,7 @@
   <concept>
     <code value="SHALLNOT:alter"/>
     <display value="SHALL NOT alter"/>
-    <definition value="Conformant applications SHALL NOT change the value of this element between receiving and transfer.&#xA;Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
+    <definition value="Conformant applications SHALL NOT change the value of this element between receiving and transfer.&#xA;Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALLNOT"/>
@@ -1026,11 +1050,15 @@
       <code value="converse"/>
       <valueCode value="MAY:alter"/>
     </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
   </concept>
   <concept>
     <code value="SHOULDNOT:alter"/>
     <display value="SHOULD NOT alter"/>
-    <definition value="Conformant applications SHOULD NOT change the value of this element between receiving and transfer.&#xA;Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
+    <definition value="Conformant applications SHOULD NOT change the value of this element between receiving and transfer."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULDNOT"/>
@@ -1042,6 +1070,10 @@
     <property>
       <code value="converse"/>
       <valueCode value="MAY:alter"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
     </property>
   </concept>
   <concept>
@@ -1184,6 +1216,10 @@
       <code value="parent"/>
       <valueCode value="SHOULD:handle"/>
     </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
   </concept>
   <concept>
     <code value="SHOULD:handle"/>
@@ -1196,6 +1232,10 @@
     <property>
       <code value="parent"/>
       <valueCode value="MAY:handle"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
     </property>
   </concept>
   <concept>
@@ -1213,6 +1253,10 @@
     <property>
       <code value="converse"/>
       <valueCode value="ignore"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
     </property>
   </concept>
   <concept>
@@ -1643,6 +1687,10 @@
       <code value="parent"/>
       <valueCode value="SHALL:no-error"/>
     </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
   </concept>
   <concept>
     <code value="ihe-r2"/>
@@ -1660,6 +1708,10 @@
       <code value="parent"/>
       <valueCode value="SHALL:no-error"/>
     </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
+    </property>
   </concept>
   <concept>
     <code value="std"/>
@@ -1676,6 +1728,10 @@
     <property>
       <code value="parent"/>
       <valueCode value="SHALL:no-error"/>
+    </property>
+    <property>
+      <code value="security-dependent"/>
+      <valueBoolean value="true"/>
     </property>
   </concept>
 </CodeSystem>
