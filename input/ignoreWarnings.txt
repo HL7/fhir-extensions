@@ -33,6 +33,7 @@ MSG_DRAFT
 # These codes properties are intended to be internal codes
 INFORMATION: CodeSystem/obligation: CodeSystem.property[2]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
 INFORMATION: CodeSystem/obligation: CodeSystem.property[3]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
+INFORMATION: CodeSystem/obligation: CodeSystem.property[7]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
 
 # This is OK by a recent decision of the TI workgroup, but the validator hasn't yet been updated for the decision
 The property 'status' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
