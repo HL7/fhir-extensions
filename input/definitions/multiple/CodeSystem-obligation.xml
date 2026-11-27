@@ -24,7 +24,7 @@
       <value value="http://www.hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <description value="Codes that describe application obligations for handling FHIR content. There are five kinds of codes in this code system:&#xA; * Categorizer codes: ResourceProducerObligations, ResourcesExchangerObligations, and ResourceConsumerObligations which are used to construct value sets and indicate the contexts in which the obligations apply.  Note that many applications will be producers, consumers, and potentially exchangers simultaneously, so there is no need to limit obligations to only one category.  These are abstract and cannot be declared as obligations.&#xA; * Qualifier codes: SHALL/SHOULD/MAY/SHALLNOT/SHOULDNOT which convey the 'strength' of an obligation.  These are also abstract and cannot be declared as obligations.&#xA; * Generic codes - these describe abstract functional obligation behaviors applications may implement, but do not specify a specific strength.  They may be organized in a hierarchy where one generic code specializes another.  These are also abstract and cannot be declared as obligations.&#xA; * Leaf obligation codes - these are specific qualified obligations that can be declared by a data element and represent leaf-level obligations.  They always identify a qualification concept using the 'qualifier' property and usually identify a generic code concept using the 'generic' property.  These codes *can* be declared as obligations.&#xA; * Composite codes - these specialise Leaf obligation codes, inheriting the expectations of multiple concrete obligations.  They represent common or externally defined combinations of obligations for ease of reference.  These codes can also be declared as obligations."/>
+  <description value="Codes that describe application obligations for handling FHIR content. There are five kinds of codes in this code system:&#xA; * Categorizer codes: ResourceProducerObligations, ResourcesExchangerObligations, and ResourceConsumerObligations which are used to construct value sets and indicate the contexts in which the obligations apply.  Note that many applications will be producers, consumers, and potentially exchangers simultaneously, so there is no need to limit obligations to only one category.  These are abstract and cannot be declared as obligations.&#xA; * Qualifier codes: SHALL/SHOULD/MAY/SHALLNOT/SHOULDNOT which convey the 'strength' of an obligation.  These are also abstract and cannot be declared as obligations.&#xA; * Generic codes - these describe abstract functional obligation behaviors applications may implement, but do not specify a specific strength.  They may be organized in a hierarchy where one generic code specializes another.  These are also abstract and cannot be declared as obligations.&#xA; * Leaf obligation codes - these are specific qualified obligations that can be declared by a data element and represent leaf-level obligations.  They always identify a qualification concept using the 'qualifier' property and usually inherit from a generic code concept.  Qualified codes also inherit from the same generic code with the next weaker qualifier, so MAY codes are parents of SHOULD codes, SHOULD codes are parents of SHALL codes, and SHOULDNOT codes are parents of SHALLNOT codes.  These codes *can* be declared as obligations.&#xA; * Composite codes - these specialise Leaf obligation codes, inheriting the expectations of multiple concrete obligations.  They represent common or externally defined combinations of obligations for ease of reference.  These codes can also be declared as obligations."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -72,12 +72,6 @@
   <property>
     <code value="replacedByCode"/>
     <uri value="http://hl7.org/fhir/concept-properties#replacedByCode"/>
-    <type value="code"/>
-  </property>
-  <property>
-    <code value="generic"/>
-    <uri value="http://hl7.org/fhir/CodeSystem/obligation#generic"/>
-    <description value="Identifies the generic (unqualified) obligation code whose behavior this qualified obligation code asserts at the strength identified by its qualifier."/>
     <type value="code"/>
   </property>
   <concept>
@@ -360,7 +354,7 @@
   <concept>
     <code value="handle"/>
     <display value="correctly handle"/>
-    <definition value="Conformant applications SHALL/SHOULD/MAY handle the meaning of this element correctly.&#xA;Notes: this rule is vague in that it doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
+    <definition value="Conformant applications SHALL/SHOULD/MAY handle the meaning of this element correctly, or SHALL NOT/SHOULD NOT act on the meaning of this element.&#xA;Notes: this rule is vague in that it doesn't specify any particular handling of the element. But it's important because an application that ignores this element is non-conformant. A good example would be a status code of 'entered-in-error' - how exactly a Resource Consumer handles this depends on the use case etc., but the application can never simply ignore such a status code. Note that whether the resource or information from it is stored for later use is irrelevant - when the resource or information in it is processed, the consequences of the element are considered. That may mean not retaining the information for later use, or informing the user, etc. Typically, this obligation marks that there are known patient safety issues that can arise if the element is ignored. Implementers should pay particular attention to the possible range of values for the element from a safety perspective."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -373,7 +367,7 @@
   <concept>
     <code value="display"/>
     <display value="display"/>
-    <definition value="Conformant applications SHALL/SHOULD/MAY/SHALL NOT/SHOULD NOT display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
+    <definition value="Conformant applications SHALL/SHOULD/MAY/SHALL NOT/SHOULD NOT display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource.  The relationship between this code and the corresponding handle code assumes that displaying a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -407,7 +401,7 @@
   <concept>
     <code value="print"/>
     <display value="print"/>
-    <definition value="Conformant applications SHALL/SHOULD/MAY/SHALL NOT/SHOULD NOT print the value of this element somewhere.&#xA;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
+    <definition value="Conformant applications SHALL/SHOULD/MAY/SHALL NOT/SHOULD NOT print the value of this element somewhere.&#xA;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow.  The relationship between this code and the corresponding handle code assumes that printing a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="not-selectable"/>
       <valueBoolean value="true"/>
@@ -447,8 +441,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="able-to-populate"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:able-to-populate"/>
     </property>
   </concept>
   <concept>
@@ -460,8 +454,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="able-to-populate"/>
+      <code value="parent"/>
+      <valueCode value="MAY:able-to-populate"/>
     </property>
   </concept>
   <concept>
@@ -473,7 +467,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="able-to-populate"/>
     </property>
   </concept>
@@ -486,8 +480,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="populate-if-known"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:populate-if-known"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -503,8 +497,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="populate-if-known"/>
+      <code value="parent"/>
+      <valueCode value="MAY:populate-if-known"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -520,7 +514,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="populate-if-known"/>
     </property>
     <property>
@@ -538,15 +532,15 @@
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHALL:able-to-populate"/>
+      <valueCode value="SHOULD:populate"/>
     </property>
     <property>
       <code value="parent"/>
       <valueCode value="SHALL:populate-if-known"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="populate"/>
+      <code value="parent"/>
+      <valueCode value="SHALL:able-to-populate"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -563,15 +557,15 @@
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHOULD:able-to-populate"/>
+      <valueCode value="MAY:populate"/>
     </property>
     <property>
       <code value="parent"/>
       <valueCode value="SHOULD:populate-if-known"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="populate"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:able-to-populate"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -587,16 +581,16 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="populate"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="MAY:able-to-populate"/>
+      <valueCode value="MAY:populate-if-known"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="MAY:populate-if-known"/>
+      <valueCode value="MAY:able-to-populate"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -612,8 +606,8 @@
       <valueCode value="SHALLNOT"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="populate"/>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:populate"/>
     </property>
     <property>
       <code value="converse"/>
@@ -629,7 +623,7 @@
       <valueCode value="SHOULDNOT"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="populate"/>
     </property>
     <property>
@@ -646,8 +640,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="in-narrative"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:in-narrative"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -663,8 +657,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="in-narrative"/>
+      <code value="parent"/>
+      <valueCode value="MAY:in-narrative"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -680,7 +674,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="in-narrative"/>
     </property>
     <property>
@@ -697,8 +691,8 @@
       <valueCode value="SHALLNOT"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="in-narrative"/>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:in-narrative"/>
     </property>
     <property>
       <code value="converse"/>
@@ -714,7 +708,7 @@
       <valueCode value="SHOULDNOT"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="in-narrative"/>
     </property>
     <property>
@@ -731,8 +725,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="exclude-narrative"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:exclude-narrative"/>
     </property>
     <property>
       <code value="status"/>
@@ -752,8 +746,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="exclude-narrative"/>
+      <code value="parent"/>
+      <valueCode value="MAY:exclude-narrative"/>
     </property>
     <property>
       <code value="status"/>
@@ -773,7 +767,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="exclude-narrative"/>
     </property>
   </concept>
@@ -786,8 +780,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="user-input"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:user-input"/>
     </property>
   </concept>
   <concept>
@@ -799,8 +793,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="user-input"/>
+      <code value="parent"/>
+      <valueCode value="MAY:user-input"/>
     </property>
   </concept>
   <concept>
@@ -812,7 +806,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="user-input"/>
     </property>
   </concept>
@@ -825,8 +819,8 @@
       <valueCode value="SHALLNOT"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="user-input"/>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:user-input"/>
     </property>
     <property>
       <code value="converse"/>
@@ -842,7 +836,7 @@
       <valueCode value="SHOULDNOT"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="user-input"/>
     </property>
     <property>
@@ -859,8 +853,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="explain"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:explain"/>
     </property>
   </concept>
   <concept>
@@ -872,7 +866,7 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="explain"/>
     </property>
   </concept>
@@ -885,8 +879,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="persist"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:persist"/>
     </property>
   </concept>
   <concept>
@@ -898,8 +892,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="persist"/>
+      <code value="parent"/>
+      <valueCode value="MAY:persist"/>
     </property>
   </concept>
   <concept>
@@ -911,7 +905,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="persist"/>
     </property>
   </concept>
@@ -924,8 +918,8 @@
       <valueCode value="SHALLNOT"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="persist"/>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:persist"/>
     </property>
     <property>
       <code value="converse"/>
@@ -941,7 +935,7 @@
       <valueCode value="SHOULDNOT"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="persist"/>
     </property>
     <property>
@@ -958,8 +952,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="no-alter"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:no-alter"/>
     </property>
     <property>
       <code value="converse"/>
@@ -983,7 +977,7 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="no-alter"/>
     </property>
     <property>
@@ -1008,7 +1002,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="alter"/>
     </property>
     <property>
@@ -1025,8 +1019,8 @@
       <valueCode value="SHALLNOT"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="alter"/>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:alter"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1042,7 +1036,7 @@
       <valueCode value="SHOULDNOT"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="alter"/>
     </property>
     <property>
@@ -1059,8 +1053,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="no-error"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:no-error"/>
     </property>
   </concept>
   <concept>
@@ -1072,7 +1066,7 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="no-error"/>
     </property>
   </concept>
@@ -1085,8 +1079,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="reject-invalid"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:reject-invalid"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1102,8 +1096,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="reject-invalid"/>
+      <code value="parent"/>
+      <valueCode value="MAY:reject-invalid"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1119,7 +1113,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="reject-invalid"/>
     </property>
     <property>
@@ -1136,8 +1130,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="accept-invalid"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:accept-invalid"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1153,8 +1147,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="accept-invalid"/>
+      <code value="parent"/>
+      <valueCode value="MAY:accept-invalid"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1170,7 +1164,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="accept-invalid"/>
     </property>
     <property>
@@ -1187,8 +1181,8 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="handle"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:handle"/>
     </property>
   </concept>
   <concept>
@@ -1200,8 +1194,8 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="handle"/>
+      <code value="parent"/>
+      <valueCode value="MAY:handle"/>
     </property>
   </concept>
   <concept>
@@ -1213,7 +1207,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="handle"/>
     </property>
     <property>
@@ -1222,20 +1216,74 @@
     </property>
   </concept>
   <concept>
+    <code value="SHALLNOT:handle"/>
+    <display value="SHALL NOT handle"/>
+    <definition value="Conformant applications SHALL NOT act on the meaning of this element (e.g. by displaying it, printing it, or considering it when processing the resource).&#xA;Notes: This is less restrictive than ignore, which prohibits any use of the value.  Applications might still store or pass on the value unless other obligations say otherwise."/>
+    <property>
+      <code value="qualifier"/>
+      <valueCode value="SHALLNOT"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:handle"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="SHALLNOT:display"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="SHALLNOT:print"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="SHALLNOT:process"/>
+    </property>
+    <property>
+      <code value="converse"/>
+      <valueCode value="handle"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="SHOULDNOT:handle"/>
+    <display value="SHOULD NOT handle"/>
+    <definition value="Conformant applications SHOULD NOT act on the meaning of this element (e.g. by displaying it, printing it, or considering it when processing the resource).&#xA;Notes: This is less restrictive than ignore, which prohibits any use of the value.  Applications might still store or pass on the value unless other obligations say otherwise."/>
+    <property>
+      <code value="qualifier"/>
+      <valueCode value="SHOULDNOT"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:display"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:print"/>
+    </property>
+    <property>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:process"/>
+    </property>
+    <property>
+      <code value="converse"/>
+      <valueCode value="handle"/>
+    </property>
+  </concept>
+  <concept>
     <code value="SHALL:display"/>
     <display value="SHALL display"/>
-    <definition value="Conformant applications SHALL display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
+    <definition value="Conformant applications SHALL display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource.  The relationship between this code and the corresponding handle code assumes that displaying a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHALL:handle"/>
+      <valueCode value="SHOULD:display"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="display"/>
+      <code value="parent"/>
+      <valueCode value="SHALL:handle"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -1245,18 +1293,18 @@
   <concept>
     <code value="SHOULD:display"/>
     <display value="SHOULD display"/>
-    <definition value="Conformant applications SHOULD display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
+    <definition value="Conformant applications SHOULD display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource.  The relationship between this code and the corresponding handle code assumes that displaying a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHOULD:handle"/>
+      <valueCode value="MAY:display"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="display"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:handle"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -1266,13 +1314,13 @@
   <concept>
     <code value="MAY:display"/>
     <display value="MAY display"/>
-    <definition value="Conformant applications MAY display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource"/>
+    <definition value="Conformant applications MAY display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource.  The relationship between this code and the corresponding handle code assumes that displaying a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="display"/>
     </property>
     <property>
@@ -1287,14 +1335,14 @@
   <concept>
     <code value="SHALLNOT:display"/>
     <display value="SHALL NOT display"/>
-    <definition value="Conformant applications SHALL NOT display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: This does not prevent the value from being used in other ways (e.g. processing or storage) unless other obligations say so."/>
+    <definition value="Conformant applications SHALL NOT display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: This does not prevent the value from being used in other ways (e.g. processing or storage) unless other obligations say so.  The relationship between this code and the corresponding handle code assumes that displaying a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALLNOT"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="display"/>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:display"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1304,13 +1352,13 @@
   <concept>
     <code value="SHOULDNOT:display"/>
     <display value="SHOULD NOT display"/>
-    <definition value="Conformant applications SHOULD NOT display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: This does not prevent the value from being used in other ways (e.g. processing or storage) unless other obligations say so."/>
+    <definition value="Conformant applications SHOULD NOT display the value of this element when presenting the data from the resource to a human user.&#xA;Notes: This does not prevent the value from being used in other ways (e.g. processing or storage) unless other obligations say so.  The relationship between this code and the corresponding handle code assumes that displaying a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULDNOT"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="display"/>
     </property>
     <property>
@@ -1328,11 +1376,11 @@
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHALL:handle"/>
+      <valueCode value="SHOULD:process"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="process"/>
+      <code value="parent"/>
+      <valueCode value="SHALL:handle"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -1349,11 +1397,11 @@
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHOULD:handle"/>
+      <valueCode value="MAY:process"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="process"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:handle"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -1369,7 +1417,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="process"/>
     </property>
     <property>
@@ -1390,8 +1438,8 @@
       <valueCode value="SHALLNOT"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="process"/>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:process"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1407,7 +1455,7 @@
       <valueCode value="SHOULDNOT"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="process"/>
     </property>
     <property>
@@ -1418,18 +1466,18 @@
   <concept>
     <code value="SHALL:print"/>
     <display value="SHALL print"/>
-    <definition value="Conformant applications SHALL print the value of this element somewhere.&#xA;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
+    <definition value="Conformant applications SHALL print the value of this element somewhere.&#xA;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow.  The relationship between this code and the corresponding handle code assumes that printing a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALL"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHALL:handle"/>
+      <valueCode value="SHOULD:print"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="print"/>
+      <code value="parent"/>
+      <valueCode value="SHALL:handle"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -1439,18 +1487,18 @@
   <concept>
     <code value="SHOULD:print"/>
     <display value="SHOULD print"/>
-    <definition value="Conformant applications SHOULD print the value of this element somewhere.&#xA;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
+    <definition value="Conformant applications SHOULD print the value of this element somewhere.&#xA;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow.  The relationship between this code and the corresponding handle code assumes that printing a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULD"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHOULD:handle"/>
+      <valueCode value="MAY:print"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="print"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:handle"/>
     </property>
     <property>
       <code value="security-dependent"/>
@@ -1460,13 +1508,13 @@
   <concept>
     <code value="MAY:print"/>
     <display value="MAY print"/>
-    <definition value="Conformant applications MAY print the value of this element somewhere.&#xA;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow"/>
+    <definition value="Conformant applications MAY print the value of this element somewhere.&#xA;Notes: The form of the printing is not specified. A profile using this value SHALL explain the nature of the printing requirement somehow.  The relationship between this code and the corresponding handle code assumes that printing a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="print"/>
     </property>
     <property>
@@ -1481,14 +1529,14 @@
   <concept>
     <code value="SHALLNOT:print"/>
     <display value="SHALL NOT print"/>
-    <definition value="Conformant applications SHALL NOT print the value of this element.&#xA;Notes: A profile using this value SHALL explain the scope of the printed output the restriction applies to."/>
+    <definition value="Conformant applications SHALL NOT print the value of this element.&#xA;Notes: A profile using this value SHALL explain the scope of the printed output the restriction applies to.  The relationship between this code and the corresponding handle code assumes that printing a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHALLNOT"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="print"/>
+      <code value="parent"/>
+      <valueCode value="SHOULDNOT:print"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1498,13 +1546,13 @@
   <concept>
     <code value="SHOULDNOT:print"/>
     <display value="SHOULD NOT print"/>
-    <definition value="Conformant applications SHOULD NOT print the value of this element.&#xA;Notes: A profile using this value SHALL explain the scope of the printed output the restriction applies to."/>
+    <definition value="Conformant applications SHOULD NOT print the value of this element.&#xA;Notes: A profile using this value SHALL explain the scope of the printed output the restriction applies to.  The relationship between this code and the corresponding handle code assumes that printing a value is one way of handling it.  Whether that holds for a given element depends on how the specification declaring the obligation describes the handling expected for that element."/>
     <property>
       <code value="qualifier"/>
       <valueCode value="SHOULDNOT"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="print"/>
     </property>
     <property>
@@ -1521,20 +1569,12 @@
       <valueCode value="SHALL"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="ignore"/>
+      <code value="parent"/>
+      <valueCode value="SHOULD:ignore"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHALLNOT:display"/>
-    </property>
-    <property>
-      <code value="parent"/>
-      <valueCode value="SHALLNOT:process"/>
-    </property>
-    <property>
-      <code value="parent"/>
-      <valueCode value="SHALLNOT:print"/>
+      <valueCode value="SHALLNOT:handle"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1550,20 +1590,12 @@
       <valueCode value="SHOULD"/>
     </property>
     <property>
-      <code value="generic"/>
-      <valueCode value="ignore"/>
+      <code value="parent"/>
+      <valueCode value="MAY:ignore"/>
     </property>
     <property>
       <code value="parent"/>
-      <valueCode value="SHOULDNOT:display"/>
-    </property>
-    <property>
-      <code value="parent"/>
-      <valueCode value="SHOULDNOT:process"/>
-    </property>
-    <property>
-      <code value="parent"/>
-      <valueCode value="SHOULDNOT:print"/>
+      <valueCode value="SHOULDNOT:handle"/>
     </property>
     <property>
       <code value="converse"/>
@@ -1579,7 +1611,7 @@
       <valueCode value="MAY"/>
     </property>
     <property>
-      <code value="generic"/>
+      <code value="parent"/>
       <valueCode value="ignore"/>
     </property>
     <property>
