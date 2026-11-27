@@ -69,11 +69,6 @@
     <uri value="http://hl7.org/fhir/concept-properties#status"/>
     <type value="code"/>
   </property>
-  <property>
-    <code value="replacedByCode"/>
-    <uri value="http://hl7.org/fhir/concept-properties#replacedByCode"/>
-    <type value="code"/>
-  </property>
   <concept>
     <code value="SHALL"/>
     <display value="SHALL"/>
@@ -729,6 +724,12 @@
     </property>
   </concept>
   <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-replacedby">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/CodeSystem/obligation"/>
+        <code value="SHALLNOT:in-narrative"/>
+      </valueCoding>
+    </extension>
     <code value="SHALL:exclude-narrative"/>
     <display value="SHALL exclude from narrative"/>
     <definition value="Conformant applications SHALL ensure that this data element is NOT represented in any human readable representation of a resource.&#xA;Notes: This may be useful for profiles related to de-identified records"/>
@@ -744,12 +745,14 @@
       <code value="status"/>
       <valueCode value="deprecated"/>
     </property>
-    <property>
-      <code value="replacedByCode"/>
-      <valueCode value="SHALLNOT:in-narrative"/>
-    </property>
   </concept>
   <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-replacedby">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/CodeSystem/obligation"/>
+        <code value="SHOULDNOT:in-narrative"/>
+      </valueCoding>
+    </extension>
     <code value="SHOULD:exclude-narrative"/>
     <display value="SHOULD exclude from narrative"/>
     <definition value="Conformant applications SHOULD ensure that this data element is NOT represented in any human readable representation of a resource.&#xA;Notes: This may be useful for profiles related to de-identified records"/>
@@ -764,10 +767,6 @@
     <property>
       <code value="status"/>
       <valueCode value="deprecated"/>
-    </property>
-    <property>
-      <code value="replacedByCode"/>
-      <valueCode value="SHOULDNOT:in-narrative"/>
     </property>
   </concept>
   <concept>
@@ -968,6 +967,12 @@
     </property>
   </concept>
   <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-replacedby">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/CodeSystem/obligation"/>
+        <code value="SHALLNOT:alter"/>
+      </valueCoding>
+    </extension>
     <code value="SHALL:no-alter"/>
     <display value="SHALL not alter"/>
     <definition value="Conformant applications SHALL ensure that this element does not change between receiving and transfer.&#xA;Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
@@ -987,12 +992,14 @@
       <code value="status"/>
       <valueCode value="deprecated"/>
     </property>
-    <property>
-      <code value="replacedByCode"/>
-      <valueCode value="SHALLNOT:alter"/>
-    </property>
   </concept>
   <concept>
+    <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-replacedby">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/CodeSystem/obligation"/>
+        <code value="SHOULDNOT:alter"/>
+      </valueCoding>
+    </extension>
     <code value="SHOULD:no-alter"/>
     <display value="SHOULD not alter"/>
     <definition value="Conformant applications SHOULD ensure that this element does not change between receiving and transfer.&#xA;Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply"/>
@@ -1011,10 +1018,6 @@
     <property>
       <code value="status"/>
       <valueCode value="deprecated"/>
-    </property>
-    <property>
-      <code value="replacedByCode"/>
-      <valueCode value="SHOULDNOT:alter"/>
     </property>
   </concept>
   <concept>
